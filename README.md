@@ -12,3 +12,9 @@
 - [ ] Test eucational video understanding
 - [ ] Irreverent part capturing
 
+## Papers on embeddings
+
+- [Text Embeddings by Weakly-Supervised Contrastive Pre-training](https://arxiv.org/pdf/2212.03533)
+- [NV-EMBED: IMPROVED TECHNIQUES FOR TRAINING LLMS AS GENERALIST EMBEDDING MODELS](https://arxiv.org/pdf/2405.17428) [(ICLR2025)](https://iclr.cc/virtual/2025/poster/28505)
+- [Jasper and Stella: distillation of SOTA embedding models-1.5B](https://arxiv.org/pdf/2412.19048)     
+- [A Comprehensive Survey of Sentence Representations:From the BERT Epoch to the CHATGPT Era and Beyond](https://aclanthology.org/2024.eacl-long.104.pdf)
