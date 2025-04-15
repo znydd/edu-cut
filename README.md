@@ -12,6 +12,8 @@
 - [ ] Test eucational video understanding
 - [ ] Irreverent part capturing
 
+## Better video-text-to-text models
+- [OpenGVLab](https://huggingface.co/OpenGVLab)
 ## Papers on embeddings
 
 - [Text Embeddings by Weakly-Supervised Contrastive Pre-training](https://arxiv.org/pdf/2212.03533)
