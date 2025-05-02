@@ -9,7 +9,7 @@ class Vector_store:
         self.emb_obj = Embedding()
 
 
-    def store(self, resp, timestamps):
+    def store(self, resp, timestamps, clip_id):
 
         docs_emb = self.emb_obj.get_embeddings(resp)
         docs_embeddings = docs_emb.cpu().detach().numpy().astype("float32").tolist()
@@ -19,13 +19,13 @@ class Vector_store:
         documents=[resp],
         embeddings=docs_embeddings,
         ids=unique_id,
-        metadatas=[{"timestamp": f"{timestamps[0]}s - {timestamps[1]}s"}]
+        metadatas=[{"timestamp": f"{timestamps[0]}s - {timestamps[1]}s - {clip_id}"}]
         )
 
         return
 
     def query(self):
-        query = "Tell me about factory pattern?"
+        query = "Tell me about mathematical details"
         query_emb = self.emb_obj.get_embeddings(query, "query")
         #Query
         query_embedding = query_emb.cpu().detach().numpy().astype("float32").tolist()
@@ -36,10 +36,11 @@ class Vector_store:
             n_results=10
         )
         print("=================================================================")
-        print(results)
+        # print(results)
 
         for doc, dist, meta in zip(results["documents"][0], results["distances"][0], results['metadatas'][0]):
-            print(f"Match: {doc} (distance: {dist:.4f})\n medadata: {meta}")
+            # print(f"Match: {doc} (distance: {dist:.4f})\n medadata: {meta}")
+            print(f"(distance: {dist:.4f})\n medadata: {meta}")
 
-# obj = Vector_store()
-# obj.query()
+obj = Vector_store()
+obj.query()

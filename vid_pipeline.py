@@ -69,8 +69,8 @@ def chunk_video_and_subs(
     return len(start_times)
 
 chunk_video_and_subs(
-    video_path = "./media/design_pattern.mp4",
-    srt_path   = "./media/design_pattern.srt",
+    video_path = "./media/Bias Variance Tradeoff_ a 2-Minute Introduction.mp4",
+    srt_path   = "./media/Bias Variance Tradeoff_ a 2-Minute Introduction.srt",
     output_dir = "./media/clips/",
     clip_len_sec = 10,
     overlap_sec  = 2)

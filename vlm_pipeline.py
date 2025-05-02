@@ -145,7 +145,7 @@ class VLM:
         prev_clip_out = "No previous clip just started"
         clip_range = (0, 10)
         video_path = "./media/clips"
-        for i in range(83):
+        for i in range(23):
 
             clip_id = f"clip_{i:03d}"
             prev_clip_range = "No previous clip range just started" if i == 0 else clip_range
@@ -165,7 +165,7 @@ class VLM:
             response = model.chat(tokenizer, pixel_values, prompt+". Don\'t repeat", generation_config,
                                        num_patches_list=num_patches_list, history=None, return_history=False)
             # print(response)
-            vctr_store.store(response, clip_range)
+            vctr_store.store(response, clip_range, clip_id)
             with open(all_output_path, "a", encoding="utf-8") as out_f:
                 out_f.write(f"\n\n=== Clip: {clip_id} ({clip_range}) ===\n")
                 out_f.write(response)
