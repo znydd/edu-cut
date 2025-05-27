@@ -23,6 +23,7 @@ dependencies = [
     "pymupdf4llm>=0.0.20",
     "qwen-vl-utils>=0.0.10",
     "sentence-transformers>=4.0.2",
+    "srt>=3.5.3",
     "timm>=1.0.15",
     "vllm>=0.8.3",
 ]
