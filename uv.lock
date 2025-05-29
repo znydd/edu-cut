@@ -920,6 +920,7 @@ dependencies = [
     { name = "einops" },
     { name = "faiss-cpu" },
     { name = "flash-attn" },
+    { name = "google-genai" },
     { name = "ipykernel" },
     { name = "ipywidgets" },
     { name = "llama-index" },
@@ -930,6 +931,7 @@ dependencies = [
     { name = "ollama" },
     { name = "pip" },
     { name = "pymupdf4llm" },
+    { name = "python-dotenv" },
     { name = "qwen-vl-utils" },
     { name = "sentence-transformers" },
     { name = "srt" },
@@ -946,6 +948,7 @@ requires-dist = [
     { name = "einops", specifier = ">=0.8.1" },
     { name = "faiss-cpu", specifier = ">=1.10.0" },
     { name = "flash-attn", specifier = ">=2.7.4.post1" },
+    { name = "google-genai", specifier = ">=1.17.0" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "ipywidgets", specifier = ">=8.1.5" },
     { name = "llama-index", specifier = ">=0.12.28" },
@@ -956,6 +959,7 @@ requires-dist = [
     { name = "ollama", specifier = ">=0.4.7" },
     { name = "pip", specifier = ">=25.0.1" },
     { name = "pymupdf4llm", specifier = ">=0.0.20" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
     { name = "qwen-vl-utils", specifier = ">=0.0.10" },
     { name = "sentence-transformers", specifier = ">=4.0.2" },
     { name = "srt", specifier = ">=3.5.3" },
@@ -1257,6 +1261,24 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c6/eb/d504ba1daf190af6b204a9d4714d457462b486043744901a6eeea711f913/google_auth-2.38.0.tar.gz", hash = "sha256:8285113607d3b80a3f1543b75962447ba8a09fe85783432a784fdeef6ac094c4", size = 270866 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9d/47/603554949a37bca5b7f894d51896a9c534b9eab808e2520a748e081669d0/google_auth-2.38.0-py2.py3-none-any.whl", hash = "sha256:e7dae6694313f434a2727bf2906f27ad259bae090d7aa896590d86feec3d9d4a", size = 210770 },
+]
+
+[[package]]
+name = "google-genai"
+version = "1.17.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "google-auth" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "requests" },
+    { name = "typing-extensions" },
+    { name = "websockets" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/51/93/4ad189184db21539c625bba432faa3a36e1e5eeb0b3a0b52fbdc9bdac324/google_genai-1.17.0.tar.gz", hash = "sha256:2cf0ff1218290efe6fad80d586cc4aed5a1ca6d38407d1ae221cf10e308c299b", size = 197180 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/57/e8/6cc81b481d71f64896964d6aa105f17f13a974627da5d22a3e676fb056b6/google_genai-1.17.0-py3-none-any.whl", hash = "sha256:0a5ba765cc9900a5fa7e71ed4520a1560a857754e72db32765009e2e9fe75333", size = 199245 },
 ]
 
 [[package]]
