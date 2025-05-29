@@ -932,6 +932,7 @@ dependencies = [
     { name = "pymupdf4llm" },
     { name = "qwen-vl-utils" },
     { name = "sentence-transformers" },
+    { name = "srt" },
     { name = "timm" },
     { name = "vllm" },
     { name = "yt-dlp" },
@@ -957,6 +958,7 @@ requires-dist = [
     { name = "pymupdf4llm", specifier = ">=0.0.20" },
     { name = "qwen-vl-utils", specifier = ">=0.0.10" },
     { name = "sentence-transformers", specifier = ">=4.0.2" },
+    { name = "srt", specifier = ">=3.5.3" },
     { name = "timm", specifier = ">=1.0.15" },
     { name = "vllm", specifier = ">=0.8.3" },
     { name = "yt-dlp", specifier = ">=2025.5.22" },
@@ -4675,6 +4677,12 @@ wheels = [
 asyncio = [
     { name = "greenlet" },
 ]
+
+[[package]]
+name = "srt"
+version = "3.5.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/66/b7/4a1bc231e0681ebf339337b0cd05b91dc6a0d701fa852bb812e244b7a030/srt-3.5.3.tar.gz", hash = "sha256:4884315043a4f0740fd1f878ed6caa376ac06d70e135f306a6dc44632eed0cc0", size = 28296 }
 
 [[package]]
 name = "stack-data"
