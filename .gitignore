@@ -1,5 +1,7 @@
 .venv
+.env
 __pycache__
 /pretrained/*
 /media/*
 data/*
+data_collection/data/*
