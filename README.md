@@ -34,5 +34,5 @@
 
 1. Remove Irreverent Segments from video.
 2. Good at specific topic/course (Domain specific fine tuning -> catching errors + provide more context, example or different POV).
-3. Long video handle.
-4. Video Search.
+3. Video Search (RAG).
+4. Long video handle.
