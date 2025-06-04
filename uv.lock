@@ -932,10 +932,11 @@ dependencies = [
     { name = "pip" },
     { name = "pymupdf4llm" },
     { name = "python-dotenv" },
-    { name = "qwen-vl-utils" },
+    { name = "qwen-vl-utils", extra = ["decord"] },
     { name = "sentence-transformers" },
     { name = "srt" },
     { name = "timm" },
+    { name = "transformers", extra = ["torch"] },
     { name = "vllm" },
     { name = "yt-dlp" },
 ]
@@ -960,10 +961,11 @@ requires-dist = [
     { name = "pip", specifier = ">=25.0.1" },
     { name = "pymupdf4llm", specifier = ">=0.0.20" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
-    { name = "qwen-vl-utils", specifier = ">=0.0.10" },
+    { name = "qwen-vl-utils", extras = ["decord"], specifier = "==0.0.10" },
     { name = "sentence-transformers", specifier = ">=4.0.2" },
     { name = "srt", specifier = ">=3.5.3" },
     { name = "timm", specifier = ">=1.0.15" },
+    { name = "transformers", extras = ["torch"], specifier = ">=4.51.0" },
     { name = "vllm", specifier = ">=0.8.3" },
     { name = "yt-dlp", specifier = ">=2025.5.22" },
 ]
@@ -4150,6 +4152,11 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/24/20/54ac98869530d65b111bfd189c301564a3f1af17e5fc40de421ca6f01664/qwen_vl_utils-0.0.10.tar.gz", hash = "sha256:e5bb985508a85dfc339989870a35fbd0362f96bbb01e7e0472ff89942d33ceb8", size = 6975 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9e/f2/b489f9077bd410f44400d056ad7b0246ee3c516bf9d65b362ea35a57ce1c/qwen_vl_utils-0.0.10-py3-none-any.whl", hash = "sha256:a31d170f1e8c511f79b6bbf5cd77d7e8f7c9b1d68db102be140843fa57b46a0a", size = 6654 },
+]
+
+[package.optional-dependencies]
+decord = [
+    { name = "decord" },
 ]
 
 [[package]]
