@@ -1,0 +1,377 @@
+[
+    {
+        "link": "https://www.youtube.com/watch?v=Pi1-b50VHB8",
+        "irrelevant_segments": [
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:00:00.000",
+                "end_time": "00:00:08.300",
+                "text_snippet": "Okay, hello, can you hear my voice? Yes ma'am. Okay, so let's start.",
+                "reasoning": "The instructor begins the session by checking if their voice is audible and then formally starts the lecture. This initial interaction is a logistical setup for the online class, occurring before the actual educational content on \"Mapping EER Model Constructs to Relations\" begins, and thus does not contribute to the learning objectives. It distracts from the immediate dive into academic material."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:02:03.950",
+                "end_time": "00:02:07.530",
+                "text_snippet": "So, we will have four tables, one for each super class and sub class.",
+                "reasoning": "The instructor momentarily pauses the explanation of Option 8A to admit new participants ('MIFTAHUL JANNAT ORPI and SAHRIAR WAHID GALIB') to the online meeting, as indicated by a visual pop-up ('Admit all?') and system sounds. This brief interruption for platform management, while short, breaks the continuous flow of teaching about creating separate tables. The visual focus shifts from the Jamboard to the meeting controls, potentially disengaging learners."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:02:11.500",
+                "end_time": "00:02:14.000",
+                "text_snippet": "the subclass technician, and the subclass I think it was engineer.",
+                "reasoning": "Teaching is again briefly interrupted as the instructor attends to admitting another participant ('MONJUR AHMED') to the Google Meet session, indicated by a visual pop-up. This administrative action, involving interaction with the meeting interface, causes a slight pause in the explanation of the 'Engineer' subclass table under Option 8A. Such interruptions, though minor, can fragment the learning experience."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:19:11.930",
+                "end_time": "00:19:23.610",
+                "text_snippet": "Alright. So, for your different layers, you'll have to do separate mappings. So, we'll come to that a bit later. I will show you. For now, remember your question. We will come back to it later. Okay.",
+                "reasoning": "After a student asks a relevant question about multi-level hierarchies (which was on-topic), the instructor's response in this segment is to defer the answer. This part of the interaction focuses on lecture management rather than directly teaching the EER mapping concepts. While managing questions is part of teaching, this specific deferral temporarily halts the direct instruction on Option 8D which was being discussed."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:29:39.030",
+                "end_time": "00:29:51.270",
+                "text_snippet": "actually we are done with this chapter. Step nine is not in our syllabus. So we have until slide number 28. Okay. Any questions? Any overall questions about this?",
+                "reasoning": "The instructor signals the end of the chapter's content, provides administrative information about the syllabus (Step 9 not being included), and states the final slide covered. This is purely logistical information related to course structure and does not contribute to the understanding of EER model mapping. It serves as a concluding administrative note rather than an extension of the educational content."
+            }
+        ]
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=AZlvSdQzbk0",
+        "irrelevant_segments": [
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:10:22.988",
+                "end_time": "00:10:37.488",
+                "text_snippet": "",
+                "reasoning": "The instructor spends approximately 14.5 seconds silently drawing the 'SuperSSN' attribute and its recursive foreign key arrow within the 'Employee' table on the Jamboard. This visual construction period lacks concurrent verbal instruction, momentarily pausing the lesson on mapping 1:N recursive relationships. The explanation of this specific mapping detail resumes immediately after the drawing is completed."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:14:28.958",
+                "end_time": "00:14:42.218",
+                "text_snippet": "",
+                "reasoning": "During this 13.26-second segment, the instructor is focused on silently adding the 'MgrSSN' and 'SDate' attributes to the 'Department' table and drawing the corresponding foreign key arrow on the Jamboard. This instance of drawing without verbal elaboration creates a brief halt in the explanation of mapping 1:1 relationships using the foreign key approach. The instructional commentary regarding the 'Manages' relationship picks up once the visual representation is in place."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:16:35.418",
+                "end_time": "00:16:58.918",
+                "text_snippet": "",
+                "reasoning": "This segment features an extended period of 23.5 seconds where the instructor silently draws a new table 'R' with its attributes (a, b, c, X) and foreign key connections to illustrate an N-ary relationship. As the longest silent drawing activity in this clip, this significantly pauses the verbal instruction on mapping N-ary relationships. The detailed explanation of the drawn ternary relationship example follows this period of visual construction."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:17:13.648",
+                "end_time": "00:17:17.928",
+                "text_snippet": "",
+                "reasoning": "Instruction is briefly interrupted for about 4.3 seconds. After the instructor asks for questions regarding N-ary relationships, a participant's microphone seems to cause an echo, and a system notification 'Your audio setup is causing echo. Click here to get help.' becomes visible. This segment reflects a non-instructional pause while the instructor manages the classroom interaction and technical interruption before proceeding."
+            }
+        ]
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=5y2E4aWclz8",
+        "irrelevant_segments": [
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:00:02.849",
+                "end_time": "00:00:04.929",
+                "text_snippet": "",
+                "reasoning": "The instructor momentarily switches the screen from the PowerPoint presentation about 'Chapter 10' to an Excel spreadsheet titled 'CSE370_Fall23_Attendance_Marks'. During this brief period, the instructor visually interacts with the attendance sheet, an administrative task unrelated to the database systems lecture content. This diverts the learner's attention from the primary topic of 'Functional Dependencies and Normalization' and interrupts the instructional flow right at the beginning of the chapter's introduction."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:00:49.800",
+                "end_time": "00:00:52.500",
+                "text_snippet": "",
+                "reasoning": "The lecture flow is briefly interrupted as the instructor attends to a Google Meet notification indicating 'Someone wants to join this call.' The screen shows the meeting interface as the instructor admits participant SAHRIAR WAHID GALIB. This is an administrative action managing the online classroom environment, pausing the explanation of the 'Chapter Outline' and diverting visual and cognitive focus from the lesson."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:02:02.500",
+                "end_time": "00:02:06.500",
+                "text_snippet": "",
+                "reasoning": "The instructor pauses the explanation of 'Guideline 1: Semantics of the Relation Attributes' to manage the online meeting. A notification 'Someone wants to join this call' appears for ARGHA DAS, and the instructor admits the participant. This administrative task, though brief, momentarily diverts focus from the core educational content on database design guidelines, breaking the continuity of the explanation."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:03:55.000",
+                "end_time": "00:03:59.000",
+                "text_snippet": "",
+                "reasoning": "While concluding the discussion on 'Guideline 1' and inviting questions, the instructor is interrupted by a Google Meet notification: 'Someone wants to join this call.' The instructor then admits participant NAZMUL HAQUE OMI. This meeting management activity is separate from the instructional content and momentarily halts the learning progression for other students."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:22:46.500",
+                "end_time": "00:23:03.900",
+                "text_snippet": "So, actually I will not start today because I will probably need some more time to finish this and we don't have enough time left. So, I will start this from the beginning in the next class instead of doing a little bit today and",
+                "reasoning": "The instructor discusses the logistical decision to not start the next major topic ('Functional Dependencies and Normalization') in the current session. They explain that it requires more time and will be covered comprehensively in the next class. This is a class management and scheduling announcement, distinct from the database design instruction, and signals the end of new content for the session."
+            }
+        ]
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=ou97MYa7QWQ",
+        "irrelevant_segments": [
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:01:28.591",
+                "end_time": "00:01:31.501",
+                "text_snippet": "[Google Meet notification: Someone wants to join this call]",
+                "reasoning": "The instructor momentarily halts the explanation of functional dependencies, which was being illustrated on a Jamboard, to address a Google Meet notification for a student requesting to join. This administrative action, while necessary for class management, diverts attention from the core lesson on database concepts. The flow of teaching is briefly interrupted before resuming the Jamboard explanation."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:03:39.611",
+                "end_time": "00:03:42.021",
+                "text_snippet": "[Google Meet notification sound]",
+                "reasoning": "While discussing that both X and Y in a functional dependency X -> Y can be sets of attributes, referencing a Jamboard example, a notification sound indicates another student is joining. This brief interruption, marked by the system sound and the instructor's likely action to admit the student, breaks the continuity of the explanation about complex functional dependencies. The topic before this was about the components of the {SID, CCode} -> Grade functional dependency."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:04:26.261",
+                "end_time": "00:04:28.831",
+                "text_snippet": "[Google Meet notification sound]",
+                "reasoning": "The instructor is detailing examples of FD constraints from a PowerPoint slide (SSN -> ENAME, PNUMBER -> {PNAME, PLOCATION}, etc.) when a system notification indicates a student is waiting to be admitted. This diverts focus from the specific FD examples being illustrated to a class management task, momentarily pausing the instructional delivery. The previous topic was the {SSN, PNUMBER} -> HOURS example."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:04:33.101",
+                "end_time": "00:04:36.381",
+                "text_snippet": "[Google Meet notification sound]",
+                "reasoning": "Shortly after resuming the explanation of FD constraints and stating that slide 22 is not in the syllabus, another student joining notification occurs. This further fragments the learning experience, requiring the instructor to again shift from teaching database normalization concepts and syllabus guidance to handling an administrative request. The context was a transition from FD examples to discussing syllabus scope."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:05:35.841",
+                "end_time": "00:05:39.371",
+                "text_snippet": "[Google Meet notification: Someone wants to join this call]",
+                "reasoning": "As the instructor transitions to the core definition of Normalization and Normal Form, explaining how 'bad' relations are decomposed, a student joining request appears on screen. This administrative task interrupts the introduction of this key new topic in the lecture, potentially causing learners to miss the initial framing and importance of normalization in database design. The previous discussion was about different levels of normal forms (2NF, 3NF, etc.)."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:10:01.281",
+                "end_time": "00:10:12.431",
+                "text_snippet": "[Google Meet notification: AVISHEK NANDI BARNA can now join this meeting]",
+                "reasoning": "The introduction to Second Normal Form (2NF), including its prerequisites like being in 1NF and the concepts of FDs and primary keys, is interrupted by a notification that a specific student is joining the session. This administrative pop-up and the associated pause by the instructor to admit the student break the flow of explanation of crucial 2NF definitions. The instructor was just about to define 'Prime attribute'."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:13:11.611",
+                "end_time": "00:13:14.001",
+                "text_snippet": "[Google Meet notification sound]",
+                "reasoning": "While the instructor is actively drawing on the Jamboard and verbally explaining the difference between partial and full functional dependencies using the {SID, CCode} -> Grade example for 2NF, a student joining notification provides a brief interruption. This administrative event momentarily distracts from the visual and verbal explanation of a core 2NF concept crucial for understanding normalization. The explanation of SName depending only on SID (a partial dependency) was in progress."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:39:33.371",
+                "end_time": "00:41:17.011",
+                "text_snippet": "MD HASIBUL HASAN SUMAIYA ZAMAN MEHRAB MOHSIN KHAN AVISHEK NONDI Ma'am, last class er recording ta ki dewa jabe kindly?",
+                "reasoning": "The instructor explicitly shifts from the main lecture topic of database normalization to administrative matters. This segment is dedicated to taking attendance for students who joined late, involving students stating their names. It also includes a brief discussion about a student's lateness due to an ongoing lab session, and concludes with a student inquiring about the availability of the previous class's recording. This entire duration is non-instructional regarding the chapter's content and breaks the learning flow."
+            }
+        ]
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=R5UGFPWX48Q",
+        "irrelevant_segments": [
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:00:02.340",
+                "end_time": "00:00:18.560",
+                "text_snippet": "Okay, so what I was saying is that the practice checklist in the practice sheet, the keywords that are there, if you know how to apply them, then it will be sufficient for you to get good marks in the exam.",
+                "reasoning": "The instructor diverts from teaching specific SQL concepts to discuss the course's practice sheet and its relevance to exam preparation. This administrative advice, while helpful for students, interrupts the direct instructional flow of SQL syntax and usage, potentially causing a momentary shift in learner focus from the technical content. This segment is about study strategy rather than SQL execution."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:00:18.900",
+                "end_time": "00:00:31.220",
+                "text_snippet": "Okay, and all of them are related to SELECT queries, which means insertion, deletion, update, alter table – none of those are there. Okay, whatever is related to SELECT queries, those are in your theory syllabus.",
+                "reasoning": "This part focuses on defining the scope of the syllabus, specifically highlighting that only `SELECT` related queries are included, while `INSERT`, `DELETE`, `UPDATE`, `ALTER TABLE` are excluded. This is administrative information about course content and exam scope, rather than an explanation of how to use SQL, thus momentarily pausing the technical learning."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:00:31.220",
+                "end_time": "00:01:03.680",
+                "text_snippet": "And with all these keywords, you have seen them in your lab. Today I will go through some of them, the ones that are a bit complex, I will go through them a little. If you want me to elaborate more on something or if you want me to explain some keyword, then just let me know, okay? If I miss or skip any keyword from here, or if you want me to explain, then if you let me know, I will explain it. Okay, so since you have done it in the lab, I am going a bit fast.",
+                "reasoning": "The instructor outlines the lecture plan, mentioning a review of previously covered lab material and soliciting student interaction for clarifications. This segment is procedural and sets expectations for the session's pace and content, differing from direct instruction on SQL commands and their application, and can be considered a meta-discussion about the teaching approach."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:01:03.680",
+                "end_time": "00:01:05.230",
+                "text_snippet": "",
+                "reasoning": "During this short interval, the instructor is silently scrolling through the document visible on screen. There is no verbal instruction or explanation of new SQL concepts occurring, making it a non-instructional activity focused on document navigation. This brief pause in teaching can disrupt the flow for learners reviewing the video."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:01:06.250",
+                "end_time": "00:01:28.830",
+                "text_snippet": "Okay, so what we will try our queries on today are these tables. So, in your exam too, a schema like this will be given, where there will be three or four tables, primary keys, foreign keys will be shown. And then there will be some questions, and for each question, you will have to write one query. There are usually three to five questions, so for each question, you have to write one query.",
+                "reasoning": "Here, the instructor discusses the exam format, explaining that a schema with multiple tables and keys will be provided, followed by questions requiring SQL query solutions. This information pertains to assessment strategy and exam structure rather than the technical details of SQL query writing, thereby shifting the focus from active learning of SQL to exam-related guidance."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:01:31.590",
+                "end_time": "00:01:34.140",
+                "text_snippet": "",
+                "reasoning": "This segment involves the instructor scrolling through the on-screen document without any accompanying verbal instruction. The focus is on navigating the material rather than teaching, leading to a momentary break in the educational content delivery. Such pauses, even brief, can affect learner engagement."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:01:45.470",
+                "end_time": "00:01:55.370",
+                "text_snippet": "",
+                "reasoning": "The instructor spends approximately 10 seconds scrolling through the document before settling on a list of SQL functions. During this navigation period, no new SQL concepts are being taught verbally, representing a non-instructional activity as the instructor prepares for the next part of the lesson."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:02:44.390",
+                "end_time": "00:02:45.750",
+                "text_snippet": "",
+                "reasoning": "This brief 1.3-second interval consists of the instructor pausing and scrolling the document after explaining selecting specific columns and before moving to the `WHERE` clause. No new instructional content is delivered, marking it as a minor non-instructional activity related to content navigation."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:03:45.600",
+                "end_time": "00:03:51.190",
+                "text_snippet": "",
+                "reasoning": "For about 5.5 seconds, the instructor pauses and scrolls the document. This occurs after explaining `AND` and `OR` logic and before introducing the `IN` keyword. The lack of concurrent verbal instruction makes this a non-instructional transition period."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:07:19.510",
+                "end_time": "00:07:27.910",
+                "text_snippet": "So it's very close to how we use the English language. So it's quite intuitive, if you have a basic understanding, meaning if you can understand the keywords a little, you can easily solve this.",
+                "reasoning": "The instructor offers general advice on understanding SQL keywords by relating them to English language intuition. While encouraging, this is a meta-cognitive tip rather than a direct explanation of an SQL command or its syntax, momentarily diverging from the technical instruction."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:33:46.630",
+                "end_time": "00:33:59.810",
+                "text_snippet": "",
+                "reasoning": "This segment, lasting approximately 13 seconds, involves the instructor pausing and performing minor scrolling on the screen after explaining the `ANY` and `ALL` keywords. There's no new SQL instruction being delivered verbally, making it a period of non-instructional activity before transitioning to the topic of `JOINs`."
+            },
+            {
+                "segment_type": "off_topic_discussion",
+                "start_time": "00:42:28.590",
+                "end_time": "00:42:48.780",
+                "text_snippet": "Okay, so this is actually it. The part that will come in our final exam will be related to these keywords. You will be given a question like this, and you will have to write a query like this, okay? So basically, you have to apply the keywords. The practice questions that are here, solving them will be enough. Their solutions are also given. So the solutions are a possible solution, meaning there might be multiple solutions for some questions. So, these are possible solutions here. You should definitely solve them yourselves first, and then compare. So yeah, if you practice these, plus if you look a little at the initial labs you did in your lab, mainly from where the SELECT query starts, then it will be fine, okay?",
+                "reasoning": "This concluding part of the video shifts focus from SQL instruction to exam preparation advice. The instructor discusses the relevance of the covered keywords for the final exam, refers to practice questions and their solutions, and advises on study methods. This is administrative and strategic guidance, not the teaching of new SQL material."
+            },
+            {
+                "segment_type": "silent_or_non_instructional_activity",
+                "start_time": "00:42:48.780",
+                "end_time": "00:43:31.470",
+                "text_snippet": "",
+                "reasoning": "For over 40 seconds, the instructor is primarily scrolling through the document, revisiting the keyword list and other parts of the practice sheet. This occurs during her concluding administrative remarks. While some speech overlaps, the prolonged visual activity is document navigation without concurrent new SQL teaching. This extended scrolling can disengage learners looking for concise instructional content."
+            }
+        ]
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=BImr2v8BkeA"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=inZdgH8Wd7g"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=Zdd8mMOu4dI"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=TvLT2Lv0RVk"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=85PLshkOILQ"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=6oEbAmMMV1c"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=8vWVeQ711vk"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=tJZZXoTHRFg"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=O4bjWrhL4z0"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=9wHYi8TYX3Y"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=42zTQKMJNnU"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=ZQ5CwETn2xI"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=MkLnc1y7Hqw"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=uvUnPbS1Xpc"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=flALqtQs7FI"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=ISlC5iNnmbM"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=WCMsFeRpf0Q"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=OlocrZoGZmI"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=WnRLYDf_Hvw"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=ZtfUS6oNJGY"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=Ql6BBGBDFOQ"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=fAzGLgzANG4"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=-plyflGEEoY"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=EK6CXFxTctc"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=qFI60i_Kmyg"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=AM6IWhZ7Yjs"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=oXl_V6RI41E"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=ID8c0LDJhNc"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=ZL7zx46gfkk"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=dXZ1iZJ8Xtc"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=g72cIEp4EzA"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=X9l5teGrDe4"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=2nuq4_hAQ00"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=xdiMsq2D4wA"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=sy9UDDDvJY4"
+    }
+]
