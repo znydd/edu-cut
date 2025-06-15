@@ -6,3 +6,6 @@ __pycache__
 data/*
 data_collection/
 dense_fine_tuning
+task_fine_tuning/full_video
+task_fine_tuning/cropped_vid
+task_fine_tuning/sqz_vid

@@ -27,7 +27,7 @@ Please identify the following types of irrelevant segments:
     * **Task:** Identify these segments based on visual analysis and absence of meaningful instructional audio (cross-reference with **audio context undersatnding** to confirm lack of concurrent teaching). Focus on durations that are long enough to be detrimental to a focused learning experience when reviewing the video.
 
 For each identified segment, you must provide:
-* **Accurate start and end timestamps** (e.g., in `HH:MM:SS.mmm` format or seconds).
+* **Accurate start and end timestamps** (e.g., in `HH:MM:SS` format or HOUR:MINUTE:SECOND).
 * The **type** of segment (e.g., "off_topic_discussion", "silent_or_non_instructional_activity").
 * The **actual text snippet** of the identified segment from the **Pure English subtitle(if non English translate to English) from the audio** (this might be empty or contain minimal non-instructional speech for "silent_or_non_instructional_activity").
 * A brief **reasoning** for your classification.
@@ -37,8 +37,8 @@ For each identified segment, you must provide:
 **Output Format:**
 Please provide your findings in a single JSON object. The object should contain a key, say "irrelevant_segments", which is a list of objects. Each object in the list represents an identified segment and should have the following fields:
 * `segment_type`: (string) e.g., "off_topic_discussion", "silent_or_non_instructional_activity"
-* `start_time`: (string or float) e.g., "00:02:35.500" or 155.5
-* `end_time`: (string or float) e.g., "00:02:36.100" or 156.1
+* `start_time`: (string or float) e.g., "00:02:35
+* `end_time`: (string or float) e.g., "00:02:36
 * `text_snippet`: (string) The **English(if non English translate to English)** transcribed text of the segment. For "silent_or_non_instructional_activity", this might be minimal or empty.
 * `reasoning`: (string) Descriptive explanation for why this segment was identified as irrelevant in the educational context.
 
@@ -77,30 +77,32 @@ Please ensure your reasoning includes, when applicable:
 **If there are no segments that match the defined irrelevant segment types, please return an empty array for "irrelevant_segments".**
 
 **Example JSON Structure:**
+
 ```json
 {
   "irrelevant_segments": [
     {
       "segment_type": "off_topic_discussion",
-      "start_time": "00:10:30.000",
-      "end_time": "00:11:45.000",
+      "start_time": "00:10:30",
+      "end_time": "00:11:45",
       "text_snippet": "So, last weekend I went hiking and it reminded me of a funny story...",
       "reasoning": "Anecdote unrelated to the main topic of 'Quantum Physics'."
     },
     {
       "segment_type": "silent_or_non_instructional_activity",
-      "start_time": "00:32:10.000",
-      "end_time": "00:33:05.000",
+      "start_time": "00:32:10",
+      "end_time": "00:33:05",
       "text_snippet": "", // Or minimal e.g., "Okay, let me just draw this out..." followed by silence
       "reasoning": "Instructor spent 55 seconds drawing a complex diagram without concurrent verbal explanation of new concepts. Transcript shows no teaching during this period."
     },
     {
       "segment_type": "silent_or_non_instructional_activity",
-      "start_time": "01:05:00.000",
-      "end_time": "01:10:00.000",
+      "start_time": "01:05:00",
+      "end_time": "01:10:00",
       "text_snippet": "[Background noise/inaudible chatter]",
       "reasoning": "Video shows an empty screen or instructor away from desk for 5 minutes; appears to be a break in a live session recording."
     }
     // ... more segments
   ]
 }
+```
