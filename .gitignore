@@ -1,4 +1,14 @@
 .venv
+.env
 __pycache__
 /pretrained/*
 /media/*
+data/*
+data_collection
+dense_fine_tuning/videos
+task_fine_tuning/full_video
+task_fine_tuning/cropped_vid
+task_fine_tuning/sqz_vid
+testing/videos
+SmolVLM2-256M-Video-Instruct-dense-caption_full.zip
+

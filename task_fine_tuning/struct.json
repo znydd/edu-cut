@@ -1,0 +1,14 @@
+{
+  "id": 0,
+  "video": "000001_000050/1066682446.mp4",
+  "conversations": [
+    {
+      "from": "human",
+      "value": "Analyze this educational video and detect irrelevant segments that disrupt the learning process. Identify:\n1. Off-topic discussions (personal stories, unrelated chat, admin talks, etc.)\n2. Silent or non-instructional activities (e.g. instructor drawing silently, pauses, technical setups)\nFor each irrelevant segment, provide:\n- start and end timestamps\n- brief description with reasoning why it is irrelevant"
+    },
+    {
+      "from": "gpt",
+      "value": "Irrelevant Segment Type: {} \n- Start: {}\n- End: {}\n-Reasoning description: {}"
+    }
+  ]
+}

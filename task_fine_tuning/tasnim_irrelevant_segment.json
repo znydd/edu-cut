@@ -1,0 +1,167 @@
+[
+  {
+    "link": "https://www.youtube.com/watch?v=8Lc7-uDDyCc",
+    "irrelevant_segments": [
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:00:00",
+        "end_time": "00:00:08",
+        "text_snippet": "",
+        "reasoning": "This initial segment shows the screen recording software (OBS) interface before the actual lecture content begins. There is no verbal instruction or educational material presented, only mouse clicks can be heard. This part serves no learning purpose and is solely related to the technical setup of the video recording, making it a clear candidate for trimming to get learners directly to the content."
+      },
+      {
+        "segment_type": "off_topic_discussion",
+        "start_time": "20:19:35",
+        "end_time": "20:46:17",
+        "text_snippet": "Hello? Yes, sir. 34% on each side. Okay, I... why I am saying this, I will... let you know later, okay?",
+        "reasoning": "The segment features a mix of English and Bengali, where the instructor and a student briefly discuss a specific detail about the normal distribution. While related to the topic, the language switch and the instructor's deferral of the explanation to a later point disrupt the flow of the primary lesson. This interaction could be edited for clarity and conciseness to maintain a consistent language and instructional pace for a broader audience."
+      },
+      {
+        "segment_type": "off_topic_discussion",
+        "start_time": "25:04:12",
+        "end_time": "26:44:03",
+        "text_snippet": "Sir, I had a question. The standard deviation we calculated here is four... Sir, this is not related to our question in any way. Sir, aren't we calculating this by looking at the graph? Specifically, it may or may not be given in the question. Because... if it is in the most granular form, then maybe it will be given in the question. But... if it is 95% or 68%... those are very popular numbers. So it may not be given in the question. Do you understand?",
+        "reasoning": "This segment is a prolonged question-and-answer session initiated in Bengali, which breaks the instructional flow for non-Bengali speakers. The instructor's response, while clarifying a valid point about standard conventions in statistics problems, is a digression from the direct explanation. The interaction highlights a potential ambiguity in the problem but interrupts the main lecture path for an extended period."
+      }
+    ]
+  },
+  {
+    "link": "https://www.youtube.com/watch?v=X5fYGgaAmc0",
+    "irrelevant_segments": [
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:00:00",
+        "end_time": "00:00:52",
+        "text_snippet": "",
+        "reasoning": "This initial segment shows the instructor's screen recording software (OBS), followed by them navigating through their desktop and browser to set up a Google Meet presentation. The period culminates in a significant technical issue, displaying a 'You lost your network connection' error message. This entire duration contains no instructional content relevant to clustering and represents pre-lecture setup and technical troubleshooting, which can be removed to get learners directly to the content."
+      },
+      {
+        "segment_type": "off_topic_discussion",
+        "start_time": "00:01:04",
+        "end_time": "00:01:15",
+        "text_snippet": "Hello everyone. So I hope it will fine now. Then we can start today's lecture.",
+        "reasoning": "In this segment, the instructor is addressing the class about the prior technical difficulties and managing administrative tasks such as admitting a participant into the online call. This is a typical interaction from a live-recorded session that is not part of the core educational lesson on clustering. Removing this section would create a more direct and focused start to the lecture for viewers of the recording."
+      },
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:01:15",
+        "end_time": "00:01:24",
+        "text_snippet": "",
+        "reasoning": "This is a period of silence where the instructor is navigating their computer to open the presentation file. The screen transitions from the Google Meet interface to a PDF viewer containing the lecture slides. This activity is purely logistical and does not offer any instructional value to the viewer."
+      },
+      {
+        "segment_type": "off_topic_discussion",
+        "start_time": "00:42:04",
+        "end_time": "00:43:27",
+        "text_snippet": "Sir, I have one question that first we initiate uh, initiate a K first, right? Then after the algorithm runs, there will be a different K or the same same category? No, it will be the same K. The K value will not change. Just there will be two classes or two classifications... Okay sir, thank you... Sir, another question is uh, do we use which is more efficient, I mean the Euclidean distance algorithm or the Manhattan? Okay, so it is problem specific. Sometimes Euclidean will perform better... based on the nature of the problem... based on the application, you you have to choose which of the similarity measurement or distance measurement function will be applicable in your case.",
+        "reasoning": "The instructor pauses the structured lecture to engage in a Q&A session with students, which is evident as the screen switches back to the Google Meet interface. The discussion revolves around the choice of K-value and the comparative efficiency of different distance measures like Euclidean and Manhattan. While related to the topic, this interactive segment breaks the flow of the prepared presentation and is a typical artifact of a live class that could be edited out for a more concise on-demand video."
+      }
+    ]
+  },
+  {
+    "link": "https://www.youtube.com/watch?v=oGTvZ-13bd8",
+    "irrelevant_segments": [
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:00:00",
+        "end_time": "00:00:08",
+        "text_snippet": "",
+        "reasoning": "The video starts with the instructor setting up the screen recording. This segment is purely technical preparation with mouse clicks and window navigation, containing no instructional content before the lecture begins."
+      },
+      {
+        "segment_type": "off_topic_discussion",
+        "start_time": "00:00:08",
+        "end_time": "00:00:17",
+        "text_snippet": "Hello everyone. Can you hear me clearly? Yes sir. Yes sir.",
+        "reasoning": "This segment is a standard class greeting and audio check. While typical for a live session, it is administrative and not part of the core educational content on statistical inference, making it redundant for a recorded lecture."
+      },
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:03:28",
+        "end_time": "00:03:36",
+        "text_snippet": "",
+        "reasoning": "The lecture is paused as the instructor admits a late student, 'Mubin UC', into the online meeting. This is an administrative interruption that disrupts the flow of the explanation about the Chi-Square test example."
+      },
+      {
+        "segment_type": "off_topic_discussion",
+        "start_time": "00:20:30",
+        "end_time": "00:20:42",
+        "text_snippet": "No sir. Thank you.",
+        "reasoning": "The instructor's lecture is briefly interrupted to admit another student, 'Mohima Jannat', into the online class and respond to a student's comment. This is a logistical event specific to the live session and irrelevant to the educational content on ANOVA."
+      },
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:32:33",
+        "end_time": "00:34:34",
+        "text_snippet": "So here is the summation, and then here is X I minus of the grand mean. So X I that means each and every element. Like here, we can compute here 3 minus of 4, then square plus of again the second element, okay. Maybe we can say that this is the 2 minus of again 4, and then square plus of then plus of again this is 1. So 1 minus of 4 square plus we have to take this one now, 5 minus of 4 square plus of then here is the 3, 3 minus of 4, that is grand mean square and then plus then the 4 minus of 4 square plus, then here is the 6, 6 minus of 4 square plus of and then here is the 7, 7 minus of 6 square.",
+        "reasoning": "This two-minute segment involves the instructor slowly writing out the full calculation for the total sum of squares (SS_tot). The audio primarily consists of him vocalizing the numbers as they are written, which is a slow and repetitive process. For a recorded format, this extended calculation without new conceptual explanation can be significantly condensed to improve pacing and maintain learner focus."
+      }
+    ]
+  },
+  {
+    "link": "https://www.youtube.com/watch?v=uyhd6OkBiBk",
+    "irrelevant_segments": [
+      {
+        "segment_type": "off_topic_discussion",
+        "start_time": "00:00:12",
+        "end_time": "00:04:22",
+        "text_snippet": "I have an announcement. In our next uh next class, next class, it will be on 12th November. So, in 12th November, uh so maybe I want to take one, one just quiz. Quiz on uh on fuzzy uh fuzzy Topsis and Topsis method. Is it fine? Sir, up to fuzzy and fuzzy Topsis method or man only fuzzy and fuzzy Topsis? Uh, Topsis and fuzzy Topsis. These two methods. Is it okay? Okay, sir, but since those two are the latest, I think my it would be better to take the older ones. Since those have been processed and these are yet to be processed. Since it's the newest two topics. I think you have to do it this one. And those methods are very easy. Uh sir. Yeah, please. Uh sir, uh I won't be uh present on the 12th of November. Can I take take the quiz on on another day? Yeah. If you have some emergency, then no problem. Okay. So I think you can decide that whether if you can suggest that maybe it's better if we can take the quiz first quiz on genetic algorithms and we can also take that. But I think Topsis is it will be you can also specifically these methods you can use in the project. Sir, we can't hear you properly. Your volume is very low. Okay. Let's connect it. Hello? Is it clear now? Yes, sir, we can hear you. Yes, sir. Okay, so uh uh I think it will be better if we can just take the quiz on on Topsis and Fuzzy Topsis method. Specifically, those methods are easy to calculate and also uh we have a plan to do some research work on on that on those topics, okay? So next week uh on 12th of this month, at the beginning of the class, we will have just quiz on Topsis and Fuzzy Topsis. So, this is the announcement.",
+        "reasoning": "This extensive segment is a lengthy administrative discussion covering quiz announcements, scheduling, syllabus negotiation with students, and resolving a technical issue with the microphone. It digresses completely from the main lecture topic of Probability Theory and Naive Bayes, interrupting the flow of learning for over four minutes before the core instruction begins."
+      },
+      {
+        "segment_type": "off_topic_discussion",
+        "start_time": "00:04:22",
+        "end_time": "00:05:39",
+        "text_snippet": "Sir, what will be the question pattern? Same as the example. Whatever we did in our lecture lecture sheet, please follow that. So we discussed specifically two examples over there. The question pattern will be will be the same. Maybe I will uh maybe provide some data and based on that, you have to find that uh the rank of the alternate candidates. It can be on fuzzy or fuzzy Topsis or maybe just on the normal Topsis. Sir, we didn't finish the fuzzy Topsis full, I think. You told us that, Sir, last class he didn't finish it. You sir had something in between and you told us you would finish it in the next class. today's class. Yeah, uh, in our last class's one example, I I did discuss. I think no need to discuss that example again because one example we already finished. Based on that, you can do the other part. That means the example we just skipped was similar to the previous one. Okay, sir. Yeah, please.",
+        "reasoning": "This segment is a continuation of the off-topic administrative discussion about the quiz. The instructor and students discuss the question format and the completion status of a previous topic, which is not part of the current lecture's core material. This conversation further delays the start of the actual lesson on probability."
+      },
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:11:31",
+        "end_time": "00:11:34",
+        "text_snippet": "",
+        "reasoning": "This is a brief, 2-second non-instructional break where the video switches to showing only the instructor's profile picture with no accompanying audio. This pause interrupts the visual and auditory continuity of the lecture, momentarily breaking the learning flow."
+      },
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:15:12",
+        "end_time": "00:15:17",
+        "text_snippet": "",
+        "reasoning": "The video displays the instructor's static profile picture for five seconds without any instructional audio. This abrupt cutaway from the presentation slide disrupts the visual learning experience and serves as a minor editing gap in the lecture."
+      },
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:27:03",
+        "end_time": "00:27:05",
+        "text_snippet": "",
+        "reasoning": "A brief, silent period of two seconds occurs where only the instructor's profile picture is visible. This pause in instruction disrupts the lecture's momentum and the learner's concentration on the complex topic of probability theory."
+      },
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:31:46",
+        "end_time": "00:32:01",
+        "text_snippet": "",
+        "reasoning": "This segment represents a clear break in the lecture flow. The instructor finishes explaining a concept, the video cuts to the Google Meet interface, and there is a 15-second period of silence with no visual or audio instruction, creating a disjointed experience for the learner."
+      }
+    ]
+  },
+  {
+    "link": "https://www.youtube.com/watch?v=Jk94Dqqh53A",
+    "irrelevant_segments": [
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:00:05",
+        "end_time": "00:00:44",
+        "text_snippet": "",
+        "reasoning": "This segment consists of a prolonged 39-second silence after the instructor shares the presentation screen. This dead air at the beginning of the lecture, likely due to setup or waiting for attendees, detracts from immediate engagement and can be removed to make the start of the video more direct and focused."
+      },
+      {
+        "segment_type": "silent_or_non_instructional_activity",
+        "start_time": "00:32:49",
+        "end_time": "00:32:53",
+        "text_snippet": "",
+        "reasoning": "A Google Meet notification interrupts the video, displaying a message that 'Someone wants to join this call.' This administrative popup is a distraction from the educational content and is irrelevant to the core lesson on SVMs, breaking the flow of the explanation."
+      }
+    ]
+  }
+]
