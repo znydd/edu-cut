@@ -36,3 +36,8 @@
 2. Good at specific topic/course (Domain specific fine tuning -> catching errors + provide more context, example or different POV).
 3. Video Search (RAG).
 4. Long video handle.
+
+## Branching
+- master
+- dev -> every feature will be developted on the dev branch then eventually be merged to master
+- Example: goto to dev branch then create a feature branch finish the feature branch merge to dev then when everything is tested just merge to master branch
