@@ -11,4 +11,6 @@ task_fine_tuning/cropped_vid
 task_fine_tuning/sqz_vid
 testing/videos
 SmolVLM2-256M-Video-Instruct-dense-caption_full.zip
-
+src/pre_processing/vid_frames/*.png
+src/pre_processing/downloads/*
+!src/pre_processing/downloads/*.csv
