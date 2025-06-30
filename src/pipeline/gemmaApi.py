@@ -15,23 +15,31 @@ def msg(comb_inp_pth):
         {
            "type": "text",
            "text": """### ROLE & GOAL ###
-        You are an expert data processing engine specializing in semantic analysis. Your function is to analyze a sequence of pre-defined video clips and create a corresponding JSON object for each one. Each output object must be a comprehensive, self-contained summary structured for optimal retrieval from a vector database.
+        You are an expert data summarization engine. Your function is to analyze a sequence of pre-defined video clips and create a corresponding compact JSON summary object for each one. This output will be used as a searchable index for a subsequent AI task, so clarity and density are paramount.
+
         ### CONTEXT & INPUT STRUCTURE ###
-        I am providing you with the full content of an educational video, pre-processed and structured as a series of interleaved data chunks. You will receive the data for each 10-second segment sequentially: first, all the keyframe images for that segment, followed by a text block containing all the subtitles for that same segment. You will process all of these sequential chunks to understand the entire video.
+        I am providing you with the full content of an educational video, pre-processed and structured as a series of interleaved data chunks. You will receive the data for each 10-second segment sequentially: first, all the keyframe images for that segment, followed by a text block containing all the subtitles for that same segment.
+
         ### PRIMARY OBJECTIVE ###
-        Your mission is to process **each 10-second segment** from the input and generate **one corresponding JSON summary object** for it.
-        The most critical part of your output is the `llm_explanation` field within each object. This paragraph must be a dense, descriptive summary that synthesizes all the visual and spoken information from its corresponding 10-second clip, making the content fully understandable in isolation. This field is paramount as it will be used for vector embedding.
+        Your mission is to process **each 10-second segment** from the input and generate **one corresponding JSON summary object** for it. Do not combine information across segments.
+
+        For each segment, you must synthesize the visual and spoken information into a concise summary and extract the most important concepts for every video chunk and timestamps.
+
         Your final output must be a single, valid JSON array `[ { ... }, { ... } ]` containing one summary object for each input segment you were given.
+
         ### REQUIRED JSON STRUCTURE (for each object) ###
         {
-          "chunk_timestamps": "string | The time range for this chunk, which you will infer from the input context (e.g., '0-10s', '10-20s').",
-          "llm_explanation": "string | A dense, self-contained descriptive paragraph explaining the key concepts, steps, and visual information presented in this chunk. This text will be used for vector embedding.",
-          "keywords": "array[string] | A list of 5-7 of the most relevant keywords that summarize the content of this chunk."
+          "chunk_timestamps": "string | The time range for this chunk, taken directly from the input context (e.g., '0-10s', '10-20s').",
+          "summary_of_content": "string | A dense, 1-2 sentence summary explaining the key information presented in this 10-second chunk. Synthesize both what is said and what is shown.",
+          "key_concepts_and_visuals": "array[string] | A list of 3-5 of the most important and specific keywords, concepts, or visual elements mentioned or shown in this chunk."
         }
+
         ---
         ---
+
         ### INPUT DATA ###
-        (The user will now provide the interleaved data for each 10-second segment, starting with the frames and followed by the subtitles for that segment, repeated for the entire video clip.)""" 
+
+        (Here, you will provide your interleaved sequence of frames and subtitles for the entire video.)""" 
 
         }],
     }
@@ -112,7 +120,60 @@ response = client.chat.completions.create(
   messages=out,
   stream=True
 )
+resp = ""
 for chunk in response:
+    out_token = chunk.choices[0].delta.content
+    if out_token is not None: 
+        resp+=out_token
+        print(out_token, end="")
+print("\n")
+query = "On which sections the instructor is talking about gradients?"
+out2 = [{
+   "role": "user",
+      "content": [
+         {
+            "type": "text",
+            "text": f"""### ROLE & GOAL ###
+You are an intelligent retrieval expert. Your task is to analyze a user's query and find the most relevant sections within a structured list of video content summaries.
+
+### CONTEXT & INPUT STRUCTURE ###
+I am providing you with two pieces of information:
+1.  **User Query:** The specific question the user is asking.
+2.  **Video Content Index:** A JSON array where each object summarizes a 10-second clip from a video. Each object contains `chunk_timestamps`, a `summary_of_content`, and a list of `key_concepts_and_visuals`.
+
+### PRIMARY OBJECTIVE ###
+Your mission is to carefully read the User Query and then scan the entire Video Content Index. Identify all the `chunk_timestamps` that contain information relevant to answering the query.
+
+Your final output must be a single, valid JSON object containing a list of the relevant timestamp strings. If no sections are relevant, return an empty list.
+
+### REQUIRED JSON STRUCTURE ###
+{{
+  "relevant_chunks": "array[string] | A list of the chunk_timestamps that directly address the user's query (e.g., ['10-20s', '30-40s'])."
+}}
+
+---
+---
+
+### INPUT DATA ###
+
+#### User Query ####
+{query}
+
+#### Video Content Index ####
+{resp}
+                    """
+         }
+      ]
+   
+}]
+
+response2 = client.chat.completions.create(
+  model="gemma-3-4b-it",
+  messages=out2,
+  stream=True
+)
+
+for chunk in response2:
     out_token = chunk.choices[0].delta.content
     if out_token is not None: 
         print(out_token, end="")
