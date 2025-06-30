@@ -1,0 +1,31 @@
+{
+    "0-10s": [
+        "frame_00000.png",
+        "frame_00001.png",
+        "frame_00002.png",
+        "frame_00003.png",
+        "frame_00004.png"
+    ],
+    "10-20s": [
+        "frame_00005.png",
+        "frame_00006.png"
+    ],
+    "20-30s": [
+        "frame_00007.png",
+        "frame_00008.png",
+        "frame_00009.png",
+        "frame_00010.png",
+        "frame_00011.png"
+    ],
+    "30-40s": [
+        "frame_00012.png",
+        "frame_00013.png",
+        "frame_00014.png",
+        "frame_00015.png",
+        "frame_00016.png"
+    ],
+    "40-50s": [
+        "frame_00017.png",
+        "frame_00018.png"
+    ]
+}

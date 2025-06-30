@@ -1,0 +1,74 @@
+[
+    {
+        "time_stamps": "0-10s",
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png",
+            "frame_00003.png",
+            "frame_00004.png"
+        ],
+        "subtitle": [
+            "In today's tech time, let's see about back propagation.",
+            "What is back propagation?",
+            "Back propagation is the essence of neural network training.",
+            "It is the method of fine-tuning the weights of a neural network based on the error rate obtained in the previous epoch."
+        ]
+    },
+    {
+        "time_stamps": "10-20s",
+        "frames": [
+            "frame_00005.png",
+            "frame_00006.png"
+        ],
+        "subtitle": [
+            "Back propagation in neural network is a short form for backward propagation of errors.",
+            "It is a standard method of training artificial neural networks."
+        ]
+    },
+    {
+        "time_stamps": "20-30s",
+        "frames": [
+            "frame_00007.png",
+            "frame_00008.png",
+            "frame_00009.png",
+            "frame_00010.png",
+            "frame_00011.png"
+        ],
+        "subtitle": [
+            "This method helps calculate the gradient of a loss function with respect to all the weights in the network.",
+            "How back propagation algorithm works.",
+            "Inputs X, arrive through the pre-connected path.",
+            "Input is modeled using real weights W."
+        ]
+    },
+    {
+        "time_stamps": "30-40s",
+        "frames": [
+            "frame_00012.png",
+            "frame_00013.png",
+            "frame_00014.png",
+            "frame_00015.png",
+            "frame_00016.png"
+        ],
+        "subtitle": [
+            "The weights are usually randomly selected.",
+            "Calculate the output for every neuron from the input layer.",
+            "To the hidden layers, to the output layer.",
+            "Calculate the error in the outputs.",
+            "Travel back from the output layer to the hidden layer to adjust the weights such that the error is decreased."
+        ]
+    },
+    {
+        "time_stamps": "40-50s",
+        "frames": [
+            "frame_00017.png",
+            "frame_00018.png"
+        ],
+        "subtitle": [
+            "Keep repeating the process until the desired output is achieved.",
+            "If you have any doubt comment below, I will answer to it.",
+            "Finally, don't forget to subscribe our channel."
+        ]
+    }
+]

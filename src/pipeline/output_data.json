@@ -1,0 +1,165 @@
+[
+    {
+        "role": "user",
+        "content": [
+            {
+                "type": "text",
+                "text": "### ROLE & GOAL ###\n        You are an expert data processing engine specializing in semantic analysis. Your function is to analyze a sequence of pre-defined video clips and create a corresponding JSON object for each one. Each output object must be a comprehensive, self-contained summary structured for optimal retrieval from a vector database.\n        ### CONTEXT & INPUT STRUCTURE ###\n        I am providing you with the full content of an educational video, pre-processed and structured as a series of interleaved data chunks. You will receive the data for each 10-second segment sequentially: first, all the keyframe images for that segment, followed by a text block containing all the subtitles for that same segment. You will process all of these sequential chunks to understand the entire video.\n        ### PRIMARY OBJECTIVE ###\n        Your mission is to process **each 10-second segment** from the input and generate **one corresponding JSON summary object** for it.\n        The most critical part of your output is the `llm_explanation` field within each object. This paragraph must be a dense, descriptive summary that synthesizes all the visual and spoken information from its corresponding 10-second clip, making the content fully understandable in isolation. This field is paramount as it will be used for vector embedding.\n        Your final output must be a single, valid JSON array `[ { ... }, { ... } ]` containing one summary object for each input segment you were given.\n        ### REQUIRED JSON STRUCTURE (for each object) ###\n        {\n          \"chunk_timestamps\": \"string | The time range for this chunk, which you will infer from the input context (e.g., '0-10s', '10-20s').\",\n          \"keyframe_references\": \"array[string] | A list of all keyframe filenames that were provided for this chunk.\",\n          \"original_subtitles\": \"array[string] | A list of all the exact subtitle lines that were provided for this chunk.\",\n          \"llm_explanation\": \"string | A dense, self-contained descriptive paragraph explaining the key concepts, steps, and visual information presented in this chunk. This text will be used for vector embedding.\",\n          \"keywords\": \"array[string] | A list of 5-7 of the most relevant keywords that summarize the content of this chunk.\"\n        }\n        ---\n        ---\n        ### INPUT DATA ###\n        (The user will now provide the interleaved data for each 10-second segment, starting with the frames and followed by the subtitles for that segment, repeated for the entire video clip.)"
+            },
+            {
+                "type": "text",
+                "text": "--- DATA FOR SEGMENT 0-10s ---"
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00000.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00001.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00002.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00003.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00004.png"
+                }
+            },
+            {
+                "type": "text",
+                "text": "Subtitles for 0-10s:\nIn today's tech time, let's see about back propagation.What is back propagation?Back propagation is the essence of neural network training.It is the method of fine-tuning the weights of a neural network based on the error rate obtained in the previous epoch."
+            },
+            {
+                "type": "text",
+                "text": "--- DATA FOR SEGMENT 10-20s ---"
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00005.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00006.png"
+                }
+            },
+            {
+                "type": "text",
+                "text": "Subtitles for 10-20s:\nBack propagation in neural network is a short form for backward propagation of errors.It is a standard method of training artificial neural networks."
+            },
+            {
+                "type": "text",
+                "text": "--- DATA FOR SEGMENT 20-30s ---"
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00007.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00008.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00009.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00010.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00011.png"
+                }
+            },
+            {
+                "type": "text",
+                "text": "Subtitles for 20-30s:\nThis method helps calculate the gradient of a loss function with respect to all the weights in the network.How back propagation algorithm works.Inputs X, arrive through the pre-connected path.Input is modeled using real weights W."
+            },
+            {
+                "type": "text",
+                "text": "--- DATA FOR SEGMENT 30-40s ---"
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00012.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00013.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00014.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00015.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00016.png"
+                }
+            },
+            {
+                "type": "text",
+                "text": "Subtitles for 30-40s:\nThe weights are usually randomly selected.Calculate the output for every neuron from the input layer.To the hidden layers, to the output layer.Calculate the error in the outputs.Travel back from the output layer to the hidden layer to adjust the weights such that the error is decreased."
+            },
+            {
+                "type": "text",
+                "text": "--- DATA FOR SEGMENT 40-50s ---"
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00017.png"
+                }
+            },
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": "data:image/png;base64,frame_00018.png"
+                }
+            },
+            {
+                "type": "text",
+                "text": "Subtitles for 40-50s:\nKeep repeating the process until the desired output is achieved.If you have any doubt comment below, I will answer to it.Finally, don't forget to subscribe our channel."
+            }
+        ]
+    }
+]
