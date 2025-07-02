@@ -5,7 +5,7 @@ from PIL import Image
 import imagehash
 import imageio
 
-def extract_unique_frames(video_path, output_dir, similarity_threshold=5, interval_seconds=10):
+def extract_unique_frames(video_path, output_dir, similarity_threshold=15, interval_seconds=10):
     """
     Extracts unique frames from a video and generates a JSON metadata file
     grouping frames into accurately timed segments based on video duration.
@@ -113,9 +113,9 @@ def extract_unique_frames(video_path, output_dir, similarity_threshold=5, interv
 if __name__ == "__main__":
 
     # --- Run the main function ---
-    video_path = '/home/znyd/hacking/edu-cut/src/pre_processing/downloads/video/Back propagation in Machine Learning..mp4'
+    video_path = '/home/znyd/hacking/edu-cut/src/pre_processing/downloads/video/loss_func_vid.mp4'
     output_dir = "vid_frames"
-    threshold = 5
+    threshold = 15
 
     # The function will now use its default 10-second interval
     extract_unique_frames(video_path, output_dir, threshold)
