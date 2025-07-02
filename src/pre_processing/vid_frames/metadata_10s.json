@@ -3,29 +3,119 @@
         "frame_00000.png",
         "frame_00001.png",
         "frame_00002.png",
-        "frame_00003.png",
-        "frame_00004.png"
+        "frame_00003.png"
     ],
     "10-20s": [
+        "frame_00004.png",
         "frame_00005.png",
         "frame_00006.png"
     ],
     "20-30s": [
         "frame_00007.png",
-        "frame_00008.png",
-        "frame_00009.png",
-        "frame_00010.png",
-        "frame_00011.png"
+        "frame_00008.png"
     ],
     "30-40s": [
-        "frame_00012.png",
-        "frame_00013.png",
-        "frame_00014.png",
-        "frame_00015.png",
-        "frame_00016.png"
+        "frame_00009.png"
     ],
     "40-50s": [
+        "frame_00010.png"
+    ],
+    "60-70s": [
+        "frame_00011.png"
+    ],
+    "90-100s": [
+        "frame_00012.png",
+        "frame_00013.png",
+        "frame_00014.png"
+    ],
+    "110-120s": [
+        "frame_00015.png"
+    ],
+    "120-130s": [
+        "frame_00016.png",
         "frame_00017.png",
         "frame_00018.png"
+    ],
+    "140-150s": [
+        "frame_00019.png"
+    ],
+    "160-170s": [
+        "frame_00020.png",
+        "frame_00021.png"
+    ],
+    "180-190s": [
+        "frame_00022.png"
+    ],
+    "190-200s": [
+        "frame_00023.png",
+        "frame_00024.png",
+        "frame_00025.png"
+    ],
+    "200-210s": [
+        "frame_00026.png",
+        "frame_00027.png"
+    ],
+    "220-230s": [
+        "frame_00028.png"
+    ],
+    "230-240s": [
+        "frame_00029.png",
+        "frame_00030.png",
+        "frame_00031.png"
+    ],
+    "320-330s": [
+        "frame_00032.png",
+        "frame_00033.png",
+        "frame_00034.png"
+    ],
+    "330-340s": [
+        "frame_00035.png"
+    ],
+    "340-350s": [
+        "frame_00036.png",
+        "frame_00037.png"
+    ],
+    "360-370s": [
+        "frame_00038.png"
+    ],
+    "370-380s": [
+        "frame_00039.png",
+        "frame_00040.png"
+    ],
+    "380-390s": [
+        "frame_00041.png",
+        "frame_00042.png",
+        "frame_00043.png"
+    ],
+    "390-400s": [
+        "frame_00044.png",
+        "frame_00045.png"
+    ],
+    "400-410s": [
+        "frame_00046.png",
+        "frame_00047.png"
+    ],
+    "410-420s": [
+        "frame_00048.png"
+    ],
+    "430-440s": [
+        "frame_00049.png",
+        "frame_00050.png",
+        "frame_00051.png"
+    ],
+    "440-450s": [
+        "frame_00052.png",
+        "frame_00053.png"
+    ],
+    "450-460s": [
+        "frame_00054.png",
+        "frame_00055.png"
+    ],
+    "460-470s": [
+        "frame_00056.png"
+    ],
+    "480-490s": [
+        "frame_00057.png",
+        "frame_00058.png"
     ]
 }

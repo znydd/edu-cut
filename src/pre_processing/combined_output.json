@@ -5,70 +5,489 @@
             "frame_00000.png",
             "frame_00001.png",
             "frame_00002.png",
-            "frame_00003.png",
-            "frame_00004.png"
+            "frame_00003.png"
         ],
         "subtitle": [
-            "In today's tech time, let's see about back propagation.",
-            "What is back propagation?",
-            "Back propagation is the essence of neural network training.",
-            "It is the method of fine-tuning the weights of a neural network based on the error rate obtained in the previous epoch."
+            "What is the best loss function?",
+            "The age-old question in machine learning.",
+            "Will we solve this problem today?"
         ]
     },
     {
         "time_stamps": "10-20s",
         "frames": [
+            "frame_00004.png",
             "frame_00005.png",
             "frame_00006.png"
         ],
         "subtitle": [
-            "Back propagation in neural network is a short form for backward propagation of errors.",
-            "It is a standard method of training artificial neural networks."
+            "Nope, but we will talk about some loss functions, their pros and cons, and even discuss a recent paper on adaptive loss functions, so that would mean that you don't need to keep trying out different losses to find the best one that suits your needs."
         ]
     },
     {
         "time_stamps": "20-30s",
         "frames": [
             "frame_00007.png",
-            "frame_00008.png",
-            "frame_00009.png",
-            "frame_00010.png",
-            "frame_00011.png"
+            "frame_00008.png"
         ],
         "subtitle": [
-            "This method helps calculate the gradient of a loss function with respect to all the weights in the network.",
-            "How back propagation algorithm works.",
-            "Inputs X, arrive through the pre-connected path.",
-            "Input is modeled using real weights W."
+            "Fun stuff.",
+            "Okay, first, let's focus on regression.",
+            "I've got this data set here."
         ]
     },
     {
         "time_stamps": "30-40s",
         "frames": [
-            "frame_00012.png",
-            "frame_00013.png",
-            "frame_00014.png",
-            "frame_00015.png",
-            "frame_00016.png"
+            "frame_00009.png"
         ],
         "subtitle": [
-            "The weights are usually randomly selected.",
-            "Calculate the output for every neuron from the input layer.",
-            "To the hidden layers, to the output layer.",
-            "Calculate the error in the outputs.",
-            "Travel back from the output layer to the hidden layer to adjust the weights such that the error is decreased."
+            "It looks like a line can fit this data.",
+            "I'll train a linear regression model on it, and I choose to use the squared loss to minimize it.",
+            "The L2 loss."
         ]
     },
     {
         "time_stamps": "40-50s",
         "frames": [
+            "frame_00010.png"
+        ],
+        "subtitle": [
+            "My curve looks something like this.",
+            "Okay, looks pretty good.",
+            "And it's also pretty simple."
+        ]
+    },
+    {
+        "time_stamps": "50-60s",
+        "frames": [],
+        "subtitle": [
+            "But if I introduce some outliers in this data, my model responds by freaking the hell out and trying to fit those data points better.",
+            "This happens because that square term scales the errors by these outliers, so the model really wants to get these obscure points right."
+        ]
+    },
+    {
+        "time_stamps": "60-70s",
+        "frames": [
+            "frame_00011.png"
+        ],
+        "subtitle": [
+            "I'll just change the loss function to the absolute difference."
+        ]
+    },
+    {
+        "time_stamps": "70-80s",
+        "frames": [],
+        "subtitle": [
+            "My model now treats the outliers like any other data point, so it won't go out of its way for outliers if it means compromising the rest of the model."
+        ]
+    },
+    {
+        "time_stamps": "80-90s",
+        "frames": [],
+        "subtitle": [
+            "This might lead to poor predictions from time to time, but if you really don't care about the extreme cases, this will do.",
+            "Support vector regression uses this, by the way."
+        ]
+    },
+    {
+        "time_stamps": "90-100s",
+        "frames": [
+            "frame_00012.png",
+            "frame_00013.png",
+            "frame_00014.png"
+        ],
+        "subtitle": [
+            "The advantage of the squared error is the ease with which we can compute the gradient for machine learning during gradient descent."
+        ]
+    },
+    {
+        "time_stamps": "100-110s",
+        "frames": [],
+        "subtitle": [
+            "This gradient is not as simple in the absolute error case because of the points of discontinuity."
+        ]
+    },
+    {
+        "time_stamps": "110-120s",
+        "frames": [
+            "frame_00015.png"
+        ],
+        "subtitle": [
+            "The mean absolute error isn't optimized through gradient descent, but it's optimized by computing sub-gradients instead.",
+            "It adds a bit more complexity, and I'll add some reading material in the description down below."
+        ]
+    },
+    {
+        "time_stamps": "120-130s",
+        "frames": [
+            "frame_00016.png",
             "frame_00017.png",
             "frame_00018.png"
         ],
         "subtitle": [
-            "Keep repeating the process until the desired output is achieved.",
-            "If you have any doubt comment below, I will answer to it.",
-            "Finally, don't forget to subscribe our channel."
+            "We got two losses, one that loves outliers and another that ignores them.",
+            "If you think that one doesn't work, you'll just use the other, and that might be fine in most cases."
+        ]
+    },
+    {
+        "time_stamps": "130-140s",
+        "frames": [],
+        "subtitle": [
+            "But consider this.",
+            "Our data is about like 70% in one direction and 30% in the other direction."
+        ]
+    },
+    {
+        "time_stamps": "140-150s",
+        "frames": [
+            "frame_00019.png"
+        ],
+        "subtitle": [
+            "Technically, this data does not have any outliers, but our absolute loss may treat the 30% data as outliers and ignore it altogether, while the squared loss will try to capture those 30%."
+        ]
+    },
+    {
+        "time_stamps": "150-160s",
+        "frames": [],
+        "subtitle": [
+            "Both decisions can lead to poor model performance.",
+            "How do we compromise?"
+        ]
+    },
+    {
+        "time_stamps": "160-170s",
+        "frames": [
+            "frame_00020.png",
+            "frame_00021.png"
+        ],
+        "subtitle": [
+            "We can do so by using the pseudo-Huber loss.",
+            "This is the best of both losses.",
+            "If a data point has a relatively low error, we take the squared loss."
+        ]
+    },
+    {
+        "time_stamps": "170-180s",
+        "frames": [],
+        "subtitle": [
+            "If the data point is an outlier, we take the absolute loss.",
+            "The result is that it reduces the effects of outliers on the model while still being differentiable."
+        ]
+    },
+    {
+        "time_stamps": "180-190s",
+        "frames": [
+            "frame_00022.png"
+        ],
+        "subtitle": [
+            "And as such, it's slightly more complex.",
+            "The main problem here is that we have an extra hyperparameter to play with."
+        ]
+    },
+    {
+        "time_stamps": "190-200s",
+        "frames": [
+            "frame_00023.png",
+            "frame_00024.png",
+            "frame_00025.png"
+        ],
+        "subtitle": [
+            "These are the most popular regression-based losses that you see in built-in regressors.",
+            "Now for classification losses."
+        ]
+    },
+    {
+        "time_stamps": "200-210s",
+        "frames": [
+            "frame_00026.png",
+            "frame_00027.png"
+        ],
+        "subtitle": [
+            "In classification, our outputs are obviously the class.",
+            "But more precisely, it's the list of probabilities of belonging to different classes."
+        ]
+    },
+    {
+        "time_stamps": "210-220s",
+        "frames": [],
+        "subtitle": [
+            "And we just choose a class with the highest probability, cuz duh.",
+            "This list is a probability distribution.",
+            "We compare this to the ground truth, and how we compare it depends on the losses we use."
+        ]
+    },
+    {
+        "time_stamps": "220-230s",
+        "frames": [
+            "frame_00028.png"
+        ],
+        "subtitle": [
+            "So cross-entropy loss.",
+            "Entropy has its roots in information theory, so I'll explain it from that perspective."
+        ]
+    },
+    {
+        "time_stamps": "230-240s",
+        "frames": [
+            "frame_00029.png",
+            "frame_00030.png",
+            "frame_00031.png"
+        ],
+        "subtitle": [
+            "So say that there's this weather station, and it sends you a weather forecast at the beginning of each day, and it tells you what weather it is on that day using some n bits of information."
+        ]
+    },
+    {
+        "time_stamps": "240-250s",
+        "frames": [],
+        "subtitle": [
+            "In its best case, say this information can be packed in as low as three bits on average."
+        ]
+    },
+    {
+        "time_stamps": "250-260s",
+        "frames": [],
+        "subtitle": [
+            "Two bits for sunny, four bits for a rainy day, three bits for a partly cloudy day, and so on.",
+            "The entropy of a distribution is the average number of bits required to convey a piece of information, like today's weather in this case."
+        ]
+    },
+    {
+        "time_stamps": "260-270s",
+        "frames": [],
+        "subtitle": [
+            "So the entropy in this example is three."
+        ]
+    },
+    {
+        "time_stamps": "270-280s",
+        "frames": [],
+        "subtitle": [
+            "Three bits.",
+            "But the tower isn't perfect.",
+            "It's designed by engineers who have flaws themselves."
+        ]
+    },
+    {
+        "time_stamps": "280-290s",
+        "frames": [],
+        "subtitle": [
+            "There is some wastage and it is found that the tower actually sends you five bits on average.",
+            "This is cross-entropy."
+        ]
+    },
+    {
+        "time_stamps": "290-300s",
+        "frames": [],
+        "subtitle": [
+            "We are comparing the true average and the satellite's current average.",
+            "Entropy is 3 bits, but cross-entropy is 5 bits.",
+            "This means that we could have had a system that tells us the weather with just 3 bits, but we have a system currently, that is our satellite, that is using 5 bits to do the same thing."
+        ]
+    },
+    {
+        "time_stamps": "310-320s",
+        "frames": [],
+        "subtitle": [
+            "Ideally, we want these numbers to be much closer to each other.",
+            "This 2-bit difference is known as the KL or the Kolbach-Lieber divergence."
+        ]
+    },
+    {
+        "time_stamps": "320-330s",
+        "frames": [
+            "frame_00032.png",
+            "frame_00033.png",
+            "frame_00034.png"
+        ],
+        "subtitle": [
+            "This little satellite is actually similar to a model that we train to predict the weather in machine learning as a classification problem.",
+            "And so in many classification problems, cross-entropy and KL divergence are often used as loss functions to minimize."
+        ]
+    },
+    {
+        "time_stamps": "330-340s",
+        "frames": [
+            "frame_00035.png"
+        ],
+        "subtitle": [
+            "Another loss is the hinge loss, typically used in support vector machines for classification tasks."
+        ]
+    },
+    {
+        "time_stamps": "340-350s",
+        "frames": [
+            "frame_00036.png",
+            "frame_00037.png"
+        ],
+        "subtitle": [
+            "Minimizing this, we get a boundary that splits the data well and is as far away from every data point as possible."
+        ]
+    },
+    {
+        "time_stamps": "350-360s",
+        "frames": [],
+        "subtitle": [
+            "That is, it maximizes the minimum margin from the data points.",
+            "This loss penalizes data points even if they are correctly labeled, if they lie in this margin."
+        ]
+    },
+    {
+        "time_stamps": "360-370s",
+        "frames": [
+            "frame_00038.png"
+        ],
+        "subtitle": [
+            "I've made several overly mathematical videos on kernels and SVMs.",
+            "Check it out if you want to lower your self-esteem.",
+            "I'm going to wrap up this video with a paper discussion."
+        ]
+    },
+    {
+        "time_stamps": "370-380s",
+        "frames": [
+            "frame_00039.png",
+            "frame_00040.png"
+        ],
+        "subtitle": [
+            "We've taken a rough look at six common losses for classification and regression, but there are far more."
+        ]
+    },
+    {
+        "time_stamps": "380-390s",
+        "frames": [
+            "frame_00041.png",
+            "frame_00042.png",
+            "frame_00043.png"
+        ],
+        "subtitle": [
+            "Some better suited for certain problems.",
+            "We have a set of points we want to fit a regression line through.",
+            "Squared loss does it decently well.",
+            "We add outliers and try to fit it again."
+        ]
+    },
+    {
+        "time_stamps": "390-400s",
+        "frames": [
+            "frame_00044.png",
+            "frame_00045.png"
+        ],
+        "subtitle": [
+            "Doesn't look too great anymore.",
+            "So we try the pseudo-Huber loss, and this gives us better results.",
+            "But I'm not satisfied yet, so let's try some other losses."
+        ]
+    },
+    {
+        "time_stamps": "400-410s",
+        "frames": [
+            "frame_00046.png",
+            "frame_00047.png"
+        ],
+        "subtitle": [
+            "So we have the Welsh loss.",
+            "Results are trash.",
+            "The Giemann McClure loss.",
+            "It fits this data better."
+        ]
+    },
+    {
+        "time_stamps": "410-420s",
+        "frames": [
+            "frame_00048.png"
+        ],
+        "subtitle": [
+            "Now Cauchy's loss.",
+            "This fits the data even better.",
+            "I like this.",
+            "It's nice that I found the loss function I liked, but I found this by trial and error."
+        ]
+    },
+    {
+        "time_stamps": "420-430s",
+        "frames": [],
+        "subtitle": [
+            "Is there a way that I could have just used a loss function without trial and error and somehow arrived at the actual minimum that I wanted?"
+        ]
+    },
+    {
+        "time_stamps": "430-440s",
+        "frames": [
+            "frame_00049.png",
+            "frame_00050.png",
+            "frame_00051.png"
+        ],
+        "subtitle": [
+            "Turns out that all these losses that I mentioned can be generalized to this equation by setting different values for alpha, which is a shape parameter."
+        ]
+    },
+    {
+        "time_stamps": "440-450s",
+        "frames": [
+            "frame_00052.png",
+            "frame_00053.png"
+        ],
+        "subtitle": [
+            "How do we add alpha into the mix though?",
+            "Maximum likelihood estimation.",
+            "We maximize the likelihood of the probability distribution or minimize the negative log likelihood."
+        ]
+    },
+    {
+        "time_stamps": "450-460s",
+        "frames": [
+            "frame_00054.png",
+            "frame_00055.png"
+        ],
+        "subtitle": [
+            "So it becomes an adaptive loss.",
+            "This technique is typically used to derive losses mathematically."
+        ]
+    },
+    {
+        "time_stamps": "460-470s",
+        "frames": [
+            "frame_00056.png"
+        ],
+        "subtitle": [
+            "And this actually leads to some interesting results.",
+            "Here are some examples of images when we let a variational autoencoder to determine a loss and generate images."
+        ]
+    },
+    {
+        "time_stamps": "470-480s",
+        "frames": [],
+        "subtitle": [
+            "They aren't half bad.",
+            "The idea of an adaptive loss sounds like an amazing idea.",
+            "Hope you all have a better idea behind loss functions, the differences between them, and a sprinkle of research on adaptive loss functions."
+        ]
+    },
+    {
+        "time_stamps": "480-490s",
+        "frames": [
+            "frame_00057.png",
+            "frame_00058.png"
+        ],
+        "subtitle": [
+            "And so we can avoid trial and error to determine the most appropriate losses."
+        ]
+    },
+    {
+        "time_stamps": "490-500s",
+        "frames": [],
+        "subtitle": [
+            "I have resources in the description below.",
+            "If you like these videos, please subscribe to keep the lights up in my little apartment, and I will see you soon."
+        ]
+    },
+    {
+        "time_stamps": "500-502s",
+        "frames": [],
+        "subtitle": [
+            "Bye-bye."
         ]
     }
 ]

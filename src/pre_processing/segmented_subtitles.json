@@ -1,0 +1,204 @@
+{
+    "0-10s": [
+        "What is the best loss function?",
+        "The age-old question in machine learning.",
+        "Will we solve this problem today?"
+    ],
+    "10-20s": [
+        "Nope, but we will talk about some loss functions, their pros and cons, and even discuss a recent paper on adaptive loss functions, so that would mean that you don't need to keep trying out different losses to find the best one that suits your needs."
+    ],
+    "20-30s": [
+        "Fun stuff.",
+        "Okay, first, let's focus on regression.",
+        "I've got this data set here."
+    ],
+    "30-40s": [
+        "It looks like a line can fit this data.",
+        "I'll train a linear regression model on it, and I choose to use the squared loss to minimize it.",
+        "The L2 loss."
+    ],
+    "40-50s": [
+        "My curve looks something like this.",
+        "Okay, looks pretty good.",
+        "And it's also pretty simple."
+    ],
+    "50-60s": [
+        "But if I introduce some outliers in this data, my model responds by freaking the hell out and trying to fit those data points better.",
+        "This happens because that square term scales the errors by these outliers, so the model really wants to get these obscure points right."
+    ],
+    "60-70s": [
+        "I'll just change the loss function to the absolute difference."
+    ],
+    "70-80s": [
+        "My model now treats the outliers like any other data point, so it won't go out of its way for outliers if it means compromising the rest of the model."
+    ],
+    "80-90s": [
+        "This might lead to poor predictions from time to time, but if you really don't care about the extreme cases, this will do.",
+        "Support vector regression uses this, by the way."
+    ],
+    "90-100s": [
+        "The advantage of the squared error is the ease with which we can compute the gradient for machine learning during gradient descent."
+    ],
+    "100-110s": [
+        "This gradient is not as simple in the absolute error case because of the points of discontinuity."
+    ],
+    "110-120s": [
+        "The mean absolute error isn't optimized through gradient descent, but it's optimized by computing sub-gradients instead.",
+        "It adds a bit more complexity, and I'll add some reading material in the description down below."
+    ],
+    "120-130s": [
+        "We got two losses, one that loves outliers and another that ignores them.",
+        "If you think that one doesn't work, you'll just use the other, and that might be fine in most cases."
+    ],
+    "130-140s": [
+        "But consider this.",
+        "Our data is about like 70% in one direction and 30% in the other direction."
+    ],
+    "140-150s": [
+        "Technically, this data does not have any outliers, but our absolute loss may treat the 30% data as outliers and ignore it altogether, while the squared loss will try to capture those 30%."
+    ],
+    "150-160s": [
+        "Both decisions can lead to poor model performance.",
+        "How do we compromise?"
+    ],
+    "160-170s": [
+        "We can do so by using the pseudo-Huber loss.",
+        "This is the best of both losses.",
+        "If a data point has a relatively low error, we take the squared loss."
+    ],
+    "170-180s": [
+        "If the data point is an outlier, we take the absolute loss.",
+        "The result is that it reduces the effects of outliers on the model while still being differentiable."
+    ],
+    "180-190s": [
+        "And as such, it's slightly more complex.",
+        "The main problem here is that we have an extra hyperparameter to play with."
+    ],
+    "190-200s": [
+        "These are the most popular regression-based losses that you see in built-in regressors.",
+        "Now for classification losses."
+    ],
+    "200-210s": [
+        "In classification, our outputs are obviously the class.",
+        "But more precisely, it's the list of probabilities of belonging to different classes."
+    ],
+    "210-220s": [
+        "And we just choose a class with the highest probability, cuz duh.",
+        "This list is a probability distribution.",
+        "We compare this to the ground truth, and how we compare it depends on the losses we use."
+    ],
+    "220-230s": [
+        "So cross-entropy loss.",
+        "Entropy has its roots in information theory, so I'll explain it from that perspective."
+    ],
+    "230-240s": [
+        "So say that there's this weather station, and it sends you a weather forecast at the beginning of each day, and it tells you what weather it is on that day using some n bits of information."
+    ],
+    "240-250s": [
+        "In its best case, say this information can be packed in as low as three bits on average."
+    ],
+    "250-260s": [
+        "Two bits for sunny, four bits for a rainy day, three bits for a partly cloudy day, and so on.",
+        "The entropy of a distribution is the average number of bits required to convey a piece of information, like today's weather in this case."
+    ],
+    "260-270s": [
+        "So the entropy in this example is three."
+    ],
+    "270-280s": [
+        "Three bits.",
+        "But the tower isn't perfect.",
+        "It's designed by engineers who have flaws themselves."
+    ],
+    "280-290s": [
+        "There is some wastage and it is found that the tower actually sends you five bits on average.",
+        "This is cross-entropy."
+    ],
+    "290-300s": [
+        "We are comparing the true average and the satellite's current average.",
+        "Entropy is 3 bits, but cross-entropy is 5 bits.",
+        "This means that we could have had a system that tells us the weather with just 3 bits, but we have a system currently, that is our satellite, that is using 5 bits to do the same thing."
+    ],
+    "310-320s": [
+        "Ideally, we want these numbers to be much closer to each other.",
+        "This 2-bit difference is known as the KL or the Kolbach-Lieber divergence."
+    ],
+    "320-330s": [
+        "This little satellite is actually similar to a model that we train to predict the weather in machine learning as a classification problem.",
+        "And so in many classification problems, cross-entropy and KL divergence are often used as loss functions to minimize."
+    ],
+    "330-340s": [
+        "Another loss is the hinge loss, typically used in support vector machines for classification tasks."
+    ],
+    "340-350s": [
+        "Minimizing this, we get a boundary that splits the data well and is as far away from every data point as possible."
+    ],
+    "350-360s": [
+        "That is, it maximizes the minimum margin from the data points.",
+        "This loss penalizes data points even if they are correctly labeled, if they lie in this margin."
+    ],
+    "360-370s": [
+        "I've made several overly mathematical videos on kernels and SVMs.",
+        "Check it out if you want to lower your self-esteem.",
+        "I'm going to wrap up this video with a paper discussion."
+    ],
+    "370-380s": [
+        "We've taken a rough look at six common losses for classification and regression, but there are far more."
+    ],
+    "380-390s": [
+        "Some better suited for certain problems.",
+        "We have a set of points we want to fit a regression line through.",
+        "Squared loss does it decently well.",
+        "We add outliers and try to fit it again."
+    ],
+    "390-400s": [
+        "Doesn't look too great anymore.",
+        "So we try the pseudo-Huber loss, and this gives us better results.",
+        "But I'm not satisfied yet, so let's try some other losses."
+    ],
+    "400-410s": [
+        "So we have the Welsh loss.",
+        "Results are trash.",
+        "The Giemann McClure loss.",
+        "It fits this data better."
+    ],
+    "410-420s": [
+        "Now Cauchy's loss.",
+        "This fits the data even better.",
+        "I like this.",
+        "It's nice that I found the loss function I liked, but I found this by trial and error."
+    ],
+    "420-430s": [
+        "Is there a way that I could have just used a loss function without trial and error and somehow arrived at the actual minimum that I wanted?"
+    ],
+    "430-440s": [
+        "Turns out that all these losses that I mentioned can be generalized to this equation by setting different values for alpha, which is a shape parameter."
+    ],
+    "440-450s": [
+        "How do we add alpha into the mix though?",
+        "Maximum likelihood estimation.",
+        "We maximize the likelihood of the probability distribution or minimize the negative log likelihood."
+    ],
+    "450-460s": [
+        "So it becomes an adaptive loss.",
+        "This technique is typically used to derive losses mathematically."
+    ],
+    "460-470s": [
+        "And this actually leads to some interesting results.",
+        "Here are some examples of images when we let a variational autoencoder to determine a loss and generate images."
+    ],
+    "470-480s": [
+        "They aren't half bad.",
+        "The idea of an adaptive loss sounds like an amazing idea.",
+        "Hope you all have a better idea behind loss functions, the differences between them, and a sprinkle of research on adaptive loss functions."
+    ],
+    "480-490s": [
+        "And so we can avoid trial and error to determine the most appropriate losses."
+    ],
+    "490-500s": [
+        "I have resources in the description below.",
+        "If you like these videos, please subscribe to keep the lights up in my little apartment, and I will see you soon."
+    ],
+    "500-502s": [
+        "Bye-bye."
+    ]
+}
