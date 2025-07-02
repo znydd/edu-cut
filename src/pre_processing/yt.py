@@ -111,3 +111,5 @@ if __name__ == "__main__":
     # python your_script_name.py "https://www.youtube.com/watch?v=dQw4w9WgXcQ" -o "C:\\my_downloads"
 
     download_media(args.url, args.output)
+
+    #python3 yt.py "https://www.youtube.com/watch?v=QBbC3Cjsnjg"

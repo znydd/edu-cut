@@ -74,8 +74,8 @@ def convert_csv_to_segmented_json(csv_path, json_path, interval_seconds=10):
 
 if __name__ == "__main__":
     # --- Create a dummy CSV for demonstration ---
-    input_csv_file = "/home/znyd/hacking/edu-cut/src/pre_processing/downloads/backprop.csv"
-    output_json_file = "segmented_subtitles_10s.json"
+    input_csv_file = "/home/znyd/hacking/edu-cut/src/pre_processing/downloads/loss_func.csv"
+    output_json_file = "segmented_subtitles.json"
 
     # Run the main function with a 10-second interval
     convert_csv_to_segmented_json(input_csv_file, output_json_file, interval_seconds=10)

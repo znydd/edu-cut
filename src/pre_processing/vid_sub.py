@@ -68,7 +68,7 @@ def combine_json_data(frames_json_path, subtitles_json_path, output_json_path):
 if __name__ == "__main__":
     # Define file paths for our dummy data
     frames_file = "/home/znyd/hacking/edu-cut/src/pre_processing/vid_frames/metadata_10s.json"
-    subtitles_file = "/home/znyd/hacking/edu-cut/src/pre_processing/segmented_subtitles_10s.json"
+    subtitles_file = "/home/znyd/hacking/edu-cut/src/pre_processing/segmented_subtitles.json"
     output_file = "combined_output.json"
 
    
