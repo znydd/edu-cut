@@ -18,8 +18,6 @@ Your final output must be a single, valid JSON array `[ { ... }, { ... } ]` cont
 
 {
   "chunk_timestamps": "string | The time range for this chunk, which you will infer from the input context (e.g., '0-10s', '10-20s').",
-  "keyframe_references": "array[string] | A list of all keyframe filenames that were provided for this chunk.",
-  "original_subtitles": "array[string] | A list of all the exact subtitle lines that were provided for this chunk.",
   "llm_explanation": "string | A dense, self-contained descriptive paragraph explaining the key concepts, steps, and visual information presented in this chunk. This text will be used for vector embedding.",
   "keywords": "array[string] | A list of 5-7 of the most relevant keywords that summarize the content of this chunk."
 }
