@@ -1,6 +1,6 @@
 [
     {
-        "time_stamps": "0-10s",
+        "time_stamps": "0s-10s",
         "frames": [
             "frame_00000.png",
             "frame_00001.png",
@@ -8,486 +8,664 @@
             "frame_00003.png"
         ],
         "subtitle": [
-            "What is the best loss function?",
-            "The age-old question in machine learning.",
-            "Will we solve this problem today?"
+            "The fundamental, root-of-it-all building block for linear algebra is the vector."
         ]
     },
     {
-        "time_stamps": "10-20s",
+        "time_stamps": "10s-20s",
         "frames": [
             "frame_00004.png",
             "frame_00005.png",
-            "frame_00006.png"
-        ],
-        "subtitle": [
-            "Nope, but we will talk about some loss functions, their pros and cons, and even discuss a recent paper on adaptive loss functions, so that would mean that you don't need to keep trying out different losses to find the best one that suits your needs."
-        ]
-    },
-    {
-        "time_stamps": "20-30s",
-        "frames": [
+            "frame_00006.png",
             "frame_00007.png",
-            "frame_00008.png"
-        ],
-        "subtitle": [
-            "Fun stuff.",
-            "Okay, first, let's focus on regression.",
-            "I've got this data set here."
-        ]
-    },
-    {
-        "time_stamps": "30-40s",
-        "frames": [
-            "frame_00009.png"
-        ],
-        "subtitle": [
-            "It looks like a line can fit this data.",
-            "I'll train a linear regression model on it, and I choose to use the squared loss to minimize it.",
-            "The L2 loss."
-        ]
-    },
-    {
-        "time_stamps": "40-50s",
-        "frames": [
-            "frame_00010.png"
-        ],
-        "subtitle": [
-            "My curve looks something like this.",
-            "Okay, looks pretty good.",
-            "And it's also pretty simple."
-        ]
-    },
-    {
-        "time_stamps": "50-60s",
-        "frames": [],
-        "subtitle": [
-            "But if I introduce some outliers in this data, my model responds by freaking the hell out and trying to fit those data points better.",
-            "This happens because that square term scales the errors by these outliers, so the model really wants to get these obscure points right."
-        ]
-    },
-    {
-        "time_stamps": "60-70s",
-        "frames": [
-            "frame_00011.png"
-        ],
-        "subtitle": [
-            "I'll just change the loss function to the absolute difference."
-        ]
-    },
-    {
-        "time_stamps": "70-80s",
-        "frames": [],
-        "subtitle": [
-            "My model now treats the outliers like any other data point, so it won't go out of its way for outliers if it means compromising the rest of the model."
-        ]
-    },
-    {
-        "time_stamps": "80-90s",
-        "frames": [],
-        "subtitle": [
-            "This might lead to poor predictions from time to time, but if you really don't care about the extreme cases, this will do.",
-            "Support vector regression uses this, by the way."
-        ]
-    },
-    {
-        "time_stamps": "90-100s",
-        "frames": [
+            "frame_00008.png",
+            "frame_00009.png",
+            "frame_00010.png",
+            "frame_00011.png",
             "frame_00012.png",
-            "frame_00013.png",
-            "frame_00014.png"
+            "frame_00013.png"
         ],
         "subtitle": [
-            "The advantage of the squared error is the ease with which we can compute the gradient for machine learning during gradient descent."
+            "The fundamental, root-of-it-all building block for linear algebra is the vector.",
+            "So it's worth making sure that we're all on the same page about what exactly a vector is.",
+            "You see, broadly speaking, there are three distinct but related ideas about vectors, which I'll call the physics student perspective, the computer science student perspective, and the mathematician's perspective."
         ]
     },
     {
-        "time_stamps": "100-110s",
-        "frames": [],
-        "subtitle": [
-            "This gradient is not as simple in the absolute error case because of the points of discontinuity."
-        ]
-    },
-    {
-        "time_stamps": "110-120s",
+        "time_stamps": "20s-30s",
         "frames": [
-            "frame_00015.png"
+            "frame_00014.png",
+            "frame_00015.png",
+            "frame_00016.png"
         ],
         "subtitle": [
-            "The mean absolute error isn't optimized through gradient descent, but it's optimized by computing sub-gradients instead.",
-            "It adds a bit more complexity, and I'll add some reading material in the description down below."
+            "So it's worth making sure that we're all on the same page about what exactly a vector is.",
+            "You see, broadly speaking, there are three distinct but related ideas about vectors, which I'll call the physics student perspective, the computer science student perspective, and the mathematician's perspective.",
+            "The physics student perspective is that vectors are arrows pointing in space."
         ]
     },
     {
-        "time_stamps": "120-130s",
+        "time_stamps": "30s-40s",
         "frames": [
-            "frame_00016.png",
             "frame_00017.png",
             "frame_00018.png"
         ],
         "subtitle": [
-            "We got two losses, one that loves outliers and another that ignores them.",
-            "If you think that one doesn't work, you'll just use the other, and that might be fine in most cases."
+            "You see, broadly speaking, there are three distinct but related ideas about vectors, which I'll call the physics student perspective, the computer science student perspective, and the mathematician's perspective.",
+            "The physics student perspective is that vectors are arrows pointing in space.",
+            "What defines a given vector is its length and the direction it's pointing, but as long as those two facts are the same, you can move it all around and it's still the same vector."
         ]
     },
     {
-        "time_stamps": "130-140s",
+        "time_stamps": "40s-50s",
         "frames": [],
         "subtitle": [
-            "But consider this.",
-            "Our data is about like 70% in one direction and 30% in the other direction."
+            "What defines a given vector is its length and the direction it's pointing, but as long as those two facts are the same, you can move it all around and it's still the same vector.",
+            "Vectors that live in the flat plane are two-dimensional, and those sitting in broader space that you and I live in are three-dimensional."
         ]
     },
     {
-        "time_stamps": "140-150s",
+        "time_stamps": "50s-60s",
         "frames": [
-            "frame_00019.png"
-        ],
-        "subtitle": [
-            "Technically, this data does not have any outliers, but our absolute loss may treat the 30% data as outliers and ignore it altogether, while the squared loss will try to capture those 30%."
-        ]
-    },
-    {
-        "time_stamps": "150-160s",
-        "frames": [],
-        "subtitle": [
-            "Both decisions can lead to poor model performance.",
-            "How do we compromise?"
-        ]
-    },
-    {
-        "time_stamps": "160-170s",
-        "frames": [
+            "frame_00019.png",
             "frame_00020.png",
             "frame_00021.png"
         ],
         "subtitle": [
-            "We can do so by using the pseudo-Huber loss.",
-            "This is the best of both losses.",
-            "If a data point has a relatively low error, we take the squared loss."
+            "Vectors that live in the flat plane are two-dimensional, and those sitting in broader space that you and I live in are three-dimensional.",
+            "For example, let's say you were doing some analytics about house prices, and the only features you cared about were square footage and price."
         ]
     },
     {
-        "time_stamps": "170-180s",
+        "time_stamps": "60s-70s",
         "frames": [],
         "subtitle": [
-            "If the data point is an outlier, we take the absolute loss.",
-            "The result is that it reduces the effects of outliers on the model while still being differentiable."
+            "For example, let's say you were doing some analytics about house prices, and the only features you cared about were square footage and price.",
+            "Notice, the order matters here."
         ]
     },
     {
-        "time_stamps": "180-190s",
+        "time_stamps": "70s-80s",
+        "frames": [],
+        "subtitle": [
+            "Notice, the order matters here.",
+            "In the lingo, you'd be modeling houses as two-dimensional vectors, where in this context, vector is pretty much just a fancy word for list, and what makes it two-dimensional is the fact that the length of that list is 2."
+        ]
+    },
+    {
+        "time_stamps": "80s-90s",
         "frames": [
-            "frame_00022.png"
+            "frame_00022.png",
+            "frame_00023.png"
         ],
         "subtitle": [
-            "And as such, it's slightly more complex.",
-            "The main problem here is that we have an extra hyperparameter to play with."
+            "In the lingo, you'd be modeling houses as two-dimensional vectors, where in this context, vector is pretty much just a fancy word for list, and what makes it two-dimensional is the fact that the length of that list is 2.",
+            "The mathematician, on the other hand, seeks to generalize both these views, basically saying that a vector can be anything where there's a sensible notion of adding two vectors and multiplying a vector by a number, operations that I'll talk about later on in this video."
         ]
     },
     {
-        "time_stamps": "190-200s",
+        "time_stamps": "90s-100s",
+        "frames": [],
+        "subtitle": [
+            "The mathematician, on the other hand, seeks to generalize both these views, basically saying that a vector can be anything where there's a sensible notion of adding two vectors and multiplying a vector by a number, operations that I'll talk about later on in this video.",
+            "The details of this view are rather abstract, and I actually think it's healthy to ignore it until the last video of this series, favoring a more concrete setting in the interim."
+        ]
+    },
+    {
+        "time_stamps": "100s-110s",
+        "frames": [],
+        "subtitle": [
+            "The details of this view are rather abstract, and I actually think it's healthy to ignore it until the last video of this series, favoring a more concrete setting in the interim.",
+            "But the reason I bring it up here is that it hints at the fact that the ideas of vector addition and multiplication by numbers will play an important role throughout linear algebra."
+        ]
+    },
+    {
+        "time_stamps": "110s-120s",
+        "frames": [],
+        "subtitle": [
+            "But the reason I bring it up here is that it hints at the fact that the ideas of vector addition and multiplication by numbers will play an important role throughout linear algebra.",
+            "But before I talk about those operations, let's just settle in on a specific thought to have in mind when I say the word vector."
+        ]
+    },
+    {
+        "time_stamps": "120s-130s",
         "frames": [
-            "frame_00023.png",
-            "frame_00024.png",
-            "frame_00025.png"
+            "frame_00024.png"
         ],
         "subtitle": [
-            "These are the most popular regression-based losses that you see in built-in regressors.",
-            "Now for classification losses."
+            "But before I talk about those operations, let's just settle in on a specific thought to have in mind when I say the word vector.",
+            "Given the geometric focus that I'm shooting for here, whenever I introduce a new topic involving vectors, I want you to first think about an arrow, and specifically, think about that arrow inside a coordinate system, like the xy plane, with its tail sitting at the origin."
         ]
     },
     {
-        "time_stamps": "200-210s",
+        "time_stamps": "130s-140s",
         "frames": [
+            "frame_00025.png",
             "frame_00026.png",
             "frame_00027.png"
         ],
         "subtitle": [
-            "In classification, our outputs are obviously the class.",
-            "But more precisely, it's the list of probabilities of belonging to different classes."
+            "Given the geometric focus that I'm shooting for here, whenever I introduce a new topic involving vectors, I want you to first think about an arrow, and specifically, think about that arrow inside a coordinate system, like the xy plane, with its tail sitting at the origin.",
+            "This is a little bit different from the physics student perspective, where vectors can freely sit anywhere they want in space."
         ]
     },
     {
-        "time_stamps": "210-220s",
-        "frames": [],
-        "subtitle": [
-            "And we just choose a class with the highest probability, cuz duh.",
-            "This list is a probability distribution.",
-            "We compare this to the ground truth, and how we compare it depends on the losses we use."
-        ]
-    },
-    {
-        "time_stamps": "220-230s",
+        "time_stamps": "140s-150s",
         "frames": [
-            "frame_00028.png"
-        ],
-        "subtitle": [
-            "So cross-entropy loss.",
-            "Entropy has its roots in information theory, so I'll explain it from that perspective."
-        ]
-    },
-    {
-        "time_stamps": "230-240s",
-        "frames": [
+            "frame_00028.png",
             "frame_00029.png",
             "frame_00030.png",
-            "frame_00031.png"
-        ],
-        "subtitle": [
-            "So say that there's this weather station, and it sends you a weather forecast at the beginning of each day, and it tells you what weather it is on that day using some n bits of information."
-        ]
-    },
-    {
-        "time_stamps": "240-250s",
-        "frames": [],
-        "subtitle": [
-            "In its best case, say this information can be packed in as low as three bits on average."
-        ]
-    },
-    {
-        "time_stamps": "250-260s",
-        "frames": [],
-        "subtitle": [
-            "Two bits for sunny, four bits for a rainy day, three bits for a partly cloudy day, and so on.",
-            "The entropy of a distribution is the average number of bits required to convey a piece of information, like today's weather in this case."
-        ]
-    },
-    {
-        "time_stamps": "260-270s",
-        "frames": [],
-        "subtitle": [
-            "So the entropy in this example is three."
-        ]
-    },
-    {
-        "time_stamps": "270-280s",
-        "frames": [],
-        "subtitle": [
-            "Three bits.",
-            "But the tower isn't perfect.",
-            "It's designed by engineers who have flaws themselves."
-        ]
-    },
-    {
-        "time_stamps": "280-290s",
-        "frames": [],
-        "subtitle": [
-            "There is some wastage and it is found that the tower actually sends you five bits on average.",
-            "This is cross-entropy."
-        ]
-    },
-    {
-        "time_stamps": "290-300s",
-        "frames": [],
-        "subtitle": [
-            "We are comparing the true average and the satellite's current average.",
-            "Entropy is 3 bits, but cross-entropy is 5 bits.",
-            "This means that we could have had a system that tells us the weather with just 3 bits, but we have a system currently, that is our satellite, that is using 5 bits to do the same thing."
-        ]
-    },
-    {
-        "time_stamps": "310-320s",
-        "frames": [],
-        "subtitle": [
-            "Ideally, we want these numbers to be much closer to each other.",
-            "This 2-bit difference is known as the KL or the Kolbach-Lieber divergence."
-        ]
-    },
-    {
-        "time_stamps": "320-330s",
-        "frames": [
+            "frame_00031.png",
             "frame_00032.png",
             "frame_00033.png",
-            "frame_00034.png"
+            "frame_00034.png",
+            "frame_00035.png",
+            "frame_00036.png"
         ],
         "subtitle": [
-            "This little satellite is actually similar to a model that we train to predict the weather in machine learning as a classification problem.",
-            "And so in many classification problems, cross-entropy and KL divergence are often used as loss functions to minimize."
+            "Given the geometric focus that I'm shooting for here, whenever I introduce a new topic involving vectors, I want you to first think about an arrow, and specifically, think about that arrow inside a coordinate system, like the xy plane, with its tail sitting at the origin.",
+            "This is a little bit different from the physics student perspective, where vectors can freely sit anywhere they want in space.",
+            "In linear algebra, it's almost always the case that your vector will be rooted at the origin.",
+            "Then, once you understand a new concept in the context of arrows in space, we'll translate it over to the list of numbers point of view, which we can do by considering the coordinates of the vector."
         ]
     },
     {
-        "time_stamps": "330-340s",
+        "time_stamps": "150s-160s",
         "frames": [
-            "frame_00035.png"
-        ],
-        "subtitle": [
-            "Another loss is the hinge loss, typically used in support vector machines for classification tasks."
-        ]
-    },
-    {
-        "time_stamps": "340-350s",
-        "frames": [
-            "frame_00036.png",
             "frame_00037.png"
         ],
         "subtitle": [
-            "Minimizing this, we get a boundary that splits the data well and is as far away from every data point as possible."
+            "In linear algebra, it's almost always the case that your vector will be rooted at the origin.",
+            "Then, once you understand a new concept in the context of arrows in space, we'll translate it over to the list of numbers point of view, which we can do by considering the coordinates of the vector."
         ]
     },
     {
-        "time_stamps": "350-360s",
-        "frames": [],
-        "subtitle": [
-            "That is, it maximizes the minimum margin from the data points.",
-            "This loss penalizes data points even if they are correctly labeled, if they lie in this margin."
-        ]
-    },
-    {
-        "time_stamps": "360-370s",
+        "time_stamps": "160s-170s",
         "frames": [
-            "frame_00038.png"
+            "frame_00038.png",
+            "frame_00039.png"
         ],
         "subtitle": [
-            "I've made several overly mathematical videos on kernels and SVMs.",
-            "Check it out if you want to lower your self-esteem.",
-            "I'm going to wrap up this video with a paper discussion."
+            "Then, once you understand a new concept in the context of arrows in space, we'll translate it over to the list of numbers point of view, which we can do by considering the coordinates of the vector.",
+            "Now, while I'm sure that many of you are already familiar with this coordinate system, it's worth walking through explicitly, since this is where all of the important back and forth happens between the two perspectives of linear algebra."
         ]
     },
     {
-        "time_stamps": "370-380s",
+        "time_stamps": "170s-180s",
         "frames": [
-            "frame_00039.png",
             "frame_00040.png"
         ],
         "subtitle": [
-            "We've taken a rough look at six common losses for classification and regression, but there are far more."
+            "Now, while I'm sure that many of you are already familiar with this coordinate system, it's worth walking through explicitly, since this is where all of the important back and forth happens between the two perspectives of linear algebra.",
+            "Focusing our attention on two dimensions for the moment, you have a horizontal line, called the x-axis, and a vertical line, called the y-axis.",
+            "The place where they intersect is called the origin, which you should think of as the center of space and the root of all vectors."
         ]
     },
     {
-        "time_stamps": "380-390s",
+        "time_stamps": "180s-190s",
         "frames": [
             "frame_00041.png",
             "frame_00042.png",
             "frame_00043.png"
         ],
         "subtitle": [
-            "Some better suited for certain problems.",
-            "We have a set of points we want to fit a regression line through.",
-            "Squared loss does it decently well.",
-            "We add outliers and try to fit it again."
+            "Focusing our attention on two dimensions for the moment, you have a horizontal line, called the x-axis, and a vertical line, called the y-axis.",
+            "The place where they intersect is called the origin, which you should think of as the center of space and the root of all vectors.",
+            "After choosing an arbitrary length to represent 1, you make tick marks on each axis to represent this distance."
         ]
     },
     {
-        "time_stamps": "390-400s",
+        "time_stamps": "190s-200s",
+        "frames": [
+            "frame_00043.png",
+            "frame_00044.png"
+        ],
+        "subtitle": [
+            "After choosing an arbitrary length to represent 1, you make tick marks on each axis to represent this distance.",
+            "When I want to convey the idea of 2D space as a whole, which you'll see comes up a lot in these videos, I'll extend these tick marks to make grid lines, but right now they'll actually get a little bit in the way."
+        ]
+    },
+    {
+        "time_stamps": "200s-210s",
         "frames": [
             "frame_00044.png",
             "frame_00045.png"
         ],
         "subtitle": [
-            "Doesn't look too great anymore.",
-            "So we try the pseudo-Huber loss, and this gives us better results.",
-            "But I'm not satisfied yet, so let's try some other losses."
+            "When I want to convey the idea of 2D space as a whole, which you'll see comes up a lot in these videos, I'll extend these tick marks to make grid lines, but right now they'll actually get a little bit in the way.",
+            "The coordinates of a vector is a pair of numbers that basically gives instructions for how to get from the tail of that vector, at the origin, to its tip.",
+            "The first number tells you how far to walk along the x-axis, positive numbers indicating rightward motion, negative numbers indicating leftward motion, and the second number tells you how far to walk parallel to the y-axis after that, positive numbers indicating upward motion, and negative numbers indicating downward motion."
         ]
     },
     {
-        "time_stamps": "400-410s",
+        "time_stamps": "210s-220s",
+        "frames": [],
+        "subtitle": [
+            "The coordinates of a vector is a pair of numbers that basically gives instructions for how to get from the tail of that vector, at the origin, to its tip.",
+            "The first number tells you how far to walk along the x-axis, positive numbers indicating rightward motion, negative numbers indicating leftward motion, and the second number tells you how far to walk parallel to the y-axis after that, positive numbers indicating upward motion, and negative numbers indicating downward motion."
+        ]
+    },
+    {
+        "time_stamps": "220s-230s",
+        "frames": [],
+        "subtitle": [
+            "The first number tells you how far to walk along the x-axis, positive numbers indicating rightward motion, negative numbers indicating leftward motion, and the second number tells you how far to walk parallel to the y-axis after that, positive numbers indicating upward motion, and negative numbers indicating downward motion.",
+            "To distinguish vectors from points, the convention is to write this pair of numbers vertically, with square brackets around them."
+        ]
+    },
+    {
+        "time_stamps": "230s-240s",
         "frames": [
-            "frame_00046.png",
-            "frame_00047.png"
+            "frame_00046.png"
         ],
         "subtitle": [
-            "So we have the Welsh loss.",
-            "Results are trash.",
-            "The Giemann McClure loss.",
-            "It fits this data better."
+            "To distinguish vectors from points, the convention is to write this pair of numbers vertically, with square brackets around them.",
+            "Every pair of numbers gives you one and only one vector, and every vector is associated with one and only one pair of numbers."
         ]
     },
     {
-        "time_stamps": "410-420s",
+        "time_stamps": "240s-250s",
         "frames": [
+            "frame_00047.png",
             "frame_00048.png"
         ],
         "subtitle": [
-            "Now Cauchy's loss.",
-            "This fits the data even better.",
-            "I like this.",
-            "It's nice that I found the loss function I liked, but I found this by trial and error."
+            "Every pair of numbers gives you one and only one vector, and every vector is associated with one and only one pair of numbers.",
+            "Well, you add a third axis, called the z-axis, which is perpendicular to both the x and y-axes, and in this case, each vector is associated with an ordered triplet of numbers."
         ]
     },
     {
-        "time_stamps": "420-430s",
+        "time_stamps": "250s-260s",
         "frames": [],
         "subtitle": [
-            "Is there a way that I could have just used a loss function without trial and error and somehow arrived at the actual minimum that I wanted?"
+            "Well, you add a third axis, called the z-axis, which is perpendicular to both the x and y-axes, and in this case, each vector is associated with an ordered triplet of numbers.",
+            "The first tells you how far to move along the x-axis, the second tells you how far to move parallel to the y-axis, and the third one tells you how far to then move parallel to this new z-axis."
         ]
     },
     {
-        "time_stamps": "430-440s",
+        "time_stamps": "260s-270s",
         "frames": [
-            "frame_00049.png",
-            "frame_00050.png",
+            "frame_00049.png"
+        ],
+        "subtitle": [
+            "The first tells you how far to move along the x-axis, the second tells you how far to move parallel to the y-axis, and the third one tells you how far to then move parallel to this new z-axis.",
+            "Every triplet of numbers gives you one unique vector in space, and every vector in space gives you exactly one triplet of numbers."
+        ]
+    },
+    {
+        "time_stamps": "270s-280s",
+        "frames": [
+            "frame_00050.png"
+        ],
+        "subtitle": [
+            "Every triplet of numbers gives you one unique vector in space, and every vector in space gives you exactly one triplet of numbers.",
+            "Alright, so back to vector addition and multiplication by numbers.",
+            "After all, every topic in linear algebra is going to center around these two operations."
+        ]
+    },
+    {
+        "time_stamps": "280s-290s",
+        "frames": [
             "frame_00051.png"
         ],
         "subtitle": [
-            "Turns out that all these losses that I mentioned can be generalized to this equation by setting different values for alpha, which is a shape parameter."
+            "Alright, so back to vector addition and multiplication by numbers.",
+            "After all, every topic in linear algebra is going to center around these two operations.",
+            "Let's say we have two vectors, one pointing up and a little to the right, and the other one pointing right and down a bit."
         ]
     },
     {
-        "time_stamps": "440-450s",
+        "time_stamps": "290s-300s",
         "frames": [
             "frame_00052.png",
             "frame_00053.png"
         ],
         "subtitle": [
-            "How do we add alpha into the mix though?",
-            "Maximum likelihood estimation.",
-            "We maximize the likelihood of the probability distribution or minimize the negative log likelihood."
+            "Let's say we have two vectors, one pointing up and a little to the right, and the other one pointing right and down a bit.",
+            "To add these two vectors, move the second one so that its tail sits at the tip of the first one.",
+            "Then, if you draw a new vector from the tail of the first one to where the tip of the second one now sits, that new vector is their sum."
         ]
     },
     {
-        "time_stamps": "450-460s",
+        "time_stamps": "300s-310s",
         "frames": [
-            "frame_00054.png",
-            "frame_00055.png"
+            "frame_00054.png"
         ],
         "subtitle": [
-            "So it becomes an adaptive loss.",
-            "This technique is typically used to derive losses mathematically."
+            "To add these two vectors, move the second one so that its tail sits at the tip of the first one.",
+            "Then, if you draw a new vector from the tail of the first one to where the tip of the second one now sits, that new vector is their sum."
         ]
     },
     {
-        "time_stamps": "460-470s",
+        "time_stamps": "310s-320s",
         "frames": [
-            "frame_00056.png"
+            "frame_00055.png",
+            "frame_00056.png",
+            "frame_00057.png"
         ],
         "subtitle": [
-            "And this actually leads to some interesting results.",
-            "Here are some examples of images when we let a variational autoencoder to determine a loss and generate images."
+            "Now, why is this a reasonable thing to do?"
         ]
     },
     {
-        "time_stamps": "470-480s",
-        "frames": [],
-        "subtitle": [
-            "They aren't half bad.",
-            "The idea of an adaptive loss sounds like an amazing idea.",
-            "Hope you all have a better idea behind loss functions, the differences between them, and a sprinkle of research on adaptive loss functions."
-        ]
-    },
-    {
-        "time_stamps": "480-490s",
+        "time_stamps": "320s-330s",
         "frames": [
-            "frame_00057.png",
-            "frame_00058.png"
+            "frame_00058.png",
+            "frame_00059.png"
         ],
         "subtitle": [
-            "And so we can avoid trial and error to determine the most appropriate losses."
+            "Now, why is this a reasonable thing to do?",
+            "Well, the way I like to think about it is that each vector represents a certain movement, a step with a certain distance and direction in space."
         ]
     },
     {
-        "time_stamps": "490-500s",
-        "frames": [],
+        "time_stamps": "330s-340s",
+        "frames": [
+            "frame_00060.png",
+            "frame_00061.png",
+            "frame_00062.png",
+            "frame_00063.png",
+            "frame_00064.png",
+            "frame_00065.png"
+        ],
         "subtitle": [
-            "I have resources in the description below.",
-            "If you like these videos, please subscribe to keep the lights up in my little apartment, and I will see you soon."
+            "Well, the way I like to think about it is that each vector represents a certain movement, a step with a certain distance and direction in space.",
+            "And, if you take a step along the first vector, then take a step in the direction and distance described by the second vector, the overall effect is just the same as if you moved along the sum of those two vectors to start with."
         ]
     },
     {
-        "time_stamps": "500-502s",
+        "time_stamps": "340s-350s",
+        "frames": [
+            "frame_00066.png",
+            "frame_00067.png",
+            "frame_00068.png"
+        ],
+        "subtitle": [
+            "And, if you take a step along the first vector, then take a step in the direction and distance described by the second vector, the overall effect is just the same as if you moved along the sum of those two vectors to start with.",
+            "You could think about this as an extension of how we think about adding numbers on a number line.",
+            "One way that we teach kids to think about this, say with 2 plus 5, is to think of moving two steps to the right, followed by another 5 steps to the right."
+        ]
+    },
+    {
+        "time_stamps": "350s-360s",
+        "frames": [
+            "frame_00069.png"
+        ],
+        "subtitle": [
+            "You could think about this as an extension of how we think about adding numbers on a number line.",
+            "One way that we teach kids to think about this, say with 2 plus 5, is to think of moving two steps to the right, followed by another 5 steps to the right.",
+            "The overall effect is the same as if you just took 7 steps to the right."
+        ]
+    },
+    {
+        "time_stamps": "360s-370s",
+        "frames": [
+            "frame_00070.png",
+            "frame_00071.png",
+            "frame_00072.png",
+            "frame_00073.png"
+        ],
+        "subtitle": [
+            "The overall effect is the same as if you just took 7 steps to the right.",
+            "The first vector here has coordinates 1, 2, and the second one has coordinates 3, negative 1."
+        ]
+    },
+    {
+        "time_stamps": "370s-380s",
         "frames": [],
         "subtitle": [
-            "Bye-bye."
+            "The first vector here has coordinates 1, 2, and the second one has coordinates 3, negative 1.",
+            "When you take the vector sum using this tip-to-tail method, you can think of a four-step path from the origin to the tip of the second vector."
+        ]
+    },
+    {
+        "time_stamps": "380s-390s",
+        "frames": [],
+        "subtitle": [
+            "When you take the vector sum using this tip-to-tail method, you can think of a four-step path from the origin to the tip of the second vector.",
+            "Reorganizing these steps so that you first do all of the rightward motion, then do all the vertical motion, you can read it as saying, first move 1 plus 3 to the right, then move 2 minus 1 up."
+        ]
+    },
+    {
+        "time_stamps": "390s-400s",
+        "frames": [
+            "frame_00074.png"
+        ],
+        "subtitle": [
+            "Reorganizing these steps so that you first do all of the rightward motion, then do all the vertical motion, you can read it as saying, first move 1 plus 3 to the right, then move 2 minus 1 up.",
+            "So the new vector has coordinates 1 plus 3 and 2 plus negative 1."
+        ]
+    },
+    {
+        "time_stamps": "400s-410s",
+        "frames": [],
+        "subtitle": [
+            "So the new vector has coordinates 1 plus 3 and 2 plus negative 1.",
+            "In general, vector addition in this list of numbers conception looks like matching up their terms and adding each one together."
+        ]
+    },
+    {
+        "time_stamps": "410s-420s",
+        "frames": [
+            "frame_00075.png",
+            "frame_00076.png",
+            "frame_00077.png"
+        ],
+        "subtitle": [
+            "In general, vector addition in this list of numbers conception looks like matching up their terms and adding each one together.",
+            "Now this is best understood just by looking at a few examples."
+        ]
+    },
+    {
+        "time_stamps": "420s-430s",
+        "frames": [
+            "frame_00078.png",
+            "frame_00079.png",
+            "frame_00080.png"
+        ],
+        "subtitle": [
+            "Now this is best understood just by looking at a few examples.",
+            "If you take the number 2 and multiply it by a given vector, it means you stretch out that vector so that it's 2 times as long as when you started.",
+            "If you multiply that vector by, say, 1 third, it means you squish it down so that it's 1 3rd the original length."
+        ]
+    },
+    {
+        "time_stamps": "430s-440s",
+        "frames": [],
+        "subtitle": [
+            "If you take the number 2 and multiply it by a given vector, it means you stretch out that vector so that it's 2 times as long as when you started.",
+            "If you multiply that vector by, say, 1 third, it means you squish it down so that it's 1 3rd the original length.",
+            "When you multiply it by a negative number, like negative 1.8, then the vector first gets flipped around, then stretched out by that factor of 1.8."
+        ]
+    },
+    {
+        "time_stamps": "440s-450s",
+        "frames": [
+            "frame_00081.png",
+            "frame_00082.png"
+        ],
+        "subtitle": [
+            "When you multiply it by a negative number, like negative 1.8, then the vector first gets flipped around, then stretched out by that factor of 1.8.",
+            "This process of stretching or squishing or sometimes reversing the direction of a vector is called scaling."
+        ]
+    },
+    {
+        "time_stamps": "450s-460s",
+        "frames": [
+            "frame_00083.png",
+            "frame_00084.png"
+        ],
+        "subtitle": [
+            "This process of stretching or squishing or sometimes reversing the direction of a vector is called scaling.",
+            "And whenever you catch a number, like 2 or 1 third or negative 1.8, acting like this, scaling some vector, you call it a scalar."
+        ]
+    },
+    {
+        "time_stamps": "460s-470s",
+        "frames": [
+            "frame_00085.png"
+        ],
+        "subtitle": [
+            "And whenever you catch a number, like 2 or 1 third or negative 1.8, acting like this, scaling some vector, you call it a scalar.",
+            "In fact, throughout linear algebra, one of the main things that numbers do is scale vectors, so it's common to use the word scalar pretty much interchangeably with the word number."
+        ]
+    },
+    {
+        "time_stamps": "470s-480s",
+        "frames": [
+            "frame_00086.png",
+            "frame_00087.png"
+        ],
+        "subtitle": [
+            "In fact, throughout linear algebra, one of the main things that numbers do is scale vectors, so it's common to use the word scalar pretty much interchangeably with the word number.",
+            "Numerically, stretching out a vector by a factor of, say, 2 corresponds with multiplying each of its components by that factor, 2.",
+            "So in the conception of vectors as lists of numbers, multiplying a given vector by a scalar means multiplying each one of those components by that scalar."
+        ]
+    },
+    {
+        "time_stamps": "480s-490s",
+        "frames": [
+            "frame_00088.png"
+        ],
+        "subtitle": [
+            "Numerically, stretching out a vector by a factor of, say, 2 corresponds with multiplying each of its components by that factor, 2.",
+            "So in the conception of vectors as lists of numbers, multiplying a given vector by a scalar means multiplying each one of those components by that scalar.",
+            "You'll see in the following videos what I mean when I say that linear algebra topics tend to revolve around these two fundamental operations, vector addition and scalar multiplication."
+        ]
+    },
+    {
+        "time_stamps": "490s-500s",
+        "frames": [
+            "frame_00088.png"
+        ],
+        "subtitle": [
+            "You'll see in the following videos what I mean when I say that linear algebra topics tend to revolve around these two fundamental operations, vector addition and scalar multiplication.",
+            "And I'll talk more in the last video about how and why the mathematician thinks only about these operations, independent and abstracted away from however you choose to represent vectors."
+        ]
+    },
+    {
+        "time_stamps": "500s-510s",
+        "frames": [
+            "frame_00089.png",
+            "frame_00090.png",
+            "frame_00091.png",
+            "frame_00092.png",
+            "frame_00093.png",
+            "frame_00094.png"
+        ],
+        "subtitle": [
+            "You'll see in the following videos what I mean when I say that linear algebra topics tend to revolve around these two fundamental operations, vector addition and scalar multiplication.",
+            "And I'll talk more in the last video about how and why the mathematician thinks only about these operations, independent and abstracted away from however you choose to represent vectors.",
+            "In truth, it doesn't matter whether you think about vectors as fundamentally being arrows in space, like I'm suggesting you do, that happen to have a nice numerical representation, or fundamentally as lists of numbers that happen to have a nice geometric interpretation."
+        ]
+    },
+    {
+        "time_stamps": "510s-520s",
+        "frames": [
+            "frame_00095.png"
+        ],
+        "subtitle": [
+            "In truth, it doesn't matter whether you think about vectors as fundamentally being arrows in space, like I'm suggesting you do, that happen to have a nice numerical representation, or fundamentally as lists of numbers that happen to have a nice geometric interpretation."
+        ]
+    },
+    {
+        "time_stamps": "520s-530s",
+        "frames": [
+            "frame_00096.png"
+        ],
+        "subtitle": [
+            "In truth, it doesn't matter whether you think about vectors as fundamentally being arrows in space, like I'm suggesting you do, that happen to have a nice numerical representation, or fundamentally as lists of numbers that happen to have a nice geometric interpretation.",
+            "The usefulness of linear algebra has less to do with either one of these views than it does with the ability to translate back and forth between them.",
+            "It gives the data analyst a nice way to conceptualize many lists of numbers in a visual way, which can seriously clarify patterns in data and give a global view of what certain operations do."
+        ]
+    },
+    {
+        "time_stamps": "530s-540s",
+        "frames": [
+            "frame_00096.png",
+            "frame_00097.png",
+            "frame_00098.png",
+            "frame_00099.png",
+            "frame_00100.png",
+            "frame_00101.png",
+            "frame_00102.png",
+            "frame_00103.png",
+            "frame_00104.png"
+        ],
+        "subtitle": [
+            "The usefulness of linear algebra has less to do with either one of these views than it does with the ability to translate back and forth between them.",
+            "It gives the data analyst a nice way to conceptualize many lists of numbers in a visual way, which can seriously clarify patterns in data and give a global view of what certain operations do.",
+            "And on the flip side, it gives people like physicists and computer graphics programmers a language to describe space and the manipulation of space using numbers that can be crunched and run through a computer."
+        ]
+    },
+    {
+        "time_stamps": "540s-550s",
+        "frames": [
+            "frame_00105.png",
+            "frame_00106.png",
+            "frame_00107.png",
+            "frame_00108.png",
+            "frame_00109.png",
+            "frame_00110.png",
+            "frame_00111.png",
+            "frame_00112.png",
+            "frame_00113.png"
+        ],
+        "subtitle": [
+            "It gives the data analyst a nice way to conceptualize many lists of numbers in a visual way, which can seriously clarify patterns in data and give a global view of what certain operations do.",
+            "And on the flip side, it gives people like physicists and computer graphics programmers a language to describe space and the manipulation of space using numbers that can be crunched and run through a computer."
+        ]
+    },
+    {
+        "time_stamps": "550s-560s",
+        "frames": [
+            "frame_00114.png",
+            "frame_00115.png"
+        ],
+        "subtitle": [
+            "And on the flip side, it gives people like physicists and computer graphics programmers a language to describe space and the manipulation of space using numbers that can be crunched and run through a computer.",
+            "When I do mathy animations, for example, I start by thinking about what's actually going on in space and then get the computer to represent things numerically, thereby figuring out where to place the pixels on the screen."
+        ]
+    },
+    {
+        "time_stamps": "560s-570s",
+        "frames": [
+            "frame_00116.png",
+            "frame_00117.png",
+            "frame_00118.png"
+        ],
+        "subtitle": [
+            "When I do mathy animations, for example, I start by thinking about what's actually going on in space and then get the computer to represent things numerically, thereby figuring out where to place the pixels on the screen.",
+            "So there are your vector basics, and in the next video, I'll start getting into some pretty neat concepts surrounding vectors, like span, bases, and linear dependence."
+        ]
+    },
+    {
+        "time_stamps": "570s-580s",
+        "frames": [
+            "frame_00119.png",
+            "frame_00120.png",
+            "frame_00121.png",
+            "frame_00122.png",
+            "frame_00123.png",
+            "frame_00124.png",
+            "frame_00125.png"
+        ],
+        "subtitle": [
+            "So there are your vector basics, and in the next video, I'll start getting into some pretty neat concepts surrounding vectors, like span, bases, and linear dependence."
+        ]
+    },
+    {
+        "time_stamps": "580s-590s",
+        "frames": [],
+        "subtitle": [
+            "..Silent/No one is not taking.."
+        ]
+    },
+    {
+        "time_stamps": "590s-591s",
+        "frames": [],
+        "subtitle": [
+            "..Silent/No one is not taking.."
         ]
     }
 ]
