@@ -14,3 +14,4 @@ SmolVLM2-256M-Video-Instruct-dense-caption_full.zip
 src/pre_processing/vid_frames/*.png
 src/pre_processing/downloads/*
 !src/pre_processing/downloads/*.csv
+src/pipeline/chromadb
