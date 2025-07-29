@@ -17,4 +17,7 @@ src/pre_processing/downloads/*
 src/pipeline/chromadb
 src/pre_processing/smart_cut_out/*
 *.wav
+*.mp3
 *.mp4
+*.png
+*.jpg

@@ -2,7 +2,8 @@ import argparse
 import yt_dlp
 import os
 
-def download_media(url, output_path='downloads'):
+
+def download_media(url, output_path="downloads"):
     """
     Downloads both the best quality video and a separate MP3 audio file
     from a YouTube URL using yt-dlp.
@@ -14,30 +15,32 @@ def download_media(url, output_path='downloads'):
     """
     # --- 1. Create Output Directories ---
     # Create separate subdirectories for video and audio to keep them organized.
-    video_output_path = os.path.join(output_path, 'video')
-    audio_output_path = os.path.join(output_path, 'audio')
+    video_output_path = os.path.join(output_path, "video")
+    audio_output_path = os.path.join(output_path, "audio")
     os.makedirs(video_output_path, exist_ok=True)
     os.makedirs(audio_output_path, exist_ok=True)
-    
+
     # --- 2. Configure Download Options ---
-    
+
     # Options for video download (best quality MP4)
     video_opts = {
-        'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
-        'outtmpl': os.path.join(video_output_path, '%(title)s.%(ext)s'),
-        'quiet': False,
+        "format": "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
+        "outtmpl": os.path.join(video_output_path, "%(title)s.%(ext)s"),
+        "quiet": False,
     }
 
     # Options for audio-only download (best quality converted to MP3)
     audio_opts = {
-        'format': 'bestaudio/best',
-        'outtmpl': os.path.join(audio_output_path, '%(title)s.%(ext)s'),
-        'postprocessors': [{
-            'key': 'FFmpegExtractAudio',
-            'preferredcodec': 'mp3',
-            'preferredquality': '192',
-        }],
-        'quiet': False,
+        "format": "bestaudio/best",
+        "outtmpl": os.path.join(audio_output_path, "%(title)s.%(ext)s"),
+        "postprocessors": [
+            {
+                "key": "FFmpegExtractAudio",
+                "preferredcodec": "mp3",
+                "preferredquality": "192",
+            }
+        ],
+        "quiet": False,
     }
 
     # --- 3. Start Downloads ---
@@ -55,7 +58,6 @@ def download_media(url, output_path='downloads'):
     except Exception as e:
         print(f"An unexpected error occurred during video download: {e}")
 
-
     # Download the audio
     print("\n--- Downloading Audio ---")
     try:
@@ -67,27 +69,24 @@ def download_media(url, output_path='downloads'):
     except Exception as e:
         print(f"An unexpected error occurred during audio download: {e}")
         print("Please ensure FFmpeg is installed and accessible in your system's PATH.")
-        
+
     print("\nAll tasks finished.")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="Download both video and audio from a YouTube URL using yt-dlp.",
-        formatter_class=argparse.RawTextHelpFormatter
+        formatter_class=argparse.RawTextHelpFormatter,
     )
+    parser.add_argument("url", type=str, help="The full URL of the YouTube video.")
     parser.add_argument(
-        "url",
-        type=str,
-        help="The full URL of the YouTube video."
-    )
-    parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         type=str,
         default="downloads",
-        help="The base directory where files will be saved.\nDefault is 'downloads'."
+        help="The base directory where files will be saved.\nDefault is 'downloads'.",
     )
-    
+
     args = parser.parse_args()
 
     # --- Installation Instructions ---
@@ -112,5 +111,5 @@ if __name__ == "__main__":
 
     download_media(args.url, args.output)
 
-    #python3 yt.py "https://www.youtube.com/watch?v=QBbC3Cjsnjg"
-    #python3 yt.py "https://www.youtube.com/watch?v=HAoL5fPmgrw"
+    # python3 yt.py "https://www.youtube.com/watch?v=QBbC3Cjsnjg"
+    # python3 yt.py "https://www.youtube.com/watch?v=HAoL5fPmgrw"
