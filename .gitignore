@@ -15,3 +15,6 @@ src/pre_processing/vid_frames/*.png
 src/pre_processing/downloads/*
 !src/pre_processing/downloads/*.csv
 src/pipeline/chromadb
+src/pre_processing/smart_cut_out/*
+*.wav
+*.mp4
