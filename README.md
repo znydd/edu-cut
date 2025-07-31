@@ -38,6 +38,6 @@
 4. Long video handle.
 
 ## Branching
-- master
+- master -> Production branch
 - dev -> every feature will be developted on the dev branch then eventually be merged to master
-- Example: goto to dev branch then create a feature branch finish the feature branch merge to dev then when everything is tested just merge to master branch
+- exp(Experimental) -> branch ideas will be tested here
