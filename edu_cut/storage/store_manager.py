@@ -10,7 +10,7 @@ class Storage:
         self.store_path = Path(self.root_path + "/store")
         self.store_path.mkdir(parents=True, exist_ok=True)
 
-    def create_yt_path(self, yt_id: str):
+    def create_yt_path(self, yt_id: str) -> Path:
         yt_dir = self.store_path.joinpath(yt_id)
         yt_video = yt_dir.joinpath("videos")
         yt_audio = yt_dir.joinpath("audios")
@@ -22,9 +22,23 @@ class Storage:
             yt_video.mkdir(parents=True, exist_ok=True)
             print(f"{yt_video} and {yt_audio} Created successfully ✅")
         except Exception as e:
-            print("Error:", e)
+            print("Error: ", e)
 
         return (yt_dir, yt_video, yt_audio)
+
+    def create_audio_cut_path(self, yt_id: str) -> Path:
+        yt_dir = self.store_path.joinpath(yt_id)
+        if self.exist(yt_dir):
+            try:
+                audio_cut_path = yt_dir.joinpath("audio_cut")
+                audio_cut_path.mkdir(parents=True, exist_ok=True)
+
+                return audio_cut_path
+            except Exception as e:
+                print("Error: ", e)
+        else:
+            print("YouTube Path does not exist ❌")
+            return self.store_path
 
     def exist(self, path: Path):
         return path.exists()
