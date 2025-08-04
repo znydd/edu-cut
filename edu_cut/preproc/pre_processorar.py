@@ -3,6 +3,7 @@ import json
 from ..storage.store_manager import Storage
 from pathlib import Path
 from pydub import AudioSegment, silence
+import pandas as pd
 
 
 class PreProcessor:
@@ -124,8 +125,36 @@ class PreProcessor:
 
         return
 
+    def timestamps_frame_sample(self) -> None:
+        transcript_path = self.yt_dir.joinpath("transcription.csv")
+        if self.storage.exist(transcript_path):
+            transcript = pd.read_csv(transcript_path)
+            start_time = 0
+            frame_sampling_times = []
+            prev_end_time = 0
+            for idx, row in transcript.iterrows():
+                start_time = row["Start (s)"]
+                end_time = row["End (s)"]
+                if idx == 0:
+                    start_time = 0
+                    prev_end_time = end_time
+                else:
+                    start_time = prev_end_time
 
-x = PreProcessor(
-    "https://www.youtube.com/watch?v=cmjmsgkbZuw&list=PL9aZtK5kh5WcyVuwOF80eE88U5K7Ctva-&index=9"
-)
-x.audio_cut()
+                frame_sampling_times.append([start_time, end_time])
+                prev_end_time = end_time
+            print(frame_sampling_times)
+
+            json_pth = self.yt_dir.joinpath("frame_sample_time.json")
+            with open(json_pth, "w", encoding="utf-8") as f:
+                json.dump(frame_sampling_times, f)
+            print("Done Samplig ")
+
+    def frame_sample(self):
+        pass
+
+
+x = PreProcessor("https://www.youtube.com/watch?v=O4bjWrhL4z0")
+# x.download_video()
+# x.download_audio()
+# x.audio_cut()
