@@ -40,5 +40,11 @@ class Storage:
             print("YouTube Path does not exist ❌")
             return self.store_path
 
+    def make_dir(self, dir: Path):
+        return dir.mkdir(parents=True, exist_ok=True)
+
+    def make_file(self, file_pth: Path):
+        return file_pth.touch(exist_ok=True)
+
     def exist(self, path: Path):
         return path.exists()
