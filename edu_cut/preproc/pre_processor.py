@@ -1,5 +1,9 @@
 import yt_dlp
+import imageio
 import json
+import os
+from PIL import Image
+import imagehash
 from ..storage.store_manager import Storage
 from pathlib import Path
 from pydub import AudioSegment, silence
@@ -151,6 +155,85 @@ class PreProcessor:
             print("Done Samplig ")
 
     def frame_sample(self):
+        video_path = self.video_dir.joinpath(f"{self.yt_id}.mp4")
+        similarity_threshold = 5
+
+        # --- 1. Setup and Validation ---
+        print(f"Starting frame extraction for '{video_path}'...")
+
+        if not self.storage.exist(video_path):
+            print(f"Error: Video file not found at '{video_path}'")
+            return
+
+        output_dir = self.storage.make_dir(self.yt_dir.joinpath("frames"))
+        print(f"Frames will be saved in '{output_dir}'")
+
+        # --- 2. Open Video and Get Metadata ---
+        try:
+            reader = imageio.get_reader(video_path)
+        except Exception as e:
+            print(f"Error opening video file with imageio: {e}")
+            print("Please ensure FFmpeg is installed and accessible on your system.")
+            print("You can often install it by running: pip install imageio[ffmpeg]")
+            return
+
+        meta_data = reader.get_meta_data()
+        fps = meta_data.get("fps", 30)
+
+        # Get total video duration directly from metadata
+        video_duration = meta_data.get("duration")
+        if video_duration is None:
+            # Fallback calculation if duration is not in metadata
+            video_duration = reader.count_frames() / fps
+        print(f"Detected video duration: {video_duration:.2f} seconds.")
+
+        # Process one frame per second
+        # frame_interval = int(round(fps))
+        desired_processing_fps = 5
+        frame_interval = int(round(fps / desired_processing_fps))
+        if frame_interval < 1:  # Ensure we don't divide by zero or go below 1
+            frame_interval = 1
+
+        # --- 3. Frame Extraction Loop ---
+        saved_frame_count = 0
+        last_hash = None
+
+        # Use a temporary dict with integer keys for efficiency
+        sampled_frame = {}
+
+        # Iterate through each frame in the video
+        for frame_num, frame in enumerate(reader):
+            # --- 4. Process Frame at ~1 FPS Interval ---
+            if frame_num % frame_interval == 0:
+                pil_img = Image.fromarray(frame)
+                current_hash = imagehash.phash(pil_img)
+
+                # --- 5. Check for Uniqueness ---
+                if (
+                    last_hash is None
+                    or (current_hash - last_hash) > similarity_threshold
+                ):
+                    filename = f"frame_{saved_frame_count:05d}.png"
+                    output_path = output_dir.joinpath(filename)
+
+                    imageio.imwrite(output_path, frame)
+
+                    current_time_sec = frame_num / fps
+                    print(
+                        f"Saved unique frame: {filename} (at video time ~{current_time_sec:.2f}s)"
+                    )
+                    sampled_frame[current_time_sec] = filename
+                    last_hash = current_hash
+                    saved_frame_count += 1
+        try:
+            metadata_pth = self.yt_dir.joinpath("frame_metadata.json")
+            with open(metadata_pth, "w") as f:
+                json.dump(sampled_frame, f, indent=4)
+            print(f"\nSuccessfully created metadata: {metadata_pth}")
+        except Exception as e:
+            print(f"\nError writing metadata file: {e}")
+
+    def merge_frame_transcript(self):
         pass
 
 
@@ -158,3 +241,4 @@ x = PreProcessor("https://www.youtube.com/watch?v=O4bjWrhL4z0")
 # x.download_video()
 # x.download_audio()
 # x.audio_cut()
+x.frame_sample()
