@@ -41,10 +41,18 @@ class Storage:
             return self.store_path
 
     def make_dir(self, dir: Path):
-        return dir.mkdir(parents=True, exist_ok=True)
+        try:
+            dir.mkdir(parents=True, exist_ok=True)
+        except Exception as e:
+            print(f"Error creating folder: {e}")
+        return dir
 
     def make_file(self, file_pth: Path):
-        return file_pth.touch(exist_ok=True)
+        try:
+            file_pth.touch(exist_ok=True)
+        except Exception as e:
+            print(f"Error creating file: {e}")
+        return file_pth
 
     def exist(self, path: Path):
         return path.exists()
