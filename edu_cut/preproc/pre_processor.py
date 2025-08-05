@@ -1,13 +1,14 @@
 import yt_dlp
 import imageio
 import json
-import os
-from PIL import Image
+import subprocess
 import imagehash
-from ..storage.store_manager import Storage
+from PIL import Image
+import pandas as pd
 from pathlib import Path
 from pydub import AudioSegment, silence
-import pandas as pd
+
+from ..storage.store_manager import Storage
 
 
 class PreProcessor:
@@ -39,6 +40,29 @@ class PreProcessor:
                 print(f"An error occurred during video download: {e}")
             except Exception as e:
                 print(f"An unexpected error occurred during video download: {e}")
+
+    def get_video_duration(self) -> float:
+        video_path = self.video_dir.joinpath(f"{self.yt_id}.mp4")
+        if self.storage.exist(video_path):
+            result = subprocess.run(
+                [
+                    "ffprobe",
+                    "-v",
+                    "error",
+                    "-show_entries",
+                    "format=duration",
+                    "-of",
+                    "default=noprint_wrappers=1:nokey=1",
+                    video_path,
+                ],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+            )
+            return float(result.stdout.strip())
+        else:
+            print("Video does not exist ❌")
+            return float(0.00)
 
     def download_audio(self) -> None:
         audio_opts = {
@@ -129,7 +153,7 @@ class PreProcessor:
 
         return
 
-    def timestamps_frame_sample(self) -> None:
+    def segment_timestamps(self) -> None:
         transcript_path = self.yt_dir.joinpath("transcription.csv")
         if self.storage.exist(transcript_path):
             transcript = pd.read_csv(transcript_path)
@@ -147,6 +171,8 @@ class PreProcessor:
 
                 frame_sampling_times.append([start_time, end_time])
                 prev_end_time = end_time
+            vid_length = self.get_video_duration()
+            frame_sampling_times[-1][1] = vid_length
             print(frame_sampling_times)
 
             json_pth = self.yt_dir.joinpath("frame_sample_time.json")
@@ -154,9 +180,8 @@ class PreProcessor:
                 json.dump(frame_sampling_times, f)
             print("Done Samplig ")
 
-    def frame_sample(self):
+    def frame_sample(self, similarity_threshold=2, desired_processing_fps=3):
         video_path = self.video_dir.joinpath(f"{self.yt_id}.mp4")
-        similarity_threshold = 5
 
         # --- 1. Setup and Validation ---
         print(f"Starting frame extraction for '{video_path}'...")
@@ -189,7 +214,6 @@ class PreProcessor:
 
         # Process one frame per second
         # frame_interval = int(round(fps))
-        desired_processing_fps = 5
         frame_interval = int(round(fps / desired_processing_fps))
         if frame_interval < 1:  # Ensure we don't divide by zero or go below 1
             frame_interval = 1
@@ -234,11 +258,39 @@ class PreProcessor:
             print(f"\nError writing metadata file: {e}")
 
     def merge_frame_transcript(self):
-        pass
+        with (
+            open(
+                self.yt_dir.joinpath("frame_sample_time.json"), "r", encoding="utf-8"
+            ) as f1,
+            open(
+                self.yt_dir.joinpath("frame_metadata.json"), "r", encoding="utf-8"
+            ) as f2,
+        ):
+            frame_smaple_time = json.load(f1)
+            frame_metadata = json.load(f2)
+        transcript = pd.read_csv(self.yt_dir.joinpath("transcription.csv"))
+        frame_ts = [float(t) for t in list(frame_metadata.keys())]
 
+        merged_frame_transcript = []
 
-x = PreProcessor("https://www.youtube.com/watch?v=O4bjWrhL4z0")
-# x.download_video()
-# x.download_audio()
-# x.audio_cut()
-x.frame_sample()
+        for idx, ts in enumerate(frame_smaple_time):
+            start = ts[0]
+            end = ts[1]
+            frm_pick = [f for f in frame_ts if f >= start and f <= end]
+
+            segment = {
+                "id": idx,
+                "start": start,
+                "end": end,
+                "frames": [frame_metadata[str(f)] for f in frm_pick],
+                "transcript": transcript.at[idx, "Segment"],
+            }
+            merged_frame_transcript.append(segment)
+
+        merged_file = self.storage.make_file(self.yt_dir.joinpath("merged_input.json"))
+        try:
+            with open(merged_file, "w", encoding="utf-8") as f:
+                json.dump(merged_frame_transcript, f, indent=4)
+            print(f"Succssfully file created at: {merged_file} ✅")
+        except Exception as e:
+            print(f"Failed to write ❌ {e}")
