@@ -1,16 +1,17 @@
 import torch
+
 import flash_attn
 from dotenv import set_key, dotenv_values
 from pathlib import Path
 
 
 def ensure_torch_FA():
-    # print("Flash Attention check: ")
-    # print(flash_attn.__version__)
-    # print("=======================================")
-    # print()
-    # print("Pyorch check: ")
-    # print(torch.__config__.show())
+    print("Flash Attention check: ")
+    print(flash_attn.__version__)
+    print("=======================================")
+    print()
+    print("Pyorch check: ")
+    print(torch.__config__.show())
     torch_version = torch.__version__
     fa_version = flash_attn.__version__
     if torch_version and fa_version:
@@ -37,5 +38,5 @@ def ensure_app_root_env():
 
 # Call this early in your main.py or __init__.py
 if __name__ == "__main__":
-    ensure_app_root_env()
+    # ensure_app_root_env()
     ensure_torch_FA()

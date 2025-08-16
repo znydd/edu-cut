@@ -1,12 +1,11 @@
 import yt_dlp
-import imageio
 import json
 import subprocess
-import imagehash
 from PIL import Image
+import base64, imageio, imagehash
 import pandas as pd
 from pathlib import Path
-from pydub import AudioSegment, silence
+from pydub import AudioSegment, silence, effects
 
 from ..storage.store_manager import Storage
 
@@ -91,67 +90,106 @@ class PreProcessor:
             except Exception as e:
                 print(f"An unexpected error occurred during audio download: {e}")
 
-    def audio_cut(self, min_silence_len=700, silence_thresh=14, keep_silence=300):
+    def audio_cut(
+        self,
+        min_silence_len_ms: int = 800,  # increase: 700→800–1200 for lectures/conversations
+        silence_rel_db: int = 18,  # threshold = audio.dBFS - silence_rel_db
+        keep_silence_ms: int = 250,  # small pad around each final chunk
+        min_gap_to_split_ms: int = 600,  # ignore tiny gaps; merge across pauses shorter than this
+        min_chunk_ms: int = 4000,  # ensure each chunk is at least this long (merge if shorter)
+        normalize_lufs: bool = False,  # optional: loudness normalize per chunk
+    ):
+        """
+        Robust, pause-based sentence/phrase cutter:
+        - Finds NON-SILENT ranges (speech) with detect_nonsilent
+        - Merges across short gaps and too-short chunks
+        - Exports .wav files + JSON metadata
+        """
         audio_cut_path = self.storage.create_audio_cut_path(self.yt_id)
         audio_file_path = self.audio_dir.joinpath(f"{self.yt_id}.mp3")
 
-        # Load the audio
-        audio = AudioSegment.from_file(
-            audio_file_path,
-            format="mp3",
+        # Load and (optionally) set to mono for more stable silence detection
+        audio = AudioSegment.from_file(audio_file_path, format="mp3").set_channels(1)
+
+        # Adaptive silence threshold (more negative => stricter silence)
+        # Example: if avg dBFS=-20 and rel=18 -> threshold≈-38 dBFS
+        silence_thresh_dbfs = max(audio.dBFS - silence_rel_db, -60.0)
+
+        # 1) Detect NON-silent regions (better than cutting at every silence)
+        nonsilent = silence.detect_nonsilent(
+            audio,
+            min_silence_len=min_silence_len_ms,
+            silence_thresh=silence_thresh_dbfs,
+            seek_step=5,  # ms; lower -> finer, slower
         )
-        silence_thresh = audio.dBFS - silence_thresh  # Adaptive threshold
+        if not nonsilent:
+            print("No non-silent regions found with current parameters.")
+            return
 
-        silent_ranges = silence.detect_silence(
-            audio, min_silence_len=min_silence_len, silence_thresh=silence_thresh
-        )
-        cut_points = [0] + [r[1] for r in silent_ranges] + [len(audio)]
+        # 2) Merge across tiny gaps and enforce minimum duration
+        #    - First pass: merge when the gap is smaller than min_gap_to_split_ms
+        merged = []
+        cur_start, cur_end = nonsilent[0]
+        for start, end in nonsilent[1:]:
+            short_gap = start - cur_end < min_gap_to_split_ms
+            short_cur = (cur_end - cur_start) < min_chunk_ms
+            if short_gap or short_cur:
+                # Extend current region
+                cur_end = max(cur_end, end)
+            else:
+                merged.append([cur_start, cur_end])
+                cur_start, cur_end = start, end
+        merged.append([cur_start, cur_end])
 
-        # Remove very short segments (optional)
-        cut_points = sorted(set(cut_points))
-        cut_pairs = [
-            (cut_points[i], cut_points[i + 1]) for i in range(len(cut_points) - 1)
-        ]
+        # 3) Second pass: if any chunk still < min_chunk_ms, glue it to the nearest neighbor
+        final_ranges = []
+        for i, (s, e) in enumerate(merged):
+            if (e - s) >= min_chunk_ms or not final_ranges:
+                final_ranges.append([s, e])
+            else:
+                # Merge with previous (typical and simpler). If you prefer “nearest”, compare gaps.
+                final_ranges[-1][1] = e
 
+        # 4) Apply padding after merging
+        padded = []
+        L = len(audio)
+        for s, e in final_ranges:
+            s = max(0, s - keep_silence_ms)
+            e = min(L, e + keep_silence_ms)
+            # Also avoid micro-chunks caused by extreme settings
+            if e - s >= max(keep_silence_ms * 2, 1000):
+                padded.append([s, e])
+
+        # 5) Export and write metadata
         metadata = []
+        for i, (s, e) in enumerate(padded, 1):
+            chunk = audio[s:e]
+            if normalize_lufs:
+                # Simple normalization; replace with a LUFS-normalizer if you like
+                chunk = effects.normalize(chunk)
 
-        # Process chunks
-        for i, (start, end) in enumerate(cut_pairs):
-            # Adjust for silence padding if needed
-            start_adj = max(0, start - keep_silence // 2)
-            end_adj = min(len(audio), end + keep_silence // 2)
-
-            filename = audio_cut_path.joinpath(f"segment_{i + 1}.wav")
+            filename = audio_cut_path.joinpath(f"segment_{i:04d}.wav")
             if not filename.exists():
-                chunk = audio[start_adj:end_adj]
                 chunk.export(filename, format="wav")
                 print(
-                    f"✔️  Segment {i + 1} cut: "
-                    f"{start_adj}ms–{end_adj}ms "
-                    f"({(end_adj - start_adj) / 1000:.2f}s) → {filename}"
+                    f"✔️  Segment {i:04d}: {s}–{e} ms ({(e - s) / 1000:.2f}s) → {filename}"
                 )
             else:
-                print(f"⚠️  Skipping segment {i + 1}: already exists at {filename}")
+                print(f"⚠️  Skipping existing {filename}")
 
             metadata.append(
                 {
-                    "chunk_index": i + 1,
+                    "chunk_index": i,
                     "filename": str(filename),
-                    "start_time_ms": start_adj // 1000,
-                    "end_time_ms": end_adj // 1000,
-                    "duration_ms": (end_adj - start_adj) // 1000,
+                    "start_time_ms": s,
+                    "end_time_ms": e,
+                    "duration_ms": e - s,
                 }
             )
 
-        file_path = str(audio_cut_path.joinpath("segments_metadata.json"))
-        with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(metadata, f, indent=2)
-
-        print(
-            f"✅ Processed {len(metadata)} segments. Metadata saved to segments_metadata.json"
-        )
-
-        return
+        out_meta = audio_cut_path.joinpath("segments_metadata.json")
+        out_meta.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
+        print(f"✅ Processed {len(metadata)} segments. Saved → {out_meta}")
 
     def segment_timestamps(self) -> None:
         transcript_path = self.yt_dir.joinpath("transcription.csv")
@@ -180,109 +218,166 @@ class PreProcessor:
                 json.dump(frame_sampling_times, f)
             print("Done Samplig ")
 
+    def video_cut(self):
+        with open(
+            self.yt_dir.joinpath("frame_sample_time.json"), "r", encoding="utf-8"
+        ) as f:
+            ts_arr = json.load(f)
+        print(ts_arr[:5])
+        in_path = self.video_dir.joinpath(f"{self.yt_id}.mp4")
+        out_dir = Path("/home/znyd/hacking/edu-cut/store/O4bjWrhL4z0/video_cut")
+
+        def sec_to_ffmpeg_time(seconds):
+            hours = int(seconds // 3600)
+            minutes = int((seconds % 3600) // 60)
+            secs = seconds % 60
+            return f"{hours:02}:{minutes:02}:{secs:06.3f}"
+
+        for idx, ts in enumerate(ts_arr):
+            start_str = sec_to_ffmpeg_time(ts[0])
+            end_str = sec_to_ffmpeg_time(ts[1])
+            out_path = out_dir.joinpath(f"{self.yt_id}-{idx:04}.mp4")
+            cmd = [
+                "ffmpeg",
+                "-hide_banner",
+                "-ss",
+                start_str,
+                "-to",
+                end_str,
+                "-i",
+                in_path,
+                "-c:v",
+                "h264_nvenc",
+                "-preset",
+                "p7",
+                "-tune",
+                "lossless",
+                "-profile:v",
+                "high444p",
+                "-pix_fmt",
+                "yuv444p",
+                "-c:a",
+                "copy",
+                out_path,
+            ]
+            subprocess.run(cmd, check=True)
+            print(f"Done {idx}/{len(ts_arr)} ✅")
+
     def frame_sample(self, similarity_threshold=2, desired_processing_fps=3):
-        video_path = self.video_dir.joinpath(f"{self.yt_id}.mp4")
+        video_dir = self.yt_dir.joinpath("video_cut")
 
-        # --- 1. Setup and Validation ---
-        print(f"Starting frame extraction for '{video_path}'...")
+        files = [f.name for f in video_dir.iterdir() if f.is_file()]
+        files = sorted(files)
+        frames_grp = []
+        counter = 0
 
-        if not self.storage.exist(video_path):
-            print(f"Error: Video file not found at '{video_path}'")
-            return
+        for idx, file in enumerate(files):
+            video_path = video_dir.joinpath(file)
 
-        output_dir = self.storage.make_dir(self.yt_dir.joinpath("frames"))
-        print(f"Frames will be saved in '{output_dir}'")
+            # --- 1. Setup and Validation ---
+            print(f"Starting frame extraction for '{video_path}'...")
 
-        # --- 2. Open Video and Get Metadata ---
+            if not self.storage.exist(video_path):
+                print(f"Error: Video file not found at '{video_path}'")
+                return
+
+            output_dir = self.storage.make_dir(self.yt_dir.joinpath("frames"))
+            print(f"Frames will be saved in '{output_dir}'")
+
+            # --- 2. Open Video and Get Metadata ---
+            try:
+                reader = imageio.get_reader(video_path)
+            except Exception as e:
+                print(f"Error opening video file with imageio: {e}")
+                print(
+                    "Please ensure FFmpeg is installed and accessible on your system."
+                )
+                print(
+                    "You can often install it by running: pip install imageio[ffmpeg]"
+                )
+                return
+
+            meta_data = reader.get_meta_data()
+            fps = meta_data.get("fps", 30)
+
+            # Get total video duration directly from metadata
+            video_duration = meta_data.get("duration")
+            if video_duration is None:
+                # Fallback calculation if duration is not in metadata
+                video_duration = reader.count_frames() / fps
+            print(f"Detected video duration: {video_duration:.2f} seconds.")
+
+            # Process one frame per second
+            # frame_interval = int(round(fps))
+            frame_interval = int(round(fps / desired_processing_fps))
+            if frame_interval < 1:  # Ensure we don't divide by zero or go below 1
+                frame_interval = 1
+
+            # --- 3. Frame Extraction Loop ---
+            saved_frame_count = 0
+            last_hash = None
+
+            # Use a temporary dict with integer keys for efficiency
+            sampled_frame = {}
+            frames = []
+
+            # Iterate through each frame in the video
+            for frame_num, frame in enumerate(reader):
+                # --- 4. Process Frame at ~1 FPS Interval ---
+                if frame_num % frame_interval == 0:
+                    pil_img = Image.fromarray(frame)
+                    current_hash = imagehash.phash(pil_img)
+
+                    # --- 5. Check for Uniqueness ---
+                    if (
+                        last_hash is None
+                        or (current_hash - last_hash) > similarity_threshold
+                    ):
+                        filename = f"frame_{counter:05d}.png"
+                        output_path = output_dir.joinpath(filename)
+
+                        imageio.imwrite(output_path, frame)
+
+                        current_time_sec = frame_num / fps
+                        print(
+                            f"Saved unique frame: {filename} (at video time ~{current_time_sec:.2f}s)"
+                        )
+                        sampled_frame[current_time_sec] = filename
+                        frames.append(filename)
+                        last_hash = current_hash
+                        saved_frame_count += 1
+                        counter += 1
+            frames_grp.append(frames)
+            frames = []
         try:
-            reader = imageio.get_reader(video_path)
-        except Exception as e:
-            print(f"Error opening video file with imageio: {e}")
-            print("Please ensure FFmpeg is installed and accessible on your system.")
-            print("You can often install it by running: pip install imageio[ffmpeg]")
-            return
-
-        meta_data = reader.get_meta_data()
-        fps = meta_data.get("fps", 30)
-
-        # Get total video duration directly from metadata
-        video_duration = meta_data.get("duration")
-        if video_duration is None:
-            # Fallback calculation if duration is not in metadata
-            video_duration = reader.count_frames() / fps
-        print(f"Detected video duration: {video_duration:.2f} seconds.")
-
-        # Process one frame per second
-        # frame_interval = int(round(fps))
-        frame_interval = int(round(fps / desired_processing_fps))
-        if frame_interval < 1:  # Ensure we don't divide by zero or go below 1
-            frame_interval = 1
-
-        # --- 3. Frame Extraction Loop ---
-        saved_frame_count = 0
-        last_hash = None
-
-        # Use a temporary dict with integer keys for efficiency
-        sampled_frame = {}
-
-        # Iterate through each frame in the video
-        for frame_num, frame in enumerate(reader):
-            # --- 4. Process Frame at ~1 FPS Interval ---
-            if frame_num % frame_interval == 0:
-                pil_img = Image.fromarray(frame)
-                current_hash = imagehash.phash(pil_img)
-
-                # --- 5. Check for Uniqueness ---
-                if (
-                    last_hash is None
-                    or (current_hash - last_hash) > similarity_threshold
-                ):
-                    filename = f"frame_{saved_frame_count:05d}.png"
-                    output_path = output_dir.joinpath(filename)
-
-                    imageio.imwrite(output_path, frame)
-
-                    current_time_sec = frame_num / fps
-                    print(
-                        f"Saved unique frame: {filename} (at video time ~{current_time_sec:.2f}s)"
-                    )
-                    sampled_frame[current_time_sec] = filename
-                    last_hash = current_hash
-                    saved_frame_count += 1
-        try:
-            metadata_pth = self.yt_dir.joinpath("frame_metadata.json")
+            metadata_pth = self.yt_dir.joinpath("frames_grp.json")
             with open(metadata_pth, "w") as f:
-                json.dump(sampled_frame, f, indent=4)
+                json.dump(frames_grp, f, indent=4)
             print(f"\nSuccessfully created metadata: {metadata_pth}")
         except Exception as e:
             print(f"\nError writing metadata file: {e}")
 
     def merge_frame_transcript(self):
-        with (
-            open(
-                self.yt_dir.joinpath("frame_sample_time.json"), "r", encoding="utf-8"
-            ) as f1,
-            open(
-                self.yt_dir.joinpath("frame_metadata.json"), "r", encoding="utf-8"
-            ) as f2,
-        ):
-            frame_smaple_time = json.load(f1)
-            frame_metadata = json.load(f2)
+        with open(
+            self.yt_dir.joinpath("frame_sample_time.json"), "r", encoding="utf-8"
+        ) as f:
+            frame_smaple_time = json.load(f)
+        with open(self.yt_dir.joinpath("frames_grp.json"), "r", encoding="utf-8") as f:
+            frames = json.load(f)
+
         transcript = pd.read_csv(self.yt_dir.joinpath("transcription.csv"))
-        frame_ts = [float(t) for t in list(frame_metadata.keys())]
 
         merged_frame_transcript = []
 
         for idx, ts in enumerate(frame_smaple_time):
             start = ts[0]
             end = ts[1]
-            frm_pick = [f for f in frame_ts if f >= start and f <= end]
-
+            frm_pick = frames[idx]
             segment = {
                 "id": idx,
                 "start": start,
                 "end": end,
-                "frames": [frame_metadata[str(f)] for f in frm_pick],
+                "frames": frm_pick,
                 "transcript": transcript.at[idx, "Segment"],
             }
             merged_frame_transcript.append(segment)
@@ -294,3 +389,104 @@ class PreProcessor:
             print(f"Succssfully file created at: {merged_file} ✅")
         except Exception as e:
             print(f"Failed to write ❌ {e}")
+
+    def more_proc_merged(self):
+        with open(
+            self.yt_dir.joinpath("merged_input.json"), "r", encoding="utf-8"
+        ) as f:
+            data = json.load(f)
+        print(data[:5])
+        no_frame_chunk = []
+        for idx, data_point in enumerate(data):
+            if not data_point["frames"]:
+                no_frame_chunk.append(idx)
+        print(no_frame_chunk)
+        no_frame_chunk = sorted(no_frame_chunk)
+        no_frame_grp = []
+        bucket = []
+        last_one = no_frame_chunk[0]
+        for idx, chunk_id in enumerate(no_frame_chunk):
+            if idx == 0:
+                bucket.append(chunk_id)
+            else:
+                if last_one + 1 == chunk_id:
+                    bucket.append(chunk_id)
+                    last_one = chunk_id
+                else:
+                    no_frame_grp.append(bucket)
+                    bucket = []
+                    last_one = chunk_id
+                    bucket.append(chunk_id)
+        print(no_frame_grp)
+
+        for grp in no_frame_grp:
+            grp_transcript = "\n"
+            for chunk_idx in grp:
+                grp_transcript += data[chunk_idx]["transcript"] + "\n"
+            data[grp[0] - 1]["transcript"] += grp_transcript
+            data[grp[0] - 1]["end"] = data[grp[-1]]["end"]
+            print(grp[0])
+
+        with open(self.yt_dir.joinpath("final.json"), "w", encoding="utf-8") as f:
+            json.dump(data, f)
+
+    def base64_image(self, path):
+        b = Path(path).read_bytes()
+        return "data:image/png;base64," + base64.b64encode(b).decode()
+
+    def smart_cut_msg(self):
+        msg = [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": """ You are a helpful assistant who can identify and group consecutive related transcript/subtitle of any video.
+                These are transcriptions/subtitles of a long video chunked with start and end
+                 timestamps. Now your work is according to these transcript group all the consecutive relevant or reletaed chunk together and give me
+                a json response with **only start and end timestamp not the subtitle/trnscript** just like below example:(times are in seconds)
+                ```json
+                {{
+                part_0:[0s - 45.00s],
+                part_1:[45.08s - 390.00s],
+                ....
+                }}
+                  """,
+                    },
+                ],
+            }
+        ]
+        with open(
+            self.yt_dir.joinpath("merged_input.json"), "r", encoding="utf-8"
+        ) as f:
+            data = json.load(f)
+        data_points = []
+        for data_point in data:
+            data_point.pop("frames")
+            data_point.pop("id")
+            data_points.append(dict({"type": "text", "text": str(data_point)}))
+        msg[0]["content"] = msg[0]["content"] + data_points
+        return msg
+
+    def summarization_msg(self):
+        return
+
+
+# msg = [{
+#     "role": "user",
+#     "content": [
+#         {"type": "text", "text": "Describe what is happening on these video frames."},
+#         {"type": "image_url", "image_url": {"url": base64_image("/home/znyd/hacking/edu-cut/store/O4bjWrhL4z0/frames/frame_00000.png")}},
+#         {"type": "image_url", "image_url": {"url": base64_image("/home/znyd/hacking/edu-cut/store/O4bjWrhL4z0/frames/frame_00001.png")}},
+#     ],
+# }]
+
+p = PreProcessor("https://www.youtube.com/watch?v=Pi1-b50VHB8")
+# p.download_video()
+# p.download_audio()
+
+# p.segment_timestamps()
+# p.video_cut()
+# p.frame_sample()
+# p.merge_frame_transcript()
+# ./llama-server --model gemma-3-4b-it-UD-Q8_K_XL.gguf --mmproj mmproj-BF16.gguf --host 127.0.0.1 --port 8000 -c 64000 -ngl 999
