@@ -17,3 +17,4 @@ experiments/p3_exp/pre_processing/downloads/*
 experiments/p3_exp/pipeline/chromadb
 experiments/p3_exp/pre_processing/smart_cut_out/*
 store
+.vscode
