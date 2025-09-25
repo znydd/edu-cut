@@ -17,3 +17,4 @@ class ServeAI:
 
 # llama.cpp cmd
 # ./llama-server --model gemma-3-4b-it-UD-Q8_K_XL.gguf --mmproj mmproj-BF16.gguf --host 127.0.0.1 --port 8000 -c 8192 -ngl 999
+# huggingface-cli download ai4bharat/indic-seamless --local-dir ./model --local-dir-use-symlinks False
