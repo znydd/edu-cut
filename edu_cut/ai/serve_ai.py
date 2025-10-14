@@ -8,9 +8,11 @@ class ServeAI:
         self.base_url = base_url
         self.client = OpenAI(base_url=self.base_url, api_key=api_key)
 
-    def llm_response(self, messages, model="gemma-3-4b-it-UD-Q8_K_XL.gguf"):
+    def llm_response(self, messages, model="gemma-3-4b-it-BF16.gguf"):
         response = self.client.chat.completions.create(
-            model=model, messages=messages, stream=False
+            model=model,
+            messages=messages,
+            stream=False,
         )
         return response.choices[0].message.content
 

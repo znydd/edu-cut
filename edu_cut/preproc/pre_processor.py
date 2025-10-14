@@ -1,11 +1,14 @@
-import yt_dlp
+import base64
 import json
 import subprocess
-from PIL import Image
-import base64, imageio, imagehash
-import pandas as pd
 from pathlib import Path
-from pydub import AudioSegment, silence, effects
+
+import imagehash
+import imageio
+import pandas as pd
+import yt_dlp
+from PIL import Image
+from pydub import AudioSegment, effects, silence
 
 from ..storage.store_manager import Storage
 
@@ -199,8 +202,8 @@ class PreProcessor:
             frame_sampling_times = []
             prev_end_time = 0
             for idx, row in transcript.iterrows():
-                start_time = row["Start (s)"]
-                end_time = row["End (s)"]
+                start_time = row["Start"]
+                end_time = row["End"]
                 if idx == 0:
                     start_time = 0
                     prev_end_time = end_time
@@ -211,6 +214,25 @@ class PreProcessor:
                 prev_end_time = end_time
             vid_length = self.get_video_duration()
             frame_sampling_times[-1][1] = vid_length
+            print(frame_sampling_times)
+
+            json_pth = self.storage.make_file(
+                self.yt_dir.joinpath("frame_sample_time.json")
+            )
+            with open(json_pth, "w", encoding="utf-8") as f:
+                json.dump(frame_sampling_times, f)
+            print("Done Samplig ")
+
+    def segment_timestamps_new(self) -> None:
+        # Here Provide gap filled trascription/subtitle
+        transcript_path = self.yt_dir.joinpath("transcription.csv")
+        if self.storage.exist(transcript_path):
+            transcript = pd.read_csv(transcript_path)
+            frame_sampling_times = []
+            for idx, row in transcript.iterrows():
+                start_time = row["Start (s)"]
+                end_time = row["End (s)"]
+                frame_sampling_times.append([start_time, end_time])
             print(frame_sampling_times)
 
             json_pth = self.yt_dir.joinpath("frame_sample_time.json")
@@ -225,7 +247,9 @@ class PreProcessor:
             ts_arr = json.load(f)
         print(ts_arr[:5])
         in_path = self.video_dir.joinpath(f"{self.yt_id}.mp4")
-        out_dir = Path("/home/znyd/hacking/edu-cut/store/O4bjWrhL4z0/video_cut")
+        out_dir = self.storage.make_dir(
+            Path(f"/home/znyd/hacking/edu-cut/store/{self.yt_id}/video_cut")
+        )
 
         def sec_to_ffmpeg_time(seconds):
             hours = int(seconds // 3600)
@@ -263,7 +287,7 @@ class PreProcessor:
             subprocess.run(cmd, check=True)
             print(f"Done {idx}/{len(ts_arr)} ✅")
 
-    def frame_sample(self, similarity_threshold=2, desired_processing_fps=3):
+    def frame_sample(self, similarity_threshold=5, desired_processing_fps=3):
         video_dir = self.yt_dir.joinpath("video_cut")
 
         files = [f.name for f in video_dir.iterdir() if f.is_file()]
@@ -350,7 +374,9 @@ class PreProcessor:
             frames_grp.append(frames)
             frames = []
         try:
-            metadata_pth = self.yt_dir.joinpath("frames_grp.json")
+            metadata_pth = self.storage.make_file(
+                self.yt_dir.joinpath("frames_grp.json")
+            )
             with open(metadata_pth, "w") as f:
                 json.dump(frames_grp, f, indent=4)
             print(f"\nSuccessfully created metadata: {metadata_pth}")
@@ -468,9 +494,6 @@ class PreProcessor:
         msg[0]["content"] = msg[0]["content"] + data_points
         return msg
 
-    def summarization_msg(self):
-        return
-
 
 # msg = [{
 #     "role": "user",
@@ -481,7 +504,7 @@ class PreProcessor:
 #     ],
 # }]
 
-p = PreProcessor("https://www.youtube.com/watch?v=Pi1-b50VHB8")
+p = PreProcessor("https://www.youtube.com/watch?v=uuaBdjMhjoA")
 # p.download_video()
 # p.download_audio()
 
@@ -490,3 +513,4 @@ p = PreProcessor("https://www.youtube.com/watch?v=Pi1-b50VHB8")
 # p.frame_sample()
 # p.merge_frame_transcript()
 # ./llama-server --model gemma-3-4b-it-UD-Q8_K_XL.gguf --mmproj mmproj-BF16.gguf --host 127.0.0.1 --port 8000 -c 64000 -ngl 999
+# python3 -m edu_cut.preproc.pre_processor

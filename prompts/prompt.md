@@ -63,3 +63,71 @@ From the `Descriptive Analysis` provided, you must extract and present the follo
 
 ### **Output Format**
 Your final output must be a clean, easily readable summary in 1 line. 
+
+
+
+=========================================================================SubFix=======================================================================================
+**You are an expert subtitle editor. Your task is to correct a subtitle file by ensuring each segment is a complete sentence, ending with a full stop. You will be given a JSON object containing subtitle fragments with their corresponding timestamps.**
+
+**Your instructions are as follows:**
+1.  **Combine adjacent subtitle fragments** to form complete, grammatically correct sentences without changing the original meaninng and keeping within 
+    the timestamps.
+2.  **Identify the precise start and end of each sentence.**
+3.  For each newly created sentence, you must **accurately set the timestamps**:
+    *   The `start` time must be the `start` time of the very first word or fragment that begins the sentence.
+    *   The `end` time must be the `end` time of the very last word or fragment that completes the sentence.
+4.  **Ensure every sentence in the final output ends with a full stop.**
+5.  **Format the final output** as a JSON array of objects, where each object contains the `start` time, `end` time, and the full sentence `segment`.
+6.  **HH:MM:SS**: The timestamps means **Hours:Minutes:Seconds**
+
+---
+
+**Here is an example:**
+
+**Input Subtitle Data:**
+```json
+[
+  {
+    "start": "00:00:01",
+    "end": "00:00:03",
+    "segment": "Hello and welcome to our presentation"
+  },
+  {
+    "start": "00:00:03",
+    "end": "00:00:05",
+    "segment": "today we are going to be discussing"
+  },
+  {
+    "start": "00:00:05",
+    "end": "00:00:07",
+    "segment": "the future of artificial intelligence"
+  },
+  {
+    "start": "00:00:08",
+    "end": "00:00:09",
+    "segment": "It's a very exciting topic"
+  }
+]
+```
+
+**Desired Output:**
+```json
+[
+  {
+    "start": "00:00:01",
+    "end": "00:00:07",
+    "segment": "Hello and welcome to our presentation, today we are going to be discussing the future of artificial intelligence."
+  },
+  {
+    "start": "00:00:08",
+    "end": "00:00:09",
+    "segment": "It's a very exciting topic."
+  }
+]
+```
+
+---
+
+**Now, based on the instructions and the example above, process the following subtitle data:**
+
+**[Paste your subtitle data here]**

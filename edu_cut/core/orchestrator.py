@@ -1,171 +1,188 @@
-import json
-from ..preproc.pre_processor import PreProcessor
-from ..ai.serve_ai import ServeAI
 import base64
+import json
+import mimetypes
+import re
 from pathlib import Path
+
+import pandas as pd
+from jinja2 import Environment, FileSystemLoader
+
+from ..ai.serve_ai import ServeAI
+from ..storage.store_manager import Storage
 
 
 class Orchestrator:
-    def __init__(self):
-        self.pre_processor = PreProcessor("https://www.youtube.com/watch?v=Pi1-b50VHB8")
+    def __init__(self, yt_id: str, model: str):
         self.llm = ServeAI()
-        self.resp = self.pre_processor.yt_dir.joinpath("resp.jsonl")
-        self.topic = self.pre_processor.yt_dir.joinpath("topic.txt")
-        self.irr = self.pre_processor.yt_dir.joinpath("irr.jsonl")
+        self.storage = Storage()
+        self.make_file = self.storage.make_file
+        self.make_dir = self.storage.make_dir
+        self.yt_id = yt_id
+        self.model = model
+        self.store_pth = f"/home/znyd/hacking/edu-cut/store/{yt_id}"
+        self.prompt_dir = "/home/znyd/hacking/edu-cut/prompts"
+        self.merged_input = Path(f"{self.store_pth}/merged_input.json")
+        self.response_dir = self.make_dir(Path(f"{self.store_pth}/responses"))
+        self.resp = self.make_file(Path(f"{self.store_pth}/resp.jsonl"))
+        self.topic_pth = self.make_file(Path(f"{self.response_dir}/video_topic.txt"))
+        self.irr = self.make_file(Path(f"{self.store_pth}/irr.jsonl"))
+        self.last_n_segment = 5
 
-    def get_summ(self):
-        with open(
-            "/home/znyd/hacking/edu-cut/store/Pi1-b50VHB8/merged_input.json",
-            "r",
-            encoding="utf-8",
-        ) as f:
-            data = json.load(f)
-        prev_ctx = ""
-        msg = [
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": """
-                    You are an advanced multimedia analyst AI, specializing in the critical evaluation of educational video content. Your primary function is to perform a deep, multi-modal analysis of a given video segment and produce a comprehensive description of it.
+        self.desc_summ_pth = self.make_file(Path(f"{self.response_dir}/desc_summ.csv"))
+        if not self.storage.exist(self.desc_summ_pth):
+            pd.DataFrame(columns=pd.Index(["id", "timestamp", "summary"])).to_csv(
+                self.desc_summ_pth, index=False
+            )
 
-                    You will be provided with three key pieces of information for each segment:
-                    1.  **`Context`**: Description of previous video segments description as context.
-                    2.  **`Video Frames`**: A description or a series of images representing the visual content of the current segment.
-                    3.  **`Transcript`**: The complete transcription of all spoken words in the current segment.
+    def video_topic_prompt(self, subtitle="") -> list:
+        message = [{"role": "system", "content": ""}, {"role": "user", "content": None}]
+        video_topic_sys_pth = f"{self.prompt_dir}/video_topic_sys.txt"
+        video_topic_pth = "video_topic.j2"
+        resp_video_topic_pth = f"{self.response_dir}/video_topic.txt"
+        env = Environment(loader=FileSystemLoader(self.prompt_dir))
 
-                    Your task is to synthesize this information by following a strict analytical process:
+        with open(video_topic_sys_pth, "r") as f:
+            system_prompt = f.read()
+        template = env.get_template(video_topic_pth)
+        prompt = template.render(subtitle=subtitle)
 
-                    **Step 1: Visual Content Analysis**
-                    First, meticulously analyze the provided `Video Frames`. Describe every visual element in detail **(Focus on the educational content)**. This includes:
-                    *   Text, diagrams, slides, or any educational material visible on screen.
-                    *   Any individuals present, their actions, and expressions.
-                    *   Any objects or tools being used.
-                    *   The environment.
+        if subtitle and system_prompt and prompt:
+            message[0]["content"] = system_prompt
+            message[1]["content"] = prompt
+        return message
 
-                    **Step 2: Transcript Analysis**
-                    Next, conduct a thorough analysis of the `Transcript`. Identify and summarize:
-                    *   The primary topics and sub-topics of discussion.
-                    *   Key concepts, definitions, and explanations provided by the speaker(s).
-                    *   Any questions asked or answered.
-                    *   The overall tone and nature of the dialogue.
+    def video_description_prompt(
+        self, prev_ctx: list, start: str, end: str, subtitle: str, frames: list
+    ):
+        with open(f"{self.prompt_dir}/video_description_sys.md", "r") as f:
+            system_prompt = f.read()
+        with open(self.topic_pth, "r") as f:
+            video_topic = f.read()
+        message = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": None},
+        ]
+        context_data = {
+            "video_topic": video_topic,
+            "chronological_context": prev_ctx,
+            "start_time": start,
+            "end_time": end,
+            "transcript": subtitle,
+        }
 
-                    **Step 3: Synthesized Multi-modal Description**
-                    Finally, integrate your analyses from the previous steps into a single, detailed description of the video chunk.
-                    This description must "spell out everything(focus on educational contents)" happening in the segment.
-                    In your response, you must explicitly address the following:
-
-                    Your final output should be a comprehensive narrative that provides a complete picture of the video segment but do not over explain anything
-                    ,mentioning both the explicit educational content(main goal) and the contextual dynamics.
-                    Just provide the description/explanation nothing else just the concise paragraph no follow up questions/suggestion or introductory message. 
-                    Here is the context of previous video chunk:
-                        """,
+        env = Environment(loader=FileSystemLoader(self.prompt_dir))
+        template = env.get_template("video_description.j2")
+        prompt = template.render(context_data=context_data)
+        message[1]["content"] = [{"type": "text", "text": prompt}]
+        for frame in frames:
+            message[1]["content"].append(
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": frame
+                        # self.image_to_base64_uri(
+                        #     self.store_pth + "/frames/" + frame
+                        # )
                     },
-                ],
-            }
-        ]
-        summ_msg = [
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": """You are an Expert Educational Content Analyst specializing in synthesizing detailed multimedia evaluations into concise, contextful summaries.
-                    You will be provided with a `Descriptive Analysis` educational video segments. This analysis is a comprehensive narrative detailing the 
-                    segment's visual content, spoken transcript, and the relationship between them.
-                    Your task is to read this detailed analysis and distill it into a summary that captures all of the essential findings.
-                    ### **Your Goal**
-                    Extract the core insights from the provided text. The summary should be brief,concise and 1 liner, focusing on the most critical 
-                    information regarding the video segment's content and effectiveness.
-                    ### **Output Format**
-                    Your final output must be a clean, easily readable summary must in 1 line only not more than that. 
-                                                """,
-                    }
-                ],
-            }
-        ]
-        pth = Path("/home/znyd/hacking/edu-cut/store/Pi1-b50VHB8/frames")
+                }
+            )
+        return message
+
+    def get_video_topic(self):
+        subtitle_df = pd.read_csv(f"{self.store_pth}/transcription.csv")
+        subtitle = "\n ".join(subtitle_df["Segment"])
+        prompt = self.video_topic_prompt(subtitle)
+        response = self.llm_resp(prompt)
+
+        with open(self.topic_pth, "w") as f:
+            if response:
+                response = re.sub(
+                    r"<think>.*?</think>\s*", "", response, flags=re.DOTALL
+                ).strip()
+                f.write(response)
+                print("Video topic generated and written to video_topic.txt✅")
+
+    def get_video_description(self):
+        with open(self.merged_input, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        prev_segments = pd.read_csv(self.desc_summ_pth)
 
         for idx, data_point in enumerate(data):
-            chunk_msg = []
-            if data_point["frames"]:
-                for frame in data_point["frames"]:
-                    print(frame)
-                    chunk_msg.append(
-                        {
-                            "type": "text",
-                            "text": "Here are the video frames of current video chunk:",
-                        }
-                    )
-                    chunk_msg.append(
-                        {
-                            "type": "image_url",
-                            "image_url": {
-                                "url": "data:image/png;base64,"
-                                + base64.b64encode(
-                                    Path(pth.joinpath(frame)).read_bytes()
-                                ).decode()
-                            },
-                        }
-                    )
-
-                chunk_msg.append(
+            if idx == 0:
+                start, end = (
+                    self.sec_to_hms(data_point["start"]),
+                    self.sec_to_hms(data_point["end"]),
+                )
+                prev_ctx = [
                     {
-                        "type": "text",
-                        "text": f"""Here is the transcript/subtitle of this chunk: \n {data_point["transcript"]}""",
+                        "timestamp": "00:00:00-00:00:00",
+                        "description": "It is the first video chunk so no previous context",
                     }
+                ]
+            if idx <= self.last_n_segment:
+                start, end = (
+                    self.sec_to_hms(data_point["start"]),
+                    self.sec_to_hms(data_point["end"]),
                 )
 
-                if idx == 0:
-                    msg[0]["content"][0]["text"] += (
-                        "It is the first video chunk so no previous context"
-                    )
-                else:
-                    # compress_resp = self.llm.llm_response(
-                    #     [
-                    #         {
-                    #             "role": "user",
-                    #             "content": [
-                    #                 {
-                    #                     "type": "text",
-                    #                     "text": f"""Just summarize all of the summary of these video chunks concisely retainning main points/informations: {ctx}""",
-                    #                 }
-                    #             ],
-                    #         }
-                    #     ]
-                    # ).strip()
-                    msg[0]["content"][0]["text"] += prev_ctx
-                    prev_ctx = ""
-
-                msg[0]["content"] += chunk_msg
-                # clean_resp = re.sub(r'[\x00-\x1F\x7F\\\/]', '', clean_resp).replace("/", "").replace("\\", "").replace("‘", "'").replace("’", "'").replace("”", '"').replace("“", '"').replace("\n", "")
-
-                try:
-                    desc_resp = self.llm.llm_response(msg).strip()
-                    print(desc_resp)
-                    # summ_msg[0]["content"][0]["text"] += str(desc_resp)
-                    # summ_resp = self.llm.llm_response(summ_msg).strip()
-                    # print(summ_resp)
-                    prev_ctx += desc_resp
-                    resp_dict = {
-                        "Description": str(desc_resp),
-                        "id": idx,
+                prev_ctx = [
+                    {
+                        "timestamp": prev_segments[prev_segments["id"] == i].iloc[0][
+                            "timestamp"
+                        ],
+                        "description": prev_segments[prev_segments["id"] == i].iloc[0][
+                            "summary"
+                        ],
                     }
-                    print(resp_dict)
+                    for i in range(idx)
+                ]
+            else:
+                start, end = (
+                    self.sec_to_hms(data_point["start"]),
+                    self.sec_to_hms(data_point["end"]),
+                )
+                prev_ctx = [
+                    {
+                        "timestamp": prev_segments[prev_segments["id"] == i].iloc[0][
+                            "timestamp"
+                        ],
+                        "description": prev_segments[prev_segments["id"] == i].iloc[0][
+                            "summary"
+                        ],
+                    }
+                    for i in range(idx - self.last_n_segment, idx)
+                ]
 
-                    with open(self.resp, "a", encoding="utf-8") as f:
-                        f.write(json.dumps(resp_dict, ensure_ascii=False) + "\n")
+            message = self.video_description_prompt(
+                prev_ctx, start, end, data_point["transcript"], data_point["frames"]
+            )
+            print(message)
+            print(
+                "==============================================================================="
+            )
+            if idx == 8:
+                break
+            # response = self.llm.llm_response(message, self.model)
+            # print(response)
+            seg_summary = self.get_description_summary(response)
 
-                except json.JSONDecodeError as e:
-                    raise e
+            # with open(self.resp, "a", encoding="utf-8") as f:
+            #     f.write(json.dumps(resp_dict, ensure_ascii=False) + "\n")
+
+    def get_description_summary(self, response: str):
+        pass
 
     def get_topic(self):
-        data_load = []
-        with open(self.resp, "r", encoding="utf-8") as f:
-            for line in f:
-                json_object = json.loads(line)
-                data_load.append(json_object)
+        # data_load = []
+        # with open(self.resp, "r", encoding="utf-8") as f:
+        #     for line in f:
+        #         json_object = json.loads(line)
+        #         data_load.append(json_object)
+        data_load = pd.read_csv(
+            "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/transcription.csv"
+        )
+
+        # description of chunks
 
         msg = [
             {
@@ -173,58 +190,67 @@ class Orchestrator:
                 "content": [
                     {
                         "type": "text",
-                        "text": """You are an AI assistant who can analyze description of chunks of an educational video and can tell about what is
-                    this educational video is all about, basically the overall all the educational topics were taught on the video. Your response should be contains all the 
-                    topics of this educational video. Don't include anything that is not related to academics or education. Here I am providing summary of every chunk of this whole video: """,
+                        "text": """You are an AI assistant who can analyze subtitle of an educational video and can tell about what is main topic
+                     of an educational video, basically the overall the educational topic were taught on the video. Your response should be contains all the
+                    topics of this educational video in a condensed **max 1-2 line** only nothing else. **Don't include anything that is not related to academics or education.** Here I am providing the subtitle/transcription of whole video: """,
                     },
                 ],
             }
         ]
 
         vid_desc = ""
-        for data_point in data_load:
-            vid_desc += data_point["Description"] + "\n"
+        for i, data_point in data_load.iterrows():
+            vid_desc += data_point["Merged Segment"] + "\n"
         msg[0]["content"] += [{"type": "text", "text": vid_desc}]
         resp = self.llm.llm_response(msg)
         with open(self.topic, "w", encoding="utf-8") as f:
             f.write(resp)
 
+    def sec_to_hms(self, seconds):
+        hours = int(seconds // 3600)
+        minutes = int((seconds % 3600) // 60)
+        secs = seconds % 60
+        return f"{hours:02}:{minutes:02}:{secs:06.3f}"
+
+    def image_to_base64_uri(self, filepath):
+        mime_type, _ = mimetypes.guess_type(filepath)
+        if mime_type is None:
+            raise ValueError(f"Could not determine MIME type for {filepath}")
+
+        with open(filepath, "rb") as image_file:
+            binary_data = image_file.read()
+            base64_encoded_data = base64.b64encode(binary_data)
+            base64_string = base64_encoded_data.decode("utf-8")
+
+        return f"data:{mime_type};base64,{base64_string}"
+
     def get_irrelevant(self):
         with open(self.topic, "r") as f:
             topic = f.read()
 
-        msg = [
-            {
-                "role": "user",
-                "content": [
-                    {
-                        "type": "text",
-                        "text": f"""You are an Expert AI Content Analyst. Your sole task is to determine if a specific chunk of an educational video is irrelevant(Main Goal) to the video's main topic
-                        according to the given video chunk descriptions and transcription.
-                        ### ## Criteria for Irrelevances
-                        You must identify a chunk as irrelevant (`"is_irrelevant": "Yes"`) **only if** it meets one of the following conditions:s
-                        1.  **Completely Off-Topic:** The content is entirely unrelated to the stated educational topic (e.g., the instructor discusses a movie, a personal story).
-                        2.  **Non-Educational Distractions:** The chunk consists of significant dead air, technical troubleshooting (e.g., "Is my microphone working?"), or extended social chatter that does not contribute to the learning objective.
-                        3.  **Mis-alignment:** Suppose the visual information is about something related to study/the video topic but speakers are talking about someting irrelevants
+        def get_msg(inp):
+            return [
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": f"""You are an AI assistant specializing in educational content analysis. Your task is to analyze segments from educational videos with 3 fields
+            video_topic: The overall subject of the entire video lecture.
+            segment_description: A brief summary of the actions and content within the specific video clip.
+            subtitle: The verbatim transcription of the audio from the segment.
+            and classify them as either "Relevant" or "Irrelevant" to the main video topic. This is a binary classification task and your answer will only consist
+            **"Relevant"** or **"Irrelevant"** nothing else.
 
-                        ### ## Relevant (What is NOT Irrelevant)
-                        A chunk is **NOT** irrelevant (`"is_irrelevant": "No"`) if it contains:s
-                        *   **Reflect the main video topics:** The visual information (texts, diagram etc) and the spoken information should align and must be relevant to the main video topic.
+            Here is the 3 fields of a segment:
+            \nvideo_topic: {topic}
+            {inp}
 
-                        ### ## Instructions & Output Format
-
-                        1.  Review the `Video Topic`, `Transcription` and `Chunk Description`(Remember mainly look for irrelevence if not then it would be relevant).
-                        2.  Compare the description against the `Criteria for Irrelevance`(Mainly focus on detecting Irrelevat) and the `Relevance`.
-                        3.  Provide your final answer exclusively in the following 2 line format, including a brief justification for your decision in the `reasoning` field.
-
-                        "is_irrelevant": "Yes" | "No",
-                        "reasoning": "A brief explanation of why the chunk is or is not irrelevant based on the provided criteria."
-                        Here I am providing the overall topic of the whole educational video: {topic}
-                        Here is the current chunk description (you will evaluate is this chunk irrelevant or not):""",
-                    },
-                ],
-            }
-        ]
+            This Segment is: """,
+                        },
+                    ],
+                }
+            ]
 
         data_load = []
         with open(self.resp, "r", encoding="utf-8") as f:
@@ -232,22 +258,81 @@ class Orchestrator:
                 json_object = json.loads(line)
                 data_load.append(json_object)
         with open(
-            "/home/znyd/hacking/edu-cut/store/Pi1-b50VHB8/merged_input.json",
+            "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/merged_input.json",
             "r",
             encoding="utf-8",
         ) as f:
             trans = json.load(f)
 
         for data_point in data_load:
-            msg[0]["content"] += [
+            inp = f"\nsegment_description: {data_point['Description']}\nsubtitle: {trans[data_point['id']]['transcript']}"
+            resp = str(self.llm.llm_response(get_msg(inp)))
+            resp = re.sub(r"<think>.*?</think>\s*", "", resp, flags=re.DOTALL).strip()
+            print(resp)
+
+            with open(self.irr, "a", encoding="utf-8") as f:
+                f.write(
+                    json.dumps(
+                        {"id": data_point["id"], "irr": resp}, ensure_ascii=False
+                    )
+                    + "\n"
+                )
+
+    def get_irrelevant_new(self):
+        with open(self.topic, "r") as f:
+            topic = f.read()
+
+        def get_msg(inp, pre, nxt):
+            return [
                 {
-                    "type": "text",
-                    "text": data_point["Description"]
-                    + "\nHere is the transcription of this current chunk: "
-                    + trans[data_point["id"]]["transcript"],
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": f"""You are an AI assistant specializing in educational content analysis. Your task is to analyze a segment from an educational video, using the context of the segments immediately preceding and following it. Based on this information, you will classify the current segment as either "Relevant" or "Irrelevant" to the main video topic. This is a binary classification task and your answer must only be one of two words: **"Relevant"** or **"Irrelevant"**.
+
+                    Here is the information for your analysis:
+
+                    **video_topic:** {topic}
+
+                    **previous_segment_description:** {pre}
+
+                    **current_segment_description:** {inp}
+
+                    **next_segment_description:** {nxt}
+
+                    The Current Segment is: """,
+                        },
+                    ],
                 }
             ]
-            resp = str(self.llm.llm_response(msg))
+
+        data_load = []
+        with open(self.resp, "r", encoding="utf-8") as f:
+            for line in f:
+                json_object = json.loads(line)
+                data_load.append(json_object)
+        with open(
+            "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/merged_input.json",
+            "r",
+            encoding="utf-8",
+        ) as f:
+            trans = json.load(f)
+
+        for index, data_point in enumerate(data_load):
+            if index == 0:
+                pre_seg = "First Segment so No previous segment."
+                nxt_seg = data_load[index + 1]
+            elif index == len(trans) - 1:
+                pre_seg = data_load[index - 1]
+                nxt_seg = "Last Segment so No next segemnt."
+            else:
+                pre_seg = data_load[index - 1]
+                nxt_seg = data_load[index + 1]
+
+            inp = f"\nsegment_description: {data_point['Description']}\nsubtitle: {trans[data_point['id']]['transcript']}"
+            resp = str(self.llm.llm_response(get_msg(inp, pre_seg, nxt_seg)))
+            # resp = re.sub(r"<think>.*?</think>\s*", "", resp, flags=re.DOTALL).strip()
             print(resp)
 
             with open(self.irr, "a", encoding="utf-8") as f:
@@ -259,9 +344,16 @@ class Orchestrator:
                 )
 
 
-o = Orchestrator()
+model = [
+    "gemma-3-4b-it-BF16.gguf",
+    "InternVL3_5-8B-q6_k.gguf",
+    "Qwen3-4B-Thinking-2507-F16.gguf",
+]
+o = Orchestrator("uuaBdjMhjoA", model[1])
+print("-=-=====")
+o.get_video_description()
 # o.get_summ()
 # o.get_topic()
-o.get_irrelevant()
+# o.get_irrelevant()
 
 # get_summ->get_topic->get_irrelevant
