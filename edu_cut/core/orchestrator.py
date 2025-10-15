@@ -23,10 +23,15 @@ class Orchestrator:
         self.prompt_dir = "/home/znyd/hacking/edu-cut/prompts"
         self.merged_input = Path(f"{self.store_pth}/merged_input.json")
         self.response_dir = self.make_dir(Path(f"{self.store_pth}/responses"))
-        self.resp = self.make_file(Path(f"{self.store_pth}/resp.jsonl"))
         self.topic_pth = self.make_file(Path(f"{self.response_dir}/video_topic.txt"))
         self.irr = self.make_file(Path(f"{self.store_pth}/irr.jsonl"))
         self.last_n_segment = 5
+
+        self.resp = self.make_file(Path(f"{self.response_dir}/description.csv"))
+        if not self.storage.exist(self.resp):
+            pd.DataFrame(columns=pd.Index(["id", "timestamp", "description"])).to_csv(
+                self.resp, index=False
+            )
 
         self.desc_summ_pth = self.make_file(Path(f"{self.response_dir}/desc_summ.csv"))
         if not self.storage.exist(self.desc_summ_pth):
@@ -38,7 +43,6 @@ class Orchestrator:
         message = [{"role": "system", "content": ""}, {"role": "user", "content": None}]
         video_topic_sys_pth = f"{self.prompt_dir}/video_topic_sys.txt"
         video_topic_pth = "video_topic.j2"
-        resp_video_topic_pth = f"{self.response_dir}/video_topic.txt"
         env = Environment(loader=FileSystemLoader(self.prompt_dir))
 
         with open(video_topic_sys_pth, "r") as f:
@@ -53,7 +57,7 @@ class Orchestrator:
 
     def video_description_prompt(
         self, prev_ctx: list, start: str, end: str, subtitle: str, frames: list
-    ):
+    ) -> list:
         with open(f"{self.prompt_dir}/video_description_sys.md", "r") as f:
             system_prompt = f.read()
         with open(self.topic_pth, "r") as f:
@@ -88,11 +92,29 @@ class Orchestrator:
             )
         return message
 
+    def sec_to_hms(self, seconds) -> str:
+        hours = int(seconds // 3600)
+        minutes = int((seconds % 3600) // 60)
+        secs = seconds % 60
+        return f"{hours:02}:{minutes:02}:{secs:06.3f}"
+
+    def image_to_base64_uri(self, filepath):
+        mime_type, _ = mimetypes.guess_type(filepath)
+        if mime_type is None:
+            raise ValueError(f"Could not determine MIME type for {filepath}")
+
+        with open(filepath, "rb") as image_file:
+            binary_data = image_file.read()
+            base64_encoded_data = base64.b64encode(binary_data)
+            base64_string = base64_encoded_data.decode("utf-8")
+
+        return f"data:{mime_type};base64,{base64_string}"
+
     def get_video_topic(self):
         subtitle_df = pd.read_csv(f"{self.store_pth}/transcription.csv")
         subtitle = "\n ".join(subtitle_df["Segment"])
         prompt = self.video_topic_prompt(subtitle)
-        response = self.llm_resp(prompt)
+        response = self.llm.llm_response(prompt)
 
         with open(self.topic_pth, "w") as f:
             if response:
@@ -124,7 +146,6 @@ class Orchestrator:
                     self.sec_to_hms(data_point["start"]),
                     self.sec_to_hms(data_point["end"]),
                 )
-
                 prev_ctx = [
                     {
                         "timestamp": prev_segments[prev_segments["id"] == i].iloc[0][
@@ -156,76 +177,38 @@ class Orchestrator:
             message = self.video_description_prompt(
                 prev_ctx, start, end, data_point["transcript"], data_point["frames"]
             )
-            print(message)
-            print(
-                "==============================================================================="
-            )
-            if idx == 8:
-                break
-            # response = self.llm.llm_response(message, self.model)
-            # print(response)
-            seg_summary = self.get_description_summary(response)
-
-            # with open(self.resp, "a", encoding="utf-8") as f:
-            #     f.write(json.dumps(resp_dict, ensure_ascii=False) + "\n")
-
-    def get_description_summary(self, response: str):
-        pass
-
-    def get_topic(self):
-        # data_load = []
-        # with open(self.resp, "r", encoding="utf-8") as f:
-        #     for line in f:
-        #         json_object = json.loads(line)
-        #         data_load.append(json_object)
-        data_load = pd.read_csv(
-            "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/transcription.csv"
-        )
-
-        # description of chunks
-
-        msg = [
-            {
-                "role": "user",
-                "content": [
+            description_response = self.llm.llm_response(message, self.model)
+            if description_response:
+                timestamp = start + "-" + end
+                self.get_description_summary(description_response, idx, timestamp)
+                pd.DataFrame(
                     {
-                        "type": "text",
-                        "text": """You are an AI assistant who can analyze subtitle of an educational video and can tell about what is main topic
-                     of an educational video, basically the overall the educational topic were taught on the video. Your response should be contains all the
-                    topics of this educational video in a condensed **max 1-2 line** only nothing else. **Don't include anything that is not related to academics or education.** Here I am providing the subtitle/transcription of whole video: """,
-                    },
-                ],
-            }
+                        "id": [idx],
+                        "timestamp": [timestamp],
+                        "description": [description_response],
+                    }
+                ).to_csv(self.desc_summ_pth, mode="a", header=False, index=False)
+                print(f"Description saved for {idx}->{start + end}")
+
+    def get_description_summary(
+        self, segment_description: str, idx: int, timestamp: str
+    ):
+        with open(self.prompt_dir + "/segment_summary.md", "r") as f:
+            system_prompt = f.read()
+        message = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": segment_description},
         ]
+        summary_response = self.llm.llm_response(message, self.model)
 
-        vid_desc = ""
-        for i, data_point in data_load.iterrows():
-            vid_desc += data_point["Merged Segment"] + "\n"
-        msg[0]["content"] += [{"type": "text", "text": vid_desc}]
-        resp = self.llm.llm_response(msg)
-        with open(self.topic, "w", encoding="utf-8") as f:
-            f.write(resp)
+        pd.DataFrame(
+            {"id": [idx], "timestamp": [timestamp], "summary": [summary_response]}
+        ).to_csv(self.desc_summ_pth, mode="a", header=False, index=False)
 
-    def sec_to_hms(self, seconds):
-        hours = int(seconds // 3600)
-        minutes = int((seconds % 3600) // 60)
-        secs = seconds % 60
-        return f"{hours:02}:{minutes:02}:{secs:06.3f}"
-
-    def image_to_base64_uri(self, filepath):
-        mime_type, _ = mimetypes.guess_type(filepath)
-        if mime_type is None:
-            raise ValueError(f"Could not determine MIME type for {filepath}")
-
-        with open(filepath, "rb") as image_file:
-            binary_data = image_file.read()
-            base64_encoded_data = base64.b64encode(binary_data)
-            base64_string = base64_encoded_data.decode("utf-8")
-
-        return f"data:{mime_type};base64,{base64_string}"
+        print(f"Summary saved for {idx}->{timestamp}")
 
     def get_irrelevant(self):
-        with open(self.topic, "r") as f:
+        with open(self.topic_pth, "r") as f:
             topic = f.read()
 
         def get_msg(inp):
@@ -278,71 +261,6 @@ class Orchestrator:
                     + "\n"
                 )
 
-    def get_irrelevant_new(self):
-        with open(self.topic, "r") as f:
-            topic = f.read()
-
-        def get_msg(inp, pre, nxt):
-            return [
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": f"""You are an AI assistant specializing in educational content analysis. Your task is to analyze a segment from an educational video, using the context of the segments immediately preceding and following it. Based on this information, you will classify the current segment as either "Relevant" or "Irrelevant" to the main video topic. This is a binary classification task and your answer must only be one of two words: **"Relevant"** or **"Irrelevant"**.
-
-                    Here is the information for your analysis:
-
-                    **video_topic:** {topic}
-
-                    **previous_segment_description:** {pre}
-
-                    **current_segment_description:** {inp}
-
-                    **next_segment_description:** {nxt}
-
-                    The Current Segment is: """,
-                        },
-                    ],
-                }
-            ]
-
-        data_load = []
-        with open(self.resp, "r", encoding="utf-8") as f:
-            for line in f:
-                json_object = json.loads(line)
-                data_load.append(json_object)
-        with open(
-            "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/merged_input.json",
-            "r",
-            encoding="utf-8",
-        ) as f:
-            trans = json.load(f)
-
-        for index, data_point in enumerate(data_load):
-            if index == 0:
-                pre_seg = "First Segment so No previous segment."
-                nxt_seg = data_load[index + 1]
-            elif index == len(trans) - 1:
-                pre_seg = data_load[index - 1]
-                nxt_seg = "Last Segment so No next segemnt."
-            else:
-                pre_seg = data_load[index - 1]
-                nxt_seg = data_load[index + 1]
-
-            inp = f"\nsegment_description: {data_point['Description']}\nsubtitle: {trans[data_point['id']]['transcript']}"
-            resp = str(self.llm.llm_response(get_msg(inp, pre_seg, nxt_seg)))
-            # resp = re.sub(r"<think>.*?</think>\s*", "", resp, flags=re.DOTALL).strip()
-            print(resp)
-
-            with open(self.irr, "a", encoding="utf-8") as f:
-                f.write(
-                    json.dumps(
-                        {"id": data_point["id"], "irr": resp}, ensure_ascii=False
-                    )
-                    + "\n"
-                )
-
 
 model = [
     "gemma-3-4b-it-BF16.gguf",
@@ -350,10 +268,5 @@ model = [
     "Qwen3-4B-Thinking-2507-F16.gguf",
 ]
 o = Orchestrator("uuaBdjMhjoA", model[1])
-print("-=-=====")
-o.get_video_description()
-# o.get_summ()
-# o.get_topic()
-# o.get_irrelevant()
-
-# get_summ->get_topic->get_irrelevant
+# o.get_video_description()
+# get_topic->get_summ->get_irrelevant
