@@ -2,6 +2,7 @@ import base64
 import json
 import subprocess
 from pathlib import Path
+from typing import Any
 
 import imagehash
 import imageio
@@ -9,6 +10,7 @@ import pandas as pd
 import yt_dlp
 from PIL import Image
 from pydub import AudioSegment, effects, silence
+from yt_dlp.utils import DownloadError
 
 from ..storage.store_manager import Storage
 
@@ -18,12 +20,15 @@ class PreProcessor:
         self.yt_url = yt_url[:43]
         self.yt_id = self.yt_url[32:]
         self.storage = Storage()
+        self._create_dir()
+
+    def _create_dir(self):
         self.yt_dir, self.video_dir, self.audio_dir = self.storage.create_yt_path(
             self.yt_id
         )
 
     def download_video(self) -> None:
-        video_opts = {
+        video_opts: dict[str, Any] = {
             "format": "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
             "outtmpl": str(Path(self.video_dir) / f"{self.yt_id}.%(ext)s"),
             "quiet": False,
@@ -38,7 +43,7 @@ class PreProcessor:
                 with yt_dlp.YoutubeDL(video_opts) as ydl:
                     ydl.download([self.yt_url])
                 print("Video download completed successfully!")
-            except yt_dlp.utils.DownloadError as e:
+            except DownloadError as e:
                 print(f"An error occurred during video download: {e}")
             except Exception as e:
                 print(f"An unexpected error occurred during video download: {e}")
@@ -88,7 +93,7 @@ class PreProcessor:
                 with yt_dlp.YoutubeDL(audio_opts) as ydl:
                     ydl.download([self.yt_url])
                 print("Audio download completed successfully!")
-            except yt_dlp.utils.DownloadError as e:
+            except DownloadError as e:
                 print(f"An error occurred during audio download: {e}")
             except Exception as e:
                 print(f"An unexpected error occurred during audio download: {e}")
@@ -505,6 +510,7 @@ class PreProcessor:
 # }]
 
 p = PreProcessor("https://www.youtube.com/watch?v=uuaBdjMhjoA")
+
 # p.download_video()
 # p.download_audio()
 
