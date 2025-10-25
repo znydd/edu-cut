@@ -12,34 +12,57 @@ class Storage:
         self.store_path = Path(self.root_path + "/store")
         self.store_path.mkdir(parents=True, exist_ok=True)
 
-    def create_yt_path(self, yt_id: str) -> Tuple:
+    def create_yt_store_dir(self, yt_id: str) -> Tuple:
         yt_dir = self.store_path.joinpath(yt_id)
-        yt_video = yt_dir.joinpath("video")
-        yt_audio = yt_dir.joinpath("audio")
-        if yt_video.exists() and yt_audio.exists():
-            print(f"{yt_video} and {yt_audio} Exist ☑️")
-            return (yt_dir, yt_video, yt_audio)
+        audio_dir = yt_dir.joinpath("audio")
+        video_dir = yt_dir.joinpath("video")
+        video_cut_dir = yt_dir.joinpath("video_cut")
+        subtitle_dir = yt_dir.joinpath("subtitle")
+        merged_input_dir = yt_dir.joinpath("merged_input")
+        responses_dir = yt_dir.joinpath("responses")
+        if (
+            yt_dir.exists()
+            and video_dir.exists()
+            and audio_dir.exists()
+            and video_cut_dir.exists()
+            and subtitle_dir.exists()
+            and merged_input_dir.exists()
+            and responses_dir.exists()
+        ):
+            print(
+                f"{yt_dir},{video_dir},{video_cut_dir}, {audio_dir}, {subtitle_dir}, {merged_input_dir}, {responses_dir} Exist ✅"
+            )
+            return (
+                yt_dir,
+                audio_dir,
+                video_dir,
+                video_cut_dir,
+                subtitle_dir,
+                merged_input_dir,
+                responses_dir,
+            )
         try:
-            yt_audio.mkdir(parents=True, exist_ok=True)
-            yt_video.mkdir(parents=True, exist_ok=True)
-            print(f"{yt_video} and {yt_audio} Created successfully ✅")
+            yt_dir.mkdir(parents=True, exist_ok=True)
+            audio_dir.mkdir(parents=True, exist_ok=True)
+            video_dir.mkdir(parents=True, exist_ok=True)
+            video_cut_dir.mkdir(parents=True, exist_ok=True)
+            subtitle_dir.mkdir(parents=True, exist_ok=True)
+            merged_input_dir.mkdir(parents=True, exist_ok=True)
+            responses_dir.mkdir(parents=True, exist_ok=True)
+            print(
+                f"{yt_dir},{video_dir},{video_cut_dir}, {audio_dir}, {subtitle_dir}, {merged_input_dir}, {responses_dir} Created successfully ✅"
+            )
+            return (
+                yt_dir,
+                audio_dir,
+                video_dir,
+                video_cut_dir,
+                subtitle_dir,
+                merged_input_dir,
+                responses_dir,
+            )
         except Exception as e:
             print("Error: ", e)
-
-        return (yt_dir, yt_video, yt_audio)
-
-    def create_audio_cut_path(self, yt_id: str) -> Path | None:
-        yt_dir = self.store_path.joinpath(yt_id)
-        if self.exist(yt_dir):
-            try:
-                audio_cut_path = yt_dir.joinpath("audio_cut")
-                audio_cut_path.mkdir(parents=True, exist_ok=True)
-                return audio_cut_path
-            except Exception as e:
-                print("Error: ", e)
-        else:
-            print("YouTube Path does not exist ❌")
-            return self.store_path
 
     def make_dir(self, dir: Path):
         try:
