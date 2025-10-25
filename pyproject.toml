@@ -16,5 +16,6 @@ dependencies = [
     "pip>=25.0.1",
     "pydub>=0.25.1",
     "python-dotenv>=1.1.0",
+    "youtube-transcript-api>=1.2.3",
     "yt-dlp>=2025.5.22",
 ]
