@@ -28,13 +28,13 @@ class Orchestrator:
         self.last_n_segment = 5
 
         self.resp = self.make_file(Path(f"{self.response_dir}/description.csv"))
-        if not self.storage.exist(self.resp):
+        if self.storage.exist(self.resp):
             pd.DataFrame(columns=pd.Index(["id", "timestamp", "description"])).to_csv(
                 self.resp, index=False
             )
 
         self.desc_summ_pth = self.make_file(Path(f"{self.response_dir}/desc_summ.csv"))
-        if not self.storage.exist(self.desc_summ_pth):
+        if self.storage.exist(self.desc_summ_pth):
             pd.DataFrame(columns=pd.Index(["id", "timestamp", "summary"])).to_csv(
                 self.desc_summ_pth, index=False
             )
@@ -62,6 +62,7 @@ class Orchestrator:
             system_prompt = f.read()
         with open(self.topic_pth, "r") as f:
             video_topic = f.read()
+
         message = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": None},
@@ -83,10 +84,9 @@ class Orchestrator:
                 {
                     "type": "image_url",
                     "image_url": {
-                        "url": frame
-                        # self.image_to_base64_uri(
-                        #     self.store_pth + "/frames/" + frame
-                        # )
+                        "url": self.image_to_base64_uri(
+                            self.store_pth + "/frames/" + frame
+                        )
                     },
                 }
             )
@@ -127,9 +127,10 @@ class Orchestrator:
     def get_video_description(self):
         with open(self.merged_input, "r", encoding="utf-8") as f:
             data = json.load(f)
-        prev_segments = pd.read_csv(self.desc_summ_pth)
+        # prev_segments = pd.read_csv(self.desc_summ_pth)
 
         for idx, data_point in enumerate(data):
+            prev_segments = pd.read_csv(self.desc_summ_pth)
             if idx == 0:
                 start, end = (
                     self.sec_to_hms(data_point["start"]),
@@ -141,7 +142,7 @@ class Orchestrator:
                         "description": "It is the first video chunk so no previous context",
                     }
                 ]
-            if idx <= self.last_n_segment:
+            elif idx <= self.last_n_segment:
                 start, end = (
                     self.sec_to_hms(data_point["start"]),
                     self.sec_to_hms(data_point["end"]),
@@ -177,24 +178,27 @@ class Orchestrator:
             message = self.video_description_prompt(
                 prev_ctx, start, end, data_point["transcript"], data_point["frames"]
             )
+
             description_response = self.llm.llm_response(message, self.model)
+
             if description_response:
                 timestamp = start + "-" + end
-                self.get_description_summary(description_response, idx, timestamp)
                 pd.DataFrame(
                     {
                         "id": [idx],
                         "timestamp": [timestamp],
                         "description": [description_response],
                     }
-                ).to_csv(self.desc_summ_pth, mode="a", header=False, index=False)
+                ).to_csv(self.resp, mode="a", header=False, index=False)
                 print(f"Description saved for {idx}->{start + end}")
+                self.get_description_summary(description_response, idx, timestamp)
 
     def get_description_summary(
         self, segment_description: str, idx: int, timestamp: str
     ):
         with open(self.prompt_dir + "/segment_summary.md", "r") as f:
             system_prompt = f.read()
+
         message = [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": segment_description},
@@ -204,7 +208,6 @@ class Orchestrator:
         pd.DataFrame(
             {"id": [idx], "timestamp": [timestamp], "summary": [summary_response]}
         ).to_csv(self.desc_summ_pth, mode="a", header=False, index=False)
-
         print(f"Summary saved for {idx}->{timestamp}")
 
     def get_irrelevant(self):
@@ -262,11 +265,11 @@ class Orchestrator:
                 )
 
 
-model = [
-    "gemma-3-4b-it-BF16.gguf",
-    "InternVL3_5-8B-q6_k.gguf",
-    "Qwen3-4B-Thinking-2507-F16.gguf",
-]
-o = Orchestrator("uuaBdjMhjoA", model[1])
+# model = [
+#     "gemma-3-4b-it-BF16.gguf",
+#     "InternVL3_5-8B-q6_k.gguf",
+#     "Qwen3-4B-Thinking-2507-F16.gguf",
+# ]
+# o = Orchestrator("uuaBdjMhjoA", model[1])
 # o.get_video_description()
 # get_topic->get_summ->get_irrelevant
