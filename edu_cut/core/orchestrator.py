@@ -7,6 +7,8 @@ from pathlib import Path
 import pandas as pd
 from jinja2 import Environment, FileSystemLoader
 
+from config import PROMPT_DIR, STORE_DIR
+
 from ..ai.serve_ai import ServeAI
 from ..storage.store_manager import Storage
 
@@ -19,10 +21,10 @@ class Orchestrator:
         self.make_dir = self.storage.make_dir
         self.yt_id = yt_id
         self.model = model
-        self.store_pth = f"/home/znyd/hacking/edu-cut/store/{yt_id}"
-        self.prompt_dir = "/home/znyd/hacking/edu-cut/prompts"
-        self.merged_input = Path(f"{self.store_pth}/merged_input.json")
-        self.response_dir = self.make_dir(Path(f"{self.store_pth}/responses"))
+        self.store_pth = STORE_DIR / yt_id
+        self.prompt_dir = PROMPT_DIR
+        self.merged_input = Path(f"{self.store_pth}/merged_input/merged_input.json")
+        self.response_dir = self.store_pth / "responses"
         self.topic_pth = self.make_file(Path(f"{self.response_dir}/video_topic.txt"))
         self.irr = self.make_file(Path(f"{self.store_pth}/irr.jsonl"))
         self.last_n_segment = 5
@@ -111,7 +113,9 @@ class Orchestrator:
         return f"data:{mime_type};base64,{base64_string}"
 
     def get_video_topic(self):
-        subtitle_df = pd.read_csv(f"{self.store_pth}/transcription.csv")
+        subtitle_df = pd.read_csv(
+            f"{self.store_pth}/subtitle/{self.yt_id}_transcript.csv"
+        )
         subtitle = "\n ".join(subtitle_df["Segment"])
         prompt = self.video_topic_prompt(subtitle)
         response = self.llm.llm_response(prompt)
