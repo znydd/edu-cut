@@ -87,7 +87,7 @@ class Orchestrator:
                     "type": "image_url",
                     "image_url": {
                         "url": self.image_to_base64_uri(
-                            self.store_pth + "/frames/" + frame
+                            Path(f"{self.store_pth}/frames/{frame}")
                         )
                     },
                 }
@@ -143,7 +143,7 @@ class Orchestrator:
                 prev_ctx = [
                     {
                         "timestamp": "00:00:00-00:00:00",
-                        "description": "It is the first video chunk so no previous context",
+                        "description": "The video starts from here and it is the first video chunk so no previous context",
                     }
                 ]
             elif idx <= self.last_n_segment:
@@ -200,7 +200,7 @@ class Orchestrator:
     def get_description_summary(
         self, segment_description: str, idx: int, timestamp: str
     ):
-        with open(self.prompt_dir + "/segment_summary.md", "r") as f:
+        with open(Path(f"{self.prompt_dir}/segment_summary.md"), "r") as f:
             system_prompt = f.read()
 
         message = [
