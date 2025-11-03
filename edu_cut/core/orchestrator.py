@@ -215,65 +215,14 @@ class Orchestrator:
         print(f"Summary saved for {idx}->{timestamp}")
 
     def get_irrelevant(self):
+        # 4 files to read: decription.csv, desc_summ.csv, merged.csv, video_topic.txt
+        description_df = pd.read_csv(self.resp)
+        desc_summ_df = pd.read_csv(self.desc_summ_pth)
+        with open(self.merged_input, "r", encoding="utf-8") as f:
+            subtitle_df = json.load(f)
         with open(self.topic_pth, "r") as f:
-            topic = f.read()
-
-        def get_msg(inp):
-            return [
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": f"""You are an AI assistant specializing in educational content analysis. Your task is to analyze segments from educational videos with 3 fields
-            video_topic: The overall subject of the entire video lecture.
-            segment_description: A brief summary of the actions and content within the specific video clip.
-            subtitle: The verbatim transcription of the audio from the segment.
-            and classify them as either "Relevant" or "Irrelevant" to the main video topic. This is a binary classification task and your answer will only consist
-            **"Relevant"** or **"Irrelevant"** nothing else.
-
-            Here is the 3 fields of a segment:
-            \nvideo_topic: {topic}
-            {inp}
-
-            This Segment is: """,
-                        },
-                    ],
-                }
-            ]
-
-        data_load = []
-        with open(self.resp, "r", encoding="utf-8") as f:
-            for line in f:
-                json_object = json.loads(line)
-                data_load.append(json_object)
-        with open(
-            "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/merged_input.json",
-            "r",
-            encoding="utf-8",
-        ) as f:
-            trans = json.load(f)
-
-        for data_point in data_load:
-            inp = f"\nsegment_description: {data_point['Description']}\nsubtitle: {trans[data_point['id']]['transcript']}"
-            resp = str(self.llm.llm_response(get_msg(inp)))
-            resp = re.sub(r"<think>.*?</think>\s*", "", resp, flags=re.DOTALL).strip()
-            print(resp)
-
-            with open(self.irr, "a", encoding="utf-8") as f:
-                f.write(
-                    json.dumps(
-                        {"id": data_point["id"], "irr": resp}, ensure_ascii=False
-                    )
-                    + "\n"
-                )
+            video_topic = f.read()
+        
+        
 
 
-# model = [
-#     "gemma-3-4b-it-BF16.gguf",
-#     "InternVL3_5-8B-q6_k.gguf",
-#     "Qwen3-4B-Thinking-2507-F16.gguf",
-# ]
-# o = Orchestrator("uuaBdjMhjoA", model[1])
-# o.get_video_description()
-# get_topic->get_summ->get_irrelevant

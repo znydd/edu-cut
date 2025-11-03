@@ -1,0 +1,20 @@
+### Video Topic
+{{ context_data.video_topic }}
+
+---
+
+### Chronological Context
+{% for segment in context_data.chronological_context %}
+* **{{ segment.timestamp }}**: {{ segment.description }}
+{% endfor %}
+
+---
+
+### Current Segment Timestamp
+{{ context_data.start_time }} - {{ context_data.end_time }}
+
+### Transcript
+{{ context_data.transcript }}
+
+### current Segment Description
+{{ context_data.current_segment_description }}
