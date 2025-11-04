@@ -29,14 +29,18 @@ class Orchestrator:
         self.irr = self.make_file(Path(f"{self.store_pth}/irr.jsonl"))
         self.last_n_segment = 5
 
-        self.resp = self.make_file(Path(f"{self.response_dir}/description.csv"))
-        if self.storage.exist(self.resp):
+        self.resp = Path(f"{self.response_dir}/description.csv")
+        if not self.storage.exist(self.resp):
+            self.resp = self.make_file(Path(f"{self.response_dir}/description.csv"))
             pd.DataFrame(columns=pd.Index(["id", "timestamp", "description"])).to_csv(
                 self.resp, index=False
             )
 
-        self.desc_summ_pth = self.make_file(Path(f"{self.response_dir}/desc_summ.csv"))
-        if self.storage.exist(self.desc_summ_pth):
+        self.desc_summ_pth = Path(f"{self.response_dir}/desc_summ.csv")
+        if not self.storage.exist(self.desc_summ_pth):
+            self.desc_summ_pth = self.make_file(
+                Path(f"{self.response_dir}/desc_summ.csv")
+            )
             pd.DataFrame(columns=pd.Index(["id", "timestamp", "summary"])).to_csv(
                 self.desc_summ_pth, index=False
             )
@@ -92,6 +96,32 @@ class Orchestrator:
                     },
                 }
             )
+        return message
+
+    def video_classifier_prompt(
+        self, curr_desc, start, end, prev_ctx, video_topic, subtitle
+    ):
+        with open(f"{self.prompt_dir}/classification.md", "r") as f:
+            class_sys_prompt = f.read()
+        with open(self.topic_pth, "r") as f:
+            video_topic = f.read()
+        message = [
+            {"role": "system", "content": class_sys_prompt},
+            {"role": "user", "content": None},
+        ]
+        context_data = {
+            "current_segment_description": curr_desc,
+            "video_topic": video_topic,
+            "chronological_context": prev_ctx,
+            "start_time": start,
+            "end_time": end,
+            "transcript": subtitle,
+        }
+        env = Environment(loader=FileSystemLoader(self.prompt_dir))
+        template = env.get_template("classification.j2")
+        prompt = template.render(context_data=context_data)
+        message[1]["content"] = [{"type": "text", "text": prompt}]
+
         return message
 
     def sec_to_hms(self, seconds) -> str:
@@ -217,12 +247,58 @@ class Orchestrator:
     def get_irrelevant(self):
         # 4 files to read: decription.csv, desc_summ.csv, merged.csv, video_topic.txt
         description_df = pd.read_csv(self.resp)
-        desc_summ_df = pd.read_csv(self.desc_summ_pth)
+        # desc_summ_df = pd.read_csv(self.desc_summ_pth)
+        prev_segments = pd.read_csv(self.desc_summ_pth)
         with open(self.merged_input, "r", encoding="utf-8") as f:
             subtitle_df = json.load(f)
         with open(self.topic_pth, "r") as f:
             video_topic = f.read()
-        
-        
 
+        for idx, data_point in enumerate(subtitle_df):
+            start, end = (
+                self.sec_to_hms(data_point["start"]),
+                self.sec_to_hms(data_point["end"]),
+            )
+            if idx == 0:
+                prev_ctx = [
+                    {
+                        "timestamp": "00:00:00-00:00:00",
+                        "description": "The video starts from here and it is the first video chunk so no previous context",
+                    }
+                ]
+            elif idx <= self.last_n_segment:
+                prev_ctx = [
+                    {
+                        "timestamp": prev_segments[prev_segments["id"] == i].iloc[0][
+                            "timestamp"
+                        ],
+                        "description": prev_segments[prev_segments["id"] == i].iloc[0][
+                            "summary"
+                        ],
+                    }
+                    for i in range(idx)
+                ]
+            else:
+                prev_ctx = [
+                    {
+                        "timestamp": prev_segments[prev_segments["id"] == i].iloc[0][
+                            "timestamp"
+                        ],
+                        "description": prev_segments[prev_segments["id"] == i].iloc[0][
+                            "summary"
+                        ],
+                    }
+                    for i in range(idx - self.last_n_segment, idx)
+                ]
+            curr_desc = description_df[description_df["id"] == idx].iloc[0][
+                "description"
+            ]
 
+            message = self.video_classifier_prompt(
+                curr_desc, start, end, prev_ctx, video_topic, data_point["transcript"]
+            )
+            classification_resp = self.llm(message)
+            save_format = {
+                "timestamps": f"{start}-{end}",
+                "resp": f"{classification_resp}",
+            }
