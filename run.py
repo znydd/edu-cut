@@ -21,7 +21,9 @@ model = [
     "InternVL3_5-8B-q6_k.gguf",
     "Qwen3-4B-Thinking-2507-F16.gguf",
     "InternVL3_5-8B-q6_k.gguf",
+    "gpt-oss-20b-F16.gguf"
 ]
-o = Orchestrator(yt_id, model[3])
-o.get_video_topic()
-o.get_video_description()
+o = Orchestrator(yt_id, model[4])
+# o.get_video_topic()
+# o.get_video_description()
+o.get_irrelevant()

@@ -45,6 +45,15 @@ class Orchestrator:
                 self.desc_summ_pth, index=False
             )
 
+        self.classified_pth = Path(f"{self.response_dir}/clssified.csv")
+        if not self.storage.exist(self.desc_summ_pth):
+            self.desc_summ_pth = self.make_file(
+                Path(f"{self.response_dir}/classified.csv")
+            )
+            pd.DataFrame(columns=pd.Index(["id", "timestamp", "class"])).to_csv(
+                self.desc_summ_pth, index=False
+            )
+
     def video_topic_prompt(self, subtitle="") -> list:
         message = [{"role": "system", "content": ""}, {"role": "user", "content": None}]
         video_topic_sys_pth = f"{self.prompt_dir}/video_topic_sys.txt"
@@ -297,8 +306,14 @@ class Orchestrator:
             message = self.video_classifier_prompt(
                 curr_desc, start, end, prev_ctx, video_topic, data_point["transcript"]
             )
-            classification_resp = self.llm(message)
+            classified_resp= self.llm.llm_response(message)
+            # classified_resp= re.compile(r"<\|channel\|>final<\|message\|>(.*)", re.DOTALL).search(classified_resp).group(1).strip()
             save_format = {
-                "timestamps": f"{start}-{end}",
-                "resp": f"{classification_resp}",
+                "id":[idx],
+                "timestamp": [f"{start}-{end}"],
+                "class": [f"{classified_resp}"],
             }
+            pd.DataFrame(
+                save_format
+            ).to_csv(self.classified_pth, mode="a", header=False, index=False)
+            print(f"Classified saved for {idx}->{start + end}")
