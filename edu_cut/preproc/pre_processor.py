@@ -24,6 +24,7 @@ class PreProcessor:
         self.yt_url = "https://www.youtube.com/watch?v=" + self.yt_id
         self.storage = Storage()
         self._create_yt_store()
+        self.silent_gap = 5.0
 
     def _create_yt_store(self):
         (
@@ -209,6 +210,21 @@ class PreProcessor:
             final_sub.append(
                 {"Start": row["Start"], "End": row["End"], "Segment": row["Segment"]}
             )
+
+        for idx, row in enumerate(final_sub):
+            if idx != 0:
+                prev_seg = final_sub[idx - 1]
+                prev_end = prev_seg["End"]
+                curr_start = row["Start"]
+                gap = curr_start - prev_end
+                if gap > self.silent_gap:
+                    silent = {
+                        "Start": math.ceil(prev_end),
+                        "End": math.floor(curr_start),
+                        "Segment": f"[Silent] for {gap:.2f} sec",
+                    }
+                    final_sub.insert(idx, silent)
+
         merged_df = pd.DataFrame(final_sub)
         merged_df.to_csv(final_transcript_path, index=False, encoding="utf-8-sig")
         self.transcript = final_transcript_path
