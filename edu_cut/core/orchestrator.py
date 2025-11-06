@@ -45,8 +45,8 @@ class Orchestrator:
                 self.desc_summ_pth, index=False
             )
 
-        self.classified_pth = Path(f"{self.response_dir}/clssified.csv")
-        if not self.storage.exist(self.desc_summ_pth):
+        self.classified_pth = Path(f"{self.response_dir}/classified.csv")
+        if not self.storage.exist(self.classified_pth):
             self.desc_summ_pth = self.make_file(
                 Path(f"{self.response_dir}/classified.csv")
             )
@@ -306,14 +306,14 @@ class Orchestrator:
             message = self.video_classifier_prompt(
                 curr_desc, start, end, prev_ctx, video_topic, data_point["transcript"]
             )
-            classified_resp= self.llm.llm_response(message)
+            classified_resp = self.llm.llm_response(message)
             # classified_resp= re.compile(r"<\|channel\|>final<\|message\|>(.*)", re.DOTALL).search(classified_resp).group(1).strip()
             save_format = {
-                "id":[idx],
+                "id": [idx],
                 "timestamp": [f"{start}-{end}"],
                 "class": [f"{classified_resp}"],
             }
-            pd.DataFrame(
-                save_format
-            ).to_csv(self.classified_pth, mode="a", header=False, index=False)
+            pd.DataFrame(save_format).to_csv(
+                self.classified_pth, mode="a", header=False, index=False
+            )
             print(f"Classified saved for {idx}->{start + end}")
