@@ -225,6 +225,9 @@ class Orchestrator:
             description_response = self.llm.llm_response(message, self.model)
 
             if description_response:
+                description_response = re.sub(
+                    r"<think>.*?</think>\s*", "", description_response, flags=re.DOTALL
+                ).strip()
                 timestamp = start + "-" + end
                 pd.DataFrame(
                     {
@@ -248,10 +251,15 @@ class Orchestrator:
         ]
         summary_response = self.llm.llm_response(message, self.model)
 
-        pd.DataFrame(
-            {"id": [idx], "timestamp": [timestamp], "summary": [summary_response]}
-        ).to_csv(self.desc_summ_pth, mode="a", header=False, index=False)
-        print(f"Summary saved for {idx}->{timestamp}")
+        if summary_response:
+            summary_response = re.sub(
+                r"<think>.*?</think>\s*", "", summary_response, flags=re.DOTALL
+            ).strip()
+
+            pd.DataFrame(
+                {"id": [idx], "timestamp": [timestamp], "summary": [summary_response]}
+            ).to_csv(self.desc_summ_pth, mode="a", header=False, index=False)
+            print(f"Summary saved for {idx}->{timestamp}")
 
     def get_irrelevant(self):
         # 4 files to read: decription.csv, desc_summ.csv, merged.csv, video_topic.txt
