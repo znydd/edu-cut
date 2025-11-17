@@ -20,3 +20,8 @@ dependencies = [
     "youtube-transcript-api>=1.2.3",
     "yt-dlp>=2025.5.22",
 ]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.1.0",
+]
