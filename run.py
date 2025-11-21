@@ -9,23 +9,34 @@ from edu_cut.preproc.pre_processor import PreProcessor
 # Then run the other functions
 
 YT_ID = "r_O-UjZZ744"
+
+ids = [
+    "YYNXFsUutbM",
+    "wxBG5Ei7a_w",
+    "ES6W4_bXvro",
+    "i31yX84EgPE",
+    "r_O-UjZZ744",
+    "ig0QZxtj3j8",
+    "jxrGodnopHo",
+    "OMGPvW8TBHc",
+]
+
 # https://www.youtube.com/watch?v=ig0QZxtj3j8
 # https://www.youtube.com/watch?v=r_O-UjZZ744
 # =======PreProcess========
-p = PreProcessor(YT_ID)
-p.download_video()
-print("Video downloaded ========================================================")
-p.download_audio()
-print("Audio downloaded ========================================================")
-# p.process_subtitle()
-# print("Subtitle processed ========================================================")
-# p.segment_timestamps()
-# print("SEGMENTED timestamps ======================================================")
-# p.video_cut()
-# print("VIDEO CUT ======================================================")
-# p.frame_sample()
-# print("FRAME SAMPLE ======================================================")
-# p.merge_frame_transcript()
+for id in ids:
+    p = PreProcessor(id)
+    # p.download_video()
+    # print("Video downloaded ========================================================")
+    p.process_subtitle()
+    print("Subtitle processed ========================================================")
+    p.segment_timestamps()
+    print("SEGMENTED timestamps ======================================================")
+    p.video_cut()
+    print("VIDEO CUT ======================================================")
+    p.frame_sample()
+    print("FRAME SAMPLE ======================================================")
+    p.merge_frame_transcript()
 
 # model = [
 #     "gemma-3-4b-it-BF16.gguf",
