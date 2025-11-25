@@ -26,7 +26,7 @@ class Orchestrator:
         self.merged_input = Path(f"{self.store_pth}/merged_input/merged_input.json")
         self.response_dir = self.store_pth / "responses"
         self.topic_pth = self.make_file(Path(f"{self.response_dir}/video_topic.txt"))
-        self.irr = self.make_file(Path(f"{self.store_pth}/irr.jsonl"))
+        # self.irr = self.make_file(Path(f"{self.store_pth}/irr.jsonl"))
         self.last_n_segment = 5
 
         self.resp = Path(f"{self.response_dir}/description.csv")
@@ -47,11 +47,11 @@ class Orchestrator:
 
         self.classified_pth = Path(f"{self.response_dir}/classified.csv")
         if not self.storage.exist(self.classified_pth):
-            self.desc_summ_pth = self.make_file(
+            self.classified_pth = self.make_file(
                 Path(f"{self.response_dir}/classified.csv")
             )
             pd.DataFrame(columns=pd.Index(["id", "timestamp", "class"])).to_csv(
-                self.desc_summ_pth, index=False
+                self.classified_pth, index=False
             )
 
     def video_topic_prompt(self, subtitle="") -> list:
@@ -218,11 +218,14 @@ class Orchestrator:
                     for i in range(idx - self.last_n_segment, idx)
                 ]
 
+            print(prev_ctx)
+
             message = self.video_description_prompt(
                 prev_ctx, start, end, data_point["transcript"], data_point["frames"]
             )
 
             description_response = self.llm.llm_response(message, self.model)
+            print(description_response)
 
             if description_response:
                 description_response = re.sub(
@@ -237,6 +240,7 @@ class Orchestrator:
                     }
                 ).to_csv(self.resp, mode="a", header=False, index=False)
                 print(f"Description saved for {idx}->{start + end}")
+                description_response += "\n Transcript: " + data_point["transcript"]
                 self.get_description_summary(description_response, idx, timestamp)
 
     def get_description_summary(
@@ -260,6 +264,9 @@ class Orchestrator:
                 {"id": [idx], "timestamp": [timestamp], "summary": [summary_response]}
             ).to_csv(self.desc_summ_pth, mode="a", header=False, index=False)
             print(f"Summary saved for {idx}->{timestamp}")
+            print(summary_response)
+            return summary_response
+        return None
 
     def get_irrelevant(self):
         # 4 files to read: decription.csv, desc_summ.csv, merged.csv, video_topic.txt
