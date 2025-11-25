@@ -7,8 +7,8 @@
 
 
 ## todo
-- [x] pick 10 videos
-- [ ] collect transcript
+- [X] pick 10 videos
+- [X] collect transcript
 - [ ] test and fact check
 - [ ] data generation
 
