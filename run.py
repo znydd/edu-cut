@@ -8,19 +8,19 @@ from test.viz.visualizer import Visualizer
 # Then download the transcript and rename it as pk_transcript.csv and put it on the subtitle folder
 # Then run the other functions
 
-YT_ID = "wxBG5Ei7a_w"
 
 ids = [
-    "YYNXFsUutbM",
-    "wxBG5Ei7a_w",
-    "ES6W4_bXvro",
-    "i31yX84EgPE",
+    "YYNXFsUutbM", # Bug
+    "wxBG5Ei7a_w",  # Done
+    "ES6W4_bXvro",  # Done
+    "i31yX84EgPE", # Next
     "r_O-UjZZ744",
     "ig0QZxtj3j8",
     "jxrGodnopHo",
     "OMGPvW8TBHc",
 ]
 
+YT_ID = ids[3]
 # https://www.youtube.com/watch?v=ig0QZxtj3j8
 # https://www.youtube.com/watch?v=r_O-UjZZ744
 # =======PreProcess========
@@ -38,8 +38,8 @@ ids = [
 #     print("FRAME SAMPLE ======================================================")
 #     p.merge_frame_transcript()
 
-VIZ = True
-CLASS = False
+VIZ = False
+CLASS = True
 
 model = {
     "0": "gemma-3-4b-it-BF16.gguf",
@@ -51,13 +51,14 @@ model = {
     "6": "Qwen3VL-4B-Instruct-F16.gguf",
     "7": "Qwen3-4B-Instruct-2507-F16.gguf",
     "8": "gemma-3-12b-it-q4_0.gguf",
+    "9": "Qwen3VL-4B-Instruct-Q8_0.gguf",
 }
 # =======Core Video analysis========
 if CLASS:
-    o = Orchestrator(YT_ID, model["7"])
+    o = Orchestrator(YT_ID, model["9"])
     # o.get_video_topic()
-    # o.get_video_description()
-    o.get_irrelevant()
+    o.get_video_description()
+    # o.get_irrelevant()
 
 # # =======Result Visualization========
 if VIZ:
