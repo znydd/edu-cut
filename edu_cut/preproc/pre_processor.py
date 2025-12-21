@@ -306,7 +306,7 @@ class PreProcessor:
             subprocess.run(cmd, check=True)
             print(f"Done {idx}/{len(ts_arr)} ✅")
 
-    def frame_sample(self, similarity_threshold=5, desired_processing_fps=3):
+    def frame_sample(self, similarity_threshold=10, desired_processing_fps=1):  # 5, 3
         video_dir = self.video_cut_dir
 
         files = [f.name for f in video_dir.iterdir() if f.is_file()]

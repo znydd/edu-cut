@@ -1,6 +1,4 @@
 from edu_cut.core.orchestrator import Orchestrator
-
-# from edu_cut.preprocess.preprocessor import PreProcessor
 from test.viz.visualizer import Visualizer
 
 # First just initialize the PreProcessor object to make the store
@@ -10,33 +8,33 @@ from test.viz.visualizer import Visualizer
 
 
 ids = [
-    "YYNXFsUutbM", # Bug
+    "YYNXFsUutbM",  # Bug
     "wxBG5Ei7a_w",  # Done
     "ES6W4_bXvro",  # Done
-    "i31yX84EgPE", # Next
-    "r_O-UjZZ744",
-    "ig0QZxtj3j8",
-    "jxrGodnopHo",
+    "i31yX84EgPE",  # Done
+    "r_O-UjZZ744",  # Done
+    "ig0QZxtj3j8",  # Done
+    "jxrGodnopHo",  # Done
     "OMGPvW8TBHc",
 ]
 
-YT_ID = ids[3]
+YT_ID = "OMGPvW8TBHc"
 # https://www.youtube.com/watch?v=ig0QZxtj3j8
 # https://www.youtube.com/watch?v=r_O-UjZZ744
 # =======PreProcess========
 # for id in ids:
-#     p = PreProcessor(id)
+# p = PreProcessor(YT_ID)
 #     # p.download_video()
 #     # print("Video downloaded ========================================================")
-#     p.process_subtitle()
-#     print("Subtitle processed ========================================================")
-#     p.segment_timestamps()
-#     print("SEGMENTED timestamps ======================================================")
-#     p.video_cut()
-#     print("VIDEO CUT ======================================================")
-#     p.frame_sample()
-#     print("FRAME SAMPLE ======================================================")
-#     p.merge_frame_transcript()
+# p.process_subtitle()
+# print("Subtitle processed ========================================================")
+# p.segment_timestamps()
+# print("SEGMENTED timestamps ======================================================")
+# p.video_cut()
+# print("VIDEO CUT ======================================================")
+# p.frame_sample()
+# print("FRAME SAMPLE ======================================================")
+# p.merge_frame_transcript()
 
 VIZ = False
 CLASS = True

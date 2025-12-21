@@ -1,0 +1,8 @@
+./llama-server \
+    -m ~/models/qwenEmb/Qwen3-Embedding-0.6B-Q8_0.gguf \
+    --embedding \
+    --pooling last \
+    -ub 8192 \
+    --verbose-prompt \
+    --host 127.0.0.1 \
+    --port 8080

@@ -1,12 +1,12 @@
 ./llama-server --model gemma-3-4b-it-UD-Q8_K_XL.gguf --mmproj mmproj-BF16.gguf --host 127.0.0.1 --port 8000 -c 32000 -ngl 999
 
 ./llama-server \
-    --model /home/znyd/models/qwen3vl/Qwen3VL-4B-Instruct-Q8_0.gguf \
-    --mmproj /home/znyd/models/qwen3vl/mmproj-Qwen3VL-4B-Instruct-F16.gguf \
+    --model ~/models/qwen3vl/Qwen3VL-4B-Instruct-Q8_0.gguf \
+    --mmproj ~/models/qwen3vl/mmproj-Qwen3VL-4B-Instruct-Q8_0.gguf \
     --host 127.0.0.1 \
     --port 8000 \
     --ctx-size 20000 \
-    --n-gpu-layers 999 \
+    --n-gpu-layers 99 \
     --jinja \
     --top-p 0.8 \
     --top-k 20 \
@@ -17,8 +17,8 @@
 
 
 ./llama-server \
-    --model /home/znyd/models/qwen3vl/Qwen3VL-4B-Instruct-Q8_0.gguf \
-    --mmproj /home/znyd/models/qwen3vl/mmproj-Qwen3VL-4B-Instruct-Q8_0.gguf \
+    --model /home/znyd/models/qwen3vl/Qwen3VL-4B-Instruct-F16.gguf \
+    --mmproj /home/znyd/models/qwen3vl/mmproj-Qwen3VL-4B-Instruct-F16.gguf \
     --host 127.0.0.1 \
     --port 8000 \
     --n-gpu-layers 99 \
@@ -64,3 +64,27 @@ llama-server \
 
 llama-server --model Qwen3-VL-8B-Instruct-BF16.gguf --mmproj mmproj-BF16.gguf --host 127.0.0.1 --port 8000 --ctx-size 32000 --n-gpu-layers 999 --jinja --top-p 0.8 --top-k 20 --temp 0.7 --min-p 0.0 --flash-attn on --presence-penalty 1.5
 llama-server --model gpt-oss-20b-F16.gguf --host 127.0.0.1 --port 8000 --ctx-size 16000 --threads -1 --n-gpu-layers 999 --jinja --top-p 1.0 --top-k 0 --temp 1.0
+
+./llama-mtmd-cli \
+    --model ~/models/qwen3vl/Qwen3VL-4B-Instruct-Q8_0.gguf \
+    --mmproj ~/models/qwen3vl/mmproj-Qwen3VL-4B-Instruct-Q8_0.gguf \
+    --n-gpu-layers 99 \
+    --jinja \
+    --top-p 0.8 \
+    --top-k 20 \
+    --temp 0.7 \
+    --min-p 0.0 \
+    --flash-attn on \
+    --presence-penalty 1.5 \
+    --ctx-size 8192
+
+./llama-mtmd-cli \
+    -m /home/znyd/models/qwen3vl/Qwen3VL-4B-Instruct-Q8_0.gguf \
+    --n-gpu-layers 99 \
+    --top-p 0.8 \
+    --top-k 20 \
+    --temp 0.7 \
+    --min-p 0.0 \
+    --flash-attn on \
+    --presence-penalty 1.5 \
+    --ctx-size 8192

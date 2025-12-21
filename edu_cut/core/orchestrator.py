@@ -172,7 +172,15 @@ class Orchestrator:
             data = json.load(f)
         # prev_segments = pd.read_csv(self.desc_summ_pth)
 
+        # Load existing descriptions to check for already processed segments
+        existing_descriptions = pd.read_csv(self.resp)
+        
         for idx, data_point in enumerate(data):
+            # Skip if this segment already has a description
+            if idx in existing_descriptions["id"].values:
+                print(f"Skipping idx {idx} - description already exists")
+                continue
+                
             prev_segments = pd.read_csv(self.desc_summ_pth)
             if idx == 0:
                 start, end = (
@@ -218,18 +226,21 @@ class Orchestrator:
                     for i in range(idx - self.last_n_segment, idx)
                 ]
 
-            print(prev_ctx)
+            print(prev_ctx, idx)
+            print(data_point["frames"])
 
             message = self.video_description_prompt(
                 prev_ctx, start, end, data_point["transcript"], data_point["frames"]
             )
 
             description_response = self.llm.llm_response(message, self.model)
-            print(description_response)
 
             if description_response:
                 description_response = re.sub(
-                    r"<think>.*?</think>\s*", "", description_response, flags=re.DOTALL
+                    r"<think>.*?</think>\s*",
+                    "",
+                    description_response,
+                    flags=re.DOTALL,
                 ).strip()
                 timestamp = start + "-" + end
                 pd.DataFrame(
