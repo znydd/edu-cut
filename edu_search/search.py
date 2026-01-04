@@ -17,12 +17,18 @@ class QwenSearchPipeline:
                  llm_model="qwen3-4b-think",
                  embed_model="qwen3-embedding",
                  rerank_model="qwen3-reranker",
-                 db_path="./chromadb"):
+                 db_path="./chromadb",
+                 summary_csv=None,
+                 top_k=15,
+                 rerank_top_n=10):
         
         self.client = OpenAI(api_key=api_key, base_url=api_base)
         self.llm_model = llm_model
         self.embed_model = embed_model
         self.rerank_model = rerank_model
+        self.summary_csv = summary_csv
+        self.top_k = top_k
+        self.rerank_top_n = rerank_top_n
         
         self.chroma_client = chromadb.PersistentClient(path=db_path)
         self.collection = self.chroma_client.get_or_create_collection(
@@ -81,12 +87,16 @@ class QwenSearchPipeline:
 
     def extract_topics(self):
         """
-        Extract topics from all indexed documents using the LLM.
+        Extract topics from provided summary CSV or indexed documents using the LLM.
         """
-        results = self.collection.get()
-        all_text = "\n---\n".join(results["documents"][:20]) # Limit context for topic extraction
+        if self.summary_csv and os.path.exists(self.summary_csv):
+            print(f"Extracting topics from summary CSV: {self.summary_csv}")
+            summ_df = pd.read_csv(self.summary_csv)
+            # Use all summaries as context
+            all_text = "\n".join(summ_df['summary'].astype(str).tolist())
+
         
-        prompt = f"Based on the following video segment descriptions, list all major topics taught or discussed. Format as a simple comma-separated list.\n\nSegments:\n{all_text}"
+        prompt = f"Based on the following video segment descriptions, list all major topics taught or discussed. Format as a simple comma-separated list of topics nothing else.\n\nSegments:\n{all_text}"
         
         response = self.client.chat.completions.create(
             model=self.llm_model,
@@ -102,8 +112,8 @@ class QwenSearchPipeline:
         prompt = f"""Given the user query: '{query}'
 And the following topics available in the video: {topics}
 
-Generate 3-5 more specific and better search queries that would help find the most relevant sections of the video in a vector database.
-Output ONLY the queries, one per line."""
+Generate 3-5 more specific and better representative search queries that would help find the most relevant sections of the video in a vector database.
+Output ONLY the queries, one per line. Nothing else just the queries per line."""
 
         response = self.client.chat.completions.create(
             model=self.llm_model,
@@ -131,7 +141,7 @@ Output ONLY the queries, one per line."""
                     "model": self.rerank_model,
                     "query": query,
                     "documents": [c["document"] for c in candidates],
-                    "top_n": 5
+                    "top_n": self.rerank_top_n
                 },
                 cast_to=dict
             )
@@ -140,7 +150,7 @@ Output ONLY the queries, one per line."""
             return [candidates[i] for i in ranked_indices]
         except Exception as e:
             print(f"Reranking API error or not supported: {e}. Falling back to original order.")
-            return candidates[:5]
+            return candidates[:self.rerank_top_n]
 
     def search(self, query):
         # 1. Get topics (context)
@@ -160,7 +170,7 @@ Output ONLY the queries, one per line."""
             q_emb = self.get_embedding(q)
             results = self.collection.query(
                 query_embeddings=[q_emb],
-                n_results=5
+                n_results=self.top_k
             )
             
             for i in range(len(results["ids"][0])):
@@ -178,19 +188,20 @@ Output ONLY the queries, one per line."""
         return final_results
 
 if __name__ == "__main__":
-    # Example usage
-    pipeline = QwenSearchPipeline()
-    
     # Paths (adjust as needed)
     DESC_PATH = "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/responses/description.csv"
+    SUMM_PATH = "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/responses/desc_summ.csv"
     TRANS_PATH = "/home/znyd/hacking/edu-cut/store/wxBG5Ei7a_w/subtitle/wxBG5Ei7a_w_transcript.csv"
+
+    # Example usage
+    pipeline = QwenSearchPipeline(summary_csv=SUMM_PATH)
     
     if os.path.exists(DESC_PATH) and os.path.exists(TRANS_PATH):
         # Index data if collection is empty
         if pipeline.collection.count() == 0:
             pipeline.load_and_index_data(DESC_PATH, TRANS_PATH)
         
-        test_query = "explain the concept of vectors"
+        test_query = "Where the instructor is talking about Business problem of Data Science project?"
         results = pipeline.search(test_query)
         
         print("\n--- Search Results ---")

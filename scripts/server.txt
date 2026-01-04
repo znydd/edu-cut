@@ -54,7 +54,7 @@ llama-server \
     --host 127.0.0.1 \
     --port 8000 \
     --threads -1 \
-    --ctx-size 16384 \
+    --ctx-size 10000\
     --n-gpu-layers 99 \
     --temp 0.6 \
     --min-p 0.0 \
