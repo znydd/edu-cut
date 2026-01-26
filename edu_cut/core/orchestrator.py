@@ -54,10 +54,10 @@ class Orchestrator:
                 self.classified_pth, index=False
             )
 
-    def video_topic_prompt(self, subtitle="") -> list:
+    def video_topic_prompt(self, subtitle="", prompt_version="1") -> list:
         message = [{"role": "system", "content": ""}, {"role": "user", "content": None}]
-        video_topic_sys_pth = f"{self.prompt_dir}/video_topic_sys.txt"
-        video_topic_pth = "video_topic.j2"
+        video_topic_sys_pth = f"{self.prompt_dir}/video_topic_sys_v{prompt_version}.txt"
+        video_topic_pth = f"video_topic_v{prompt_version}.j2"
         env = Environment(loader=FileSystemLoader(self.prompt_dir))
 
         with open(video_topic_sys_pth, "r") as f:
@@ -110,7 +110,7 @@ class Orchestrator:
     def video_classifier_prompt(
         self, curr_desc, start, end, prev_ctx, video_topic, subtitle
     ):
-        with open(f"{self.prompt_dir}/classification.md", "r") as f:
+        with open(f"{self.prompt_dir}/final_prompt_vanila.md", "r") as f:
             class_sys_prompt = f.read()
         with open(self.topic_pth, "r") as f:
             video_topic = f.read()
@@ -151,12 +151,12 @@ class Orchestrator:
 
         return f"data:{mime_type};base64,{base64_string}"
 
-    def get_video_topic(self):
+    def get_video_topic(self, prompt_version="1"):
         subtitle_df = pd.read_csv(
             f"{self.store_pth}/subtitle/{self.yt_id}_transcript.csv"
         )
         subtitle = "\n ".join(subtitle_df["Segment"])
-        prompt = self.video_topic_prompt(subtitle)
+        prompt = self.video_topic_prompt(subtitle, prompt_version)
         response = self.llm.llm_response(prompt)
 
         with open(self.topic_pth, "w") as f:
@@ -174,13 +174,13 @@ class Orchestrator:
 
         # Load existing descriptions to check for already processed segments
         existing_descriptions = pd.read_csv(self.resp)
-        
+
         for idx, data_point in enumerate(data):
             # Skip if this segment already has a description
             if idx in existing_descriptions["id"].values:
                 print(f"Skipping idx {idx} - description already exists")
                 continue
-                
+
             prev_segments = pd.read_csv(self.desc_summ_pth)
             if idx == 0:
                 start, end = (
@@ -226,7 +226,7 @@ class Orchestrator:
                     for i in range(idx - self.last_n_segment, idx)
                 ]
 
-            print(prev_ctx, idx)
+            # print(prev_ctx, idx)
             print(data_point["frames"])
 
             message = self.video_description_prompt(
@@ -275,7 +275,7 @@ class Orchestrator:
                 {"id": [idx], "timestamp": [timestamp], "summary": [summary_response]}
             ).to_csv(self.desc_summ_pth, mode="a", header=False, index=False)
             print(f"Summary saved for {idx}->{timestamp}")
-            print(summary_response)
+            # print(summary_response)
             return summary_response
         return None
 
