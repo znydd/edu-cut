@@ -289,7 +289,14 @@ class Orchestrator:
         with open(self.topic_pth, "r") as f:
             video_topic = f.read()
 
+        # Load existing classifications to check for already processed segments
+        existing_classified = pd.read_csv(self.classified_pth)
+
         for idx, data_point in enumerate(subtitle_df):
+            # Skip if this segment already has a classification
+            if idx in existing_classified["id"].values:
+                print(f"Skipping idx {idx} - classification already exists")
+                continue
             start, end = (
                 self.sec_to_hms(data_point["start"]),
                 self.sec_to_hms(data_point["end"]),

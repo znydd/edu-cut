@@ -209,3 +209,4 @@ if __name__ == "__main__":
             print(f"{i+1}. [{res['metadata']['timestamp']}] {res['document'][:200]}...")
     else:
         print("Data files not found. Please check paths.")
+

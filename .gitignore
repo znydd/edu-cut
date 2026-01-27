@@ -6,6 +6,9 @@
 *.png
 *.jpg
 *.csv
+*.json
+*.txt
+*.srt
 __pycache__
 experiments/P2-exp/dense_fine_tuning/videos
 experiments/P2-exp/task_fine_tuning/full_video
@@ -16,7 +19,9 @@ experiments/p3_exp/pre_processing/vid_frames/*.png
 experiments/p3_exp/pre_processing/downloads/*
 experiments/p3_exp/pipeline/chromadb
 experiments/p3_exp/pre_processing/smart_cut_out/*
-store
 .vscode
 model
 draft
+Benchmark
+chromadb_v2
+second_5_video

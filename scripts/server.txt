@@ -88,3 +88,38 @@ llama-server --model gpt-oss-20b-F16.gguf --host 127.0.0.1 --port 8000 --ctx-siz
     --flash-attn on \
     --presence-penalty 1.5 \
     --ctx-size 8192
+
+
+./llama-server \
+    --model /home/znyd/models/Qwen3-4B-Instruct-2507-F16.gguf \
+    --jinja \
+    --host 127.0.0.1 \
+    --port 8000 \
+    --threads -1 \
+    --ctx-size 20000 \
+    --n-gpu-layers 99 \
+    --temp 0.7 \
+    --min-p 0.0 \
+    --top-p 0.8 \
+    --top-k 20 \
+    --presence-penalty 1.0
+
+./llama-server -m /home/znyd/models/qwenEmb/Qwen3-Embedding-4B-f16.gguf --embedding --pooling last -ub 8192 --verbose-prompt --host 127.0.0.1 --port 8080
+
+
+
+uv run python -m edu_search.search_v2 ingest \
+  --csv store/DlWTTrHa8bI/responses/description.csv \
+  --embed-api http://localhost:8080/v1
+
+
+uv run python -m edu_search.search_v2 search \
+  --query "where is the instructor talking about Attention Mechanism" \
+  --embed-api http://localhost:8080/v1 \
+  --llm-api http://localhost:8080/v1
+
+
+  uv run python -m edu_search.search_v2 search \
+  --query-file ./improved_query.txt \
+  --top-k 20 \      
+  --top-results 5

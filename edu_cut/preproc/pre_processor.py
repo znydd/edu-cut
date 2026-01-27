@@ -160,14 +160,24 @@ class PreProcessor:
         final_transcript_path = self.subtitle_dir.joinpath(
             f"{self.yt_id}_transcript.csv"
         )
+        if final_transcript_path.exists():
+            self.transcript = final_transcript_path
+            print("Final transcript already exists. Skipping processing.")
+            return
 
-        ytt_api = YouTubeTranscriptApi()
-        transcript = ytt_api.fetch(self.yt_id)
-        formatter = SRTFormatter()
+        # Check if SRT file already exists (for manual editing)
+        if srt_path.exists():
+            print(f"✅ SRT file already exists at: {srt_path}. Skipping download.")
+        else:
+            print("Downloading transcript from YouTube...")
+            ytt_api = YouTubeTranscriptApi()
+            transcript = ytt_api.fetch(self.yt_id)
+            formatter = SRTFormatter()
 
-        srt_formatted = formatter.format_transcript(transcript)
-        with open(srt_path, "w", encoding="utf-8") as json_file:
-            json_file.write(srt_formatted)
+            srt_formatted = formatter.format_transcript(transcript)
+            with open(srt_path, "w", encoding="utf-8") as srt_file:
+                srt_file.write(srt_formatted)
+            print(f"✅ SRT file saved at: {srt_path}")
 
         self._srt_to_csv(srt_path, csv_path)
 

@@ -7,17 +7,23 @@ from rich.table import Table
 
 from config import STORE_DIR
 
-
 # ==================== Helper Functions ====================
+
 
 def _parse_timestamp(timestamp_str: str) -> tuple[float, float]:
     """Parse '00:01:34.000-00:01:38.500' to (start_seconds, end_seconds)."""
-    parts = timestamp_str.split('-')
-    start_parts = parts[0].split(':')
-    end_parts = parts[1].split(':')
-    
-    start_secs = float(start_parts[0]) * 3600 + float(start_parts[1]) * 60 + float(start_parts[2])
-    end_secs = float(end_parts[0]) * 3600 + float(end_parts[1]) * 60 + float(end_parts[2])
+    parts = timestamp_str.split("-")
+    start_parts = parts[0].split(":")
+    end_parts = parts[1].split(":")
+
+    start_secs = (
+        float(start_parts[0]) * 3600
+        + float(start_parts[1]) * 60
+        + float(start_parts[2])
+    )
+    end_secs = (
+        float(end_parts[0]) * 3600 + float(end_parts[1]) * 60 + float(end_parts[2])
+    )
     return start_secs, end_secs
 
 
@@ -32,7 +38,7 @@ def _parse_classification(class_resp: str) -> str | None:
     end_index = class_resp.rfind("}")
     if start_index != -1 and end_index != -1:
         try:
-            json_obj = json.loads(class_resp[start_index:end_index + 1])
+            json_obj = json.loads(class_resp[start_index : end_index + 1])
             return json_obj.get("type")
         except json.JSONDecodeError:
             return None
@@ -48,29 +54,29 @@ def _filter_irrelevant_segments(segments: list[dict]) -> list[dict]:
     """
     n = len(segments)
     filtered_classes = []
-    
+
     for i, seg in enumerate(segments):
         cls = seg["classification"]
         duration = seg["duration"]
-        
+
         prev_cls = segments[i - 1]["classification"] if i > 0 else None
         next_cls = segments[i + 1]["classification"] if i < n - 1 else None
-        
+
         if cls == "Irrelevant":
             # Rule 1: Exclude short isolated irrelevant (< 2s and both neighbors NOT Irrelevant)
-            if duration < 2.0 and prev_cls != "Irrelevant" and next_cls != "Irrelevant":
+            if duration < 3.0 and prev_cls != "Irrelevant" and next_cls != "Irrelevant":
                 filtered_classes.append("Relevant")  # Exclude from irrelevant
             else:
                 filtered_classes.append("Irrelevant")
-        elif cls == "Relevant":
-            # Rule 2: Include short relevant between irrelevant (< 2s)
-            if duration < 2.0 and prev_cls == "Irrelevant" and next_cls == "Irrelevant":
-                filtered_classes.append("Irrelevant")  # Treat as irrelevant
-            else:
-                filtered_classes.append("Relevant")
+        # if cls == "Relevant":
+        #     # Rule 2: Include short relevant between irrelevant (< 2s)
+        #     if duration < 2.0 and prev_cls == "Irrelevant" and next_cls == "Irrelevant":
+        #         filtered_classes.append("Irrelevant")  # Treat as irrelevant
+        #     else:
+        #         filtered_classes.append("Relevant")
         else:
             filtered_classes.append(cls)
-    
+
     # Return only segments now classified as Irrelevant
     return [
         {**segments[i], "classification": filtered_classes[i]}
@@ -83,10 +89,10 @@ def _group_adjacent_segments(segments: list[dict]) -> list[dict]:
     """Group segments where segment[i].end == segment[i+1].start."""
     if not segments:
         return []
-    
+
     groups = []
     current_group = {"start": segments[0]["start"], "end": segments[0]["end"]}
-    
+
     for i in range(1, len(segments)):
         # Check if adjacent (end of current matches start of next)
         if abs(current_group["end"] - segments[i]["start"]) < 0.1:  # Small tolerance
@@ -94,7 +100,7 @@ def _group_adjacent_segments(segments: list[dict]) -> list[dict]:
         else:
             groups.append(current_group)
             current_group = {"start": segments[i]["start"], "end": segments[i]["end"]}
-    
+
     groups.append(current_group)
     return groups
 
@@ -105,7 +111,7 @@ def _format_time(seconds: float) -> str:
     hours = total_secs // 3600
     minutes = (total_secs % 3600) // 60
     secs = total_secs % 60
-    
+
     if hours > 0:
         return f"{hours}h {minutes}m {secs}s"
     elif minutes > 0:
@@ -121,6 +127,7 @@ def _build_youtube_link(yt_id: str, seconds: float) -> str:
 
 # ==================== Visualizer Class ====================
 
+
 class Visualizer:
     def __init__(self, yt_id: str = None, direct_path: str = None) -> None:
         if yt_id and direct_path:
@@ -134,7 +141,7 @@ class Visualizer:
             )
         elif direct_path:
             self.response_path = direct_path
-            self.yt_id = os.path.basename(direct_path).split('.')[0]
+            self.yt_id = os.path.basename(direct_path).split(".")[0]
         else:
             self.yt_id = None
             self.response_path = None
@@ -158,11 +165,15 @@ class Visualizer:
             class_resp = str(row["class"])
             id = row["id"]
             raw_timestamp = row["timestamp"]
-            
+
             # Extract start time for the link (00:00:00.000 -> seconds)
             try:
-                start_part = raw_timestamp.split('-')[0].split(':')
-                seconds = int(float(start_part[0]) * 3600 + float(start_part[1]) * 60 + float(start_part[2]))
+                start_part = raw_timestamp.split("-")[0].split(":")
+                seconds = int(
+                    float(start_part[0]) * 3600
+                    + float(start_part[1]) * 60
+                    + float(start_part[2])
+                )
                 link = f"https://www.youtube.com/watch?v={self.yt_id}&t={seconds}s"
             except (ValueError, IndexError):
                 link = None
@@ -204,9 +215,9 @@ class Visualizer:
                     break
             else:
                 print("No JSON found")
-        
+
         console.print(rich_table)
-        
+
         # Show grouped irrelevant segments below the main table
         self.show_grouped_irrelevant(console)
 
@@ -214,42 +225,49 @@ class Visualizer:
         """Display filtered and grouped irrelevant segments with clickable links."""
         if console is None:
             console = Console()
-        
+
         classified_df = pd.read_csv(self.response_path)
-        
+
         # Extract all segments with classification
         segments = []
         for _, row in classified_df.iterrows():
             raw_timestamp = row["timestamp"]
             class_resp = str(row["class"])
-            
+
             try:
                 start_secs, end_secs = _parse_timestamp(raw_timestamp)
             except (ValueError, IndexError):
                 continue
-            
+
             classification = _parse_classification(class_resp)
             if classification is None:
                 continue
-            
-            segments.append({
-                "id": row["id"],
-                "start": start_secs,
-                "end": end_secs,
-                "duration": _get_segment_duration(start_secs, end_secs),
-                "classification": classification,
-            })
-        
+
+            segments.append(
+                {
+                    "id": row["id"],
+                    "start": start_secs,
+                    "end": end_secs,
+                    "duration": _get_segment_duration(start_secs, end_secs),
+                    "classification": classification,
+                }
+            )
+
         # Apply filtering rules
         irrelevant_segments = _filter_irrelevant_segments(segments)
-        
+
         # Group adjacent segments
         grouped = _group_adjacent_segments(irrelevant_segments)
-        
+
+        # Filter out groups that are 3s or less
+        # grouped = [g for g in grouped if (g["end"] - g["start"]) >= 2.0]
+
         if not grouped:
-            console.print("\n[bold yellow]No irrelevant segments found after filtering.[/bold yellow]")
+            console.print(
+                "\n[bold yellow]No irrelevant segments found after filtering.[/bold yellow]"
+            )
             return
-        
+
         # Build the table
         table = Table(
             title="[bold]Grouped Irrelevant Segments (Filtered)[/bold]",
@@ -261,13 +279,13 @@ class Visualizer:
         table.add_column("Start", justify="center")
         table.add_column("End", justify="center")
         table.add_column("Duration", justify="center")
-        
+
         for i, group in enumerate(grouped, 1):
             start_link = _build_youtube_link(self.yt_id, group["start"])
             start_display = f"[link={start_link}]{_format_time(group['start'])}[/link]"
             end_display = _format_time(group["end"])
             duration_display = _format_time(group["end"] - group["start"])
-            
+
             table.add_row(
                 str(i),
                 start_display,
@@ -275,6 +293,6 @@ class Visualizer:
                 duration_display,
                 style="bold red",
             )
-        
+
         console.print("\n")
         console.print(table)
