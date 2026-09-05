@@ -1,0 +1,4043 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 22.32,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png",
+            "frame_00003.png",
+            "frame_00004.png",
+            "frame_00005.png",
+            "frame_00006.png",
+            "frame_00007.png",
+            "frame_00008.png",
+            "frame_00009.png",
+            "frame_00010.png",
+            "frame_00011.png",
+            "frame_00012.png"
+        ],
+        "transcript": "Hello everyone."
+    },
+    {
+        "id": 1,
+        "start": 22.32,
+        "end": 36.24,
+        "frames": [
+            "frame_00013.png"
+        ],
+        "transcript": "So welcome you all to another lecture of data science, and in this lecture, we will discuss about one of the uh unsupervised approaches of data dimensionality deduction and also feature extraction."
+    },
+    {
+        "id": 2,
+        "start": 36.24,
+        "end": 49.52,
+        "frames": [
+            "frame_00014.png"
+        ],
+        "transcript": "Sometimes maybe we have the data uh data set and the dimension of the data set will be huge, like maybe we can say uh like one thousand."
+    },
+    {
+        "id": 3,
+        "start": 49.52,
+        "end": 56.72,
+        "frames": [
+            "frame_00015.png"
+        ],
+        "transcript": "So that means uh in case of those data sets, we have one thousand features."
+    },
+    {
+        "id": 4,
+        "start": 56.72,
+        "end": 72.64,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "Okay, one thousand features, like this is feature number one, feature number two, and feature number three, like this, uh up to maybe we can say the one thousand features we have."
+    },
+    {
+        "id": 5,
+        "start": 72.64,
+        "end": 76.989,
+        "frames": [
+            "frame_00017.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 6,
+        "start": 76.989,
+        "end": 86.4,
+        "frames": [
+            "frame_00018.png"
+        ],
+        "transcript": "Okay, and then handling this this kind of features dimensional features is difficult."
+    },
+    {
+        "id": 7,
+        "start": 86.4,
+        "end": 99.36,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "Uh as in our previous lecture, we have discussed about the about the that is the k-means algorithm and also some other uh clustering algorithm, even classification algorithms."
+    },
+    {
+        "id": 8,
+        "start": 99.36,
+        "end": 105.36,
+        "frames": [
+            "frame_00020.png"
+        ],
+        "transcript": "If you have large number of features, then the computational complexity will be very high."
+    },
+    {
+        "id": 9,
+        "start": 105.36,
+        "end": 107.76,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "Okay, then what can we do?"
+    },
+    {
+        "id": 10,
+        "start": 107.76,
+        "end": 109.04,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "What can we do?"
+    },
+    {
+        "id": 11,
+        "start": 109.04,
+        "end": 132.16,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "That is uh how can we how can we eliminate the features or maybe how can we uh reduce the dimension of our dataset so that maybe if we can use just only few features, then our model will perform the same as using the all of the features."
+    },
+    {
+        "id": 12,
+        "start": 132.16,
+        "end": 135.44,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "Okay, so that's the that's the target here."
+    },
+    {
+        "id": 13,
+        "start": 135.44,
+        "end": 164.8,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "So for that, what we have to do from the 1000 features, we want to transform these features to a new feature space, new feature space, and in this feature space, like maybe we can say this is PC1, one of the features, and PC2, another feature, and in this way, maybe we can say uh we we only consider we will only consider just only 10 features, okay."
+    },
+    {
+        "id": 14,
+        "start": 164.8,
+        "end": 173.04,
+        "frames": [
+            "frame_00026.png"
+        ],
+        "transcript": "Just only 10 features that means out of the thousand features, we want to transform this feature space to a new feature space."
+    },
+    {
+        "id": 15,
+        "start": 173.04,
+        "end": 181.44,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "So, in that feature space, if we consider just only 10 features, then the model will perform the same as before."
+    },
+    {
+        "id": 16,
+        "start": 181.44,
+        "end": 199.2,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "So, this is the the the first uh concern of principal component analysis that means it will transform those features to a new feature space, and these new feature space features are called like principal component 1, principal component two, and principal component 10."
+    },
+    {
+        "id": 17,
+        "start": 199.2,
+        "end": 210.0,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "Okay, that means instead of using the thousands of features, we will train our model just only 10 features, and our model will perform the same."
+    },
+    {
+        "id": 18,
+        "start": 210.0,
+        "end": 227.76,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "Okay, so that's the that's the goal here, and as we transform the features in new feature space, so we can say that these are the extracted features from the original data set, these are the extracted features from the original data set."
+    },
+    {
+        "id": 19,
+        "start": 227.76,
+        "end": 234.16,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "That's why we also call principal component analysis, is one of the feature extraction method."
+    },
+    {
+        "id": 20,
+        "start": 234.16,
+        "end": 240.16,
+        "frames": [
+            "frame_00032.png"
+        ],
+        "transcript": "So let's say how uh let's see how to do that."
+    },
+    {
+        "id": 21,
+        "start": 240.16,
+        "end": 252.24,
+        "frames": [
+            "frame_00033.png",
+            "frame_00034.png"
+        ],
+        "transcript": "Okay, so here is the uh definition: the PCA is useful statistical technique for finding patterns in data of high dimension."
+    },
+    {
+        "id": 22,
+        "start": 252.24,
+        "end": 258.88,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "That means if you have the high dimensional data, then it will try to find out the the the patterns over there."
+    },
+    {
+        "id": 23,
+        "start": 258.88,
+        "end": 283.04,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "So the useful pattern that means uh it will try to find out the the variability among those features that is among the high dimensional features, and try to find out the way that means find out the most discriminative features from those features using the variabilities and correlations."
+    },
+    {
+        "id": 24,
+        "start": 283.04,
+        "end": 294.4,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "So it is used to express the data in such a way as to highlight the similarities and differences, okay."
+    },
+    {
+        "id": 25,
+        "start": 294.4,
+        "end": 300.88,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "That means among the features it will try to find out the similarities and the differences that means the variabilities."
+    },
+    {
+        "id": 26,
+        "start": 300.88,
+        "end": 310.96,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "So to understand the PCA, that means principal component analysis, we have to have some knowledge on statistics and also mathematics."
+    },
+    {
+        "id": 27,
+        "start": 310.96,
+        "end": 325.68,
+        "frames": [
+            "frame_00040.png"
+        ],
+        "transcript": "So before going to discuss the details principal component analysis method, I want to just uh have a quick review on some of the statistical measurements and also uh the mathematics."
+    },
+    {
+        "id": 28,
+        "start": 325.68,
+        "end": 335.6,
+        "frames": [
+            "frame_00041.png",
+            "frame_00042.png"
+        ],
+        "transcript": "Okay, so at first, as some uh we we have to have the knowledge and back that that is the statistics, the mean, standard deviation, and the variance."
+    },
+    {
+        "id": 29,
+        "start": 335.6,
+        "end": 337.44,
+        "frames": [
+            "frame_00043.png"
+        ],
+        "transcript": "We need those things."
+    },
+    {
+        "id": 30,
+        "start": 337.44,
+        "end": 350.32,
+        "frames": [
+            "frame_00044.png"
+        ],
+        "transcript": "So, mean, I think we we already uh all know that it's the summation of the data divided by the total number of data, and the standard deviation is the sparseness uh uh from the mean, okay."
+    },
+    {
+        "id": 31,
+        "start": 350.32,
+        "end": 365.84,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "Sparseness of the value from the mean that is xi every value minus of the mean value and square up there, then sum up with those squares and then divide by n minus one for for the sample, okay."
+    },
+    {
+        "id": 32,
+        "start": 365.84,
+        "end": 370.64,
+        "frames": [
+            "frame_00046.png"
+        ],
+        "transcript": "For the sample, and then square root of that, it will it will give us the standard deviation."
+    },
+    {
+        "id": 33,
+        "start": 370.64,
+        "end": 382.56,
+        "frames": [
+            "frame_00047.png"
+        ],
+        "transcript": "Okay, that means your deviation from the mean uh it will express using this equation, and the variance is the square of the standard deviation."
+    },
+    {
+        "id": 34,
+        "start": 382.56,
+        "end": 389.28,
+        "frames": [
+            "frame_00048.png"
+        ],
+        "transcript": "Okay, square of the standard deviation, and what else we have to know?"
+    },
+    {
+        "id": 35,
+        "start": 389.28,
+        "end": 391.12,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "We have to know the covariance."
+    },
+    {
+        "id": 36,
+        "start": 391.12,
+        "end": 506.4,
+        "frames": [
+            "frame_00050.png"
+        ],
+        "transcript": "So variance and covariance that means in in our variance equation, this is the variance equation, so like s square, it is the summation of that summation of i equal okay, so xi so xi minus of x bar x bar and if we write the it two times like here another time x i minus of x bar that means uh we can we can say that here this is a square this a square terminal term we can write thus two times x minus x bar and x i minus of x bar two times okay, and the the the relation is the same that means the summation from one to n and then the n minus one we can write like this way okay that means variance here the variance variance will always we have to calculate with the same same that is variable here x the one variable and the mean of that variable and we we just compute it two times that means x i minus of x bar and xi minus of x bar from the equation of variance we can write the covariance so covariance means there will be two variables and we want to compute we want to compute that is uh how one variable is moved to another variable that means how one variable is uh that is the the the covariance, so it means that how much two dimensions vary from the mean with respect to each other, okay."
+    },
+    {
+        "id": 37,
+        "start": 506.4,
+        "end": 508.08,
+        "frames": [
+            "frame_00051.png"
+        ],
+        "transcript": "So that's the covariance."
+    },
+    {
+        "id": 38,
+        "start": 508.08,
+        "end": 514.24,
+        "frames": [
+            "frame_00052.png"
+        ],
+        "transcript": "So here uh we can we can see that the same equation, but the the another variable we have to introduce."
+    },
+    {
+        "id": 39,
+        "start": 514.24,
+        "end": 520.72,
+        "frames": [
+            "frame_00053.png"
+        ],
+        "transcript": "This is maybe the first variable we can say the x, and this should be from y, okay."
+    },
+    {
+        "id": 40,
+        "start": 520.72,
+        "end": 529.84,
+        "frames": [
+            "frame_00054.png"
+        ],
+        "transcript": "That means yi so yi minus of y bar, so then it will it it will become the covariance, okay."
+    },
+    {
+        "id": 41,
+        "start": 529.84,
+        "end": 533.6,
+        "frames": [
+            "frame_00055.png"
+        ],
+        "transcript": "Covariance subvariance between these two variables."
+    },
+    {
+        "id": 42,
+        "start": 533.6,
+        "end": 538.88,
+        "frames": [
+            "frame_00056.png"
+        ],
+        "transcript": "So here is the the measurement of the covariance."
+    },
+    {
+        "id": 43,
+        "start": 538.88,
+        "end": 542.0,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "We have to know how to compute the covariance."
+    },
+    {
+        "id": 44,
+        "start": 542.0,
+        "end": 555.28,
+        "frames": [
+            "frame_00058.png",
+            "frame_00059.png"
+        ],
+        "transcript": "For an example, here uh it is uh uh we want to determine the covariance between the hours of study and obtained marks, maybe uh in in one course, okay."
+    },
+    {
+        "id": 45,
+        "start": 555.28,
+        "end": 560.4,
+        "frames": [
+            "frame_00060.png"
+        ],
+        "transcript": "The hours of a study of that course and maybe the the obtained marks."
+    },
+    {
+        "id": 46,
+        "start": 560.4,
+        "end": 565.6,
+        "frames": [
+            "frame_00061.png"
+        ],
+        "transcript": "So we want to we want to find out the covariance between h and m."
+    },
+    {
+        "id": 47,
+        "start": 565.6,
+        "end": 581.68,
+        "frames": [
+            "frame_00062.png",
+            "frame_00063.png"
+        ],
+        "transcript": "So for that, what we have to know according to our equation, if we consider that the h is our x and m is our y, then what we have to do, we have to find out the h bar."
+    },
+    {
+        "id": 48,
+        "start": 581.68,
+        "end": 585.28,
+        "frames": [
+            "frame_00064.png"
+        ],
+        "transcript": "That means we have to find out the h bar."
+    },
+    {
+        "id": 49,
+        "start": 585.28,
+        "end": 592.48,
+        "frames": [
+            "frame_00065.png"
+        ],
+        "transcript": "That is the mean of h mean value of h, and we have to find out the mean value of y also."
+    },
+    {
+        "id": 50,
+        "start": 592.48,
+        "end": 599.6,
+        "frames": [
+            "frame_00066.png"
+        ],
+        "transcript": "That means m bar, and for that, here we have to sum up all all these values."
+    },
+    {
+        "id": 51,
+        "start": 599.6,
+        "end": 602.96,
+        "frames": [
+            "frame_00067.png"
+        ],
+        "transcript": "We have to sum up all these values and then divide with the number."
+    },
+    {
+        "id": 52,
+        "start": 602.96,
+        "end": 605.28,
+        "frames": [
+            "frame_00068.png"
+        ],
+        "transcript": "So, how many instances are there?"
+    },
+    {
+        "id": 53,
+        "start": 605.28,
+        "end": 611.84,
+        "frames": [
+            "frame_00069.png"
+        ],
+        "transcript": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, total 12."
+    },
+    {
+        "id": 54,
+        "start": 611.84,
+        "end": 617.84,
+        "frames": [
+            "frame_00070.png"
+        ],
+        "transcript": "So sum up all those values and divide it by 12, then you will get 13.92."
+    },
+    {
+        "id": 55,
+        "start": 617.84,
+        "end": 619.6,
+        "frames": [
+            "frame_00071.png"
+        ],
+        "transcript": "So this is our age bar."
+    },
+    {
+        "id": 56,
+        "start": 619.6,
+        "end": 627.2,
+        "frames": [
+            "frame_00072.png"
+        ],
+        "transcript": "Okay, this is our age bar that means 13.92 is our age bar, and again, uh, marks."
+    },
+    {
+        "id": 57,
+        "start": 627.2,
+        "end": 640.08,
+        "frames": [
+            "frame_00073.png"
+        ],
+        "transcript": "So here m these are the marks obtained marks, and we can sum up all those values, and then then divide this value with the 12 by 12."
+    },
+    {
+        "id": 58,
+        "start": 640.08,
+        "end": 643.76,
+        "frames": [
+            "frame_00074.png"
+        ],
+        "transcript": "Okay, so then we will get the m bar."
+    },
+    {
+        "id": 59,
+        "start": 643.76,
+        "end": 648.88,
+        "frames": [
+            "frame_00075.png"
+        ],
+        "transcript": "This is m this is our m bar, and which is equivalent to 62.42."
+    },
+    {
+        "id": 60,
+        "start": 648.88,
+        "end": 656.96,
+        "frames": [
+            "frame_00076.png"
+        ],
+        "transcript": "So that means m bar equal to 62.42."
+    },
+    {
+        "id": 61,
+        "start": 656.96,
+        "end": 669.84,
+        "frames": [
+            "frame_00077.png",
+            "frame_00078.png"
+        ],
+        "transcript": "Okay, from uh if we want to use this equation, so we know now we know h bar and we know the m bar, then what we have to do now."
+    },
+    {
+        "id": 62,
+        "start": 669.84,
+        "end": 679.12,
+        "frames": [
+            "frame_00079.png"
+        ],
+        "transcript": "We have to do the the determine the sparseness that means uh hi minus of h bar and m i minus of m bar."
+    },
+    {
+        "id": 63,
+        "start": 679.12,
+        "end": 692.32,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "So that means each and every value of h we have to from each and every value of h we have to subtract the mean, and from each and every value of m we have to subtract the mean of m."
+    },
+    {
+        "id": 64,
+        "start": 692.32,
+        "end": 698.56,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "So for that, here this is the case that is h i minus of h bar."
+    },
+    {
+        "id": 65,
+        "start": 698.56,
+        "end": 724.88,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "Here is h is nine, and h bar is 13, so that means we can say nine minus of 13.92, then you will get then you will get the 4.92, that is minus 4.92, and that is here the minus 4.92."
+    },
+    {
+        "id": 66,
+        "start": 724.88,
+        "end": 731.28,
+        "frames": [
+            "frame_00083.png"
+        ],
+        "transcript": "Similarly, 15 minus 15 minus 13.92, it will be 1.08."
+    },
+    {
+        "id": 67,
+        "start": 731.28,
+        "end": 736.0,
+        "frames": [
+            "frame_00084.png"
+        ],
+        "transcript": "Okay, that means we have to compute for each and every values."
+    },
+    {
+        "id": 68,
+        "start": 736.0,
+        "end": 740.72,
+        "frames": [
+            "frame_00085.png"
+        ],
+        "transcript": "We have to just subtract the mean and we will get the hi minus of s bar."
+    },
+    {
+        "id": 69,
+        "start": 740.72,
+        "end": 745.36,
+        "frames": [
+            "frame_00086.png"
+        ],
+        "transcript": "Similarly, we have to compute the m minus of m bar."
+    },
+    {
+        "id": 70,
+        "start": 745.36,
+        "end": 750.24,
+        "frames": [
+            "frame_00087.png"
+        ],
+        "transcript": "So that means here we can see that the the m m is 39."
+    },
+    {
+        "id": 71,
+        "start": 750.24,
+        "end": 754.96,
+        "frames": [
+            "frame_00088.png"
+        ],
+        "transcript": "39, then m bar is our 62 point."
+    },
+    {
+        "id": 72,
+        "start": 754.96,
+        "end": 758.88,
+        "frames": [
+            "frame_00089.png"
+        ],
+        "transcript": "Here, this is the case 62.42."
+    },
+    {
+        "id": 73,
+        "start": 758.88,
+        "end": 764.4,
+        "frames": [
+            "frame_00090.png"
+        ],
+        "transcript": "Okay, 62.42."
+    },
+    {
+        "id": 74,
+        "start": 764.4,
+        "end": 771.84,
+        "frames": [
+            "frame_00091.png"
+        ],
+        "transcript": "So we will get minus of 23.42."
+    },
+    {
+        "id": 75,
+        "start": 771.84,
+        "end": 777.36,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "Okay, so this value."
+    },
+    {
+        "id": 76,
+        "start": 777.36,
+        "end": 780.4,
+        "frames": [
+            "frame_00093.png"
+        ],
+        "transcript": "So here is this minus of 23.42."
+    },
+    {
+        "id": 77,
+        "start": 780.4,
+        "end": 786.64,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "Okay, that means we already got the h minus of h bar and m minus m bar."
+    },
+    {
+        "id": 78,
+        "start": 786.64,
+        "end": 790.24,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "We have to compute all the m minus m bar values here."
+    },
+    {
+        "id": 79,
+        "start": 790.24,
+        "end": 794.4,
+        "frames": [
+            "frame_00096.png",
+            "frame_00097.png"
+        ],
+        "transcript": "Now go back to our equation."
+    },
+    {
+        "id": 80,
+        "start": 794.4,
+        "end": 800.64,
+        "frames": [
+            "frame_00098.png"
+        ],
+        "transcript": "We can see that h minus of h bar and m minus of m bar, we have to have to multiply these two terms."
+    },
+    {
+        "id": 81,
+        "start": 800.64,
+        "end": 804.64,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "So we have to multiply these two terms."
+    },
+    {
+        "id": 82,
+        "start": 804.64,
+        "end": 814.08,
+        "frames": [
+            "frame_00100.png",
+            "frame_00101.png"
+        ],
+        "transcript": "So, like uh a i minus of h bar, we have we have already determined that h i minus of h bar and then m i minus of m bar."
+    },
+    {
+        "id": 83,
+        "start": 814.08,
+        "end": 820.96,
+        "frames": [
+            "frame_00102.png"
+        ],
+        "transcript": "If we multiply these two values, multiply these two values, then we will get this."
+    },
+    {
+        "id": 84,
+        "start": 820.96,
+        "end": 836.32,
+        "frames": [
+            "frame_00103.png"
+        ],
+        "transcript": "Okay, so that means 115.23, and similarly, we have to we have to determine all that is h minus of h bar and m minus of member, so all values we have to determine."
+    },
+    {
+        "id": 85,
+        "start": 836.32,
+        "end": 842.32,
+        "frames": [
+            "frame_00104.png",
+            "frame_00105.png"
+        ],
+        "transcript": "Then go back to our equation here is the summation that means we have to sum up all these values."
+    },
+    {
+        "id": 86,
+        "start": 842.32,
+        "end": 865.2,
+        "frames": [
+            "frame_00106.png",
+            "frame_00107.png",
+            "frame_00108.png",
+            "frame_00109.png"
+        ],
+        "transcript": "So we have to sum up all these values, so we have summed up here all these values, and the summation is this 1149.89, and then what we have to do, we have to divide this number with uh n minus 1."
+    },
+    {
+        "id": 87,
+        "start": 865.2,
+        "end": 873.28,
+        "frames": [
+            "frame_00110.png",
+            "frame_00111.png",
+            "frame_00112.png"
+        ],
+        "transcript": "So n is here 12, so n minus 1 will be n is the 12, so n minus 1 will be 11."
+    },
+    {
+        "id": 88,
+        "start": 873.28,
+        "end": 879.44,
+        "frames": [
+            "frame_00113.png"
+        ],
+        "transcript": "Okay, that means we have to divide this number 1149.89 with 11."
+    },
+    {
+        "id": 89,
+        "start": 879.44,
+        "end": 882.8,
+        "frames": [
+            "frame_00114.png"
+        ],
+        "transcript": "So we have to divide this number by 11."
+    },
+    {
+        "id": 90,
+        "start": 882.8,
+        "end": 887.2,
+        "frames": [
+            "frame_00115.png"
+        ],
+        "transcript": "So that means uh then you will get 104.54."
+    },
+    {
+        "id": 91,
+        "start": 887.2,
+        "end": 905.84,
+        "frames": [
+            "frame_00116.png"
+        ],
+        "transcript": "So in coherence, actually the the the the sign is important, whether it was the the sign is positive, that means the coherence is positive, negative, or maybe just uh independent or zero."
+    },
+    {
+        "id": 92,
+        "start": 905.84,
+        "end": 909.84,
+        "frames": [
+            "frame_00117.png"
+        ],
+        "transcript": "So positive value indicates both the both dimension increase together."
+    },
+    {
+        "id": 93,
+        "start": 909.84,
+        "end": 924.64,
+        "frames": [
+            "frame_00118.png"
+        ],
+        "transcript": "That means if someone just uh from this data set we can we can see that if someone increased the study hours, then uh uh the trend is to get higher marks, okay."
+    },
+    {
+        "id": 94,
+        "start": 924.64,
+        "end": 934.0,
+        "frames": [
+            "frame_00119.png"
+        ],
+        "transcript": "And another negative value indicates one increase, then another will decrease, okay, another will decrease, and another case the zero indicates the dimensions are independent."
+    },
+    {
+        "id": 95,
+        "start": 934.0,
+        "end": 939.52,
+        "frames": [
+            "frame_00120.png"
+        ],
+        "transcript": "Okay, if we get the zero, then it means the the H and M are independent."
+    },
+    {
+        "id": 96,
+        "start": 939.52,
+        "end": 944.88,
+        "frames": [
+            "frame_00121.png"
+        ],
+        "transcript": "So we need this the that is the need to know how to compute the covariance, okay."
+    },
+    {
+        "id": 97,
+        "start": 944.88,
+        "end": 955.2,
+        "frames": [
+            "frame_00122.png",
+            "frame_00123.png",
+            "frame_00124.png",
+            "frame_00125.png"
+        ],
+        "transcript": "How to compute the covariance uh that is to to understand the PCA, and another thing here is the covariance matrix."
+    },
+    {
+        "id": 98,
+        "start": 955.2,
+        "end": 964.0,
+        "frames": [
+            "frame_00126.png"
+        ],
+        "transcript": "That means if we have more than more than two variables, then how can we compute the covariance?"
+    },
+    {
+        "id": 99,
+        "start": 964.0,
+        "end": 974.4,
+        "frames": [
+            "frame_00127.png"
+        ],
+        "transcript": "So, in that case, we have to represent the covariances in matrix form, like we have three features feature one, feature two, feature three, like here x, y, and g."
+    },
+    {
+        "id": 100,
+        "start": 974.4,
+        "end": 978.88,
+        "frames": [
+            "frame_00128.png"
+        ],
+        "transcript": "Then how can we how can we find out the covariance among the features?"
+    },
+    {
+        "id": 101,
+        "start": 978.88,
+        "end": 990.56,
+        "frames": [
+            "frame_00129.png"
+        ],
+        "transcript": "So, on that case, actually, the covariance always determined between two variables, so that's why uh we have to represent using the covariance matrix."
+    },
+    {
+        "id": 102,
+        "start": 990.56,
+        "end": 1028.4,
+        "frames": [
+            "frame_00130.png"
+        ],
+        "transcript": "So, here like x, y, and g three variables we have, then we have to determine the variance between um between the x and x, so this is the covariance of x and x, and then x and y, so this is the covariance of x and y, so co covariance of x and y, and then x and g here is the coefference of x and g, and then this is the y, so we have to determine the coefference of y and x, and then we have to determine the coefficients of y and y, and we have to determine the coefference of y and g."
+    },
+    {
+        "id": 103,
+        "start": 1028.4,
+        "end": 1050.24,
+        "frames": [
+            "frame_00131.png"
+        ],
+        "transcript": "Finally, here g so we have to determine the coefference of gx and coefficients of g y and coefference of g, and one thing I need to mention here that um the coefference of x and x that means this is the same variable, okay."
+    },
+    {
+        "id": 104,
+        "start": 1050.24,
+        "end": 1069.04,
+        "frames": [
+            "frame_00132.png"
+        ],
+        "transcript": "Same variable x and x, so that means coefficients of x and x actually it will be the variance of x, though we have written here coefference of x and x the same variable, but if we if we put the these values in formula, then it will be the same as the variance."
+    },
+    {
+        "id": 105,
+        "start": 1069.04,
+        "end": 1084.4,
+        "frames": [
+            "frame_00133.png"
+        ],
+        "transcript": "So that means in diagonal positions, in diagonal positions, uh, we will get only the variances, we will get only the variances, and another thing is the covariance of x and y."
+    },
+    {
+        "id": 106,
+        "start": 1084.4,
+        "end": 1099.36,
+        "frames": [
+            "frame_00134.png"
+        ],
+        "transcript": "So, this is the covariance of x and y, it will be the same as the covariance of y and x, so that means covariance of x and y it will be the same as the covariance of y and y and x."
+    },
+    {
+        "id": 107,
+        "start": 1099.36,
+        "end": 1112.64,
+        "frames": [
+            "frame_00135.png"
+        ],
+        "transcript": "Similarly, covariance of x and g x and z it will be the same as the covariance of g and x, coefference of y and g it will be the same as the covariance of g and y."
+    },
+    {
+        "id": 108,
+        "start": 1112.64,
+        "end": 1129.36,
+        "frames": [
+            "frame_00136.png",
+            "frame_00137.png"
+        ],
+        "transcript": "So, it means that for coefference matrix, we will just only calculate the upper triangle values of the matrix, then the other values we will just use the same value, okay."
+    },
+    {
+        "id": 109,
+        "start": 1129.36,
+        "end": 1137.28,
+        "frames": [
+            "frame_00138.png",
+            "frame_00139.png"
+        ],
+        "transcript": "So, we have to determine the coefference matrix in PCA and principal component analysis."
+    },
+    {
+        "id": 110,
+        "start": 1137.28,
+        "end": 1147.84,
+        "frames": [
+            "frame_00140.png",
+            "frame_00141.png"
+        ],
+        "transcript": "Okay, uh, so I think we we we know how to compute the the covariance and so the we will get easily the covariance uh matrix."
+    },
+    {
+        "id": 111,
+        "start": 1147.84,
+        "end": 1150.64,
+        "frames": [
+            "frame_00142.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 112,
+        "start": 1150.64,
+        "end": 1156.96,
+        "frames": [
+            "frame_00143.png"
+        ],
+        "transcript": "Okay, to understand the PCA, we have to have the knowledge uh of mathematics also."
+    },
+    {
+        "id": 113,
+        "start": 1156.96,
+        "end": 1169.12,
+        "frames": [
+            "frame_00144.png"
+        ],
+        "transcript": "I hope you already have that, but for the quick recap, uh I want to just go through some of the mathematical terminologies and how to compute those."
+    },
+    {
+        "id": 114,
+        "start": 1169.12,
+        "end": 1186.64,
+        "frames": [
+            "frame_00145.png"
+        ],
+        "transcript": "Uh, so I I I I think you already know about the matrix and the eigenvector and eigenvalues of any matrix and how to determine the eigenvector and eigenvalue."
+    },
+    {
+        "id": 115,
+        "start": 1186.64,
+        "end": 1197.04,
+        "frames": [
+            "frame_00146.png"
+        ],
+        "transcript": "There are several approaches, or maybe there are several ways to determine the eigenvector and eigenvalue, and one of the approaches I will just uh just mention here."
+    },
+    {
+        "id": 116,
+        "start": 1197.04,
+        "end": 1201.04,
+        "frames": [
+            "frame_00147.png"
+        ],
+        "transcript": "I will uh we will see with an example also."
+    },
+    {
+        "id": 117,
+        "start": 1201.04,
+        "end": 1217.68,
+        "frames": [
+            "frame_00148.png"
+        ],
+        "transcript": "But I would like to suggest to you that if uh your method that means you maybe you already learned how to compute the eigenvector and eigenvalue, if your method is different than this method, uh you can you can determine the eigenvector and eigenvalue in your way."
+    },
+    {
+        "id": 118,
+        "start": 1217.68,
+        "end": 1231.2,
+        "frames": [
+            "frame_00149.png"
+        ],
+        "transcript": "Okay, that means no need to follow uh that is uh this lecture for computing the eigenvector and eigenvalue if you have already uh other if you know already the other methods."
+    },
+    {
+        "id": 119,
+        "start": 1231.2,
+        "end": 1236.0,
+        "frames": [
+            "frame_00150.png"
+        ],
+        "transcript": "So, what is uh eigenvector?"
+    },
+    {
+        "id": 120,
+        "start": 1236.0,
+        "end": 1246.8,
+        "frames": [
+            "frame_00151.png"
+        ],
+        "transcript": "Usually the eigenvector we call a characteristics vector, and if we have the square matrix, then only we can we can determine the eigenvector."
+    },
+    {
+        "id": 121,
+        "start": 1246.8,
+        "end": 1260.4,
+        "frames": [
+            "frame_00152.png"
+        ],
+        "transcript": "So for the for the square matrix, the eigenvector is a vector that doesn't change its direction under the associated linear transformation."
+    },
+    {
+        "id": 122,
+        "start": 1260.4,
+        "end": 1272.4,
+        "frames": [
+            "frame_00153.png"
+        ],
+        "transcript": "That means if we just transform using some linear scalar values, that vector will not change."
+    },
+    {
+        "id": 123,
+        "start": 1272.4,
+        "end": 1288.08,
+        "frames": [
+            "frame_00154.png"
+        ],
+        "transcript": "So if we find that kind of vector from the square matrix, then we can say that that vector will be the eigenvector of of that uh square matrix."
+    },
+    {
+        "id": 124,
+        "start": 1288.08,
+        "end": 1298.8,
+        "frames": [
+            "frame_00155.png"
+        ],
+        "transcript": "Okay, mathematically we can say if v is a vector that is non-zero, it is not zero, non-zero vector, then it is an eigenvector of square matrix A."
+    },
+    {
+        "id": 125,
+        "start": 1298.8,
+        "end": 1326.4,
+        "frames": [
+            "frame_00156.png"
+        ],
+        "transcript": "If AV that means the the the multiplication of this matrix and this vector, so it will not change that is the this kind of vector if this is the eigen eigenvector, then it will not change this v will not change just using the scalar transformation, so it will be the same same vector, same vector."
+    },
+    {
+        "id": 126,
+        "start": 1326.4,
+        "end": 1335.28,
+        "frames": [
+            "frame_00157.png"
+        ],
+        "transcript": "Okay, so this scalar term, this scalar term is called the eigenvalue, and this v is called the eigenvector."
+    },
+    {
+        "id": 127,
+        "start": 1335.28,
+        "end": 1344.4,
+        "frames": [
+            "frame_00158.png"
+        ],
+        "transcript": "So here uh the the relationship is this that is a v equal lambda v equal lambda is eigenvalue."
+    },
+    {
+        "id": 128,
+        "start": 1344.4,
+        "end": 1353.6,
+        "frames": [
+            "frame_00159.png",
+            "frame_00160.png"
+        ],
+        "transcript": "Okay, then consider just one of the matrix."
+    },
+    {
+        "id": 129,
+        "start": 1353.6,
+        "end": 1356.16,
+        "frames": [
+            "frame_00161.png"
+        ],
+        "transcript": "This is a 733 minus one."
+    },
+    {
+        "id": 130,
+        "start": 1356.16,
+        "end": 1414.0,
+        "frames": [
+            "frame_00162.png",
+            "frame_00163.png"
+        ],
+        "transcript": "We want to compute the eigenvalues and eigenvectors of this matrix, and another properties of eigen uh vector is that that is if we can find uh find one of the eigenvector, then any any scalar multiple, any scalar multiple that means if we multiply with with that eigenvector using just one alpha, so n alpha can be any value like two, three, four, five, any value, a scalar value, and then the the the multiplicative result that means multiplicative vector will also be the eigenvector of a so that means we can say that here is this the the original relationship is this a x bar here, x bar is our eigenvector, is lambda x bar."
+    },
+    {
+        "id": 131,
+        "start": 1414.0,
+        "end": 1420.16,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "So lambda is the i uh the that is the eigenvalue, so this is the relation."
+    },
+    {
+        "id": 132,
+        "start": 1420.16,
+        "end": 1437.6,
+        "frames": [
+            "frame_00165.png"
+        ],
+        "transcript": "So if we multiply the x with alpha, so that means we can say that a alpha x bar, then uh it will just we can we can move this alpha in front and then we will get the same thing that is a x bar."
+    },
+    {
+        "id": 133,
+        "start": 1437.6,
+        "end": 1444.96,
+        "frames": [
+            "frame_00166.png"
+        ],
+        "transcript": "Now if we put the ax bar ax bar, it is this equivalent to equivalent to lambda x bar."
+    },
+    {
+        "id": 134,
+        "start": 1444.96,
+        "end": 1447.04,
+        "frames": [
+            "frame_00167.png"
+        ],
+        "transcript": "So here is the lambda x bar."
+    },
+    {
+        "id": 135,
+        "start": 1447.04,
+        "end": 1455.04,
+        "frames": [
+            "frame_00168.png"
+        ],
+        "transcript": "Put the value lambda x bar here, and then again move this alpha inside."
+    },
+    {
+        "id": 136,
+        "start": 1455.04,
+        "end": 1459.04,
+        "frames": [
+            "frame_00169.png"
+        ],
+        "transcript": "So we we can move this alpha inside, then we can see the relationship."
+    },
+    {
+        "id": 137,
+        "start": 1459.04,
+        "end": 1468.48,
+        "frames": [
+            "frame_00170.png"
+        ],
+        "transcript": "Here is the a and we can consider this term, consider this term as the v that means v bar."
+    },
+    {
+        "id": 138,
+        "start": 1468.48,
+        "end": 1481.36,
+        "frames": [
+            "frame_00171.png"
+        ],
+        "transcript": "Okay, that is here is also that lambda b bar, so that means the relationship now again the relationship holds a b bar equal lambda v bar."
+    },
+    {
+        "id": 139,
+        "start": 1481.36,
+        "end": 1499.68,
+        "frames": [
+            "frame_00172.png"
+        ],
+        "transcript": "That means if we just uh multiply uh the eigenvector with some with some value like alpha, okay, and that is the scalar value, then still that one that that one will also be the eigenvector, okay."
+    },
+    {
+        "id": 140,
+        "start": 1499.68,
+        "end": 1505.6,
+        "frames": [
+            "frame_00173.png"
+        ],
+        "transcript": "So this this is another uh important characteristics of the eigenvector."
+    },
+    {
+        "id": 141,
+        "start": 1505.6,
+        "end": 1508.32,
+        "frames": [
+            "frame_00174.png"
+        ],
+        "transcript": "Now, how to find the eigenvector?"
+    },
+    {
+        "id": 142,
+        "start": 1508.32,
+        "end": 1511.76,
+        "frames": [
+            "frame_00175.png"
+        ],
+        "transcript": "So here is one of the methods of finding eigenvector is there."
+    },
+    {
+        "id": 143,
+        "start": 1511.76,
+        "end": 1520.72,
+        "frames": [
+            "frame_00176.png"
+        ],
+        "transcript": "At first, we have to multiply the n by n identity matrix by the scalar, so we don't know the scalar value like the lambda."
+    },
+    {
+        "id": 144,
+        "start": 1520.72,
+        "end": 1533.68,
+        "frames": [
+            "frame_00177.png"
+        ],
+        "transcript": "Okay, we don't know yet, but what we have to do, we have to multiply this one with an identity matrix, and identity matrix will be the same size that is n by n with our original matrix A."
+    },
+    {
+        "id": 145,
+        "start": 1533.68,
+        "end": 1536.08,
+        "frames": [
+            "frame_00178.png"
+        ],
+        "transcript": "So it will be the same size."
+    },
+    {
+        "id": 146,
+        "start": 1536.08,
+        "end": 1545.76,
+        "frames": [
+            "frame_00179.png"
+        ],
+        "transcript": "That means if a is 2 by 2, then our identity matrix must have to be 2 by 2 matrix, so that means uh this is uh lambda."
+    },
+    {
+        "id": 147,
+        "start": 1545.76,
+        "end": 1556.32,
+        "frames": [
+            "frame_00180.png"
+        ],
+        "transcript": "So multiple multiply an n by n identity matrix by the scalar lambda, okay, and then subtract the identity matrix multiple from matrix A."
+    },
+    {
+        "id": 148,
+        "start": 1556.32,
+        "end": 1560.72,
+        "frames": [
+            "frame_00181.png"
+        ],
+        "transcript": "That means we have to compute like a minus of lambda i."
+    },
+    {
+        "id": 149,
+        "start": 1560.72,
+        "end": 1568.72,
+        "frames": [
+            "frame_00182.png"
+        ],
+        "transcript": "So this is a that means our matrix we want to find out the eigenvector of this matrix, okay."
+    },
+    {
+        "id": 150,
+        "start": 1568.72,
+        "end": 1584.96,
+        "frames": [
+            "frame_00183.png"
+        ],
+        "transcript": "So a minus of lambda i we have to determine this and then solve the values of lambda that satisfy so determinant of this a minus of lambda i equal just zero or vector zero."
+    },
+    {
+        "id": 151,
+        "start": 1584.96,
+        "end": 1598.56,
+        "frames": [
+            "frame_00184.png"
+        ],
+        "transcript": "So that means find out the determinant of this and put the value of zero, and then we we can we we will find the value of lambda."
+    },
+    {
+        "id": 152,
+        "start": 1598.56,
+        "end": 1610.96,
+        "frames": [
+            "frame_00185.png"
+        ],
+        "transcript": "That means we will find the find the eigenvalues, and from the eigenvalues from each and every eigenvalues, we have to find the eigenvectors eigenvector by solving the corresponding vector."
+    },
+    {
+        "id": 153,
+        "start": 1610.96,
+        "end": 1614.72,
+        "frames": [
+            "frame_00186.png"
+        ],
+        "transcript": "Okay, so these are the five steps we have to do."
+    },
+    {
+        "id": 154,
+        "start": 1614.72,
+        "end": 1621.44,
+        "frames": [
+            "frame_00187.png",
+            "frame_00188.png"
+        ],
+        "transcript": "Now consider that uh this is our a so a is seven three three minus one."
+    },
+    {
+        "id": 155,
+        "start": 1621.44,
+        "end": 1627.6,
+        "frames": [
+            "frame_00189.png"
+        ],
+        "transcript": "So here is the uh lambda i."
+    },
+    {
+        "id": 156,
+        "start": 1627.6,
+        "end": 1637.36,
+        "frames": [
+            "frame_00190.png"
+        ],
+        "transcript": "So lambda i this is lambda and s uh we have the that that is a is a two by two, so we have to take the identity matrix that is two by two."
+    },
+    {
+        "id": 157,
+        "start": 1637.36,
+        "end": 1644.56,
+        "frames": [
+            "frame_00191.png"
+        ],
+        "transcript": "We know the identity matrix the diagonally, we have to put the one and one and all other values are just zero."
+    },
+    {
+        "id": 158,
+        "start": 1644.56,
+        "end": 1650.08,
+        "frames": [
+            "frame_00192.png"
+        ],
+        "transcript": "Now uh so this is the matrix and multiply with lambda."
+    },
+    {
+        "id": 159,
+        "start": 1650.08,
+        "end": 1663.12,
+        "frames": [
+            "frame_00193.png"
+        ],
+        "transcript": "Okay, so we will get like lambda zero times lambda zero, then zero times lambda zero, and then lambda times one equal one, so we will get this matrix, and now what we have to do?"
+    },
+    {
+        "id": 160,
+        "start": 1663.12,
+        "end": 1666.72,
+        "frames": [
+            "frame_00194.png"
+        ],
+        "transcript": "We have to determine the the a minus of lambda i."
+    },
+    {
+        "id": 161,
+        "start": 1666.72,
+        "end": 1672.32,
+        "frames": [
+            "frame_00195.png"
+        ],
+        "transcript": "So this is our a that is the matrix A, and this is our lambda i."
+    },
+    {
+        "id": 162,
+        "start": 1672.32,
+        "end": 1675.52,
+        "frames": [
+            "frame_00196.png"
+        ],
+        "transcript": "Now, what we have to do just matrix subtraction."
+    },
+    {
+        "id": 163,
+        "start": 1675.52,
+        "end": 1681.04,
+        "frames": [
+            "frame_00197.png"
+        ],
+        "transcript": "I I know that you already know the matrix addition, subtraction, multiplication, those things."
+    },
+    {
+        "id": 164,
+        "start": 1681.04,
+        "end": 1687.68,
+        "frames": [
+            "frame_00198.png"
+        ],
+        "transcript": "Uh so now uh this is matrix subtraction that means the same dimension here 2 by 2 and 2 by 2."
+    },
+    {
+        "id": 165,
+        "start": 1687.68,
+        "end": 1694.8,
+        "frames": [
+            "frame_00199.png"
+        ],
+        "transcript": "So 7 minus of lambda, this is 7 minus of lambda, and then 3 minus of 0, that is the 3."
+    },
+    {
+        "id": 166,
+        "start": 1694.8,
+        "end": 1701.2,
+        "frames": [
+            "frame_00200.png"
+        ],
+        "transcript": "So it is 3 minus of 0 again, 3, and minus 1 minus lambda, it will be this value."
+    },
+    {
+        "id": 167,
+        "start": 1701.2,
+        "end": 1704.0,
+        "frames": [
+            "frame_00201.png"
+        ],
+        "transcript": "Okay, so this is a minus of lambda i."
+    },
+    {
+        "id": 168,
+        "start": 1704.0,
+        "end": 1711.12,
+        "frames": [
+            "frame_00202.png"
+        ],
+        "transcript": "Now in step three, what we have to do, we have to find out the determinant of this and put the value equal to 0."
+    },
+    {
+        "id": 169,
+        "start": 1711.12,
+        "end": 1724.32,
+        "frames": [
+            "frame_00203.png"
+        ],
+        "transcript": "So that means this value times this one seven minus of lambda minus of 1 minus of lambda minus of this value that means uh 3 times 3."
+    },
+    {
+        "id": 170,
+        "start": 1724.32,
+        "end": 1760.4,
+        "frames": [
+            "frame_00204.png"
+        ],
+        "transcript": "So we will get this if we multiply these two product, then uh we will get minus 7 minus 7 lambda plus lambda plus lambda square, and here is the 9, and then uh we will get like lambda square, so lambda square, and then from this part it will be minus 7 lambda and plus lambda is 6 lambda, and then minus 7 and minus 9, so it will be it will be 16, okay."
+    },
+    {
+        "id": 171,
+        "start": 1760.4,
+        "end": 1764.64,
+        "frames": [
+            "frame_00205.png"
+        ],
+        "transcript": "It will be 16, not the 14, it will be 16."
+    },
+    {
+        "id": 172,
+        "start": 1764.64,
+        "end": 1771.52,
+        "frames": [
+            "frame_00206.png"
+        ],
+        "transcript": "Okay, so 16 lambda square minus of 6 lambda minus of 16."
+    },
+    {
+        "id": 173,
+        "start": 1771.52,
+        "end": 1778.0,
+        "frames": [
+            "frame_00207.png"
+        ],
+        "transcript": "So if we solve this this equation, uh lambda square minus 6 lambda equals 16 equals 0."
+    },
+    {
+        "id": 174,
+        "start": 1778.0,
+        "end": 1779.68,
+        "frames": [
+            "frame_00208.png"
+        ],
+        "transcript": "16 equals 0."
+    },
+    {
+        "id": 175,
+        "start": 1779.68,
+        "end": 1785.68,
+        "frames": [
+            "frame_00209.png"
+        ],
+        "transcript": "According to our algorithm, we have to put the 0 and then solve this equation."
+    },
+    {
+        "id": 176,
+        "start": 1785.68,
+        "end": 1794.24,
+        "frames": [
+            "frame_00210.png"
+        ],
+        "transcript": "So if we solve this equation, then we will get this that is uh lambda minus 8 and lambda plus 8 equal 0."
+    },
+    {
+        "id": 177,
+        "start": 1794.24,
+        "end": 1795.84,
+        "frames": [
+            "frame_00211.png"
+        ],
+        "transcript": "Uh how to find that?"
+    },
+    {
+        "id": 178,
+        "start": 1795.84,
+        "end": 1797.76,
+        "frames": [
+            "frame_00212.png"
+        ],
+        "transcript": "I think no need to explain, okay?"
+    },
+    {
+        "id": 179,
+        "start": 1797.76,
+        "end": 1801.04,
+        "frames": [
+            "frame_00213.png"
+        ],
+        "transcript": "Because uh these are just high school math."
+    },
+    {
+        "id": 180,
+        "start": 1801.04,
+        "end": 1805.6,
+        "frames": [
+            "frame_00214.png"
+        ],
+        "transcript": "So uh lambda minus 8, lambda plus 2 equals 0."
+    },
+    {
+        "id": 181,
+        "start": 1805.6,
+        "end": 1813.76,
+        "frames": [
+            "frame_00215.png"
+        ],
+        "transcript": "That means lambda equal 8, so lambda equal 8, and another one we will get lambda equal minus 2."
+    },
+    {
+        "id": 182,
+        "start": 1813.76,
+        "end": 1818.72,
+        "frames": [
+            "frame_00216.png"
+        ],
+        "transcript": "So that means we already got the eigenvalues."
+    },
+    {
+        "id": 183,
+        "start": 1818.72,
+        "end": 1820.72,
+        "frames": [
+            "frame_00217.png"
+        ],
+        "transcript": "So eigenvalues here."
+    },
+    {
+        "id": 184,
+        "start": 1820.72,
+        "end": 1823.36,
+        "frames": [
+            "frame_00218.png"
+        ],
+        "transcript": "We we we received two eigenvalues, okay."
+    },
+    {
+        "id": 185,
+        "start": 1823.36,
+        "end": 1831.52,
+        "frames": [
+            "frame_00219.png"
+        ],
+        "transcript": "Just uh because we have the 2 by 2 matrix, and we we got that two eigenvalues, lambda equal 8 and lambda equal minus 2."
+    },
+    {
+        "id": 186,
+        "start": 1831.52,
+        "end": 1835.44,
+        "frames": [
+            "frame_00220.png"
+        ],
+        "transcript": "So now what we have to do?"
+    },
+    {
+        "id": 187,
+        "start": 1835.44,
+        "end": 1846.56,
+        "frames": [
+            "frame_00221.png"
+        ],
+        "transcript": "Uh we got the eigenvalues from each and every eigenvalue, we have to determine the eigenvectors, and how can we we we we get that?"
+    },
+    {
+        "id": 188,
+        "start": 1846.56,
+        "end": 1857.52,
+        "frames": [
+            "frame_00222.png"
+        ],
+        "transcript": "Uh so for that what we have to do replace the values lambda equal 8 from a minus of lambda i."
+    },
+    {
+        "id": 189,
+        "start": 1857.52,
+        "end": 1879.52,
+        "frames": [
+            "frame_00223.png"
+        ],
+        "transcript": "So this is the matrix we previously we computed this matrix, and we have to we have to put the value of the lambda here in this matrix, like if we can see uh so this is the matrix we have seven minus of lambda three and three minus one minus lambda, okay."
+    },
+    {
+        "id": 190,
+        "start": 1879.52,
+        "end": 1885.68,
+        "frames": [
+            "frame_00224.png"
+        ],
+        "transcript": "Uh so this was the matrix a minus of lambda i and we have to put the value of the lambda here."
+    },
+    {
+        "id": 191,
+        "start": 1885.68,
+        "end": 1897.76,
+        "frames": [
+            "frame_00225.png"
+        ],
+        "transcript": "If we put lambda equal eight, lambda equal eight here, then we will get this that is seven minus of eight, three, three minus one minus eight, and it will be this okay."
+    },
+    {
+        "id": 192,
+        "start": 1897.76,
+        "end": 1902.08,
+        "frames": [
+            "frame_00226.png"
+        ],
+        "transcript": "It will be this value minus one three three minus nine."
+    },
+    {
+        "id": 193,
+        "start": 1902.08,
+        "end": 1906.32,
+        "frames": [
+            "frame_00227.png"
+        ],
+        "transcript": "So consider that this one is b."
+    },
+    {
+        "id": 194,
+        "start": 1906.32,
+        "end": 1917.12,
+        "frames": [
+            "frame_00228.png"
+        ],
+        "transcript": "Okay, this one is b because we need to find out the relationship between the vectors and here b and x bar should be zero."
+    },
+    {
+        "id": 195,
+        "start": 1917.12,
+        "end": 1919.28,
+        "frames": [
+            "frame_00229.png"
+        ],
+        "transcript": "So here is the b of x bar."
+    },
+    {
+        "id": 196,
+        "start": 1919.28,
+        "end": 1932.16,
+        "frames": [
+            "frame_00230.png"
+        ],
+        "transcript": "So x bar is our is our we consider this one, consider this one that is x bar equal uh this is our uh our uh eigenvector, sorry, eigenvector, yeah."
+    },
+    {
+        "id": 197,
+        "start": 1932.16,
+        "end": 1934.88,
+        "frames": [
+            "frame_00231.png"
+        ],
+        "transcript": "So b x bar equal zero."
+    },
+    {
+        "id": 198,
+        "start": 1934.88,
+        "end": 1939.76,
+        "frames": [
+            "frame_00232.png"
+        ],
+        "transcript": "So considering x bar as the eigenvector."
+    },
+    {
+        "id": 199,
+        "start": 1939.76,
+        "end": 1944.24,
+        "frames": [
+            "frame_00233.png"
+        ],
+        "transcript": "So if we solve this equation, that means this is our this is our b."
+    },
+    {
+        "id": 200,
+        "start": 1944.24,
+        "end": 1957.52,
+        "frames": [
+            "frame_00234.png"
+        ],
+        "transcript": "We got the b already from the b uh from the b and if we multiply with that the eigenvector, and then we will receive the zero vectors."
+    },
+    {
+        "id": 201,
+        "start": 1957.52,
+        "end": 1961.68,
+        "frames": [
+            "frame_00235.png"
+        ],
+        "transcript": "Now, what we have to do this is b and x."
+    },
+    {
+        "id": 202,
+        "start": 1961.68,
+        "end": 2008.96,
+        "frames": [
+            "frame_00236.png"
+        ],
+        "transcript": "Try to solve the equation that means uh try to find out the relationship between x1 and x2, and then uh one of the methods for that to solving this this this equation is we have to convert this one, convert this one, this matrix to a row equal form, and uh I hope you already know about the row equal form, like um for the case of the 3 by 3 matrix, the row equivalent form we should it should be like here a b c if we consider uh a matrix like a b c and d ef i like this okay."
+    },
+    {
+        "id": 203,
+        "start": 2008.96,
+        "end": 2030.96,
+        "frames": [
+            "frame_00237.png"
+        ],
+        "transcript": "So if this is the matrix, then in row equal form, if you transform this one, transform this one to a row equal form, then you have to you have to find like here a and then zero and then zero, and then b you have to convert it."
+    },
+    {
+        "id": 204,
+        "start": 2030.96,
+        "end": 2051.36,
+        "frames": [
+            "frame_00238.png"
+        ],
+        "transcript": "Maybe here is a c d or anything, maybe uh maybe e okay, but here is zero, and then uh this is c and then uh maybe f it will be one, okay, like this in this form."
+    },
+    {
+        "id": 205,
+        "start": 2051.36,
+        "end": 2054.0,
+        "frames": [
+            "frame_00239.png"
+        ],
+        "transcript": "So this is called the roe equal form."
+    },
+    {
+        "id": 206,
+        "start": 2054.0,
+        "end": 2070.96,
+        "frames": [
+            "frame_00240.png"
+        ],
+        "transcript": "So we have two uh two by two matrix, so ro equal form we will we will expect like this, expect like this a b and zero, then one the expected equal form will be this, okay."
+    },
+    {
+        "id": 207,
+        "start": 2070.96,
+        "end": 2079.2,
+        "frames": [
+            "frame_00241.png"
+        ],
+        "transcript": "So that means we we need zero here, we need the zero here to make it zero, to make it zero."
+    },
+    {
+        "id": 208,
+        "start": 2079.2,
+        "end": 2080.8,
+        "frames": [
+            "frame_00242.png"
+        ],
+        "transcript": "How can we transform?"
+    },
+    {
+        "id": 209,
+        "start": 2080.8,
+        "end": 2083.68,
+        "frames": [
+            "frame_00243.png"
+        ],
+        "transcript": "How can we transform this this matrix?"
+    },
+    {
+        "id": 210,
+        "start": 2083.68,
+        "end": 2090.4,
+        "frames": [
+            "frame_00244.png"
+        ],
+        "transcript": "So we know that we can we can transform the matrix uh using some row and column combination."
+    },
+    {
+        "id": 211,
+        "start": 2090.4,
+        "end": 2097.12,
+        "frames": [
+            "frame_00245.png"
+        ],
+        "transcript": "Like if we want to get zero here in this case, so how can we do that?"
+    },
+    {
+        "id": 212,
+        "start": 2097.12,
+        "end": 2111.92,
+        "frames": [
+            "frame_00246.png"
+        ],
+        "transcript": "We can multiply this row that means row number one, row number one with three, with three, so three times r1, three times r1, so it will be like minus three on the time."
+    },
+    {
+        "id": 213,
+        "start": 2111.92,
+        "end": 2122.88,
+        "frames": [
+            "frame_00247.png"
+        ],
+        "transcript": "This this value will be minus three, this value will be minus three, and then we will we we will just sum up with r2, so that means three r1 plus of r2."
+    },
+    {
+        "id": 214,
+        "start": 2122.88,
+        "end": 2137.84,
+        "frames": [
+            "frame_00248.png"
+        ],
+        "transcript": "Then this value we will place where we will place the r at r2, that means row two, then it will be like three r1, so it is minus three, and this will be three minus three plus three, it will be zero."
+    },
+    {
+        "id": 215,
+        "start": 2137.84,
+        "end": 2143.52,
+        "frames": [
+            "frame_00249.png"
+        ],
+        "transcript": "Okay, in row equal form, we need this, we need this, okay."
+    },
+    {
+        "id": 216,
+        "start": 2143.52,
+        "end": 2150.32,
+        "frames": [
+            "frame_00250.png"
+        ],
+        "transcript": "So uh so for that here, this is the case three r1 plus r2 here is the r2."
+    },
+    {
+        "id": 217,
+        "start": 2150.32,
+        "end": 2166.72,
+        "frames": [
+            "frame_00251.png"
+        ],
+        "transcript": "Okay, on that case we will get the value like uh minus three here is the three, then we will get zero, but as we already already multiply the r1 with three, so not only this value, not only this value."
+    },
+    {
+        "id": 218,
+        "start": 2166.72,
+        "end": 2175.76,
+        "frames": [
+            "frame_00252.png"
+        ],
+        "transcript": "That means this three will also be multiplied with three, so that means it will be it will become nine."
+    },
+    {
+        "id": 219,
+        "start": 2175.76,
+        "end": 2178.88,
+        "frames": [
+            "frame_00253.png"
+        ],
+        "transcript": "So that means nine and here is a minus nine."
+    },
+    {
+        "id": 220,
+        "start": 2178.88,
+        "end": 2189.04,
+        "frames": [
+            "frame_00254.png"
+        ],
+        "transcript": "Okay, if we if we sum up these two, if we sum up these two nine minus of nine, then it will also become zero, so therefore we will get this zero zero, okay."
+    },
+    {
+        "id": 221,
+        "start": 2189.04,
+        "end": 2190.88,
+        "frames": [
+            "frame_00255.png"
+        ],
+        "transcript": "Minus one and three."
+    },
+    {
+        "id": 222,
+        "start": 2190.88,
+        "end": 2193.68,
+        "frames": [
+            "frame_00256.png"
+        ],
+        "transcript": "Now, what can we do?"
+    },
+    {
+        "id": 223,
+        "start": 2193.68,
+        "end": 2200.8,
+        "frames": [
+            "frame_00257.png"
+        ],
+        "transcript": "So after this transformation, and this is our this is our actually the the vector."
+    },
+    {
+        "id": 224,
+        "start": 2200.8,
+        "end": 2208.4,
+        "frames": [
+            "frame_00258.png"
+        ],
+        "transcript": "So we will get like if we multiply these two equal uh the zero, okay."
+    },
+    {
+        "id": 225,
+        "start": 2208.4,
+        "end": 2210.16,
+        "frames": [
+            "frame_00259.png"
+        ],
+        "transcript": "Zero vector, zero vector."
+    },
+    {
+        "id": 226,
+        "start": 2210.16,
+        "end": 2254.08,
+        "frames": [
+            "frame_00260.png"
+        ],
+        "transcript": "If we multiply these two, then minus one we will get minus one times minus one times x1 plus uh uh three times x2, three times x2 equal it will equal zero, it will equal zero and that means we can say that so three x two equal x1 or we can say that x1 equal so x1 equal three x2."
+    },
+    {
+        "id": 227,
+        "start": 2254.08,
+        "end": 2259.92,
+        "frames": [
+            "frame_00261.png"
+        ],
+        "transcript": "Now we got the relationship between x1 and x2."
+    },
+    {
+        "id": 228,
+        "start": 2259.92,
+        "end": 2263.04,
+        "frames": [
+            "frame_00262.png"
+        ],
+        "transcript": "So consider that x2 equal one."
+    },
+    {
+        "id": 229,
+        "start": 2263.04,
+        "end": 2268.24,
+        "frames": [
+            "frame_00263.png"
+        ],
+        "transcript": "If we consider x2 equal one, then we will get x1 equal three."
+    },
+    {
+        "id": 230,
+        "start": 2268.24,
+        "end": 2274.0,
+        "frames": [
+            "frame_00264.png"
+        ],
+        "transcript": "So x2 equal here, the x2 considering x2 equal one, we will get x1 equal three."
+    },
+    {
+        "id": 231,
+        "start": 2274.0,
+        "end": 2279.6,
+        "frames": [
+            "frame_00265.png"
+        ],
+        "transcript": "That is the the eigenvector, one of the eigenvector will be three, one."
+    },
+    {
+        "id": 232,
+        "start": 2279.6,
+        "end": 2289.68,
+        "frames": [
+            "frame_00266.png"
+        ],
+        "transcript": "So here is x1 equal three, here is the three, and x2 equal one for eigenvalue eight, because we use the value eight here, okay."
+    },
+    {
+        "id": 233,
+        "start": 2289.68,
+        "end": 2297.36,
+        "frames": [
+            "frame_00267.png"
+        ],
+        "transcript": "So that means for eigenvalue eight, and we can also we can also put the value like here the the the the x2."
+    },
+    {
+        "id": 234,
+        "start": 2297.36,
+        "end": 2301.44,
+        "frames": [
+            "frame_00268.png"
+        ],
+        "transcript": "We can uh put the value x2 equal to okay."
+    },
+    {
+        "id": 235,
+        "start": 2301.44,
+        "end": 2305.84,
+        "frames": [
+            "frame_00269.png"
+        ],
+        "transcript": "Consider if we consider x to equal to then we can consider okay."
+    },
+    {
+        "id": 236,
+        "start": 2305.84,
+        "end": 2313.36,
+        "frames": [
+            "frame_00270.png"
+        ],
+        "transcript": "We can consider this x to equal to so on that time x1 will be six, x1 will be six here."
+    },
+    {
+        "id": 237,
+        "start": 2313.36,
+        "end": 2314.96,
+        "frames": [
+            "frame_00271.png"
+        ],
+        "transcript": "X1 will be six."
+    },
+    {
+        "id": 238,
+        "start": 2314.96,
+        "end": 2319.92,
+        "frames": [
+            "frame_00272.png"
+        ],
+        "transcript": "That means on that time I can factor we will get six by six and two here."
+    },
+    {
+        "id": 239,
+        "start": 2319.92,
+        "end": 2335.84,
+        "frames": [
+            "frame_00273.png"
+        ],
+        "transcript": "This six and two, but we can see that we can we can take the common here too, we can take this uh term two as the common term, and then then it it will become three and one again."
+    },
+    {
+        "id": 240,
+        "start": 2335.84,
+        "end": 2354.72,
+        "frames": [
+            "frame_00274.png",
+            "frame_00275.png"
+        ],
+        "transcript": "So that means we want the base form here, and and and we in theory we already already uh we already have seen that if we get this, if we get this, if we get this, then any scalar video like the alpha, okay."
+    },
+    {
+        "id": 241,
+        "start": 2354.72,
+        "end": 2360.32,
+        "frames": [
+            "frame_00276.png"
+        ],
+        "transcript": "Alpha of the X, this is X bar, okay, alpha of X bar."
+    },
+    {
+        "id": 242,
+        "start": 2360.32,
+        "end": 2363.68,
+        "frames": [
+            "frame_00277.png"
+        ],
+        "transcript": "So this one will also be the eigenvector, okay?"
+    },
+    {
+        "id": 243,
+        "start": 2363.68,
+        "end": 2367.76,
+        "frames": [
+            "frame_00278.png"
+        ],
+        "transcript": "So that's why this is this is the alpha in our case, okay."
+    },
+    {
+        "id": 244,
+        "start": 2367.76,
+        "end": 2368.56,
+        "frames": [
+            "frame_00279.png"
+        ],
+        "transcript": "Alpha."
+    },
+    {
+        "id": 245,
+        "start": 2368.56,
+        "end": 2372.88,
+        "frames": [
+            "frame_00280.png"
+        ],
+        "transcript": "So we will we we we we need to know the base form that is 3 1."
+    },
+    {
+        "id": 246,
+        "start": 2372.88,
+        "end": 2375.52,
+        "frames": [
+            "frame_00281.png"
+        ],
+        "transcript": "The eigenvector here is 3 1."
+    },
+    {
+        "id": 247,
+        "start": 2375.52,
+        "end": 2378.96,
+        "frames": [
+            "frame_00282.png"
+        ],
+        "transcript": "So this is one of the eigenvectors for eigenvalue 8."
+    },
+    {
+        "id": 248,
+        "start": 2378.96,
+        "end": 2382.4,
+        "frames": [
+            "frame_00283.png"
+        ],
+        "transcript": "And now what we have to do?"
+    },
+    {
+        "id": 249,
+        "start": 2382.4,
+        "end": 2387.68,
+        "frames": [
+            "frame_00284.png"
+        ],
+        "transcript": "We have to uh we can check whether this eigenvector is correct or not."
+    },
+    {
+        "id": 250,
+        "start": 2387.68,
+        "end": 2405.6,
+        "frames": [
+            "frame_00285.png"
+        ],
+        "transcript": "So for that, this is our a matrix A, and this is uh this is our eigenvector that is that we can say V, then the lambda we have the eight lambda, and this is the V okay vector V."
+    },
+    {
+        "id": 251,
+        "start": 2405.6,
+        "end": 2412.08,
+        "frames": [
+            "frame_00286.png"
+        ],
+        "transcript": "Then just uh if we multiply these two, then we will get 24 and 248."
+    },
+    {
+        "id": 252,
+        "start": 2412.08,
+        "end": 2419.6,
+        "frames": [
+            "frame_00287.png"
+        ],
+        "transcript": "That means both sides that is uh left hand side and right hand side are equal."
+    },
+    {
+        "id": 253,
+        "start": 2419.6,
+        "end": 2429.92,
+        "frames": [
+            "frame_00288.png"
+        ],
+        "transcript": "Okay, so that means uh we can say that the the computed eigenvector eigenvector uh is valid, okay."
+    },
+    {
+        "id": 254,
+        "start": 2429.92,
+        "end": 2432.48,
+        "frames": [
+            "frame_00289.png"
+        ],
+        "transcript": "Valid eigenvector for the eigenvalue 8."
+    },
+    {
+        "id": 255,
+        "start": 2432.48,
+        "end": 2434.24,
+        "frames": [
+            "frame_00290.png"
+        ],
+        "transcript": "Now, what can we do?"
+    },
+    {
+        "id": 256,
+        "start": 2434.24,
+        "end": 2438.16,
+        "frames": [
+            "frame_00291.png"
+        ],
+        "transcript": "We can we can do the same for lambda equal to that."
+    },
+    {
+        "id": 257,
+        "start": 2438.16,
+        "end": 2455.44,
+        "frames": [
+            "frame_00292.png"
+        ],
+        "transcript": "This is our another eigenvalue we have derived, so that means again we need to put the value of lambda minus 2 in our a minus a minus lambda i lambda i matrix."
+    },
+    {
+        "id": 258,
+        "start": 2455.44,
+        "end": 2463.04,
+        "frames": [
+            "frame_00293.png"
+        ],
+        "transcript": "So here if we put the value lambda equal minus 2 minus 2, then it will become like this."
+    },
+    {
+        "id": 259,
+        "start": 2463.04,
+        "end": 2465.28,
+        "frames": [
+            "frame_00294.png"
+        ],
+        "transcript": "So we will get 9331."
+    },
+    {
+        "id": 260,
+        "start": 2465.28,
+        "end": 2469.68,
+        "frames": [
+            "frame_00295.png"
+        ],
+        "transcript": "So this this time this is our b again."
+    },
+    {
+        "id": 261,
+        "start": 2469.68,
+        "end": 2475.12,
+        "frames": [
+            "frame_00296.png"
+        ],
+        "transcript": "What we have to do the b x bar equal the 0."
+    },
+    {
+        "id": 262,
+        "start": 2475.12,
+        "end": 2477.28,
+        "frames": [
+            "frame_00297.png"
+        ],
+        "transcript": "Okay, the vector 0."
+    },
+    {
+        "id": 263,
+        "start": 2477.28,
+        "end": 2484.8,
+        "frames": [
+            "frame_00298.png"
+        ],
+        "transcript": "So now uh we have to we have to just transform this one so that we can find the relationship between x1 and x2."
+    },
+    {
+        "id": 264,
+        "start": 2484.8,
+        "end": 2487.28,
+        "frames": [
+            "frame_00299.png"
+        ],
+        "transcript": "So same thing like here now."
+    },
+    {
+        "id": 265,
+        "start": 2487.28,
+        "end": 2494.08,
+        "frames": [
+            "frame_00300.png"
+        ],
+        "transcript": "What we have to do, we have to transform this one in row in row equivalent form, then here uh 93."
+    },
+    {
+        "id": 266,
+        "start": 2494.08,
+        "end": 2503.92,
+        "frames": [
+            "frame_00301.png"
+        ],
+        "transcript": "So three that means we have to we have to multiply this one, multiply this one with minus three to make it nine."
+    },
+    {
+        "id": 267,
+        "start": 2503.92,
+        "end": 2506.48,
+        "frames": [
+            "frame_00302.png"
+        ],
+        "transcript": "So so here is the nine, okay."
+    },
+    {
+        "id": 268,
+        "start": 2506.48,
+        "end": 2509.36,
+        "frames": [
+            "frame_00303.png"
+        ],
+        "transcript": "So that means uh minus three r2."
+    },
+    {
+        "id": 269,
+        "start": 2509.36,
+        "end": 2521.04,
+        "frames": [
+            "frame_00304.png"
+        ],
+        "transcript": "So this row we have to multiply with minus three, so it will become minus three r2, and then if we add with the row one, then it will become zero, okay."
+    },
+    {
+        "id": 270,
+        "start": 2521.04,
+        "end": 2526.64,
+        "frames": [
+            "frame_00305.png"
+        ],
+        "transcript": "And we have to uh just place this one in row one, okay."
+    },
+    {
+        "id": 271,
+        "start": 2526.64,
+        "end": 2532.4,
+        "frames": [
+            "frame_00306.png"
+        ],
+        "transcript": "We multiply the row two and then add the row row one and then place this one to row one."
+    },
+    {
+        "id": 272,
+        "start": 2532.4,
+        "end": 2533.92,
+        "frames": [
+            "frame_00307.png"
+        ],
+        "transcript": "So so here is zero."
+    },
+    {
+        "id": 273,
+        "start": 2533.92,
+        "end": 2536.48,
+        "frames": [
+            "frame_00308.png"
+        ],
+        "transcript": "You will get again the zero, zero, and three, one."
+    },
+    {
+        "id": 274,
+        "start": 2536.48,
+        "end": 2542.16,
+        "frames": [
+            "frame_00309.png"
+        ],
+        "transcript": "So you can you can also expense on that case the x1, x2 will also also be extensive."
+    },
+    {
+        "id": 275,
+        "start": 2542.16,
+        "end": 2566.4,
+        "frames": [
+            "frame_00310.png"
+        ],
+        "transcript": "Okay, that is uh so now uh what you will you will find uh so you will find like x1 here is this x2 so x1 on x2."
+    },
+    {
+        "id": 276,
+        "start": 2566.4,
+        "end": 2581.52,
+        "frames": [
+            "frame_00311.png"
+        ],
+        "transcript": "So now multiply this the if we if we multiply this one zero and this this one then it will be it will become zero zero okay so that means uh zero times x1 zero times x2 equals zero."
+    },
+    {
+        "id": 277,
+        "start": 2581.52,
+        "end": 2607.12,
+        "frames": [
+            "frame_00312.png"
+        ],
+        "transcript": "So that's the failure relationship, but uh no information is there so and next the three one and x and x2 that means we will get like three x1 plus uh x2 equal zero uh so x to equal zero."
+    },
+    {
+        "id": 278,
+        "start": 2607.12,
+        "end": 2613.04,
+        "frames": [
+            "frame_00313.png"
+        ],
+        "transcript": "Okay, so we will get x to equal minus three x1."
+    },
+    {
+        "id": 279,
+        "start": 2613.04,
+        "end": 2625.76,
+        "frames": [
+            "frame_00314.png"
+        ],
+        "transcript": "So in this case if we put the value of x1 equals just one, then the x to equal minus three, okay."
+    },
+    {
+        "id": 280,
+        "start": 2625.76,
+        "end": 2628.64,
+        "frames": [
+            "frame_00315.png"
+        ],
+        "transcript": "X2 equals so x1 equal one and minus three."
+    },
+    {
+        "id": 281,
+        "start": 2628.64,
+        "end": 2633.44,
+        "frames": [
+            "frame_00316.png"
+        ],
+        "transcript": "So here is this the one and minus three."
+    },
+    {
+        "id": 282,
+        "start": 2633.44,
+        "end": 2639.84,
+        "frames": [
+            "frame_00317.png"
+        ],
+        "transcript": "Okay, so that means uh this one will be another eigenvector for the eigenvalue minus two."
+    },
+    {
+        "id": 283,
+        "start": 2639.84,
+        "end": 2651.36,
+        "frames": [
+            "frame_00318.png",
+            "frame_00319.png"
+        ],
+        "transcript": "Okay, so uh we already know that is the background of statistics and background of mathematics uh to understand the PCA."
+    },
+    {
+        "id": 284,
+        "start": 2651.36,
+        "end": 2660.08,
+        "frames": [
+            "frame_00320.png"
+        ],
+        "transcript": "So now we can uh we can uh move to the PCA principal component analysis in principal component analysis."
+    },
+    {
+        "id": 285,
+        "start": 2660.08,
+        "end": 2667.44,
+        "frames": [
+            "frame_00321.png"
+        ],
+        "transcript": "At first, what we have to do, uh we have to have the data set, okay, the multidimensional data set, okay."
+    },
+    {
+        "id": 286,
+        "start": 2667.44,
+        "end": 2671.52,
+        "frames": [
+            "frame_00322.png"
+        ],
+        "transcript": "And then what uh how to do the next thing is subtract the mean, okay."
+    },
+    {
+        "id": 287,
+        "start": 2671.52,
+        "end": 2682.96,
+        "frames": [
+            "frame_00323.png"
+        ],
+        "transcript": "Mean subtraction that means from each and every variable or every feature, we have to determine the mean of that feature and subtract from each and every value."
+    },
+    {
+        "id": 288,
+        "start": 2682.96,
+        "end": 2689.28,
+        "frames": [
+            "frame_00324.png"
+        ],
+        "transcript": "The mean should be subtracted from each and every value, every value of that feature."
+    },
+    {
+        "id": 289,
+        "start": 2689.28,
+        "end": 2695.04,
+        "frames": [
+            "frame_00325.png"
+        ],
+        "transcript": "Okay, this is the mean subtraction, and then calculate the covariance matrix."
+    },
+    {
+        "id": 290,
+        "start": 2695.04,
+        "end": 2708.64,
+        "frames": [
+            "frame_00326.png"
+        ],
+        "transcript": "So we have multiple features, that means we have to find out the covariance matrix after mean subtraction, and then we have to calculate the eigenvectors and eigenvalues of that covariance matrix."
+    },
+    {
+        "id": 291,
+        "start": 2708.64,
+        "end": 2727.76,
+        "frames": [
+            "frame_00327.png"
+        ],
+        "transcript": "So the covariance matrix we have to determine the eigenvectors and eigenvalues from the covariance matrix, and after that, after that, uh we have to we have to choose the the components from this eigenvectors and eigenvalues and the covariance matrix."
+    },
+    {
+        "id": 292,
+        "start": 2727.76,
+        "end": 2739.92,
+        "frames": [
+            "frame_00328.png"
+        ],
+        "transcript": "So these four things we already already uh done that means data subtract mean covariance matrix, how to find the covariance matrix, we know that, and how to find the eigenvectors and eigenvalues, we also know that."
+    },
+    {
+        "id": 293,
+        "start": 2739.92,
+        "end": 2742.64,
+        "frames": [
+            "frame_00329.png"
+        ],
+        "transcript": "Okay, uh, this is the new uh here."
+    },
+    {
+        "id": 294,
+        "start": 2742.64,
+        "end": 2745.04,
+        "frames": [
+            "frame_00330.png"
+        ],
+        "transcript": "Okay, then we will we will discuss it."
+    },
+    {
+        "id": 295,
+        "start": 2745.04,
+        "end": 2753.44,
+        "frames": [
+            "frame_00331.png",
+            "frame_00332.png"
+        ],
+        "transcript": "Like uh consider that this is our data set, this is feature one and this is feature two for simplicity as two dimension."
+    },
+    {
+        "id": 296,
+        "start": 2753.44,
+        "end": 2759.68,
+        "frames": [
+            "frame_00333.png"
+        ],
+        "transcript": "Okay, uh, so this is x and this is y, so these are the values."
+    },
+    {
+        "id": 297,
+        "start": 2759.68,
+        "end": 2772.88,
+        "frames": [
+            "frame_00334.png"
+        ],
+        "transcript": "Now, what we have to do at first we have to find out the mean mean of these values, so and also mean of the y, y values, mean of the y value, mean of the x value and mean of the y value."
+    },
+    {
+        "id": 298,
+        "start": 2772.88,
+        "end": 2782.0,
+        "frames": [
+            "frame_00335.png"
+        ],
+        "transcript": "Then what we have to do, we have to subtract the mean from every each and every values from x, and we have to subtract the mean from each and every value of y."
+    },
+    {
+        "id": 299,
+        "start": 2782.0,
+        "end": 2786.64,
+        "frames": [
+            "frame_00336.png"
+        ],
+        "transcript": "This is that is the x minus of x bar and y minus of y bar."
+    },
+    {
+        "id": 300,
+        "start": 2786.64,
+        "end": 2790.8,
+        "frames": [
+            "frame_00337.png"
+        ],
+        "transcript": "Okay, so you will receive this these values."
+    },
+    {
+        "id": 301,
+        "start": 2790.8,
+        "end": 2796.8,
+        "frames": [
+            "frame_00338.png"
+        ],
+        "transcript": "This is uh mentioned as the data adjust, that means adjusted data, adjusted data."
+    },
+    {
+        "id": 302,
+        "start": 2796.8,
+        "end": 2800.64,
+        "frames": [
+            "frame_00339.png"
+        ],
+        "transcript": "Okay, after subtraction of mean, we will get this."
+    },
+    {
+        "id": 303,
+        "start": 2800.64,
+        "end": 2804.56,
+        "frames": [
+            "frame_00340.png",
+            "frame_00341.png"
+        ],
+        "transcript": "So here the mean subtraction is done."
+    },
+    {
+        "id": 304,
+        "start": 2804.56,
+        "end": 2808.56,
+        "frames": [
+            "frame_00342.png"
+        ],
+        "transcript": "Then what we have to do in step three, calculate the covariance matrix."
+    },
+    {
+        "id": 305,
+        "start": 2808.56,
+        "end": 2813.68,
+        "frames": [
+            "frame_00343.png",
+            "frame_00344.png"
+        ],
+        "transcript": "We have to determine the covariance matrix of these two variables."
+    },
+    {
+        "id": 306,
+        "start": 2813.68,
+        "end": 2820.16,
+        "frames": [
+            "frame_00345.png"
+        ],
+        "transcript": "So here the covariance matrix that means x and x and x and y."
+    },
+    {
+        "id": 307,
+        "start": 2820.16,
+        "end": 2823.52,
+        "frames": [
+            "frame_00346.png"
+        ],
+        "transcript": "So y and x and y and y."
+    },
+    {
+        "id": 308,
+        "start": 2823.52,
+        "end": 2828.88,
+        "frames": [
+            "frame_00347.png"
+        ],
+        "transcript": "If we determine the covariance uh covariance of x and x, this is the variance."
+    },
+    {
+        "id": 309,
+        "start": 2828.88,
+        "end": 2835.28,
+        "frames": [
+            "frame_00348.png"
+        ],
+        "transcript": "Okay, this is the variance of x and this is the variance of y, and then covariance of x and y is this."
+    },
+    {
+        "id": 310,
+        "start": 2835.28,
+        "end": 2840.8,
+        "frames": [
+            "frame_00349.png"
+        ],
+        "transcript": "Coefference of x and y is this that is 0.615."
+    },
+    {
+        "id": 311,
+        "start": 2840.8,
+        "end": 2853.28,
+        "frames": [
+            "frame_00350.png"
+        ],
+        "transcript": "As we know that the coefficients of x and y is equal to coefference of uh coefficients of uh yx, so that means we have to put this value, put this value here."
+    },
+    {
+        "id": 312,
+        "start": 2853.28,
+        "end": 2858.8,
+        "frames": [
+            "frame_00351.png"
+        ],
+        "transcript": "We have to put this value here, okay."
+    },
+    {
+        "id": 313,
+        "start": 2858.8,
+        "end": 2861.36,
+        "frames": [
+            "frame_00352.png"
+        ],
+        "transcript": "Then uh we will get the covariance matrix."
+    },
+    {
+        "id": 314,
+        "start": 2861.36,
+        "end": 2863.36,
+        "frames": [
+            "frame_00353.png"
+        ],
+        "transcript": "Okay, we will get the covariance matrix."
+    },
+    {
+        "id": 315,
+        "start": 2863.36,
+        "end": 2865.68,
+        "frames": [
+            "frame_00354.png"
+        ],
+        "transcript": "Then how uh to do next?"
+    },
+    {
+        "id": 316,
+        "start": 2865.68,
+        "end": 2868.08,
+        "frames": [
+            "frame_00355.png"
+        ],
+        "transcript": "That means what should we do next?"
+    },
+    {
+        "id": 317,
+        "start": 2868.08,
+        "end": 2875.04,
+        "frames": [
+            "frame_00356.png",
+            "frame_00357.png"
+        ],
+        "transcript": "The next step calculate the eigenvectors and eigenvalues of the covariance matrix."
+    },
+    {
+        "id": 318,
+        "start": 2875.04,
+        "end": 2877.6,
+        "frames": [
+            "frame_00358.png",
+            "frame_00359.png"
+        ],
+        "transcript": "So this is the covariance matrix we got."
+    },
+    {
+        "id": 319,
+        "start": 2877.6,
+        "end": 2891.44,
+        "frames": [
+            "frame_00360.png"
+        ],
+        "transcript": "Now we have to determine the eigenvectors and eigenvalues of this covariance matrix, and if you compute the eigenvectors and eigenvalues, then you will get the eigenvalues like this one and that one."
+    },
+    {
+        "id": 320,
+        "start": 2891.44,
+        "end": 2900.64,
+        "frames": [
+            "frame_00361.png"
+        ],
+        "transcript": "So from the eigenvalues, from this eigenvalue, and from that eigenvalue, you have to compute the eigenvectors."
+    },
+    {
+        "id": 321,
+        "start": 2900.64,
+        "end": 2907.44,
+        "frames": [
+            "frame_00362.png"
+        ],
+        "transcript": "So for this, you will get this eigenvector, and for this value, you will get that that eigenvector."
+    },
+    {
+        "id": 322,
+        "start": 2907.44,
+        "end": 2919.12,
+        "frames": [
+            "frame_00363.png"
+        ],
+        "transcript": "Okay, one thing I need to mention here the the the that means in our uh covenance matrix all these values are just floating point numbers."
+    },
+    {
+        "id": 323,
+        "start": 2919.12,
+        "end": 2933.28,
+        "frames": [
+            "frame_00364.png"
+        ],
+        "transcript": "Okay, so uh to to find out the eigenfit values and eigen uh vectors in manually uh uh it will little bit cumbersome, okay."
+    },
+    {
+        "id": 324,
+        "start": 2933.28,
+        "end": 2939.68,
+        "frames": [
+            "frame_00365.png"
+        ],
+        "transcript": "A little bit uh yeah, maybe maybe we cannot find the exact value."
+    },
+    {
+        "id": 325,
+        "start": 2939.68,
+        "end": 2949.76,
+        "frames": [
+            "frame_00366.png"
+        ],
+        "transcript": "Okay, uh, so that's why in in our exam uh usually we set some integer numbers, not not the floating point numbers, so that we can calculate minimally."
+    },
+    {
+        "id": 326,
+        "start": 2949.76,
+        "end": 2959.84,
+        "frames": [
+            "frame_00367.png"
+        ],
+        "transcript": "Okay, otherwise, this uh we can calculate this one or compute this one, no problem, but yeah, a little bit uh hectic job, okay."
+    },
+    {
+        "id": 327,
+        "start": 2959.84,
+        "end": 2964.32,
+        "frames": [
+            "frame_00368.png"
+        ],
+        "transcript": "So eigenfilles and eigenvectors, we will find the eigenfills and eigenvectors here."
+    },
+    {
+        "id": 328,
+        "start": 2964.32,
+        "end": 2974.08,
+        "frames": [
+            "frame_00369.png",
+            "frame_00370.png",
+            "frame_00371.png"
+        ],
+        "transcript": "Uh okay, then next the the the that is the the fifth step."
+    },
+    {
+        "id": 329,
+        "start": 2974.08,
+        "end": 2976.96,
+        "frames": [
+            "frame_00372.png"
+        ],
+        "transcript": "Uh we have to form the feature vector now."
+    },
+    {
+        "id": 330,
+        "start": 2976.96,
+        "end": 2979.12,
+        "frames": [
+            "frame_00373.png"
+        ],
+        "transcript": "We have to form the feature vector."
+    },
+    {
+        "id": 331,
+        "start": 2979.12,
+        "end": 2983.12,
+        "frames": [
+            "frame_00374.png"
+        ],
+        "transcript": "So, how can we uh how can we uh form the feature vector?"
+    },
+    {
+        "id": 332,
+        "start": 2983.12,
+        "end": 2989.92,
+        "frames": [
+            "frame_00375.png"
+        ],
+        "transcript": "For that, we have to sort the eigenvalues in descending order."
+    },
+    {
+        "id": 333,
+        "start": 2989.92,
+        "end": 2993.68,
+        "frames": [
+            "frame_00376.png"
+        ],
+        "transcript": "So we have to sort the eigenvalues in descending order."
+    },
+    {
+        "id": 334,
+        "start": 2993.68,
+        "end": 3002.56,
+        "frames": [
+            "frame_00377.png"
+        ],
+        "transcript": "So descending order that means we have these two eigenfill uh eigenvalues, then we have to sort it in descending order."
+    },
+    {
+        "id": 335,
+        "start": 3002.56,
+        "end": 3014.16,
+        "frames": [
+            "frame_00378.png"
+        ],
+        "transcript": "That means uh it will be like the first value will be the greater one, that means 1.28284."
+    },
+    {
+        "id": 336,
+        "start": 3014.16,
+        "end": 3025.68,
+        "frames": [
+            "frame_00379.png"
+        ],
+        "transcript": "Okay, and the second one will be uh 0.049, okay, 0.049."
+    },
+    {
+        "id": 337,
+        "start": 3025.68,
+        "end": 3036.08,
+        "frames": [
+            "frame_00380.png"
+        ],
+        "transcript": "So that means we have to sort the eigenfillus eigenfilles in descending order, and then from n eigenfills, take top p eigenfilles."
+    },
+    {
+        "id": 338,
+        "start": 3036.08,
+        "end": 3055.04,
+        "frames": [
+            "frame_00381.png"
+        ],
+        "transcript": "So here uh uh in in our small example, we have just only two two uh eigenflues, but if we have the 1000 by 1000, that means 1000 dimensional data, then we will get 1000 eigenvalues, okay."
+    },
+    {
+        "id": 339,
+        "start": 3055.04,
+        "end": 3068.08,
+        "frames": [
+            "frame_00382.png"
+        ],
+        "transcript": "1000 eigenvalues, like this is our n equal 1000, and from this 1000 we will select like only p that is the principal components only, okay."
+    },
+    {
+        "id": 340,
+        "start": 3068.08,
+        "end": 3072.08,
+        "frames": [
+            "frame_00383.png"
+        ],
+        "transcript": "Like maybe we will select only 10, only 10."
+    },
+    {
+        "id": 341,
+        "start": 3072.08,
+        "end": 3093.84,
+        "frames": [
+            "frame_00384.png"
+        ],
+        "transcript": "That means from the hundred uh from the thousand eigenvalues, we will select only fast ten based on this order, based on this order, even though here we just just just two uh we have two eigenvalues, then we can select only one, and on that case we have to select this one, okay."
+    },
+    {
+        "id": 342,
+        "start": 3093.84,
+        "end": 3100.8,
+        "frames": [
+            "frame_00385.png"
+        ],
+        "transcript": "Then uh what we have to do that means uh it will change the dimension from 1000 to just 10."
+    },
+    {
+        "id": 343,
+        "start": 3100.8,
+        "end": 3111.6,
+        "frames": [
+            "frame_00386.png"
+        ],
+        "transcript": "And if we just want to take just one eigenvalue from these two, then we have to take this one."
+    },
+    {
+        "id": 344,
+        "start": 3111.6,
+        "end": 3124.32,
+        "frames": [
+            "frame_00387.png"
+        ],
+        "transcript": "That means the corresponding eigenvector will be this, and we have to form the feature vector according to the descending order of eigenvalues."
+    },
+    {
+        "id": 345,
+        "start": 3124.32,
+        "end": 3128.8,
+        "frames": [
+            "frame_00388.png"
+        ],
+        "transcript": "So that means eigenvector we received from from this value."
+    },
+    {
+        "id": 346,
+        "start": 3128.8,
+        "end": 3137.52,
+        "frames": [
+            "frame_00389.png"
+        ],
+        "transcript": "This value, we should put this uh this in the that is uh in first position of our feature vector."
+    },
+    {
+        "id": 347,
+        "start": 3137.52,
+        "end": 3139.92,
+        "frames": [
+            "frame_00390.png"
+        ],
+        "transcript": "So first position of our feature vector."
+    },
+    {
+        "id": 348,
+        "start": 3139.92,
+        "end": 3150.08,
+        "frames": [
+            "frame_00391.png"
+        ],
+        "transcript": "So we have to we have to put this one at the first position, and then the next one that is this one in next second position, okay."
+    },
+    {
+        "id": 349,
+        "start": 3150.08,
+        "end": 3151.92,
+        "frames": [
+            "frame_00392.png"
+        ],
+        "transcript": "Second position, like this way."
+    },
+    {
+        "id": 350,
+        "start": 3151.92,
+        "end": 3155.2,
+        "frames": [
+            "frame_00393.png"
+        ],
+        "transcript": "Okay, in this way we have to form the feature vector."
+    },
+    {
+        "id": 351,
+        "start": 3155.2,
+        "end": 3161.92,
+        "frames": [
+            "frame_00394.png"
+        ],
+        "transcript": "So here um after forming the feature vector, we we have this feature vector."
+    },
+    {
+        "id": 352,
+        "start": 3161.92,
+        "end": 3163.36,
+        "frames": [
+            "frame_00395.png"
+        ],
+        "transcript": "We have this feature vector."
+    },
+    {
+        "id": 353,
+        "start": 3163.36,
+        "end": 3165.04,
+        "frames": [
+            "frame_00396.png",
+            "frame_00397.png"
+        ],
+        "transcript": "Now, what we have to do?"
+    },
+    {
+        "id": 354,
+        "start": 3165.04,
+        "end": 3176.64,
+        "frames": [
+            "frame_00398.png",
+            "frame_00399.png"
+        ],
+        "transcript": "So, feature vector is there, feature vector is there, that means row feature vector, and we can see that this feature vector, this feature vector we have two by two dimension."
+    },
+    {
+        "id": 355,
+        "start": 3176.64,
+        "end": 3188.32,
+        "frames": [
+            "frame_00400.png",
+            "frame_00401.png"
+        ],
+        "transcript": "The dimension of this feature vector will be two by two, two by two, and what we have to do next, we have to multiply this one with the row data adjust."
+    },
+    {
+        "id": 356,
+        "start": 3188.32,
+        "end": 3193.28,
+        "frames": [
+            "frame_00402.png"
+        ],
+        "transcript": "So, data adjust is a original data set, but we have to make it in row form."
+    },
+    {
+        "id": 357,
+        "start": 3193.28,
+        "end": 3195.36,
+        "frames": [
+            "frame_00403.png"
+        ],
+        "transcript": "That means original data set."
+    },
+    {
+        "id": 358,
+        "start": 3195.36,
+        "end": 3208.08,
+        "frames": [
+            "frame_00404.png",
+            "frame_00405.png"
+        ],
+        "transcript": "If we can go back and see our original data set, data adjust, this is the data adjust, and dimension of this is number of row 10 and number columns as 2."
+    },
+    {
+        "id": 359,
+        "start": 3208.08,
+        "end": 3212.88,
+        "frames": [
+            "frame_00406.png"
+        ],
+        "transcript": "Okay, this is the dimension for that 10, 2."
+    },
+    {
+        "id": 360,
+        "start": 3212.88,
+        "end": 3224.96,
+        "frames": [
+            "frame_00407.png",
+            "frame_00408.png",
+            "frame_00409.png"
+        ],
+        "transcript": "So now if we want to multiply this, that is row feature vector, this is 2 by 2, 2 by 2, and the the row data adjust so data adjust is 10 10 times 2."
+    },
+    {
+        "id": 361,
+        "start": 3224.96,
+        "end": 3226.88,
+        "frames": [
+            "frame_00410.png"
+        ],
+        "transcript": "That means 2 by 2."
+    },
+    {
+        "id": 362,
+        "start": 3226.88,
+        "end": 3230.56,
+        "frames": [
+            "frame_00411.png"
+        ],
+        "transcript": "Another one is 10 times 2."
+    },
+    {
+        "id": 363,
+        "start": 3230.56,
+        "end": 3236.72,
+        "frames": [
+            "frame_00412.png"
+        ],
+        "transcript": "So can we multiply these two two matrix?"
+    },
+    {
+        "id": 364,
+        "start": 3236.72,
+        "end": 3242.48,
+        "frames": [
+            "frame_00413.png",
+            "frame_00414.png",
+            "frame_00415.png"
+        ],
+        "transcript": "Is it possible to multiply?"
+    },
+    {
+        "id": 365,
+        "start": 3242.48,
+        "end": 3249.0,
+        "frames": [
+            "frame_00416.png",
+            "frame_00417.png",
+            "frame_00418.png",
+            "frame_00419.png"
+        ],
+        "transcript": "[Silent] for 6.80 sec"
+    },
+    {
+        "id": 366,
+        "start": 3249.0,
+        "end": 3251.92,
+        "frames": [
+            "frame_00420.png"
+        ],
+        "transcript": "Is it possible to multiply these two matrix?"
+    },
+    {
+        "id": 367,
+        "start": 3251.92,
+        "end": 3254.24,
+        "frames": [
+            "frame_00421.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 368,
+        "start": 3254.24,
+        "end": 3257.92,
+        "frames": [
+            "frame_00422.png"
+        ],
+        "transcript": "Yes, uh two in uh it will be a two white in column."
+    },
+    {
+        "id": 369,
+        "start": 3257.92,
+        "end": 3265.68,
+        "frames": [
+            "frame_00423.png"
+        ],
+        "transcript": "Yeah, uh one of the uh that is the uh rule for multiplication."
+    },
+    {
+        "id": 370,
+        "start": 3265.68,
+        "end": 3269.28,
+        "frames": [
+            "frame_00424.png"
+        ],
+        "transcript": "Yeah, that is it's not possible."
+    },
+    {
+        "id": 371,
+        "start": 3269.28,
+        "end": 3290.32,
+        "frames": [
+            "frame_00425.png",
+            "frame_00426.png"
+        ],
+        "transcript": "No, no, no, it's not possible because for multiplication we have to have the same number of uh that is the the the the the the length of the column of first matrix will be the same as same as the length of the row in second matrix."
+    },
+    {
+        "id": 372,
+        "start": 3290.32,
+        "end": 3298.32,
+        "frames": [
+            "frame_00427.png"
+        ],
+        "transcript": "That means uh in first matrix the dimension that means the second dimension or maybe the column number of columns in first matrix is two."
+    },
+    {
+        "id": 373,
+        "start": 3298.32,
+        "end": 3305.04,
+        "frames": [
+            "frame_00428.png"
+        ],
+        "transcript": "So to multiply this another with another matrix, the number of rows should be two."
+    },
+    {
+        "id": 374,
+        "start": 3305.04,
+        "end": 3308.32,
+        "frames": [
+            "frame_00429.png"
+        ],
+        "transcript": "Okay, so that means it is not possible in this form."
+    },
+    {
+        "id": 375,
+        "start": 3308.32,
+        "end": 3309.84,
+        "frames": [
+            "frame_00430.png"
+        ],
+        "transcript": "Then what can we do?"
+    },
+    {
+        "id": 376,
+        "start": 3309.84,
+        "end": 3313.12,
+        "frames": [
+            "frame_00431.png"
+        ],
+        "transcript": "Then what can we do?"
+    },
+    {
+        "id": 377,
+        "start": 3313.12,
+        "end": 3317.2,
+        "frames": [
+            "frame_00432.png"
+        ],
+        "transcript": "Is there any solution here?"
+    },
+    {
+        "id": 378,
+        "start": 3317.2,
+        "end": 3331.2,
+        "frames": [
+            "frame_00433.png"
+        ],
+        "transcript": "The transpose is the solution that means we have to transpose this, then it will become like two times two and then two times ten."
+    },
+    {
+        "id": 379,
+        "start": 3331.2,
+        "end": 3338.0,
+        "frames": [
+            "frame_00434.png"
+        ],
+        "transcript": "Okay, so now the row, the column, and row is the same."
+    },
+    {
+        "id": 380,
+        "start": 3338.0,
+        "end": 3344.32,
+        "frames": [
+            "frame_00435.png"
+        ],
+        "transcript": "Okay, so we can multiply, and what will be the resultant uh matrix dimension?"
+    },
+    {
+        "id": 381,
+        "start": 3344.32,
+        "end": 3347.6,
+        "frames": [
+            "frame_00436.png"
+        ],
+        "transcript": "What will be the dimension of resultant matrix?"
+    },
+    {
+        "id": 382,
+        "start": 3347.6,
+        "end": 3349.44,
+        "frames": [
+            "frame_00437.png"
+        ],
+        "transcript": "So two by ten."
+    },
+    {
+        "id": 383,
+        "start": 3349.44,
+        "end": 3352.48,
+        "frames": [
+            "frame_00438.png"
+        ],
+        "transcript": "Yeah, it must be two by ten."
+    },
+    {
+        "id": 384,
+        "start": 3352.48,
+        "end": 3356.56,
+        "frames": [
+            "frame_00439.png"
+        ],
+        "transcript": "Okay, the resultant matrix dimension will be two two by ten."
+    },
+    {
+        "id": 385,
+        "start": 3356.56,
+        "end": 3359.2,
+        "frames": [
+            "frame_00440.png"
+        ],
+        "transcript": "Here is the two, and this is the ten, okay."
+    },
+    {
+        "id": 386,
+        "start": 3359.2,
+        "end": 3360.64,
+        "frames": [
+            "frame_00441.png"
+        ],
+        "transcript": "Okay, two by ten."
+    },
+    {
+        "id": 387,
+        "start": 3360.64,
+        "end": 3363.52,
+        "frames": [
+            "frame_00442.png"
+        ],
+        "transcript": "So here is this that means uh row vector."
+    },
+    {
+        "id": 388,
+        "start": 3363.52,
+        "end": 3378.8,
+        "frames": [
+            "frame_00443.png",
+            "frame_00444.png",
+            "frame_00445.png"
+        ],
+        "transcript": "We have the row vector here, row vector picture, and then uh data adjust, and we have to multiply um just transpose this, then we will get this, and then multiply, then we will get this two by ten, two by ten matrix, two by ten."
+    },
+    {
+        "id": 389,
+        "start": 3378.8,
+        "end": 3389.52,
+        "frames": [
+            "frame_00446.png"
+        ],
+        "transcript": "So this is final data two by ten, but again in this data set, the the just if it is just two by ten, then it will be just two row and ten columns."
+    },
+    {
+        "id": 390,
+        "start": 3389.52,
+        "end": 3395.36,
+        "frames": [
+            "frame_00447.png"
+        ],
+        "transcript": "But our data set the original data set we have ten rows, two columns."
+    },
+    {
+        "id": 391,
+        "start": 3395.36,
+        "end": 3400.4,
+        "frames": [
+            "frame_00448.png"
+        ],
+        "transcript": "So, what we have to do again we have to transpose it, again we have to transpose it."
+    },
+    {
+        "id": 392,
+        "start": 3400.4,
+        "end": 3405.6,
+        "frames": [
+            "frame_00449.png"
+        ],
+        "transcript": "So that's why uh after transposing this one, we will get ten times two."
+    },
+    {
+        "id": 393,
+        "start": 3405.6,
+        "end": 3411.68,
+        "frames": [
+            "frame_00450.png"
+        ],
+        "transcript": "Okay, that means ten rows and two columns, and so this is the case, okay."
+    },
+    {
+        "id": 394,
+        "start": 3411.68,
+        "end": 3427.04,
+        "frames": [
+            "frame_00451.png"
+        ],
+        "transcript": "So uh after after that's multiplication uh of these two matrices, then we will get the final data, and that one will be two by ten, and then we have to transpose it, and we will get ten by two, okay."
+    },
+    {
+        "id": 395,
+        "start": 3427.04,
+        "end": 3433.28,
+        "frames": [
+            "frame_00452.png"
+        ],
+        "transcript": "Then this this is called the principal component one, and this is called the principal component two."
+    },
+    {
+        "id": 396,
+        "start": 3433.28,
+        "end": 3443.84,
+        "frames": [
+            "frame_00453.png"
+        ],
+        "transcript": "That means uh now the the features are transformed into a new feature space, and those values we we should not call it X and Y."
+    },
+    {
+        "id": 397,
+        "start": 3443.84,
+        "end": 3446.72,
+        "frames": [
+            "frame_00454.png"
+        ],
+        "transcript": "Okay, we should call it the PC1 and PC2."
+    },
+    {
+        "id": 398,
+        "start": 3446.72,
+        "end": 3449.68,
+        "frames": [
+            "frame_00455.png"
+        ],
+        "transcript": "That means principal component one and principal component two."
+    },
+    {
+        "id": 399,
+        "start": 3449.68,
+        "end": 3458.0,
+        "frames": [
+            "frame_00456.png"
+        ],
+        "transcript": "Even uh this principal component that means first principal component is most discriminative uh uh capability."
+    },
+    {
+        "id": 400,
+        "start": 3458.0,
+        "end": 3461.84,
+        "frames": [
+            "frame_00457.png"
+        ],
+        "transcript": "The first principal component has most discriminated capability."
+    },
+    {
+        "id": 401,
+        "start": 3461.84,
+        "end": 3469.92,
+        "frames": [
+            "frame_00458.png"
+        ],
+        "transcript": "That means if we can train with only one uh this one, then maybe we will get this similar result."
+    },
+    {
+        "id": 402,
+        "start": 3469.92,
+        "end": 3488.08,
+        "frames": [
+            "frame_00459.png"
+        ],
+        "transcript": "But usually, uh, if we have the maybe thousand dimensions, then we can select just train or maybe hundred dimensions or hundred PC components to train the model, and we will get the same results because all the variabilities of the data hold this the components."
+    },
+    {
+        "id": 403,
+        "start": 3488.08,
+        "end": 3492.32,
+        "frames": [
+            "frame_00460.png"
+        ],
+        "transcript": "First few components will will be sufficient to learn your model."
+    },
+    {
+        "id": 404,
+        "start": 3492.32,
+        "end": 3509.12,
+        "frames": [
+            "frame_00461.png"
+        ],
+        "transcript": "Okay, uh, so so this is how the the principal components will extract from the original data set, and usually in exam, the the data set will be given, and from the data set you will you you need to find out the principal components, okay."
+    },
+    {
+        "id": 405,
+        "start": 3509.12,
+        "end": 3538.96,
+        "frames": [
+            "frame_00462.png",
+            "frame_00463.png",
+            "frame_00464.png"
+        ],
+        "transcript": "And maybe uh on that case you will ask, okay, find out just only two principal components like this, and the relationship here is that that is we can go back to our original data set also from the principal components, like we we got the final data, and from the final data, if we just transpose the row feature vector and then multiply these two matrix, then we will get the row data adjust, and from the row data adjust, this is row data adjust."
+    },
+    {
+        "id": 406,
+        "start": 3538.96,
+        "end": 3544.96,
+        "frames": [
+            "frame_00465.png"
+        ],
+        "transcript": "If we just add the original mean, then we will get the original uh data."
+    },
+    {
+        "id": 407,
+        "start": 3544.96,
+        "end": 3557.76,
+        "frames": [
+            "frame_00466.png",
+            "frame_00467.png"
+        ],
+        "transcript": "Okay, that means we can we from the uh transformed form we can also back to our original form, but actually, this is not necessary because uh yeah, the transformation is necessary."
+    },
+    {
+        "id": 408,
+        "start": 3557.76,
+        "end": 3563.12,
+        "frames": [
+            "frame_00468.png",
+            "frame_00469.png",
+            "frame_00470.png",
+            "frame_00471.png"
+        ],
+        "transcript": "Uh so here we can we can see is this simple code for that."
+    },
+    {
+        "id": 409,
+        "start": 3563.12,
+        "end": 3573.92,
+        "frames": [
+            "frame_00472.png",
+            "frame_00473.png",
+            "frame_00474.png",
+            "frame_00475.png"
+        ],
+        "transcript": "I think you've already you already uh applied the the PCA uh in in datacam, but here it's uh one scarce coding to uh to make you understand that here."
+    },
+    {
+        "id": 410,
+        "start": 3573.92,
+        "end": 3575.2,
+        "frames": [
+            "frame_00476.png"
+        ],
+        "transcript": "Okay, this is the A."
+    },
+    {
+        "id": 411,
+        "start": 3575.2,
+        "end": 3578.32,
+        "frames": [
+            "frame_00477.png"
+        ],
+        "transcript": "That means uh we can say this is the matrix."
+    },
+    {
+        "id": 412,
+        "start": 3578.32,
+        "end": 3583.6,
+        "frames": [
+            "frame_00478.png",
+            "frame_00479.png"
+        ],
+        "transcript": "What we have to do at first, uh we have to do the mean subtraction."
+    },
+    {
+        "id": 413,
+        "start": 3583.6,
+        "end": 3588.96,
+        "frames": [
+            "frame_00480.png",
+            "frame_00481.png"
+        ],
+        "transcript": "So that at first we have to compute the mean and then subtract the mean."
+    },
+    {
+        "id": 414,
+        "start": 3588.96,
+        "end": 3595.68,
+        "frames": [
+            "frame_00482.png",
+            "frame_00483.png",
+            "frame_00484.png",
+            "frame_00485.png",
+            "frame_00486.png"
+        ],
+        "transcript": "Okay, subtract then we we will get this, and after that, what we have to do?"
+    },
+    {
+        "id": 415,
+        "start": 3595.68,
+        "end": 3597.92,
+        "frames": [
+            "frame_00487.png",
+            "frame_00488.png"
+        ],
+        "transcript": "We have to compute the covariance matrix."
+    },
+    {
+        "id": 416,
+        "start": 3597.92,
+        "end": 3606.96,
+        "frames": [
+            "frame_00489.png"
+        ],
+        "transcript": "So, covariance matrix you will get that, and after after determining the covariance matrix, we have to determine the eigenvalues and eigenvectors."
+    },
+    {
+        "id": 417,
+        "start": 3606.96,
+        "end": 3610.8,
+        "frames": [
+            "frame_00490.png"
+        ],
+        "transcript": "So, just eigenvalues of V, you will get eigenvalues and eigenvectors."
+    },
+    {
+        "id": 418,
+        "start": 3610.8,
+        "end": 3619.52,
+        "frames": [
+            "frame_00491.png",
+            "frame_00492.png"
+        ],
+        "transcript": "Okay, and here you can see that these are the eigenvectors from the eigenvalues two and zero."
+    },
+    {
+        "id": 419,
+        "start": 3619.52,
+        "end": 3633.36,
+        "frames": [
+            "frame_00493.png"
+        ],
+        "transcript": "Okay, and so if we get the eigenvalues and eigenvectors, what we have to do, we have to form the feature vector, and we can say this is our feature vector because the highest eigenvalue is two, so this is for two, and this is for zero."
+    },
+    {
+        "id": 420,
+        "start": 3633.36,
+        "end": 3643.36,
+        "frames": [
+            "frame_00494.png"
+        ],
+        "transcript": "Okay, this is for zero, and then what we have to do next, we have to find out the the original original uh original uh uh final data."
+    },
+    {
+        "id": 421,
+        "start": 3643.36,
+        "end": 3665.36,
+        "frames": [
+            "frame_00495.png"
+        ],
+        "transcript": "So, final data it will be the vectors that is this is the vectors values, the vectors transpose dot of this is c that is the our our our data set c row data adjust then transpose and then we will get the P that is the projected data, and this final data again we have to transpose the final data."
+    },
+    {
+        "id": 422,
+        "start": 3665.36,
+        "end": 3673.84,
+        "frames": [
+            "frame_00496.png",
+            "frame_00497.png"
+        ],
+        "transcript": "We have to transpose, and we will get this, and we can see that so this will be the first principal component."
+    },
+    {
+        "id": 423,
+        "start": 3673.84,
+        "end": 3678.32,
+        "frames": [
+            "frame_00498.png"
+        ],
+        "transcript": "This is the PC one, and this will be the principal component too."
+    },
+    {
+        "id": 424,
+        "start": 3678.32,
+        "end": 3689.52,
+        "frames": [
+            "frame_00499.png"
+        ],
+        "transcript": "That means the PC2, and we can see that the all the variabilities are already already achieved by these principal components and other components is just zero."
+    },
+    {
+        "id": 425,
+        "start": 3689.52,
+        "end": 3696.72,
+        "frames": [
+            "frame_00500.png"
+        ],
+        "transcript": "So, what we can do, we can discard this one, we can just only only train our model with with this principal component."
+    },
+    {
+        "id": 426,
+        "start": 3696.72,
+        "end": 3699.68,
+        "frames": [
+            "frame_00501.png",
+            "frame_00502.png",
+            "frame_00503.png"
+        ],
+        "transcript": "Okay, uh okay."
+    },
+    {
+        "id": 427,
+        "start": 3699.68,
+        "end": 3725.84,
+        "frames": [
+            "frame_00504.png",
+            "frame_00505.png",
+            "frame_00506.png",
+            "frame_00507.png",
+            "frame_00508.png",
+            "frame_00509.png",
+            "frame_00510.png",
+            "frame_00511.png",
+            "frame_00512.png",
+            "frame_00513.png",
+            "frame_00514.png",
+            "frame_00515.png",
+            "frame_00516.png",
+            "frame_00517.png",
+            "frame_00518.png"
+        ],
+        "transcript": "Uh so and also here is another code for that, like after just only if we have multi multi-dimensional data, maybe we we have hundred-dimension data, hundred dimension data, and from the hundred dimension we just we just uh use the principal two principal components the health and number of components equal to."
+    },
+    {
+        "id": 428,
+        "start": 3725.84,
+        "end": 3733.04,
+        "frames": [
+            "frame_00519.png"
+        ],
+        "transcript": "On that case, using these two principal components here, the PC PC1 in x-axis and pc2 in y-axis."
+    },
+    {
+        "id": 429,
+        "start": 3733.04,
+        "end": 3740.08,
+        "frames": [
+            "frame_00520.png"
+        ],
+        "transcript": "If we plot there, then we can see that it is already uh some format clusters are there."
+    },
+    {
+        "id": 430,
+        "start": 3740.08,
+        "end": 3746.16,
+        "frames": [
+            "frame_00521.png"
+        ],
+        "transcript": "Okay, some form of clusters, just few that is uh missing, okay."
+    },
+    {
+        "id": 431,
+        "start": 3746.16,
+        "end": 3748.88,
+        "frames": [
+            "frame_00522.png"
+        ],
+        "transcript": "Mixing a few things, okay."
+    },
+    {
+        "id": 432,
+        "start": 3748.88,
+        "end": 3758.8,
+        "frames": [
+            "frame_00523.png"
+        ],
+        "transcript": "That means uh instead of 100 dimensions, we can just only two two dimensions to to successful uh maybe uh classification or maybe clustering."
+    },
+    {
+        "id": 433,
+        "start": 3758.8,
+        "end": 3764.24,
+        "frames": [
+            "frame_00524.png",
+            "frame_00525.png",
+            "frame_00526.png",
+            "frame_00527.png",
+            "frame_00528.png"
+        ],
+        "transcript": "Okay, that's uh all in principal component analysis."
+    },
+    {
+        "id": 434,
+        "start": 3764.24,
+        "end": 3768.96,
+        "frames": [
+            "frame_00529.png",
+            "frame_00530.png",
+            "frame_00531.png",
+            "frame_00532.png"
+        ],
+        "transcript": "Uh so thank you, thank you for your participation in this class."
+    },
+    {
+        "id": 435,
+        "start": 3768.96,
+        "end": 3774.0,
+        "frames": [
+            "frame_00533.png"
+        ],
+        "transcript": "Um, see you in your next class on Saturday."
+    },
+    {
+        "id": 436,
+        "start": 3774.0,
+        "end": 3787.36,
+        "frames": [
+            "frame_00534.png"
+        ],
+        "transcript": "And uh you have to complete the data cam assignments by next Thursday, and next Thursday will be another assessment that is the datacam assessment, sir."
+    },
+    {
+        "id": 437,
+        "start": 3787.36,
+        "end": 3793.258231,
+        "frames": [
+            "frame_00535.png",
+            "frame_00536.png"
+        ],
+        "transcript": "Allah is sir."
+    }
+]

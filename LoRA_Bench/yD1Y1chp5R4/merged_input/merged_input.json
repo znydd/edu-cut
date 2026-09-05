@@ -1,0 +1,1171 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 85.36,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png",
+            "frame_00003.png",
+            "frame_00004.png",
+            "frame_00005.png",
+            "frame_00006.png",
+            "frame_00007.png",
+            "frame_00008.png"
+        ],
+        "transcript": "All right."
+    },
+    {
+        "id": 1,
+        "start": 85.36,
+        "end": 94.16,
+        "frames": [
+            "frame_00009.png",
+            "frame_00010.png"
+        ],
+        "transcript": "This is CS50, and this is our lecture on artificial intelligence or AI, particularly for all of those family members who are here in the audience with us for the first time."
+    },
+    {
+        "id": 2,
+        "start": 94.16,
+        "end": 100.48,
+        "frames": [
+            "frame_00011.png",
+            "frame_00012.png",
+            "frame_00013.png"
+        ],
+        "transcript": "In fact, uh, for those students among us, maybe a round of applause for all of the family members who have come here today to join you."
+    },
+    {
+        "id": 3,
+        "start": 100.48,
+        "end": 102.0,
+        "frames": [
+            "frame_00014.png"
+        ],
+        "transcript": "Nice."
+    },
+    {
+        "id": 4,
+        "start": 102.0,
+        "end": 110.16,
+        "frames": [
+            "frame_00015.png",
+            "frame_00016.png",
+            "frame_00017.png",
+            "frame_00018.png",
+            "frame_00019.png",
+            "frame_00020.png",
+            "frame_00021.png"
+        ],
+        "transcript": "So nice to see everyone, and as CS50 students already know, it's sort of a thing in programming circles to uh have a rubber duck on your desk."
+    },
+    {
+        "id": 5,
+        "start": 110.16,
+        "end": 121.68,
+        "frames": [
+            "frame_00022.png",
+            "frame_00023.png",
+            "frame_00027.png",
+            "frame_00029.png",
+            "frame_00030.png",
+            "frame_00031.png"
+        ],
+        "transcript": "Indeed, a few weeks back we gave one to all CS50 students, and the motivation is to have someone, something to talk to in the presence of a bug or mistake in your code or confusion you're having when it comes to solving some problem."
+    },
+    {
+        "id": 6,
+        "start": 121.68,
+        "end": 132.0,
+        "frames": [
+            "frame_00032.png",
+            "frame_00033.png",
+            "frame_00034.png",
+            "frame_00035.png",
+            "frame_00036.png",
+            "frame_00037.png",
+            "frame_00038.png"
+        ],
+        "transcript": "And the idea is that in the absence of having a friend, family member, or TA of whom you can ask questions, is to literally verbalize your confusion, your question to this inanimate object on your desk."
+    },
+    {
+        "id": 7,
+        "start": 132.0,
+        "end": 140.4,
+        "frames": [
+            "frame_00039.png",
+            "frame_00040.png",
+            "frame_00041.png",
+            "frame_00042.png",
+            "frame_00043.png",
+            "frame_00044.png",
+            "frame_00045.png",
+            "frame_00046.png"
+        ],
+        "transcript": "And in that process of verbalizing your own confusion and explaining yourself, quite often does that proverbial light bulb go off over your head and voila, problem is solved."
+    },
+    {
+        "id": 8,
+        "start": 140.4,
+        "end": 149.04,
+        "frames": [
+            "frame_00047.png",
+            "frame_00048.png",
+            "frame_00049.png"
+        ],
+        "transcript": "Now, as CS50 students also know, we sort of virtualize that rubber duck over the past few years and most recently in a form of uh this guy here."
+    },
+    {
+        "id": 9,
+        "start": 149.04,
+        "end": 160.24,
+        "frames": [
+            "frame_00050.png",
+            "frame_00051.png",
+            "frame_00052.png",
+            "frame_00053.png"
+        ],
+        "transcript": "So, in the student's programming environment within CS50, a tool called Visual Studio Code at a URL of CS50.dev, they have a virtual rubber duck available to them at all times."
+    },
+    {
+        "id": 10,
+        "start": 160.24,
+        "end": 165.28,
+        "frames": [
+            "frame_00054.png",
+            "frame_00055.png",
+            "frame_00056.png"
+        ],
+        "transcript": "And early on, in the very first version of this rubber duck, it was a chat window that looked like this."
+    },
+    {
+        "id": 11,
+        "start": 165.28,
+        "end": 170.56,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "And if students had a question, they could simply type into the chat window something like, I'm hoping you can help me solve a problem."
+    },
+    {
+        "id": 12,
+        "start": 170.56,
+        "end": 177.04,
+        "frames": [
+            "frame_00058.png",
+            "frame_00059.png"
+        ],
+        "transcript": "And for multiple years, all the CS50 duck did was respond with one, two, or three quacks."
+    },
+    {
+        "id": 13,
+        "start": 177.04,
+        "end": 189.6,
+        "frames": [
+            "frame_00060.png",
+            "frame_00061.png"
+        ],
+        "transcript": "We have anecdotal evidence to suggest that that alone was enough for answering students' questions because it was in that process of like actually typing out their confusion that you realize, oh, I'm doing something silly, and you figure it out on your own."
+    },
+    {
+        "id": 14,
+        "start": 189.6,
+        "end": 201.2,
+        "frames": [
+            "frame_00062.png",
+            "frame_00063.png"
+        ],
+        "transcript": "But of course, now that we live in an age of ChatGPT and Claude and Gemini and all of these other AI-based tools, came as no surprise, perhaps, when in 2023, this same duck started responding to students in English."
+    },
+    {
+        "id": 15,
+        "start": 201.2,
+        "end": 213.68,
+        "frames": [
+            "frame_00064.png",
+            "frame_00065.png",
+            "frame_00066.png",
+            "frame_00067.png",
+            "frame_00068.png",
+            "frame_00069.png",
+            "frame_00070.png",
+            "frame_00071.png"
+        ],
+        "transcript": "And that now is the tool that they have available, which is in effect meant to be a less helpful version of ChatGPT, one that doesn't just spoil answers outright, but tries to guide them to solutions akin to any good teacher or tutor."
+    },
+    {
+        "id": 16,
+        "start": 213.68,
+        "end": 231.84,
+        "frames": [
+            "frame_00072.png",
+            "frame_00073.png",
+            "frame_00074.png",
+            "frame_00075.png",
+            "frame_00076.png",
+            "frame_00077.png",
+            "frame_00078.png",
+            "frame_00079.png"
+        ],
+        "transcript": "And so today's lecture is indeed on just that and the underlying building blocks that make possible that their rubber duck and all of the AI with which we're all increasingly familiar, namely generative artificial intelligence, using this technology known as AI to generate something, whether that's images or sounds or video or text."
+    },
+    {
+        "id": 17,
+        "start": 231.84,
+        "end": 245.84,
+        "frames": [
+            "frame_00080.png",
+            "frame_00081.png",
+            "frame_00082.png"
+        ],
+        "transcript": "And in fact, what we thought we'd do to get everyone involved early on is if you uh have a phone uh by your side, if you'd like to go ahead and scan this QRO QR code here, and that's gonna lead you to a polling station where you can buzz in with some answers."
+    },
+    {
+        "id": 18,
+        "start": 245.84,
+        "end": 250.4,
+        "frames": [
+            "frame_00083.png",
+            "frame_00084.png"
+        ],
+        "transcript": "Um, CS50's preceptor Kelly's gonna kindly join me here on stage to help run the keyboard."
+    },
+    {
+        "id": 19,
+        "start": 250.4,
+        "end": 258.48,
+        "frames": [
+            "frame_00085.png",
+            "frame_00086.png"
+        ],
+        "transcript": "And what we're about to do is play a little game and see just how good we humans are right now at distinguishing AI from reality."
+    },
+    {
+        "id": 20,
+        "start": 258.48,
+        "end": 268.56,
+        "frames": [
+            "frame_00087.png",
+            "frame_00088.png",
+            "frame_00089.png",
+            "frame_00090.png",
+            "frame_00091.png"
+        ],
+        "transcript": "And so we'll borrow some data from uh the New York Times, which a couple years back actually published some examples of AI and not AI, and we'll see just how good this technology has gotten."
+    },
+    {
+        "id": 21,
+        "start": 268.56,
+        "end": 270.88,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "So here we have two photographs on the screen."
+    },
+    {
+        "id": 22,
+        "start": 270.88,
+        "end": 277.2,
+        "frames": [
+            "frame_00093.png",
+            "frame_00094.png"
+        ],
+        "transcript": "In a moment, you'll be asked on your phone, if you were successful in scanning that code, which one of these is AI?"
+    },
+    {
+        "id": 23,
+        "start": 277.2,
+        "end": 279.2,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "Left or right?"
+    },
+    {
+        "id": 24,
+        "start": 279.2,
+        "end": 285.28,
+        "frames": [
+            "frame_00096.png",
+            "frame_00097.png",
+            "frame_00098.png"
+        ],
+        "transcript": "So hopefully on your phone here, if you want to go ahead and swipe to the next screen, we'll activate the poll here."
+    },
+    {
+        "id": 25,
+        "start": 285.28,
+        "end": 293.12,
+        "frames": [
+            "frame_00099.png",
+            "frame_00100.png",
+            "frame_00101.png",
+            "frame_00102.png",
+            "frame_00103.png",
+            "frame_00104.png"
+        ],
+        "transcript": "In a moment, you should see on your phone a prompt inviting you to select left or right."
+    },
+    {
+        "id": 26,
+        "start": 293.12,
+        "end": 299.68,
+        "frames": [
+            "frame_00105.png",
+            "frame_00106.png",
+            "frame_00107.png",
+            "frame_00108.png"
+        ],
+        "transcript": "And feel free to raise your hand if you're not seeing that."
+    },
+    {
+        "id": 27,
+        "start": 299.68,
+        "end": 306.16,
+        "frames": [
+            "frame_00109.png",
+            "frame_00110.png"
+        ],
+        "transcript": "But it looks like the responses are coming in, and at the risk of spoiling, it looks like 70% plus of you think it is the answer on the right."
+    },
+    {
+        "id": 28,
+        "start": 306.16,
+        "end": 308.72,
+        "frames": [
+            "frame_00111.png",
+            "frame_00112.png"
+        ],
+        "transcript": "And if Kelly, maybe we could swipe back to the two photographs."
+    },
+    {
+        "id": 29,
+        "start": 308.72,
+        "end": 312.08,
+        "frames": [
+            "frame_00113.png"
+        ],
+        "transcript": "In this particular case, yes, it was in fact the one on the right."
+    },
+    {
+        "id": 30,
+        "start": 312.08,
+        "end": 316.0,
+        "frames": [
+            "frame_00114.png",
+            "frame_00115.png"
+        ],
+        "transcript": "Maybe it looked a little too good or maybe a little too unreal."
+    },
+    {
+        "id": 31,
+        "start": 316.0,
+        "end": 318.48,
+        "frames": [
+            "frame_00116.png",
+            "frame_00117.png"
+        ],
+        "transcript": "Maybe let's see, maybe a couple of other examples."
+    },
+    {
+        "id": 32,
+        "start": 318.48,
+        "end": 320.48,
+        "frames": [
+            "frame_00118.png",
+            "frame_00119.png"
+        ],
+        "transcript": "So, same QR code, no need to rescan."
+    },
+    {
+        "id": 33,
+        "start": 320.48,
+        "end": 322.48,
+        "frames": [
+            "frame_00120.png",
+            "frame_00121.png"
+        ],
+        "transcript": "Let's go ahead and pull up these two examples now."
+    },
+    {
+        "id": 34,
+        "start": 322.48,
+        "end": 324.08,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "Two photographs, same question."
+    },
+    {
+        "id": 35,
+        "start": 324.08,
+        "end": 326.08,
+        "frames": [
+            "frame_00123.png",
+            "frame_00124.png",
+            "frame_00125.png"
+        ],
+        "transcript": "Which of these is AI?"
+    },
+    {
+        "id": 36,
+        "start": 326.08,
+        "end": 328.08,
+        "frames": [
+            "frame_00126.png",
+            "frame_00127.png",
+            "frame_00128.png"
+        ],
+        "transcript": "Left or right?"
+    },
+    {
+        "id": 37,
+        "start": 328.08,
+        "end": 331.6,
+        "frames": [
+            "frame_00129.png",
+            "frame_00130.png"
+        ],
+        "transcript": "Left or right?"
+    },
+    {
+        "id": 38,
+        "start": 331.6,
+        "end": 336.88,
+        "frames": [
+            "frame_00131.png",
+            "frame_00132.png",
+            "frame_00133.png",
+            "frame_00134.png",
+            "frame_00135.png"
+        ],
+        "transcript": "All right, wanna take a look at the chart, see what the responses are coming in."
+    },
+    {
+        "id": 39,
+        "start": 336.88,
+        "end": 343.76,
+        "frames": [
+            "frame_00136.png",
+            "frame_00137.png",
+            "frame_00138.png"
+        ],
+        "transcript": "A little closer in this case, but a majority of you think e the answer is in fact left here, though 5% of you are truthfully admitting that you're unsure."
+    },
+    {
+        "id": 40,
+        "start": 343.76,
+        "end": 348.0,
+        "frames": [
+            "frame_00139.png",
+            "frame_00140.png"
+        ],
+        "transcript": "But Kelly, if you want to swipe back to the photos, the answer this time was in fact a trick question."
+    },
+    {
+        "id": 41,
+        "start": 348.0,
+        "end": 353.68,
+        "frames": [
+            "frame_00141.png",
+            "frame_00142.png",
+            "frame_00143.png",
+            "frame_00144.png",
+            "frame_00145.png"
+        ],
+        "transcript": "They were both, in fact, AI, which perhaps speaks to just how good this technology is already getting."
+    },
+    {
+        "id": 42,
+        "start": 353.68,
+        "end": 356.8,
+        "frames": [
+            "frame_00146.png",
+            "frame_00147.png",
+            "frame_00148.png"
+        ],
+        "transcript": "Neither of these faces exists in the real world."
+    },
+    {
+        "id": 43,
+        "start": 356.8,
+        "end": 359.84,
+        "frames": [
+            "frame_00149.png",
+            "frame_00150.png"
+        ],
+        "transcript": "It was synthesized based on lots of training data."
+    },
+    {
+        "id": 44,
+        "start": 359.84,
+        "end": 363.52,
+        "frames": [
+            "frame_00151.png"
+        ],
+        "transcript": "So two photographs that look like humans but do not, in fact, exist."
+    },
+    {
+        "id": 45,
+        "start": 363.52,
+        "end": 368.56,
+        "frames": [
+            "frame_00152.png",
+            "frame_00153.png",
+            "frame_00154.png"
+        ],
+        "transcript": "How about one more, this time focusing on text, which will be the uh the focus, of course, underlying our duck."
+    },
+    {
+        "id": 46,
+        "start": 368.56,
+        "end": 370.88,
+        "frames": [
+            "frame_00155.png"
+        ],
+        "transcript": "Did a fourth grader write this or the new chatbot?"
+    },
+    {
+        "id": 47,
+        "start": 370.88,
+        "end": 372.48,
+        "frames": [
+            "frame_00156.png"
+        ],
+        "transcript": "Here are two final examples."
+    },
+    {
+        "id": 48,
+        "start": 372.48,
+        "end": 374.96,
+        "frames": [
+            "frame_00157.png"
+        ],
+        "transcript": "Uh, same code as before, so no need to rescan."
+    },
+    {
+        "id": 49,
+        "start": 374.96,
+        "end": 376.16,
+        "frames": [
+            "frame_00158.png",
+            "frame_00159.png"
+        ],
+        "transcript": "And here are the texts."
+    },
+    {
+        "id": 50,
+        "start": 376.16,
+        "end": 383.92,
+        "frames": [
+            "frame_00160.png",
+            "frame_00161.png"
+        ],
+        "transcript": "Essay one, I like to bring a yummy sandwich and a cold juice box for lunch, and sometimes I'll even pack a tasty piece of fruit or a bag of crunchy chips."
+    },
+    {
+        "id": 51,
+        "start": 383.92,
+        "end": 386.72,
+        "frames": [
+            "frame_00162.png"
+        ],
+        "transcript": "As we eat, we chat and laugh and catch up on each other's day."
+    },
+    {
+        "id": 52,
+        "start": 386.72,
+        "end": 387.52,
+        "frames": [
+            "frame_00163.png"
+        ],
+        "transcript": "Dot dot dot."
+    },
+    {
+        "id": 53,
+        "start": 387.52,
+        "end": 391.2,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "C essay two, my mother packs me a sandwich, a drink, fruit, and a treat."
+    },
+    {
+        "id": 54,
+        "start": 391.2,
+        "end": 395.2,
+        "frames": [
+            "frame_00165.png"
+        ],
+        "transcript": "When I get into a lunchroom, I find an empty table and sit there and eat my lunch."
+    },
+    {
+        "id": 55,
+        "start": 395.2,
+        "end": 396.96,
+        "frames": [
+            "frame_00166.png"
+        ],
+        "transcript": "My friends come and sit down with me."
+    },
+    {
+        "id": 56,
+        "start": 396.96,
+        "end": 397.92,
+        "frames": [
+            "frame_00167.png"
+        ],
+        "transcript": "Dot dot dot."
+    },
+    {
+        "id": 57,
+        "start": 397.92,
+        "end": 401.2,
+        "frames": [
+            "frame_00168.png",
+            "frame_00169.png"
+        ],
+        "transcript": "The question now, lastly, is which of these is AI?"
+    },
+    {
+        "id": 58,
+        "start": 401.2,
+        "end": 402.8,
+        "frames": [
+            "frame_00170.png",
+            "frame_00171.png"
+        ],
+        "transcript": "One or two?"
+    },
+    {
+        "id": 59,
+        "start": 402.8,
+        "end": 405.92,
+        "frames": [
+            "frame_00172.png",
+            "frame_00173.png"
+        ],
+        "transcript": "SA one or two."
+    },
+    {
+        "id": 60,
+        "start": 405.92,
+        "end": 409.04,
+        "frames": [
+            "frame_00174.png",
+            "frame_00175.png",
+            "frame_00176.png"
+        ],
+        "transcript": "The bars here are duking themselves out."
+    },
+    {
+        "id": 61,
+        "start": 409.04,
+        "end": 410.8,
+        "frames": [
+            "frame_00177.png"
+        ],
+        "transcript": "Looks like a majority of you say essay one."
+    },
+    {
+        "id": 62,
+        "start": 410.8,
+        "end": 411.76,
+        "frames": [
+            "frame_00178.png"
+        ],
+        "transcript": "Let's go back to the text."
+    },
+    {
+        "id": 63,
+        "start": 411.76,
+        "end": 414.56,
+        "frames": [
+            "frame_00179.png",
+            "frame_00180.png"
+        ],
+        "transcript": "And someone of you who s one of you who says essay one, why?"
+    },
+    {
+        "id": 64,
+        "start": 414.56,
+        "end": 415.92,
+        "frames": [
+            "frame_00181.png",
+            "frame_00182.png"
+        ],
+        "transcript": "If you want to raise a quick hand."
+    },
+    {
+        "id": 65,
+        "start": 415.92,
+        "end": 416.88,
+        "frames": [
+            "frame_00183.png"
+        ],
+        "transcript": "Why SA one?"
+    },
+    {
+        "id": 66,
+        "start": 416.88,
+        "end": 417.36,
+        "frames": [
+            "frame_00184.png"
+        ],
+        "transcript": "Yeah."
+    },
+    {
+        "id": 67,
+        "start": 417.36,
+        "end": 422.32,
+        "frames": [
+            "frame_00185.png",
+            "frame_00186.png"
+        ],
+        "transcript": "I think SA two looks more like what I would write."
+    },
+    {
+        "id": 68,
+        "start": 422.32,
+        "end": 426.08,
+        "frames": [
+            "frame_00187.png"
+        ],
+        "transcript": "Okay, and uh it's so SA two looks more like you would write and it can ask what grade you are in?"
+    },
+    {
+        "id": 69,
+        "start": 426.08,
+        "end": 426.96,
+        "frames": [
+            "frame_00188.png"
+        ],
+        "transcript": "I'm a fifth grader."
+    },
+    {
+        "id": 70,
+        "start": 426.96,
+        "end": 427.92,
+        "frames": [
+            "frame_00189.png"
+        ],
+        "transcript": "Oh, fifth grader."
+    },
+    {
+        "id": 71,
+        "start": 427.92,
+        "end": 430.72,
+        "frames": [
+            "frame_00190.png"
+        ],
+        "transcript": "So uh is this a new fifth grader or not?"
+    },
+    {
+        "id": 72,
+        "start": 430.72,
+        "end": 440.32,
+        "frames": [
+            "frame_00191.png",
+            "frame_00192.png",
+            "frame_00193.png",
+            "frame_00194.png",
+            "frame_00195.png"
+        ],
+        "transcript": "The answer here, in fact, is that SA one is the AI because indeed SA two is more akin to what a fourth, or if I may, a fifth grader would write."
+    },
+    {
+        "id": 73,
+        "start": 440.32,
+        "end": 442.64,
+        "frames": [
+            "frame_00196.png",
+            "frame_00197.png",
+            "frame_00198.png"
+        ],
+        "transcript": "And I dare say there are maybe some telltale signs."
+    },
+    {
+        "id": 74,
+        "start": 442.64,
+        "end": 449.52,
+        "frames": [
+            "frame_00199.png",
+            "frame_00200.png"
+        ],
+        "transcript": "I'm not sure a typical fourth grader or fifth grader would catch up on each other's day in the vernacular that we see in SA one."
+    },
+    {
+        "id": 75,
+        "start": 449.52,
+        "end": 458.16,
+        "frames": [
+            "frame_00201.png",
+            "frame_00202.png",
+            "frame_00203.png",
+            "frame_00204.png",
+            "frame_00205.png"
+        ],
+        "transcript": "But suffice it to say, this game is not something we can play for the in the years to come because it's just gonna get too hard to discern, something that's AI generated or not."
+    },
+    {
+        "id": 76,
+        "start": 458.16,
+        "end": 488.08,
+        "frames": [
+            "frame_00206.png",
+            "frame_00209.png",
+            "frame_00210.png",
+            "frame_00211.png",
+            "frame_00213.png",
+            "frame_00214.png",
+            "frame_00215.png",
+            "frame_00216.png",
+            "frame_00220.png",
+            "frame_00223.png",
+            "frame_00224.png"
+        ],
+        "transcript": "And so among our goals for today is really to give you a better sense of not just how technologies like this duck in these games that we've played here with images and text work, but really what are the underlying principles of artificial intelligence that frankly have been with us and have been developing for decades and have really now come to a head in recent years, thanks to advances in research, thanks to all the more cloud computing, thanks to all the more uh memory and disk space and information, sheer volume thereof that we have at our disposal that can be used to train all of these here technologies."
+    },
+    {
+        "id": 77,
+        "start": 488.08,
+        "end": 520.0,
+        "frames": [
+            "frame_00225.png",
+            "frame_00226.png",
+            "frame_00227.png",
+            "frame_00228.png",
+            "frame_00229.png",
+            "frame_00230.png",
+            "frame_00231.png",
+            "frame_00232.png"
+        ],
+        "transcript": "So that their duck is built on a fairly complicated uh architecture that looks a little something like this, where here's a student using one of CS50's tools, here's a website with which CS50 students are familiar called CS50.ai, where we the staff wrote a bunch of code that actually talks to what are called APIs, application programming interfaces, third-party services by companies like Microsoft and OpenAI, that really have been doing the hard work of developing these models, as well as some local sweets uh some local sauce that we CS50 add into the mix to make it specific the duck's answers to CS50 itself."
+    },
+    {
+        "id": 78,
+        "start": 520.0,
+        "end": 529.44,
+        "frames": [
+            "frame_00233.png",
+            "frame_00234.png",
+            "frame_00235.png",
+            "frame_00236.png",
+            "frame_00237.png",
+            "frame_00238.png"
+        ],
+        "transcript": "But what we've essentially been doing is uh something that with which you might be familiar in part, prompt engineering, which has started popping up for better or for worse on uh LinkedIn profiles everywhere."
+    },
+    {
+        "id": 79,
+        "start": 529.44,
+        "end": 542.96,
+        "frames": [
+            "frame_00239.png",
+            "frame_00240.png",
+            "frame_00241.png",
+            "frame_00242.png",
+            "frame_00243.png",
+            "frame_00244.png",
+            "frame_00245.png",
+            "frame_00246.png",
+            "frame_00247.png",
+            "frame_00248.png",
+            "frame_00249.png"
+        ],
+        "transcript": "And prompt engineering really, it's not so much a form of engineering as it is a form of asking good questions and being detailed in your question, giving context to the underlying AI so that the answer with high probability is what you want back."
+    },
+    {
+        "id": 80,
+        "start": 542.96,
+        "end": 546.72,
+        "frames": [
+            "frame_00250.png"
+        ],
+        "transcript": "And so there's two terms in this world of prompt engineering that are worth knowing about."
+    },
+    {
+        "id": 81,
+        "start": 546.72,
+        "end": 550.0,
+        "frames": [
+            "frame_00251.png"
+        ],
+        "transcript": "So in CS50 has leveraged both of these to implement that duck."
+    },
+    {
+        "id": 82,
+        "start": 550.0,
+        "end": 562.32,
+        "frames": [
+            "frame_00252.png",
+            "frame_00253.png",
+            "frame_00254.png",
+            "frame_00255.png",
+            "frame_00256.png",
+            "frame_00257.png",
+            "frame_00258.png"
+        ],
+        "transcript": "We, for instance, wrote what's called a system prompt, which are instructions written by us humans, often in English, that sort of nudge the underlying AI technology to have a certain personality or a specific domain of expertise."
+    },
+    {
+        "id": 83,
+        "start": 562.32,
+        "end": 566.88,
+        "frames": [
+            "frame_00259.png",
+            "frame_00260.png"
+        ],
+        "transcript": "For instance, we, CS50, have written a system prompt essentially that looks like this."
+    },
+    {
+        "id": 84,
+        "start": 566.88,
+        "end": 571.28,
+        "frames": [
+            "frame_00261.png"
+        ],
+        "transcript": "In reality, it's like a lot of lines long nowadays, but the essence of it is this."
+    },
+    {
+        "id": 85,
+        "start": 571.28,
+        "end": 574.64,
+        "frames": [
+            "frame_00262.png"
+        ],
+        "transcript": "You are a friendly and supportive teaching assistant for CS50."
+    },
+    {
+        "id": 86,
+        "start": 574.64,
+        "end": 576.56,
+        "frames": [
+            "frame_00263.png"
+        ],
+        "transcript": "You are also a rubber duck."
+    },
+    {
+        "id": 87,
+        "start": 576.56,
+        "end": 580.32,
+        "frames": [
+            "frame_00264.png",
+            "frame_00265.png"
+        ],
+        "transcript": "And that is sufficient to turn an AI into a rubber duck, it turns out."
+    },
+    {
+        "id": 88,
+        "start": 580.32,
+        "end": 583.6,
+        "frames": [
+            "frame_00266.png"
+        ],
+        "transcript": "Answer student questions only about CS50 in the field of computer science."
+    },
+    {
+        "id": 89,
+        "start": 583.6,
+        "end": 591.28,
+        "frames": [
+            "frame_00267.png",
+            "frame_00268.png"
+        ],
+        "transcript": "Do not answer questions about unrelated topics, do not provide full answers to problem sets, as this would violate academic honesty, answer this question colon."
+    },
+    {
+        "id": 90,
+        "start": 591.28,
+        "end": 600.64,
+        "frames": [
+            "frame_00269.png",
+            "frame_00270.png",
+            "frame_00271.png",
+            "frame_00272.png"
+        ],
+        "transcript": "And after that preamble, if you will, aka system prompt, we effectively copy-paste whatever question a student has typed in, otherwise known as a user prompt."
+    },
+    {
+        "id": 91,
+        "start": 600.64,
+        "end": 610.16,
+        "frames": [
+            "frame_00273.png",
+            "frame_00274.png",
+            "frame_00275.png",
+            "frame_00276.png",
+            "frame_00277.png",
+            "frame_00278.png",
+            "frame_00279.png",
+            "frame_00280.png",
+            "frame_00281.png"
+        ],
+        "transcript": "And that is why the duck behaves like a duck in our case, and not a cat or a dog or a PhD, but rather something that's been attenuated to the particular goals we have pedagogically in the course."
+    },
+    {
+        "id": 92,
+        "start": 610.16,
+        "end": 624.8,
+        "frames": [
+            "frame_00282.png",
+            "frame_00283.png",
+            "frame_00284.png",
+            "frame_00285.png"
+        ],
+        "transcript": "And in fact, those of you who are CS50 students might recall from quite some weeks ago in week zero, when we first introduced the course uh to the class, we had code that we whipped up that day that ultimately looked a little something like this."
+    },
+    {
+        "id": 93,
+        "start": 624.8,
+        "end": 634.24,
+        "frames": [
+            "frame_00286.png",
+            "frame_00287.png",
+            "frame_00288.png"
+        ],
+        "transcript": "And I'll walk through it briefly line by line, but now, on the heels of having studied some Python in CS50, this here code that I whipped up in the first lecture might make now a bit more sense."
+    },
+    {
+        "id": 94,
+        "start": 634.24,
+        "end": 643.2,
+        "frames": [
+            "frame_00289.png"
+        ],
+        "transcript": "In that first lecture, we imported OpenAI's own library, code that a third-party company wrote to make it possible for us to implement code on top of theirs."
+    },
+    {
+        "id": 95,
+        "start": 643.2,
+        "end": 649.76,
+        "frames": [
+            "frame_00290.png"
+        ],
+        "transcript": "We created a variable called client in week zero, and this gave us access to the OpenAI client, that is software that they wrote for us."
+    },
+    {
+        "id": 96,
+        "start": 649.76,
+        "end": 656.24,
+        "frames": [
+            "frame_00291.png"
+        ],
+        "transcript": "We then defined in week zero a user prompt, which came from the user using the input function with which CS50 students are now familiar."
+    },
+    {
+        "id": 97,
+        "start": 656.24,
+        "end": 664.0,
+        "frames": [
+            "frame_00292.png",
+            "frame_00293.png",
+            "frame_00294.png",
+            "frame_00295.png",
+            "frame_00296.png"
+        ],
+        "transcript": "And then we defined this system prompt that day where I said, limit your answer to one sentence, pretend you're uh dot dot dot cat, I think was the persona of the day."
+    },
+    {
+        "id": 98,
+        "start": 664.0,
+        "end": 672.24,
+        "frames": [
+            "frame_00297.png",
+            "frame_00298.png",
+            "frame_00299.png",
+            "frame_00300.png",
+            "frame_00301.png",
+            "frame_00302.png",
+            "frame_00303.png",
+            "frame_00304.png"
+        ],
+        "transcript": "And then we used some bit more arcane code here, but in essence, we created a variable called response, which was meant to represent the response from OpenAI's server."
+    },
+    {
+        "id": 99,
+        "start": 672.24,
+        "end": 679.52,
+        "frames": [
+            "frame_00305.png",
+            "frame_00306.png",
+            "frame_00307.png",
+            "frame_00308.png",
+            "frame_00309.png"
+        ],
+        "transcript": "We used client.responses.create, which is a function or method that openAI gives us that allows us to pass in three arguments."
+    },
+    {
+        "id": 100,
+        "start": 679.52,
+        "end": 688.8,
+        "frames": [
+            "frame_00310.png",
+            "frame_00311.png",
+            "frame_00312.png",
+            "frame_00313.png",
+            "frame_00314.png",
+            "frame_00315.png",
+            "frame_00316.png"
+        ],
+        "transcript": "The input from the user, that is the user prompt, the instructions from us, that is the system prompt, and then the specific model or version of AI that we wanted to use."
+    },
+    {
+        "id": 101,
+        "start": 688.8,
+        "end": 693.68,
+        "frames": [
+            "frame_00317.png"
+        ],
+        "transcript": "And the last thing we did that day was print out response.output underscore text."
+    },
+    {
+        "id": 102,
+        "start": 693.68,
+        "end": 698.0,
+        "frames": [
+            "frame_00318.png"
+        ],
+        "transcript": "And that's how we were able to answer questions like, what is CS50, or the like."
+    },
+    {
+        "id": 103,
+        "start": 698.0,
+        "end": 705.84,
+        "frames": [
+            "frame_00319.png",
+            "frame_00320.png",
+            "frame_00321.png",
+            "frame_00322.png",
+            "frame_00323.png"
+        ],
+        "transcript": "So we've seen all of that before, but we didn't talk about that week exactly how it was working or what more we could actually do with it."
+    },
+    {
+        "id": 104,
+        "start": 705.84,
+        "end": 711.12,
+        "frames": [
+            "frame_00324.png",
+            "frame_00325.png",
+            "frame_00326.png",
+            "frame_00327.png"
+        ],
+        "transcript": "And so in fact, what I thought we'd do today is peel back a layer that we've not allowed into the course up until now."
+    },
+    {
+        "id": 105,
+        "start": 711.12,
+        "end": 720.0,
+        "frames": [
+            "frame_00328.png",
+            "frame_00329.png",
+            "frame_00330.png",
+            "frame_00331.png",
+            "frame_00332.png"
+        ],
+        "transcript": "And indeed, you still cannot use this feature until the very end of the class in CS50 when you get to your final projects, at which point you are welcome and encouraged to use VS Code."
+    }
+]

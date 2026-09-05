@@ -1,0 +1,1622 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 22.8,
+        "frames": [
+            "frame_00000.png"
+        ],
+        "transcript": "All right, people."
+    },
+    {
+        "id": 1,
+        "start": 22.8,
+        "end": 26.8,
+        "frames": [
+            "frame_00001.png"
+        ],
+        "transcript": "I believe everybody is doing great, nice, and absolutely fine."
+    },
+    {
+        "id": 2,
+        "start": 26.8,
+        "end": 29.04,
+        "frames": [
+            "frame_00002.png"
+        ],
+        "transcript": "So, how is it going?"
+    },
+    {
+        "id": 3,
+        "start": 29.04,
+        "end": 33.76,
+        "frames": [
+            "frame_00003.png"
+        ],
+        "transcript": "Everybody, guys, let me know."
+    },
+    {
+        "id": 4,
+        "start": 33.76,
+        "end": 38.48,
+        "frames": [
+            "frame_00004.png",
+            "frame_00005.png",
+            "frame_00006.png"
+        ],
+        "transcript": "Let me know in the chats if I'm perfectly audible, visible to each and every single student."
+    },
+    {
+        "id": 5,
+        "start": 38.48,
+        "end": 39.12,
+        "frames": [
+            "frame_00007.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 6,
+        "start": 39.12,
+        "end": 42.64,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": "Everyone means everyone."
+    },
+    {
+        "id": 7,
+        "start": 42.64,
+        "end": 50.24,
+        "frames": [
+            "frame_00009.png",
+            "frame_00010.png",
+            "frame_00011.png",
+            "frame_00012.png"
+        ],
+        "transcript": "I need to know in the chats if I am perfectly audible, visible to each and every single student."
+    },
+    {
+        "id": 8,
+        "start": 50.24,
+        "end": 50.72,
+        "frames": [
+            "frame_00013.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 9,
+        "start": 50.72,
+        "end": 61.36,
+        "frames": [
+            "frame_00014.png",
+            "frame_00015.png",
+            "frame_00016.png"
+        ],
+        "transcript": "And and and and we have two chapters today, okay, that we'll have to finish in the next 10 to 12 hours."
+    },
+    {
+        "id": 10,
+        "start": 61.36,
+        "end": 63.52,
+        "frames": [
+            "frame_00017.png",
+            "frame_00018.png"
+        ],
+        "transcript": "That is basic maths and vectors."
+    },
+    {
+        "id": 11,
+        "start": 63.52,
+        "end": 63.84,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 12,
+        "start": 63.84,
+        "end": 73.44,
+        "frames": [
+            "frame_00020.png",
+            "frame_00021.png",
+            "frame_00022.png",
+            "frame_00023.png",
+            "frame_00024.png",
+            "frame_00025.png",
+            "frame_00026.png"
+        ],
+        "transcript": "And let me just tell you, we will be completing each and every single thing, whatever you have in your basic maths and in your vectors."
+    },
+    {
+        "id": 13,
+        "start": 73.44,
+        "end": 73.76,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 14,
+        "start": 73.76,
+        "end": 77.2,
+        "frames": [
+            "frame_00028.png",
+            "frame_00029.png"
+        ],
+        "transcript": "These are the two chapters that we are going to smash today."
+    },
+    {
+        "id": 15,
+        "start": 77.2,
+        "end": 82.72,
+        "frames": [
+            "frame_00030.png",
+            "frame_00031.png",
+            "frame_00032.png"
+        ],
+        "transcript": "So for that, you'll have to mark your attendance by smashing the like button."
+    },
+    {
+        "id": 16,
+        "start": 82.72,
+        "end": 83.04,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 17,
+        "start": 83.04,
+        "end": 83.76,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 18,
+        "start": 83.76,
+        "end": 90.32,
+        "frames": [
+            "frame_00035.png",
+            "frame_00036.png",
+            "frame_00037.png"
+        ],
+        "transcript": "Because marking the attendance is mandatory, extremely mandatory."
+    },
+    {
+        "id": 19,
+        "start": 90.32,
+        "end": 90.72,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 20,
+        "start": 90.72,
+        "end": 96.08,
+        "frames": [
+            "frame_00039.png",
+            "frame_00040.png"
+        ],
+        "transcript": "So I would want you guys to smash the like button as soon as possible."
+    },
+    {
+        "id": 21,
+        "start": 96.08,
+        "end": 96.64,
+        "frames": [
+            "frame_00041.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 22,
+        "start": 96.64,
+        "end": 100.8,
+        "frames": [
+            "frame_00042.png",
+            "frame_00043.png",
+            "frame_00044.png"
+        ],
+        "transcript": "And tell me guys in the chats, are you excited for this game of needs 3.0?"
+    },
+    {
+        "id": 23,
+        "start": 100.8,
+        "end": 102.24,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 24,
+        "start": 102.24,
+        "end": 107.76,
+        "frames": [
+            "frame_00046.png",
+            "frame_00047.png",
+            "frame_00048.png"
+        ],
+        "transcript": "Yes, I'll be starting from the scratch and we'll be discussing each and every single thing."
+    },
+    {
+        "id": 25,
+        "start": 107.76,
+        "end": 110.4,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "Doesn't matter if you have studied this chapter before."
+    },
+    {
+        "id": 26,
+        "start": 110.4,
+        "end": 110.96,
+        "frames": [
+            "frame_00050.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 27,
+        "start": 110.96,
+        "end": 112.48,
+        "frames": [
+            "frame_00051.png"
+        ],
+        "transcript": "But you'll understand."
+    },
+    {
+        "id": 28,
+        "start": 112.48,
+        "end": 115.28,
+        "frames": [
+            "frame_00052.png"
+        ],
+        "transcript": "You'll understand each and every single thing."
+    },
+    {
+        "id": 29,
+        "start": 115.28,
+        "end": 116.64,
+        "frames": [
+            "frame_00053.png"
+        ],
+        "transcript": "That is for sure."
+    },
+    {
+        "id": 30,
+        "start": 116.64,
+        "end": 117.76,
+        "frames": [
+            "frame_00054.png",
+            "frame_00055.png"
+        ],
+        "transcript": "That is for sure."
+    },
+    {
+        "id": 31,
+        "start": 117.76,
+        "end": 126.48,
+        "frames": [
+            "frame_00056.png",
+            "frame_00057.png",
+            "frame_00058.png",
+            "frame_00059.png",
+            "frame_00060.png",
+            "frame_00061.png",
+            "frame_00062.png"
+        ],
+        "transcript": "And one more important thing, my dear friends, this is the Telegram channel where I'll be sharing the PDF notes once we get done with the session."
+    },
+    {
+        "id": 32,
+        "start": 126.48,
+        "end": 126.88,
+        "frames": [
+            "frame_00063.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 33,
+        "start": 126.88,
+        "end": 131.84,
+        "frames": [
+            "frame_00064.png",
+            "frame_00065.png",
+            "frame_00066.png",
+            "frame_00067.png",
+            "frame_00068.png"
+        ],
+        "transcript": "So I'll be sharing all I basically share all the updates on this telegram channel."
+    },
+    {
+        "id": 34,
+        "start": 131.84,
+        "end": 133.44,
+        "frames": [
+            "frame_00069.png"
+        ],
+        "transcript": "You can search it also."
+    },
+    {
+        "id": 35,
+        "start": 133.44,
+        "end": 142.24,
+        "frames": [
+            "frame_00070.png",
+            "frame_00071.png",
+            "frame_00072.png",
+            "frame_00073.png",
+            "frame_00074.png"
+        ],
+        "transcript": "Like on on you can you can use this link that is t.me."
+    },
+    {
+        "id": 36,
+        "start": 142.24,
+        "end": 144.24,
+        "frames": [
+            "frame_00075.png"
+        ],
+        "transcript": "T dot me."
+    },
+    {
+        "id": 37,
+        "start": 144.24,
+        "end": 145.52,
+        "frames": [
+            "frame_00076.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 38,
+        "start": 145.52,
+        "end": 148.16,
+        "frames": [
+            "frame_00077.png"
+        ],
+        "transcript": "Slash Yaver Manzoor."
+    },
+    {
+        "id": 39,
+        "start": 148.16,
+        "end": 150.16,
+        "frames": [
+            "frame_00078.png"
+        ],
+        "transcript": "Slash Yaver Manzoor."
+    },
+    {
+        "id": 40,
+        "start": 150.16,
+        "end": 154.88,
+        "frames": [
+            "frame_00079.png",
+            "frame_00080.png"
+        ],
+        "transcript": "T.me slash Yaourmanzur."
+    },
+    {
+        "id": 41,
+        "start": 154.88,
+        "end": 155.44,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 42,
+        "start": 155.44,
+        "end": 158.72,
+        "frames": [
+            "frame_00082.png",
+            "frame_00083.png",
+            "frame_00084.png"
+        ],
+        "transcript": "Everybody out there, join this telegram channel."
+    },
+    {
+        "id": 43,
+        "start": 158.72,
+        "end": 159.36,
+        "frames": [
+            "frame_00085.png"
+        ],
+        "transcript": "This is very important."
+    },
+    {
+        "id": 44,
+        "start": 159.36,
+        "end": 161.04,
+        "frames": [
+            "frame_00086.png",
+            "frame_00087.png"
+        ],
+        "transcript": "You can scan this also."
+    },
+    {
+        "id": 45,
+        "start": 161.04,
+        "end": 165.2,
+        "frames": [
+            "frame_00088.png",
+            "frame_00089.png",
+            "frame_00090.png"
+        ],
+        "transcript": "So guys, we'll have to start the basic maths."
+    },
+    {
+        "id": 46,
+        "start": 165.2,
+        "end": 168.56,
+        "frames": [
+            "frame_00091.png",
+            "frame_00092.png",
+            "frame_00093.png"
+        ],
+        "transcript": "We'll have to start the basic maths today."
+    },
+    {
+        "id": 47,
+        "start": 168.56,
+        "end": 169.84,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 48,
+        "start": 169.84,
+        "end": 172.24,
+        "frames": [
+            "frame_00095.png",
+            "frame_00096.png"
+        ],
+        "transcript": "So let's get started."
+    },
+    {
+        "id": 49,
+        "start": 172.24,
+        "end": 173.76,
+        "frames": [
+            "frame_00097.png"
+        ],
+        "transcript": "Let's get started."
+    },
+    {
+        "id": 50,
+        "start": 173.76,
+        "end": 204.0,
+        "frames": [
+            "frame_00098.png"
+        ],
+        "transcript": "[Silent] for 30.88 sec"
+    },
+    {
+        "id": 51,
+        "start": 204.0,
+        "end": 204.96,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 52,
+        "start": 204.96,
+        "end": 207.6,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "Now let's start."
+    },
+    {
+        "id": 53,
+        "start": 207.6,
+        "end": 209.84,
+        "frames": [
+            "frame_00101.png",
+            "frame_00102.png"
+        ],
+        "transcript": "Let's start, my dear friends."
+    },
+    {
+        "id": 54,
+        "start": 209.84,
+        "end": 215.44,
+        "frames": [
+            "frame_00103.png",
+            "frame_00104.png",
+            "frame_00105.png",
+            "frame_00106.png",
+            "frame_00107.png"
+        ],
+        "transcript": "So the first topic that we need to discuss exactly over here is that is trigonometry."
+    },
+    {
+        "id": 55,
+        "start": 215.44,
+        "end": 220.56,
+        "frames": [
+            "frame_00108.png",
+            "frame_00109.png",
+            "frame_00110.png",
+            "frame_00111.png"
+        ],
+        "transcript": "So in basic mathematics chapter, we'll have to start with the trigonometry."
+    },
+    {
+        "id": 56,
+        "start": 220.56,
+        "end": 221.36,
+        "frames": [
+            "frame_00112.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 57,
+        "start": 221.36,
+        "end": 230.56,
+        "frames": [
+            "frame_00113.png",
+            "frame_00114.png",
+            "frame_00115.png",
+            "frame_00116.png",
+            "frame_00117.png",
+            "frame_00118.png",
+            "frame_00119.png"
+        ],
+        "transcript": "Now my dear friends, when it comes to this particular topic, trigonometry, the very first thing that we need to talk about is the angle."
+    },
+    {
+        "id": 58,
+        "start": 230.56,
+        "end": 234.56,
+        "frames": [
+            "frame_00120.png",
+            "frame_00121.png"
+        ],
+        "transcript": "The very first thing that we need to talk about is angle over here."
+    },
+    {
+        "id": 59,
+        "start": 234.56,
+        "end": 235.28,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "Okay?"
+    },
+    {
+        "id": 60,
+        "start": 235.28,
+        "end": 237.36,
+        "frames": [
+            "frame_00123.png",
+            "frame_00124.png"
+        ],
+        "transcript": "Now guys, see."
+    },
+    {
+        "id": 61,
+        "start": 237.36,
+        "end": 242.16,
+        "frames": [
+            "frame_00125.png",
+            "frame_00126.png",
+            "frame_00127.png",
+            "frame_00128.png"
+        ],
+        "transcript": "When it comes to an angle, listen to me very carefully."
+    },
+    {
+        "id": 62,
+        "start": 242.16,
+        "end": 244.8,
+        "frames": [
+            "frame_00129.png",
+            "frame_00130.png",
+            "frame_00131.png"
+        ],
+        "transcript": "Let's talk about in case of a circle."
+    },
+    {
+        "id": 63,
+        "start": 244.8,
+        "end": 247.92,
+        "frames": [
+            "frame_00132.png",
+            "frame_00133.png"
+        ],
+        "transcript": "Let's suppose this is a circle that we have over here."
+    },
+    {
+        "id": 64,
+        "start": 247.92,
+        "end": 248.56,
+        "frames": [
+            "frame_00134.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 65,
+        "start": 248.56,
+        "end": 253.2,
+        "frames": [
+            "frame_00135.png"
+        ],
+        "transcript": "And and and we know this is the radius of the circle, this is the center over here."
+    },
+    {
+        "id": 66,
+        "start": 253.2,
+        "end": 255.76,
+        "frames": [
+            "frame_00136.png",
+            "frame_00137.png"
+        ],
+        "transcript": "This is the radius of the circle and this is the center."
+    },
+    {
+        "id": 67,
+        "start": 255.76,
+        "end": 259.04,
+        "frames": [
+            "frame_00138.png",
+            "frame_00139.png"
+        ],
+        "transcript": "And let's suppose you are standing at this point A."
+    },
+    {
+        "id": 68,
+        "start": 259.04,
+        "end": 260.88,
+        "frames": [
+            "frame_00140.png"
+        ],
+        "transcript": "You are standing at this point A."
+    },
+    {
+        "id": 69,
+        "start": 260.88,
+        "end": 264.8,
+        "frames": [
+            "frame_00141.png"
+        ],
+        "transcript": "And you're moving from point A to point B."
+    },
+    {
+        "id": 70,
+        "start": 264.8,
+        "end": 268.32,
+        "frames": [
+            "frame_00142.png"
+        ],
+        "transcript": "You are moving from point A to point B."
+    },
+    {
+        "id": 71,
+        "start": 268.32,
+        "end": 268.96,
+        "frames": [
+            "frame_00143.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 72,
+        "start": 268.96,
+        "end": 273.76,
+        "frames": [
+            "frame_00144.png",
+            "frame_00145.png"
+        ],
+        "transcript": "While moving from point A to point B, can I say that?"
+    },
+    {
+        "id": 73,
+        "start": 273.76,
+        "end": 277.2,
+        "frames": [
+            "frame_00146.png"
+        ],
+        "transcript": "Can I say that you have covered an angle of theta?"
+    },
+    {
+        "id": 74,
+        "start": 277.2,
+        "end": 278.16,
+        "frames": [
+            "frame_00147.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 75,
+        "start": 278.16,
+        "end": 279.84,
+        "frames": [
+            "frame_00148.png",
+            "frame_00149.png"
+        ],
+        "transcript": "It's mentioned over here."
+    },
+    {
+        "id": 76,
+        "start": 279.84,
+        "end": 287.84,
+        "frames": [
+            "frame_00150.png",
+            "frame_00151.png",
+            "frame_00152.png",
+            "frame_00153.png",
+            "frame_00154.png",
+            "frame_00155.png",
+            "frame_00156.png"
+        ],
+        "transcript": "On moving from A to B, while moving from A point to B point, the particle has moved an angle of theta."
+    },
+    {
+        "id": 77,
+        "start": 287.84,
+        "end": 291.76,
+        "frames": [
+            "frame_00157.png",
+            "frame_00158.png"
+        ],
+        "transcript": "Or we say the particle has cut an angle of theta."
+    },
+    {
+        "id": 78,
+        "start": 291.76,
+        "end": 295.76,
+        "frames": [
+            "frame_00159.png",
+            "frame_00160.png",
+            "frame_00161.png"
+        ],
+        "transcript": "This is how we define the angle in case of a circle."
+    },
+    {
+        "id": 79,
+        "start": 295.76,
+        "end": 300.96,
+        "frames": [
+            "frame_00162.png",
+            "frame_00163.png",
+            "frame_00164.png"
+        ],
+        "transcript": "If an object moves from A to B, it has cut an angle of theta."
+    },
+    {
+        "id": 80,
+        "start": 300.96,
+        "end": 305.2,
+        "frames": [
+            "frame_00165.png",
+            "frame_00166.png",
+            "frame_00167.png",
+            "frame_00168.png",
+            "frame_00169.png"
+        ],
+        "transcript": "Now, if somebody says, How do you define this angle?"
+    },
+    {
+        "id": 81,
+        "start": 305.2,
+        "end": 307.44,
+        "frames": [
+            "frame_00170.png",
+            "frame_00171.png",
+            "frame_00172.png"
+        ],
+        "transcript": "How do you calculate this angle over here?"
+    },
+    {
+        "id": 82,
+        "start": 307.44,
+        "end": 317.36,
+        "frames": [
+            "frame_00173.png",
+            "frame_00174.png",
+            "frame_00175.png"
+        ],
+        "transcript": "You simply say when it comes to this angle, this angle is that is arc upon radius."
+    },
+    {
+        "id": 83,
+        "start": 317.36,
+        "end": 321.12,
+        "frames": [
+            "frame_00176.png"
+        ],
+        "transcript": "This is how we calculate it."
+    },
+    {
+        "id": 84,
+        "start": 321.12,
+        "end": 328.56,
+        "frames": [
+            "frame_00177.png",
+            "frame_00178.png"
+        ],
+        "transcript": "Arc means this, this, this length, this length, this is what we call arc from a to b this this length, this distance covered."
+    },
+    {
+        "id": 85,
+        "start": 328.56,
+        "end": 329.6,
+        "frames": [
+            "frame_00179.png"
+        ],
+        "transcript": "This is arc."
+    },
+    {
+        "id": 86,
+        "start": 329.6,
+        "end": 331.2,
+        "frames": [
+            "frame_00180.png"
+        ],
+        "transcript": "And radius is this r."
+    },
+    {
+        "id": 87,
+        "start": 331.2,
+        "end": 339.44,
+        "frames": [
+            "frame_00181.png",
+            "frame_00182.png"
+        ],
+        "transcript": "So we say this angle we represent it with theta, and this arc is going to be s and radius is going to be r."
+    },
+    {
+        "id": 88,
+        "start": 339.44,
+        "end": 343.68,
+        "frames": [
+            "frame_00183.png",
+            "frame_00184.png"
+        ],
+        "transcript": "Even from here, you can say s is equal to r and theta."
+    },
+    {
+        "id": 89,
+        "start": 343.68,
+        "end": 345.36,
+        "frames": [
+            "frame_00185.png",
+            "frame_00186.png"
+        ],
+        "transcript": "S is equal to r theta."
+    },
+    {
+        "id": 90,
+        "start": 345.36,
+        "end": 348.48,
+        "frames": [
+            "frame_00187.png",
+            "frame_00188.png",
+            "frame_00189.png",
+            "frame_00190.png"
+        ],
+        "transcript": "Okay, s is equal to r theta."
+    },
+    {
+        "id": 91,
+        "start": 348.48,
+        "end": 356.16,
+        "frames": [
+            "frame_00191.png",
+            "frame_00192.png",
+            "frame_00193.png",
+            "frame_00194.png",
+            "frame_00195.png",
+            "frame_00196.png"
+        ],
+        "transcript": "And my dear friends, this is s where s is arc and this r is radius, theta is angle."
+    },
+    {
+        "id": 92,
+        "start": 356.16,
+        "end": 358.72,
+        "frames": [
+            "frame_00197.png"
+        ],
+        "transcript": "Okay, okay, okay."
+    },
+    {
+        "id": 93,
+        "start": 358.72,
+        "end": 359.68,
+        "frames": [
+            "frame_00198.png"
+        ],
+        "transcript": "Yes."
+    },
+    {
+        "id": 94,
+        "start": 359.68,
+        "end": 364.96,
+        "frames": [
+            "frame_00199.png",
+            "frame_00200.png",
+            "frame_00201.png",
+            "frame_00202.png",
+            "frame_00203.png"
+        ],
+        "transcript": "So basically, this is how we define angle in case of a circle."
+    },
+    {
+        "id": 95,
+        "start": 364.96,
+        "end": 373.2,
+        "frames": [
+            "frame_00204.png",
+            "frame_00205.png",
+            "frame_00206.png",
+            "frame_00207.png",
+            "frame_00208.png",
+            "frame_00209.png"
+        ],
+        "transcript": "Now, my dear friends, now my dear friends, there is a concept that is what we call the solid angle, or we say 3D angle."
+    },
+    {
+        "id": 96,
+        "start": 373.2,
+        "end": 377.76,
+        "frames": [
+            "frame_00210.png",
+            "frame_00211.png",
+            "frame_00212.png",
+            "frame_00213.png",
+            "frame_00214.png"
+        ],
+        "transcript": "There is a concept that is what we call the solid angle or we say 3D angle."
+    },
+    {
+        "id": 97,
+        "start": 377.76,
+        "end": 379.28,
+        "frames": [
+            "frame_00215.png"
+        ],
+        "transcript": "Listen to me very carefully."
+    },
+    {
+        "id": 98,
+        "start": 379.28,
+        "end": 380.96,
+        "frames": [
+            "frame_00216.png",
+            "frame_00217.png"
+        ],
+        "transcript": "Listen to me very carefully."
+    },
+    {
+        "id": 99,
+        "start": 380.96,
+        "end": 386.24,
+        "frames": [
+            "frame_00218.png",
+            "frame_00219.png",
+            "frame_00220.png",
+            "frame_00221.png"
+        ],
+        "transcript": "Let's suppose, let's suppose I am saying there is a there is a circle over here."
+    },
+    {
+        "id": 100,
+        "start": 386.24,
+        "end": 387.84,
+        "frames": [
+            "frame_00222.png"
+        ],
+        "transcript": "There is a circle over here."
+    },
+    {
+        "id": 101,
+        "start": 387.84,
+        "end": 395.2,
+        "frames": [
+            "frame_00223.png",
+            "frame_00224.png",
+            "frame_00225.png"
+        ],
+        "transcript": "So while moving from A to B, okay, this in 2D, there's a two-dimensional motion I can say over here."
+    },
+    {
+        "id": 102,
+        "start": 395.2,
+        "end": 400.16,
+        "frames": [
+            "frame_00226.png",
+            "frame_00227.png",
+            "frame_00228.png"
+        ],
+        "transcript": "You are moving in 2D from A to B, you simply say, sir, I have covered an angle of cheetah."
+    },
+    {
+        "id": 103,
+        "start": 400.16,
+        "end": 404.4,
+        "frames": [
+            "frame_00229.png",
+            "frame_00230.png",
+            "frame_00231.png"
+        ],
+        "transcript": "But let's suppose if I say you have got a sephere over here."
+    },
+    {
+        "id": 104,
+        "start": 404.4,
+        "end": 411.04,
+        "frames": [
+            "frame_00232.png",
+            "frame_00233.png",
+            "frame_00234.png",
+            "frame_00235.png",
+            "frame_00236.png"
+        ],
+        "transcript": "If I say you have got a sephere over here, let's suppose you have got a sephere over here."
+    },
+    {
+        "id": 105,
+        "start": 411.04,
+        "end": 412.24,
+        "frames": [
+            "frame_00237.png"
+        ],
+        "transcript": "This is the sephere."
+    },
+    {
+        "id": 106,
+        "start": 412.24,
+        "end": 413.68,
+        "frames": [
+            "frame_00238.png"
+        ],
+        "transcript": "Okay, yes."
+    },
+    {
+        "id": 107,
+        "start": 413.68,
+        "end": 419.44,
+        "frames": [
+            "frame_00239.png",
+            "frame_00240.png",
+            "frame_00241.png",
+            "frame_00242.png",
+            "frame_00243.png"
+        ],
+        "transcript": "Now, my dear friends, let's suppose on this sephere you are covering some area."
+    },
+    {
+        "id": 108,
+        "start": 419.44,
+        "end": 424.64,
+        "frames": [
+            "frame_00244.png",
+            "frame_00245.png",
+            "frame_00246.png",
+            "frame_00247.png"
+        ],
+        "transcript": "Here, in this case, in case of a circle, you are covering some distance, this from here to here."
+    },
+    {
+        "id": 109,
+        "start": 424.64,
+        "end": 431.68,
+        "frames": [
+            "frame_00248.png",
+            "frame_00249.png",
+            "frame_00250.png"
+        ],
+        "transcript": "But in case of this, in case of this, I would say, I would say, sephere."
+    },
+    {
+        "id": 110,
+        "start": 431.68,
+        "end": 436.4,
+        "frames": [
+            "frame_00251.png",
+            "frame_00252.png"
+        ],
+        "transcript": "Let's suppose you are covering some area, like this, this much area you are covering."
+    },
+    {
+        "id": 111,
+        "start": 436.4,
+        "end": 436.88,
+        "frames": [
+            "frame_00253.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 112,
+        "start": 436.88,
+        "end": 442.48,
+        "frames": [
+            "frame_00254.png",
+            "frame_00255.png",
+            "frame_00256.png",
+            "frame_00257.png",
+            "frame_00258.png"
+        ],
+        "transcript": "Now join all of these points, join all of these points, like like here."
+    },
+    {
+        "id": 113,
+        "start": 442.48,
+        "end": 444.8,
+        "frames": [
+            "frame_00259.png",
+            "frame_00260.png",
+            "frame_00261.png"
+        ],
+        "transcript": "I'll give you the crop proper fee."
+    },
+    {
+        "id": 114,
+        "start": 444.8,
+        "end": 452.32,
+        "frames": [
+            "frame_00262.png",
+            "frame_00263.png",
+            "frame_00264.png",
+            "frame_00265.png"
+        ],
+        "transcript": "Join this point with the center, join this point with the center, just this point with the center, this point with the center, it will form a cone-shaped structure."
+    },
+    {
+        "id": 115,
+        "start": 452.32,
+        "end": 454.4,
+        "frames": [
+            "frame_00266.png",
+            "frame_00267.png",
+            "frame_00268.png"
+        ],
+        "transcript": "It will form a cone-shape structure."
+    },
+    {
+        "id": 116,
+        "start": 454.4,
+        "end": 459.04,
+        "frames": [
+            "frame_00269.png",
+            "frame_00270.png"
+        ],
+        "transcript": "If you cover an area, while moving from A to B, you are simply covering some distance."
+    },
+    {
+        "id": 117,
+        "start": 459.04,
+        "end": 462.88,
+        "frames": [
+            "frame_00271.png"
+        ],
+        "transcript": "But while covering some area, this much area, this much area."
+    },
+    {
+        "id": 118,
+        "start": 462.88,
+        "end": 467.6,
+        "frames": [
+            "frame_00272.png",
+            "frame_00273.png",
+            "frame_00274.png"
+        ],
+        "transcript": "Now, if you join all of these points with the center, it will form a cone-shaped structure."
+    },
+    {
+        "id": 119,
+        "start": 467.6,
+        "end": 474.56,
+        "frames": [
+            "frame_00275.png",
+            "frame_00276.png",
+            "frame_00277.png",
+            "frame_00278.png"
+        ],
+        "transcript": "Now the angle created over here, now the angle created over here, this is what we call solid angle."
+    },
+    {
+        "id": 120,
+        "start": 474.56,
+        "end": 477.36,
+        "frames": [
+            "frame_00279.png"
+        ],
+        "transcript": "This is what we call solid angle."
+    },
+    {
+        "id": 121,
+        "start": 477.36,
+        "end": 478.08,
+        "frames": [
+            "frame_00280.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 122,
+        "start": 478.08,
+        "end": 481.76,
+        "frames": [
+            "frame_00281.png",
+            "frame_00282.png",
+            "frame_00283.png",
+            "frame_00284.png"
+        ],
+        "transcript": "That's why I'm taking the 3D figure over here."
+    },
+    {
+        "id": 123,
+        "start": 481.76,
+        "end": 484.32,
+        "frames": [
+            "frame_00285.png",
+            "frame_00286.png"
+        ],
+        "transcript": "And here I'm taking the 2D figure."
+    },
+    {
+        "id": 124,
+        "start": 484.32,
+        "end": 486.32,
+        "frames": [
+            "frame_00287.png",
+            "frame_00288.png"
+        ],
+        "transcript": "So that's what it is mentioned over here."
+    },
+    {
+        "id": 125,
+        "start": 486.32,
+        "end": 487.84,
+        "frames": [
+            "frame_00289.png",
+            "frame_00290.png"
+        ],
+        "transcript": "Guys, guys, listen carefully."
+    },
+    {
+        "id": 126,
+        "start": 487.84,
+        "end": 499.04,
+        "frames": [
+            "frame_00291.png",
+            "frame_00292.png",
+            "frame_00293.png",
+            "frame_00294.png",
+            "frame_00295.png",
+            "frame_00296.png",
+            "frame_00297.png",
+            "frame_00298.png"
+        ],
+        "transcript": "The angle subtended by an area, the angle subtended by an area, this area, how much angle this area is going to subtend at a point is called solid angle."
+    },
+    {
+        "id": 127,
+        "start": 499.04,
+        "end": 500.88,
+        "frames": [
+            "frame_00299.png",
+            "frame_00300.png"
+        ],
+        "transcript": "At a point is called solid angle."
+    },
+    {
+        "id": 128,
+        "start": 500.88,
+        "end": 501.36,
+        "frames": [
+            "frame_00301.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 129,
+        "start": 501.36,
+        "end": 504.48,
+        "frames": [
+            "frame_00302.png",
+            "frame_00303.png",
+            "frame_00304.png"
+        ],
+        "transcript": "And the angle subtended by an arc."
+    },
+    {
+        "id": 130,
+        "start": 504.48,
+        "end": 510.72,
+        "frames": [
+            "frame_00305.png",
+            "frame_00306.png",
+            "frame_00307.png",
+            "frame_00308.png",
+            "frame_00309.png"
+        ],
+        "transcript": "The angle which is subtended by an arc at a point is called normal angle that we define."
+    },
+    {
+        "id": 131,
+        "start": 510.72,
+        "end": 511.28,
+        "frames": [
+            "frame_00310.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 132,
+        "start": 511.28,
+        "end": 516.96,
+        "frames": [
+            "frame_00311.png",
+            "frame_00312.png",
+            "frame_00313.png",
+            "frame_00314.png",
+            "frame_00315.png"
+        ],
+        "transcript": "That's why I told you in case of a circle, we define that is normal angle."
+    },
+    {
+        "id": 133,
+        "start": 516.96,
+        "end": 523.36,
+        "frames": [
+            "frame_00316.png",
+            "frame_00317.png",
+            "frame_00318.png",
+            "frame_00319.png"
+        ],
+        "transcript": "Here, when it comes to this area, this area is creating this angle over here that is called the solid angle."
+    },
+    {
+        "id": 134,
+        "start": 523.36,
+        "end": 523.92,
+        "frames": [
+            "frame_00320.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 135,
+        "start": 523.92,
+        "end": 527.28,
+        "frames": [
+            "frame_00321.png",
+            "frame_00322.png",
+            "frame_00323.png"
+        ],
+        "transcript": "And its unit is stay radiance."
+    },
+    {
+        "id": 136,
+        "start": 527.28,
+        "end": 527.76,
+        "frames": [
+            "frame_00324.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 137,
+        "start": 527.76,
+        "end": 530.24,
+        "frames": [
+            "frame_00325.png"
+        ],
+        "transcript": "This is the symbol of solid angle."
+    },
+    {
+        "id": 138,
+        "start": 530.24,
+        "end": 530.88,
+        "frames": [
+            "frame_00326.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 139,
+        "start": 530.88,
+        "end": 540.48,
+        "frames": [
+            "frame_00327.png",
+            "frame_00328.png",
+            "frame_00329.png",
+            "frame_00330.png",
+            "frame_00331.png"
+        ],
+        "transcript": "Now, my dear friends, now my dear friends, if you ask me, if you ask me to find this, to find this solid angle."
+    },
+    {
+        "id": 140,
+        "start": 540.48,
+        "end": 541.6,
+        "frames": [
+            "frame_00332.png"
+        ],
+        "transcript": "See guys, see guys."
+    },
+    {
+        "id": 141,
+        "start": 541.6,
+        "end": 543.6,
+        "frames": [
+            "frame_00333.png"
+        ],
+        "transcript": "How do we find this solid angle?"
+    },
+    {
+        "id": 142,
+        "start": 543.6,
+        "end": 547.52,
+        "frames": [
+            "frame_00334.png"
+        ],
+        "transcript": "We simply say, we simply say it is area."
+    },
+    {
+        "id": 143,
+        "start": 547.52,
+        "end": 552.96,
+        "frames": [
+            "frame_00335.png"
+        ],
+        "transcript": "We simply say it is area upon distance square."
+    },
+    {
+        "id": 144,
+        "start": 552.96,
+        "end": 554.96,
+        "frames": [
+            "frame_00336.png"
+        ],
+        "transcript": "Distance square."
+    },
+    {
+        "id": 145,
+        "start": 554.96,
+        "end": 556.32,
+        "frames": [
+            "frame_00337.png",
+            "frame_00338.png"
+        ],
+        "transcript": "Sir, what distance?"
+    },
+    {
+        "id": 146,
+        "start": 556.32,
+        "end": 558.08,
+        "frames": [
+            "frame_00339.png",
+            "frame_00340.png"
+        ],
+        "transcript": "Distance is the radius over here."
+    },
+    {
+        "id": 147,
+        "start": 558.08,
+        "end": 559.6,
+        "frames": [
+            "frame_00341.png",
+            "frame_00342.png"
+        ],
+        "transcript": "Distance is the radius over here."
+    },
+    {
+        "id": 148,
+        "start": 559.6,
+        "end": 560.56,
+        "frames": [
+            "frame_00343.png"
+        ],
+        "transcript": "That is this R."
+    },
+    {
+        "id": 149,
+        "start": 560.56,
+        "end": 561.6,
+        "frames": [
+            "frame_00344.png"
+        ],
+        "transcript": "That is this R."
+    },
+    {
+        "id": 150,
+        "start": 561.6,
+        "end": 566.88,
+        "frames": [
+            "frame_00345.png"
+        ],
+        "transcript": "So if I say you have to calculate solid angle over here, let's suppose this is the area dA."
+    },
+    {
+        "id": 151,
+        "start": 566.88,
+        "end": 570.88,
+        "frames": [
+            "frame_00346.png"
+        ],
+        "transcript": "This much area is D A over here, and this solid angle is D5."
+    },
+    {
+        "id": 152,
+        "start": 570.88,
+        "end": 573.12,
+        "frames": [
+            "frame_00347.png"
+        ],
+        "transcript": "Okay, this solid angle."
+    },
+    {
+        "id": 153,
+        "start": 573.12,
+        "end": 583.04,
+        "frames": [
+            "frame_00348.png",
+            "frame_00349.png"
+        ],
+        "transcript": "So we can say this small solid angle in this particular case, it is going to be simply that is instead of area, I will be writing BA divided by we can say R square."
+    },
+    {
+        "id": 154,
+        "start": 583.04,
+        "end": 587.92,
+        "frames": [
+            "frame_00350.png",
+            "frame_00351.png",
+            "frame_00352.png"
+        ],
+        "transcript": "When you take a 2D figure, you define angle."
+    },
+    {
+        "id": 155,
+        "start": 587.92,
+        "end": 598.8,
+        "frames": [
+            "frame_00353.png",
+            "frame_00354.png",
+            "frame_00355.png",
+            "frame_00356.png",
+            "frame_00357.png",
+            "frame_00358.png",
+            "frame_00359.png",
+            "frame_00360.png",
+            "frame_00361.png"
+        ],
+        "transcript": "When you take a 3D figure over there, if you take some area and then if you join the center, this cone shape structure, angle over here is called the solid angle, d A by R square."
+    },
+    {
+        "id": 156,
+        "start": 598.8,
+        "end": 600.001,
+        "frames": [
+            "frame_00362.png",
+            "frame_00363.png"
+        ],
+        "transcript": "I hope."
+    }
+]

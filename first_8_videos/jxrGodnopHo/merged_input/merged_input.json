@@ -1,0 +1,4740 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 7.809,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png",
+            "frame_00003.png",
+            "frame_00004.png",
+            "frame_00005.png",
+            "frame_00006.png",
+            "frame_00007.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 1,
+        "start": 7.809,
+        "end": 15.0,
+        "frames": [
+            "frame_00008.png",
+            "frame_00009.png",
+            "frame_00010.png",
+            "frame_00011.png",
+            "frame_00012.png",
+            "frame_00013.png"
+        ],
+        "transcript": "[Silent] for 7.39 sec"
+    },
+    {
+        "id": 2,
+        "start": 15.0,
+        "end": 19.2,
+        "frames": [
+            "frame_00014.png",
+            "frame_00015.png"
+        ],
+        "transcript": "Uh we are a bit early, but I guess everyone's here, so we we'll get started."
+    },
+    {
+        "id": 3,
+        "start": 19.2,
+        "end": 29.76,
+        "frames": [
+            "frame_00016.png",
+            "frame_00017.png",
+            "frame_00018.png"
+        ],
+        "transcript": "Uh maybe we'll spend uh the first few minutes to get people a little oriented and actually we we are we are quite curious like what brings people here?"
+    },
+    {
+        "id": 4,
+        "start": 29.76,
+        "end": 31.92,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "Yeah, why wh why are you here?"
+    },
+    {
+        "id": 5,
+        "start": 31.92,
+        "end": 34.96,
+        "frames": [
+            "frame_00020.png"
+        ],
+        "transcript": "Uh what about evals?"
+    },
+    {
+        "id": 6,
+        "start": 34.96,
+        "end": 42.56,
+        "frames": [
+            "frame_00021.png",
+            "frame_00022.png"
+        ],
+        "transcript": "Uh did do you like maybe by a show of hands a few people like have you done evals before?"
+    },
+    {
+        "id": 7,
+        "start": 42.56,
+        "end": 48.0,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "And uh have you struggled with them?"
+    },
+    {
+        "id": 8,
+        "start": 48.0,
+        "end": 49.12,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "Is that was it hard?"
+    },
+    {
+        "id": 9,
+        "start": 49.12,
+        "end": 50.4,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "Maybe by again show of hands."
+    },
+    {
+        "id": 10,
+        "start": 50.4,
+        "end": 58.64,
+        "frames": [
+            "frame_00026.png",
+            "frame_00027.png",
+            "frame_00028.png",
+            "frame_00029.png",
+            "frame_00030.png"
+        ],
+        "transcript": "Um people who have not done evals before, what bring what brings you here?"
+    },
+    {
+        "id": 11,
+        "start": 58.64,
+        "end": 62.24,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "Somebody, anyone wants to volunteer?"
+    },
+    {
+        "id": 12,
+        "start": 62.24,
+        "end": 65.2,
+        "frames": [
+            "frame_00032.png",
+            "frame_00033.png"
+        ],
+        "transcript": "Yeah, feel feel free to raise your hand."
+    },
+    {
+        "id": 13,
+        "start": 65.2,
+        "end": 66.08,
+        "frames": [
+            "frame_00034.png",
+            "frame_00035.png"
+        ],
+        "transcript": "Sorry."
+    },
+    {
+        "id": 14,
+        "start": 66.08,
+        "end": 68.24,
+        "frames": [
+            "frame_00036.png",
+            "frame_00037.png",
+            "frame_00038.png"
+        ],
+        "transcript": "Can I move away from the speaker?"
+    },
+    {
+        "id": 15,
+        "start": 68.24,
+        "end": 69.76,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "A little bit, maybe."
+    },
+    {
+        "id": 16,
+        "start": 69.76,
+        "end": 71.6,
+        "frames": [
+            "frame_00040.png",
+            "frame_00041.png",
+            "frame_00042.png",
+            "frame_00043.png",
+            "frame_00044.png"
+        ],
+        "transcript": "bit. All right, I'll stand on this."
+    },
+    {
+        "id": 17,
+        "start": 71.6,
+        "end": 72.88,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "Trying to understand like how to"
+    },
+    {
+        "id": 18,
+        "start": 72.88,
+        "end": 79.76,
+        "frames": [
+            "frame_00046.png",
+            "frame_00047.png",
+            "frame_00048.png",
+            "frame_00049.png",
+            "frame_00050.png"
+        ],
+        "transcript": "Oh, I I see so so trying to understand how to how to approach evals."
+    },
+    {
+        "id": 19,
+        "start": 79.76,
+        "end": 86.16,
+        "frames": [
+            "frame_00051.png",
+            "frame_00052.png",
+            "frame_00053.png",
+            "frame_00054.png",
+            "frame_00055.png"
+        ],
+        "transcript": "Um, people who have tried before they struggle with what has been uh."
+    },
+    {
+        "id": 20,
+        "start": 86.16,
+        "end": 90.159,
+        "frames": [
+            "frame_00056.png",
+            "frame_00057.png",
+            "frame_00058.png",
+            "frame_00059.png",
+            "frame_00060.png",
+            "frame_00061.png"
+        ],
+        "transcript": "ahead. I think the struggle one is to"
+    },
+    {
+        "id": 21,
+        "start": 90.159,
+        "end": 93.68,
+        "frames": [
+            "frame_00062.png",
+            "frame_00063.png",
+            "frame_00064.png",
+            "frame_00065.png",
+            "frame_00066.png"
+        ],
+        "transcript": "define the metrics that because it's"
+    },
+    {
+        "id": 22,
+        "start": 93.68,
+        "end": 97.68,
+        "frames": [
+            "frame_00067.png",
+            "frame_00068.png",
+            "frame_00069.png",
+            "frame_00070.png",
+            "frame_00071.png"
+        ],
+        "transcript": "hard to like I do situations. So, first"
+    },
+    {
+        "id": 23,
+        "start": 97.68,
+        "end": 99.119,
+        "frames": [
+            "frame_00072.png"
+        ],
+        "transcript": "it's hard to define what's the correct"
+    },
+    {
+        "id": 24,
+        "start": 99.119,
+        "end": 100.799,
+        "frames": [
+            "frame_00073.png"
+        ],
+        "transcript": "answer because it can look in many"
+    },
+    {
+        "id": 25,
+        "start": 100.799,
+        "end": 103.84,
+        "frames": [
+            "frame_00074.png",
+            "frame_00075.png"
+        ],
+        "transcript": "different ways and two is um they are"
+    },
+    {
+        "id": 26,
+        "start": 103.84,
+        "end": 105.68,
+        "frames": [
+            "frame_00076.png"
+        ],
+        "transcript": "end based business questions and then"
+    },
+    {
+        "id": 27,
+        "start": 105.68,
+        "end": 107.36,
+        "frames": [
+            "frame_00077.png"
+        ],
+        "transcript": "you can"
+    },
+    {
+        "id": 28,
+        "start": 107.36,
+        "end": 111.2,
+        "frames": [
+            "frame_00078.png",
+            "frame_00079.png"
+        ],
+        "transcript": "and how do you pragmatically"
+    },
+    {
+        "id": 29,
+        "start": 111.2,
+        "end": 114.72,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "improve it versus I design and I review"
+    },
+    {
+        "id": 30,
+        "start": 114.72,
+        "end": 117.119,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "it and I do it again and I feel like"
+    },
+    {
+        "id": 31,
+        "start": 117.119,
+        "end": 120.159,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "that's still very manual and labor"
+    },
+    {
+        "id": 32,
+        "start": 120.159,
+        "end": 123.2,
+        "frames": [
+            "frame_00083.png"
+        ],
+        "transcript": "intensive to me right"
+    },
+    {
+        "id": 33,
+        "start": 123.2,
+        "end": 125.92,
+        "frames": [
+            "frame_00084.png",
+            "frame_00085.png",
+            "frame_00086.png"
+        ],
+        "transcript": "yeah it's a eval can be labor intensive"
+    },
+    {
+        "id": 34,
+        "start": 125.92,
+        "end": 129.36,
+        "frames": [
+            "frame_00087.png",
+            "frame_00088.png"
+        ],
+        "transcript": "evals can be hard to hard to set up um"
+    },
+    {
+        "id": 35,
+        "start": 129.36,
+        "end": 135.36,
+        "frames": [
+            "frame_00089.png"
+        ],
+        "transcript": "get started with um any other thought."
+    },
+    {
+        "id": 36,
+        "start": 135.36,
+        "end": 141.36,
+        "frames": [
+            "frame_00090.png"
+        ],
+        "transcript": "It's like machine learning is dependent"
+    },
+    {
+        "id": 37,
+        "start": 141.36,
+        "end": 144.16,
+        "frames": [
+            "frame_00091.png"
+        ],
+        "transcript": "upon training data. Agents are depending"
+    },
+    {
+        "id": 38,
+        "start": 144.16,
+        "end": 147.2,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "upon eval to provide feedback from the"
+    },
+    {
+        "id": 39,
+        "start": 147.2,
+        "end": 149.36,
+        "frames": [
+            "frame_00093.png"
+        ],
+        "transcript": "world to let them know whether or not"
+    },
+    {
+        "id": 40,
+        "start": 149.36,
+        "end": 150.8,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "they're getting it right. And clearly"
+    },
+    {
+        "id": 41,
+        "start": 150.8,
+        "end": 152.64,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "it's sophisticated and challenging"
+    },
+    {
+        "id": 42,
+        "start": 152.64,
+        "end": 155.44,
+        "frames": [
+            "frame_00096.png"
+        ],
+        "transcript": "problem. So like how to do science you"
+    },
+    {
+        "id": 43,
+        "start": 155.44,
+        "end": 157.2,
+        "frames": [
+            "frame_00097.png"
+        ],
+        "transcript": "have to have experiments. This is like"
+    },
+    {
+        "id": 44,
+        "start": 157.2,
+        "end": 159.599,
+        "frames": [
+            "frame_00098.png"
+        ],
+        "transcript": "that. How do you experiment? Right. So"
+    },
+    {
+        "id": 45,
+        "start": 159.599,
+        "end": 161.2,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "we are all I'm just saying it's super"
+    },
+    {
+        "id": 46,
+        "start": 161.2,
+        "end": 162.72,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "important. We are all getting pulled"
+    },
+    {
+        "id": 47,
+        "start": 162.72,
+        "end": 164.64,
+        "frames": [
+            "frame_00101.png"
+        ],
+        "transcript": "into the the world of data science and"
+    },
+    {
+        "id": 48,
+        "start": 164.64,
+        "end": 166.879,
+        "frames": [
+            "frame_00102.png"
+        ],
+        "transcript": "machine learning in some ways even if we"
+    },
+    {
+        "id": 49,
+        "start": 166.879,
+        "end": 170.08,
+        "frames": [
+            "frame_00103.png"
+        ],
+        "transcript": "don't want to. Go ahead."
+    },
+    {
+        "id": 50,
+        "start": 170.08,
+        "end": 173.92,
+        "frames": [
+            "frame_00104.png",
+            "frame_00105.png",
+            "frame_00106.png"
+        ],
+        "transcript": "Yes. Sorry. Uh engineering was a part of"
+    },
+    {
+        "id": 51,
+        "start": 173.92,
+        "end": 176.8,
+        "frames": [
+            "frame_00107.png"
+        ],
+        "transcript": "quality assurance team and you know all"
+    },
+    {
+        "id": 52,
+        "start": 176.8,
+        "end": 178.4,
+        "frames": [
+            "frame_00108.png"
+        ],
+        "transcript": "these years people wasn't happy that"
+    },
+    {
+        "id": 53,
+        "start": 178.4,
+        "end": 181.84,
+        "frames": [
+            "frame_00109.png",
+            "frame_00110.png",
+            "frame_00111.png"
+        ],
+        "transcript": "testing testing took I don't know 30% of"
+    },
+    {
+        "id": 54,
+        "start": 181.84,
+        "end": 185.2,
+        "frames": [
+            "frame_00112.png"
+        ],
+        "transcript": "feature development time and now with AI"
+    },
+    {
+        "id": 55,
+        "start": 185.2,
+        "end": 188.4,
+        "frames": [
+            "frame_00113.png"
+        ],
+        "transcript": "I think that validation took 80% of"
+    },
+    {
+        "id": 56,
+        "start": 188.4,
+        "end": 191.12,
+        "frames": [
+            "frame_00114.png"
+        ],
+        "transcript": "feature development time. people even"
+    },
+    {
+        "id": 57,
+        "start": 191.12,
+        "end": 193.68,
+        "frames": [
+            "frame_00115.png"
+        ],
+        "transcript": "more not happy about it and we are"
+    },
+    {
+        "id": 58,
+        "start": 193.68,
+        "end": 197.2,
+        "frames": [
+            "frame_00116.png",
+            "frame_00117.png"
+        ],
+        "transcript": "trying to find ways also to to find a"
+    },
+    {
+        "id": 59,
+        "start": 197.2,
+        "end": 199.68,
+        "frames": [
+            "frame_00118.png"
+        ],
+        "transcript": "shortcuts but it seems that it's not"
+    },
+    {
+        "id": 60,
+        "start": 199.68,
+        "end": 201.92,
+        "frames": [
+            "frame_00119.png",
+            "frame_00120.png"
+        ],
+        "transcript": "always possible because each case is so"
+    },
+    {
+        "id": 61,
+        "start": 201.92,
+        "end": 204.959,
+        "frames": [
+            "frame_00121.png"
+        ],
+        "transcript": "unique that you just can't to reuse some"
+    },
+    {
+        "id": 62,
+        "start": 204.959,
+        "end": 207.2,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "previous works and you have to create"
+    },
+    {
+        "id": 63,
+        "start": 207.2,
+        "end": 209.36,
+        "frames": [
+            "frame_00123.png"
+        ],
+        "transcript": "many things from scratch on different"
+    },
+    {
+        "id": 64,
+        "start": 209.36,
+        "end": 213.28,
+        "frames": [
+            "frame_00124.png"
+        ],
+        "transcript": "levels and and because of this unclear"
+    },
+    {
+        "id": 65,
+        "start": 213.28,
+        "end": 216.56,
+        "frames": [
+            "frame_00125.png",
+            "frame_00126.png",
+            "frame_00127.png"
+        ],
+        "transcript": "nature pro probable nature of evaluation"
+    },
+    {
+        "id": 66,
+        "start": 216.56,
+        "end": 220.56,
+        "frames": [
+            "frame_00128.png"
+        ],
+        "transcript": "it's every time it's such a"
+    },
+    {
+        "id": 67,
+        "start": 220.56,
+        "end": 225.599,
+        "frames": [
+            "frame_00129.png",
+            "frame_00130.png",
+            "frame_00131.png"
+        ],
+        "transcript": "optimized way to do it,"
+    },
+    {
+        "id": 68,
+        "start": 225.599,
+        "end": 229.44,
+        "frames": [
+            "frame_00132.png"
+        ],
+        "transcript": "Right, so basically um you said speak up for speak up."
+    },
+    {
+        "id": 69,
+        "start": 229.44,
+        "end": 231.36,
+        "frames": [
+            "frame_00133.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 70,
+        "start": 231.36,
+        "end": 244.96,
+        "frames": [
+            "frame_00134.png",
+            "frame_00135.png",
+            "frame_00136.png"
+        ],
+        "transcript": "Um Yeah, so so basically like um it's custom sub subjective eval, like for your specific use case, you have to just copy paste something that exists."
+    },
+    {
+        "id": 71,
+        "start": 244.96,
+        "end": 247.44,
+        "frames": [
+            "frame_00137.png",
+            "frame_00138.png"
+        ],
+        "transcript": "Much like tests, we used to do testing."
+    },
+    {
+        "id": 72,
+        "start": 247.44,
+        "end": 249.52,
+        "frames": [
+            "frame_00139.png"
+        ],
+        "transcript": "Some people did testing, some didn't."
+    },
+    {
+        "id": 73,
+        "start": 249.52,
+        "end": 253.68,
+        "frames": [
+            "frame_00140.png"
+        ],
+        "transcript": "But now for for in the world of AI, everyone has to do evals."
+    },
+    {
+        "id": 74,
+        "start": 253.68,
+        "end": 256.0,
+        "frames": [
+            "frame_00141.png"
+        ],
+        "transcript": "Everyone is spending a lot of time doing evals."
+    },
+    {
+        "id": 75,
+        "start": 256.0,
+        "end": 258.0,
+        "frames": [
+            "frame_00142.png"
+        ],
+        "transcript": "Uh the best practices don't exist."
+    },
+    {
+        "id": 76,
+        "start": 258.0,
+        "end": 259.92,
+        "frames": [
+            "frame_00143.png"
+        ],
+        "transcript": "So I go ahead, please."
+    },
+    {
+        "id": 77,
+        "start": 259.92,
+        "end": 276.32,
+        "frames": [
+            "frame_00144.png",
+            "frame_00145.png"
+        ],
+        "transcript": "I was just thinking that uh looking for rotor, and especially for evaluating like a role right now, like we will uh evaluate."
+    },
+    {
+        "id": 78,
+        "start": 276.32,
+        "end": 278.0,
+        "frames": [
+            "frame_00146.png"
+        ],
+        "transcript": "Right."
+    },
+    {
+        "id": 79,
+        "start": 278.0,
+        "end": 281.44,
+        "frames": [
+            "frame_00147.png"
+        ],
+        "transcript": "Uh there are like two aspects of evals."
+    },
+    {
+        "id": 80,
+        "start": 281.44,
+        "end": 283.52,
+        "frames": [
+            "frame_00148.png",
+            "frame_00149.png"
+        ],
+        "transcript": "There's the synthetic data and there are the metrics."
+    },
+    {
+        "id": 81,
+        "start": 283.52,
+        "end": 287.28,
+        "frames": [
+            "frame_00150.png"
+        ],
+        "transcript": "Metrics are checking, synthetic data is testing it."
+    },
+    {
+        "id": 82,
+        "start": 287.28,
+        "end": 289.52,
+        "frames": [
+            "frame_00151.png"
+        ],
+        "transcript": "Uh how what does synthetic data do?"
+    },
+    {
+        "id": 83,
+        "start": 289.52,
+        "end": 292.96,
+        "frames": [
+            "frame_00152.png"
+        ],
+        "transcript": "How do you generate good synthetic data to test and evaluate?"
+    },
+    {
+        "id": 84,
+        "start": 292.96,
+        "end": 297.68,
+        "frames": [
+            "frame_00153.png"
+        ],
+        "transcript": "goes along with the first comment. We've"
+    },
+    {
+        "id": 85,
+        "start": 297.68,
+        "end": 302.4,
+        "frames": [
+            "frame_00154.png"
+        ],
+        "transcript": "been trying on element models and use to"
+    },
+    {
+        "id": 86,
+        "start": 302.4,
+        "end": 304.72,
+        "frames": [
+            "frame_00155.png",
+            "frame_00156.png"
+        ],
+        "transcript": "evaluate but"
+    },
+    {
+        "id": 87,
+        "start": 304.72,
+        "end": 306.639,
+        "frames": [
+            "frame_00157.png"
+        ],
+        "transcript": "it's not accurate. So we have to do this"
+    },
+    {
+        "id": 88,
+        "start": 306.639,
+        "end": 310.08,
+        "frames": [
+            "frame_00158.png"
+        ],
+        "transcript": "manually and hoping to learn that what"
+    },
+    {
+        "id": 89,
+        "start": 310.08,
+        "end": 313.759,
+        "frames": [
+            "frame_00159.png",
+            "frame_00160.png"
+        ],
+        "transcript": "are some right"
+    },
+    {
+        "id": 90,
+        "start": 313.759,
+        "end": 323.44,
+        "frames": [
+            "frame_00161.png"
+        ],
+        "transcript": "Right, like automatic evals are are something everybody desires because you don't want to like human beings to sit and do it."
+    },
+    {
+        "id": 91,
+        "start": 323.44,
+        "end": 326.72,
+        "frames": [
+            "frame_00162.png",
+            "frame_00163.png"
+        ],
+        "transcript": "Uh, but the options that are are somewhat limited."
+    },
+    {
+        "id": 92,
+        "start": 326.72,
+        "end": 331.28,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "Typically, for most things, you can lean on AI to do human tasks."
+    },
+    {
+        "id": 93,
+        "start": 331.28,
+        "end": 335.68,
+        "frames": [
+            "frame_00165.png",
+            "frame_00166.png",
+            "frame_00167.png"
+        ],
+        "transcript": "For for some reason, evals tend to be hard for LMS to do, right?"
+    },
+    {
+        "id": 94,
+        "start": 335.68,
+        "end": 339.2,
+        "frames": [
+            "frame_00168.png"
+        ],
+        "transcript": "Um so I guess that's that makes a lot of sense."
+    },
+    {
+        "id": 95,
+        "start": 339.2,
+        "end": 342.48,
+        "frames": [
+            "frame_00169.png"
+        ],
+        "transcript": "I we're not gonna solve all your eval problems here."
+    },
+    {
+        "id": 96,
+        "start": 342.48,
+        "end": 350.32,
+        "frames": [
+            "frame_00170.png",
+            "frame_00171.png"
+        ],
+        "transcript": "I think this is uh honestly a very hard research area that we would probably continue working on in the next few months."
+    },
+    {
+        "id": 97,
+        "start": 350.32,
+        "end": 359.12,
+        "frames": [
+            "frame_00172.png",
+            "frame_00173.png"
+        ],
+        "transcript": "Um but David and I were at Google for for over a decade, and uh we have been doing evalu for for a long time."
+    },
+    {
+        "id": 98,
+        "start": 359.12,
+        "end": 364.08,
+        "frames": [
+            "frame_00174.png"
+        ],
+        "transcript": "Uh we've dealt with stochastic application, we both search, we were building search."
+    },
+    {
+        "id": 99,
+        "start": 364.08,
+        "end": 374.32,
+        "frames": [
+            "frame_00175.png",
+            "frame_00176.png"
+        ],
+        "transcript": "Search was also similarly stochastic, and most of uh the core effort in Google was to do a good job of evaluating where we are and proving it."
+    },
+    {
+        "id": 100,
+        "start": 374.32,
+        "end": 378.48,
+        "frames": [
+            "frame_00177.png",
+            "frame_00178.png"
+        ],
+        "transcript": "And some of the techniques we learned at Google we are bringing in here."
+    },
+    {
+        "id": 101,
+        "start": 378.48,
+        "end": 389.76,
+        "frames": [
+            "frame_00179.png"
+        ],
+        "transcript": "Um so we've built a product around it, a bunch of technology around it, but really the biggest takeaway I want people to have is the methodology and the stuff that we've learned."
+    },
+    {
+        "id": 102,
+        "start": 389.76,
+        "end": 392.64,
+        "frames": [
+            "frame_00180.png"
+        ],
+        "transcript": "Uh, whatever manifestation it takes, right?"
+    },
+    {
+        "id": 103,
+        "start": 392.64,
+        "end": 398.24,
+        "frames": [
+            "frame_00181.png"
+        ],
+        "transcript": "So I'm hoping that you get to play with some of our stuff, but also to learn some good ideas."
+    },
+    {
+        "id": 104,
+        "start": 398.24,
+        "end": 401.36,
+        "frames": [
+            "frame_00182.png",
+            "frame_00183.png"
+        ],
+        "transcript": "Um David, you wanna add?"
+    },
+    {
+        "id": 105,
+        "start": 401.36,
+        "end": 407.2,
+        "frames": [
+            "frame_00184.png"
+        ],
+        "transcript": "Yeah, I mean one thing I'll add is uh at Google we used to call this quality, and evals was part of it."
+    },
+    {
+        "id": 106,
+        "start": 407.2,
+        "end": 412.72,
+        "frames": [
+            "frame_00185.png"
+        ],
+        "transcript": "And that there was this constant uh like benchmarking and you know, exhausting a benchmark and then moving on to the next benchmark."
+    },
+    {
+        "id": 107,
+        "start": 412.72,
+        "end": 424.4,
+        "frames": [
+            "frame_00186.png",
+            "frame_00187.png",
+            "frame_00188.png"
+        ],
+        "transcript": "Whenever we work with clients right now, we we take a similar approach, but like mentioned so much of evals is just good methodology, setting up benchmarks, trying to figure out the metrics that work, calibrating metrics with humans, calibrating metrics with human data."
+    },
+    {
+        "id": 108,
+        "start": 424.4,
+        "end": 428.0,
+        "frames": [
+            "frame_00189.png"
+        ],
+        "transcript": "Uh what I'm trying to say is it can get arbitrarily complex like evaluation."
+    },
+    {
+        "id": 109,
+        "start": 428.0,
+        "end": 430.56,
+        "frames": [
+            "frame_00190.png"
+        ],
+        "transcript": "do it and then you're done it's it's"
+    },
+    {
+        "id": 110,
+        "start": 430.56,
+        "end": 431.92,
+        "frames": [
+            "frame_00191.png"
+        ],
+        "transcript": "It's just part of how you do development."
+    },
+    {
+        "id": 111,
+        "start": 431.92,
+        "end": 436.08,
+        "frames": [
+            "frame_00192.png",
+            "frame_00193.png"
+        ],
+        "transcript": "Uh everybody development."
+    },
+    {
+        "id": 112,
+        "start": 436.08,
+        "end": 443.68,
+        "frames": [
+            "frame_00194.png"
+        ],
+        "transcript": "But I can just talk about some of the ideas or methodologies that make sense, like how to think about your metrics."
+    },
+    {
+        "id": 113,
+        "start": 443.68,
+        "end": 445.919,
+        "frames": [
+            "frame_00195.png"
+        ],
+        "transcript": "think of like four metrics so I would"
+    },
+    {
+        "id": 114,
+        "start": 445.919,
+        "end": 447.919,
+        "frames": [
+            "frame_00196.png"
+        ],
+        "transcript": "challenge you search had 300 metrics so"
+    },
+    {
+        "id": 115,
+        "start": 447.919,
+        "end": 451.36,
+        "frames": [
+            "frame_00197.png"
+        ],
+        "transcript": "So I can start to think about how can you expand the scope of how you're doing this work."
+    },
+    {
+        "id": 116,
+        "start": 451.36,
+        "end": 455.44,
+        "frames": [
+            "frame_00198.png"
+        ],
+        "transcript": "Uh and part of what we're doing is trying to build technologies that make it easy to do."
+    },
+    {
+        "id": 117,
+        "start": 455.44,
+        "end": 459.12,
+        "frames": [
+            "frame_00199.png",
+            "frame_00200.png"
+        ],
+        "transcript": "benchmarks that are interesting how to"
+    },
+    {
+        "id": 118,
+        "start": 459.12,
+        "end": 462.96,
+        "frames": [
+            "frame_00201.png"
+        ],
+        "transcript": "Um we can talk about this as we go."
+    },
+    {
+        "id": 119,
+        "start": 462.96,
+        "end": 465.12,
+        "frames": [
+            "frame_00202.png"
+        ],
+        "transcript": "Uh, this workshop we'll mostly hand on."
+    },
+    {
+        "id": 120,
+        "start": 465.12,
+        "end": 467.52,
+        "frames": [
+            "frame_00203.png"
+        ],
+        "transcript": "Uh we'll show a few slides and then we'll dive into the code."
+    },
+    {
+        "id": 121,
+        "start": 467.52,
+        "end": 478.72,
+        "frames": [
+            "frame_00204.png"
+        ],
+        "transcript": "I think the best way to think as we go, we'd love to just pass it on and people have uh again different parts of the clients."
+    },
+    {
+        "id": 122,
+        "start": 478.72,
+        "end": 481.76,
+        "frames": [
+            "frame_00205.png",
+            "frame_00206.png"
+        ],
+        "transcript": "For some people have metrics and just development metrics."
+    },
+    {
+        "id": 123,
+        "start": 481.76,
+        "end": 485.68,
+        "frames": [
+            "frame_00207.png"
+        ],
+        "transcript": "Uh we work to clients that have metrics, but they want to for example correlate them to user."
+    },
+    {
+        "id": 124,
+        "start": 485.68,
+        "end": 487.84,
+        "frames": [
+            "frame_00208.png"
+        ],
+        "transcript": "They have a lot of thumbs up comes down to that."
+    },
+    {
+        "id": 125,
+        "start": 487.84,
+        "end": 490.32,
+        "frames": [
+            "frame_00209.png"
+        ],
+        "transcript": "Um that goes all the way into feedback loops."
+    },
+    {
+        "id": 126,
+        "start": 490.32,
+        "end": 496.32,
+        "frames": [
+            "frame_00210.png"
+        ],
+        "transcript": "Like it's not just one thing related to testing, it goes all the way into your online system and your feedback loops and all that."
+    },
+    {
+        "id": 127,
+        "start": 496.32,
+        "end": 500.08,
+        "frames": [
+            "frame_00211.png",
+            "frame_00212.png",
+            "frame_00213.png"
+        ],
+        "transcript": "So hopefully a lot of the mental models that will help you kind of keep that."
+    },
+    {
+        "id": 128,
+        "start": 500.08,
+        "end": 505.04,
+        "frames": [
+            "frame_00214.png",
+            "frame_00215.png",
+            "frame_00216.png"
+        ],
+        "transcript": "Um the Slack channel and uh workshop dash metrics."
+    },
+    {
+        "id": 129,
+        "start": 505.04,
+        "end": 505.52,
+        "frames": [
+            "frame_00217.png"
+        ],
+        "transcript": "Uh uh."
+    },
+    {
+        "id": 130,
+        "start": 505.52,
+        "end": 513.04,
+        "frames": [
+            "frame_00218.png",
+            "frame_00219.png"
+        ],
+        "transcript": "So you can join there on the Slack and then we'll just be posting things and then we can have discussions and continue the comments uh even after the uh the workshop."
+    },
+    {
+        "id": 131,
+        "start": 513.04,
+        "end": 523.28,
+        "frames": [
+            "frame_00220.png"
+        ],
+        "transcript": "And uh the second one is uh uh we have a document that will have all the steps uh of the workshop, uh all the places where you can get the code, where you can get the sheet."
+    },
+    {
+        "id": 132,
+        "start": 523.28,
+        "end": 525.52,
+        "frames": [
+            "frame_00221.png",
+            "frame_00222.png"
+        ],
+        "transcript": "Just go with pie.ai slash workshop."
+    },
+    {
+        "id": 133,
+        "start": 525.52,
+        "end": 527.04,
+        "frames": [
+            "frame_00223.png"
+        ],
+        "transcript": "You will land in a Google Doc."
+    },
+    {
+        "id": 134,
+        "start": 527.04,
+        "end": 528.56,
+        "frames": [
+            "frame_00224.png"
+        ],
+        "transcript": "Uh so there's a lot of links."
+    },
+    {
+        "id": 135,
+        "start": 528.56,
+        "end": 532.16,
+        "frames": [
+            "frame_00225.png",
+            "frame_00226.png"
+        ],
+        "transcript": "The Google Doc also has a link to the slide deck we're presenting, so you can have it."
+    },
+    {
+        "id": 136,
+        "start": 532.16,
+        "end": 535.68,
+        "frames": [
+            "frame_00227.png"
+        ],
+        "transcript": "We'll keep it online even after the workshop so you guys can reference it."
+    },
+    {
+        "id": 137,
+        "start": 535.68,
+        "end": 540.72,
+        "frames": [
+            "frame_00228.png"
+        ],
+        "transcript": "Um get started to keep you guys some time and maximize sort of coding time."
+    },
+    {
+        "id": 138,
+        "start": 540.72,
+        "end": 545.04,
+        "frames": [
+            "frame_00229.png"
+        ],
+        "transcript": "Yeah, I uh there are four of us, a couple of other people will just walk around."
+    },
+    {
+        "id": 139,
+        "start": 545.04,
+        "end": 550.8,
+        "frames": [
+            "frame_00230.png",
+            "frame_00231.png",
+            "frame_00232.png",
+            "frame_00233.png"
+        ],
+        "transcript": "If you guys get stuck on any step, if you're having trouble with anything, just raise your hands and then we'll come and come over."
+    },
+    {
+        "id": 140,
+        "start": 550.8,
+        "end": 559.92,
+        "frames": [
+            "frame_00234.png",
+            "frame_00235.png",
+            "frame_00236.png",
+            "frame_00237.png"
+        ],
+        "transcript": "Um I'll give you a very like maybe five-minute uh quick blurb, show a quick demo, and then get started."
+    },
+    {
+        "id": 141,
+        "start": 559.92,
+        "end": 571.36,
+        "frames": [
+            "frame_00238.png",
+            "frame_00239.png",
+            "frame_00240.png",
+            "frame_00241.png"
+        ],
+        "transcript": "Um I think we went went through this, but basically, like most people start with wipe testing."
+    },
+    {
+        "id": 142,
+        "start": 571.36,
+        "end": 574.64,
+        "frames": [
+            "frame_00242.png"
+        ],
+        "transcript": "That's like you know, try it out, see how it works, change prompts."
+    },
+    {
+        "id": 143,
+        "start": 574.64,
+        "end": 577.68,
+        "frames": [
+            "frame_00243.png",
+            "frame_00244.png"
+        ],
+        "transcript": "And honestly, for many applications, you can go pretty far with just that."
+    },
+    {
+        "id": 144,
+        "start": 577.68,
+        "end": 581.84,
+        "frames": [
+            "frame_00245.png"
+        ],
+        "transcript": "Like I think AI AIs have become much quite good."
+    },
+    {
+        "id": 145,
+        "start": 581.84,
+        "end": 588.88,
+        "frames": [
+            "frame_00246.png"
+        ],
+        "transcript": "I think agent systems, as you uh you were saying, agent systems are are more complex because of multiple steps, things fail more often."
+    },
+    {
+        "id": 146,
+        "start": 588.88,
+        "end": 590.8,
+        "frames": [
+            "frame_00247.png",
+            "frame_00248.png"
+        ],
+        "transcript": "But wipe testing gets you pretty far."
+    },
+    {
+        "id": 147,
+        "start": 590.8,
+        "end": 593.28,
+        "frames": [
+            "frame_00249.png"
+        ],
+        "transcript": "Human evals are expensive typically."
+    },
+    {
+        "id": 148,
+        "start": 593.28,
+        "end": 597.76,
+        "frames": [
+            "frame_00250.png",
+            "frame_00251.png"
+        ],
+        "transcript": "Most companies don't bother setting up human radar evalves."
+    },
+    {
+        "id": 149,
+        "start": 597.76,
+        "end": 600.4,
+        "frames": [
+            "frame_00252.png"
+        ],
+        "transcript": "Some do, some have subject matter experts."
+    },
+    {
+        "id": 150,
+        "start": 600.4,
+        "end": 604.56,
+        "frames": [
+            "frame_00253.png"
+        ],
+        "transcript": "Uh, code-based evals is where I think the majority of the people are spending time."
+    },
+    {
+        "id": 151,
+        "start": 604.56,
+        "end": 608.96,
+        "frames": [
+            "frame_00254.png"
+        ],
+        "transcript": "They're writing some sort of a code to test some verifiable things that they can."
+    },
+    {
+        "id": 152,
+        "start": 608.96,
+        "end": 617.28,
+        "frames": [
+            "frame_00255.png",
+            "frame_00256.png"
+        ],
+        "transcript": "And people are moving into natural language, like LM as a judge type things, where it gets this is not a very good task."
+    },
+    {
+        "id": 153,
+        "start": 617.28,
+        "end": 622.08,
+        "frames": [
+            "frame_00257.png",
+            "frame_00258.png",
+            "frame_00259.png"
+        ],
+        "transcript": "We'll get into some of it, like for typical decoder models, the AI models."
+    },
+    {
+        "id": 154,
+        "start": 622.08,
+        "end": 632.4,
+        "frames": [
+            "frame_00260.png"
+        ],
+        "transcript": "And so you kind of have to fight against um that the these models are designed to be creative, they're designed to be um that's not what you want from a judge, uh, typically."
+    },
+    {
+        "id": 155,
+        "start": 632.4,
+        "end": 645.36,
+        "frames": [
+            "frame_00261.png",
+            "frame_00262.png",
+            "frame_00263.png",
+            "frame_00264.png"
+        ],
+        "transcript": "This the scoring system, uh the scoring system is this idea that you you you're not trying hard to build a comprehensive set of metrics from the beginning, you start with some correlated signals."
+    },
+    {
+        "id": 156,
+        "start": 645.36,
+        "end": 652.4,
+        "frames": [
+            "frame_00265.png"
+        ],
+        "transcript": "Maybe you start with five, ten signals that you know for a fact are correlated with goodness."
+    },
+    {
+        "id": 157,
+        "start": 652.4,
+        "end": 668.88,
+        "frames": [
+            "frame_00266.png",
+            "frame_00267.png",
+            "frame_00268.png",
+            "frame_00269.png",
+            "frame_00270.png"
+        ],
+        "transcript": "The very simple signal you can easily derive and every time you build upon those as you see problems, as you s as you debug, and and then you test your application works well or not, you learn from it, you build your application, you measure it again."
+    },
+    {
+        "id": 158,
+        "start": 668.88,
+        "end": 672.96,
+        "frames": [
+            "frame_00271.png"
+        ],
+        "transcript": "So that makes it a much more of a feedback loop type process."
+    },
+    {
+        "id": 159,
+        "start": 672.96,
+        "end": 676.48,
+        "frames": [
+            "frame_00272.png"
+        ],
+        "transcript": "Uh that's the thing that we're trying to introduce in terms of methodology."
+    },
+    {
+        "id": 160,
+        "start": 676.48,
+        "end": 679.68,
+        "frames": [
+            "frame_00273.png",
+            "frame_00274.png",
+            "frame_00275.png"
+        ],
+        "transcript": "Uh the thing that David was saying, yeah."
+    },
+    {
+        "id": 161,
+        "start": 679.68,
+        "end": 682.4,
+        "frames": [
+            "frame_00276.png"
+        ],
+        "transcript": "One thing I'll add to that is like there's no right or wrong."
+    },
+    {
+        "id": 162,
+        "start": 682.4,
+        "end": 684.64,
+        "frames": [
+            "frame_00277.png"
+        ],
+        "transcript": "Like vibe testing actually gets you a very long way."
+    },
+    {
+        "id": 163,
+        "start": 684.64,
+        "end": 686.8,
+        "frames": [
+            "frame_00278.png",
+            "frame_00279.png"
+        ],
+        "transcript": "Um sorry, we we have a lot of feedback."
+    },
+    {
+        "id": 164,
+        "start": 686.8,
+        "end": 690.8,
+        "frames": [
+            "frame_00280.png"
+        ],
+        "transcript": "Um you want to turn that off and then we can switch the mic as well."
+    },
+    {
+        "id": 165,
+        "start": 690.8,
+        "end": 695.76,
+        "frames": [
+            "frame_00281.png"
+        ],
+        "transcript": "Yeah, so just say like it it's there's no right or wrong."
+    },
+    {
+        "id": 166,
+        "start": 695.76,
+        "end": 699.84,
+        "frames": [
+            "frame_00282.png"
+        ],
+        "transcript": "A lot of people use tracing and just monitor traces."
+    },
+    {
+        "id": 167,
+        "start": 699.84,
+        "end": 703.76,
+        "frames": [
+            "frame_00283.png",
+            "frame_00284.png"
+        ],
+        "transcript": "I think as your system scales, you do want to get a little bit more sophisticated."
+    },
+    {
+        "id": 168,
+        "start": 703.76,
+        "end": 707.04,
+        "frames": [
+            "frame_00285.png",
+            "frame_00286.png"
+        ],
+        "transcript": "Uh so you start to learn those things in order of complexity."
+    },
+    {
+        "id": 169,
+        "start": 707.04,
+        "end": 709.2,
+        "frames": [
+            "frame_00287.png",
+            "frame_00288.png"
+        ],
+        "transcript": "That's a lot of how we talk about quality jobs."
+    },
+    {
+        "id": 170,
+        "start": 709.2,
+        "end": 714.56,
+        "frames": [
+            "frame_00289.png"
+        ],
+        "transcript": "This idea of like those complex things, but they give some amount of investment, uh, some amount of return."
+    },
+    {
+        "id": 171,
+        "start": 714.56,
+        "end": 722.08,
+        "frames": [
+            "frame_00290.png",
+            "frame_00291.png"
+        ],
+        "transcript": "So it's like a little bit of an RI, something like that, and as our system scales they become impractical and then just learn more techniques."
+    },
+    {
+        "id": 172,
+        "start": 722.08,
+        "end": 725.12,
+        "frames": [
+            "frame_00292.png"
+        ],
+        "transcript": "So that's not a statement that like none of these things are good or bad."
+    },
+    {
+        "id": 173,
+        "start": 725.12,
+        "end": 728.24,
+        "frames": [
+            "frame_00293.png"
+        ],
+        "transcript": "So I think these things are scrolls in our toolbox."
+    },
+    {
+        "id": 174,
+        "start": 728.24,
+        "end": 739.6,
+        "frames": [
+            "frame_00294.png",
+            "frame_00295.png"
+        ],
+        "transcript": "But eventually what you really want is a scoring system now how it kind of judges, but like there's one thing to get away with, like just keep playing entire tools and with increasing levels of substitution."
+    },
+    {
+        "id": 175,
+        "start": 739.6,
+        "end": 743.36,
+        "frames": [
+            "frame_00296.png"
+        ],
+        "transcript": "You get probably to a system that will look like the one we'll develop today."
+    },
+    {
+        "id": 176,
+        "start": 743.36,
+        "end": 750.72,
+        "frames": [
+            "frame_00297.png",
+            "frame_00298.png"
+        ],
+        "transcript": "Um, yeah, and as David was saying, like um evals are such such an investment."
+    },
+    {
+        "id": 177,
+        "start": 750.72,
+        "end": 754.56,
+        "frames": [
+            "frame_00299.png",
+            "frame_00300.png",
+            "frame_00301.png"
+        ],
+        "transcript": "So Mike might ask, like, well, why am I spending so much time on just evals?"
+    },
+    {
+        "id": 178,
+        "start": 754.56,
+        "end": 755.52,
+        "frames": [
+            "frame_00302.png"
+        ],
+        "transcript": "Why am I not building?"
+    },
+    {
+        "id": 179,
+        "start": 755.52,
+        "end": 768.56,
+        "frames": [
+            "frame_00303.png",
+            "frame_00304.png",
+            "frame_00305.png"
+        ],
+        "transcript": "And I think one of the things that that was core to Google, and I think we this industry is going to adopt this over time, is that evals are actually the only place you're going to spend most of your time because that's where domain knowledge is going to live."
+    },
+    {
+        "id": 180,
+        "start": 768.56,
+        "end": 770.96,
+        "frames": [
+            "frame_00306.png",
+            "frame_00307.png"
+        ],
+        "transcript": "Everything else was just work off of those evals."
+    },
+    {
+        "id": 181,
+        "start": 770.96,
+        "end": 777.36,
+        "frames": [
+            "frame_00308.png",
+            "frame_00309.png",
+            "frame_00310.png",
+            "frame_00311.png",
+            "frame_00312.png"
+        ],
+        "transcript": "And so um so for example, if you have really good evals, you don't have to write prompts."
+    },
+    {
+        "id": 182,
+        "start": 777.36,
+        "end": 784.96,
+        "frames": [
+            "frame_00313.png"
+        ],
+        "transcript": "You can write like you can find problems and use meta prompts or optimizers like DSPi and others to improve your prompts yourself."
+    },
+    {
+        "id": 183,
+        "start": 784.96,
+        "end": 792.16,
+        "frames": [
+            "frame_00314.png",
+            "frame_00315.png",
+            "frame_00316.png",
+            "frame_00317.png"
+        ],
+        "transcript": "You can filter out synthetic data and then use that for fine-tuning if you're really interested in fine-tuning or reinforcement learning."
+    },
+    {
+        "id": 184,
+        "start": 792.16,
+        "end": 794.72,
+        "frames": [
+            "frame_00318.png"
+        ],
+        "transcript": "But you can also use these techniques online, right?"
+    },
+    {
+        "id": 185,
+        "start": 794.72,
+        "end": 802.24,
+        "frames": [
+            "frame_00319.png",
+            "frame_00320.png",
+            "frame_00321.png",
+            "frame_00322.png",
+            "frame_00323.png",
+            "frame_00324.png"
+        ],
+        "transcript": "One of the things that you're going to test to try today is a very simple but very effective technique that almost all big labs use."
+    },
+    {
+        "id": 186,
+        "start": 802.24,
+        "end": 810.16,
+        "frames": [
+            "frame_00325.png",
+            "frame_00326.png"
+        ],
+        "transcript": "Um Google used it extensively, which is the the idea that you crank up the temperature, you generate a bunch of responses instead of just one response."
+    },
+    {
+        "id": 187,
+        "start": 810.16,
+        "end": 818.24,
+        "frames": [
+            "frame_00327.png",
+            "frame_00328.png",
+            "frame_00329.png"
+        ],
+        "transcript": "You can think of this as online reinforcement learning, generate four or five responses, and then score those responses online and see which one's the best one."
+    },
+    {
+        "id": 188,
+        "start": 818.24,
+        "end": 824.64,
+        "frames": [
+            "frame_00330.png"
+        ],
+        "transcript": "And you get a pretty decent lift just by doing this, like without actually doing any changes to your prompts or models and so on."
+    },
+    {
+        "id": 189,
+        "start": 824.64,
+        "end": 830.56,
+        "frames": [
+            "frame_00331.png"
+        ],
+        "transcript": "So that these are the kinds of things you can do with when when you have a really good scoring system that you can lean on."
+    },
+    {
+        "id": 190,
+        "start": 830.56,
+        "end": 833.44,
+        "frames": [
+            "frame_00332.png",
+            "frame_00333.png"
+        ],
+        "transcript": "So you get to try some of these techniques today."
+    },
+    {
+        "id": 191,
+        "start": 833.44,
+        "end": 838.88,
+        "frames": [
+            "frame_00334.png",
+            "frame_00335.png"
+        ],
+        "transcript": "Um but but the key point is don't think of evals as testing in the classic sense."
+    },
+    {
+        "id": 192,
+        "start": 838.88,
+        "end": 842.24,
+        "frames": [
+            "frame_00336.png",
+            "frame_00337.png",
+            "frame_00338.png"
+        ],
+        "transcript": "Think of these as the primary place where domain knowledge lives."
+    },
+    {
+        "id": 193,
+        "start": 842.24,
+        "end": 855.36,
+        "frames": [
+            "frame_00339.png",
+            "frame_00340.png",
+            "frame_00341.png",
+            "frame_00342.png",
+            "frame_00343.png"
+        ],
+        "transcript": "Um and then and then one of one of the things like that I think um one of the attendees was pointing out is that tip right now, at this point in the AI industry, we have figured out a handful of standard evals."
+    },
+    {
+        "id": 194,
+        "start": 855.36,
+        "end": 860.08,
+        "frames": [
+            "frame_00344.png"
+        ],
+        "transcript": "Like you can think of simple helpfulness, harmfulness, hallucinations."
+    },
+    {
+        "id": 195,
+        "start": 860.08,
+        "end": 863.36,
+        "frames": [
+            "frame_00345.png",
+            "frame_00346.png"
+        ],
+        "transcript": "And that doesn't really get you far enough."
+    },
+    {
+        "id": 196,
+        "start": 863.36,
+        "end": 867.92,
+        "frames": [
+            "frame_00347.png"
+        ],
+        "transcript": "That's good enough to just sort of do a guardrail and make sure you're not doing anything wrong."
+    },
+    {
+        "id": 197,
+        "start": 867.92,
+        "end": 871.6,
+        "frames": [
+            "frame_00348.png"
+        ],
+        "transcript": "But we are we're moving into the world where we want to build really good."
+    },
+    {
+        "id": 198,
+        "start": 871.6,
+        "end": 878.8,
+        "frames": [
+            "frame_00349.png"
+        ],
+        "transcript": "Like, for example, if you're trying to build a trip line, you you you're curious about like, you know, how how to make that tip plan really be perfect."
+    },
+    {
+        "id": 199,
+        "start": 878.8,
+        "end": 883.28,
+        "frames": [
+            "frame_00350.png"
+        ],
+        "transcript": "Like one of the things I I really hate about trip-lans, if they're too like not interesting enough."
+    },
+    {
+        "id": 200,
+        "start": 883.28,
+        "end": 886.0,
+        "frames": [
+            "frame_00351.png",
+            "frame_00352.png"
+        ],
+        "transcript": "I'm looking at a trip-line, I want to be excited about this place."
+    },
+    {
+        "id": 201,
+        "start": 886.0,
+        "end": 891.36,
+        "frames": [
+            "frame_00353.png"
+        ],
+        "transcript": "Typically, when LLMs give me a trip-plan, it's a very kind of very planish, right?"
+    },
+    {
+        "id": 202,
+        "start": 891.36,
+        "end": 898.8,
+        "frames": [
+            "frame_00354.png",
+            "frame_00355.png"
+        ],
+        "transcript": "So now you're trying to build these sort of nuances in your applications, and that's the kind of stuff if you want to evaluate, that's where that's where the industry is gonna go."
+    },
+    {
+        "id": 203,
+        "start": 898.8,
+        "end": 902.64,
+        "frames": [
+            "frame_00356.png"
+        ],
+        "transcript": "So, how do you build like these much more uh nuanced evals?"
+    },
+    {
+        "id": 204,
+        "start": 902.64,
+        "end": 906.4,
+        "frames": [
+            "frame_00357.png",
+            "frame_00358.png",
+            "frame_00359.png"
+        ],
+        "transcript": "Uh that that's one of the places where these traditional evals fail."
+    },
+    {
+        "id": 205,
+        "start": 906.4,
+        "end": 913.44,
+        "frames": [
+            "frame_00360.png"
+        ],
+        "transcript": "So as I went over, like start simple, iterate, see what's broken, and then improve, right?"
+    },
+    {
+        "id": 206,
+        "start": 913.44,
+        "end": 928.88,
+        "frames": [
+            "frame_00361.png",
+            "frame_00362.png",
+            "frame_00363.png"
+        ],
+        "transcript": "And so that's the other thing you get to try today is in a co-pilot-like setting, start with something, test it out with a handful of examples, maybe generate some synthetic examples, test it out with good examples, bad examples, see what's working, what's not, and then iterate."
+    },
+    {
+        "id": 207,
+        "start": 928.88,
+        "end": 934.16,
+        "frames": [
+            "frame_00364.png"
+        ],
+        "transcript": "We have picked a relatively simple example for today because for workshop purposes we wanted to keep it simple."
+    },
+    {
+        "id": 208,
+        "start": 934.16,
+        "end": 940.08,
+        "frames": [
+            "frame_00365.png"
+        ],
+        "transcript": "But you can absolutely go and try it on fairly complex things, and and there you can see a lot more of the nuances."
+    },
+    {
+        "id": 209,
+        "start": 940.08,
+        "end": 946.4,
+        "frames": [
+            "frame_00366.png",
+            "frame_00367.png",
+            "frame_00368.png",
+            "frame_00369.png",
+            "frame_00370.png",
+            "frame_00371.png"
+        ],
+        "transcript": "Um, yeah, so there are two parts of today's workshop."
+    },
+    {
+        "id": 210,
+        "start": 946.4,
+        "end": 950.96,
+        "frames": [
+            "frame_00372.png",
+            "frame_00373.png"
+        ],
+        "transcript": "The first part is um setting up your scoring system."
+    },
+    {
+        "id": 211,
+        "start": 950.96,
+        "end": 964.64,
+        "frames": [
+            "frame_00374.png",
+            "frame_00375.png"
+        ],
+        "transcript": "And the second part is once you have set up the scoring system and played with it and iterated on it in a co-pilot, trying to use it in a collab, you would need a Google account and some proficiency in working with collabs and Python code."
+    },
+    {
+        "id": 212,
+        "start": 964.64,
+        "end": 976.56,
+        "frames": [
+            "frame_00376.png",
+            "frame_00377.png",
+            "frame_00378.png"
+        ],
+        "transcript": "Um we'll also introduce a spreadsheet component to this so that you can actually try to play around with this in a spreadsheet so that you uh you can easily make changes and test things out."
+    },
+    {
+        "id": 213,
+        "start": 976.56,
+        "end": 986.56,
+        "frames": [
+            "frame_00379.png",
+            "frame_00380.png",
+            "frame_00381.png",
+            "frame_00382.png"
+        ],
+        "transcript": "Uh one last thing I want to hit on before we jump into the the workshop is what is this scoring system?"
+    },
+    {
+        "id": 214,
+        "start": 986.56,
+        "end": 988.32,
+        "frames": [
+            "frame_00383.png"
+        ],
+        "transcript": "What is this idea of scoring system, right?"
+    },
+    {
+        "id": 215,
+        "start": 988.32,
+        "end": 990.96,
+        "frames": [
+            "frame_00384.png"
+        ],
+        "transcript": "Like to just give you a mental framing of it."
+    },
+    {
+        "id": 216,
+        "start": 990.96,
+        "end": 997.76,
+        "frames": [
+            "frame_00385.png",
+            "frame_00386.png"
+        ],
+        "transcript": "Um ranking is scoring is evals, effectively."
+    },
+    {
+        "id": 217,
+        "start": 997.76,
+        "end": 999.28,
+        "frames": [
+            "frame_00387.png"
+        ],
+        "transcript": "That's one way to think about it."
+    },
+    {
+        "id": 218,
+        "start": 999.28,
+        "end": 1007.92,
+        "frames": [
+            "frame_00388.png"
+        ],
+        "transcript": "When Google does a search, what it's trying to do is it's scoring every document and seeing whether this is good or not, and then giving you the best document that's the best for you."
+    },
+    {
+        "id": 219,
+        "start": 1007.92,
+        "end": 1013.2,
+        "frames": [
+            "frame_00389.png"
+        ],
+        "transcript": "And that's not that different from checking and scoring an LLM generated content."
+    },
+    {
+        "id": 220,
+        "start": 1013.2,
+        "end": 1018.48,
+        "frames": [
+            "frame_00390.png",
+            "frame_00391.png"
+        ],
+        "transcript": "And the way Google does it is by breaking this problem down into a ton of signals."
+    },
+    {
+        "id": 221,
+        "start": 1018.48,
+        "end": 1018.88,
+        "frames": [
+            "frame_00392.png"
+        ],
+        "transcript": "Right?"
+    },
+    {
+        "id": 222,
+        "start": 1018.88,
+        "end": 1032.32,
+        "frames": [
+            "frame_00393.png",
+            "frame_00394.png"
+        ],
+        "transcript": "So you can imagine you're looking at SEO, you can look at document popularity, you're looking at title scores, whether the content is good or not, uh, maybe feasibility of things, um, spam, you know, clickbaitiness, stuff like that."
+    },
+    {
+        "id": 223,
+        "start": 1032.32,
+        "end": 1037.2,
+        "frames": [
+            "frame_00395.png"
+        ],
+        "transcript": "And then brings all of these signals together into a single score that combines these ideas."
+    },
+    {
+        "id": 224,
+        "start": 1037.2,
+        "end": 1040.32,
+        "frames": [
+            "frame_00396.png"
+        ],
+        "transcript": "So individual signals that you have are very easy to understand."
+    },
+    {
+        "id": 225,
+        "start": 1040.32,
+        "end": 1042.96,
+        "frames": [
+            "frame_00397.png"
+        ],
+        "transcript": "You know what that is, you can inspect it very easily."
+    },
+    {
+        "id": 226,
+        "start": 1042.96,
+        "end": 1047.2,
+        "frames": [
+            "frame_00398.png"
+        ],
+        "transcript": "It's not a complex prompt with some random score, it's something that you can easily understand."
+    },
+    {
+        "id": 227,
+        "start": 1047.2,
+        "end": 1049.44,
+        "frames": [
+            "frame_00399.png"
+        ],
+        "transcript": "But it all comes together into a single score."
+    },
+    {
+        "id": 228,
+        "start": 1049.44,
+        "end": 1051.6,
+        "frames": [
+            "frame_00400.png",
+            "frame_00401.png"
+        ],
+        "transcript": "And that's the idea we are sort of bringing in."
+    },
+    {
+        "id": 229,
+        "start": 1051.6,
+        "end": 1053.6,
+        "frames": [
+            "frame_00402.png"
+        ],
+        "transcript": "That's what we call a scoring system."
+    },
+    {
+        "id": 230,
+        "start": 1053.6,
+        "end": 1060.32,
+        "frames": [
+            "frame_00403.png",
+            "frame_00404.png"
+        ],
+        "transcript": "At the bottom level, things are very objective, tend to be deterministic, sometimes just Python code."
+    },
+    {
+        "id": 231,
+        "start": 1060.32,
+        "end": 1066.8,
+        "frames": [
+            "frame_00405.png"
+        ],
+        "transcript": "But as you bring this up to the top, it becomes fairly subjective, and you can like bring these together into very complex ways."
+    },
+    {
+        "id": 232,
+        "start": 1066.8,
+        "end": 1074.32,
+        "frames": [
+            "frame_00406.png"
+        ],
+        "transcript": "Yeah, and and I would just uh encourage you to think about like why this, why, why this kind of why this could work, and and we know it does work."
+    },
+    {
+        "id": 233,
+        "start": 1074.32,
+        "end": 1080.32,
+        "frames": [
+            "frame_00407.png"
+        ],
+        "transcript": "Um some of what you will be struggling with with evals is just like you're not measuring the things you need to be measuring."
+    },
+    {
+        "id": 234,
+        "start": 1080.32,
+        "end": 1082.64,
+        "frames": [
+            "frame_00408.png"
+        ],
+        "transcript": "So you have a little bit of a comprehensive issue."
+    },
+    {
+        "id": 235,
+        "start": 1082.64,
+        "end": 1085.52,
+        "frames": [
+            "frame_00409.png"
+        ],
+        "transcript": "And so like the question is like how many metrics do you need to add?"
+    },
+    {
+        "id": 236,
+        "start": 1085.52,
+        "end": 1088.4,
+        "frames": [
+            "frame_00410.png"
+        ],
+        "transcript": "So I give the example, Google search uses around 300 signals."
+    },
+    {
+        "id": 237,
+        "start": 1088.4,
+        "end": 1092.0,
+        "frames": [
+            "frame_00411.png"
+        ],
+        "transcript": "Now, maybe you don't want to be that obstacle, but like Google does care about all those things."
+    },
+    {
+        "id": 238,
+        "start": 1092.0,
+        "end": 1101.28,
+        "frames": [
+            "frame_00412.png",
+            "frame_00413.png"
+        ],
+        "transcript": "They care about like, you know, the score of the site, they care about popularity, they care about content relevance, spam, porn seeking, they have all these classifiers, all these ways they understand the content to then bring it together."
+    },
+    {
+        "id": 239,
+        "start": 1101.28,
+        "end": 1107.36,
+        "frames": [
+            "frame_00414.png",
+            "frame_00415.png"
+        ],
+        "transcript": "What this gives you is like really visibility over the application and more and more ways to merry your own judgment into it."
+    },
+    {
+        "id": 240,
+        "start": 1107.36,
+        "end": 1111.04,
+        "frames": [
+            "frame_00416.png"
+        ],
+        "transcript": "So if instead you just go and say, hey, is this a helpful response?"
+    },
+    {
+        "id": 241,
+        "start": 1111.04,
+        "end": 1115.84,
+        "frames": [
+            "frame_00417.png"
+        ],
+        "transcript": "Mostly what you're doing is delegating that that email to the LLM itself, right?"
+    },
+    {
+        "id": 242,
+        "start": 1115.84,
+        "end": 1118.64,
+        "frames": [
+            "frame_00418.png"
+        ],
+        "transcript": "Or to a rater who you're asking, like, hey, see if this is good."
+    },
+    {
+        "id": 243,
+        "start": 1118.64,
+        "end": 1126.16,
+        "frames": [
+            "frame_00419.png"
+        ],
+        "transcript": "But when you break this all down, you get some really nice properties where like your variance goes down a lot, just because you're measuring way more objective things."
+    },
+    {
+        "id": 244,
+        "start": 1126.16,
+        "end": 1128.56,
+        "frames": [
+            "frame_00420.png"
+        ],
+        "transcript": "So things are not like going back and forth all the time."
+    },
+    {
+        "id": 245,
+        "start": 1128.56,
+        "end": 1134.08,
+        "frames": [
+            "frame_00421.png"
+        ],
+        "transcript": "And it's very precise because like you're you get all these things and you add them together to a more high fidelity score."
+    },
+    {
+        "id": 246,
+        "start": 1134.08,
+        "end": 1138.96,
+        "frames": [
+            "frame_00422.png"
+        ],
+        "transcript": "And when you are analyzing the data, then you can like slice and dice by way finer grain things."
+    },
+    {
+        "id": 247,
+        "start": 1138.96,
+        "end": 1141.68,
+        "frames": [
+            "frame_00423.png",
+            "frame_00424.png"
+        ],
+        "transcript": "And that's kind of like why the system tends to work much better."
+    },
+    {
+        "id": 248,
+        "start": 1141.68,
+        "end": 1144.72,
+        "frames": [
+            "frame_00425.png",
+            "frame_00426.png"
+        ],
+        "transcript": "And the best part of it is as you iterate, you just add more signals."
+    },
+    {
+        "id": 249,
+        "start": 1144.72,
+        "end": 1149.68,
+        "frames": [
+            "frame_00427.png",
+            "frame_00428.png",
+            "frame_00429.png"
+        ],
+        "transcript": "Like when this now doesn't leave you as like, oh, I either have evals or I don't have hevals."
+    },
+    {
+        "id": 250,
+        "start": 1149.68,
+        "end": 1155.68,
+        "frames": [
+            "frame_00430.png"
+        ],
+        "transcript": "But like rather, you just have a set of metrics that you keep adding over over time as you discover what actually matters about your M."
+    },
+    {
+        "id": 251,
+        "start": 1155.68,
+        "end": 1159.96,
+        "frames": [
+            "frame_00431.png"
+        ],
+        "transcript": "oh"
+    },
+    {
+        "id": 252,
+        "start": 1159.96,
+        "end": 1163.08,
+        "frames": [
+            "frame_00432.png",
+            "frame_00433.png"
+        ],
+        "transcript": "um"
+    },
+    {
+        "id": 253,
+        "start": 1163.08,
+        "end": 1169.52,
+        "frames": [
+            "frame_00434.png",
+            "frame_00435.png",
+            "frame_00436.png"
+        ],
+        "transcript": "okay uh"
+    },
+    {
+        "id": 254,
+        "start": 1169.52,
+        "end": 1170.48,
+        "frames": [
+            "frame_00437.png",
+            "frame_00438.png",
+            "frame_00439.png"
+        ],
+        "transcript": "How do I do this?"
+    },
+    {
+        "id": 255,
+        "start": 1170.48,
+        "end": 1177.2,
+        "frames": [
+            "frame_00440.png",
+            "frame_00441.png"
+        ],
+        "transcript": "Um, so I'll just quickly show you a demo of where you're gonna start today."
+    },
+    {
+        "id": 256,
+        "start": 1177.2,
+        "end": 1185.36,
+        "frames": [
+            "frame_00442.png",
+            "frame_00443.png"
+        ],
+        "transcript": "Uh give you some sort of basic ideas of what the kinds of things you would be doing, uh, and then and then I'll just we we could we should just get started, right?"
+    },
+    {
+        "id": 257,
+        "start": 1185.36,
+        "end": 1190.4,
+        "frames": [
+            "frame_00444.png",
+            "frame_00445.png",
+            "frame_00446.png"
+        ],
+        "transcript": "And so this is uh this is a copilot that helps you put together evaluate evals."
+    },
+    {
+        "id": 258,
+        "start": 1190.4,
+        "end": 1191.12,
+        "frames": [
+            "frame_00447.png"
+        ],
+        "transcript": "That's the idea."
+    },
+    {
+        "id": 259,
+        "start": 1191.12,
+        "end": 1193.76,
+        "frames": [
+            "frame_00448.png"
+        ],
+        "transcript": "Where I'm starting is basically just a system prompt."
+    },
+    {
+        "id": 260,
+        "start": 1193.76,
+        "end": 1197.52,
+        "frames": [
+            "frame_00449.png"
+        ],
+        "transcript": "This is this application is basically a simple meeting summarizer."
+    },
+    {
+        "id": 261,
+        "start": 1197.52,
+        "end": 1212.88,
+        "frames": [
+            "frame_00450.png"
+        ],
+        "transcript": "It takes uh a meeting script, talking talking between multiple people, and then generate some sort of a structured JSON in the end, which is a summary with very specific um action items, key key uh key insights, and then a title."
+    },
+    {
+        "id": 262,
+        "start": 1212.88,
+        "end": 1213.12,
+        "frames": [
+            "frame_00451.png"
+        ],
+        "transcript": "Right?"
+    },
+    {
+        "id": 263,
+        "start": 1213.12,
+        "end": 1218.24,
+        "frames": [
+            "frame_00452.png"
+        ],
+        "transcript": "So it's a relatively simple thing, it's easy for you to inspect and see where things are not going working and not working well."
+    },
+    {
+        "id": 264,
+        "start": 1218.24,
+        "end": 1222.64,
+        "frames": [
+            "frame_00453.png",
+            "frame_00454.png",
+            "frame_00455.png",
+            "frame_00456.png"
+        ],
+        "transcript": "Um so typically you would start with something like a system prompt."
+    },
+    {
+        "id": 265,
+        "start": 1222.64,
+        "end": 1228.24,
+        "frames": [
+            "frame_00457.png"
+        ],
+        "transcript": "You can also start with examples if you have a bunch of examples, or you can start with criteria itself."
+    },
+    {
+        "id": 266,
+        "start": 1228.24,
+        "end": 1235.44,
+        "frames": [
+            "frame_00458.png",
+            "frame_00459.png"
+        ],
+        "transcript": "Um and the the first step is it would try to use this to build your scoring system."
+    },
+    {
+        "id": 267,
+        "start": 1235.44,
+        "end": 1248.8,
+        "frames": [
+            "frame_00460.png",
+            "frame_00461.png"
+        ],
+        "transcript": "Um this is doing exactly what was in that slide, which is trying to say like from that coarse-grained subjective thing, what are all the smaller things I can I can suss out of it out of it?"
+    },
+    {
+        "id": 268,
+        "start": 1248.8,
+        "end": 1259.28,
+        "frames": [
+            "frame_00462.png",
+            "frame_00463.png",
+            "frame_00464.png",
+            "frame_00465.png",
+            "frame_00466.png",
+            "frame_00467.png"
+        ],
+        "transcript": "Now, this uses a reasoning model, like if you drop this into a chat GPT or so, uh, we just try to replicate that experience where you get these artifacts on the right hand side, which are your is your actual scoring system."
+    },
+    {
+        "id": 269,
+        "start": 1259.28,
+        "end": 1263.92,
+        "frames": [
+            "frame_00468.png"
+        ],
+        "transcript": "But if you think you just want to do it like iteratively through your favorite like sort of chat interface, you can also do it."
+    },
+    {
+        "id": 270,
+        "start": 1263.92,
+        "end": 1265.76,
+        "frames": [
+            "frame_00469.png"
+        ],
+        "transcript": "Just say Go ahead."
+    },
+    {
+        "id": 271,
+        "start": 1265.76,
+        "end": 1270.96,
+        "frames": [
+            "frame_00470.png"
+        ],
+        "transcript": "provide examples of input and output and"
+    },
+    {
+        "id": 272,
+        "start": 1270.96,
+        "end": 1271.44,
+        "frames": [
+            "frame_00471.png"
+        ],
+        "transcript": "Yes, exactly."
+    },
+    {
+        "id": 273,
+        "start": 1271.44,
+        "end": 1271.68,
+        "frames": [
+            "frame_00472.png"
+        ],
+        "transcript": "Right."
+    },
+    {
+        "id": 274,
+        "start": 1271.68,
+        "end": 1273.92,
+        "frames": [
+            "frame_00473.png"
+        ],
+        "transcript": "So right in front, there is an example button."
+    },
+    {
+        "id": 275,
+        "start": 1273.92,
+        "end": 1275.36,
+        "frames": [
+            "frame_00474.png"
+        ],
+        "transcript": "You can start with example."
+    },
+    {
+        "id": 276,
+        "start": 1275.36,
+        "end": 1279.52,
+        "frames": [
+            "frame_00475.png"
+        ],
+        "transcript": "You can give it actually hundreds of examples if you want, 20 examples."
+    },
+    {
+        "id": 277,
+        "start": 1279.52,
+        "end": 1288.96,
+        "frames": [
+            "frame_00476.png"
+        ],
+        "transcript": "Uh, and then it gets into a much more complex process of like figuring out these dimensions based on examples, or you can just copy-paste one or two examples in the prompt itself and it will it'll generate it."
+    },
+    {
+        "id": 278,
+        "start": 1288.96,
+        "end": 1292.4,
+        "frames": [
+            "frame_00477.png"
+        ],
+        "transcript": "Um the this is just a starting point, by the way."
+    },
+    {
+        "id": 279,
+        "start": 1292.4,
+        "end": 1293.2,
+        "frames": [
+            "frame_00478.png"
+        ],
+        "transcript": "That's the idea."
+    },
+    {
+        "id": 280,
+        "start": 1293.2,
+        "end": 1298.24,
+        "frames": [
+            "frame_00479.png"
+        ],
+        "transcript": "It it starts you somewhere, and now you're gonna iterate over it, and that's the exercise you will you'll spend time on."
+    },
+    {
+        "id": 281,
+        "start": 1298.24,
+        "end": 1308.96,
+        "frames": [
+            "frame_00480.png",
+            "frame_00481.png"
+        ],
+        "transcript": "I'll show you a few things like this is your scoring system, these are your individual, um, these are your individual dimensions, is what we call it, or you can think of these as signals."
+    },
+    {
+        "id": 282,
+        "start": 1308.96,
+        "end": 1311.36,
+        "frames": [
+            "frame_00482.png"
+        ],
+        "transcript": "Uh they're all questions."
+    },
+    {
+        "id": 283,
+        "start": 1311.36,
+        "end": 1317.28,
+        "frames": [
+            "frame_00483.png"
+        ],
+        "transcript": "Um, effectively, for example, this is a code, does the output include any insights from the meeting?"
+    },
+    {
+        "id": 284,
+        "start": 1317.28,
+        "end": 1319.44,
+        "frames": [
+            "frame_00484.png"
+        ],
+        "transcript": "That's a natural language question."
+    },
+    {
+        "id": 285,
+        "start": 1319.44,
+        "end": 1324.24,
+        "frames": [
+            "frame_00485.png",
+            "frame_00486.png"
+        ],
+        "transcript": "Um, or you can have code, um, just Python code that we have generated."
+    },
+    {
+        "id": 286,
+        "start": 1324.24,
+        "end": 1326.88,
+        "frames": [
+            "frame_00487.png"
+        ],
+        "transcript": "You can edit this code however you want."
+    },
+    {
+        "id": 287,
+        "start": 1326.88,
+        "end": 1332.48,
+        "frames": [
+            "frame_00488.png",
+            "frame_00489.png",
+            "frame_00490.png",
+            "frame_00491.png",
+            "frame_00492.png"
+        ],
+        "transcript": "Uh, you this this uh this this is actually as simple as what this this is."
+    },
+    {
+        "id": 288,
+        "start": 1332.48,
+        "end": 1343.92,
+        "frames": [
+            "frame_00493.png",
+            "frame_00494.png",
+            "frame_00495.png",
+            "frame_00496.png",
+            "frame_00497.png"
+        ],
+        "transcript": "It's uh when you when you look at the actual code, the code is effectively just a bunch of questions, and you're sending these questions to our specialized foundation models that are designed for scoring and evaluation."
+    },
+    {
+        "id": 289,
+        "start": 1343.92,
+        "end": 1346.64,
+        "frames": [
+            "frame_00498.png",
+            "frame_00499.png",
+            "frame_00500.png",
+            "frame_00501.png"
+        ],
+        "transcript": "Um so you get to play with this a bunch in the collab."
+    },
+    {
+        "id": 290,
+        "start": 1346.64,
+        "end": 1349.04,
+        "frames": [
+            "frame_00502.png",
+            "frame_00503.png"
+        ],
+        "transcript": "You can see what the form of it looks like."
+    },
+    {
+        "id": 291,
+        "start": 1349.04,
+        "end": 1353.2,
+        "frames": [
+            "frame_00504.png",
+            "frame_00505.png"
+        ],
+        "transcript": "There's another thing that you would notice is there's this idea of critical, major, minor."
+    },
+    {
+        "id": 292,
+        "start": 1353.2,
+        "end": 1357.36,
+        "frames": [
+            "frame_00506.png",
+            "frame_00507.png"
+        ],
+        "transcript": "These are just weights, these are just ways, ways for you to control what's important, what's not."
+    },
+    {
+        "id": 293,
+        "start": 1357.36,
+        "end": 1362.56,
+        "frames": [
+            "frame_00508.png"
+        ],
+        "transcript": "The combination of this is done through a mathematical function that you can learn over time."
+    },
+    {
+        "id": 294,
+        "start": 1362.56,
+        "end": 1365.84,
+        "frames": [
+            "frame_00509.png"
+        ],
+        "transcript": "So actually, eventually you would give it a bunch of examples and it'll learn it."
+    },
+    {
+        "id": 295,
+        "start": 1365.84,
+        "end": 1368.56,
+        "frames": [
+            "frame_00510.png"
+        ],
+        "transcript": "But in this particular exercise, you have a little bit more control."
+    },
+    {
+        "id": 296,
+        "start": 1368.56,
+        "end": 1376.32,
+        "frames": [
+            "frame_00511.png",
+            "frame_00512.png",
+            "frame_00513.png"
+        ],
+        "transcript": "And finally, once you have your scoring system uh done, uh there is a way for you to integrate it into Google Sheets."
+    },
+    {
+        "id": 297,
+        "start": 1376.32,
+        "end": 1384.88,
+        "frames": [
+            "frame_00514.png",
+            "frame_00515.png",
+            "frame_00516.png",
+            "frame_00517.png"
+        ],
+        "transcript": "That's the thing that you're gonna play around with today, which is basically taking this criteria, moving it to a Google Sheet, and testing it against real examples."
+    },
+    {
+        "id": 298,
+        "start": 1384.88,
+        "end": 1395.76,
+        "frames": [
+            "frame_00518.png"
+        ],
+        "transcript": "So here you're gonna work with synthetic examples, you'll develop your scoring system, and then completely blinded to this, we have label data set where users are set thumbs up, thumbs down on the summaries."
+    },
+    {
+        "id": 299,
+        "start": 1395.76,
+        "end": 1400.88,
+        "frames": [
+            "frame_00519.png"
+        ],
+        "transcript": "You're gonna apply this to that scoring system and see how well it aligns with real real thumbs up, thumbs down."
+    },
+    {
+        "id": 300,
+        "start": 1400.88,
+        "end": 1402.88,
+        "frames": [
+            "frame_00520.png"
+        ],
+        "transcript": "Um, so we don't know."
+    },
+    {
+        "id": 301,
+        "start": 1402.88,
+        "end": 1404.0,
+        "frames": [
+            "frame_00521.png"
+        ],
+        "transcript": "I mean, it depends on you."
+    },
+    {
+        "id": 302,
+        "start": 1404.0,
+        "end": 1407.28,
+        "frames": [
+            "frame_00522.png"
+        ],
+        "transcript": "You you're you're building your own scoring system, whether it aligns or not."
+    },
+    {
+        "id": 303,
+        "start": 1407.28,
+        "end": 1410.72,
+        "frames": [
+            "frame_00523.png"
+        ],
+        "transcript": "Um this is a really interesting point."
+    },
+    {
+        "id": 304,
+        "start": 1410.72,
+        "end": 1416.32,
+        "frames": [
+            "frame_00524.png"
+        ],
+        "transcript": "And wh why events start to get hard, like we we call this workshop like solving the hardest challenge, which is metrics that actually work."
+    },
+    {
+        "id": 305,
+        "start": 1416.32,
+        "end": 1419.44,
+        "frames": [
+            "frame_00525.png"
+        ],
+        "transcript": "So this idea of like correlation ends up being really, really important."
+    },
+    {
+        "id": 306,
+        "start": 1419.44,
+        "end": 1422.56,
+        "frames": [
+            "frame_00526.png"
+        ],
+        "transcript": "Metrics that work are not necessarily good metrics or bad metrics."
+    },
+    {
+        "id": 307,
+        "start": 1422.56,
+        "end": 1425.12,
+        "frames": [
+            "frame_00527.png"
+        ],
+        "transcript": "They're either calibrated metrics or uncalibrated metrics."
+    },
+    {
+        "id": 308,
+        "start": 1425.12,
+        "end": 1429.68,
+        "frames": [
+            "frame_00528.png"
+        ],
+        "transcript": "And this is where like uh at Google, for example, we had a lot of data scientists that we worked with, right?"
+    },
+    {
+        "id": 309,
+        "start": 1429.68,
+        "end": 1433.76,
+        "frames": [
+            "frame_00529.png"
+        ],
+        "transcript": "Because they would do need like all these correlation analyses and confusion matrices and such."
+    },
+    {
+        "id": 310,
+        "start": 1433.76,
+        "end": 1440.48,
+        "frames": [
+            "frame_00530.png"
+        ],
+        "transcript": "So part of the challenge of good evals is just getting comfortable with the numerical aspect of these things."
+    },
+    {
+        "id": 311,
+        "start": 1440.48,
+        "end": 1447.84,
+        "frames": [
+            "frame_00531.png"
+        ],
+        "transcript": "And of course, again, having a scoring system that dissects things into much simpler things makes it easier to analyze, but you still have to think about those things."
+    },
+    {
+        "id": 312,
+        "start": 1447.84,
+        "end": 1449.68,
+        "frames": [
+            "frame_00532.png"
+        ],
+        "transcript": "Like, does this actually correlate with goodness?"
+    },
+    {
+        "id": 313,
+        "start": 1449.68,
+        "end": 1452.48,
+        "frames": [
+            "frame_00533.png"
+        ],
+        "transcript": "Like if it gives a high score, is this an actually a good score?"
+    },
+    {
+        "id": 314,
+        "start": 1452.48,
+        "end": 1454.24,
+        "frames": [
+            "frame_00534.png"
+        ],
+        "transcript": "And that's a big part of the methodology."
+    },
+    {
+        "id": 315,
+        "start": 1454.24,
+        "end": 1463.6,
+        "frames": [
+            "frame_00535.png"
+        ],
+        "transcript": "But the good news is, as a chin showed in the previous slide, once you have metrics you can trust, uh like almost all of the rest of your stack gets radically simplified as a result."
+    },
+    {
+        "id": 316,
+        "start": 1463.6,
+        "end": 1466.4,
+        "frames": [
+            "frame_00536.png"
+        ],
+        "transcript": "Okay, so how do you use this copilot?"
+    },
+    {
+        "id": 317,
+        "start": 1466.4,
+        "end": 1467.52,
+        "frames": [
+            "frame_00537.png"
+        ],
+        "transcript": "It's created this."
+    },
+    {
+        "id": 318,
+        "start": 1467.52,
+        "end": 1470.96,
+        "frames": [
+            "frame_00538.png"
+        ],
+        "transcript": "Maybe a place to start would be, you know, generate an example."
+    },
+    {
+        "id": 319,
+        "start": 1470.96,
+        "end": 1476.24,
+        "frames": [
+            "frame_00539.png"
+        ],
+        "transcript": "This is a synthetic generation uh um happening behind the scenes."
+    },
+    {
+        "id": 320,
+        "start": 1476.24,
+        "end": 1481.92,
+        "frames": [
+            "frame_00540.png"
+        ],
+        "transcript": "It's taking uh your system from other information and trying to generate uh some sort of an example."
+    },
+    {
+        "id": 321,
+        "start": 1481.92,
+        "end": 1489.36,
+        "frames": [
+            "frame_00541.png",
+            "frame_00542.png",
+            "frame_00543.png",
+            "frame_00544.png",
+            "frame_00545.png",
+            "frame_00546.png"
+        ],
+        "transcript": "And and then and then this example that is generated is a scored, and you can see how these individual scores work."
+    },
+    {
+        "id": 322,
+        "start": 1489.36,
+        "end": 1492.72,
+        "frames": [
+            "frame_00547.png",
+            "frame_00548.png",
+            "frame_00549.png"
+        ],
+        "transcript": "Now you can start uh kind of testing this a little bit more."
+    },
+    {
+        "id": 323,
+        "start": 1492.72,
+        "end": 1498.72,
+        "frames": [
+            "frame_00550.png"
+        ],
+        "transcript": "You can say, um, can you generate a bad example?"
+    },
+    {
+        "id": 324,
+        "start": 1498.72,
+        "end": 1503.52,
+        "frames": [
+            "frame_00551.png"
+        ],
+        "transcript": "Um, and then it will it will try to generate an example that's broken in some particular way."
+    },
+    {
+        "id": 325,
+        "start": 1503.52,
+        "end": 1511.36,
+        "frames": [
+            "frame_00552.png"
+        ],
+        "transcript": "It the the co-pilot understands what you've done so far, it has the full context, so it's using all of this information to kind of like sort of walk you through this."
+    },
+    {
+        "id": 326,
+        "start": 1511.36,
+        "end": 1517.04,
+        "frames": [
+            "frame_00553.png",
+            "frame_00554.png",
+            "frame_00555.png",
+            "frame_00556.png",
+            "frame_00557.png"
+        ],
+        "transcript": "So, in this particular way, like in this particular case, it created something that is missing a bunch of information."
+    },
+    {
+        "id": 327,
+        "start": 1517.04,
+        "end": 1526.96,
+        "frames": [
+            "frame_00558.png",
+            "frame_00559.png",
+            "frame_00560.png"
+        ],
+        "transcript": "But you can even do things like you know, specific things like can you create uh an example that has broken JSON?"
+    },
+    {
+        "id": 328,
+        "start": 1526.96,
+        "end": 1529.92,
+        "frames": [
+            "frame_00561.png"
+        ],
+        "transcript": "Uh so this is like basically example generation."
+    },
+    {
+        "id": 329,
+        "start": 1529.92,
+        "end": 1531.92,
+        "frames": [
+            "frame_00562.png"
+        ],
+        "transcript": "That's one one thing you can do here."
+    },
+    {
+        "id": 330,
+        "start": 1531.92,
+        "end": 1538.64,
+        "frames": [
+            "frame_00563.png",
+            "frame_00564.png"
+        ],
+        "transcript": "The other thing you can do is you can make changes to your scoring system itself through the copilot."
+    },
+    {
+        "id": 331,
+        "start": 1538.64,
+        "end": 1546.16,
+        "frames": [
+            "frame_00565.png",
+            "frame_00566.png",
+            "frame_00567.png"
+        ],
+        "transcript": "So you can either go and ask the copilot to make changes to your um, like anyways, this is a broken JSON example."
+    },
+    {
+        "id": 332,
+        "start": 1546.16,
+        "end": 1554.48,
+        "frames": [
+            "frame_00568.png",
+            "frame_00569.png",
+            "frame_00570.png"
+        ],
+        "transcript": "You can go to the copilot and either ask it to change the Python code itself, you can say, you know, can you update the Python code or and and such of any of these things?"
+    },
+    {
+        "id": 333,
+        "start": 1554.48,
+        "end": 1557.44,
+        "frames": [
+            "frame_00571.png"
+        ],
+        "transcript": "You can also ask it to remove or add dimension and dimensions."
+    },
+    {
+        "id": 334,
+        "start": 1557.44,
+        "end": 1571.44,
+        "frames": [
+            "frame_00572.png"
+        ],
+        "transcript": "Maybe you can say, can you generate a dimension that checks for the title to be less than 20 words?"
+    },
+    {
+        "id": 335,
+        "start": 1571.44,
+        "end": 1574.56,
+        "frames": [
+            "frame_00573.png"
+        ],
+        "transcript": "And then the copilot can add these dimensions."
+    },
+    {
+        "id": 336,
+        "start": 1574.56,
+        "end": 1575.12,
+        "frames": [
+            "frame_00574.png"
+        ],
+        "transcript": "Go ahead."
+    },
+    {
+        "id": 337,
+        "start": 1575.12,
+        "end": 1582.0,
+        "frames": [
+            "frame_00575.png"
+        ],
+        "transcript": "[Silent] for 6.88 sec"
+    },
+    {
+        "id": 338,
+        "start": 1582.0,
+        "end": 1584.88,
+        "frames": [
+            "frame_00576.png"
+        ],
+        "transcript": "Uhu."
+    },
+    {
+        "id": 339,
+        "start": 1584.88,
+        "end": 1585.36,
+        "frames": [
+            "frame_00577.png"
+        ],
+        "transcript": "Exactly."
+    },
+    {
+        "id": 340,
+        "start": 1585.36,
+        "end": 1589.76,
+        "frames": [
+            "frame_00578.png"
+        ],
+        "transcript": "Yes, exactly."
+    },
+    {
+        "id": 341,
+        "start": 1589.76,
+        "end": 1595.52,
+        "frames": [
+            "frame_00579.png"
+        ],
+        "transcript": "You just ask the copilot and say, I've updated, here's some like new examples."
+    },
+    {
+        "id": 342,
+        "start": 1595.52,
+        "end": 1598.16,
+        "frames": [
+            "frame_00580.png"
+        ],
+        "transcript": "Can you add new dimensions to test these new examples?"
+    },
+    {
+        "id": 343,
+        "start": 1598.16,
+        "end": 1604.72,
+        "frames": [
+            "frame_00581.png"
+        ],
+        "transcript": "Or we have changed things and it automatically, I mean, it knows what layer you're exactly."
+    },
+    {
+        "id": 344,
+        "start": 1604.72,
+        "end": 1605.2,
+        "frames": [
+            "frame_00582.png"
+        ],
+        "transcript": "Yeah."
+    },
+    {
+        "id": 345,
+        "start": 1605.2,
+        "end": 1612.4,
+        "frames": [
+            "frame_00583.png"
+        ],
+        "transcript": "The other thing I would say is the copilot is very helpful if you want this sort of human-in-a-loop type process."
+    },
+    {
+        "id": 346,
+        "start": 1612.4,
+        "end": 1624.4,
+        "frames": [
+            "frame_00584.png"
+        ],
+        "transcript": "Uh but once you get comfortable with the system, what we see people doing is just use Colab to send large amounts of data and let our system figure things out on its own."
+    },
+    {
+        "id": 347,
+        "start": 1624.4,
+        "end": 1636.8,
+        "frames": [
+            "frame_00585.png"
+        ],
+        "transcript": "Uh I I find, my personally, I find it very good to play with my scoring system here every so often to see if it's like working well, like maybe paste an example from a user and see how well it's working and so on and so forth."
+    },
+    {
+        "id": 348,
+        "start": 1636.8,
+        "end": 1638.4,
+        "frames": [
+            "frame_00586.png"
+        ],
+        "transcript": "So you can kind of go back and forth."
+    },
+    {
+        "id": 349,
+        "start": 1638.4,
+        "end": 1645.84,
+        "frames": [
+            "frame_00587.png"
+        ],
+        "transcript": "Uh but but most of our clients actually just fire off these uh long, long-running processes."
+    },
+    {
+        "id": 350,
+        "start": 1645.84,
+        "end": 1654.56,
+        "frames": [
+            "frame_00588.png",
+            "frame_00589.png",
+            "frame_00590.png",
+            "frame_00591.png"
+        ],
+        "transcript": "Um just um so anyway, so that's uh so it just created this new uh title length thing for you."
+    },
+    {
+        "id": 351,
+        "start": 1654.56,
+        "end": 1661.04,
+        "frames": [
+            "frame_00592.png",
+            "frame_00593.png"
+        ],
+        "transcript": "So you can like sort of play around with this, um, and it'll you can change the questions, you can remove dimensions, so on and so forth."
+    },
+    {
+        "id": 352,
+        "start": 1661.04,
+        "end": 1661.36,
+        "frames": [
+            "frame_00594.png"
+        ],
+        "transcript": "Right."
+    },
+    {
+        "id": 353,
+        "start": 1661.36,
+        "end": 1672.56,
+        "frames": [
+            "frame_00595.png",
+            "frame_00596.png",
+            "frame_00597.png"
+        ],
+        "transcript": "The last thing I would show before we get going is uh one of the things that you would do is we'll we have we have pre-filled a spreadsheet in the in the in the workshop directions."
+    },
+    {
+        "id": 354,
+        "start": 1672.56,
+        "end": 1680.16,
+        "frames": [
+            "frame_00598.png",
+            "frame_00599.png"
+        ],
+        "transcript": "You will make a copy of that spreadsheet, and we have a spreadsheet integration where you can run our score inside a spreadsheet itself."
+    },
+    {
+        "id": 355,
+        "start": 1680.16,
+        "end": 1683.36,
+        "frames": [
+            "frame_00600.png"
+        ],
+        "transcript": "You see, there are other other sort of places where you can use it."
+    },
+    {
+        "id": 356,
+        "start": 1683.36,
+        "end": 1688.64,
+        "frames": [
+            "frame_00601.png"
+        ],
+        "transcript": "I'm not gonna get into this, but you can use it for reinforcement learning, for example, using Unslot integration."
+    },
+    {
+        "id": 357,
+        "start": 1688.64,
+        "end": 1692.16,
+        "frames": [
+            "frame_00602.png"
+        ],
+        "transcript": "But there are other places you can actually integrate uh with PyScore."
+    },
+    {
+        "id": 358,
+        "start": 1692.16,
+        "end": 1694.56,
+        "frames": [
+            "frame_00603.png"
+        ],
+        "transcript": "Uh, if not sure if you're familiar with these."
+    },
+    {
+        "id": 359,
+        "start": 1694.56,
+        "end": 1705.76,
+        "frames": [
+            "frame_00604.png",
+            "frame_00605.png"
+        ],
+        "transcript": "But basically, in this in the sheets integration, what you're going to do in this workshop is you can actually just copy this wholesale and put it into a new spreadsheet with the examples there."
+    },
+    {
+        "id": 360,
+        "start": 1705.76,
+        "end": 1707.92,
+        "frames": [
+            "frame_00606.png"
+        ],
+        "transcript": "What we are trying to do is just copy the criteria."
+    },
+    {
+        "id": 361,
+        "start": 1707.92,
+        "end": 1709.52,
+        "frames": [
+            "frame_00607.png"
+        ],
+        "transcript": "So you want to build a criteria."
+    },
+    {
+        "id": 362,
+        "start": 1709.52,
+        "end": 1728.16,
+        "frames": [
+            "frame_00608.png",
+            "frame_00609.png",
+            "frame_00610.png"
+        ],
+        "transcript": "Here's a copy signal, a sim uh icon, just click on the copy icon and then go to the spreadsheet that we will, which you have, replace the criteria that exists there with this criteria that you've created, and then under extensions, these directions are all in the in the docs, I don't have to remember it."
+    },
+    {
+        "id": 363,
+        "start": 1728.16,
+        "end": 1730.8,
+        "frames": [
+            "frame_00611.png"
+        ],
+        "transcript": "But under extensions, you can go and call the score."
+    },
+    {
+        "id": 364,
+        "start": 1730.8,
+        "end": 1743.28,
+        "frames": [
+            "frame_00612.png",
+            "frame_00613.png",
+            "frame_00614.png"
+        ],
+        "transcript": "The score is going to run across about 120 examples, and then you'll see a confusion matrix which shows you how many times there's alignment on thumbs up, how many times this alignment on thumbs down, and how many times there's no alignment."
+    },
+    {
+        "id": 365,
+        "start": 1743.28,
+        "end": 1748.88,
+        "frames": [
+            "frame_00615.png"
+        ],
+        "transcript": "And then you can play around in the spreadsheet itself, make changes to the dimensions, and see if you can bring the alignment closer."
+    },
+    {
+        "id": 366,
+        "start": 1748.88,
+        "end": 1753.36,
+        "frames": [
+            "frame_00616.png",
+            "frame_00617.png"
+        ],
+        "transcript": "So this gives you a sense of uh, yeah, so this is the this is what a spreadsheet would look like."
+    },
+    {
+        "id": 367,
+        "start": 1753.36,
+        "end": 1761.52,
+        "frames": [
+            "frame_00618.png",
+            "frame_00619.png",
+            "frame_00620.png",
+            "frame_00621.png"
+        ],
+        "transcript": "This is your criteria, um, which is basically just the English form, uh the spreadsheet form of the English that you saw."
+    },
+    {
+        "id": 368,
+        "start": 1761.52,
+        "end": 1763.36,
+        "frames": [
+            "frame_00622.png"
+        ],
+        "transcript": "Oh, sorry."
+    },
+    {
+        "id": 369,
+        "start": 1763.36,
+        "end": 1767.2,
+        "frames": [
+            "frame_00623.png",
+            "frame_00624.png",
+            "frame_00625.png",
+            "frame_00626.png"
+        ],
+        "transcript": "Is that better?"
+    },
+    {
+        "id": 370,
+        "start": 1767.2,
+        "end": 1767.92,
+        "frames": [
+            "frame_00627.png",
+            "frame_00628.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 371,
+        "start": 1767.92,
+        "end": 1772.08,
+        "frames": [
+            "frame_00629.png"
+        ],
+        "transcript": "So like you can see this is the label, the question, these are the weights."
+    },
+    {
+        "id": 372,
+        "start": 1772.08,
+        "end": 1774.16,
+        "frames": [
+            "frame_00630.png",
+            "frame_00631.png",
+            "frame_00632.png"
+        ],
+        "transcript": "In the case of Python, there's Python code."
+    },
+    {
+        "id": 373,
+        "start": 1774.16,
+        "end": 1776.4,
+        "frames": [
+            "frame_00633.png",
+            "frame_00634.png"
+        ],
+        "transcript": "So this is what your criteria sheet looks like right now."
+    },
+    {
+        "id": 374,
+        "start": 1776.4,
+        "end": 1780.4,
+        "frames": [
+            "frame_00635.png",
+            "frame_00636.png"
+        ],
+        "transcript": "This is the default one that we put in there for you, but you would replace it with your own."
+    },
+    {
+        "id": 375,
+        "start": 1780.4,
+        "end": 1781.84,
+        "frames": [
+            "frame_00637.png"
+        ],
+        "transcript": "This is the data."
+    },
+    {
+        "id": 376,
+        "start": 1781.84,
+        "end": 1786.56,
+        "frames": [
+            "frame_00638.png"
+        ],
+        "transcript": "This this basically has actually feedback, which is a thumbs up, thumbs down, which we got from users."
+    },
+    {
+        "id": 377,
+        "start": 1786.56,
+        "end": 1791.76,
+        "frames": [
+            "frame_00639.png"
+        ],
+        "transcript": "Um, some of this is fairly complex, some of this is easy, so it's all kinds of different sort of mix of things."
+    },
+    {
+        "id": 378,
+        "start": 1791.76,
+        "end": 1794.8,
+        "frames": [
+            "frame_00640.png"
+        ],
+        "transcript": "And what you're gonna do is you're gonna select these two rows."
+    },
+    {
+        "id": 379,
+        "start": 1794.8,
+        "end": 1805.12,
+        "frames": [
+            "frame_00641.png",
+            "frame_00642.png",
+            "frame_00643.png"
+        ],
+        "transcript": "This is the input, the output, and then in the extensions uh under here, you will have score selected ranges, which is gonna create a score, and then you can look at the confusion matrix and see how it works."
+    },
+    {
+        "id": 380,
+        "start": 1805.12,
+        "end": 1818.96,
+        "frames": [
+            "frame_00644.png",
+            "frame_00645.png",
+            "frame_00646.png"
+        ],
+        "transcript": "So that's sort of how that's one part of the exercise, but you can easily go and make changes here or even test out by making changes to the data, you know, messing up your like your JSON and seeing whether how that impacts things and so on and so forth."
+    },
+    {
+        "id": 381,
+        "start": 1818.96,
+        "end": 1823.92,
+        "frames": [
+            "frame_00647.png"
+        ],
+        "transcript": "So that's that's the first phase of our co-pilot, the as of our workshop."
+    },
+    {
+        "id": 382,
+        "start": 1823.92,
+        "end": 1826.64,
+        "frames": [
+            "frame_00648.png"
+        ],
+        "transcript": "And we'll talk about the second phase when we get started with that one."
+    },
+    {
+        "id": 383,
+        "start": 1826.64,
+        "end": 1827.04,
+        "frames": [
+            "frame_00649.png"
+        ],
+        "transcript": "Go ahead."
+    },
+    {
+        "id": 384,
+        "start": 1827.04,
+        "end": 1840.48,
+        "frames": [
+            "frame_00650.png"
+        ],
+        "transcript": "Yeah, I'm just curious how uh like as practices we have you know, are you teams run this on the stuff, or just like how do you do this at scale?"
+    },
+    {
+        "id": 385,
+        "start": 1840.48,
+        "end": 1841.36,
+        "frames": [
+            "frame_00651.png"
+        ],
+        "transcript": "Right."
+    },
+    {
+        "id": 386,
+        "start": 1841.36,
+        "end": 1845.12,
+        "frames": [
+            "frame_00652.png"
+        ],
+        "transcript": "So that will we'll hit a lot of that in the second part of our workshop."
+    },
+    {
+        "id": 387,
+        "start": 1845.12,
+        "end": 1848.0,
+        "frames": [
+            "frame_00653.png"
+        ],
+        "transcript": "We will directly go into Python colab code."
+    },
+    {
+        "id": 388,
+        "start": 1848.0,
+        "end": 1852.64,
+        "frames": [
+            "frame_00654.png",
+            "frame_00655.png"
+        ],
+        "transcript": "Uh we have um the SDK goes through a bunch of this."
+    },
+    {
+        "id": 389,
+        "start": 1852.64,
+        "end": 1859.92,
+        "frames": [
+            "frame_00656.png",
+            "frame_00657.png",
+            "frame_00658.png"
+        ],
+        "transcript": "Um the details and best practices on how you do it, but you will get to play with this on uh in this workshop."
+    },
+    {
+        "id": 390,
+        "start": 1859.92,
+        "end": 1866.96,
+        "frames": [
+            "frame_00659.png"
+        ],
+        "transcript": "You can you can you will our our our scorers are specifically designed for online workflows."
+    },
+    {
+        "id": 391,
+        "start": 1866.96,
+        "end": 1872.88,
+        "frames": [
+            "frame_00660.png"
+        ],
+        "transcript": "These like 20 dimensions that you have, they score them all in sub-20, like 50 milliseconds."
+    },
+    {
+        "id": 392,
+        "start": 1872.88,
+        "end": 1881.2,
+        "frames": [
+            "frame_00661.png"
+        ],
+        "transcript": "So you can run on a very large scale, you can run it online fairly easily, and we have batch processes and stuff like that still set up for you."
+    },
+    {
+        "id": 393,
+        "start": 1881.2,
+        "end": 1884.08,
+        "frames": [
+            "frame_00662.png"
+        ],
+        "transcript": "So you'll be able to play with that, create sets."
+    },
+    {
+        "id": 394,
+        "start": 1884.08,
+        "end": 1891.36,
+        "frames": [
+            "frame_00663.png"
+        ],
+        "transcript": "Um typically you want to create eval sets which have a combination of hard, easy, medium, that kind of stuff."
+    },
+    {
+        "id": 395,
+        "start": 1891.36,
+        "end": 1898.08,
+        "frames": [
+            "frame_00664.png"
+        ],
+        "transcript": "We're not going to get into data generation, synthetic data generation that much, but our uh you'll play with it in the copilot."
+    },
+    {
+        "id": 396,
+        "start": 1898.08,
+        "end": 1908.48,
+        "frames": [
+            "frame_00665.png"
+        ],
+        "transcript": "But the actual data generation stuff, there's actually um documentation that we can follow up afterwards on how to create like easy to set, hard medium sets for your testing purposes."
+    },
+    {
+        "id": 397,
+        "start": 1908.48,
+        "end": 1917.04,
+        "frames": [
+            "frame_00666.png",
+            "frame_00667.png",
+            "frame_00668.png",
+            "frame_00669.png"
+        ],
+        "transcript": "Uh the best thing is to sample from your logs some number of things and evaluate or just run it online."
+    },
+    {
+        "id": 398,
+        "start": 1917.04,
+        "end": 1925.04,
+        "frames": [
+            "frame_00670.png"
+        ],
+        "transcript": "Majority of this, these kinds of quality checks at Google will run online, whether it's spam detection, whether it's like, you know, which what decisions to make."
+    },
+    {
+        "id": 399,
+        "start": 1925.04,
+        "end": 1927.04,
+        "frames": [
+            "frame_00671.png"
+        ],
+        "transcript": "That's the ideal place you want to be."
+    },
+    {
+        "id": 400,
+        "start": 1927.04,
+        "end": 1930.24,
+        "frames": [
+            "frame_00672.png"
+        ],
+        "transcript": "Most people, it's very difficult to kind of like sort of implement at that point."
+    },
+    {
+        "id": 401,
+        "start": 1930.24,
+        "end": 1935.28,
+        "frames": [
+            "frame_00673.png",
+            "frame_00674.png"
+        ],
+        "transcript": "I think the challenge, one of the biggest challenges with LM as a judge is it's so expensive you can't run run online."
+    },
+    {
+        "id": 402,
+        "start": 1935.28,
+        "end": 1937.12,
+        "frames": [
+            "frame_00675.png"
+        ],
+        "transcript": "So that's one of the things that this saws."
+    },
+    {
+        "id": 403,
+        "start": 1937.12,
+        "end": 1941.12,
+        "frames": [
+            "frame_00676.png",
+            "frame_00677.png"
+        ],
+        "transcript": "Um go ahead."
+    },
+    {
+        "id": 404,
+        "start": 1941.12,
+        "end": 1946.0,
+        "frames": [
+            "frame_00678.png"
+        ],
+        "transcript": "different as a traditional models or"
+    },
+    {
+        "id": 405,
+        "start": 1946.0,
+        "end": 1949.68,
+        "frames": [
+            "frame_00679.png",
+            "frame_00680.png",
+            "frame_00681.png"
+        ],
+        "transcript": "Um so so we had a bunch of discussion on this."
+    },
+    {
+        "id": 406,
+        "start": 1949.68,
+        "end": 1952.64,
+        "frames": [
+            "frame_00682.png",
+            "frame_00683.png"
+        ],
+        "transcript": "Maybe I'll go very quick quickly through these slides."
+    },
+    {
+        "id": 407,
+        "start": 1952.64,
+        "end": 1959.28,
+        "frames": [
+            "frame_00684.png",
+            "frame_00685.png",
+            "frame_00686.png"
+        ],
+        "transcript": "Um so the the the these models are designed for high precision."
+    },
+    {
+        "id": 408,
+        "start": 1959.28,
+        "end": 1964.64,
+        "frames": [
+            "frame_00687.png",
+            "frame_00688.png"
+        ],
+        "transcript": "Like, for example, if you run the same score or twice on the same thing, it's not going to give you different scores, exactly the same score."
+    },
+    {
+        "id": 409,
+        "start": 1964.64,
+        "end": 1966.8,
+        "frames": [
+            "frame_00689.png"
+        ],
+        "transcript": "But small variations keep the same scores."
+    },
+    {
+        "id": 410,
+        "start": 1966.8,
+        "end": 1967.2,
+        "frames": [
+            "frame_00690.png"
+        ],
+        "transcript": "Right?"
+    },
+    {
+        "id": 411,
+        "start": 1967.2,
+        "end": 1969.68,
+        "frames": [
+            "frame_00691.png"
+        ],
+        "transcript": "So it's highly designed for like super high precision."
+    },
+    {
+        "id": 412,
+        "start": 1969.68,
+        "end": 1977.76,
+        "frames": [
+            "frame_00692.png",
+            "frame_00693.png"
+        ],
+        "transcript": "It's just the architecture of these models is is basically um uh very low variance."
+    },
+    {
+        "id": 413,
+        "start": 1977.76,
+        "end": 1984.64,
+        "frames": [
+            "frame_00694.png",
+            "frame_00695.png"
+        ],
+        "transcript": "Um they the the part of the reason is that they're using this bi-directional attention instead of like the typical decoder models attention."
+    },
+    {
+        "id": 414,
+        "start": 1984.64,
+        "end": 1993.04,
+        "frames": [
+            "frame_00696.png"
+        ],
+        "transcript": "They have a regression head on top instead of uh token generation, so it's not a lot of regressively generating tokens, which has a lot of like weirdness that happens to it."
+    },
+    {
+        "id": 415,
+        "start": 1993.04,
+        "end": 1998.48,
+        "frames": [
+            "frame_00697.png",
+            "frame_00698.png"
+        ],
+        "transcript": "Like there's a lot of post hoc uh explanation for scores, they'll come up with a score, then they'll try to justify the score."
+    },
+    {
+        "id": 416,
+        "start": 1998.48,
+        "end": 1999.52,
+        "frames": [
+            "frame_00699.png"
+        ],
+        "transcript": "That doesn't happen."
+    },
+    {
+        "id": 417,
+        "start": 1999.52,
+        "end": 2011.76,
+        "frames": [
+            "frame_00700.png",
+            "frame_00701.png"
+        ],
+        "transcript": "The other thing is these models have been uh trained on um a lot of data, like you know, billions and millions of tokens, which are only for scoring, but different kinds of content, so coding content, other type of content."
+    },
+    {
+        "id": 418,
+        "start": 2011.76,
+        "end": 2016.56,
+        "frames": [
+            "frame_00702.png"
+        ],
+        "transcript": "So these are these generalize really well across, but that also stabilizes them quite a bit."
+    },
+    {
+        "id": 419,
+        "start": 2016.56,
+        "end": 2022.8,
+        "frames": [
+            "frame_00703.png"
+        ],
+        "transcript": "Um the the one thing that I would say which is really nice is the interface is very nice."
+    },
+    {
+        "id": 420,
+        "start": 2022.8,
+        "end": 2032.56,
+        "frames": [
+            "frame_00704.png",
+            "frame_00705.png"
+        ],
+        "transcript": "It basically just you ask a question and give it the data and it will answer the question with a score, and then you can inspect the score and understand why why it gave you that score."
+    },
+    {
+        "id": 421,
+        "start": 2032.56,
+        "end": 2036.64,
+        "frames": [
+            "frame_00706.png"
+        ],
+        "transcript": "So it's a fairly simple interface, there's no like prompt tuning and so on and so forth."
+    },
+    {
+        "id": 422,
+        "start": 2036.64,
+        "end": 2044.56,
+        "frames": [
+            "frame_00707.png",
+            "frame_00708.png"
+        ],
+        "transcript": "Because in this particular case, when you're evaluating prompt tuning, doesn't really like it's not very natural, like you know, how do you explain a rubric to a model?"
+    },
+    {
+        "id": 423,
+        "start": 2044.56,
+        "end": 2050.4,
+        "frames": [
+            "frame_00709.png"
+        ],
+        "transcript": "So these models understand internally why should this score high, why shouldn't they score high?"
+    },
+    {
+        "id": 424,
+        "start": 2050.4,
+        "end": 2064.64,
+        "frames": [
+            "frame_00710.png"
+        ],
+        "transcript": "And then these things come together uh using uh a fairly sophisticated model, which is like an extension of generalized additive model, which brings all of these different signals together by baiting them based on your thumbs up, thumbs down data."
+    },
+    {
+        "id": 425,
+        "start": 2064.64,
+        "end": 2070.48,
+        "frames": [
+            "frame_00711.png"
+        ],
+        "transcript": "So this is a process called calibration where you give it a bunch of data and it understands what's important, what's not."
+    },
+    {
+        "id": 426,
+        "start": 2070.48,
+        "end": 2078.16,
+        "frames": [
+            "frame_00712.png",
+            "frame_00713.png"
+        ],
+        "transcript": "What should I some if something fails, I should fail everything, for example, spam, but if it succeeds, I shouldn't contribute."
+    },
+    {
+        "id": 427,
+        "start": 2078.16,
+        "end": 2081.84,
+        "frames": [
+            "frame_00714.png"
+        ],
+        "transcript": "Those kinds of decisions, it makes those decisions for you based on the data."
+    },
+    {
+        "id": 428,
+        "start": 2081.84,
+        "end": 2089.84,
+        "frames": [
+            "frame_00715.png",
+            "frame_00716.png"
+        ],
+        "transcript": "So that's sort of it's it's a much more advanced way of doing evals and they're sort of ground up built for eval purposes."
+    },
+    {
+        "id": 429,
+        "start": 2089.84,
+        "end": 2092.16,
+        "frames": [
+            "frame_00717.png"
+        ],
+        "transcript": "It gives them that sort of stability that you desire."
+    },
+    {
+        "id": 430,
+        "start": 2092.16,
+        "end": 2098.4,
+        "frames": [
+            "frame_00718.png",
+            "frame_00719.png"
+        ],
+        "transcript": "And that and the reason they're very fast is because when you use bidirectional attention, you can build much more dense embeddings."
+    },
+    {
+        "id": 431,
+        "start": 2098.4,
+        "end": 2102.56,
+        "frames": [
+            "frame_00720.png"
+        ],
+        "transcript": "So with fewer parameters, you can get fairly high quality scores."
+    },
+    {
+        "id": 432,
+        "start": 2102.56,
+        "end": 2102.96,
+        "frames": [
+            "frame_00721.png"
+        ],
+        "transcript": "Go ahead."
+    },
+    {
+        "id": 433,
+        "start": 2102.96,
+        "end": 2105.52,
+        "frames": [
+            "frame_00722.png"
+        ],
+        "transcript": "Does it work well with other languages?"
+    },
+    {
+        "id": 434,
+        "start": 2105.52,
+        "end": 2110.88,
+        "frames": [
+            "frame_00723.png",
+            "frame_00724.png"
+        ],
+        "transcript": "Uh right now we have trained it with a handful of languages."
+    },
+    {
+        "id": 435,
+        "start": 2110.88,
+        "end": 2118.48,
+        "frames": [
+            "frame_00725.png",
+            "frame_00726.png"
+        ],
+        "transcript": "Uh we are we are pretty soon going to release a model um with multi-langu multilingual capabilities."
+    },
+    {
+        "id": 436,
+        "start": 2118.48,
+        "end": 2122.32,
+        "frames": [
+            "frame_00727.png"
+        ],
+        "transcript": "We don't support multimodal yet, but this is in our roadmap, right?"
+    },
+    {
+        "id": 437,
+        "start": 2122.32,
+        "end": 2125.92,
+        "frames": [
+            "frame_00728.png"
+        ],
+        "transcript": "So right now it's English in a few languages, and then we're going to expand it beyond that."
+    },
+    {
+        "id": 438,
+        "start": 2125.92,
+        "end": 2132.24,
+        "frames": [
+            "frame_00729.png",
+            "frame_00730.png",
+            "frame_00731.png"
+        ],
+        "transcript": "Um we should kick off the workshop and then we'll pass it on and we can just answer all the questions as well."
+    },
+    {
+        "id": 439,
+        "start": 2132.24,
+        "end": 2134.48,
+        "frames": [
+            "frame_00732.png",
+            "frame_00733.png"
+        ],
+        "transcript": "Um you just want to share the doc?"
+    },
+    {
+        "id": 440,
+        "start": 2134.48,
+        "end": 2139.68,
+        "frames": [
+            "frame_00734.png",
+            "frame_00735.png",
+            "frame_00736.png",
+            "frame_00737.png"
+        ],
+        "transcript": "Again, remind us like withpy.ai slash workshop."
+    },
+    {
+        "id": 441,
+        "start": 2139.68,
+        "end": 2142.8,
+        "frames": [
+            "frame_00738.png",
+            "frame_00739.png",
+            "frame_00740.png",
+            "frame_00741.png"
+        ],
+        "transcript": "I'll just share the doc here as well so that you all can see it."
+    },
+    {
+        "id": 442,
+        "start": 2142.8,
+        "end": 2145.36,
+        "frames": [
+            "frame_00742.png",
+            "frame_00743.png"
+        ],
+        "transcript": "Yeah, I'll also put it in the Slack channel for everybody."
+    },
+    {
+        "id": 443,
+        "start": 2145.36,
+        "end": 2151.92,
+        "frames": [
+            "frame_00744.png",
+            "frame_00745.png",
+            "frame_00746.png",
+            "frame_00747.png"
+        ],
+        "transcript": "Um please get started and let us know."
+    },
+    {
+        "id": 444,
+        "start": 2151.92,
+        "end": 2156.24,
+        "frames": [
+            "frame_00748.png",
+            "frame_00749.png",
+            "frame_00750.png",
+            "frame_00751.png"
+        ],
+        "transcript": "Um sorry."
+    },
+    {
+        "id": 445,
+        "start": 2156.24,
+        "end": 2161.76,
+        "frames": [
+            "frame_00752.png",
+            "frame_00753.png"
+        ],
+        "transcript": "Uh some people maybe have already started working with the collabs I've seen."
+    },
+    {
+        "id": 446,
+        "start": 2161.76,
+        "end": 2171.36,
+        "frames": [
+            "frame_00754.png"
+        ],
+        "transcript": "Um, but uh if I'll quickly show others uh what um what what the second phase of the exercise is about."
+    },
+    {
+        "id": 447,
+        "start": 2171.36,
+        "end": 2174.8,
+        "frames": [
+            "frame_00755.png",
+            "frame_00756.png"
+        ],
+        "transcript": "Um but of course we can continue all of this going forward."
+    },
+    {
+        "id": 448,
+        "start": 2174.8,
+        "end": 2176.4,
+        "frames": [
+            "frame_00757.png"
+        ],
+        "transcript": "Um how do I project this?"
+    },
+    {
+        "id": 449,
+        "start": 2176.4,
+        "end": 2189.04,
+        "frames": [
+            "frame_00758.png",
+            "frame_00759.png",
+            "frame_00760.png",
+            "frame_00761.png",
+            "frame_00762.png"
+        ],
+        "transcript": "Um, um so this the second part of the exercise, by the way, we we may not have enough time to wrap it all up here, but the second part of the exercise, feel free to do it on your own."
+    },
+    {
+        "id": 450,
+        "start": 2189.04,
+        "end": 2192.88,
+        "frames": [
+            "frame_00763.png"
+        ],
+        "transcript": "The collab is available for you, so you can you can you can use this."
+    },
+    {
+        "id": 451,
+        "start": 2192.88,
+        "end": 2198.72,
+        "frames": [
+            "frame_00764.png",
+            "frame_00765.png"
+        ],
+        "transcript": "Um this collab, um this this is the pre-prepared collab."
+    },
+    {
+        "id": 452,
+        "start": 2198.72,
+        "end": 2215.12,
+        "frames": [
+            "frame_00766.png",
+            "frame_00767.png",
+            "frame_00768.png"
+        ],
+        "transcript": "Um and how do I I don't know if you can see this, but basically, this particular collab will take you through these multiple steps, and a lot of people ask me questions about how to use it in code, so I just want to quickly go over it."
+    },
+    {
+        "id": 453,
+        "start": 2215.12,
+        "end": 2217.36,
+        "frames": [
+            "frame_00769.png"
+        ],
+        "transcript": "Um this is some basic installation."
+    },
+    {
+        "id": 454,
+        "start": 2217.36,
+        "end": 2218.88,
+        "frames": [
+            "frame_00770.png"
+        ],
+        "transcript": "This is your scoring spec."
+    },
+    {
+        "id": 455,
+        "start": 2218.88,
+        "end": 2221.2,
+        "frames": [
+            "frame_00771.png"
+        ],
+        "transcript": "This is this is where all of your intelligence is gonna live."
+    },
+    {
+        "id": 456,
+        "start": 2221.2,
+        "end": 2225.52,
+        "frames": [
+            "frame_00772.png"
+        ],
+        "transcript": "Again, this is a relatively simple example, so it's a relatively simple scoring spec."
+    },
+    {
+        "id": 457,
+        "start": 2225.52,
+        "end": 2232.88,
+        "frames": [
+            "frame_00773.png",
+            "frame_00774.png",
+            "frame_00775.png"
+        ],
+        "transcript": "But the way you get this spec is basically over here, you get into code, you copy it, and you put it into your collab, right?"
+    },
+    {
+        "id": 458,
+        "start": 2232.88,
+        "end": 2235.84,
+        "frames": [
+            "frame_00776.png",
+            "frame_00777.png"
+        ],
+        "transcript": "So this is basically how you get the spec here."
+    },
+    {
+        "id": 459,
+        "start": 2235.84,
+        "end": 2240.48,
+        "frames": [
+            "frame_00778.png",
+            "frame_00779.png"
+        ],
+        "transcript": "It's all in natural language spec with some Python code in there."
+    },
+    {
+        "id": 460,
+        "start": 2240.48,
+        "end": 2245.44,
+        "frames": [
+            "frame_00780.png"
+        ],
+        "transcript": "This is what you'll change, this is what you'll tweak, this is where everything is going to be."
+    },
+    {
+        "id": 461,
+        "start": 2245.44,
+        "end": 2261.92,
+        "frames": [
+            "frame_00781.png",
+            "frame_00782.png",
+            "frame_00783.png"
+        ],
+        "transcript": "And what you're now doing in this particular collab, which you can literally click through it, and you don't have to do anything more than that, but or you can play around with it a whole bunch, is one is we have some data sets, public public data sets on Hugging Face, which has the thumbs up, thumbs down data."
+    },
+    {
+        "id": 462,
+        "start": 2261.92,
+        "end": 2265.2,
+        "frames": [
+            "frame_00784.png"
+        ],
+        "transcript": "This is the same data if you've seen the sheet, that's the same data over here."
+    },
+    {
+        "id": 463,
+        "start": 2265.2,
+        "end": 2279.52,
+        "frames": [
+            "frame_00785.png",
+            "frame_00786.png",
+            "frame_00787.png",
+            "frame_00788.png"
+        ],
+        "transcript": "You it you you it this collab is loading that data, running the score on it, returning your results, um, and then building a similar confusion matrix that you saw there, which indicates how well aligned your scores are."
+    },
+    {
+        "id": 464,
+        "start": 2279.52,
+        "end": 2281.6,
+        "frames": [
+            "frame_00789.png"
+        ],
+        "transcript": "So that just getting you warmed up."
+    },
+    {
+        "id": 465,
+        "start": 2281.6,
+        "end": 2284.24,
+        "frames": [
+            "frame_00790.png",
+            "frame_00791.png",
+            "frame_00792.png"
+        ],
+        "transcript": "Uh, then you can use it to compare models."
+    },
+    {
+        "id": 466,
+        "start": 2284.24,
+        "end": 2286.96,
+        "frames": [
+            "frame_00793.png"
+        ],
+        "transcript": "This is where like really interesting stuff starts happening, right?"
+    },
+    {
+        "id": 467,
+        "start": 2286.96,
+        "end": 2291.6,
+        "frames": [
+            "frame_00794.png"
+        ],
+        "transcript": "So in this particular case, we are comparing 1.5 and 2.5 models."
+    },
+    {
+        "id": 468,
+        "start": 2291.6,
+        "end": 2296.48,
+        "frames": [
+            "frame_00795.png",
+            "frame_00796.png"
+        ],
+        "transcript": "You can see that 2.5 has a slightly higher score than 1.5 for this particular task."
+    },
+    {
+        "id": 469,
+        "start": 2296.48,
+        "end": 2301.12,
+        "frames": [
+            "frame_00797.png"
+        ],
+        "transcript": "But because 2.5 was mostly for reasoning, there's not that much of a delta here."
+    },
+    {
+        "id": 470,
+        "start": 2301.12,
+        "end": 2311.28,
+        "frames": [
+            "frame_00798.png"
+        ],
+        "transcript": "If you go to smaller models, uh like some of the mini models like the Claude Haiku, you could see a you'll see a much bigger delta between the quality based on your own scoring system."
+    },
+    {
+        "id": 471,
+        "start": 2311.28,
+        "end": 2315.2,
+        "frames": [
+            "frame_00799.png"
+        ],
+        "transcript": "So now you can evaluate use your scoring system for evaluating different models."
+    },
+    {
+        "id": 472,
+        "start": 2315.2,
+        "end": 2326.08,
+        "frames": [
+            "frame_00800.png",
+            "frame_00801.png"
+        ],
+        "transcript": "What this is doing is it's taking about you know 10 examples, calling these five different models, generating responses, and then scoring them using our scoring system, right?"
+    },
+    {
+        "id": 473,
+        "start": 2326.08,
+        "end": 2327.6,
+        "frames": [
+            "frame_00802.png"
+        ],
+        "transcript": "So that's a model comparison."
+    },
+    {
+        "id": 474,
+        "start": 2327.6,
+        "end": 2330.64,
+        "frames": [
+            "frame_00803.png"
+        ],
+        "transcript": "The other upset is to try different prompts."
+    },
+    {
+        "id": 475,
+        "start": 2330.64,
+        "end": 2337.12,
+        "frames": [
+            "frame_00804.png"
+        ],
+        "transcript": "Um people change their system prompts, but they're worried about them when they change it, what would happen."
+    },
+    {
+        "id": 476,
+        "start": 2337.12,
+        "end": 2341.12,
+        "frames": [
+            "frame_00805.png"
+        ],
+        "transcript": "This is the right way to kind of make sure that you're not regressing."
+    },
+    {
+        "id": 477,
+        "start": 2341.12,
+        "end": 2347.12,
+        "frames": [
+            "frame_00806.png"
+        ],
+        "transcript": "You have your scoring spec, you try different system prompts, see if your scores are going down on your on your test set."
+    },
+    {
+        "id": 478,
+        "start": 2347.12,
+        "end": 2351.76,
+        "frames": [
+            "frame_00807.png"
+        ],
+        "transcript": "So, again, taking 10 examples just to demonstrate how you compare them."
+    },
+    {
+        "id": 479,
+        "start": 2351.76,
+        "end": 2356.16,
+        "frames": [
+            "frame_00808.png"
+        ],
+        "transcript": "Uh, here's like we created a bad and a good prompt just to kind of accentuate this."
+    },
+    {
+        "id": 480,
+        "start": 2356.16,
+        "end": 2360.64,
+        "frames": [
+            "frame_00809.png",
+            "frame_00810.png"
+        ],
+        "transcript": "So, like bad prompts getting much lower score than good prompts on this particular task."
+    },
+    {
+        "id": 481,
+        "start": 2360.64,
+        "end": 2373.84,
+        "frames": [
+            "frame_00811.png",
+            "frame_00812.png"
+        ],
+        "transcript": "Uh, this is the one that I that I'm very excited about because it brings you into the online world and how to actually do this online, where you're taking this one particular transcript and you are testing it out with different number of samples."
+    },
+    {
+        "id": 482,
+        "start": 2373.84,
+        "end": 2383.44,
+        "frames": [
+            "frame_00813.png",
+            "frame_00814.png"
+        ],
+        "transcript": "So if you are if you use just one sample, which is typically what you do, generate one response with a temperature of 0.7, you get a particular score."
+    },
+    {
+        "id": 483,
+        "start": 2383.44,
+        "end": 2391.52,
+        "frames": [
+            "frame_00815.png"
+        ],
+        "transcript": "But as you up the number of samples, what it's doing behind the scenes is creating three or four four of those responses."
+    },
+    {
+        "id": 484,
+        "start": 2391.52,
+        "end": 2399.28,
+        "frames": [
+            "frame_00816.png"
+        ],
+        "transcript": "Each one is a different response, and then ranking them using our the pie scoring system that you just built and picking the one that's best."
+    },
+    {
+        "id": 485,
+        "start": 2399.28,
+        "end": 2405.6,
+        "frames": [
+            "frame_00817.png"
+        ],
+        "transcript": "And what you would see is as you increase the number of examples, you'll see the score steadily going up, the response quality going up."
+    },
+    {
+        "id": 486,
+        "start": 2405.6,
+        "end": 2413.52,
+        "frames": [
+            "frame_00818.png"
+        ],
+        "transcript": "So this is uh literally like you can click through this in the collab and run through it, and you don't won't need anything else."
+    },
+    {
+        "id": 487,
+        "start": 2413.52,
+        "end": 2417.52,
+        "frames": [
+            "frame_00819.png"
+        ],
+        "transcript": "But there's a bunch of options for you to play around with this right now or later."
+    },
+    {
+        "id": 488,
+        "start": 2417.52,
+        "end": 2427.785578,
+        "frames": [
+            "frame_00820.png",
+            "frame_00821.png",
+            "frame_00822.png",
+            "frame_00823.png",
+            "frame_00824.png",
+            "frame_00825.png"
+        ],
+        "transcript": "Just want to introduce this to you guys before um before you all disappear."
+    }
+]

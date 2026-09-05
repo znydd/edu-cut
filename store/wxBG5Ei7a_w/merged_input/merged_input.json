@@ -1,0 +1,1458 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 9.0,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 1,
+        "start": 9.0,
+        "end": 36.0,
+        "frames": [
+            "frame_00002.png",
+            "frame_00003.png",
+            "frame_00004.png",
+            "frame_00005.png",
+            "frame_00006.png"
+        ],
+        "transcript": "[Silent] for 27.48 sec"
+    },
+    {
+        "id": 2,
+        "start": 36.0,
+        "end": 39.12,
+        "frames": [
+            "frame_00007.png"
+        ],
+        "transcript": "So is my computer screen visible?"
+    },
+    {
+        "id": 3,
+        "start": 39.12,
+        "end": 41.2,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": ">> Yes sir."
+    },
+    {
+        "id": 4,
+        "start": 41.2,
+        "end": 41.6,
+        "frames": [
+            "frame_00009.png"
+        ],
+        "transcript": ">> Yes sir."
+    },
+    {
+        "id": 5,
+        "start": 41.6,
+        "end": 41.92,
+        "frames": [
+            "frame_00010.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 6,
+        "start": 41.92,
+        "end": 45.96,
+        "frames": [
+            "frame_00011.png"
+        ],
+        "transcript": ">> Yes sir."
+    },
+    {
+        "id": 7,
+        "start": 45.96,
+        "end": 47.6,
+        "frames": [
+            "frame_00012.png"
+        ],
+        "transcript": "Okay, thank you."
+    },
+    {
+        "id": 8,
+        "start": 47.6,
+        "end": 55.12,
+        "frames": [
+            "frame_00013.png",
+            "frame_00014.png"
+        ],
+        "transcript": "So welcome you all to the first lecture of CSC four three seven data science."
+    },
+    {
+        "id": 9,
+        "start": 55.12,
+        "end": 66.0,
+        "frames": [
+            "frame_00015.png"
+        ],
+        "transcript": "And in this lecture, specifically we will discuss about uh introduction to data science and the course outline of our CSE437."
+    },
+    {
+        "id": 10,
+        "start": 66.0,
+        "end": 76.0,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "[Silent] for 10.40 sec"
+    },
+    {
+        "id": 11,
+        "start": 76.0,
+        "end": 83.36,
+        "frames": [
+            "frame_00017.png",
+            "frame_00018.png"
+        ],
+        "transcript": "So at first, the definition that is how can we define the data science?"
+    },
+    {
+        "id": 12,
+        "start": 83.36,
+        "end": 90.8,
+        "frames": [
+            "frame_00019.png",
+            "frame_00020.png"
+        ],
+        "transcript": "So there are uh several definitions of that data science, but uh I like this one the O'Reilly definition."
+    },
+    {
+        "id": 13,
+        "start": 90.8,
+        "end": 102.96,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "So the data science is a multidisciplinary blend of data inference, algorithm development, and technology in order to solve analytically complex problems."
+    },
+    {
+        "id": 14,
+        "start": 102.96,
+        "end": 109.76,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "So here in this case, we can say see that it's a multidisciplinary field."
+    },
+    {
+        "id": 15,
+        "start": 109.76,
+        "end": 115.68,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "That means uh data science is not studied only in computer science."
+    },
+    {
+        "id": 16,
+        "start": 115.68,
+        "end": 133.52,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "We can say the data science is studied in other departments, like maybe we can say the business uh business field, the the uh that is the communication fields and and electrical and electronics fields, and some other fields also."
+    },
+    {
+        "id": 17,
+        "start": 133.52,
+        "end": 143.92,
+        "frames": [
+            "frame_00025.png",
+            "frame_00026.png"
+        ],
+        "transcript": "That means uh it's it's a multidisciplinary uh science, so it consists of specifically the data inference."
+    },
+    {
+        "id": 18,
+        "start": 143.92,
+        "end": 166.48,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "So the purpose of the data science is to infer something from data, but for that, what we need, we need to know the algorithm and develop the algorithm, and after that, we need the technology, we need the technology to solve analytically complex problems."
+    },
+    {
+        "id": 19,
+        "start": 166.48,
+        "end": 172.88,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "So, technology it can be uh the technology for for for the uh big data."
+    },
+    {
+        "id": 20,
+        "start": 172.88,
+        "end": 180.08,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "Um there are some technologies specifically for uh handling the big data, okay."
+    },
+    {
+        "id": 21,
+        "start": 180.08,
+        "end": 187.2,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "So, big data is a part of the data science, and we need some the technology for programming, okay."
+    },
+    {
+        "id": 22,
+        "start": 187.2,
+        "end": 198.0,
+        "frames": [
+            "frame_00031.png",
+            "frame_00032.png"
+        ],
+        "transcript": "That means coding, so that's why uh we we need the technology for that, and the target is to is to solve the analytically complex problems."
+    },
+    {
+        "id": 23,
+        "start": 198.0,
+        "end": 203.84,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "So, this is the target, otherwise, we can say that the statistics is enough for that, okay."
+    },
+    {
+        "id": 24,
+        "start": 203.84,
+        "end": 236.56,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "If the the problem is simply uh then the statistical measurement or statistical methods are enough for uh inference, so that's why that the target of data science is usually those problems which are analytically complex, and another definition we can say that the that data science is to gain insights into the data through computation, statistics, and the visualization."
+    },
+    {
+        "id": 25,
+        "start": 236.56,
+        "end": 242.48,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "So that means again the data."
+    },
+    {
+        "id": 26,
+        "start": 242.48,
+        "end": 255.28,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "Okay, that means we want to make sense of data that is finding the insights from the data through some technology, like maybe computation."
+    },
+    {
+        "id": 27,
+        "start": 255.28,
+        "end": 264.08,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "We have to know the statistics and then visualize the reports or outputs or performances."
+    },
+    {
+        "id": 28,
+        "start": 264.08,
+        "end": 291.12,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "Okay, and it can be the data can be from the human subjects, different parts of human, like maybe human brains or images, brain images, or normal images, and here data can be from the healthcare segments, data can be from some social networks, or maybe the content delivery networks, or data can be from different sensor networks."
+    },
+    {
+        "id": 29,
+        "start": 291.12,
+        "end": 302.4,
+        "frames": [
+            "frame_00039.png",
+            "frame_00040.png"
+        ],
+        "transcript": "Okay, so the source can be anything that is the where we can get the data, and those kind of data can be structured, it can be unstructured, it can be semi-structured."
+    },
+    {
+        "id": 30,
+        "start": 302.4,
+        "end": 312.24,
+        "frames": [
+            "frame_00041.png"
+        ],
+        "transcript": "So, whatever the data we want to process that one, we want to find the insights from the data, and that that's the data science task."
+    },
+    {
+        "id": 31,
+        "start": 312.24,
+        "end": 329.04,
+        "frames": [
+            "frame_00042.png"
+        ],
+        "transcript": "So, here uh uh Josh Blumen's talk also mentioned that a data scientist is someone who knows more statistics than a computer scientist."
+    },
+    {
+        "id": 32,
+        "start": 329.04,
+        "end": 344.16,
+        "frames": [
+            "frame_00043.png"
+        ],
+        "transcript": "That means if you are a computer scientist, then to be a data scientist you need to know the statistics, and again the and more computer science than the statistician."
+    },
+    {
+        "id": 33,
+        "start": 344.16,
+        "end": 364.72,
+        "frames": [
+            "frame_00044.png"
+        ],
+        "transcript": "If someone is the statistician, he needs to know uh more computer science than the general statistician, so that that's the data science that means uh it's some blending of statistics and the computer science things."
+    },
+    {
+        "id": 34,
+        "start": 364.72,
+        "end": 383.84,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "So usually uh Agramon said like this that is a data scientist, uh you have to have the uh knowledge of statistics, that means you you have to have the statistician and the programmer and the coach, a storyteller, and the artist."
+    },
+    {
+        "id": 35,
+        "start": 383.84,
+        "end": 417.04,
+        "frames": [
+            "frame_00046.png",
+            "frame_00047.png"
+        ],
+        "transcript": "So that means um a data scientist uh is necessary to know statistics, know programming, and also the the the coaching stuff and storytelling that means to explain your uh your your uh to interpreting your uh reports and also interpreting whatever you get from the insights to answer the question of why and then artist also that means uh you need to have the visualization capability for that."
+    },
+    {
+        "id": 36,
+        "start": 417.04,
+        "end": 424.32,
+        "frames": [
+            "frame_00048.png"
+        ],
+        "transcript": "So these are the major phases of uh data science projects."
+    },
+    {
+        "id": 37,
+        "start": 424.32,
+        "end": 430.56,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "Usually, what we have to do uh at first, you need to know the problem."
+    },
+    {
+        "id": 38,
+        "start": 430.56,
+        "end": 444.24,
+        "frames": [
+            "frame_00050.png"
+        ],
+        "transcript": "It can be the business problem, it can be the social problem, it can be international problem, it can be national problem, it can be the problem of a specific group or vulnerable groups."
+    },
+    {
+        "id": 39,
+        "start": 444.24,
+        "end": 448.4,
+        "frames": [
+            "frame_00051.png"
+        ],
+        "transcript": "So you you need to know the know the problem."
+    },
+    {
+        "id": 40,
+        "start": 448.4,
+        "end": 452.64,
+        "frames": [
+            "frame_00052.png"
+        ],
+        "transcript": "Maybe the the the system is already running."
+    },
+    {
+        "id": 41,
+        "start": 452.64,
+        "end": 455.12,
+        "frames": [
+            "frame_00053.png",
+            "frame_00054.png"
+        ],
+        "transcript": "How can we improve that?"
+    },
+    {
+        "id": 42,
+        "start": 455.12,
+        "end": 466.16,
+        "frames": [
+            "frame_00055.png"
+        ],
+        "transcript": "Okay, then that means the problem identification or finding the gaps in in the problem is is the first task of data science project."
+    },
+    {
+        "id": 43,
+        "start": 466.16,
+        "end": 470.0,
+        "frames": [
+            "frame_00056.png"
+        ],
+        "transcript": "What you want to find from the data?"
+    },
+    {
+        "id": 44,
+        "start": 470.0,
+        "end": 475.2,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "We we if we have the data, okay, then what we want to find from the data."
+    },
+    {
+        "id": 45,
+        "start": 475.2,
+        "end": 506.16,
+        "frames": [
+            "frame_00058.png"
+        ],
+        "transcript": "Uh, so here is asking the question and ask questions to the the appropriate person, or ask questions to yourself also, and finding out the objectives that is what are the goals of this study, what are the goals of this project, and also finding out the parameters that means the variables, it can be dependent variables, it can be independent variables."
+    },
+    {
+        "id": 46,
+        "start": 506.16,
+        "end": 513.36,
+        "frames": [
+            "frame_00059.png"
+        ],
+        "transcript": "So you need to find which one is dependent, which one is undependent parameters, and what are the features, what are the inputs for that."
+    },
+    {
+        "id": 47,
+        "start": 513.36,
+        "end": 520.08,
+        "frames": [
+            "frame_00060.png"
+        ],
+        "transcript": "Okay, so this is the first phase of uh of data science project."
+    },
+    {
+        "id": 48,
+        "start": 520.08,
+        "end": 529.84,
+        "frames": [
+            "frame_00061.png"
+        ],
+        "transcript": "That means uh you have to find the problem first, and then the second one is the data acquisition."
+    },
+    {
+        "id": 49,
+        "start": 529.84,
+        "end": 537.12,
+        "frames": [
+            "frame_00062.png"
+        ],
+        "transcript": "So there are various sources of data acquisition, that means you need to collect or gather the data."
+    },
+    {
+        "id": 50,
+        "start": 537.12,
+        "end": 575.36,
+        "frames": [
+            "frame_00063.png"
+        ],
+        "transcript": "So acquisition can be from the database, that means the existing uh very much extract uh structured data you can you can find from the existing databases of an organization, or you need to find from web servers, maybe through through the web scrapping, and maybe the logs, different types of logs like error logs, and from the APIs, you need to collect the data from API and from the online repositories, and more."
+    },
+    {
+        "id": 51,
+        "start": 575.36,
+        "end": 600.8,
+        "frames": [
+            "frame_00064.png"
+        ],
+        "transcript": "Okay, so that means uh uh if you find the business problems, then the second task is to is to is the data acquisition, and you need to you need to know the source of the data, how you can acquire the data, how you can get the data, what kind of data is necessary for you, whether the data is structured or maybe unstructured or maybe semi-structured."
+    },
+    {
+        "id": 52,
+        "start": 600.8,
+        "end": 606.64,
+        "frames": [
+            "frame_00065.png"
+        ],
+        "transcript": "So you need you you need to you need to acquire data from different sources, whatever necessary."
+    },
+    {
+        "id": 53,
+        "start": 606.64,
+        "end": 639.52,
+        "frames": [
+            "frame_00066.png"
+        ],
+        "transcript": "Okay, based on your project, maybe you need to collect the data from the human, like maybe online surface or something, and sometimes you need to collect the data from some organization, like maybe for healthcare data, you need to uh you need to contact with the hospitals and uh that is the related organizations, and sometimes you need to collect data from the environment, maybe from the environmental sensor."
+    },
+    {
+        "id": 54,
+        "start": 639.52,
+        "end": 644.24,
+        "frames": [
+            "frame_00067.png"
+        ],
+        "transcript": "Sometimes your data can be from vision-based or image based."
+    },
+    {
+        "id": 55,
+        "start": 644.24,
+        "end": 656.8,
+        "frames": [
+            "frame_00068.png"
+        ],
+        "transcript": "So various kinds of data, heterogeneous types of data, you need to act well for a data science project, Medhi."
+    },
+    {
+        "id": 56,
+        "start": 656.8,
+        "end": 659.04,
+        "frames": [
+            "frame_00069.png"
+        ],
+        "transcript": "Any questions?"
+    },
+    {
+        "id": 57,
+        "start": 659.04,
+        "end": 660.88,
+        "frames": [
+            "frame_00070.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 58,
+        "start": 660.88,
+        "end": 663.84,
+        "frames": [
+            "frame_00071.png"
+        ],
+        "transcript": "Sir, it would be helpful if you record this live session."
+    },
+    {
+        "id": 59,
+        "start": 663.84,
+        "end": 665.92,
+        "frames": [
+            "frame_00072.png"
+        ],
+        "transcript": "Uh yeah, I am recording."
+    },
+    {
+        "id": 60,
+        "start": 665.92,
+        "end": 667.76,
+        "frames": [
+            "frame_00073.png"
+        ],
+        "transcript": "Okay, so sorry sir."
+    },
+    {
+        "id": 61,
+        "start": 667.76,
+        "end": 668.8,
+        "frames": [
+            "frame_00074.png"
+        ],
+        "transcript": "Thank you so much."
+    },
+    {
+        "id": 62,
+        "start": 668.8,
+        "end": 676.0,
+        "frames": [
+            "frame_00075.png"
+        ],
+        "transcript": "[Silent] for 8.00 sec"
+    },
+    {
+        "id": 63,
+        "start": 676.0,
+        "end": 687.04,
+        "frames": [
+            "frame_00076.png",
+            "frame_00077.png"
+        ],
+        "transcript": "Okay, then uh the next thing after acquisition, that means after gathering the data, the next thing, an important thing is data preparation."
+    },
+    {
+        "id": 64,
+        "start": 687.04,
+        "end": 702.72,
+        "frames": [
+            "frame_00078.png"
+        ],
+        "transcript": "When we acquire the data, specifically the the the data, some kinds of those are messy, some kinds uh there are some that is duplicate values, missing values, and some some some kinds we need to transform."
+    },
+    {
+        "id": 65,
+        "start": 702.72,
+        "end": 709.04,
+        "frames": [
+            "frame_00079.png"
+        ],
+        "transcript": "Okay, so that's why we need the data preparation phase, and this is very important phase."
+    },
+    {
+        "id": 66,
+        "start": 709.04,
+        "end": 722.24,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "The most of the time you need to you need to prepare your data, that means most of the time you need to expand for data preparation and also the exploratory data analysis."
+    },
+    {
+        "id": 67,
+        "start": 722.24,
+        "end": 725.68,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "Okay, these two phases very important phase."
+    },
+    {
+        "id": 68,
+        "start": 725.68,
+        "end": 734.4,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "If your data is not prepared well, then you cannot expect better output or better outcome from your data."
+    },
+    {
+        "id": 69,
+        "start": 734.4,
+        "end": 746.56,
+        "frames": [
+            "frame_00083.png"
+        ],
+        "transcript": "So that means the data science project is uh we can say the the key dependence of data science project is based on the data preparation and the exploratory data analysis."
+    },
+    {
+        "id": 70,
+        "start": 746.56,
+        "end": 756.64,
+        "frames": [
+            "frame_00084.png"
+        ],
+        "transcript": "So here uh in this case, what you need to do, you need to maybe you uh need the data cleaning phase."
+    },
+    {
+        "id": 71,
+        "start": 756.64,
+        "end": 777.52,
+        "frames": [
+            "frame_00085.png"
+        ],
+        "transcript": "So you need to uh clean the data to eliminate the inconsistent data, or maybe the inconsistency in data types also, and some sometimes you also file the five find the misspelled attributes, missing values, duplicate values."
+    },
+    {
+        "id": 72,
+        "start": 777.52,
+        "end": 780.24,
+        "frames": [
+            "frame_00086.png"
+        ],
+        "transcript": "So these are many other problems also."
+    },
+    {
+        "id": 73,
+        "start": 780.24,
+        "end": 795.68,
+        "frames": [
+            "frame_00087.png"
+        ],
+        "transcript": "These are the major problems in our uh data we have, and sometimes sometimes we need to analyze that whether uh the data we have they have really the signal or not."
+    },
+    {
+        "id": 74,
+        "start": 795.68,
+        "end": 803.68,
+        "frames": [
+            "frame_00088.png"
+        ],
+        "transcript": "Here, signal means that uh really we can use this data for some some some specific purpose or not."
+    },
+    {
+        "id": 75,
+        "start": 803.68,
+        "end": 814.08,
+        "frames": [
+            "frame_00089.png"
+        ],
+        "transcript": "Okay, that is you need to you need to find out that whether the data has any signal or maybe just one just no signals for that kind of analysis, okay."
+    },
+    {
+        "id": 76,
+        "start": 814.08,
+        "end": 856.8,
+        "frames": [
+            "frame_00090.png"
+        ],
+        "transcript": "Um then uh sometimes we need to transform that is data transformation is always useful, like maybe mapping uh or encoding okay, from text to some value and quantization, quantization okay, from one to three, four, like this binarization from the the using zero and one normalization everything from a specific normalization algorithm, uh, like maybe min-max normalization and scaling that is the uh re-escale your data within a diff defined frames, maybe from minus one to plus one, like this."
+    },
+    {
+        "id": 77,
+        "start": 856.8,
+        "end": 864.64,
+        "frames": [
+            "frame_00091.png"
+        ],
+        "transcript": "Okay, and there are some professional tools for this this this kind of uh data preparation, like maybe the talent and informatica."
+    },
+    {
+        "id": 78,
+        "start": 864.64,
+        "end": 884.4,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "So you can you can use those things for uh data preparation, and we have also the the R programming and also the Python programming, and there are some APIs and libraries for data preparation, and we can use those those libraries for data preparation also."
+    },
+    {
+        "id": 79,
+        "start": 884.4,
+        "end": 890.0,
+        "frames": [
+            "frame_00093.png"
+        ],
+        "transcript": "[Silent] for 6.40 sec"
+    },
+    {
+        "id": 80,
+        "start": 890.0,
+        "end": 904.96,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "Uh Ucho Sir Banarization both the sub Zinish take a regular research money number yeah, binarization specifically uh zero and one."
+    },
+    {
+        "id": 81,
+        "start": 904.96,
+        "end": 910.48,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "If you have yes and no, then you can represent with no equal zero and yes equal one."
+    },
+    {
+        "id": 82,
+        "start": 910.48,
+        "end": 921.76,
+        "frames": [
+            "frame_00096.png"
+        ],
+        "transcript": "And sometimes uh what we have to do uh we we need some generalization, and after generalization, you can you can get the binarization, you can apply the binarization."
+    },
+    {
+        "id": 83,
+        "start": 921.76,
+        "end": 934.08,
+        "frames": [
+            "frame_00097.png"
+        ],
+        "transcript": "That means maybe you have many types, but you want to uh just generalize this to just only two types, like maybe positive and negative."
+    },
+    {
+        "id": 84,
+        "start": 934.08,
+        "end": 942.32,
+        "frames": [
+            "frame_00098.png"
+        ],
+        "transcript": "Positive can be many, like maybe uh okay, good, better, best, those are all positives."
+    },
+    {
+        "id": 85,
+        "start": 942.32,
+        "end": 949.52,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "So you can you can say this is just only one and bad, worst, all these things you can you can say the zero."
+    },
+    {
+        "id": 86,
+        "start": 949.52,
+        "end": 954.72,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "Okay, so this kind of binarization sometimes it necessarily is necessary."
+    },
+    {
+        "id": 87,
+        "start": 954.72,
+        "end": 962.519,
+        "frames": [
+            "frame_00101.png"
+        ],
+        "transcript": ">> This good."
+    },
+    {
+        "id": 88,
+        "start": 962.519,
+        "end": 966.4,
+        "frames": [
+            "frame_00102.png"
+        ],
+        "transcript": "Okay, the next thing is uh exploratory data analysis."
+    },
+    {
+        "id": 89,
+        "start": 966.4,
+        "end": 970.96,
+        "frames": [
+            "frame_00103.png"
+        ],
+        "transcript": "The exploratory data analysis is another important phase."
+    },
+    {
+        "id": 90,
+        "start": 970.96,
+        "end": 996.16,
+        "frames": [
+            "frame_00104.png"
+        ],
+        "transcript": "Uh in this phase, specifically we apply some dimensionality reduction method, and these dimensionality reduction methods usually reduce the data dimension and also transform the data into a new dimension, and in that dimension, it will keep the data properties the same as before."
+    },
+    {
+        "id": 91,
+        "start": 996.16,
+        "end": 1006.08,
+        "frames": [
+            "frame_00105.png"
+        ],
+        "transcript": "So though the dimension is reduced, on that case the data signals signals will remain the same."
+    },
+    {
+        "id": 92,
+        "start": 1006.08,
+        "end": 1011.04,
+        "frames": [
+            "frame_00106.png"
+        ],
+        "transcript": "Okay, so those kind of methods usually we call dimensionality deduction method."
+    },
+    {
+        "id": 93,
+        "start": 1011.04,
+        "end": 1021.12,
+        "frames": [
+            "frame_00107.png"
+        ],
+        "transcript": "Okay, so uh in explorative data analysis, we we need to apply the dimensionality deduction methods and also some feature extraction."
+    },
+    {
+        "id": 94,
+        "start": 1021.12,
+        "end": 1038.16,
+        "frames": [
+            "frame_00108.png",
+            "frame_00109.png"
+        ],
+        "transcript": "So there are some popular feature extraction methods, those are those are ML or DS methods, but sometimes we need to uh extract the features, the handmade features, statistical features, some domain-specific features."
+    },
+    {
+        "id": 95,
+        "start": 1038.16,
+        "end": 1041.92,
+        "frames": [
+            "frame_00110.png"
+        ],
+        "transcript": "So those kind of feature extractions are also very necessary."
+    },
+    {
+        "id": 96,
+        "start": 1041.92,
+        "end": 1065.2,
+        "frames": [
+            "frame_00111.png"
+        ],
+        "transcript": "Uh so in exploratory data analysis, we have to we have to find out the the feature features, and this is uh as I mentioned, that this is important because if you didn't identify the feature, which one is discriminative, most discriminative features, then you will not get better results."
+    },
+    {
+        "id": 97,
+        "start": 1065.2,
+        "end": 1069.44,
+        "frames": [
+            "frame_00112.png"
+        ],
+        "transcript": "So that means feature extraction is very uh much important also."
+    },
+    {
+        "id": 98,
+        "start": 1069.44,
+        "end": 1076.48,
+        "frames": [
+            "frame_00113.png"
+        ],
+        "transcript": "So feature extraction methods, we need to know the feature extraction methods also, and then the feature selections."
+    },
+    {
+        "id": 99,
+        "start": 1076.48,
+        "end": 1093.52,
+        "frames": [
+            "frame_00114.png"
+        ],
+        "transcript": "Uh, that means the feature maybe you can say we we can have them the duplicate features, we can have the redundant features, and we can we can have like maybe a feature with just just no discriminative capability, so we need to remove or eliminate those kind of features."
+    },
+    {
+        "id": 100,
+        "start": 1093.52,
+        "end": 1105.52,
+        "frames": [
+            "frame_00115.png"
+        ],
+        "transcript": "So the feature selection algorithms are there, and applying those feature selection algorithms, we have to uh we have to use the feature selection uh methods, we have to do the feature selection."
+    },
+    {
+        "id": 101,
+        "start": 1105.52,
+        "end": 1109.52,
+        "frames": [
+            "frame_00116.png"
+        ],
+        "transcript": "So this is called the explorative data analysis."
+    },
+    {
+        "id": 102,
+        "start": 1109.52,
+        "end": 1115.28,
+        "frames": [
+            "frame_00117.png"
+        ],
+        "transcript": "Uh so this is the fourth phase of uh of a data science project."
+    },
+    {
+        "id": 103,
+        "start": 1115.28,
+        "end": 1125.84,
+        "frames": [
+            "frame_00118.png"
+        ],
+        "transcript": "Okay, then in fifth phase, in fifth phase, specifically this phase is about the data modeling, and this one is for the machine learning."
+    },
+    {
+        "id": 104,
+        "start": 1125.84,
+        "end": 1147.36,
+        "frames": [
+            "frame_00119.png"
+        ],
+        "transcript": "Specifically, in machine learning, the machine learning is for this one, and there are several machine learning algorithms we can apply and maybe train train the the uh the model and find find out the the specific model."
+    },
+    {
+        "id": 105,
+        "start": 1147.36,
+        "end": 1152.4,
+        "frames": [
+            "frame_00120.png"
+        ],
+        "transcript": "That's why we also call it the model specification using machine learning algorithms."
+    },
+    {
+        "id": 106,
+        "start": 1152.4,
+        "end": 1165.52,
+        "frames": [
+            "frame_00121.png"
+        ],
+        "transcript": "So, several machine learning algorithms we can we can apply, and you need to know that is which kind of data we have to use which kind of algorithms and whether uh what's the necessary of the project?"
+    },
+    {
+        "id": 107,
+        "start": 1165.52,
+        "end": 1176.48,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "Is it uh the the regression can can give us the the the output or classification or clustering or maybe uh association mining?"
+    },
+    {
+        "id": 108,
+        "start": 1176.48,
+        "end": 1218.8,
+        "frames": [
+            "frame_00123.png"
+        ],
+        "transcript": "Okay, so there are several uh methods for that, like the linear regression, logistic regression, k nearest neighbor, decision tree, support vector machine, k means, and q learning methods and reinforcement learning, neural networks, deep neural networks, convolutional neural networks, reinforcement uh sorry, uh recurrent neural networks, and deep belief networks, artificial neural networks, hidden markup model, conditional random field, maximum entropy markup model, all these are the these algorithms, machine learning algorithms are for data modeling and specifically for train and test to identify the best fit for your business solution or business requirements."
+    },
+    {
+        "id": 109,
+        "start": 1218.8,
+        "end": 1234.08,
+        "frames": [
+            "frame_00124.png"
+        ],
+        "transcript": "So, this kind of modeling uh uh this kind of modeling, specifically the machine learning algorithms, we need to we need to know very clearly in-depth study, specifically from the computer science domain."
+    },
+    {
+        "id": 110,
+        "start": 1234.08,
+        "end": 1262.48,
+        "frames": [
+            "frame_00125.png"
+        ],
+        "transcript": "And in this course, we we will discuss some of these, but not many, because this is actually the the the field of machine learning, and um and next the the the the data visualization and communication through some some report and some graphical user interface, some presentation and some form of uh performance measurement."
+    },
+    {
+        "id": 111,
+        "start": 1262.48,
+        "end": 1273.2,
+        "frames": [
+            "frame_00126.png"
+        ],
+        "transcript": "Okay, so visualization is also uh necessary, specifically for the readability uh or understandability of of the audience."
+    },
+    {
+        "id": 112,
+        "start": 1273.2,
+        "end": 1281.52,
+        "frames": [
+            "frame_00127.png"
+        ],
+        "transcript": "Okay, there are some prep professional tools for visualization and reports like W, Power BI, Quick View."
+    },
+    {
+        "id": 113,
+        "start": 1281.52,
+        "end": 1291.52,
+        "frames": [
+            "frame_00128.png"
+        ],
+        "transcript": "So these are these are the professional tools for visualization and communication, and finally, the deployment and maintenance."
+    },
+    {
+        "id": 114,
+        "start": 1291.52,
+        "end": 1314.08,
+        "frames": [
+            "frame_00129.png"
+        ],
+        "transcript": "So, in case of the deployment, at first, uh we say that the the pre-production environment we have to we we have to before uh making this project for in the production environment, we have to go for pre-production, and some kind of uh test we need to perform here, and after that, we have to go for the the production environment."
+    },
+    {
+        "id": 115,
+        "start": 1314.08,
+        "end": 1327.04,
+        "frames": [
+            "frame_00130.png"
+        ],
+        "transcript": "And when a project is in in in in run, we need to we need to monitor the performance, and also uh we we need to analyze the performance in real time."
+    },
+    {
+        "id": 116,
+        "start": 1327.04,
+        "end": 1337.84,
+        "frames": [
+            "frame_00131.png"
+        ],
+        "transcript": "So that means in this phase, uh what we have to do we have to control and monitor the project performances after deployment."
+    },
+    {
+        "id": 117,
+        "start": 1337.84,
+        "end": 1345.6,
+        "frames": [
+            "frame_00132.png"
+        ],
+        "transcript": "Okay, so in this course we will focus from phase two to phase six."
+    },
+    {
+        "id": 118,
+        "start": 1345.6,
+        "end": 1348.16,
+        "frames": [
+            "frame_00133.png"
+        ],
+        "transcript": "This these phases, okay."
+    },
+    {
+        "id": 119,
+        "start": 1348.16,
+        "end": 1366.32,
+        "frames": [
+            "frame_00134.png"
+        ],
+        "transcript": "The finding of the problem it is uh specifically uh necessary for for necessary, specifically necessary or maybe demand for uh specific applications, and the deployment is after project development."
+    },
+    {
+        "id": 120,
+        "start": 1366.32,
+        "end": 1373.44,
+        "frames": [
+            "frame_00135.png"
+        ],
+        "transcript": "Okay, so other phases phase two to six, we will cover in this uh course."
+    },
+    {
+        "id": 121,
+        "start": 1373.44,
+        "end": 1378.32,
+        "frames": [
+            "frame_00136.png"
+        ],
+        "transcript": "Any question up to this slide."
+    },
+    {
+        "id": 122,
+        "start": 1378.32,
+        "end": 1384.0,
+        "frames": [
+            "frame_00137.png"
+        ],
+        "transcript": "[Silent] for 6.66 sec"
+    },
+    {
+        "id": 123,
+        "start": 1384.0,
+        "end": 1385.05,
+        "frames": [
+            "frame_00138.png"
+        ],
+        "transcript": "[Applause]"
+    },
+    {
+        "id": 124,
+        "start": 1385.05,
+        "end": 1388.57,
+        "frames": [
+            "frame_00139.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 125,
+        "start": 1388.57,
+        "end": 1391.31,
+        "frames": [
+            "frame_00140.png"
+        ],
+        "transcript": "[Applause]"
+    },
+    {
+        "id": 126,
+        "start": 1391.31,
+        "end": 1391.52,
+        "frames": [
+            "frame_00141.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 127,
+        "start": 1391.52,
+        "end": 1396.33,
+        "frames": [
+            "frame_00142.png"
+        ],
+        "transcript": "[Applause]"
+    },
+    {
+        "id": 128,
+        "start": 1396.33,
+        "end": 1402.51,
+        "frames": [
+            "frame_00143.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 129,
+        "start": 1402.51,
+        "end": 1403.51,
+        "frames": [
+            "frame_00144.png"
+        ],
+        "transcript": "[Applause]"
+    },
+    {
+        "id": 130,
+        "start": 1403.51,
+        "end": 1411.939,
+        "frames": [
+            "frame_00145.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 131,
+        "start": 1411.939,
+        "end": 1419.049,
+        "frames": [
+            "frame_00146.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 132,
+        "start": 1419.049,
+        "end": 1436.0,
+        "frames": [
+            "frame_00147.png"
+        ],
+        "transcript": "[Silent] for 17.03 sec"
+    },
+    {
+        "id": 133,
+        "start": 1436.0,
+        "end": 1439.08,
+        "frames": [
+            "frame_00148.png"
+        ],
+        "transcript": "Hello."
+    },
+    {
+        "id": 134,
+        "start": 1439.08,
+        "end": 1442.88,
+        "frames": [
+            "frame_00149.png"
+        ],
+        "transcript": ">> Hello. Can you hear me?"
+    },
+    {
+        "id": 135,
+        "start": 1442.88,
+        "end": 1443.6,
+        "frames": [
+            "frame_00150.png"
+        ],
+        "transcript": ">> Yes, sir."
+    },
+    {
+        "id": 136,
+        "start": 1443.6,
+        "end": 1444.64,
+        "frames": [
+            "frame_00151.png"
+        ],
+        "transcript": ">> Yes, sir."
+    },
+    {
+        "id": 137,
+        "start": 1444.64,
+        "end": 1444.8,
+        "frames": [
+            "frame_00152.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 138,
+        "start": 1444.8,
+        "end": 1456.0,
+        "frames": [
+            "frame_00153.png"
+        ],
+        "transcript": "[Silent] for 12.08 sec"
+    },
+    {
+        "id": 139,
+        "start": 1456.0,
+        "end": 1467.84,
+        "frames": [
+            "frame_00154.png"
+        ],
+        "transcript": "Okay, so we can continue the discussion, and one of the major brands of data science is the big data."
+    },
+    {
+        "id": 140,
+        "start": 1467.84,
+        "end": 1488.88,
+        "frames": [
+            "frame_00155.png"
+        ],
+        "transcript": "So the big data specifically for for the why I didn't understand that I so big data is specifically for specifically for big uh four or five bits."
+    },
+    {
+        "id": 141,
+        "start": 1488.88,
+        "end": 1547.2,
+        "frames": [
+            "frame_00156.png"
+        ],
+        "transcript": "Okay, and why we we we need to handle the big data in data science, uh because specifically uh in some form the data we need to handle is the the volume of the data is big, and sometimes we can say that the the the the continuous monitoring of the data, so for that the the the the the data source the different data source can produce the the big data specifically based on the volume based on the uh the the that is the the velocity of the data okay um so like here one one one can say that the each and every time we are browsing maybe different websites, and sometimes we need uh we just click some ads, or maybe someone is not clicking that ad."
+    },
+    {
+        "id": 142,
+        "start": 1547.2,
+        "end": 1566.48,
+        "frames": [
+            "frame_00157.png"
+        ],
+        "transcript": "So to predict that whether this ad is perfect for this person or not, so whether this person will click to this ad or not, so it will it it will uh to determine that we need to analyze huge volume of data."
+    },
+    {
+        "id": 143,
+        "start": 1566.48,
+        "end": 1570.8,
+        "frames": [
+            "frame_00158.png"
+        ],
+        "transcript": "So that's one kind of the the big data source."
+    },
+    {
+        "id": 144,
+        "start": 1570.8,
+        "end": 1582.08,
+        "frames": [
+            "frame_00159.png"
+        ],
+        "transcript": "Okay, that means you need to analyze the the the person's data and also you need to analyze analyze the the person's clicking habit."
+    },
+    {
+        "id": 145,
+        "start": 1582.08,
+        "end": 1595.84,
+        "frames": [
+            "frame_00160.png"
+        ],
+        "transcript": "Okay, so uh like another source here is the the social networks and the the contents that is content-centric networks and content distribution networks."
+    },
+    {
+        "id": 146,
+        "start": 1595.84,
+        "end": 1604.24,
+        "frames": [
+            "frame_00161.png"
+        ],
+        "transcript": "So the data from this each and every time they will it will produce huge amount of amount of data."
+    },
+    {
+        "id": 147,
+        "start": 1604.24,
+        "end": 1635.84,
+        "frames": [
+            "frame_00162.png"
+        ],
+        "transcript": "If you just want to process those data in online, then you have to deal with the big data, and another form of data can be from the internet of things, the the sensors, the billions of sensors nowadays uh placed in different locations for maybe a smart home, a smart city, a smart car, a smart building, so all these things, so the huge amounts of data they will produce."
+    },
+    {
+        "id": 148,
+        "start": 1635.84,
+        "end": 1640.08,
+        "frames": [
+            "frame_00163.png"
+        ],
+        "transcript": "So they need the communication like the machine-to-machine communication."
+    },
+    {
+        "id": 149,
+        "start": 1640.08,
+        "end": 1647.12,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "So for that, for analyzing those kinds of data, we need some special treatment of the data."
+    },
+    {
+        "id": 150,
+        "start": 1647.12,
+        "end": 1655.28,
+        "frames": [
+            "frame_00165.png"
+        ],
+        "transcript": "So that's why the the big big data analysis is necessary, and same for the health and scientific computing, also."
+    },
+    {
+        "id": 151,
+        "start": 1655.28,
+        "end": 1668.32,
+        "frames": [
+            "frame_00166.png",
+            "frame_00167.png"
+        ],
+        "transcript": "That is healthcare data is also big, specifically for its volume and and some some form of the healthcare sensors are also nowadays heavily used as a consumer product."
+    },
+    {
+        "id": 152,
+        "start": 1668.32,
+        "end": 1680.56,
+        "frames": [
+            "frame_00168.png"
+        ],
+        "transcript": "So so those kind of sensors or healthcare sensors are also produced, huge amount of data, and to analyze those those things, we need to take care of the big data processing techniques."
+    },
+    {
+        "id": 153,
+        "start": 1680.56,
+        "end": 1686.48,
+        "frames": [
+            "frame_00169.png"
+        ],
+        "transcript": "Another form of data is uh is called the trap data."
+    },
+    {
+        "id": 154,
+        "start": 1686.48,
+        "end": 1719.2,
+        "frames": [
+            "frame_00170.png"
+        ],
+        "transcript": "Specifically, the if we can represent the data in some connected manner, if we can present the data in some in some that is uh node and connection uh manner, it can be from the social networks like maybe follow our following, like this network, and it can be communication networks of different nodes, it can be the computer networks, it can be the road and road traffic, and it can be the citations of different authors and then collaboration and relationships."
+    },
+    {
+        "id": 155,
+        "start": 1719.2,
+        "end": 1730.08,
+        "frames": [
+            "frame_00171.png"
+        ],
+        "transcript": "So, all this kind of data we can represent in graphical structure, and for analyzing this, maybe finding out the community, okay."
+    },
+    {
+        "id": 156,
+        "start": 1730.08,
+        "end": 1732.0,
+        "frames": [
+            "frame_00172.png"
+        ],
+        "transcript": "Finding out the community."
+    },
+    {
+        "id": 157,
+        "start": 1732.0,
+        "end": 1744.0,
+        "frames": [
+            "frame_00173.png"
+        ],
+        "transcript": "So, community finding community can be the community of the researchers, community of the collaborators, um community of the criminals."
+    },
+    {
+        "id": 158,
+        "start": 1744.0,
+        "end": 1750.4,
+        "frames": [
+            "frame_00174.png"
+        ],
+        "transcript": "Okay, so to analyze those those kinds of data, the graph structured data is very very efficient."
+    },
+    {
+        "id": 159,
+        "start": 1750.4,
+        "end": 1767.131429,
+        "frames": [
+            "frame_00175.png"
+        ],
+        "transcript": "So that's why we we need to analyze the graph data using some specific graph data processing algorithms, and and those algorithms are also necessary, uh, specifically in big data environment."
+    }
+]

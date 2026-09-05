@@ -146,8 +146,15 @@ class Visualizer:
             self.yt_id = None
             self.response_path = None
 
-    def clean_classified_response(self, reasoning=False):
-        """Display the raw unfiltered classification table."""
+    def clean_classified_response(self, reasoning=False, exclude_groups: list[int] = None):
+        """Display the raw unfiltered classification table.
+        
+        Args:
+            reasoning: Whether to show reasoning column
+            exclude_groups: List of group numbers (# column) to exclude from 2D list output
+        """
+        if exclude_groups is None:
+            exclude_groups = []
         classified_df = pd.read_csv(self.response_path)
         headers = ["id", "timestamp", "class"]
         if reasoning:
@@ -219,12 +226,20 @@ class Visualizer:
         console.print(rich_table)
 
         # Show grouped irrelevant segments below the main table
-        self.show_grouped_irrelevant(console)
+        self.show_grouped_irrelevant(console, exclude_groups=exclude_groups)
 
-    def show_grouped_irrelevant(self, console: Console = None):
-        """Display filtered and grouped irrelevant segments with clickable links."""
+    def show_grouped_irrelevant(self, console: Console = None, exclude_groups: list[int] = None):
+        """Display filtered and grouped irrelevant segments with clickable links.
+        
+        Args:
+            console: Rich console for output
+            exclude_groups: List of group numbers (# column) to exclude from 2D list output
+        """
         if console is None:
             console = Console()
+        
+        if exclude_groups is None:
+            exclude_groups = []
 
         classified_df = pd.read_csv(self.response_path)
 
@@ -256,15 +271,23 @@ class Visualizer:
         # Apply filtering rules
         irrelevant_segments = _filter_irrelevant_segments(segments)
 
-        # Group adjacent segments
-        grouped = _group_adjacent_segments(irrelevant_segments)
+        # Group adjacent segments (with segment tracking)
+        grouped = self._group_adjacent_segments_with_ids(irrelevant_segments)
 
         # Filter out groups that are 3s or less
         # grouped = [g for g in grouped if (g["end"] - g["start"]) >= 2.0]
 
+        # Count relevant segments (not in the grouped table)
+        total_segments = len(segments)
+        irrelevant_segment_count = len(irrelevant_segments)
+        relevant_segment_count = total_segments - irrelevant_segment_count
+
         if not grouped:
             console.print(
                 "\n[bold yellow]No irrelevant segments found after filtering.[/bold yellow]"
+            )
+            console.print(
+                f"\n[bold green]Relevant segments (not shown): {relevant_segment_count}[/bold green]"
             )
             return
 
@@ -276,18 +299,33 @@ class Visualizer:
             show_lines=True,
         )
         table.add_column("#", justify="right")
+        table.add_column("Segments", justify="center")
+        table.add_column("Count", justify="center")
         table.add_column("Start", justify="center")
         table.add_column("End", justify="center")
         table.add_column("Duration", justify="center")
 
+        total_grouped_segments = 0
         for i, group in enumerate(grouped, 1):
             start_link = _build_youtube_link(self.yt_id, group["start"])
             start_display = f"[link={start_link}]{_format_time(group['start'])}[/link]"
             end_display = _format_time(group["end"])
             duration_display = _format_time(group["end"] - group["start"])
+            
+            # Format segment IDs that form this group
+            segment_ids = group["segment_ids"]
+            segment_count = len(segment_ids)
+            total_grouped_segments += segment_count
+            
+            if segment_count <= 3:
+                segments_display = ", ".join(str(sid) for sid in segment_ids)
+            else:
+                segments_display = f"{segment_ids[0]}-{segment_ids[-1]}"
 
             table.add_row(
                 str(i),
+                segments_display,
+                str(segment_count),
                 start_display,
                 end_display,
                 duration_display,
@@ -296,3 +334,51 @@ class Visualizer:
 
         console.print("\n")
         console.print(table)
+        
+        # Show grouped segment total
+        console.print(
+            f"\n[bold red]Total grouped irrelevant segments: {total_grouped_segments}[/bold red]"
+        )
+        
+        # Show relevant segment count summary
+        console.print(
+            f"[bold green]Relevant segments (not grouped/not shown above): {relevant_segment_count}[/bold green]"
+        )
+        
+        # Print segment IDs as 2D list (excluding specified groups)
+        segments_2d = [
+            group["segment_ids"] 
+            for i, group in enumerate(grouped, 1) 
+            if i not in exclude_groups
+        ]
+        console.print(f"\n[bold cyan]Segments as 2D list:[/bold cyan] {segments_2d}")
+        if exclude_groups:
+            console.print(f"[dim](Excluded groups: {exclude_groups})[/dim]")
+
+    def _group_adjacent_segments_with_ids(self, segments: list[dict]) -> list[dict]:
+        """Group segments where segment[i].end == segment[i+1].start, tracking segment IDs."""
+        if not segments:
+            return []
+
+        groups = []
+        current_group = {
+            "start": segments[0]["start"],
+            "end": segments[0]["end"],
+            "segment_ids": [segments[0]["id"]],
+        }
+
+        for i in range(1, len(segments)):
+            # Check if adjacent (end of current matches start of next)
+            if abs(current_group["end"] - segments[i]["start"]) < 0.1:  # Small tolerance
+                current_group["end"] = segments[i]["end"]
+                current_group["segment_ids"].append(segments[i]["id"])
+            else:
+                groups.append(current_group)
+                current_group = {
+                    "start": segments[i]["start"],
+                    "end": segments[i]["end"],
+                    "segment_ids": [segments[i]["id"]],
+                }
+
+        groups.append(current_group)
+        return groups

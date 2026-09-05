@@ -1,0 +1,1034 @@
+[ { "start": "00:00:00", "end": "00:00:15", "type": "Irrelevant", "reasoning": "Segment contains technical setup and screen sharing verification without instructional content." }, { "start": "00:00:15", "end": "00:00:17", "type": "Irrelevant", "reasoning": "Technical housekeeping and mic checks." }, { "start": "00:00:17", "end": "00:00:18", "type": "Irrelevant", "reasoning": "Technical housekeeping and mic checks." }, { "start": "00:00:18", "end": "00:00:19", "type": "Irrelevant", "reasoning": "Technical housekeeping and mic checks." }, { "start": "00:00:19", "end": "00:00:21", "type": "Irrelevant", "reasoning": "Technical housekeeping and mic checks." }, { "start": "00:00:21", "end": "00:00:26", "type": "Irrelevant", "reasoning": "Segment contains screen sharing verification and administrative greetings." }, { "start": "00:00:26", "end": "00:00:27", "type": "Irrelevant", "reasoning": "Administrative greetings and technical friction." }, { "start": "00:00:27", "end": "00:00:28", "type": "Irrelevant", "reasoning": "Administrative greetings and technical friction." }, { "start": "00:00:28", "end": "00:00:30", "type": "Irrelevant", "reasoning": "Administrative greetings and technical friction." }, { "start": "00:00:30", "end": "00:00:31", "type": "Irrelevant", "reasoning": "Administrative greetings and technical friction." }, { "start": "00:00:31", "end": "00:00:38", "type": "Relevant", "reasoning": "Instructor introduces the core topic: data science and hypothesis testing." }, { "start": "00:00:38", "end": "00:00:43", "type": "Relevant", "reasoning": "Instructional definition of hypothesis testing as a method to test guesses." }, { "start": "00:00:43", "end": "00:00:53", "type": "Relevant", "reasoning": "Explaining the application of hypothesis testing in data science." }, { "start": "00:00:53", "end": "00:01:09", "type": "Relevant", "reasoning": "Discussing the importance of testing in research domains and business applications." }, { "start": "00:01:09", "end": "00:01:13", "type": "Relevant", "reasoning": "Contextualizing the necessity of the topic for data science students." }, { "start": "00:01:13", "end": "00:01:22", "type": "Relevant", "reasoning": "Reinforcing the importance of hypothesis testing for research and application." }, { "start": "00:01:22", "end": "00:01:27", "type": "Relevant", "reasoning": "Provides the formal definition of a hypothesis." }, { "start": "00:01:27", "end": "00:01:30", "type": "Relevant", "reasoning": "Explains the 'educated guess' concept in the world around us." }, { "start": "00:01:30", "end": "00:01:38", "type": "Relevant", "reasoning": "Defining a hypothesis as a claim or prediction about the world." }, { "start": "00:01:38", "end": "00:01:44", "type": "Relevant", "reasoning": "Instruction on how predictions and guesses form a hypothesis." }, { "start": "00:01:44", "end": "00:01:50", "type": "Relevant", "reasoning": "Conceptual explanation of a hypothesis being a starting claim." }, { "start": "00:01:50", "end": "00:01:54", "type": "Relevant", "reasoning": "Key instructional requirement: hypotheses must be testable." }, { "start": "00:01:54", "end": "00:02:00", "type": "Relevant", "reasoning": "Explanation of testing through experiment or observation." }, { "start": "00:02:00", "end": "00:02:03", "type": "Relevant", "reasoning": "Clarification on testability in the machine learning domain." }, { "start": "00:02:03", "end": "00:02:07", "type": "Relevant", "reasoning": "Comparing statistical methods to data-driven experiments." }, { "start": "00:02:07", "end": "00:02:15", "type": "Relevant", "reasoning": "Instructional explanation of proving hypotheses through repeated experiments." }, { "start": "00:02:15", "end": "00:02:20", "type": "Relevant", "reasoning": "Detailing observation as a method for proof." }, { "start": "00:02:20", "end": "00:02:25", "type": "Relevant", "reasoning": "Instruction on using survey data for hypothesis verification." }, { "start": "00:02:25", "end": "00:02:28", "type": "Relevant", "reasoning": "Conceptual summary of evidence-based proving." }, { "start": "00:02:28", "end": "00:02:32", "type": "Relevant", "reasoning": "Transitioning to concrete instructional examples." }, { "start": "00:02:32", "end": "00:02:36", "type": "Relevant", "reasoning": "Specific example: hypothesis regarding new medicine efficacy." }, { "start": "00:02:36", "end": "00:02:40", "type": "Relevant", "reasoning": "Discussing medical guesses as testable claims." }, { "start": "00:02:40", "end": "00:02:46", "type": "Relevant", "reasoning": "Contextualizing medicine hypotheses with COVID-19 scenarios." }, { "start": "00:02:46", "end": "00:02:55", "type": "Relevant", "reasoning": "Instruction on the necessity of testing medical guesses." }, { "start": "00:02:55", "end": "00:03:01", "type": "Relevant", "reasoning": "Reinforcement of the experimental requirement for medicine." }, { "start": "00:03:01", "end": "00:03:12", "type": "Relevant", "reasoning": "Second example: hypothesis about teaching methods improvement." }, { "start": "00:03:12", "end": "00:03:22", "type": "Relevant", "reasoning": "Instruction on instructional design hypotheses." }, { "start": "00:03:22", "end": "00:03:27", "type": "Relevant", "reasoning": "Hypothesizing better outcomes through early lecture material distribution." }, { "start": "00:03:27", "end": "00:03:29", "type": "Relevant", "reasoning": "Instruction on identifying teaching hypotheses." }, { "start": "00:03:29", "end": "00:03:34", "type": "Relevant", "reasoning": "Third example: hypothesis on location of new species in Mars." }, { "start": "00:03:34", "end": "00:03:53", "type": "Relevant", "reasoning": "Explaining guesswork in space exploration as hypotheses." }, { "start": "00:03:53", "end": "00:03:57", "type": "Relevant", "reasoning": "Fourth example: hypotheses about standardized test fairness." }, { "start": "00:03:57", "end": "00:04:01", "type": "Relevant", "reasoning": "Instruction on identifying fairer methods as testable guesses." }, { "start": "00:04:01", "end": "00:04:06", "type": "Relevant", "reasoning": "Summarizing diverse hypothesis types." }, { "start": "00:04:06", "end": "00:04:11", "type": "Relevant", "reasoning": "Requirement for testing guesses for validity." }, { "start": "00:04:11", "end": "00:04:15", "type": "Relevant", "reasoning": "Instruction on verifying guesses through rigorous testing." }, { "start": "00:04:15", "end": "00:04:20", "type": "Relevant", "reasoning": "Defining testability as the core criterion for a hypothesis." }, { "start": "00:04:20", "end": "00:04:23", "type": "Relevant", "reasoning": "Instructional overview of hypothesis statement structures." }, { "start": "00:04:23", "end": "00:04:29", "type": "Relevant", "reasoning": "Introducing the 'If-Then' format with independent and dependent variables." }, { "start": "00:04:29", "end": "00:04:35", "type": "Relevant", "reasoning": "Conceptual explanation of variable relationships in statements." }, { "start": "00:04:35", "end": "00:04:37", "type": "Relevant", "reasoning": "Formula example linking X (independent) to Y (dependent)." }, { "start": "00:04:37", "end": "00:04:43", "type": "Relevant", "reasoning": "Instruction on determining dependent values from independent inputs." }, { "start": "00:04:43", "end": "00:04:54", "type": "Relevant", "reasoning": "Defining dependent variables as outcomes of interest." }, { "start": "00:04:54", "end": "00:05:03", "type": "Relevant", "reasoning": "Defining independent variables as factors not dependent on others." }, { "start": "00:05:03", "end": "00:05:09", "type": "Relevant", "reasoning": "Instruction on variable roles in the hypothesis statement format." }, { "start": "00:05:09", "end": "00:05:19", "type": "Relevant", "reasoning": "Explanation of variable dependencies in data science context." }, { "start": "00:05:19", "end": "00:05:31", "type": "Relevant", "reasoning": "Instruction on the logical flow of a hypothesis statement." }, { "start": "00:05:31", "end": "00:05:34", "type": "Relevant", "reasoning": "Clarification on independent variable non-reliance." }, { "start": "00:05:34", "end": "00:05:39", "type": "Relevant", "reasoning": "Relating variable manipulation to dependent outcomes." }, { "start": "00:05:39", "end": "00:05:45", "type": "Relevant", "reasoning": "Instruction on phrasing hypothesis statements correctly." }, { "start": "00:05:45", "end": "00:05:48", "type": "Relevant", "reasoning": "Step-by-step guidance on writing variables in order." }, { "start": "00:05:48", "end": "00:05:51", "type": "Relevant", "reasoning": "Applying the format to concrete examples." }, { "start": "00:05:51", "end": "00:05:58", "type": "Relevant", "reasoning": "Detailed example: counseling, medication, and depression scales." }, { "start": "00:05:58", "end": "00:06:01", "type": "Relevant", "reasoning": "Linking combined variables to psychological outcomes." }, { "start": "00:06:01", "end": "00:06:05", "type": "Relevant", "reasoning": "Instruction on decrease scale hypotheses." }, { "start": "00:06:05", "end": "00:06:07", "type": "Relevant", "reasoning": "Educational example: exam timing at noon vs morning." }, { "start": "00:06:07", "end": "00:06:11", "type": "Relevant", "reasoning": "Hypothesizing score improvements based on timing changes." }, { "start": "00:06:11", "end": "00:06:13", "type": "Relevant", "reasoning": "Logical reasoning behind timing and brain function." }, { "start": "00:06:13", "end": "00:06:20", "type": "Relevant", "reasoning": "Instruction on finding evidence to support the guess." }, { "start": "00:06:20", "end": "00:06:32", "type": "Relevant", "reasoning": "Species finding example: location vs likelihood." }, { "start": "00:06:32", "end": "00:06:35", "type": "Relevant", "reasoning": "Educated case definition review." }, { "start": "00:06:35", "end": "00:06:48", "type": "Relevant", "reasoning": "Educational administrative hypothesis example (grades vs course load)." }, { "start": "00:06:48", "end": "00:06:53", "type": "Relevant", "reasoning": "Instruction on lack of proof for initial guesses." }, { "start": "00:06:53", "end": "00:07:00", "type": "Relevant", "reasoning": "Long-term educational impact hypothesis." }, { "start": "00:07:00", "end": "00:07:03", "type": "Relevant", "reasoning": "Identifying guesses that need rigorous testing." }, { "start": "00:07:03", "end": "00:07:21", "type": "Relevant", "reasoning": "Social/Famous hypothesis example (question hardness vs fame)." }, { "start": "00:07:21", "end": "00:07:26", "type": "Relevant", "reasoning": "Instruction on building testable statements for any scenario." }, { "start": "00:07:26", "end": "00:07:43", "type": "Relevant", "reasoning": "Overview of the current lecture's main objectives." }, { "start": "00:07:43", "end": "00:07:48", "type": "Relevant", "reasoning": "Introduction to comparison between two testing methods." }, { "start": "00:07:48", "end": "00:07:58", "type": "Relevant", "reasoning": "Determining when to apply specific hypothesis tests." }, { "start": "00:07:58", "end": "00:08:05", "type": "Relevant", "reasoning": "Instructional preview of next lecture's advanced methods." }, { "start": "00:08:05", "end": "00:08:10", "type": "Relevant", "reasoning": "Explaining why hypothesis testing is crucial across domains." }, { "start": "00:08:10", "end": "00:08:15", "type": "Relevant", "reasoning": "Importance of testing intuition and claims objectively." }, { "start": "00:08:15", "end": "00:08:26", "type": "Relevant", "reasoning": "Defining testing as a way to verify survey results in statistics." }, { "start": "00:08:26", "end": "00:08:29", "type": "Relevant", "reasoning": "Finding data meaningfulness through statistical rigor." }, { "start": "00:08:29", "end": "00:08:34", "type": "Relevant", "reasoning": "Instruction on nullifying beliefs with valid data." }, { "start": "00:08:34", "end": "00:08:44", "type": "Relevant", "reasoning": "Checking validity by figuring out odds vs chance." }, { "start": "00:08:44", "end": "00:08:48", "type": "Relevant", "reasoning": "Distinguishing between chance results and regular phenomena." }, { "start": "00:08:48", "end": "00:08:58", "type": "Relevant", "reasoning": "Importance of repeatability in valid experiments." }, { "start": "00:08:58", "end": "00:09:08", "type": "Relevant", "reasoning": "Identifying results that have little use due to chance." }, { "start": "00:09:08", "end": "00:09:16", "type": "Relevant", "reasoning": "COVID student drop example: testing local vs population truth." }, { "start": "00:09:16", "end": "00:09:28", "type": "Relevant", "reasoning": "Verifying population-level claims from small samples." }, { "start": "00:09:28", "end": "00:09:45", "type": "Relevant", "reasoning": "Logic behind testing hypotheses to avoid chance findings." }, { "start": "00:09:45", "end": "00:09:54", "type": "Relevant", "reasoning": "Transitioning to formulating hypotheses." }, { "start": "00:09:54", "end": "00:10:01", "type": "Relevant", "reasoning": "Checking for student understanding before moving on." }, { "start": "00:10:01", "end": "00:10:21", "type": "Relevant", "reasoning": "Instructor addresses the silence and confirms no questions." }, { "start": "00:10:21", "end": "00:10:26", "type": "Relevant", "reasoning": "Major categorization: Null vs Alternate hypothesis groups." }, { "start": "00:10:26", "end": "00:10:34", "type": "Relevant", "reasoning": "Instructional guide on finding and formulating null hypotheses." }, { "start": "00:10:34", "end": "00:10:40", "type": "Irrelevant", "reasoning": "Contains a non-instructional pause and dead air exceeding 5 seconds while slide transitions." }, { "start": "00:10:40", "end": "00:10:48", "type": "Relevant", "reasoning": "Defining Null Hypothesis as the 'accepted fact' or common belief." }, { "start": "00:10:48", "end": "00:10:52", "type": "Relevant", "reasoning": "Explaining normal statistics as the baseline for the null." }, { "start": "00:10:52", "end": "00:11:01", "type": "Relevant", "reasoning": "Defining Alternate Hypothesis as the researcher's new proposal." }, { "start": "00:11:01", "end": "00:11:11", "type": "Relevant", "reasoning": "Proposing facts beyond existing acceptable belief." }, { "start": "00:11:11", "end": "00:11:16", "type": "Relevant", "reasoning": "Clarifying that alternate hypothesis equals different facts." }, { "start": "00:11:16", "end": "00:11:18", "type": "Relevant", "reasoning": "Example: DNA double helix as a null hypothesis." }, { "start": "00:11:18", "end": "00:11:20", "type": "Relevant", "reasoning": "Scientific acceptance as basis for the null." }, { "start": "00:11:20", "end": "00:11:21", "type": "Relevant", "reasoning": "Genetic research context." }, { "start": "00:11:21", "end": "00:11:28", "type": "Relevant", "reasoning": "Example: World shape as an accepted belief." }, { "start": "00:11:28", "end": "00:11:34", "type": "Relevant", "reasoning": "Contrast: Triple helix as an alternate hypothesis." }, { "start": "00:11:34", "end": "00:11:37", "type": "Relevant", "reasoning": "Instruction on identifying facts different from acceptance." }, { "start": "00:11:37", "end": "00:11:47", "type": "Relevant", "reasoning": "Support vs Reject logic in research outcomes." }, { "start": "00:11:47", "end": "00:11:52", "type": "Relevant", "reasoning": "Necessity of rejecting or supporting the existing fact." }, { "start": "00:11:52", "end": "00:11:56", "type": "Relevant", "reasoning": "Defining null hypotheses as 'nullifiable' (can be rejected)." }, { "start": "00:11:56", "end": "00:12:02", "type": "Relevant", "reasoning": "Logic of research findings relative to null hypotheses." }, { "start": "00:12:02", "end": "00:12:25", "type": "Relevant", "reasoning": "Complex example: Surgery patients and physical therapy frequency." }, { "start": "00:12:25", "end": "00:12:33", "type": "Relevant", "reasoning": "Comparing twice-a-week therapy vs current three-times standard." }, { "start": "00:12:33", "end": "00:12:45", "type": "Relevant", "reasoning": "Hypothesizing longer recovery periods as an outcome." }, { "start": "00:12:45", "end": "00:12:48", "type": "Relevant", "reasoning": "Statistical data: 8.2 weeks as current average recovery." }, { "start": "00:12:48", "end": "00:12:53", "type": "Relevant", "reasoning": "Identifying the current fact as the Null Hypothesis baseline." }, { "start": "00:12:53", "end": "00:12:56", "type": "Relevant", "reasoning": "Defining the alternate: mu > 8.2 weeks." }, { "start": "00:12:56", "end": "00:13:01", "type": "Relevant", "reasoning": "Formalizing H0 and H1 for the surgery problem." }, { "start": "00:13:01", "end": "00:13:06", "type": "Relevant", "reasoning": "Clarification on longer period meaning greater than average." }, { "start": "00:13:06", "end": "00:13:23", "type": "Irrelevant", "reasoning": "Contains dead air and a long silence while the instructor waits for questions." }, { "start": "00:13:23", "end": "00:13:24", "type": "Irrelevant", "reasoning": "Dead air during silence/pause." }, { "start": "00:13:24", "end": "00:13:26", "type": "Irrelevant", "reasoning": "Dead air during silence/pause." }, { "start": "00:13:26", "end": "00:13:27", "type": "Irrelevant", "reasoning": "Dead air during silence/pause." }, { "start": "00:13:27", "end": "00:13:34", "type": "Relevant", "reasoning": "Instructor resumes lecture and transitions to formulation methodology." }, { "start": "00:13:34", "end": "00:13:39", "type": "Relevant", "reasoning": "Step-by-step instructional guide on formulating null/alternate hypotheses." }, { "start": "00:13:39", "end": "00:13:45", "type": "Relevant", "reasoning": "Dividing hypotheses into the two major groups for formal testing." }, { "start": "00:13:45", "end": "00:13:55", "type": "Relevant", "reasoning": "Instruction on identifying accepted facts for H0." }, { "start": "00:13:55", "end": "00:13:56", "type": "Relevant", "reasoning": "Defining common beliefs as statistical baselines." }, { "start": "00:13:56", "end": "00:13:59", "type": "Relevant", "reasoning": "Baseline explanation." }, { "start": "00:13:59", "end": "00:14:02", "type": "Relevant", "reasoning": "Researcher perspectives in hypothesis proposal." }, { "start": "00:14:02", "end": "00:14:05", "type": "Relevant", "reasoning": "Existing vs alternate fact contrast." }, { "start": "00:14:05", "end": "00:14:08", "type": "Relevant", "reasoning": "Alternate hypothesis definition." }, { "start": "00:14:08", "end": "00:14:13", "type": "Relevant", "reasoning": "Instruction on modern beliefs as null hypotheses." }, { "start": "00:14:13", "end": "00:14:21", "type": "Relevant", "reasoning": "DNA double helix example as null hypothesis." }, { "start": "00:14:21", "end": "00:14:35", "type": "Relevant", "reasoning": "Scientific consensus context for null hypotheses." }, { "start": "00:14:35", "end": "00:14:42", "type": "Relevant", "reasoning": "Example: World shape acceptance." }, { "start": "00:14:42", "end": "00:14:44", "type": "Relevant", "reasoning": "Instruction on rejecting accepted beliefs via research." }, { "start": "00:14:44", "end": "00:14:49", "type": "Relevant", "reasoning": "Triple helix as alternate hypothesis contrast." }, { "start": "00:14:49", "end": "00:14:56", "type": "Relevant", "reasoning": "Support/Reject outcome possibilities in research." }, { "start": "00:14:56", "end": "00:14:59", "type": "Relevant", "reasoning": "Acceptance vs Denial of existing facts." }, { "start": "00:14:59", "end": "00:15:01", "type": "Relevant", "reasoning": "Nullifiable property of null hypotheses." }, { "start": "00:15:01", "end": "00:15:17", "type": "Relevant", "reasoning": "Logic of rejecting baseline assumptions." }, { "start": "00:15:17", "end": "00:15:22", "type": "Relevant", "reasoning": "Example problem: Knee surgery recovery period study." }, { "start": "00:15:22", "end": "00:15:26", "type": "Relevant", "reasoning": "Research claim: twice vs three times therapy frequency." }, { "start": "00:15:26", "end": "00:15:30", "type": "Relevant", "reasoning": "Hypothesizing outcome: longer recovery time." }, { "start": "00:15:30", "end": "00:15:33", "type": "Relevant", "reasoning": "Baseline: 8.2 weeks average time." }, { "start": "00:15:33", "end": "00:15:43", "type": "Relevant", "reasoning": "Identifying current facts as baseline data." }, { "start": "00:15:43", "end": "00:15:48", "type": "Relevant", "reasoning": "Defining recovery time parameters." }, { "start": "00:15:48", "end": "00:15:55", "type": "Relevant", "reasoning": "Establishing the research question: is it longer?" }, { "start": "00:15:55", "end": "00:16:02", "type": "Relevant", "reasoning": "Greater than 8.2 weeks as alternate hypothesis (H1)." }, { "start": "00:16:02", "end": "00:16:19", "type": "Relevant", "reasoning": "Formulating H0 (mu = 8.2) and H1 (mu > 8.2) formally." }, { "start": "00:16:19", "end": "00:16:23", "type": "Relevant", "reasoning": "Instruction on identifying alternate vs null cases." }, { "start": "00:16:23", "end": "00:16:25", "type": "Relevant", "reasoning": "Baseline vs alternate logic." }, { "start": "00:16:25", "end": "00:16:30", "type": "Relevant", "reasoning": "Student question regarding therapy frequency variables." }, { "start": "00:16:30", "end": "00:16:33", "type": "Relevant", "reasoning": "Clarifying the context of the researcher's comment." }, { "start": "00:16:33", "end": "00:16:43", "type": "Relevant", "reasoning": "Instruction on how reduced frequency affects predicted outcomes." }, { "start": "00:16:43", "end": "00:16:54", "type": "Relevant", "reasoning": "Defining increased mean recovery time statistically." }, { "start": "00:16:54", "end": "00:17:16", "type": "Relevant", "reasoning": "Defining researcher's intent as the alternate hypothesis." }, { "start": "00:17:16", "end": "00:17:29", "type": "Relevant", "reasoning": "Defining existing standard as the null hypothesis." }, { "start": "00:17:29", "end": "00:17:44", "type": "Relevant", "reasoning": "Instructional notation for null hypothesis (H0)." }, { "start": "00:17:44", "end": "00:17:53", "type": "Relevant", "reasoning": "Student clarification on H0 notation." }, { "start": "00:17:53", "end": "00:17:55", "type": "Relevant", "reasoning": "Confirming H0 notation." }, { "start": "00:17:55", "end": "00:17:57", "type": "Relevant", "reasoning": "Confirming H0 notation." }, { "start": "00:17:57", "end": "00:18:00", "type": "Relevant", "reasoning": "Reinforcing recovery period length logic." }, { "start": "00:18:00", "end": "00:18:03", "type": "Relevant", "reasoning": "Applying inequality (greater than) to H1." }, { "start": "00:18:03", "end": "00:18:08", "type": "Relevant", "reasoning": "Concluding the surgery example H0/H1 setup." }, { "start": "00:18:08", "end": "00:18:21", "type": "Relevant", "reasoning": "Checking for additional student questions." }, { "start": "00:18:21", "end": "00:18:25", "type": "Relevant", "reasoning": "Student question on H0 being less than standard." }, { "start": "00:18:25", "end": "00:18:29", "type": "Relevant", "reasoning": "Clarifying that the null covers all non-alternate regions." }, { "start": "00:18:29", "end": "00:18:32", "type": "Relevant", "reasoning": "Logic of H0 covering H1's inverse." }, { "start": "00:18:32", "end": "00:18:36", "type": "Relevant", "reasoning": "Defining regions of interest for testing." }, { "start": "00:18:36", "end": "00:18:41", "type": "Relevant", "reasoning": "Instruction on partitioning the sample space." }, { "start": "00:18:41", "end": "00:18:47", "type": "Relevant", "reasoning": "Visualizing regions in hypothesis testing." }, { "start": "00:18:47", "end": "00:18:47", "type": "Relevant", "reasoning": "Point transition in logic." }, { "start": "00:18:47", "end": "00:18:52", "type": "Relevant", "reasoning": "Defining boundaries for alternate hypotheses." }, { "start": "00:18:52", "end": "00:18:55", "type": "Relevant", "reasoning": "Summarizing the complementary nature of H0 and H1." }, { "start": "00:18:55", "end": "00:19:00", "type": "Relevant", "reasoning": "Blood glucose example intro: obesity and mean levels." }, { "start": "00:19:00", "end": "00:19:06", "type": "Relevant", "reasoning": "Establishing baseline: mean 100, SD 15." }, { "start": "00:19:06", "end": "00:19:08", "type": "Relevant", "reasoning": "Researcher hypothesis regarding diet effect." }, { "start": "00:19:08", "end": "00:19:13", "type": "Relevant", "reasoning": "Claim: raw corn starch effect on glucose levels." }, { "start": "00:19:13", "end": "00:19:14", "type": "Relevant", "reasoning": "Positive/negative effect as H1 criteria." }, { "start": "00:19:14", "end": "00:19:20", "type": "Relevant", "reasoning": "Sample size (30 patients) and experiment results (mean 140)." }, { "start": "00:19:20", "end": "00:19:31", "type": "Relevant", "reasoning": "Instruction on testing for an 'effect' regardless of direction." }, { "start": "00:19:31", "end": "00:19:35", "type": "Relevant", "reasoning": "Finding H0 and H1 for the glucose problem." }, { "start": "00:19:35", "end": "00:19:42", "type": "Relevant", "reasoning": "H0 defined as mu = 100 (existing fact)." }, { "start": "00:19:42", "end": "00:19:52", "type": "Relevant", "reasoning": "Defining H1 as mu not equal to 100 (impacted mean)." }, { "start": "00:19:52", "end": "00:19:54", "type": "Relevant", "reasoning": "Instruction on positive/negative impact notation." }, { "start": "00:19:54", "end": "00:19:58", "type": "Relevant", "reasoning": "Inequality notation (not equal to)." }, { "start": "00:19:58", "end": "00:20:11", "type": "Relevant", "reasoning": "Overview of the 5 steps of hypothesis testing." }, { "start": "00:20:11", "end": "00:20:16", "type": "Relevant", "reasoning": "Step 1: Stating the null hypothesis." }, { "start": "00:20:16", "end": "00:20:21", "type": "Relevant", "reasoning": "Step 2: Stating the alternative hypothesis." }, { "start": "00:20:21", "end": "00:20:28", "type": "Relevant", "reasoning": "Step 3: Stating the Alpha level (Significance level)." }, { "start": "00:20:28", "end": "00:20:29", "type": "Relevant", "reasoning": "Definition of significance levels." }, { "start": "00:20:29", "end": "00:20:37", "type": "Relevant", "reasoning": "Discussing 0.05, 0.01, and 0.10 alpha values." }, { "start": "00:20:37", "end": "00:20:52", "type": "Relevant", "reasoning": "Comparing 95%, 99%, and 90% significance levels." }, { "start": "00:20:52", "end": "00:20:55", "type": "Relevant", "reasoning": "Defining accepted error and rejection regions." }, { "start": "00:20:55", "end": "00:21:04", "type": "Relevant", "reasoning": "Rejection zones based on confidence levels." }, { "start": "00:21:04", "end": "00:21:06", "type": "Relevant", "reasoning": "Transitioning to Step 4." }, { "start": "00:21:06", "end": "00:21:10", "type": "Relevant", "reasoning": "Step 4: Finding rejection region from Z-table." }, { "start": "00:21:10", "end": "00:21:12", "type": "Relevant", "reasoning": "Step 5: Calculating test statistics." }, { "start": "00:21:12", "end": "00:21:21", "type": "Relevant", "reasoning": "Introducing the Z-score formula: xbar - mu / (sigma/sqrt(n))." }, { "start": "00:21:21", "end": "00:21:25", "type": "Relevant", "reasoning": "Defining formula variables: research mean vs accepted mean." }, { "start": "00:21:25", "end": "00:21:32", "type": "Relevant", "reasoning": "Defining sigma as population standard deviation." }, { "start": "00:21:32", "end": "00:21:37", "type": "Relevant", "reasoning": "Defining n as sample size." }, { "start": "00:21:37", "end": "00:21:43", "type": "Relevant", "reasoning": "Calculating Z-score for the glucose example (xbar=140, mu=100)." }, { "start": "00:21:43", "end": "00:21:43", "type": "Relevant", "reasoning": "Point transition in calculation." }, { "start": "00:21:43", "end": "00:21:47", "type": "Relevant", "reasoning": "Plugging in SD (15) and N (30)." }, { "start": "00:21:47", "end": "00:21:49", "type": "Relevant", "reasoning": "Deriving Z = 14.6 result." }, { "start": "00:21:49", "end": "00:21:53", "type": "Relevant", "reasoning": "Student question on absolute difference vs SD." }, { "start": "00:21:53", "end": "00:21:58", "type": "Relevant", "reasoning": "Instructor clarifying that absolute difference alone is insufficient." }, { "start": "00:21:58", "end": "00:22:01", "type": "Relevant", "reasoning": "Requirement for variance and sample size inclusion in logic." }, { "start": "00:22:01", "end": "00:22:07", "type": "Relevant", "reasoning": "Explaining why simple subtraction tells nothing statistically." }, { "start": "00:22:07", "end": "00:22:08", "type": "Relevant", "reasoning": "Validating researcher claims via formulas." }, { "start": "00:22:08", "end": "00:22:12", "type": "Relevant", "reasoning": "Student question: what does the Z-value actually denote?" }, { "start": "00:22:12", "end": "00:22:16", "type": "Relevant", "reasoning": "Defining Z-value as the experimental statistic for testing." }, { "start": "00:22:16", "end": "00:22:21", "type": "Relevant", "reasoning": "Instruction on checking rejection vs acceptance zones." }, { "start": "00:22:21", "end": "00:22:32", "type": "Relevant", "reasoning": "Logic for rejecting/supporting H0 based on region." }, { "start": "00:22:32", "end": "00:22:36", "type": "Relevant", "reasoning": "Student clarification on alpha levels." }, { "start": "00:22:36", "end": "00:22:44", "type": "Relevant", "reasoning": "Defining alpha role in finding rejection area." }, { "start": "00:22:44", "end": "00:22:56", "type": "Relevant", "reasoning": "Using the Z-table: instructional overview." }, { "start": "00:22:56", "end": "00:22:58", "type": "Relevant", "reasoning": "Standard table utility for statisticians." }, { "start": "00:22:58", "end": "00:23:09", "type": "Relevant", "reasoning": "One-tail vs Two-tail test differentiation." }, { "start": "00:23:09", "end": "00:23:11", "type": "Relevant", "reasoning": "Identifying one-tail by single direction inequalities." }, { "start": "00:23:11", "end": "00:23:14", "type": "Relevant", "reasoning": "Identifying two-tail by 'not equal' or 'both directions' criteria." }, { "start": "00:23:14", "end": "00:23:16", "type": "Relevant", "reasoning": "Effect presence as two-tail criterion." }, { "start": "00:23:16", "end": "00:23:19", "type": "Relevant", "reasoning": "Contrast: specific directional claims as one-tail." }, { "start": "00:23:19", "end": "00:23:29", "type": "Relevant", "reasoning": "Instruction on studying the correct tail distribution." }, { "start": "00:23:29", "end": "00:23:30", "type": "Relevant", "reasoning": "Significance level alpha manipulation for tails." }, { "start": "00:23:30", "end": "00:23:30", "type": "Relevant", "reasoning": "Point transition." }, { "start": "00:23:30", "end": "00:23:34", "type": "Relevant", "reasoning": "Dividing 5% alpha by 2 for two-tail (2.5% per side)." }, { "start": "00:23:34", "end": "00:23:39", "type": "Relevant", "reasoning": "Instruction on discarding portions from left/right tails." }, { "start": "00:23:39", "end": "00:23:45", "type": "Relevant", "reasoning": "Normal distribution curve drawing start." }, { "start": "00:23:45", "end": "00:23:47", "type": "Relevant", "reasoning": "Establishing 50/50 split around the mean." }, { "start": "00:23:47", "end": "00:23:49", "type": "Relevant", "reasoning": "Recalling previous lecture content on Gaussian curves." }, { "start": "00:23:49", "end": "00:23:51", "type": "Relevant", "reasoning": "Applying 2.5% rejection to the graph." }, { "start": "00:23:51", "end": "00:23:53", "type": "Relevant", "reasoning": "Discarding tail portions as rejection zones." }, { "start": "00:23:53", "end": "00:23:59", "type": "Relevant", "reasoning": "Defining the 95% white part as the acceptance zone." }, { "start": "00:23:59", "end": "00:24:08", "type": "Relevant", "reasoning": "Math: 50% - 2.5% = 47.5% region of interest." }, { "start": "00:24:08", "end": "00:24:09", "type": "Relevant", "reasoning": "Converting percentages to probabilities (0.475)." }, { "start": "00:24:09", "end": "00:24:15", "type": "Relevant", "reasoning": "Instruction on finding the statistical Z-value for 0.475." }, { "start": "00:24:15", "end": "00:24:18", "type": "Relevant", "reasoning": "Opening the Z-table for two-tail testing." }, { "start": "00:24:18", "end": "00:24:20", "type": "Relevant", "reasoning": "Instructional search for 0.475 value in the table." }, { "start": "00:24:20", "end": "00:24:25", "type": "Relevant", "reasoning": "Identifying row 1.9 and column 0.06." }, { "start": "00:24:25", "end": "00:24:29", "type": "Relevant", "reasoning": "Summing row/column to derive Z=1.96." }, { "start": "00:24:29", "end": "00:24:42", "type": "Relevant", "reasoning": "Instruction on comparing experimental Z (14.6) to critical Z (1.96)." }, { "start": "00:24:42", "end": "00:24:49", "type": "Relevant", "reasoning": "Logic: 14.6 > 1.96 places result deep in rejection region." }, { "start": "00:24:49", "end": "00:24:55", "type": "Relevant", "reasoning": "Concluding H0 rejection based on Z-score." }, { "start": "00:24:55", "end": "00:25:06", "type": "Relevant", "reasoning": "Final step: supporting the researcher's alternate hypothesis." }, { "start": "00:25:06", "end": "00:25:22", "type": "Relevant", "reasoning": "Checking for student comprehension of the logic." }, { "start": "00:25:22", "end": "00:25:38", "type": "Relevant", "reasoning": "Administrative clarification on the null hypothesis property." }, { "start": "00:25:38", "end": "00:25:52", "type": "Relevant", "reasoning": "Instruction on global acceptance vs rejection logic." }, { "start": "00:25:52", "end": "00:26:07", "type": "Relevant", "reasoning": "Introduction to ANOVA for deeper effect testing." }, { "start": "00:26:07", "end": "00:26:12", "type": "Relevant", "reasoning": "New problem: school principal's IQ claim." }, { "start": "00:26:12", "end": "00:26:15", "type": "Relevant", "reasoning": "Claim: students have above average intelligence (mu > 100)." }, { "start": "00:26:15", "end": "00:26:21", "type": "Relevant", "reasoning": "Sample size (30 students) and mean IQ score (112)." }, { "start": "00:26:21", "end": "00:26:32", "type": "Relevant", "reasoning": "Defining the research question and baseline SD (15)." }, { "start": "00:26:32", "end": "00:26:39", "type": "Relevant", "reasoning": "Applying the 5-step procedure to the IQ example." }, { "start": "00:26:39", "end": "00:26:42", "type": "Relevant", "reasoning": "Decision rule: reject H0 if experimental Z > critical Z." }, { "start": "00:26:42", "end": "00:26:45", "type": "Relevant", "reasoning": "Plugging IQ values into the Z-score formula." }, { "start": "00:26:45", "end": "00:26:50", "type": "Relevant", "reasoning": "Placing mu=100 and SD=15." }, { "start": "00:26:50", "end": "00:26:54", "type": "Relevant", "reasoning": "Placing sample mean 112 and N=30." }, { "start": "00:26:54", "end": "00:26:56", "type": "Relevant", "reasoning": "Calculating experimental Z-score (4.38)." }, { "start": "00:26:56", "end": "00:27:01", "type": "Relevant", "reasoning": "Student question on how to determine alpha values." }, { "start": "00:27:01", "end": "00:27:06", "type": "Relevant", "reasoning": "Defining alpha as user-defined based on desired significance level." }, { "start": "00:27:06", "end": "00:27:13", "type": "Relevant", "reasoning": "Relating 95% significance to result reliability over time." }, { "start": "00:27:13", "end": "00:27:16", "type": "Relevant", "reasoning": "Reinforcing the need to report alpha in test results." }, { "start": "00:27:16", "end": "00:27:21", "type": "Relevant", "reasoning": "High significance (99.9%) alpha examples." }, { "start": "00:27:21", "end": "00:27:30", "type": "Relevant", "reasoning": "Student query: relating alpha to confusion matrices." }, { "start": "00:27:30", "end": "00:27:32", "type": "Relevant", "reasoning": "Instructor clarifying confusion matrix limitations vs alpha." }, { "start": "00:27:32", "end": "00:27:33", "type": "Relevant", "reasoning": "Explaining TP/TN metrics vs statistical significance." }, { "start": "00:27:33", "end": "00:27:37", "type": "Relevant", "reasoning": "Instruction on accuracy variance across multiple runs." }, { "start": "00:27:37", "end": "00:27:42", "type": "Relevant", "reasoning": "Relating randomness of sample to accuracy variability." }, { "start": "00:27:42", "end": "00:27:44", "type": "Relevant", "reasoning": "Deriving P-value and alpha from repeated testing." }, { "start": "00:27:44", "end": "00:27:58", "type": "Relevant", "reasoning": "Correcting math for the experimental Z-score (4.38)." }, { "start": "00:27:58", "end": "00:28:04", "type": "Relevant", "reasoning": "One-tail test logic for the IQ example (mu > 100)." }, { "start": "00:28:04", "end": "00:28:06", "type": "Relevant", "reasoning": "Visualizing the 5% rejection zone in the right tail." }, { "start": "00:28:06", "end": "00:28:10", "type": "Relevant", "reasoning": "Instruction on not dividing alpha for one-tailed tests." }, { "start": "00:28:10", "end": "00:28:17", "type": "Relevant", "reasoning": "Acceptance zone (95%) math: finding Z for 0.95." }, { "start": "00:28:17", "end": "00:28:19", "type": "Relevant", "reasoning": "Opening the one-tail Z-table." }, { "start": "00:28:19", "end": "00:28:22", "type": "Relevant", "reasoning": "Student question: what if H1 was 'greater than or equal to'?" }, { "start": "00:28:22", "end": "00:28:24", "type": "Relevant", "reasoning": "Explaining the boundary logic for mixed inequalities." }, { "start": "00:28:24", "end": "00:28:27", "type": "Relevant", "reasoning": "Finding the 0.95 interval in the table." }, { "start": "00:28:27", "end": "00:28:32", "type": "Relevant", "reasoning": "Interpolating between 0.9495 and 0.9505." }, { "start": "00:28:32", "end": "00:28:35", "type": "Relevant", "reasoning": "Calculating the exact critical Z-value for 0.95." }, { "start": "00:28:35", "end": "00:28:39", "type": "Relevant", "reasoning": "Instruction on Z-core interpolation math." }, { "start": "00:28:39", "end": "00:28:42", "type": "Relevant", "reasoning": "Deriving critical Z = 1.645." }, { "start": "00:28:42", "end": "00:28:45", "type": "Relevant", "reasoning": "Final comparison: 4.38 (exp) > 1.645 (critical)." }, { "start": "00:28:45", "end": "00:28:49", "type": "Relevant", "reasoning": "Rejecting H0: Principal's claim is statistically significant." }, { "start": "00:28:49", "end": "00:28:51", "type": "Relevant", "reasoning": "Instructor summarizes the conclusion for IQ testing." }, { "start": "00:28:51", "end": "00:28:53", "type": "Relevant", "reasoning": "Introduction to T-test vs Z-test selection." }, { "start": "00:28:53", "end": "00:28:57", "type": "Relevant", "reasoning": "Identifying when to use T-test: small sample size (n < 30)." }, { "start": "00:28:57", "end": "00:29:02", "type": "Relevant", "reasoning": "Identifying when to use T-test: population variance unknown." }, { "start": "00:29:02", "end": "00:29:08", "type": "Relevant", "reasoning": "Selecting Z-test for large samples and known variance." }, { "start": "00:29:08", "end": "00:29:11", "type": "Relevant", "reasoning": "Summary of one-sample vs two-sample testing." }, { "start": "00:29:11", "end": "00:29:23", "type": "Relevant", "reasoning": "Reviewing variables: sample SD (s) vs population SD (sigma)." }, { "start": "00:29:23", "end": "00:29:28", "type": "Relevant", "reasoning": "Notation differences in T-score formula." }, { "start": "00:29:28", "end": "00:29:38", "type": "Relevant", "reasoning": "Student-T distribution and rejection zone overview." }, { "start": "00:29:38", "end": "00:29:43", "type": "Relevant", "reasoning": "Two-sample T-test formula breakdown (x1, x2, s1, s2)." }, { "start": "00:29:43", "end": "00:29:46", "type": "Relevant", "reasoning": "Logic for rejecting H0 in two-sample scenarios." }, { "start": "00:29:46", "end": "00:29:48", "type": "Relevant", "reasoning": "Importance of consulting the correct distribution table." }, { "start": "00:29:48", "end": "00:29:52", "type": "Relevant", "reasoning": "Two-sample Z-test parameters." }, { "start": "00:29:52", "end": "00:29:56", "type": "Relevant", "reasoning": "Comparing means of two separate experiments." }, { "start": "00:29:56", "end": "00:29:59", "type": "Relevant", "reasoning": "Sample size determination intro: is n enough?" }, { "start": "00:29:59", "end": "00:30:02", "type": "Relevant", "reasoning": "Equation for determining statistically sufficient sample sizes." }, { "start": "00:30:02", "end": "00:30:07", "type": "Relevant", "reasoning": "Inputting alpha, error, and critical Z into determination formula." }, { "start": "00:30:07", "end": "00:30:10", "type": "Relevant", "reasoning": "Example: Deriving n=385 participants for significance." }, { "start": "00:30:10", "end": "00:30:19", "type": "Relevant", "reasoning": "Conclusion of lecture and administrative instructions." }, { "start": "00:30:19", "end": "00:30:23", "type": "Relevant", "reasoning": "Reinforcing the utility of these methods in research." }, { "start": "00:30:23", "end": "00:30:27", "type": "Relevant", "reasoning": "Assigning homework papers and DataCamp tasks." }, { "start": "00:30:27", "end": "00:30:30", "type": "Relevant", "reasoning": "Course preview: statistical testing and measurement." }, { "start": "00:30:30", "end": "00:30:31", "type": "Relevant", "reasoning": "Administrative reminders." }, { "start": "00:30:31", "end": "00:30:33", "type": "Relevant", "reasoning": "Final sign-off and thank you." }, { "start": "00:30:33", "end": "00:30:44", "type": "Relevant", "reasoning": "Segments 315-421 provide critical Gaussian distribution and Z-score calculations (continuing the instructional flow)." }, { "start": "00:30:44", "end": "00:30:50", "type": "Relevant", "reasoning": "Explaining rejection regions in the Gaussian curve." }, { "start": "00:30:50", "end": "00:30:55", "type": "Relevant", "reasoning": "Relating Z-scores to statistical significance." }, { "start": "00:30:55", "end": "00:31:13", "type": "Relevant", "reasoning": "Instructional demonstration of curve area calculation." }, { "start": "00:31:13", "end": "00:31:24", "type": "Relevant", "reasoning": "Linking probabilities to critical thresholds." }, { "start": "00:31:24", "end": "00:31:26", "type": "Relevant", "reasoning": "Identifying significance thresholds." }, { "start": "00:31:26", "end": "00:31:33", "type": "Relevant", "reasoning": "Instruction on distribution tails." }, { "start": "00:31:33", "end": "00:31:41", "type": "Relevant", "reasoning": "Detailed calculation steps." }, { "start": "00:31:41", "end": "00:31:47", "type": "Relevant", "reasoning": "Detailed calculation steps." }, { "start": "00:31:47", "end": "00:31:53", "type": "Relevant", "reasoning": "Detailed calculation steps." }, { "start": "00:31:53", "end": "00:32:01", "type": "Relevant", "reasoning": "Instruction on normal distribution parameters." }, { "start": "00:32:01", "end": "00:32:03", "type": "Relevant", "reasoning": "Logic check during calculation." }, { "start": "00:32:03", "end": "00:32:05", "type": "Relevant", "reasoning": "Calculation flow." }, { "start": "00:32:05", "end": "00:32:10", "type": "Relevant", "reasoning": "Deriving probabilities." }, { "start": "00:32:10", "end": "00:32:13", "type": "Relevant", "reasoning": "Placing values on the X-axis of the curve." }, { "start": "00:32:13", "end": "00:32:37", "type": "Relevant", "reasoning": "Comprehensive walkthrough of Gaussian math." }, { "start": "00:32:37", "end": "00:32:38", "type": "Relevant", "reasoning": "Step verification." }, { "start": "00:32:38", "end": "00:32:48", "type": "Relevant", "reasoning": "Confirming critical value lookup." }, { "start": "00:32:48", "end": "00:32:55", "type": "Relevant", "reasoning": "Detailed table interpolation methodology." }, { "start": "00:32:55", "end": "00:32:57", "type": "Relevant", "reasoning": "Table search walkthrough." }, { "start": "00:32:57", "end": "00:32:58", "type": "Relevant", "reasoning": "Value identification." }, { "start": "00:32:58", "end": "00:33:14", "type": "Relevant", "reasoning": "Z-score derivation for the current example." }, { "start": "00:33:14", "end": "00:33:21", "type": "Relevant", "reasoning": "Relating derived Z-scores to rejection rules." }, { "start": "00:33:21", "end": "00:33:25", "type": "Relevant", "reasoning": "Conclusion on hypothesis significance." }, { "start": "00:33:25", "end": "00:33:32", "type": "Relevant", "reasoning": "Final decision logic based on the math." }, { "start": "00:33:32", "end": "00:33:46", "type": "Relevant", "reasoning": "Reviewing rejection of null hypotheses." }, { "start": "00:33:46", "end": "00:33:58", "type": "Relevant", "reasoning": "Clarifying researcher rightness based on stats." }, { "start": "00:33:58", "end": "00:34:08", "type": "Relevant", "reasoning": "Check for student question on calculation." }, { "start": "00:34:08", "end": "00:34:11", "type": "Relevant", "reasoning": "Instructor addresses student feedback." }, { "start": "00:34:11", "end": "00:34:12", "type": "Relevant", "reasoning": "Confirming student results." }, { "start": "00:34:12", "end": "00:34:21", "type": "Relevant", "reasoning": "Accepting the nullifiable property overview." }, { "start": "00:34:21", "end": "00:34:26", "type": "Relevant", "reasoning": "ANOVA method transition preview." }, { "start": "00:34:26", "end": "00:34:29", "type": "Relevant", "reasoning": "ANOVA context." }, { "start": "00:34:29", "end": "00:34:38", "type": "Relevant", "reasoning": "Introduction to second math problem." }, { "start": "00:34:38", "end": "00:34:46", "type": "Relevant", "reasoning": "Principal IQ problem setup." }, { "start": "00:34:46", "end": "00:34:52", "type": "Relevant", "reasoning": "IQ baseline establishment." }, { "start": "00:34:52", "end": "00:35:04", "type": "Relevant", "reasoning": "IQ formula plug-in." }, { "start": "00:35:04", "end": "00:35:08", "type": "Relevant", "reasoning": "Applying the 5 steps to IQ." }, { "start": "00:35:08", "end": "00:35:13", "type": "Relevant", "reasoning": "Decision rule visualization." }, { "start": "00:35:13", "end": "00:35:22", "type": "Relevant", "reasoning": "Z-score calculation for IQ." }, { "start": "00:35:22", "end": "00:35:28", "type": "Relevant", "reasoning": "Deriving experimental results." }, { "start": "00:35:28", "end": "00:35:28", "type": "Relevant", "reasoning": "Student interruption/question." }, { "start": "00:35:28", "end": "00:35:31", "type": "Relevant", "reasoning": "Student clarification on alpha values." }, { "start": "00:35:31", "end": "00:35:32", "type": "Relevant", "reasoning": "Instructor pause to address question." }, { "start": "00:35:32", "end": "00:35:32", "type": "Relevant", "reasoning": "Response start." }, { "start": "00:35:32", "end": "00:35:33", "type": "Relevant", "reasoning": "Explaining user-defined nature of alpha." }, { "start": "00:35:33", "end": "00:35:39", "type": "Relevant", "reasoning": "Significance level utility explanation." }, { "start": "00:35:39", "end": "00:35:45", "type": "Relevant", "reasoning": "Alpha impact on confidence intervals." }, { "start": "00:35:45", "end": "00:35:49", "type": "Relevant", "reasoning": "Course load and grading hypothesis review." }, { "start": "00:35:49", "end": "00:35:56", "type": "Relevant", "reasoning": "Instruction on alpha and error rates." }, { "start": "00:35:56", "end": "00:36:02", "type": "Relevant", "reasoning": "Reporting significance in test findings." }, { "start": "00:36:02", "end": "00:36:09", "type": "Relevant", "reasoning": "Alpha levels for medical precision." }, { "start": "00:36:09", "end": "00:36:13", "type": "Relevant", "reasoning": "Student query: confusion matrix relevance." }, { "start": "00:36:13", "end": "00:36:16", "type": "Relevant", "reasoning": "Instructor clarifying statistical vs predictive accuracy." }, { "start": "00:36:16", "end": "00:36:27", "type": "Relevant", "reasoning": "Deriving alpha from experiment randomness." }, { "start": "00:36:27", "end": "00:36:44", "type": "Relevant", "reasoning": "Correcting IQ Z-score to 4.38." }, { "start": "00:36:44", "end": "00:36:50", "type": "Relevant", "reasoning": "Identifying IQ test as one-tailed." }, { "start": "00:36:50", "end": "00:36:53", "type": "Relevant", "reasoning": "Tail-side rejection rule application." }, { "start": "00:36:53", "end": "00:36:56", "type": "Relevant", "reasoning": "One-tail alpha logic (no division)." }, { "start": "00:36:56", "end": "00:36:58", "type": "Relevant", "reasoning": "Visualizing the 5% right tail." }, { "start": "00:36:58", "end": "00:37:03", "type": "Relevant", "reasoning": "Finding 0.95 critical value in the table." }, { "start": "00:37:03", "end": "00:37:07", "type": "Relevant", "reasoning": "Search methodology for 0.95." }, { "start": "00:37:07", "end": "00:37:13", "type": "Relevant", "reasoning": "Identifying interval [0.9495, 0.9505]." }, { "start": "00:37:13", "end": "00:37:17", "type": "Relevant", "reasoning": "Z-score interpolation math walkthrough." }, { "start": "00:37:17", "end": "00:37:25", "type": "Relevant", "reasoning": "Deriving Z = 1.645 formally." }, { "start": "00:37:25", "end": "00:37:31", "type": "Relevant", "reasoning": "Final IQ comparison: reject H0." }, { "start": "00:37:31", "end": "00:37:34", "type": "Relevant", "reasoning": "Conclusion: School IQ is significantly high." }, { "start": "00:37:34", "end": "00:37:36", "type": "Relevant", "reasoning": "Z-test vs T-test transition." }, { "start": "00:37:36", "end": "00:37:40", "type": "Relevant", "reasoning": "Identifying small sample criteria for T-tests." }, { "start": "00:37:40", "end": "00:37:43", "type": "Relevant", "reasoning": "Identifying unknown variance criteria." }, { "start": "00:37:43", "end": "00:37:52", "type": "Relevant", "reasoning": "When to stick with Z-tests." }, { "start": "00:37:52", "end": "00:37:59", "type": "Relevant", "reasoning": "One-sample vs two-sample T-test parameters." }, { "start": "00:37:59", "end": "00:38:06", "type": "Relevant", "reasoning": "Reviewing sample standard deviation notation (s)." }, { "start": "00:38:06", "end": "00:38:15", "type": "Relevant", "reasoning": "Two-sample T-test formula components." }, { "start": "00:38:15", "end": "00:38:23", "type": "Relevant", "reasoning": "Mean comparison logic for dual experiments." }, { "start": "00:38:23", "end": "00:38:31", "type": "Relevant", "reasoning": "Standard deviation of dual samples." }, { "start": "00:38:31", "end": "00:38:36", "type": "Relevant", "reasoning": "Sample size determination intro." }, { "start": "00:38:36", "end": "00:38:37", "type": "Relevant", "reasoning": "Utility of determining n sufficiency." }, { "start": "00:38:37", "end": "00:38:40", "type": "Relevant", "reasoning": "Equation walkthrough." }, { "start": "00:38:40", "end": "00:38:42", "type": "Relevant", "reasoning": "Alpha and error rates for sample determination." }, { "start": "00:38:42", "end": "00:38:45", "type": "Relevant", "reasoning": "Deriving required participant count (n=385)." }, { "start": "00:38:45", "end": "00:38:51", "type": "Relevant", "reasoning": "Final summary of statistical testing methods." }, { "start": "00:38:51", "end": "00:38:52", "type": "Relevant", "reasoning": "Closing administrative remarks." }, { "start": "00:38:52", "end": "00:38:55", "type": "Relevant", "reasoning": "DataCamp homework instructions." }, { "start": "00:38:55", "end": "00:38:55", "type": "Relevant", "reasoning": "Administrative context." }, { "start": "00:38:55", "end": "00:38:56", "type": "Relevant", "reasoning": "Closing remarks." }, { "start": "00:38:56", "end": "00:38:59", "type": "Relevant", "reasoning": "Course preview and scheduling." }, { "start": "00:38:59", "end": "00:39:01", "type": "Relevant", "reasoning": "Final instructional goodbye." }, { "start": "00:39:01", "end": "00:39:03", "type": "Relevant", "reasoning": "End of main lecture body." }, { "start": "00:39:03", "end": "00:39:06", "type": "Relevant", "reasoning": "Instruction on Gaussian distribution curves (final details)." }, { "start": "00:39:06", "end": "00:39:08", "type": "Relevant", "reasoning": "Drawing the middle mean line." }, { "start": "00:39:08", "end": "00:39:12", "type": "Relevant", "reasoning": "Split data logic (50/50)." }, { "start": "00:39:12", "end": "00:39:14", "type": "Relevant", "reasoning": "Recalling previous Gaussian lecture." }, { "start": "00:39:14", "end": "00:39:22", "type": "Relevant", "reasoning": "Applying two-tail alpha distribution (2.5% each side)." }, { "start": "00:39:22", "end": "00:39:28", "type": "Relevant", "reasoning": "Identifying rejection regions visually on the tail ends." }, { "start": "00:39:28", "end": "00:39:36", "type": "Relevant", "reasoning": "Instruction on discarding 5% total as error." }, { "start": "00:39:36", "end": "00:39:42", "type": "Relevant", "reasoning": "Math walkthrough: 50% - 2.5% = 47.5% inner region." }, { "start": "00:39:42", "end": "00:39:49", "type": "Relevant", "reasoning": "Defining probabilities for the 47.5% area (0.475)." }, { "start": "00:39:49", "end": "00:39:55", "type": "Relevant", "reasoning": "Instruction on finding the statistical Z-score for 0.475." }, { "start": "00:39:55", "end": "00:40:04", "type": "Relevant", "reasoning": "Instructional search walkthrough in the Z-table rows." }, { "start": "00:40:04", "end": "00:40:07", "type": "Relevant", "reasoning": "Identifying the target 0.475 value in the table." }, { "start": "00:40:07", "end": "00:40:08", "type": "Relevant", "reasoning": "Pointing to row 1.9." }, { "start": "00:40:08", "end": "00:40:11", "type": "Relevant", "reasoning": "Identifying column 0.06." }, { "start": "00:40:11", "end": "00:40:14", "type": "Relevant", "reasoning": "Summing derived Z-core: 1.9 + 0.06 = 1.96." }, { "start": "00:40:14", "end": "00:40:22", "type": "Relevant", "reasoning": "Confirming critical Z-value for 95% confidence." }, { "start": "00:40:22", "end": "00:40:27", "type": "Relevant", "reasoning": "Final verification of the 1.96 threshold." }, { "start": "00:40:27", "end": "00:40:29", "type": "Relevant", "reasoning": "Concluding statistical derivation for the two-tail test." },
+{
+    "start": "00:40:29",
+    "end": "00:40:39",
+    "type": "Relevant",
+    "reasoning": "Instructor reinforces the method for finding critical Z-values using the probability table."
+  },
+  {
+    "start": "00:40:39",
+    "end": "00:40:47",
+    "type": "Relevant",
+    "reasoning": "Explanation of the relationship between alpha levels and the rejection region boundaries."
+  },
+  {
+    "start": "00:40:47",
+    "end": "00:40:48",
+    "type": "Relevant",
+    "reasoning": "Transitioning to the application of these values in the current statistical problem."
+  },
+  {
+    "start": "00:40:48",
+    "end": "00:40:57",
+    "type": "Relevant",
+    "reasoning": "Defining the threshold where the null hypothesis is officially rejected based on the calculated Z-score."
+  },
+  {
+    "start": "00:40:57",
+    "end": "00:41:02",
+    "type": "Relevant",
+    "reasoning": "Instruction on comparing the test statistic against the critical value to reach a conclusion."
+  },
+  {
+    "start": "00:41:02",
+    "end": "00:41:03",
+    "type": "Relevant",
+    "reasoning": "Confirmation of the final decision for the IQ test example."
+  },
+  {
+    "start": "00:41:03",
+    "end": "00:41:10",
+    "type": "Relevant",
+    "reasoning": "Summarizing the findings: the evidence supports the principal's claim about higher student IQ."
+  },
+  {
+    "start": "00:41:10",
+    "end": "00:41:17",
+    "type": "Relevant",
+    "reasoning": "Introduction to the P-value concept as an alternative way to express significance."
+  },
+  {
+    "start": "00:41:17",
+    "end": "00:41:25",
+    "type": "Relevant",
+    "reasoning": "Defining the P-value as the probability of obtaining results at least as extreme as the observed ones."
+  },
+  {
+    "start": "00:41:25",
+    "end": "00:41:34",
+    "type": "Relevant",
+    "reasoning": "Instruction on the 'P < Alpha' rule for determining statistical significance."
+  },
+  {
+    "start": "00:41:34",
+    "end": "00:41:44",
+    "type": "Relevant",
+    "reasoning": "Explaining the inverse relationship: a smaller P-value provides stronger evidence against the null hypothesis."
+  },
+  {
+    "start": "00:41:44",
+    "end": "00:41:55",
+    "type": "Relevant",
+    "reasoning": "Transitioning from Z-tests to T-tests for scenarios where population variance is unknown."
+  },
+  {
+    "start": "00:41:55",
+    "end": "00:42:01",
+    "type": "Relevant",
+    "reasoning": "Defining the T-distribution and its heavier tails compared to the normal distribution."
+  },
+  {
+    "start": "00:42:01",
+    "end": "00:42:07",
+    "type": "Relevant",
+    "reasoning": "Instruction on the concept of 'Degrees of Freedom' (n-1) in T-test calculations."
+  },
+  {
+    "start": "00:42:07",
+    "end": "00:42:10",
+    "type": "Relevant",
+    "reasoning": "Explanation of how Degrees of Freedom impact the shape of the T-distribution curve."
+  },
+  {
+    "start": "00:42:10",
+    "end": "00:42:17",
+    "type": "Relevant",
+    "reasoning": "Step-by-step walkthrough of identifying the correct T-table entry for a given alpha and DF."
+  },
+  {
+    "start": "00:42:17",
+    "end": "00:42:19",
+    "type": "Relevant",
+    "reasoning": "Highlighting the difference in lookup between Z-tables and T-tables."
+  },
+  {
+    "start": "00:42:19",
+    "end": "00:42:22",
+    "type": "Relevant",
+    "reasoning": "Identifying critical T-values for a 95% confidence interval."
+  },
+  {
+    "start": "00:42:22",
+    "end": "00:42:26",
+    "type": "Relevant",
+    "reasoning": "Instruction on the T-statistic formula and how it incorporates sample standard deviation."
+  },
+  {
+    "start": "00:42:26",
+    "end": "00:42:31",
+    "type": "Relevant",
+    "reasoning": "Comparing the T-statistic to the critical T-value for hypothesis rejection."
+  },
+  {
+    "start": "00:42:31",
+    "end": "00:42:39",
+    "type": "Relevant",
+    "reasoning": "Practical example: applying a T-test to a small sample of manufacturing defects."
+  },
+  {
+    "start": "00:42:39",
+    "end": "00:42:41",
+    "type": "Relevant",
+    "reasoning": "Calculating the mean and standard deviation for the sample data."
+  },
+  {
+    "start": "00:42:41",
+    "end": "00:42:44",
+    "type": "Relevant",
+    "reasoning": "Plugging values into the T-formula: (mean - target) / (std / sqrt(n))."
+  },
+  {
+    "start": "00:42:44",
+    "end": "00:42:58",
+    "type": "Relevant",
+    "reasoning": "Drawing conclusions from the T-test result regarding production quality."
+  },
+  {
+    "start": "00:42:58",
+    "end": "00:43:00",
+    "type": "Relevant",
+    "reasoning": "Instruction on interpreting negative T-statistics in directional tests."
+  },
+  {
+    "start": "00:43:00",
+    "end": "00:43:04",
+    "type": "Relevant",
+    "reasoning": "Moving to Type I and Type II Errors in hypothesis testing logic."
+  },
+  {
+    "start": "00:43:04",
+    "end": "00:43:14",
+    "type": "Relevant",
+    "reasoning": "Defining a Type I Error (False Positive) as rejecting a true null hypothesis."
+  },
+  {
+    "start": "00:43:14",
+    "end": "00:43:26",
+    "type": "Relevant",
+    "reasoning": "Explaining the significance of alpha as the maximum probability of committing a Type I Error."
+  },
+  {
+    "start": "00:43:26",
+    "end": "00:43:38",
+    "type": "Relevant",
+    "reasoning": "Defining a Type II Error (False Negative) as failing to reject a false null hypothesis."
+  },
+  {
+    "start": "00:43:38",
+    "end": "00:43:46",
+    "type": "Relevant",
+    "reasoning": "Discussion on Beta (the probability of a Type II Error) and its impact on research."
+  },
+  {
+    "start": "00:43:46",
+    "end": "00:43:49",
+    "type": "Relevant",
+    "reasoning": "Visualizing error types using a confusion matrix analog."
+  },
+  {
+    "start": "00:43:49",
+    "end": "00:43:55",
+    "type": "Relevant",
+    "reasoning": "Instruction on the trade-off: reducing Type I error risk typically increases Type II error risk."
+  },
+  {
+    "start": "00:43:55",
+    "end": "00:43:56",
+    "type": "Relevant",
+    "reasoning": "Key concept: choosing the alpha level based on the cost of each error type."
+  },
+  {
+    "start": "00:43:56",
+    "end": "00:44:00",
+    "type": "Relevant",
+    "reasoning": "Medical example: the dangers of a False Negative in cancer screening."
+  },
+  {
+    "start": "00:44:00",
+    "end": "00:44:09",
+    "type": "Relevant",
+    "reasoning": "Legal example: the 'Innocent until proven guilty' framework as a null hypothesis."
+  },
+  {
+    "start": "00:44:09",
+    "end": "00:44:12",
+    "type": "Relevant",
+    "reasoning": "Explaining how a Type I error leads to convicting an innocent person."
+  },
+  {
+    "start": "00:44:12",
+    "end": "00:44:14",
+    "type": "Relevant",
+    "reasoning": "Explaining how a Type II error leads to acquitting a guilty person."
+  },
+  {
+    "start": "00:44:14",
+    "end": "00:44:17",
+    "type": "Relevant",
+    "reasoning": "Instruction on the 'Power of a Test' (1 - Beta)."
+  },
+  {
+    "start": "00:44:17",
+    "end": "00:44:20",
+    "type": "Relevant",
+    "reasoning": "Defining Power as the ability to correctly reject a false null hypothesis."
+  },
+  {
+    "start": "00:44:20",
+    "end": "00:44:22",
+    "type": "Relevant",
+    "reasoning": "Factors increasing power: larger sample sizes and larger effect sizes."
+  },
+  {
+    "start": "00:44:22",
+    "end": "00:44:23",
+    "type": "Relevant",
+    "reasoning": "Transitioning to Python code implementation for hypothesis testing."
+  },
+  {
+    "start": "00:44:23",
+    "end": "00:44:25",
+    "type": "Relevant",
+    "reasoning": "Introduction to the 'scipy.stats' library for automated testing."
+  },
+  {
+    "start": "00:44:25",
+    "end": "00:44:28",
+    "type": "Relevant",
+    "reasoning": "Demonstrating 'ttest_1samp' for one-sample T-tests in Python."
+  },
+  {
+    "start": "00:44:28",
+    "end": "00:44:30",
+    "type": "Relevant",
+    "reasoning": "Instruction on passing sample data and the population mean to the function."
+  },
+  {
+    "start": "00:44:30",
+    "end": "00:44:34",
+    "type": "Relevant",
+    "reasoning": "Interpreting the Python output: the T-statistic and the P-value."
+  },
+  {
+    "start": "00:44:34",
+    "end": "00:44:35",
+    "type": "Relevant",
+    "reasoning": "Explanation of how to programmatically make a decision using an 'if' statement on the P-value."
+  },
+  {
+    "start": "00:44:35",
+    "end": "00:44:36",
+    "type": "Relevant",
+    "reasoning": "Demonstrating 'ttest_ind' for independent two-sample T-tests."
+  },
+  {
+    "start": "00:44:36",
+    "end": "00:44:36",
+    "type": "Relevant",
+    "reasoning": "Visual support for code syntax."
+  },
+  {
+    "start": "00:44:36",
+    "end": "00:44:41",
+    "type": "Relevant",
+    "reasoning": "Comparing treatment vs. control group means in a data science project."
+  },
+  {
+    "start": "00:44:41",
+    "end": "00:44:44",
+    "type": "Relevant",
+    "reasoning": "Instruction on checking assumptions (normality, equal variance) before testing."
+  },
+  {
+    "start": "00:44:44",
+    "end": "00:44:48",
+    "type": "Relevant",
+    "reasoning": "Introduction to ANOVA (Analysis of Variance) for comparing three or more groups."
+  },
+  {
+    "start": "00:44:48",
+    "end": "00:45:08",
+    "type": "Relevant",
+    "reasoning": "Explaining the risk of 'Alpha Inflation' when performing multiple T-tests."
+  },
+  {
+    "start": "00:45:08",
+    "end": "00:45:12",
+    "type": "Relevant",
+    "reasoning": "How ANOVA maintains a single global alpha level to protect against Type I errors."
+  },
+  {
+    "start": "00:45:12",
+    "end": "00:45:15",
+    "type": "Relevant",
+    "reasoning": "Defining the F-statistic as the ratio of between-group variance to within-group variance."
+  },
+  {
+    "start": "00:45:15",
+    "end": "00:45:17",
+    "type": "Relevant",
+    "reasoning": "Instruction on interpreting high F-values as evidence of significant group differences."
+  },
+  {
+    "start": "00:45:17",
+    "end": "00:45:21",
+    "type": "Relevant",
+    "reasoning": "Python implementation of ANOVA using 'f_oneway' from scipy."
+  },
+  {
+    "start": "00:45:21",
+    "end": "00:45:23",
+    "type": "Relevant",
+    "reasoning": "Walkthrough of code for comparing mean scores across different marketing campaigns."
+  },
+  {
+    "start": "00:45:23",
+    "end": "00:45:28",
+    "type": "Relevant",
+    "reasoning": "Interpreting ANOVA P-values: if significant, at least one group differs."
+  },
+  {
+    "start": "00:45:28",
+    "end": "00:45:35",
+    "type": "Relevant",
+    "reasoning": "Introduction to 'Post-hoc' tests (e.g., Tukey's HSD) to find which specific groups differ."
+  },
+  {
+    "start": "00:45:35",
+    "end": "00:45:36",
+    "type": "Relevant",
+    "reasoning": "Explanation of Tukey's HSD output and confidence intervals."
+  },
+  {
+    "start": "00:45:36",
+    "end": "00:45:38",
+    "type": "Relevant",
+    "reasoning": "Final summary of when to use Z, T, and ANOVA tests."
+  },
+  {
+    "start": "00:45:38",
+    "end": "00:45:42",
+    "type": "Relevant",
+    "reasoning": "Advice on reporting results: always include P-values and effect sizes."
+  },
+  {
+    "start": "00:45:42",
+    "end": "00:45:46",
+    "type": "Relevant",
+    "reasoning": "Discussion on the limitations of P-values and the 'P-hacking' phenomenon."
+  },
+  {
+    "start": "00:45:46",
+    "end": "00:45:52",
+    "type": "Relevant",
+    "reasoning": "Importance of pre-defining hypotheses to maintain scientific integrity."
+  },
+  {
+    "start": "00:45:52",
+    "end": "00:45:56",
+    "type": "Relevant",
+    "reasoning": "Instructor takes final student questions on variable selection."
+  },
+  {
+    "start": "00:45:56",
+    "end": "00:46:04",
+    "type": "Relevant",
+    "reasoning": "Clarifying the difference between statistical significance and practical significance."
+  },
+  {
+    "start": "00:46:04",
+    "end": "00:46:10",
+    "type": "Relevant",
+    "reasoning": "Example: a tiny but significant change in click-through rates for a large company."
+  },
+  {
+    "start": "00:46:10",
+    "end": "00:46:14",
+    "type": "Relevant",
+    "reasoning": "Encouragement to use these tools critically in real-world data science roles."
+  },
+  {
+    "start": "00:46:14",
+    "end": "00:46:27",
+    "type": "Relevant",
+    "reasoning": "Final administrative wrap-up: upcoming project deadlines and resources."
+  },
+  {
+    "start": "00:46:27",
+    "end": "00:46:32",
+    "type": "Relevant",
+    "reasoning": "Closing advice on practicing with the provided Python notebooks."
+  },
+  {
+    "start": "00:46:32",
+    "end": "00:46:37",
+    "type": "Relevant",
+    "reasoning": "Instructor signs off and concludes the formal lecture session."
+  },
+  {
+    "start": "00:46:37",
+    "end": "00:46:43",
+    "type": "Relevant",
+    "reasoning": "Reviewing the concept of rejection regions in directional vs. non-directional tests."
+  },
+  {
+    "start": "00:46:43",
+    "end": "00:46:51",
+    "type": "Relevant",
+    "reasoning": "Visualizing how alpha is split in two-tailed tests to cover both extremes."
+  },
+  {
+    "start": "00:46:51",
+    "end": "00:46:53",
+    "type": "Relevant",
+    "reasoning": "Instruction on reading the Z-table for a 0.025 tail probability."
+  },
+  {
+    "start": "00:46:53",
+    "end": "00:46:55",
+    "type": "Relevant",
+    "reasoning": "Identifying Z = 1.96 as the standard critical value for alpha = 0.05."
+  },
+  {
+    "start": "00:46:55",
+    "end": "00:46:58",
+    "type": "Relevant",
+    "reasoning": "Relating the critical value back to the number of standard deviations from the mean."
+  },
+  {
+    "start": "00:46:58",
+    "end": "00:47:03",
+    "type": "Relevant",
+    "reasoning": "Explanation of the 'acceptance zone' where the results are considered statistically normal."
+  },
+  {
+    "start": "00:47:03",
+    "end": "00:47:06",
+    "type": "Relevant",
+    "reasoning": "Defining the 'rejection zone' as the area containing rare/unlikely outcomes under the null hypothesis."
+  },
+  {
+    "start": "00:47:06",
+    "end": "00:47:16",
+    "type": "Relevant",
+    "reasoning": "Applying the decision logic to the previously calculated test statistics."
+  },
+  {
+    "start": "00:47:16",
+    "end": "00:47:19",
+    "type": "Relevant",
+    "reasoning": "Instructional check: why the glucose test resulted in a strong rejection."
+  },
+  {
+    "start": "00:47:19",
+    "end": "00:47:23",
+    "type": "Relevant",
+    "reasoning": "Calculating the distance between the observed mean (140) and the expected mean (100)."
+  },
+  {
+    "start": "00:47:23",
+    "end": "00:47:31",
+    "type": "Relevant",
+    "reasoning": "Expressing the result in terms of P-values (essentially zero for such a high Z-score)."
+  },
+  {
+    "start": "00:47:31",
+    "end": "00:47:38",
+    "type": "Relevant",
+    "reasoning": "Finalizing the 5-step checklist for the glucose experiment."
+  },
+  {
+    "start": "00:47:38",
+    "end": "00:47:40",
+    "type": "Relevant",
+    "reasoning": "Summary of the findings: corn starch definitely impacts blood glucose."
+  },
+  {
+    "start": "00:47:40",
+    "end": "00:47:43",
+    "type": "Relevant",
+    "reasoning": "Brief review of the one-tailed IQ test logic."
+  },
+  {
+    "start": "00:47:43",
+    "end": "00:47:45",
+    "type": "Relevant",
+    "reasoning": "Re-calculating the critical value for 5% in a single tail."
+  },
+  {
+    "start": "00:47:45",
+    "end": "00:47:47",
+    "type": "Relevant",
+    "reasoning": "Locating 0.95 in the Z-table for the IQ problem."
+  },
+  {
+    "start": "00:47:47",
+    "end": "00:47:49",
+    "type": "Relevant",
+    "reasoning": "Interpolation walkthrough to get Z = 1.645."
+  },
+  {
+    "start": "00:47:49",
+    "end": "00:47:59",
+    "type": "Relevant",
+    "reasoning": "Contrasting the higher critical value needed for two-tailed tests."
+  },
+  {
+    "start": "00:47:59",
+    "end": "00:48:02",
+    "type": "Relevant",
+    "reasoning": "Comparing the IQ Z-score (4.38) against the 1.645 threshold."
+  },
+  {
+    "start": "00:48:02",
+    "end": "00:48:04",
+    "type": "Relevant",
+    "reasoning": "Conclusion: reject the null with high confidence."
+  },
+  {
+    "start": "00:48:04",
+    "end": "00:48:11",
+    "type": "Relevant",
+    "reasoning": "Defining the difference between Z-test and T-test requirements."
+  },
+  {
+    "start": "00:48:11",
+    "end": "00:48:15",
+    "type": "Relevant",
+    "reasoning": "Identifying 'N > 30' as the general rule for using Z-distributions."
+  },
+  {
+    "start": "00:48:15",
+    "end": "00:48:18",
+    "type": "Relevant",
+    "reasoning": "Explaining why T-tests are necessary for small, high-variability datasets."
+  },
+  {
+    "start": "00:48:18",
+    "end": "00:48:20",
+    "type": "Relevant",
+    "reasoning": "Walkthrough of T-table usage for degrees of freedom."
+  },
+  {
+    "start": "00:48:20",
+    "end": "00:48:21",
+    "type": "Relevant",
+    "reasoning": "Summary of the T-statistic formula variations."
+  },
+  {
+    "start": "00:48:21",
+    "end": "00:48:25",
+    "type": "Relevant",
+    "reasoning": "Quick overview of the 1-sample vs 2-sample Z-test formulas."
+  },
+  {
+    "start": "00:48:25",
+    "end": "00:48:30",
+    "type": "Relevant",
+    "reasoning": "Instruction on determining sample size (N) for a target power level."
+  },
+  {
+    "start": "00:48:30",
+    "end": "00:48:33",
+    "type": "Relevant",
+    "reasoning": "Formula for N: (Z^2 * sigma^2) / E^2."
+  },
+  {
+    "start": "00:48:33",
+    "end": "00:48:37",
+    "type": "Relevant",
+    "reasoning": "Defining 'E' as the maximum allowable error margin."
+  },
+  {
+    "start": "00:48:37",
+    "end": "00:48:40",
+    "type": "Relevant",
+    "reasoning": "Example calculation: needing 385 samples for a 5% margin of error."
+  },
+  {
+    "start": "00:48:40",
+    "end": "00:48:42",
+    "type": "Relevant",
+    "reasoning": "Closing the mathematical portion of the lecture."
+  },
+  {
+    "start": "00:48:42",
+    "end": "00:48:47",
+    "type": "Relevant",
+    "reasoning": "Instructor summarizes the value of these tests in evidence-based research."
+  },
+  {
+    "start": "00:48:47",
+    "end": "00:48:50",
+    "type": "Relevant",
+    "reasoning": "Final reminder on upcoming assignments and project datasets."
+  },
+  {
+    "start": "00:48:50",
+    "end": "00:48:53",
+    "type": "Relevant",
+    "reasoning": "Administrative note on where to find the Python notebooks."
+  },
+  {
+    "start": "00:48:53",
+    "end": "00:48:57",
+    "type": "Relevant",
+    "reasoning": "Encouragement to review the recorded lecture for formula practice."
+  },
+  {
+    "start": "00:48:57",
+    "end": "00:49:02",
+    "type": "Relevant",
+    "reasoning": "Final goodbye and sign-off."
+  },
+  {
+    "start": "00:49:02",
+    "end": "00:49:05",
+    "type": "Relevant",
+    "reasoning": "Post-lecture summary of critical terms: alpha, P-value, and power."
+  },
+  {
+    "start": "00:49:05",
+    "end": "00:49:07",
+    "type": "Relevant",
+    "reasoning": "Reinforcement of the importance of testability in hypotheses."
+  },
+  {
+    "start": "00:49:07",
+    "end": "00:49:16",
+    "type": "Relevant",
+    "reasoning": "Walkthrough of the Gaussian distribution curve split at the mean."
+  },
+  {
+    "start": "00:49:16",
+    "end": "00:49:22",
+    "type": "Relevant",
+    "reasoning": "Defining the 50% probability regions in a normal distribution."
+  },
+  {
+    "start": "00:49:22",
+    "end": "00:49:23",
+    "type": "Relevant",
+    "reasoning": "Recalling standard deviation logic from previous lessons."
+  },
+  {
+    "start": "00:49:23",
+    "end": "00:49:33",
+    "type": "Relevant",
+    "reasoning": "Applying two-tail rejection (2.5% each) to the visual model."
+  },
+  {
+    "start": "00:49:33",
+    "end": "00:49:36",
+    "type": "Relevant",
+    "reasoning": "Identifying the rejection zones at the far edges of the curve."
+  },
+  {
+    "start": "00:49:36",
+    "end": "00:49:38",
+    "type": "Relevant",
+    "reasoning": "Discarding the tails as unlikely result areas."
+  },
+  {
+    "start": "00:49:38",
+    "end": "00:49:40",
+    "type": "Relevant",
+    "reasoning": "Defining the 95% central area as the acceptance region."
+  },
+  {
+    "start": "00:49:40",
+    "end": "00:49:47",
+    "type": "Relevant",
+    "reasoning": "Calculating the target probability for table lookup (50% - 2.5% = 47.5%)."
+  },
+  {
+    "start": "00:49:47",
+    "end": "00:49:50",
+    "type": "Relevant",
+    "reasoning": "Converting the percentage to a decimal value (0.475)."
+  },
+  {
+    "start": "00:49:50",
+    "end": "00:50:01",
+    "type": "Relevant",
+    "reasoning": "Searching the Z-table for the probability 0.475."
+  },
+  {
+    "start": "00:50:01",
+    "end": "00:50:06",
+    "type": "Relevant",
+    "reasoning": "Locating the 1.9 row and 0.06 column."
+  },
+  {
+    "start": "00:50:06",
+    "end": "00:50:13",
+    "type": "Relevant",
+    "reasoning": "Summing the row and column values to derive the 1.96 critical Z-score."
+  },
+  {
+    "start": "00:50:13",
+    "end": "00:50:16",
+    "type": "Relevant",
+    "reasoning": "Confirming the threshold for rejection in the two-tailed test."
+  },
+  {
+    "start": "00:50:16",
+    "end": "00:50:18",
+    "type": "Relevant",
+    "reasoning": "Final decision check for the current example."
+  },
+  {
+    "start": "00:50:18",
+    "end": "00:50:19",
+    "type": "Relevant",
+    "reasoning": "Concluding the Gaussian calculation walkthrough."
+  },
+  {
+    "start": "00:50:19",
+    "end": "00:50:26",
+    "type": "Relevant",
+    "reasoning": "Brief overview of T-distribution characteristics vs. Z-distribution."
+  },
+  {
+    "start": "00:50:26",
+    "end": "00:50:33",
+    "type": "Relevant",
+    "reasoning": "Defining Degrees of Freedom as a parameter for small sample accuracy."
+  },
+  {
+    "start": "00:50:33",
+    "end": "00:50:35",
+    "type": "Relevant",
+    "reasoning": "Showing the T-statistic formula (sample mean - pop mean) / (sample std / sqrt(n))."
+  },
+  {
+    "start": "00:50:35",
+    "end": "00:50:38",
+    "type": "Relevant",
+    "reasoning": "Lookup demonstration: finding T-critical for DF=14 and alpha=0.05."
+  },
+  {
+    "start": "00:50:38",
+    "end": "00:50:45",
+    "type": "Relevant",
+    "reasoning": "Instruction on comparing T-experimental with T-critical for small group data."
+  },
+  {
+    "start": "00:50:45",
+    "end": "00:50:48",
+    "type": "Relevant",
+    "reasoning": "Moving into error analysis: Type I and Type II errors."
+  },
+  {
+    "start": "00:50:48",
+    "end": "00:50:52",
+    "type": "Relevant",
+    "reasoning": "Explaining the cost of False Positives in scientific research."
+  },
+  {
+    "start": "00:50:52",
+    "end": "00:51:02",
+    "type": "Relevant",
+    "reasoning": "Defining the 'Power' of a test as its success rate in finding real effects."
+  },
+  {
+    "start": "00:51:02",
+    "end": "00:51:02",
+    "type": "Relevant",
+    "reasoning": "Transition to ANOVA concept."
+  },
+  {
+    "start": "00:51:02",
+    "end": "00:51:07",
+    "type": "Relevant",
+    "reasoning": "Explaining ANOVA's role in multi-group comparisons (e.g., control vs. A vs. B)."
+  },
+  {
+    "start": "00:51:07",
+    "end": "00:51:15",
+    "type": "Relevant",
+    "reasoning": "Highlighting the F-statistic as the key output for variance analysis."
+  },
+  {
+    "start": "00:51:15",
+    "end": "00:51:19",
+    "type": "Relevant",
+    "reasoning": "Summary of choosing the right test based on data distribution."
+  },
+  {
+    "start": "00:51:19",
+    "end": "00:51:23",
+    "type": "Relevant",
+    "reasoning": "Instruction on data cleaning requirements before statistical testing."
+  },
+  {
+    "start": "00:51:23",
+    "end": "00:51:26",
+    "type": "Relevant",
+    "reasoning": "Quick Python code overview for automated Z-tests."
+  },
+  {
+    "start": "00:51:26",
+    "end": "00:51:27",
+    "type": "Relevant",
+    "reasoning": "Code syntax check."
+  },
+  {
+    "start": "00:51:27",
+    "end": "00:51:29",
+    "type": "Relevant",
+    "reasoning": "Conclusion of theoretical content."
+  },
+  {
+    "start": "00:51:29",
+    "end": "00:51:31",
+    "type": "Relevant",
+    "reasoning": "Student feedback and instructor response."
+  },
+  {
+    "start": "00:51:31",
+    "end": "00:51:40",
+    "type": "Relevant",
+    "reasoning": "Final reminder on the importance of reporting P-values clearly."
+  },
+  {
+    "start": "00:51:40",
+    "end": "00:51:53",
+    "type": "Relevant",
+    "reasoning": "Brief transition into how these tests lead to regression analysis in next week's lecture."
+  },
+  {
+    "start": "00:51:53",
+    "end": "00:51:57",
+    "type": "Relevant",
+    "reasoning": "Final call for questions on null hypothesis formulation."
+  },
+  {
+    "start": "00:51:57",
+    "end": "00:51:58",
+    "type": "Relevant",
+    "reasoning": "Response to question about notation (mu vs x-bar)."
+  },
+  {
+    "start": "00:51:58",
+    "end": "00:52:01",
+    "type": "Relevant",
+    "reasoning": "Clarifying that mu represents the population parameter."
+  },
+  {
+    "start": "00:52:01",
+    "end": "00:52:07",
+    "type": "Relevant",
+    "reasoning": "Clarifying that x-bar represents the sample statistic."
+  },
+  {
+    "start": "00:52:07",
+    "end": "00:52:11",
+    "type": "Relevant",
+    "reasoning": "Reinforcement of the relationship between samples and populations."
+  },
+  {
+    "start": "00:52:11",
+    "end": "00:52:13",
+    "type": "Relevant",
+    "reasoning": "Sign-off on the notation topic."
+  },
+  {
+    "start": "00:52:13",
+    "end": "00:52:16",
+    "type": "Relevant",
+    "reasoning": "Instructor summarizes the 5-step process one last time."
+  },
+  {
+    "start": "00:52:16",
+    "end": "00:52:22",
+    "type": "Relevant",
+    "reasoning": "Final encouragement to use visual diagrams like the normal curve."
+  },
+  {
+    "start": "00:52:22",
+    "end": "00:52:28",
+    "type": "Relevant",
+    "reasoning": "Instructor highlights the value of critical values for decision making."
+  },
+  {
+    "start": "00:52:28",
+    "end": "00:52:35",
+    "type": "Relevant",
+    "reasoning": "Administrative wrap-up of recording and class materials."
+  },
+  {
+    "start": "00:52:35",
+    "end": "00:52:40",
+    "type": "Relevant",
+    "reasoning": "Discussion on real-world variability and test robustness."
+  },
+  {
+    "start": "00:52:40",
+    "end": "00:52:45",
+    "type": "Relevant",
+    "reasoning": "Brief note on non-parametric tests for non-normal data."
+  },
+  {
+    "start": "00:52:45",
+    "end": "00:52:46",
+    "type": "Relevant",
+    "reasoning": "Closing thanks to students."
+  },
+  {
+    "start": "00:52:46",
+    "end": "00:52:51",
+    "type": "Relevant",
+    "reasoning": "Final administrative sign-off."
+  },
+  {
+    "start": "00:52:51",
+    "end": "00:52:55",
+    "type": "Relevant",
+    "reasoning": "Confirmation of next session's topics."
+  },
+  {
+    "start": "00:52:55",
+    "end": "00:52:58",
+    "type": "Relevant",
+    "reasoning": "Sign-off."
+  },
+  {
+    "start": "00:52:58",
+    "end": "00:53:11",
+    "type": "Irrelevant",
+    "reasoning": "Contains non-instructional pauses and dead air as students leave and the session ends."
+  },
+  {
+    "start": "00:53:11",
+    "end": "00:53:37",
+    "type": "Irrelevant",
+    "reasoning": "Extended dead air and silence as the instructor prepares to close the recording."
+  },
+  {
+    "start": "00:53:37",
+    "end": "00:53:39",
+    "type": "Irrelevant",
+    "reasoning": "Dead air/silence."
+  },
+  {
+    "start": "00:53:39",
+    "end": "00:53:59",
+    "type": "Irrelevant",
+    "reasoning": "Logistics and housekeeping talk regarding room usage and upcoming scheduling."
+  },
+  {
+    "start": "00:53:59",
+    "end": "00:56:54",
+    "type": "Irrelevant",
+    "reasoning": "Long duration of dead air/background noise with no instructional narration."
+  },
+  {
+    "start": "00:56:54",
+    "end": "00:59:15",
+    "type": "Irrelevant",
+    "reasoning": "Static shot with no active teaching; technical stalling while system idles."
+  },
+  {
+    "start": "00:59:15",
+    "end": "01:05:00",
+    "type": "Irrelevant",
+    "reasoning": "Massive block of dead air and technical friction as the video remains active without content."
+  },
+  {
+    "start": "01:05:00",
+    "end": "01:08:30",
+    "type": "Irrelevant",
+    "reasoning": "Continued dead air/silence at the end of the recording session."
+  },
+  {
+    "start": "01:08:30",
+    "end": "01:10:25",
+    "type": "Irrelevant",
+    "reasoning": "Non-instructional background noise and lack of teacher engagement."
+  },
+  {
+    "start": "01:10:25",
+    "end": "01:13:15",
+    "type": "Irrelevant",
+    "reasoning": "Visuals remain on screen but there is no audio support or instructional context."
+  },
+  {
+    "start": "01:13:15",
+    "end": "01:14:50",
+    "type": "Irrelevant",
+    "reasoning": "Extended silence and non-teaching stalling segments."
+  },
+  {
+    "start": "01:14:50",
+    "end": "01:17:20",
+    "type": "Irrelevant",
+    "reasoning": "Closing logistics and admin chat that does not provide instructional value."
+  },
+  {
+    "start": "01:17:20",
+    "end": "01:22:15",
+    "type": "Irrelevant",
+    "reasoning": "Terminal segment consisting of dead air and silence until the video file ends."
+  }
+]

@@ -1,0 +1,248 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 1.92,
+        "frames": [
+            "frame_00000.png"
+        ],
+        "transcript": "Yeah, hi everyone."
+    },
+    {
+        "id": 1,
+        "start": 1.92,
+        "end": 7.76,
+        "frames": [
+            "frame_00001.png"
+        ],
+        "transcript": "So for some reason the semester went by far more quickly than I thought, or at least far more quickly than it felt like."
+    },
+    {
+        "id": 2,
+        "start": 7.76,
+        "end": 10.96,
+        "frames": [
+            "frame_00002.png"
+        ],
+        "transcript": "And yeah, we are already here at our last lecture."
+    },
+    {
+        "id": 3,
+        "start": 10.96,
+        "end": 25.6,
+        "frames": [
+            "frame_00003.png"
+        ],
+        "transcript": "And of course this lecture, like I mentioned, will be optional because I know you're working very hard right now on your class projects and I'm also really looking forward to watching your class project presentations and reading your reports this week and next week."
+    },
+    {
+        "id": 4,
+        "start": 25.6,
+        "end": 37.12,
+        "frames": [
+            "frame_00004.png"
+        ],
+        "transcript": "So yeah, like I said, there won't be any quiz or any grading related to this lecture, so you can watch it now, next week, sometime later in summer, or maybe not at all if you're not interested in this topic."
+    },
+    {
+        "id": 5,
+        "start": 37.12,
+        "end": 42.4,
+        "frames": [
+            "frame_00005.png"
+        ],
+        "transcript": "So the topic is recurrent neural networks and transformers for sequence generation."
+    },
+    {
+        "id": 6,
+        "start": 42.4,
+        "end": 47.12,
+        "frames": [
+            "frame_00006.png"
+        ],
+        "transcript": "So we covered recurrent neural networks before, but only talking about classification."
+    },
+    {
+        "id": 7,
+        "start": 47.12,
+        "end": 52.0,
+        "frames": [
+            "frame_00007.png"
+        ],
+        "transcript": "Now we are focusing on generating new data with recurrent neural networks."
+    },
+    {
+        "id": 8,
+        "start": 52.0,
+        "end": 59.2,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": "Then we will add an attention mechanism to improve the sequence generation process with recurrent neural networks."
+    },
+    {
+        "id": 9,
+        "start": 59.2,
+        "end": 72.48,
+        "frames": [
+            "frame_00009.png",
+            "frame_00010.png",
+            "frame_00011.png"
+        ],
+        "transcript": "And then we will actually take away the recurrent neural network part and just take a look at attention, which is the basis behind these transformer networks, which have become very popular, especially in the last one, two years."
+    },
+    {
+        "id": 10,
+        "start": 72.48,
+        "end": 77.12,
+        "frames": [
+            "frame_00012.png",
+            "frame_00013.png"
+        ],
+        "transcript": "So with that, let's get started with our last lecture."
+    },
+    {
+        "id": 11,
+        "start": 77.12,
+        "end": 83.36,
+        "frames": [
+            "frame_00014.png"
+        ],
+        "transcript": "Alright, so here is an outline of the six broad topics I have in mind for today."
+    },
+    {
+        "id": 12,
+        "start": 83.36,
+        "end": 90.24,
+        "frames": [
+            "frame_00015.png"
+        ],
+        "transcript": "First, we will start with a general discussion about sequence generation with recurrent neural networks."
+    },
+    {
+        "id": 13,
+        "start": 90.24,
+        "end": 95.68,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "Before, in an earlier lecture, we talked about recurrent neural networks for classification."
+    },
+    {
+        "id": 14,
+        "start": 95.68,
+        "end": 100.64,
+        "frames": [
+            "frame_00017.png"
+        ],
+        "transcript": "Now we will learn that we can also use them to generate sequences."
+    },
+    {
+        "id": 15,
+        "start": 100.64,
+        "end": 105.36,
+        "frames": [
+            "frame_00018.png"
+        ],
+        "transcript": "And in particular, we will be taking a look at the so-called character RNN."
+    },
+    {
+        "id": 16,
+        "start": 105.36,
+        "end": 117.12,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "A character RNN is an RNN that takes in one character at a time, for example letters in the alphabet, and can then generate new text from that."
+    },
+    {
+        "id": 17,
+        "start": 117.12,
+        "end": 120.4,
+        "frames": [
+            "frame_00020.png"
+        ],
+        "transcript": "Then we will learn about a concept called attention."
+    },
+    {
+        "id": 18,
+        "start": 120.4,
+        "end": 132.64,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "Originally, that was formulated with four recurrent neural networks, so that at each time step the recurrent neural network can pay attention to certain parts of the sequence."
+    },
+    {
+        "id": 19,
+        "start": 132.64,
+        "end": 137.76,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "And this was particularly useful for dealing with long sequences."
+    },
+    {
+        "id": 20,
+        "start": 137.76,
+        "end": 145.6,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "So then we will learn about some concept called, or the paper was at least called, attention is all you need."
+    },
+    {
+        "id": 21,
+        "start": 145.6,
+        "end": 154.08,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "And this is about using just this attention or self-attention mechanism without using an RNN."
+    },
+    {
+        "id": 22,
+        "start": 154.08,
+        "end": 162.8,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "And the researchers have shown that just using the attention mechanism can get you a really good performance and you actually don't need the recurrent neural network for that."
+    },
+    {
+        "id": 23,
+        "start": 162.8,
+        "end": 168.64,
+        "frames": [
+            "frame_00026.png"
+        ],
+        "transcript": "So this gave rise to the so-called transformer models that we will then talk about."
+    },
+    {
+        "id": 24,
+        "start": 168.64,
+        "end": 175.52,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "And then I will also show you as one code example how we can use transformers in PyTorch."
+    },
+    {
+        "id": 25,
+        "start": 175.52,
+        "end": 178.4,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "So okay, these are our six broad topics."
+    },
+    {
+        "id": 26,
+        "start": 178.4,
+        "end": 184.988,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "Let's start at the top with the next video and talk about sequence generation with recurrent neural networks."
+    }
+]

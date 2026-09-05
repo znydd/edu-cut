@@ -1,0 +1,1247 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 7.44,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png",
+            "frame_00003.png",
+            "frame_00004.png"
+        ],
+        "transcript": "Good evening, good evening, my dear Jay Boyas."
+    },
+    {
+        "id": 1,
+        "start": 7.44,
+        "end": 19.68,
+        "frames": [
+            "frame_00005.png",
+            "frame_00006.png",
+            "frame_00007.png",
+            "frame_00008.png",
+            "frame_00009.png"
+        ],
+        "transcript": "I hope you had your dinner, and it's time to continue our very, very big and important chapter of class 11th, which is rotational mechanics, rigid body mechanics."
+    },
+    {
+        "id": 2,
+        "start": 19.68,
+        "end": 28.08,
+        "frames": [
+            "frame_00010.png",
+            "frame_00011.png",
+            "frame_00012.png"
+        ],
+        "transcript": "And we are on lecture number two, where I'm going to completely focus on the concept of torque or the moment of force."
+    },
+    {
+        "id": 3,
+        "start": 28.08,
+        "end": 43.68,
+        "frames": [
+            "frame_00013.png",
+            "frame_00014.png",
+            "frame_00015.png",
+            "frame_00016.png",
+            "frame_00017.png",
+            "frame_00018.png",
+            "frame_00019.png",
+            "frame_00020.png",
+            "frame_00021.png",
+            "frame_00022.png"
+        ],
+        "transcript": "And we will see how we can solve questions on equilibrium, which is associated with torque, also pulleys with masses and the relation of torque with angular acceleration, which is also called as the Newton second law, but in rotation."
+    },
+    {
+        "id": 4,
+        "start": 43.68,
+        "end": 55.6,
+        "frames": [
+            "frame_00023.png",
+            "frame_00024.png",
+            "frame_00025.png",
+            "frame_00026.png",
+            "frame_00027.png",
+            "frame_00028.png"
+        ],
+        "transcript": "All of these concepts in today's lecture, and also we'll see a little bit of you know rolling motion as well, because sometimes there are some questions in J-Mains with regards to that."
+    },
+    {
+        "id": 5,
+        "start": 55.6,
+        "end": 56.24,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "Yeah."
+    },
+    {
+        "id": 6,
+        "start": 56.24,
+        "end": 61.36,
+        "frames": [
+            "frame_00030.png",
+            "frame_00031.png",
+            "frame_00032.png",
+            "frame_00033.png"
+        ],
+        "transcript": "Let's begin with your capto, your captain Shrias, your physics master teacher."
+    },
+    {
+        "id": 7,
+        "start": 61.36,
+        "end": 65.44,
+        "frames": [
+            "frame_00034.png",
+            "frame_00035.png",
+            "frame_00036.png"
+        ],
+        "transcript": "I've been training, mentoring, guiding kids for past 13 plus years, guys."
+    },
+    {
+        "id": 8,
+        "start": 65.44,
+        "end": 77.44,
+        "frames": [
+            "frame_00037.png",
+            "frame_00038.png",
+            "frame_00039.png",
+            "frame_00040.png",
+            "frame_00041.png",
+            "frame_00042.png",
+            "frame_00043.png",
+            "frame_00044.png"
+        ],
+        "transcript": "I did my research from IIT Bombay, did my graduation from NIT Nakur, worked in a software engineering firm for three years, decided to pursue teaching because I love it, plus I love physics."
+    },
+    {
+        "id": 9,
+        "start": 77.44,
+        "end": 83.36,
+        "frames": [
+            "frame_00045.png",
+            "frame_00046.png",
+            "frame_00047.png"
+        ],
+        "transcript": "When I was your age and wrote J, I almost secured full marks in the physics of J paper."
+    },
+    {
+        "id": 10,
+        "start": 83.36,
+        "end": 91.2,
+        "frames": [
+            "frame_00048.png",
+            "frame_00049.png",
+            "frame_00050.png",
+            "frame_00051.png",
+            "frame_00052.png",
+            "frame_00053.png"
+        ],
+        "transcript": "And here I am teaching you, guiding you, mentoring you for physics to make sure this is the number one subject for all of you."
+    },
+    {
+        "id": 11,
+        "start": 91.2,
+        "end": 92.56,
+        "frames": [
+            "frame_00054.png",
+            "frame_00055.png"
+        ],
+        "transcript": "Alright, so let's begin."
+    },
+    {
+        "id": 12,
+        "start": 92.56,
+        "end": 93.84,
+        "frames": [
+            "frame_00056.png"
+        ],
+        "transcript": "Hi Rajkumara Bijit."
+    },
+    {
+        "id": 13,
+        "start": 93.84,
+        "end": 95.76,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "Welcome Pretija Hari Aditi."
+    },
+    {
+        "id": 14,
+        "start": 95.76,
+        "end": 97.44,
+        "frames": [
+            "frame_00058.png"
+        ],
+        "transcript": "Welcome Kur Turi."
+    },
+    {
+        "id": 15,
+        "start": 97.44,
+        "end": 99.6,
+        "frames": [
+            "frame_00059.png"
+        ],
+        "transcript": "Welcome, welcome Hari."
+    },
+    {
+        "id": 16,
+        "start": 99.6,
+        "end": 101.6,
+        "frames": [
+            "frame_00060.png"
+        ],
+        "transcript": "Welcome, welcome everyone."
+    },
+    {
+        "id": 17,
+        "start": 101.6,
+        "end": 106.24,
+        "frames": [
+            "frame_00061.png",
+            "frame_00062.png",
+            "frame_00063.png"
+        ],
+        "transcript": "I hope you guys have all marked attendance and yeah, dinner too is done."
+    },
+    {
+        "id": 18,
+        "start": 106.24,
+        "end": 110.16,
+        "frames": [
+            "frame_00064.png",
+            "frame_00065.png"
+        ],
+        "transcript": "So you know the Josh energy, everything is back on track."
+    },
+    {
+        "id": 19,
+        "start": 110.16,
+        "end": 112.88,
+        "frames": [
+            "frame_00066.png"
+        ],
+        "transcript": "Session will be around one and a half to two hours."
+    },
+    {
+        "id": 20,
+        "start": 112.88,
+        "end": 113.44,
+        "frames": [
+            "frame_00067.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 21,
+        "start": 113.44,
+        "end": 114.48,
+        "frames": [
+            "frame_00068.png",
+            "frame_00069.png"
+        ],
+        "transcript": "Yeah."
+    },
+    {
+        "id": 22,
+        "start": 114.48,
+        "end": 115.44,
+        "frames": [
+            "frame_00070.png"
+        ],
+        "transcript": "Right."
+    },
+    {
+        "id": 23,
+        "start": 115.44,
+        "end": 117.52,
+        "frames": [
+            "frame_00071.png"
+        ],
+        "transcript": "Pritija, I love your quotes."
+    },
+    {
+        "id": 24,
+        "start": 117.52,
+        "end": 118.24,
+        "frames": [
+            "frame_00072.png"
+        ],
+        "transcript": "Yeah."
+    },
+    {
+        "id": 25,
+        "start": 118.24,
+        "end": 123.68,
+        "frames": [
+            "frame_00073.png",
+            "frame_00074.png",
+            "frame_00075.png",
+            "frame_00076.png"
+        ],
+        "transcript": "And Abhijit, you should sleep for seven hours at your age, you are in 9th and 10th."
+    },
+    {
+        "id": 26,
+        "start": 123.68,
+        "end": 126.16,
+        "frames": [
+            "frame_00077.png",
+            "frame_00078.png"
+        ],
+        "transcript": "So, yes, six to seven hours is good enough."
+    },
+    {
+        "id": 27,
+        "start": 126.16,
+        "end": 126.64,
+        "frames": [
+            "frame_00079.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 28,
+        "start": 126.64,
+        "end": 127.36,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "Great."
+    },
+    {
+        "id": 29,
+        "start": 127.36,
+        "end": 129.2,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "Hi, uh hi Vignesh."
+    },
+    {
+        "id": 30,
+        "start": 129.2,
+        "end": 130.32,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "Thank you so much, man."
+    },
+    {
+        "id": 31,
+        "start": 130.32,
+        "end": 141.36,
+        "frames": [
+            "frame_00083.png",
+            "frame_00084.png",
+            "frame_00085.png",
+            "frame_00086.png",
+            "frame_00087.png",
+            "frame_00088.png",
+            "frame_00089.png",
+            "frame_00090.png",
+            "frame_00091.png",
+            "frame_00092.png",
+            "frame_00093.png",
+            "frame_00094.png"
+        ],
+        "transcript": "So let's talk about why will something begin to rotate or why will something rotating stop?"
+    },
+    {
+        "id": 32,
+        "start": 141.36,
+        "end": 145.44,
+        "frames": [
+            "frame_00095.png",
+            "frame_00096.png",
+            "frame_00097.png",
+            "frame_00098.png",
+            "frame_00099.png"
+        ],
+        "transcript": "Let's take the example of a fan, ceiling fan."
+    },
+    {
+        "id": 33,
+        "start": 145.44,
+        "end": 146.08,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "Yeah?"
+    },
+    {
+        "id": 34,
+        "start": 146.08,
+        "end": 148.08,
+        "frames": [
+            "frame_00101.png",
+            "frame_00102.png",
+            "frame_00103.png"
+        ],
+        "transcript": "You might all see a ceiling fan."
+    },
+    {
+        "id": 35,
+        "start": 148.08,
+        "end": 149.52,
+        "frames": [
+            "frame_00104.png"
+        ],
+        "transcript": "It is off now."
+    },
+    {
+        "id": 36,
+        "start": 149.52,
+        "end": 153.2,
+        "frames": [
+            "frame_00105.png",
+            "frame_00106.png",
+            "frame_00107.png"
+        ],
+        "transcript": "You turn on the switch, it starts rotating."
+    },
+    {
+        "id": 37,
+        "start": 153.2,
+        "end": 160.0,
+        "frames": [
+            "frame_00108.png",
+            "frame_00109.png",
+            "frame_00110.png",
+            "frame_00111.png",
+            "frame_00112.png"
+        ],
+        "transcript": "What was the reason why it started rotating and it increases the speed till it reaches some maximum speed?"
+    },
+    {
+        "id": 38,
+        "start": 160.0,
+        "end": 166.72,
+        "frames": [
+            "frame_00113.png",
+            "frame_00114.png",
+            "frame_00115.png",
+            "frame_00116.png",
+            "frame_00117.png"
+        ],
+        "transcript": "And when you turn it off, slowly the speed you know goes away until it comes to a halt."
+    },
+    {
+        "id": 39,
+        "start": 166.72,
+        "end": 174.64,
+        "frames": [
+            "frame_00118.png",
+            "frame_00119.png",
+            "frame_00120.png",
+            "frame_00121.png",
+            "frame_00122.png"
+        ],
+        "transcript": "Even a top, you apply a force using your hand, it spins, but after some time it stops."
+    },
+    {
+        "id": 40,
+        "start": 174.64,
+        "end": 178.88,
+        "frames": [
+            "frame_00123.png",
+            "frame_00124.png"
+        ],
+        "transcript": "What is the reason for its rotation?"
+    },
+    {
+        "id": 41,
+        "start": 178.88,
+        "end": 192.0,
+        "frames": [
+            "frame_00125.png",
+            "frame_00126.png",
+            "frame_00127.png",
+            "frame_00128.png",
+            "frame_00129.png",
+            "frame_00130.png",
+            "frame_00131.png",
+            "frame_00132.png",
+            "frame_00133.png"
+        ],
+        "transcript": "The reason for its rotation is because of a physical quantity called as torque, which is the equivalent of force beat inside rotation."
+    },
+    {
+        "id": 42,
+        "start": 192.0,
+        "end": 204.0,
+        "frames": [
+            "frame_00134.png",
+            "frame_00135.png",
+            "frame_00136.png"
+        ],
+        "transcript": "So why bodies rotate is due to due to a concept called as torque."
+    },
+    {
+        "id": 43,
+        "start": 204.0,
+        "end": 216.48,
+        "frames": [
+            "frame_00137.png",
+            "frame_00138.png",
+            "frame_00139.png",
+            "frame_00140.png"
+        ],
+        "transcript": "The symbol of that physical quantity is a t it is called Greek alphabet, a t with a small curve at the bottom, like a j, but not so big."
+    },
+    {
+        "id": 44,
+        "start": 216.48,
+        "end": 233.04,
+        "frames": [
+            "frame_00141.png",
+            "frame_00142.png",
+            "frame_00143.png",
+            "frame_00144.png",
+            "frame_00145.png",
+            "frame_00146.png",
+            "frame_00147.png",
+            "frame_00148.png"
+        ],
+        "transcript": "That is the symbol for torque, and it is nothing but the equivalent of force, equivalent of force in rotation."
+    },
+    {
+        "id": 45,
+        "start": 233.04,
+        "end": 240.72,
+        "frames": [
+            "frame_00149.png",
+            "frame_00150.png",
+            "frame_00151.png",
+            "frame_00152.png"
+        ],
+        "transcript": "So what force does in translation same thing torque does in rotation."
+    },
+    {
+        "id": 46,
+        "start": 240.72,
+        "end": 242.88,
+        "frames": [
+            "frame_00153.png"
+        ],
+        "transcript": "It is the reason, it is the cause."
+    },
+    {
+        "id": 47,
+        "start": 242.88,
+        "end": 247.76,
+        "frames": [
+            "frame_00154.png",
+            "frame_00155.png",
+            "frame_00156.png",
+            "frame_00157.png"
+        ],
+        "transcript": "It gives me why a body will begin or stop to rotate."
+    },
+    {
+        "id": 48,
+        "start": 247.76,
+        "end": 260.24,
+        "frames": [
+            "frame_00158.png",
+            "frame_00159.png",
+            "frame_00160.png",
+            "frame_00161.png",
+            "frame_00162.png"
+        ],
+        "transcript": "The other name for it, also known, also known, it is also known as the moment of force."
+    },
+    {
+        "id": 49,
+        "start": 260.24,
+        "end": 262.08,
+        "frames": [
+            "frame_00163.png"
+        ],
+        "transcript": "Some books still use it."
+    },
+    {
+        "id": 50,
+        "start": 262.08,
+        "end": 265.2,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "The moment of force is how much?"
+    },
+    {
+        "id": 51,
+        "start": 265.2,
+        "end": 269.76,
+        "frames": [
+            "frame_00165.png",
+            "frame_00166.png",
+            "frame_00167.png",
+            "frame_00168.png"
+        ],
+        "transcript": "It means they are talking about the physical quantity called as the torque."
+    },
+    {
+        "id": 52,
+        "start": 269.76,
+        "end": 273.76,
+        "frames": [
+            "frame_00169.png",
+            "frame_00170.png"
+        ],
+        "transcript": "It is a vector quantity, it has a direction, definitely."
+    },
+    {
+        "id": 53,
+        "start": 273.76,
+        "end": 276.88,
+        "frames": [
+            "frame_00171.png",
+            "frame_00172.png",
+            "frame_00173.png"
+        ],
+        "transcript": "It is having a directional property."
+    },
+    {
+        "id": 54,
+        "start": 276.88,
+        "end": 286.8,
+        "frames": [
+            "frame_00174.png",
+            "frame_00175.png",
+            "frame_00176.png",
+            "frame_00177.png"
+        ],
+        "transcript": "And the simple way to look at it is I'll just go forward and I will come back because that will make you understand it better."
+    },
+    {
+        "id": 55,
+        "start": 286.8,
+        "end": 303.68,
+        "frames": [
+            "frame_00178.png",
+            "frame_00179.png",
+            "frame_00180.png",
+            "frame_00181.png",
+            "frame_00182.png",
+            "frame_00183.png",
+            "frame_00184.png",
+            "frame_00185.png"
+        ],
+        "transcript": "So we had uh we had translational motion a couple of months back in our lectures, translational motion, where we had some body."
+    },
+    {
+        "id": 56,
+        "start": 303.68,
+        "end": 310.24,
+        "frames": [
+            "frame_00186.png",
+            "frame_00187.png",
+            "frame_00188.png",
+            "frame_00189.png",
+            "frame_00190.png",
+            "frame_00191.png"
+        ],
+        "transcript": "Okay, we had some particular body, and the body will have some mass m."
+    },
+    {
+        "id": 57,
+        "start": 310.24,
+        "end": 314.4,
+        "frames": [
+            "frame_00192.png",
+            "frame_00193.png",
+            "frame_00194.png",
+            "frame_00195.png"
+        ],
+        "transcript": "You are applying a force on it."
+    },
+    {
+        "id": 58,
+        "start": 314.4,
+        "end": 321.28,
+        "frames": [
+            "frame_00196.png",
+            "frame_00197.png"
+        ],
+        "transcript": "You are applying a force on it as a result of it, it begins to accelerate."
+    },
+    {
+        "id": 59,
+        "start": 321.28,
+        "end": 327.12,
+        "frames": [
+            "frame_00198.png",
+            "frame_00199.png",
+            "frame_00200.png"
+        ],
+        "transcript": "So, by using Newton's law, you say f is equal to m into a."
+    },
+    {
+        "id": 60,
+        "start": 327.12,
+        "end": 331.28,
+        "frames": [
+            "frame_00201.png"
+        ],
+        "transcript": "This f is the cause, is the reason."
+    },
+    {
+        "id": 61,
+        "start": 331.28,
+        "end": 338.96,
+        "frames": [
+            "frame_00202.png",
+            "frame_00203.png",
+            "frame_00204.png"
+        ],
+        "transcript": "This m is nothing but the mass, is nothing but the mass of the body or the inertia of the body."
+    },
+    {
+        "id": 62,
+        "start": 338.96,
+        "end": 348.0,
+        "frames": [
+            "frame_00205.png",
+            "frame_00206.png",
+            "frame_00207.png"
+        ],
+        "transcript": "This A is nothing but the acceleration that it has, dv by dt, linear acceleration that it has."
+    },
+    {
+        "id": 63,
+        "start": 348.0,
+        "end": 352.4,
+        "frames": [
+            "frame_00208.png",
+            "frame_00209.png"
+        ],
+        "transcript": "So this is the force, this is the mass, this is the acceleration."
+    },
+    {
+        "id": 64,
+        "start": 352.4,
+        "end": 369.04,
+        "frames": [
+            "frame_00210.png",
+            "frame_00211.png",
+            "frame_00212.png",
+            "frame_00213.png",
+            "frame_00214.png",
+            "frame_00215.png",
+            "frame_00216.png",
+            "frame_00217.png",
+            "frame_00218.png",
+            "frame_00219.png"
+        ],
+        "transcript": "Now, same way what happens is imagine, imagine you have some random body again and it is uh and it is associated with an axis that means it can rotate about this particular axis."
+    },
+    {
+        "id": 65,
+        "start": 369.04,
+        "end": 378.32,
+        "frames": [
+            "frame_00220.png",
+            "frame_00221.png",
+            "frame_00222.png",
+            "frame_00223.png",
+            "frame_00224.png"
+        ],
+        "transcript": "Let's say this body has some kind of moment of inertia about this particular axis if it rotates."
+    },
+    {
+        "id": 66,
+        "start": 378.32,
+        "end": 387.84,
+        "frames": [
+            "frame_00225.png",
+            "frame_00226.png",
+            "frame_00227.png",
+            "frame_00228.png",
+            "frame_00229.png"
+        ],
+        "transcript": "Then imagine that the body begins to rotate like a fan being turned on, or you turn off the fan slowly, it stops its rotation."
+    },
+    {
+        "id": 67,
+        "start": 387.84,
+        "end": 402.16,
+        "frames": [
+            "frame_00230.png",
+            "frame_00231.png",
+            "frame_00232.png",
+            "frame_00233.png",
+            "frame_00234.png",
+            "frame_00235.png",
+            "frame_00236.png",
+            "frame_00237.png"
+        ],
+        "transcript": "So it begins to rotate and then it has some kind of then it has some kind of angular acceleration, it has some kind of angular acceleration."
+    },
+    {
+        "id": 68,
+        "start": 402.16,
+        "end": 429.68,
+        "frames": [
+            "frame_00238.png",
+            "frame_00239.png",
+            "frame_00240.png",
+            "frame_00241.png",
+            "frame_00242.png",
+            "frame_00243.png",
+            "frame_00244.png",
+            "frame_00245.png",
+            "frame_00246.png",
+            "frame_00247.png",
+            "frame_00248.png",
+            "frame_00249.png"
+        ],
+        "transcript": "And if you multiply that angular acceleration with I, just like you multiplied acceleration with mass, just like you multiplied acceleration with mass, here you multiply angular acceleration with the term moment of inertia, not just inertia, moment of inertia, moment of inertia."
+    },
+    {
+        "id": 69,
+        "start": 429.68,
+        "end": 437.52,
+        "frames": [
+            "frame_00250.png",
+            "frame_00251.png",
+            "frame_00252.png"
+        ],
+        "transcript": "This alpha is your angular acceleration, angular acceleration."
+    },
+    {
+        "id": 70,
+        "start": 437.52,
+        "end": 444.96,
+        "frames": [
+            "frame_00253.png",
+            "frame_00254.png",
+            "frame_00255.png",
+            "frame_00256.png",
+            "frame_00257.png",
+            "frame_00258.png",
+            "frame_00259.png"
+        ],
+        "transcript": "You can see a lot of similarities instead of mass into a you have moment of inertia into angle wise acceleration."
+    },
+    {
+        "id": 71,
+        "start": 444.96,
+        "end": 464.24,
+        "frames": [
+            "frame_00260.png",
+            "frame_00261.png",
+            "frame_00262.png",
+            "frame_00263.png",
+            "frame_00264.png",
+            "frame_00265.png",
+            "frame_00266.png",
+            "frame_00267.png",
+            "frame_00268.png"
+        ],
+        "transcript": "Then what you are providing the reason for it to rotate to change its speed is tau, which is nothing but your torque, which is nothing but your reason, it is your cause of rotation, it is your cause of rotation."
+    },
+    {
+        "id": 72,
+        "start": 464.24,
+        "end": 476.4,
+        "frames": [
+            "frame_00269.png",
+            "frame_00270.png",
+            "frame_00271.png",
+            "frame_00272.png",
+            "frame_00273.png",
+            "frame_00274.png",
+            "frame_00275.png"
+        ],
+        "transcript": "The cause of rotation is nothing but torque, and this is exactly similar to your Newton's law, but this is in rotation."
+    },
+    {
+        "id": 73,
+        "start": 476.4,
+        "end": 479.84,
+        "frames": [
+            "frame_00276.png",
+            "frame_00277.png",
+            "frame_00278.png"
+        ],
+        "transcript": "This was your regular Newton's law in translation."
+    },
+    {
+        "id": 74,
+        "start": 479.84,
+        "end": 483.84,
+        "frames": [
+            "frame_00279.png",
+            "frame_00280.png",
+            "frame_00281.png"
+        ],
+        "transcript": "Now this is your Newton's law, but in rotation."
+    },
+    {
+        "id": 75,
+        "start": 483.84,
+        "end": 495.68,
+        "frames": [
+            "frame_00282.png",
+            "frame_00283.png",
+            "frame_00284.png",
+            "frame_00285.png",
+            "frame_00286.png",
+            "frame_00287.png",
+            "frame_00288.png",
+            "frame_00289.png",
+            "frame_00290.png",
+            "frame_00291.png",
+            "frame_00292.png",
+            "frame_00293.png"
+        ],
+        "transcript": "This I think analogy of translation on one side and rotation on the other side probably brings that concept of torque in your head and becomes very clear, I hope."
+    },
+    {
+        "id": 76,
+        "start": 495.68,
+        "end": 510.08,
+        "frames": [
+            "frame_00294.png",
+            "frame_00295.png",
+            "frame_00296.png",
+            "frame_00297.png",
+            "frame_00298.png",
+            "frame_00299.png",
+            "frame_00300.png",
+            "frame_00301.png",
+            "frame_00302.png",
+            "frame_00303.png",
+            "frame_00304.png",
+            "frame_00305.png",
+            "frame_00306.png"
+        ],
+        "transcript": "Okay, so torque is the reason for it to rotate, it is not an effect, rather, it is the first thing which happens because of which it changes its speed or decelerates or accelerates, but in rotation, not translation."
+    },
+    {
+        "id": 77,
+        "start": 510.08,
+        "end": 512.88,
+        "frames": [
+            "frame_00307.png",
+            "frame_00308.png",
+            "frame_00309.png"
+        ],
+        "transcript": "Is that absolutely clear?"
+    },
+    {
+        "id": 78,
+        "start": 512.88,
+        "end": 514.56,
+        "frames": [
+            "frame_00310.png"
+        ],
+        "transcript": "Alright."
+    },
+    {
+        "id": 79,
+        "start": 514.56,
+        "end": 515.36,
+        "frames": [
+            "frame_00311.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 80,
+        "start": 515.36,
+        "end": 521.6,
+        "frames": [
+            "frame_00312.png",
+            "frame_00313.png",
+            "frame_00314.png",
+            "frame_00315.png"
+        ],
+        "transcript": "Yes, yes, I read all the comments, Pritija, not just your quotes."
+    },
+    {
+        "id": 81,
+        "start": 521.6,
+        "end": 528.08,
+        "frames": [
+            "frame_00316.png",
+            "frame_00317.png",
+            "frame_00318.png",
+            "frame_00319.png",
+            "frame_00320.png",
+            "frame_00321.png"
+        ],
+        "transcript": "I read all the comments, even if some video is there, very old, and I try to see as much as possible."
+    },
+    {
+        "id": 82,
+        "start": 528.08,
+        "end": 536.4,
+        "frames": [
+            "frame_00322.png",
+            "frame_00323.png",
+            "frame_00324.png",
+            "frame_00325.png",
+            "frame_00326.png",
+            "frame_00327.png",
+            "frame_00328.png"
+        ],
+        "transcript": "If possible, I reply also, and many times I give hearts, or maybe you know, just probably put a comment saying lovely things."
+    },
+    {
+        "id": 83,
+        "start": 536.4,
+        "end": 537.2,
+        "frames": [
+            "frame_00329.png"
+        ],
+        "transcript": "Alright."
+    },
+    {
+        "id": 84,
+        "start": 537.2,
+        "end": 543.52,
+        "frames": [
+            "frame_00330.png",
+            "frame_00331.png",
+            "frame_00332.png",
+            "frame_00333.png",
+            "frame_00334.png",
+            "frame_00335.png"
+        ],
+        "transcript": "So this particular formula is also called as Newton's law, but in rotation."
+    },
+    {
+        "id": 85,
+        "start": 543.52,
+        "end": 552.48,
+        "frames": [
+            "frame_00336.png",
+            "frame_00337.png"
+        ],
+        "transcript": "So this is nothing but Newton's law in rotation."
+    },
+    {
+        "id": 86,
+        "start": 552.48,
+        "end": 556.32,
+        "frames": [
+            "frame_00338.png",
+            "frame_00339.png"
+        ],
+        "transcript": "Newton's law, but in rotation."
+    },
+    {
+        "id": 87,
+        "start": 556.32,
+        "end": 558.64,
+        "frames": [
+            "frame_00340.png",
+            "frame_00341.png"
+        ],
+        "transcript": "So a very important formula."
+    },
+    {
+        "id": 88,
+        "start": 558.64,
+        "end": 560.96,
+        "frames": [
+            "frame_00342.png",
+            "frame_00343.png",
+            "frame_00344.png"
+        ],
+        "transcript": "So might as well block this off."
+    },
+    {
+        "id": 89,
+        "start": 560.96,
+        "end": 570.0,
+        "frames": [
+            "frame_00345.png",
+            "frame_00346.png",
+            "frame_00347.png",
+            "frame_00348.png",
+            "frame_00349.png",
+            "frame_00350.png"
+        ],
+        "transcript": "Torque is equal to i into alpha, just like force was mass into acceleration, but this is not in translation, this is in rotation."
+    },
+    {
+        "id": 90,
+        "start": 570.0,
+        "end": 573.44,
+        "frames": [
+            "frame_00351.png",
+            "frame_00352.png"
+        ],
+        "transcript": "This is in rotational motion."
+    },
+    {
+        "id": 91,
+        "start": 573.44,
+        "end": 579.76,
+        "frames": [
+            "frame_00353.png",
+            "frame_00354.png",
+            "frame_00355.png",
+            "frame_00356.png",
+            "frame_00357.png",
+            "frame_00358.png",
+            "frame_00359.png"
+        ],
+        "transcript": "Now, moment of inertia, we know how to calculate it in case you have forgotten."
+    },
+    {
+        "id": 92,
+        "start": 579.76,
+        "end": 582.8,
+        "frames": [
+            "frame_00360.png",
+            "frame_00361.png",
+            "frame_00362.png",
+            "frame_00363.png"
+        ],
+        "transcript": "Well, well, well, it is right over here, guys."
+    },
+    {
+        "id": 93,
+        "start": 582.8,
+        "end": 588.32,
+        "frames": [
+            "frame_00364.png",
+            "frame_00365.png",
+            "frame_00366.png",
+            "frame_00367.png",
+            "frame_00368.png",
+            "frame_00369.png"
+        ],
+        "transcript": "Just go to the live batch live classes and you will see it right over here."
+    },
+    {
+        "id": 94,
+        "start": 588.32,
+        "end": 590.0,
+        "frames": [
+            "frame_00370.png",
+            "frame_00371.png"
+        ],
+        "transcript": "It's also there in the playlist."
+    },
+    {
+        "id": 95,
+        "start": 590.0,
+        "end": 590.48,
+        "frames": [
+            "frame_00372.png"
+        ],
+        "transcript": "Yeah."
+    },
+    {
+        "id": 96,
+        "start": 590.48,
+        "end": 595.6,
+        "frames": [
+            "frame_00373.png",
+            "frame_00374.png",
+            "frame_00375.png",
+            "frame_00376.png",
+            "frame_00377.png",
+            "frame_00378.png"
+        ],
+        "transcript": "So I have dealt with moment of inertia very nicely for more than two hours."
+    },
+    {
+        "id": 97,
+        "start": 595.6,
+        "end": 605.84,
+        "frames": [
+            "frame_00379.png",
+            "frame_00380.png",
+            "frame_00381.png",
+            "frame_00382.png",
+            "frame_00383.png",
+            "frame_00384.png",
+            "frame_00385.png"
+        ],
+        "transcript": "Okay, so you can check out this particular lecture and all the PDFs, everything are now in the description box, but in a very different format because of Ved."
+    },
+    {
+        "id": 98,
+        "start": 605.84,
+        "end": 611.28,
+        "frames": [
+            "frame_00386.png",
+            "frame_00387.png",
+            "frame_00388.png",
+            "frame_00389.png",
+            "frame_00390.png"
+        ],
+        "transcript": "And Vade not only gives you the PDF but also can solve the doubts of this particular class."
+    },
+    {
+        "id": 99,
+        "start": 611.28,
+        "end": 613.84,
+        "frames": [
+            "frame_00391.png",
+            "frame_00392.png",
+            "frame_00393.png"
+        ],
+        "transcript": "Yes, you can chat with Ved using this link."
+    },
+    {
+        "id": 100,
+        "start": 613.84,
+        "end": 617.68,
+        "frames": [
+            "frame_00394.png",
+            "frame_00395.png",
+            "frame_00396.png",
+            "frame_00397.png"
+        ],
+        "transcript": "Ved can also generate questions for you based on that session."
+    },
+    {
+        "id": 101,
+        "start": 617.68,
+        "end": 628.08,
+        "frames": [
+            "frame_00398.png",
+            "frame_00399.png",
+            "frame_00400.png",
+            "frame_00401.png",
+            "frame_00402.png",
+            "frame_00403.png",
+            "frame_00404.png",
+            "frame_00405.png"
+        ],
+        "transcript": "Ved can also create timestamps, Vade can also create, you know, uh smart quizzes based on this particular session."
+    },
+    {
+        "id": 102,
+        "start": 628.08,
+        "end": 633.6,
+        "frames": [
+            "frame_00406.png",
+            "frame_00407.png",
+            "frame_00408.png",
+            "frame_00409.png",
+            "frame_00410.png"
+        ],
+        "transcript": "So just need to log in or open it from the app, everything will be visible."
+    },
+    {
+        "id": 103,
+        "start": 633.6,
+        "end": 635.001,
+        "frames": [
+            "frame_00411.png",
+            "frame_00412.png"
+        ],
+        "transcript": "All right."
+    }
+]

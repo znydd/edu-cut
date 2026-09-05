@@ -6,7 +6,7 @@
 *.png
 *.jpg
 *.csv
-*.json
+# *.json
 *.txt
 *.srt
 __pycache__
@@ -22,6 +22,5 @@ experiments/p3_exp/pre_processing/smart_cut_out/*
 .vscode
 model
 draft
-Benchmark
 chromadb_v2
 second_5_video

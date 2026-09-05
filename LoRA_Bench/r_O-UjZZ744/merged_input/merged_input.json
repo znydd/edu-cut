@@ -1,0 +1,2422 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 25.28,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png"
+        ],
+        "transcript": "Hello everyone, welcome you all to another lecture of data science, and in this lecture we will discuss about the association rule."
+    },
+    {
+        "id": 1,
+        "start": 25.28,
+        "end": 33.36,
+        "frames": [
+            "frame_00003.png"
+        ],
+        "transcript": "Then usually we also call this uh association rule mining as the market basket analysis in data science."
+    },
+    {
+        "id": 2,
+        "start": 33.36,
+        "end": 58.96,
+        "frames": [
+            "frame_00004.png"
+        ],
+        "transcript": "So this is the roadmap that is I will discuss about the basic concept and the algorithm a priori algorithm, and I'll discuss about the frequent data formats for mining and mining with multiple minimum supports and mining class association rules."
+    },
+    {
+        "id": 3,
+        "start": 58.96,
+        "end": 64.8,
+        "frames": [
+            "frame_00005.png"
+        ],
+        "transcript": "Okay, so these are these are the uh topics we will cover in this lecture."
+    },
+    {
+        "id": 4,
+        "start": 64.8,
+        "end": 90.56,
+        "frames": [
+            "frame_00006.png"
+        ],
+        "transcript": "So, firstly, the association rule mining is proposed by uh Agarwal okay in 1993, and since then it is one of the popular algorithms in data science and also data mining for market basket analysis, and we will learn today the a priori algorithm and the market basket analysis with an example also."
+    },
+    {
+        "id": 5,
+        "start": 90.56,
+        "end": 94.32,
+        "frames": [
+            "frame_00007.png"
+        ],
+        "transcript": "So, what is the uh assumption here?"
+    },
+    {
+        "id": 6,
+        "start": 94.32,
+        "end": 101.68,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": "The assumption is we have to assume that all that are categorical, so categorical that means those are not continuous data."
+    },
+    {
+        "id": 7,
+        "start": 101.68,
+        "end": 107.84,
+        "frames": [
+            "frame_00009.png"
+        ],
+        "transcript": "Okay, so uh uh that's why it's mentioned the categorical."
+    },
+    {
+        "id": 8,
+        "start": 107.84,
+        "end": 114.48,
+        "frames": [
+            "frame_00010.png"
+        ],
+        "transcript": "Usually we purchase the items, those are categorical items that means like maybe the braid, milk."
+    },
+    {
+        "id": 9,
+        "start": 114.48,
+        "end": 125.44,
+        "frames": [
+            "frame_00011.png"
+        ],
+        "transcript": "Okay, so those those are categorical failures, and say another thing here I need to mention that no good algorithm for numeric data."
+    },
+    {
+        "id": 10,
+        "start": 125.44,
+        "end": 135.2,
+        "frames": [
+            "frame_00012.png"
+        ],
+        "transcript": "Here, numeric means uh it means that sometimes we also convert the categorical failure to numerical data, it is not about that."
+    },
+    {
+        "id": 11,
+        "start": 135.2,
+        "end": 143.44,
+        "frames": [
+            "frame_00013.png"
+        ],
+        "transcript": "That is it here, numeric means the continuous data, so no good algorithm for continuous data in association rule mining."
+    },
+    {
+        "id": 12,
+        "start": 143.44,
+        "end": 171.12,
+        "frames": [
+            "frame_00014.png"
+        ],
+        "transcript": "Initially, this one is used for the market basket analysis, but there are many other uh areas the association rule mining is used, uh like maybe the Google search engine also used the association rule to find out that is the the what will be the next next uh word for for sourcing."
+    },
+    {
+        "id": 13,
+        "start": 171.12,
+        "end": 180.96,
+        "frames": [
+            "frame_00015.png"
+        ],
+        "transcript": "Okay, uh so that's another another association rule that means the association between between the words uh appeared in in SARS."
+    },
+    {
+        "id": 14,
+        "start": 180.96,
+        "end": 187.68,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "Okay, uh so there are some other uh uh association rule mining examples also."
+    },
+    {
+        "id": 15,
+        "start": 187.68,
+        "end": 209.2,
+        "frames": [
+            "frame_00017.png"
+        ],
+        "transcript": "At the end of this lecture, I will show some of them, and here in this case, the in this the the market basket analysis, why it is called the market basket analysis, that means uh it will try to predict the pattern of uh the purchase pattern of the customers."
+    },
+    {
+        "id": 16,
+        "start": 209.2,
+        "end": 219.04,
+        "frames": [
+            "frame_00018.png"
+        ],
+        "transcript": "Like if someone just buys the bread, uh it is assumed that he or she will also buy the milk."
+    },
+    {
+        "id": 17,
+        "start": 219.04,
+        "end": 228.96,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "Okay, so so this is the kind kind of association that means uh what is the purchase pattern of uh the customers?"
+    },
+    {
+        "id": 18,
+        "start": 228.96,
+        "end": 239.12,
+        "frames": [
+            "frame_00020.png"
+        ],
+        "transcript": "So that's why uh it is also called the market basket analysis, but it will heavily depend on two terminology, specifically the support and confidence."
+    },
+    {
+        "id": 19,
+        "start": 239.12,
+        "end": 242.32,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "Okay, support here 5% and confidence 100%."
+    },
+    {
+        "id": 20,
+        "start": 242.32,
+        "end": 279.6,
+        "frames": [
+            "frame_00022.png",
+            "frame_00023.png",
+            "frame_00024.png"
+        ],
+        "transcript": "We will discuss about the support and confidence, those items, and also uh that is the the formula for finding out the support and confidence also okay, so uh think about this."
+    },
+    {
+        "id": 21,
+        "start": 279.6,
+        "end": 281.84,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "That is uh the model we have the data."
+    },
+    {
+        "id": 22,
+        "start": 281.84,
+        "end": 297.2,
+        "frames": [
+            "frame_00026.png"
+        ],
+        "transcript": "Okay, in in data science, every everything uh we need to think about at first the data, but this data is about transactional data, so it contains uh the in each and every transaction contains some items like here the I is the item set."
+    },
+    {
+        "id": 23,
+        "start": 297.2,
+        "end": 300.4,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "I is the item set in this item set."
+    },
+    {
+        "id": 24,
+        "start": 300.4,
+        "end": 306.16,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "In this item set, we have few items like item one, item two, item three."
+    },
+    {
+        "id": 25,
+        "start": 306.16,
+        "end": 318.08,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "So these are the set of items, and the transaction is t that means we can we can say that the one of the customers purchase item one, item two, and item three."
+    },
+    {
+        "id": 26,
+        "start": 318.08,
+        "end": 324.72,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "So all these all these item sets are in a transaction that is the the the the the transaction t."
+    },
+    {
+        "id": 27,
+        "start": 324.72,
+        "end": 332.88,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "So here t is a set of items where t is the is uh the subset of the eye, okay."
+    },
+    {
+        "id": 28,
+        "start": 332.88,
+        "end": 334.56,
+        "frames": [
+            "frame_00032.png"
+        ],
+        "transcript": "Subset of the eye."
+    },
+    {
+        "id": 29,
+        "start": 334.56,
+        "end": 337.84,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "The transaction database database t."
+    },
+    {
+        "id": 30,
+        "start": 337.84,
+        "end": 340.24,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "So that means we have a data set."
+    },
+    {
+        "id": 31,
+        "start": 340.24,
+        "end": 353.84,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "If we have the data set of of the customers uh of maybe we can say any super shop, okay, any super shop, then that database is called the transaction database."
+    },
+    {
+        "id": 32,
+        "start": 353.84,
+        "end": 366.96,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "Okay, so it it stores all the history of transactions, so that's why he it is considered as the T and this T that means transaction database contains T1, T2 up to T Tn."
+    },
+    {
+        "id": 33,
+        "start": 366.96,
+        "end": 374.96,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "That means many transactions are there, n number of transactions are there, and each and every every transaction there are some items."
+    },
+    {
+        "id": 34,
+        "start": 374.96,
+        "end": 377.6,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "Okay, there are some items."
+    },
+    {
+        "id": 35,
+        "start": 377.6,
+        "end": 379.92,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "So let's say here with an example."
+    },
+    {
+        "id": 36,
+        "start": 379.92,
+        "end": 394.8,
+        "frames": [
+            "frame_00040.png",
+            "frame_00041.png"
+        ],
+        "transcript": "If we can think about this example, uh, so for this supermarket data, like transaction one, transaction one bread, cheese, and milk."
+    },
+    {
+        "id": 37,
+        "start": 394.8,
+        "end": 404.0,
+        "frames": [
+            "frame_00042.png"
+        ],
+        "transcript": "Okay, someone purchases uh bread, cheese, and milk, and T2, apple, eggs, salt, and yogurt, another transaction."
+    },
+    {
+        "id": 38,
+        "start": 404.0,
+        "end": 415.28,
+        "frames": [
+            "frame_00043.png"
+        ],
+        "transcript": "Okay, in this way, maybe in the transaction data database uh T capital T we have n number of transactions, n number of transactions."
+    },
+    {
+        "id": 39,
+        "start": 415.28,
+        "end": 421.68,
+        "frames": [
+            "frame_00044.png"
+        ],
+        "transcript": "So in n number of transactions, we we have uh in that transaction the item is biscuit, eggs and milk."
+    },
+    {
+        "id": 40,
+        "start": 421.68,
+        "end": 425.84,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "Okay, so these these are in in this case these are our data."
+    },
+    {
+        "id": 41,
+        "start": 425.84,
+        "end": 436.24,
+        "frames": [
+            "frame_00046.png"
+        ],
+        "transcript": "So here concept is um like an item, so any item that like apple, bread, those are we call an item."
+    },
+    {
+        "id": 42,
+        "start": 436.24,
+        "end": 446.96,
+        "frames": [
+            "frame_00047.png"
+        ],
+        "transcript": "Okay, so in also in in in case of the natural language processing or document uh document searching, so on that case we can also the it's it's the article, okay."
+    },
+    {
+        "id": 43,
+        "start": 446.96,
+        "end": 453.68,
+        "frames": [
+            "frame_00048.png"
+        ],
+        "transcript": "Article, uh so I the set of all items sold in the store."
+    },
+    {
+        "id": 44,
+        "start": 453.68,
+        "end": 459.6,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "So this is the this is the I that means the it's uh a set of all items sold in the store."
+    },
+    {
+        "id": 45,
+        "start": 459.6,
+        "end": 477.2,
+        "frames": [
+            "frame_00050.png"
+        ],
+        "transcript": "So maybe in a if we consider about the super super shop, then the capital I it will be the all item set, all items set that means the the set contains the item sold by the superstore."
+    },
+    {
+        "id": 46,
+        "start": 477.2,
+        "end": 496.4,
+        "frames": [
+            "frame_00051.png"
+        ],
+        "transcript": "A transaction here that is item purchased in a basket, and each and every transaction has an ID that is called transaction ID, and a transactional data data set a set of transactions, a set of transactions, or we can say that a set of all transactions."
+    },
+    {
+        "id": 47,
+        "start": 496.4,
+        "end": 503.6,
+        "frames": [
+            "frame_00052.png",
+            "frame_00053.png"
+        ],
+        "transcript": "So we will use these terminologies here in this discussion of a priori algorithm."
+    },
+    {
+        "id": 48,
+        "start": 503.6,
+        "end": 510.64,
+        "frames": [
+            "frame_00054.png"
+        ],
+        "transcript": "So in case of document, I already mentioned that it is like in document one student teach school."
+    },
+    {
+        "id": 49,
+        "start": 510.64,
+        "end": 513.04,
+        "frames": [
+            "frame_00055.png"
+        ],
+        "transcript": "So these are the words in that document."
+    },
+    {
+        "id": 50,
+        "start": 513.04,
+        "end": 520.88,
+        "frames": [
+            "frame_00056.png"
+        ],
+        "transcript": "So document two maybe consists of some words like student school and document three teach school city and game."
+    },
+    {
+        "id": 51,
+        "start": 520.88,
+        "end": 532.0,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "Okay, so this is about the document we can apply the a priori algorithm and association rule mining also in document processing."
+    },
+    {
+        "id": 52,
+        "start": 532.0,
+        "end": 537.44,
+        "frames": [
+            "frame_00058.png"
+        ],
+        "transcript": "So, what are the rules here?"
+    },
+    {
+        "id": 53,
+        "start": 537.44,
+        "end": 541.12,
+        "frames": [
+            "frame_00059.png"
+        ],
+        "transcript": "As I already mentioned the association rule, okay."
+    },
+    {
+        "id": 54,
+        "start": 541.12,
+        "end": 544.72,
+        "frames": [
+            "frame_00060.png"
+        ],
+        "transcript": "So, what does it mean by the association rule?"
+    },
+    {
+        "id": 55,
+        "start": 544.72,
+        "end": 552.32,
+        "frames": [
+            "frame_00061.png"
+        ],
+        "transcript": "So here a transaction t contains X and a set of items in I."
+    },
+    {
+        "id": 56,
+        "start": 552.32,
+        "end": 561.36,
+        "frames": [
+            "frame_00062.png"
+        ],
+        "transcript": "Okay, then X just is an element of T, or we can say X is a subset of T."
+    },
+    {
+        "id": 57,
+        "start": 561.36,
+        "end": 571.76,
+        "frames": [
+            "frame_00063.png"
+        ],
+        "transcript": "So here the transaction a transaction T contains the X and a set of item set in the in I."
+    },
+    {
+        "id": 58,
+        "start": 571.76,
+        "end": 586.96,
+        "frames": [
+            "frame_00064.png"
+        ],
+        "transcript": "T if X if X is a subset of T, so that means we can say that this is just only one transaction, one transaction we can say just one connection T is a one transaction."
+    },
+    {
+        "id": 59,
+        "start": 586.96,
+        "end": 597.04,
+        "frames": [
+            "frame_00065.png"
+        ],
+        "transcript": "So if we consider this transaction T and the X is just only the subset subset of the T."
+    },
+    {
+        "id": 60,
+        "start": 597.04,
+        "end": 604.32,
+        "frames": [
+            "frame_00066.png"
+        ],
+        "transcript": "Okay, so we can also find out not only the X, we can also find the Y."
+    },
+    {
+        "id": 61,
+        "start": 604.32,
+        "end": 615.28,
+        "frames": [
+            "frame_00067.png"
+        ],
+        "transcript": "Okay, and similar similar way that is the if Y is also the subset of subset of the T subset of the T Y is also subset of the T."
+    },
+    {
+        "id": 62,
+        "start": 615.28,
+        "end": 626.24,
+        "frames": [
+            "frame_00068.png"
+        ],
+        "transcript": "So in such a case we can find an association rule, it is an implication that if X then Y."
+    },
+    {
+        "id": 63,
+        "start": 626.24,
+        "end": 638.0,
+        "frames": [
+            "frame_00069.png"
+        ],
+        "transcript": "Okay, so if X then then then Y like here if someone purchas the the bread then he will purchase uh the milk."
+    },
+    {
+        "id": 64,
+        "start": 638.0,
+        "end": 643.12,
+        "frames": [
+            "frame_00070.png"
+        ],
+        "transcript": "Okay, so so so this this type that is the milk uh so like bread."
+    },
+    {
+        "id": 65,
+        "start": 643.12,
+        "end": 651.52,
+        "frames": [
+            "frame_00071.png"
+        ],
+        "transcript": "If someone purchases the bread, it is predicted that he will purchase the milk."
+    },
+    {
+        "id": 66,
+        "start": 651.52,
+        "end": 665.2,
+        "frames": [
+            "frame_00072.png"
+        ],
+        "transcript": "Okay, where this is the X and Y is also the subset of I that is the item set, and X intersection of Y is now."
+    },
+    {
+        "id": 67,
+        "start": 665.2,
+        "end": 680.4,
+        "frames": [
+            "frame_00073.png"
+        ],
+        "transcript": "That means the X can be the subset, not only one item, it can be the subset and Y can be and can be the subset, but X and Y, X and Y here it will be just uh null."
+    },
+    {
+        "id": 68,
+        "start": 680.4,
+        "end": 701.6,
+        "frames": [
+            "frame_00074.png"
+        ],
+        "transcript": "That means in X if we have like bread and banana okay, so 2B bread and banana in X and in Y this is the we can consider X equal bread and banana, okay."
+    },
+    {
+        "id": 69,
+        "start": 701.6,
+        "end": 718.24,
+        "frames": [
+            "frame_00075.png"
+        ],
+        "transcript": "Bread and banana and and in Y we can consist like maybe uh the milk and maybe tea okay."
+    },
+    {
+        "id": 70,
+        "start": 718.24,
+        "end": 720.08,
+        "frames": [
+            "frame_00076.png"
+        ],
+        "transcript": "So like this."
+    },
+    {
+        "id": 71,
+        "start": 720.08,
+        "end": 729.84,
+        "frames": [
+            "frame_00077.png"
+        ],
+        "transcript": "So here that means in X these two items and these two items there there will be no common items, okay."
+    },
+    {
+        "id": 72,
+        "start": 729.84,
+        "end": 739.84,
+        "frames": [
+            "frame_00078.png"
+        ],
+        "transcript": "No common items, then we call it the association rule, then we can call it the association rule that means association rule between X and Y."
+    },
+    {
+        "id": 73,
+        "start": 739.84,
+        "end": 747.76,
+        "frames": [
+            "frame_00079.png"
+        ],
+        "transcript": "So if someone passes X, it is usual that maybe he or she will purchase Y."
+    },
+    {
+        "id": 74,
+        "start": 747.76,
+        "end": 761.76,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "Okay, but condition is this both of the both of the both of the item sets will be in I and there uh is no item common to X and Y."
+    },
+    {
+        "id": 75,
+        "start": 761.76,
+        "end": 766.88,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "Okay, so if this condition holds, then we we call it the association rule."
+    },
+    {
+        "id": 76,
+        "start": 766.88,
+        "end": 775.44,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "Okay, an item set is a set of items like here x set of items is milk, bread, or cereal."
+    },
+    {
+        "id": 77,
+        "start": 775.44,
+        "end": 783.28,
+        "frames": [
+            "frame_00083.png"
+        ],
+        "transcript": "This is an item set, and sometimes we also call it the K item set, that means the number of items in the item set."
+    },
+    {
+        "id": 78,
+        "start": 783.28,
+        "end": 788.96,
+        "frames": [
+            "frame_00084.png"
+        ],
+        "transcript": "So here we can say that the K means the number of items in the item set, like here, milk, bread, and cereal."
+    },
+    {
+        "id": 79,
+        "start": 788.96,
+        "end": 797.6,
+        "frames": [
+            "frame_00085.png"
+        ],
+        "transcript": "This is uh three item set that means number of items here, three, total number of items here are three."
+    },
+    {
+        "id": 80,
+        "start": 797.6,
+        "end": 802.0,
+        "frames": [
+            "frame_00086.png"
+        ],
+        "transcript": "[Silent] for 5.12 sec"
+    },
+    {
+        "id": 81,
+        "start": 802.0,
+        "end": 811.28,
+        "frames": [
+            "frame_00087.png"
+        ],
+        "transcript": "Okay, then uh the next thing is we have to understand uh two concepts one is support, and another one is confidence."
+    },
+    {
+        "id": 82,
+        "start": 811.28,
+        "end": 814.48,
+        "frames": [
+            "frame_00088.png"
+        ],
+        "transcript": "So, what does it mean by the support?"
+    },
+    {
+        "id": 83,
+        "start": 814.48,
+        "end": 824.0,
+        "frames": [
+            "frame_00089.png"
+        ],
+        "transcript": "The here the support the rule holds with support that is usually we call sub SUP in in the T that means in the transaction data set."
+    },
+    {
+        "id": 84,
+        "start": 824.0,
+        "end": 837.12,
+        "frames": [
+            "frame_00090.png"
+        ],
+        "transcript": "If support percentage of transaction contains the x uh union of y, so then we can we can say that the the support is the probability of x union of y."
+    },
+    {
+        "id": 85,
+        "start": 837.12,
+        "end": 840.24,
+        "frames": [
+            "frame_00091.png"
+        ],
+        "transcript": "So this is the probability of x union of y."
+    },
+    {
+        "id": 86,
+        "start": 840.24,
+        "end": 862.48,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "So that means uh we have the we we we have just only you can say that the x if we contain if x contains just only one element, like we have the bread, one element, and the y contains another element, just only one element."
+    },
+    {
+        "id": 87,
+        "start": 862.48,
+        "end": 876.32,
+        "frames": [
+            "frame_00093.png"
+        ],
+        "transcript": "I already mentioned that x and y can contain multiple elements, so like y contains another um milk, okay, milk milk."
+    },
+    {
+        "id": 88,
+        "start": 876.32,
+        "end": 882.16,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "So then the support it will be the probability of x union of y."
+    },
+    {
+        "id": 89,
+        "start": 882.16,
+        "end": 896.4,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "That means we can say that so x union of uh y is it will be x union of y will be like we can say g, it will be the x union of y."
+    },
+    {
+        "id": 90,
+        "start": 896.4,
+        "end": 901.84,
+        "frames": [
+            "frame_00096.png"
+        ],
+        "transcript": "So x union of y means bread and milk."
+    },
+    {
+        "id": 91,
+        "start": 901.84,
+        "end": 912.4,
+        "frames": [
+            "frame_00097.png"
+        ],
+        "transcript": "So these two items x union of y contains bread and milk."
+    },
+    {
+        "id": 92,
+        "start": 912.4,
+        "end": 920.64,
+        "frames": [
+            "frame_00098.png"
+        ],
+        "transcript": "The support will be the the the the uh the percentage of time this appears together, okay."
+    },
+    {
+        "id": 93,
+        "start": 920.64,
+        "end": 926.48,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "This appears together, so percentage of time this appears uh appear together."
+    },
+    {
+        "id": 94,
+        "start": 926.48,
+        "end": 933.04,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "So that means so we can we can also represent the same that means probability of x union of y."
+    },
+    {
+        "id": 95,
+        "start": 933.04,
+        "end": 957.68,
+        "frames": [
+            "frame_00101.png"
+        ],
+        "transcript": "So if we have total total uh n number of transactions, n number of transactions, and we can we can see that out of the n number of transactions there are uh the p times, p times these items persist together, then the probability will be p by n."
+    },
+    {
+        "id": 96,
+        "start": 957.68,
+        "end": 960.32,
+        "frames": [
+            "frame_00102.png"
+        ],
+        "transcript": "So probability will be p by n."
+    },
+    {
+        "id": 97,
+        "start": 960.32,
+        "end": 962.08,
+        "frames": [
+            "frame_00103.png"
+        ],
+        "transcript": "P by n."
+    },
+    {
+        "id": 98,
+        "start": 962.08,
+        "end": 967.2,
+        "frames": [
+            "frame_00104.png"
+        ],
+        "transcript": "Okay, so that means the the support will be p by n."
+    },
+    {
+        "id": 99,
+        "start": 967.2,
+        "end": 971.52,
+        "frames": [
+            "frame_00105.png"
+        ],
+        "transcript": "So that's that's what that's why it is called the percentage."
+    },
+    {
+        "id": 100,
+        "start": 971.52,
+        "end": 973.68,
+        "frames": [
+            "frame_00106.png"
+        ],
+        "transcript": "Support percentage of transactions."
+    },
+    {
+        "id": 101,
+        "start": 973.68,
+        "end": 977.36,
+        "frames": [
+            "frame_00107.png"
+        ],
+        "transcript": "Okay, and another terminology is the confidence."
+    },
+    {
+        "id": 102,
+        "start": 977.36,
+        "end": 990.0,
+        "frames": [
+            "frame_00108.png"
+        ],
+        "transcript": "So that the rule holds in t that means in transaction with confidence uh confidence that is the confidence percentage of transactions that contains x also contains y."
+    },
+    {
+        "id": 103,
+        "start": 990.0,
+        "end": 995.68,
+        "frames": [
+            "frame_00109.png"
+        ],
+        "transcript": "Okay, so that means the the confidence is the probability of y given x."
+    },
+    {
+        "id": 104,
+        "start": 995.68,
+        "end": 998.4,
+        "frames": [
+            "frame_00110.png"
+        ],
+        "transcript": "So this is the conditional probability, okay."
+    },
+    {
+        "id": 105,
+        "start": 998.4,
+        "end": 1002.64,
+        "frames": [
+            "frame_00111.png"
+        ],
+        "transcript": "The probability of uh uh y given x."
+    },
+    {
+        "id": 106,
+        "start": 1002.64,
+        "end": 1004.64,
+        "frames": [
+            "frame_00112.png"
+        ],
+        "transcript": "So what does it mean?"
+    },
+    {
+        "id": 107,
+        "start": 1004.64,
+        "end": 1019.68,
+        "frames": [
+            "frame_00113.png"
+        ],
+        "transcript": "The probability of y given x it is like the uh probability of y and x."
+    },
+    {
+        "id": 108,
+        "start": 1019.68,
+        "end": 1022.32,
+        "frames": [
+            "frame_00114.png"
+        ],
+        "transcript": "So we we can say union, okay."
+    },
+    {
+        "id": 109,
+        "start": 1022.32,
+        "end": 1034.16,
+        "frames": [
+            "frame_00115.png"
+        ],
+        "transcript": "Here is a union union of x and then probability of x."
+    },
+    {
+        "id": 110,
+        "start": 1034.16,
+        "end": 1040.0,
+        "frames": [
+            "frame_00116.png"
+        ],
+        "transcript": "[Silent] for 6.16 sec"
+    },
+    {
+        "id": 111,
+        "start": 1040.0,
+        "end": 1051.36,
+        "frames": [
+            "frame_00117.png"
+        ],
+        "transcript": "Okay, so so the confidence equal it is uh it we can easily say that the probability of union of uh y union of x and probability of x."
+    },
+    {
+        "id": 112,
+        "start": 1051.36,
+        "end": 1056.48,
+        "frames": [
+            "frame_00118.png"
+        ],
+        "transcript": "So probability of y union of x or maybe the x union of y this is the support, okay."
+    },
+    {
+        "id": 113,
+        "start": 1056.48,
+        "end": 1066.0,
+        "frames": [
+            "frame_00119.png"
+        ],
+        "transcript": "This is this is the support, so support of uh uh support of x y uh divided by the support of x."
+    },
+    {
+        "id": 114,
+        "start": 1066.0,
+        "end": 1076.32,
+        "frames": [
+            "frame_00120.png"
+        ],
+        "transcript": "Okay, so that means uh we we can say that confidence confidence equal the probability of y union of x because this is the conditional probability, okay."
+    },
+    {
+        "id": 115,
+        "start": 1076.32,
+        "end": 1077.84,
+        "frames": [
+            "frame_00121.png"
+        ],
+        "transcript": "Conditional probability."
+    },
+    {
+        "id": 116,
+        "start": 1077.84,
+        "end": 1081.36,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "So we we know that conditional probability is equal."
+    },
+    {
+        "id": 117,
+        "start": 1081.36,
+        "end": 1087.2,
+        "frames": [
+            "frame_00123.png"
+        ],
+        "transcript": "This is the joint probability, that means probability of y union of x given by probability of x."
+    },
+    {
+        "id": 118,
+        "start": 1087.2,
+        "end": 1093.12,
+        "frames": [
+            "frame_00124.png"
+        ],
+        "transcript": "So this is probability of x is the normalization or marginalizing uh probability."
+    },
+    {
+        "id": 119,
+        "start": 1093.12,
+        "end": 1097.6,
+        "frames": [
+            "frame_00125.png"
+        ],
+        "transcript": "So here probability of y union of x divided by probability of x."
+    },
+    {
+        "id": 120,
+        "start": 1097.6,
+        "end": 1107.6,
+        "frames": [
+            "frame_00126.png"
+        ],
+        "transcript": "Okay, so confidence we can we can determine like uh using uh the support of x and y divided by the support of x."
+    },
+    {
+        "id": 121,
+        "start": 1107.6,
+        "end": 1112.0,
+        "frames": [
+            "frame_00127.png"
+        ],
+        "transcript": "Okay, so that's that's called the confidence."
+    },
+    {
+        "id": 122,
+        "start": 1112.0,
+        "end": 1120.8,
+        "frames": [
+            "frame_00128.png"
+        ],
+        "transcript": "So an association rule is a pattern that states when x occurs, y occurs with certain probability."
+    },
+    {
+        "id": 123,
+        "start": 1120.8,
+        "end": 1129.92,
+        "frames": [
+            "frame_00129.png"
+        ],
+        "transcript": "Okay, so that means uh any rule that can maintain this the support percentage and confidence percentage."
+    },
+    {
+        "id": 124,
+        "start": 1129.92,
+        "end": 1134.0,
+        "frames": [
+            "frame_00130.png"
+        ],
+        "transcript": "That rule we can say association rule, okay."
+    },
+    {
+        "id": 125,
+        "start": 1134.0,
+        "end": 1141.28,
+        "frames": [
+            "frame_00131.png"
+        ],
+        "transcript": "Like we can say we can define that is the association rule, uh, associate what are the association rules in this data set."
+    },
+    {
+        "id": 126,
+        "start": 1141.28,
+        "end": 1145.6,
+        "frames": [
+            "frame_00132.png"
+        ],
+        "transcript": "So for that, we have to define the support support percentage."
+    },
+    {
+        "id": 127,
+        "start": 1145.6,
+        "end": 1152.72,
+        "frames": [
+            "frame_00133.png"
+        ],
+        "transcript": "Maybe we can say that the 50 percent for the support, and we we want the uh 90 percent confidence."
+    },
+    {
+        "id": 128,
+        "start": 1152.72,
+        "end": 1164.96,
+        "frames": [
+            "frame_00134.png"
+        ],
+        "transcript": "So even using that we will find some form of association rules, some association rules, and those are the output of the a priori algorithms."
+    },
+    {
+        "id": 129,
+        "start": 1164.96,
+        "end": 1173.2,
+        "frames": [
+            "frame_00135.png",
+            "frame_00136.png",
+            "frame_00137.png"
+        ],
+        "transcript": "Okay, um, here is this that is the support count."
+    },
+    {
+        "id": 130,
+        "start": 1173.2,
+        "end": 1186.32,
+        "frames": [
+            "frame_00138.png",
+            "frame_00139.png",
+            "frame_00140.png"
+        ],
+        "transcript": "Uh so the same uh the the that is equation, whatever we discuss the support and confidence using the probability, and that can be uh defined using this."
+    },
+    {
+        "id": 131,
+        "start": 1186.32,
+        "end": 1188.16,
+        "frames": [
+            "frame_00141.png"
+        ],
+        "transcript": "That is just only the count."
+    },
+    {
+        "id": 132,
+        "start": 1188.16,
+        "end": 1192.16,
+        "frames": [
+            "frame_00142.png",
+            "frame_00143.png"
+        ],
+        "transcript": "The support count of an item set X denoted by X count."
+    },
+    {
+        "id": 133,
+        "start": 1192.16,
+        "end": 1201.2,
+        "frames": [
+            "frame_00144.png"
+        ],
+        "transcript": "Okay, that is the the X count is the support count in a data set T is the number of transactions T that contains X."
+    },
+    {
+        "id": 134,
+        "start": 1201.2,
+        "end": 1205.12,
+        "frames": [
+            "frame_00145.png"
+        ],
+        "transcript": "As I already mentioned, the HMT has n transactions."
+    },
+    {
+        "id": 135,
+        "start": 1205.12,
+        "end": 1209.68,
+        "frames": [
+            "frame_00146.png",
+            "frame_00147.png"
+        ],
+        "transcript": "Okay, that means that the support will be the X union of Y count."
+    },
+    {
+        "id": 136,
+        "start": 1209.68,
+        "end": 1221.12,
+        "frames": [
+            "frame_00148.png"
+        ],
+        "transcript": "That is how many times the X and Y appeared in those transactions divided by the N, that is total number of transactions, okay."
+    },
+    {
+        "id": 137,
+        "start": 1221.12,
+        "end": 1228.08,
+        "frames": [
+            "frame_00149.png",
+            "frame_00150.png",
+            "frame_00151.png",
+            "frame_00152.png"
+        ],
+        "transcript": "And confidence we can we can also uh write like this x union of y count divided by x count."
+    },
+    {
+        "id": 138,
+        "start": 1228.08,
+        "end": 1241.76,
+        "frames": [
+            "frame_00153.png",
+            "frame_00154.png"
+        ],
+        "transcript": "So here the x uh union of y count that is number of times the x and y appeared in those transactions, and number of times just only x appeared in that transaction, so that will be the confidence."
+    },
+    {
+        "id": 139,
+        "start": 1241.76,
+        "end": 1247.6,
+        "frames": [
+            "frame_00155.png",
+            "frame_00156.png"
+        ],
+        "transcript": "So, what's the goal here?"
+    },
+    {
+        "id": 140,
+        "start": 1247.6,
+        "end": 1260.4,
+        "frames": [
+            "frame_00157.png"
+        ],
+        "transcript": "The goal of this uh of this study or goal of the association rule mining here is the find all rules that satisfy the user specified minimum support and minimum confidence."
+    },
+    {
+        "id": 141,
+        "start": 1260.4,
+        "end": 1274.08,
+        "frames": [
+            "frame_00158.png"
+        ],
+        "transcript": "So we we need to find out all the all the rules, that is all the association rules we have to find uh that will uh that will maintain the minimum support and also minimum confidence."
+    },
+    {
+        "id": 142,
+        "start": 1274.08,
+        "end": 1281.6,
+        "frames": [
+            "frame_00159.png"
+        ],
+        "transcript": "So here key uh key features are completeness, find all the rules in association rule."
+    },
+    {
+        "id": 143,
+        "start": 1281.6,
+        "end": 1289.04,
+        "frames": [
+            "frame_00160.png"
+        ],
+        "transcript": "It will find all the rules, and here is no target items that means uh we have no goal like that."
+    },
+    {
+        "id": 144,
+        "start": 1289.04,
+        "end": 1291.04,
+        "frames": [
+            "frame_00161.png"
+        ],
+        "transcript": "Is we have to find out this item, okay?"
+    },
+    {
+        "id": 145,
+        "start": 1291.04,
+        "end": 1292.0,
+        "frames": [
+            "frame_00162.png"
+        ],
+        "transcript": "Not not like that."
+    },
+    {
+        "id": 146,
+        "start": 1292.0,
+        "end": 1297.92,
+        "frames": [
+            "frame_00163.png"
+        ],
+        "transcript": "We have to find out all the rules, and here mining with the data on the hard disk, not on the memory."
+    },
+    {
+        "id": 147,
+        "start": 1297.92,
+        "end": 1310.16,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "In in a priori algorithm, this is uh another uh we can say that this is also one of the uh disadvantages that is all the time we have to scan the original data, okay."
+    },
+    {
+        "id": 148,
+        "start": 1310.16,
+        "end": 1313.44,
+        "frames": [
+            "frame_00165.png"
+        ],
+        "transcript": "Original data set, not the data set in the memory."
+    },
+    {
+        "id": 149,
+        "start": 1313.44,
+        "end": 1318.4,
+        "frames": [
+            "frame_00166.png"
+        ],
+        "transcript": "Okay, there are some other algorithms also, uh, like FP growth."
+    },
+    {
+        "id": 150,
+        "start": 1318.4,
+        "end": 1323.52,
+        "frames": [
+            "frame_00167.png"
+        ],
+        "transcript": "Uh that algorithm usually use uh it used from the memory."
+    },
+    {
+        "id": 151,
+        "start": 1323.52,
+        "end": 1329.28,
+        "frames": [
+            "frame_00168.png"
+        ],
+        "transcript": "That means scans the data set and from the scanning it will scan later, okay."
+    },
+    {
+        "id": 152,
+        "start": 1329.28,
+        "end": 1336.48,
+        "frames": [
+            "frame_00169.png"
+        ],
+        "transcript": "But uh in in case of the a priori algorithm, we have to we have to scan each and every time from the data set."
+    },
+    {
+        "id": 153,
+        "start": 1336.48,
+        "end": 1345.68,
+        "frames": [
+            "frame_00170.png",
+            "frame_00171.png"
+        ],
+        "transcript": "Okay, so here is an example for that, like uh the transaction data, these are the transactions data."
+    },
+    {
+        "id": 154,
+        "start": 1345.68,
+        "end": 1361.36,
+        "frames": [
+            "frame_00172.png"
+        ],
+        "transcript": "So transaction we have seven transactions: beep chicken and milk, and beep cheese, cheese uh boats and beep chicken cheese, beep chicken, clothes, and cheese and milk, and here is the chicken, clothes, and milk, and chicken, milk, and clothes."
+    },
+    {
+        "id": 155,
+        "start": 1361.36,
+        "end": 1363.28,
+        "frames": [
+            "frame_00173.png"
+        ],
+        "transcript": "So these are seven transactions we have."
+    },
+    {
+        "id": 156,
+        "start": 1363.28,
+        "end": 1364.32,
+        "frames": [
+            "frame_00174.png"
+        ],
+        "transcript": "So this is T."
+    },
+    {
+        "id": 157,
+        "start": 1364.32,
+        "end": 1366.96,
+        "frames": [
+            "frame_00175.png"
+        ],
+        "transcript": "This is our T okay, capital T."
+    },
+    {
+        "id": 158,
+        "start": 1366.96,
+        "end": 1375.6,
+        "frames": [
+            "frame_00176.png"
+        ],
+        "transcript": "This is our T, and we have seven transactions, and these are the I uh I that is the transaction and item sets."
+    },
+    {
+        "id": 159,
+        "start": 1375.6,
+        "end": 1384.08,
+        "frames": [
+            "frame_00177.png"
+        ],
+        "transcript": "Uh so we can we can consider that this transaction in this transactions."
+    },
+    {
+        "id": 160,
+        "start": 1384.08,
+        "end": 1385.52,
+        "frames": [
+            "frame_00178.png"
+        ],
+        "transcript": "What are the frequent item set?"
+    },
+    {
+        "id": 161,
+        "start": 1385.52,
+        "end": 1387.6,
+        "frames": [
+            "frame_00179.png"
+        ],
+        "transcript": "What are the frequent item set?"
+    },
+    {
+        "id": 162,
+        "start": 1387.6,
+        "end": 1390.32,
+        "frames": [
+            "frame_00180.png"
+        ],
+        "transcript": "So frequent item set."
+    },
+    {
+        "id": 163,
+        "start": 1390.32,
+        "end": 1401.52,
+        "frames": [
+            "frame_00181.png"
+        ],
+        "transcript": "We can say that, like maybe uh the chicken, clothes, and milk, and another transaction here: chicken, milk, and clothes."
+    },
+    {
+        "id": 164,
+        "start": 1401.52,
+        "end": 1405.12,
+        "frames": [
+            "frame_00182.png"
+        ],
+        "transcript": "There is also chicken, clothes, and milk."
+    },
+    {
+        "id": 165,
+        "start": 1405.12,
+        "end": 1411.2,
+        "frames": [
+            "frame_00183.png"
+        ],
+        "transcript": "Okay, maybe this this is one of the uh one of the frequent items."
+    },
+    {
+        "id": 166,
+        "start": 1411.2,
+        "end": 1413.92,
+        "frames": [
+            "frame_00184.png"
+        ],
+        "transcript": "Here is one uh example of frequent items."
+    },
+    {
+        "id": 167,
+        "start": 1413.92,
+        "end": 1416.32,
+        "frames": [
+            "frame_00185.png"
+        ],
+        "transcript": "It is chicken, clothes, and milk."
+    },
+    {
+        "id": 168,
+        "start": 1416.32,
+        "end": 1422.0,
+        "frames": [
+            "frame_00186.png"
+        ],
+        "transcript": "Okay, and what is the support of this of this uh uh item set?"
+    },
+    {
+        "id": 169,
+        "start": 1422.0,
+        "end": 1424.64,
+        "frames": [
+            "frame_00187.png"
+        ],
+        "transcript": "Chick uh chicken, clothes, and milk."
+    },
+    {
+        "id": 170,
+        "start": 1424.64,
+        "end": 1428.88,
+        "frames": [
+            "frame_00188.png"
+        ],
+        "transcript": "Then how can we determine the support?"
+    },
+    {
+        "id": 171,
+        "start": 1428.88,
+        "end": 1433.44,
+        "frames": [
+            "frame_00189.png"
+        ],
+        "transcript": "That means how many times it uh it appeared in our transaction."
+    },
+    {
+        "id": 172,
+        "start": 1433.44,
+        "end": 1440.56,
+        "frames": [
+            "frame_00190.png"
+        ],
+        "transcript": "So we can see that the chicken, clothes, and milk appeared three times, okay, three times in our data set."
+    },
+    {
+        "id": 173,
+        "start": 1440.56,
+        "end": 1448.16,
+        "frames": [
+            "frame_00191.png"
+        ],
+        "transcript": "So that means it will be three out of how many transactions we have outmen out of seven."
+    },
+    {
+        "id": 174,
+        "start": 1448.16,
+        "end": 1451.28,
+        "frames": [
+            "frame_00192.png"
+        ],
+        "transcript": "Okay, so that's why the support is three by seven."
+    },
+    {
+        "id": 175,
+        "start": 1451.28,
+        "end": 1457.92,
+        "frames": [
+            "frame_00193.png"
+        ],
+        "transcript": "Support is three by seven, and we want to find some association rules, okay."
+    },
+    {
+        "id": 176,
+        "start": 1457.92,
+        "end": 1459.6,
+        "frames": [
+            "frame_00194.png"
+        ],
+        "transcript": "Find some association rules."
+    },
+    {
+        "id": 177,
+        "start": 1459.6,
+        "end": 1464.32,
+        "frames": [
+            "frame_00195.png"
+        ],
+        "transcript": "So association rules uh from this frequent item set."
+    },
+    {
+        "id": 178,
+        "start": 1464.32,
+        "end": 1468.32,
+        "frames": [
+            "frame_00196.png"
+        ],
+        "transcript": "So we have already determined this is the frequent item set."
+    },
+    {
+        "id": 179,
+        "start": 1468.32,
+        "end": 1477.84,
+        "frames": [
+            "frame_00197.png"
+        ],
+        "transcript": "Actually, uh, not only one, there will be many frequent item sets, and the algorithm will find out how many frequent items that we have in our data data set."
+    },
+    {
+        "id": 180,
+        "start": 1477.84,
+        "end": 1480.0,
+        "frames": [
+            "frame_00198.png"
+        ],
+        "transcript": "So consider this one, just only one."
+    },
+    {
+        "id": 181,
+        "start": 1480.0,
+        "end": 1490.24,
+        "frames": [
+            "frame_00199.png"
+        ],
+        "transcript": "This is an example, and the association rules could be like the the clothes is associated with milk and chicken."
+    },
+    {
+        "id": 182,
+        "start": 1490.24,
+        "end": 1503.2,
+        "frames": [
+            "frame_00200.png"
+        ],
+        "transcript": "So that means if if someone just purses the clothes, uh it is a uh it is a prediction that he will he will also purchase the milk and chicken."
+    },
+    {
+        "id": 183,
+        "start": 1503.2,
+        "end": 1517.76,
+        "frames": [
+            "frame_00201.png"
+        ],
+        "transcript": "Okay, so this this is the uh association, one of the association rule could be like this, and and what's the what the confidence of this confidence of that the confidence is already we know the support is this, okay."
+    },
+    {
+        "id": 184,
+        "start": 1517.76,
+        "end": 1536.96,
+        "frames": [
+            "frame_00202.png"
+        ],
+        "transcript": "The confidence is in case of our equation, the confidence is the the the the support count and divided by the uh the the x count okay say x we can see in this rule the x is this and y is this part."
+    },
+    {
+        "id": 185,
+        "start": 1536.96,
+        "end": 1546.16,
+        "frames": [
+            "frame_00203.png"
+        ],
+        "transcript": "So what will be the support count x and uh x union of y."
+    },
+    {
+        "id": 186,
+        "start": 1546.16,
+        "end": 1560.0,
+        "frames": [
+            "frame_00204.png"
+        ],
+        "transcript": "So x union of y we can see that x union of y in in our transactions we have just only this three, these three, these three are the uh that is x union of y count."
+    },
+    {
+        "id": 187,
+        "start": 1560.0,
+        "end": 1568.16,
+        "frames": [
+            "frame_00205.png"
+        ],
+        "transcript": "So x union of y count is three, and then the x count."
+    },
+    {
+        "id": 188,
+        "start": 1568.16,
+        "end": 1571.84,
+        "frames": [
+            "frame_00206.png"
+        ],
+        "transcript": "How many times the x appeared here?"
+    },
+    {
+        "id": 189,
+        "start": 1571.84,
+        "end": 1576.88,
+        "frames": [
+            "frame_00207.png"
+        ],
+        "transcript": "X appeared here, so we can say that is the clots."
+    },
+    {
+        "id": 190,
+        "start": 1576.88,
+        "end": 1581.04,
+        "frames": [
+            "frame_00208.png"
+        ],
+        "transcript": "So clots um the first one is beep chicken milk."
+    },
+    {
+        "id": 191,
+        "start": 1581.04,
+        "end": 1584.88,
+        "frames": [
+            "frame_00209.png"
+        ],
+        "transcript": "No, beep cheese cheese both beep chicken and cheese."
+    },
+    {
+        "id": 192,
+        "start": 1584.88,
+        "end": 1587.04,
+        "frames": [
+            "frame_00210.png"
+        ],
+        "transcript": "No, beep chicken clots."
+    },
+    {
+        "id": 193,
+        "start": 1587.04,
+        "end": 1588.4,
+        "frames": [
+            "frame_00211.png"
+        ],
+        "transcript": "Here is the clots, okay."
+    },
+    {
+        "id": 194,
+        "start": 1588.4,
+        "end": 1595.84,
+        "frames": [
+            "frame_00212.png"
+        ],
+        "transcript": "That means one time, two times, and three times."
+    },
+    {
+        "id": 195,
+        "start": 1595.84,
+        "end": 1611.76,
+        "frames": [
+            "frame_00213.png"
+        ],
+        "transcript": "Okay, so that means the the x count is also three, x count is also three, and that's why the confidence is three by three, that is the one, and we can say this one is hundred percent, hundred percent."
+    },
+    {
+        "id": 196,
+        "start": 1611.76,
+        "end": 1624.72,
+        "frames": [
+            "frame_00214.png"
+        ],
+        "transcript": "The the confidence is hundred percent, so that means every time in in case of uh someone just purchased cloth, it is predicted that he will purchase uh milk and chicken."
+    },
+    {
+        "id": 197,
+        "start": 1624.72,
+        "end": 1650.08,
+        "frames": [
+            "frame_00215.png"
+        ],
+        "transcript": "Okay, so not only this, we can we can have many association rules here in this case, and the corresponding corresponding confidence level also we have to uh you have to measure like another here if someone purchases the clothes and seeking uh we can predict that he or she also purchases the milk."
+    },
+    {
+        "id": 198,
+        "start": 1650.08,
+        "end": 1655.04,
+        "frames": [
+            "frame_00216.png",
+            "frame_00217.png"
+        ],
+        "transcript": "So we have to determine this the the the confidence for that also."
+    },
+    {
+        "id": 199,
+        "start": 1655.04,
+        "end": 1667.92,
+        "frames": [
+            "frame_00218.png",
+            "frame_00219.png"
+        ],
+        "transcript": "Okay, uh so uh yeah, is it clear what's the use of the association rule?"
+    },
+    {
+        "id": 200,
+        "start": 1667.92,
+        "end": 1694.0,
+        "frames": [
+            "frame_00220.png",
+            "frame_00221.png",
+            "frame_00222.png",
+            "frame_00223.png",
+            "frame_00224.png",
+            "frame_00225.png",
+            "frame_00226.png",
+            "frame_00227.png",
+            "frame_00228.png",
+            "frame_00229.png"
+        ],
+        "transcript": "[Silent] for 26.56 sec"
+    },
+    {
+        "id": 201,
+        "start": 1694.0,
+        "end": 1697.12,
+        "frames": [
+            "frame_00230.png"
+        ],
+        "transcript": "Uh, do I need to explain it again or"
+    },
+    {
+        "id": 202,
+        "start": 1697.12,
+        "end": 1701.399,
+        "frames": [
+            "frame_00231.png"
+        ],
+        "transcript": "maybe I can proceed on?"
+    },
+    {
+        "id": 203,
+        "start": 1701.399,
+        "end": 1710.0,
+        "frames": [
+            "frame_00232.png"
+        ],
+        "transcript": "[Silent] for 9.32 sec"
+    },
+    {
+        "id": 204,
+        "start": 1710.0,
+        "end": 1712.96,
+        "frames": [
+            "frame_00233.png"
+        ],
+        "transcript": "Am"
+    },
+    {
+        "id": 205,
+        "start": 1712.96,
+        "end": 1713.68,
+        "frames": [
+            "frame_00234.png"
+        ],
+        "transcript": "Am I audible?"
+    },
+    {
+        "id": 206,
+        "start": 1713.68,
+        "end": 1738.0,
+        "frames": [
+            "frame_00235.png",
+            "frame_00236.png",
+            "frame_00237.png",
+            "frame_00238.png",
+            "frame_00239.png",
+            "frame_00240.png",
+            "frame_00241.png"
+        ],
+        "transcript": "[Silent] for 24.80 sec"
+    },
+    {
+        "id": 207,
+        "start": 1738.0,
+        "end": 1739.28,
+        "frames": [
+            "frame_00242.png"
+        ],
+        "transcript": "Thank you."
+    },
+    {
+        "id": 208,
+        "start": 1739.28,
+        "end": 1781.0,
+        "frames": [
+            "frame_00243.png",
+            "frame_00244.png",
+            "frame_00245.png",
+            "frame_00246.png",
+            "frame_00247.png",
+            "frame_00248.png",
+            "frame_00249.png",
+            "frame_00250.png"
+        ],
+        "transcript": "[Silent] for 42.24 sec"
+    },
+    {
+        "id": 209,
+        "start": 1781.0,
+        "end": 1784.52,
+        "frames": [
+            "frame_00251.png"
+        ],
+        "transcript": "first."
+    },
+    {
+        "id": 210,
+        "start": 1784.52,
+        "end": 1792.0,
+        "frames": [
+            "frame_00252.png"
+        ],
+        "transcript": "[Silent] for 8.36 sec"
+    },
+    {
+        "id": 211,
+        "start": 1792.0,
+        "end": 1803.44,
+        "frames": [
+            "frame_00253.png"
+        ],
+        "transcript": "Um so transitional data representation in this case we the the is a simplistic view of shopping basket."
+    },
+    {
+        "id": 212,
+        "start": 1803.44,
+        "end": 1810.48,
+        "frames": [
+            "frame_00254.png"
+        ],
+        "transcript": "Okay, in in case of the item set uh data set, this is just simplistic view of shopping basket."
+    },
+    {
+        "id": 213,
+        "start": 1810.48,
+        "end": 1825.28,
+        "frames": [
+            "frame_00255.png"
+        ],
+        "transcript": "So some important information usually uh missing, like maybe um it doesn't consider the quantity of its item purchased, and even the the the price the the the paid price is also not considered."
+    },
+    {
+        "id": 214,
+        "start": 1825.28,
+        "end": 1858.48,
+        "frames": [
+            "frame_00256.png"
+        ],
+        "transcript": "Okay, so it will only consider just only whether this items it is purchased or not, and so there are uh uh large number of that is the the mining algorithms, um and the a priori algorithm is one of one of the mining algorithms that is the very popular mining algorithm, and yeah, not only not only in in in uh the that is the uh a small data set, this one is also used for the large data set."
+    },
+    {
+        "id": 215,
+        "start": 1858.48,
+        "end": 1866.32,
+        "frames": [
+            "frame_00257.png"
+        ],
+        "transcript": "Some algorithms are only used for the small data set, uh like uh ECLET."
+    },
+    {
+        "id": 216,
+        "start": 1866.32,
+        "end": 1874.96,
+        "frames": [
+            "frame_00258.png"
+        ],
+        "transcript": "Okay, eCLET is one of the algorithms, just only for the small data set, but that we we can apply the a priori algorithm for large data set also."
+    },
+    {
+        "id": 217,
+        "start": 1874.96,
+        "end": 1897.2,
+        "frames": [
+            "frame_00259.png"
+        ],
+        "transcript": "Uh so in in in case of the mining, those algorithms they have used the different strategies, some are uh just for the vertical approaching and some are for the horizontal approaching, and their uh resulting set of the rules are the same actually."
+    },
+    {
+        "id": 218,
+        "start": 1897.2,
+        "end": 1918.72,
+        "frames": [
+            "frame_00260.png"
+        ],
+        "transcript": "So the the goal is the same for all, like given a transaction transaction data set T and the minimum support and the minimum confidence, uh they uh they will return that means those algorithms will return the set of association rules, so that's the target for all those uh mining algorithms."
+    },
+    {
+        "id": 219,
+        "start": 1918.72,
+        "end": 1930.32,
+        "frames": [
+            "frame_00261.png"
+        ],
+        "transcript": "Okay, so any algorithm should uh find the same set of rules, although their computational efficiencies and memory requirements are uh different, okay."
+    },
+    {
+        "id": 220,
+        "start": 1930.32,
+        "end": 1936.0,
+        "frames": [
+            "frame_00262.png"
+        ],
+        "transcript": "And we will study the computational uh efficiency of a priori algorithm."
+    },
+    {
+        "id": 221,
+        "start": 1936.0,
+        "end": 1943.12,
+        "frames": [
+            "frame_00263.png"
+        ],
+        "transcript": "The a priori is one of the the probably the best known algorithm, and it has mainly two steps."
+    },
+    {
+        "id": 222,
+        "start": 1943.12,
+        "end": 1948.32,
+        "frames": [
+            "frame_00264.png"
+        ],
+        "transcript": "So the first step is to find all the frequent item sets, okay."
+    },
+    {
+        "id": 223,
+        "start": 1948.32,
+        "end": 1951.84,
+        "frames": [
+            "frame_00265.png"
+        ],
+        "transcript": "Find all the frequent item sets that have minimum support."
+    },
+    {
+        "id": 224,
+        "start": 1951.84,
+        "end": 1957.44,
+        "frames": [
+            "frame_00266.png"
+        ],
+        "transcript": "So this is this will be the first step, and second step is the frequent item set to generate rules."
+    },
+    {
+        "id": 225,
+        "start": 1957.44,
+        "end": 1959.44,
+        "frames": [
+            "frame_00267.png"
+        ],
+        "transcript": "So it has two steps."
+    },
+    {
+        "id": 226,
+        "start": 1959.44,
+        "end": 1964.56,
+        "frames": [
+            "frame_00268.png"
+        ],
+        "transcript": "The first step is frequent item set generation, and second step is rule generation."
+    },
+    {
+        "id": 227,
+        "start": 1964.56,
+        "end": 1968.56,
+        "frames": [
+            "frame_00269.png"
+        ],
+        "transcript": "Okay, this these are the two major steps in a priori algorithms."
+    },
+    {
+        "id": 228,
+        "start": 1968.56,
+        "end": 1973.68,
+        "frames": [
+            "frame_00270.png"
+        ],
+        "transcript": "So here frequent item set means like here the chicken, clothes, and milk."
+    },
+    {
+        "id": 229,
+        "start": 1973.68,
+        "end": 1991.28,
+        "frames": [
+            "frame_00271.png"
+        ],
+        "transcript": "Okay, so this this is one of the frequent item set as uh we have considered the data set of seven transactions, and one of the rules from the frequent item set is clothes uh uh milk and chicken."
+    },
+    {
+        "id": 230,
+        "start": 1991.28,
+        "end": 1998.32,
+        "frames": [
+            "frame_00272.png"
+        ],
+        "transcript": "Okay, so this is one of the uh uh rule association rule."
+    },
+    {
+        "id": 231,
+        "start": 1998.32,
+        "end": 2007.2,
+        "frames": [
+            "frame_00273.png"
+        ],
+        "transcript": "So this association rule uh one of the uh one of the output that that is the object generated rules by a priori algorithm."
+    },
+    {
+        "id": 232,
+        "start": 2007.2,
+        "end": 2020.08,
+        "frames": [
+            "frame_00274.png"
+        ],
+        "transcript": "So finally we will we will get this kind of output that is the frequent item sets, but we have to sorry the the association rules, but we have to determine the frequent item set for that."
+    },
+    {
+        "id": 233,
+        "start": 2020.08,
+        "end": 2031.68,
+        "frames": [
+            "frame_00275.png"
+        ],
+        "transcript": "Um the a priori algorithm it has uh it has some beautiful properties like uh the key idea is the a priori property."
+    },
+    {
+        "id": 234,
+        "start": 2031.68,
+        "end": 2035.6,
+        "frames": [
+            "frame_00276.png"
+        ],
+        "transcript": "Okay, this is called the a priori property that is downward downward closure property."
+    },
+    {
+        "id": 235,
+        "start": 2035.6,
+        "end": 2036.48,
+        "frames": [
+            "frame_00277.png"
+        ],
+        "transcript": "What does it mean?"
+    },
+    {
+        "id": 236,
+        "start": 2036.48,
+        "end": 2055.2,
+        "frames": [
+            "frame_00278.png"
+        ],
+        "transcript": "It means that any subsets of frequent item set are also frequent items, and the frequent item set uh usually we call the uh it is an item set whose support is greater than the minimum support, so those item sets will be the frequent item set."
+    },
+    {
+        "id": 237,
+        "start": 2055.2,
+        "end": 2060.64,
+        "frames": [
+            "frame_00279.png"
+        ],
+        "transcript": "Okay, here the key idea is this that the the a priori property is there is the main properties here."
+    },
+    {
+        "id": 238,
+        "start": 2060.64,
+        "end": 2062.24,
+        "frames": [
+            "frame_00280.png"
+        ],
+        "transcript": "What does it mean?"
+    },
+    {
+        "id": 239,
+        "start": 2062.24,
+        "end": 2068.88,
+        "frames": [
+            "frame_00281.png"
+        ],
+        "transcript": "It means that if we have just only just only four uh items, we can say a b c d okay."
+    },
+    {
+        "id": 240,
+        "start": 2068.88,
+        "end": 2077.68,
+        "frames": [
+            "frame_00282.png"
+        ],
+        "transcript": "This just we can say a b c and d okay."
+    },
+    {
+        "id": 241,
+        "start": 2077.68,
+        "end": 2081.92,
+        "frames": [
+            "frame_00283.png"
+        ],
+        "transcript": "So these are these are the four items we we can consider in item set."
+    },
+    {
+        "id": 242,
+        "start": 2081.92,
+        "end": 2088.48,
+        "frames": [
+            "frame_00284.png"
+        ],
+        "transcript": "If we have these, then what will be the possible possible subset?"
+    },
+    {
+        "id": 243,
+        "start": 2088.48,
+        "end": 2092.48,
+        "frames": [
+            "frame_00285.png"
+        ],
+        "transcript": "What will be the possible subset of three item set?"
+    },
+    {
+        "id": 244,
+        "start": 2092.48,
+        "end": 2096.32,
+        "frames": [
+            "frame_00286.png"
+        ],
+        "transcript": "This is the this is the this is the four okay, four items set."
+    },
+    {
+        "id": 245,
+        "start": 2096.32,
+        "end": 2101.2,
+        "frames": [
+            "frame_00287.png"
+        ],
+        "transcript": "So what will be the possible uh subset of three item set?"
+    },
+    {
+        "id": 246,
+        "start": 2101.2,
+        "end": 2128.4,
+        "frames": [
+            "frame_00288.png"
+        ],
+        "transcript": "We can we can see that it can be abc a b and c then it can be abd a b and d and then uh it can be a c d a c and d and it can be the b c d okay these are these are the possible subsets, these are the possible subsets of a b c and d so possible subsets of three frequent items."
+    },
+    {
+        "id": 247,
+        "start": 2128.4,
+        "end": 2136.32,
+        "frames": [
+            "frame_00289.png"
+        ],
+        "transcript": "Now what we can do we we can we can take any one like maybe okay here is the abd, we can take the abd."
+    },
+    {
+        "id": 248,
+        "start": 2136.32,
+        "end": 2145.84,
+        "frames": [
+            "frame_00290.png"
+        ],
+        "transcript": "Okay, uh we can take the abd, but uh we can also we can also convert this one that is abcd."
+    },
+    {
+        "id": 249,
+        "start": 2145.84,
+        "end": 2156.24,
+        "frames": [
+            "frame_00291.png"
+        ],
+        "transcript": "Uh from the abcd we can we can also uh find out the subset of uh subset of two frequent item sets."
+    },
+    {
+        "id": 250,
+        "start": 2156.24,
+        "end": 2161.6,
+        "frames": [
+            "frame_00292.png"
+        ],
+        "transcript": "So two frequent item sets that means is and every item set just contain two elements."
+    },
+    {
+        "id": 251,
+        "start": 2161.6,
+        "end": 2217.0,
+        "frames": [
+            "frame_00293.png"
+        ],
+        "transcript": "It can be like a b it can be a b it can be a c and it can be a d and it can be bc and then b d and then c d okay so these are the possible uh possible subset of two items, so possible subsets of two items, these these are these are the two items, but here the abd this abd, if we can set that this abd, if we expand this one and find out the the two item subset, so we will get like a b ad and b d so here is the ab this one ad and and b d okay bd here is the b d okay and now if we consider about the four uh that is just only single item subsets of a b c d then we will get what we will get a b c d we will get a here is the b and here is the c and the d okay and now what we can uh what we can see that uh that is the this a and b this a and b from this a and b we can uh we can construct this ab and from a and d we can construct this a d and from b and d we can construct this b d and from ab ad and b d we can construct the a b d okay this one so if we can see in bottom of approach okay abd okay that means uh it it means that it has the a priori property that means here is abd if abd is frequent item set abd in frequent item set then subset of the abd it will also be the frequent item set so like abd uh this if we if we if we determine the subset of this then ab will be one of the subset and if abd is frequent item set then ab also frequent item set and if abd is frequent item set then a d will also be in the frequent item set if bd is uh abd is frequent item set then the bd also be with the frequent item set and again if a b is frequent item set then both a and b both a and b will also uh one one of the frequent uh item set a will one of the frequent item set b will one of the frequent item set and here is a d also will be on one of the frequent items so that means this is this is called the a priori properties any subset of frequent item set are also frequent item sets okay so based on this criteria the uh uh this property the a priori algorithm is designed okay the a priori algorithm is designed for"
+    },
+    {
+        "id": 252,
+        "start": 2217.0,
+        "end": 2314.0,
+        "frames": [
+            "frame_00294.png"
+        ],
+        "transcript": "me class needs to core you come at the can show by should come to connect this okay so the iterative algorithm uh that is the uh the a priori is one of the iterative algorithms so here in this case what we have to do so as I already mentioned it has measuredly two steps the frequent item set uh generation and then association rule generation the first step is the frequent item set generation and for that we have to apply the iterative algorithm uh it is also called the level wise SARS at first find one item frequent uh item set so we need to find the one item frequent item set that's that's why it's called the bottom up approach and then we will find the two item uh frequent item set and so on okay uh and for each iteration of k we will only consider the the the previous k minus one frequent item sets okay so the first is to find the frequent item set of size one and we call that one is as f1 and then then uh we want to find out find out the the two items and three items four items like this okay so uh from k2 from k2 that means we want to find out the two items uh frequent item set and for that what we have to do at first we have to find out the ck that is the candidate size of k candidate size of k so in the candidate size uh based on the based on based on the pre previous frequent item set that is we we can set the fk minus one it will only consider those item set of size k okay so that means we will generate the candidate item set from the the previous item set like maybe fk minus 1 so initially fk minus 1 will be the one so so we we we need to generate the the candidate item set okay and then what we have to do based on the candidate item set again we have to generate the frequent item set of k so here in this ep of k we will only only we will only uh pick one one we only keep those item set which are actually frequent so to find out the actual frequent item set we need to scan the data set again and every time here we need to consider two things that is the the support and confidence okay so to find out the actual frequent item set we need to consider consider again the the the support for that okay"
+    },
+    {
+        "id": 253,
+        "start": 2314.0,
+        "end": 2451.0,
+        "frames": [
+            "frame_00295.png",
+            "frame_00296.png",
+            "frame_00297.png",
+            "frame_00298.png",
+            "frame_00299.png",
+            "frame_00300.png",
+            "frame_00301.png",
+            "frame_00302.png",
+            "frame_00303.png"
+        ],
+        "transcript": "one example we can we can see here let's say this is our uh data set the transaction four transactions here items okay and uh we define that the minimum support should be 0.5 that is 50 percent okay minimum support should be 0.5 so we will consider only those uh item set which has minimum support okay the and for that the the firstly we have to scan the transaction so we have to scan the transaction here and then uh to generate the one item frequent item set at first we have to consider we have to consider the the item set here so what are the items in individual items in in the item set so we can see the what will be the items in i so in i we have we we have like one three four so one will be one of the items and then the two will be another items so two one two and then three and then four yeah four is also there and then five so these these are the these are the five uh individual items in our in our data set so that means in capital I we have one two three four five and here is the C okay so one two three four and five and now we have to count that is the the item count so how many times one appeared so one appeared two times okay so you can see that one appeared two times and two appeared like two appeared how many times three times and three appeared three times and four appeared just only one time and five uh five here five three times okay five three times so okay so this these are the item set count item set count for one is two two uh for two is three and three is three four is one and five is three like this now what we have to do we have to find out the frequent items at one but to find out the frequent items at one we have to consider them the minimum support the minimum support so what's the minimum uh what's the support for this item set one this one the support for this one is uh we have to give the the equation of the support so equation of the support is the that is the the how many times one appeared just only two okay two times divided by total number of items so total number of items here and so total number of transactions one two three four so total number of transactions is four so that means we can say support for this is 0.5 support for this is 0.5 so here the minimum support is 0.5 so that means the if this one is greater than or equal equal 0.5 the threshold is here the 0.5 so we have to we have to keep this one so in frequent item save we have to keep this one and again for uh we'll have to determine the the the the and that is the support for the two support for the two the support for the two is uh here support for the two so that means how many times the two appeared in our transactions transaction data set it is three and out of four that means it is also greater than the 50 percent okay 50 percent so we have to keep this one and support for the three we can see the the the three times it just appeared in our transaction data set so that means the support out of four so so so the the support will be greater than 0.5 and how about this so we can see that one by the support for the four four is one by four and that means the it is just 0.25 0.25 so this one is less than 0.5 so that means we have to we have to just discard this element so it will not in our frequent item set list okay for the five it is three times so that means three by four is greater than 0.5 so the five we have to pick so this is the uh the frequent item set one uh the frequent item set of size one"
+    },
+    {
+        "id": 254,
+        "start": 2451.0,
+        "end": 2603.0,
+        "frames": [
+            "frame_00304.png",
+            "frame_00305.png"
+        ],
+        "transcript": "then what we have to do the the next step is to candidate set generation the candidate set generation and for that we have to do the join operation join and pruning will be the the the the the case of candidate set generation so here for the for the join operation okay here is the one one this one and this two we can join these two so one and two and then this one and three this one and three so we can this can be the candidate set and one one and five so one and five can be joined together and the next two and three this two and three they can join okay and then two and five here the two and five they can join and three and five okay they can join so these are the candidate candidate uh item sets in our case candidate item sets now we have to we have to find out the truly the truly candidate item sets okay here for that we have to scan the transaction that means and the data set again this data set again and find out the frequency or count of this item together so one two we can say how many times one one two appeared together in in in transactions so we can see that's only one time in our transactions one and two persist together so here is one two that's only one time and then one three how many times these two items purse together one and three so we can see that this is one transaction and this is another transaction that is one and three perse together okay so two times and one five so one five just one do one time and two three two three two times okay two five two five one two three times so three times here three five three five two times three five two times now here uh the scan the t that means uh the transaction we have to scan again and find out the frequency that is the uh one two is one one three is two times like this okay now uh from this c2 from this c2 we have to determine the frequent item set again f2 so this time we want to find out the frequent item set of the two items of two items okay so for that we have to uh we have to again uh we have to uh consider the minimum support so we can we can see that this is just only one time this uh appeared so the support for this support for this item set is one by four that means uh one time the the purchase together out of the four transactions so that means 0.25 will be their support so we will discard this because we will not take this one okay because the minimum support our threshold is 0.5 and for one three two times out of four that means uh yeah this is this is the valid and one five we have to discard and two three okay we can keep two five we can keep three five we can keep okay so this is the frequent item set for the two items"
+    },
+    {
+        "id": 255,
+        "start": 2603.0,
+        "end": 2840.0,
+        "frames": [
+            "frame_00306.png"
+        ],
+        "transcript": "now what we have to do again we have to generate the the candidate item set c3 so this time here we can see that that is candidate item set of uh candidate item set th three so candidate item set list we have to we have to use the the join and proning operation for that and in this case in join operation uh we have to we have to we have to see that that is the how whether they can join or not okay join or not like uh here is a one this is the one uh is there any item set here that start start with one there is no sus item set okay no no no sus item set that means they cannot join so one no so that means uh one three this item set this item set it cannot join with any other item set okay and next so next one is two okay is there any item set here the start with two yeah this one this one okay so that means this two can join this two can join okay so two then three and five here is the two then three and five okay is there any uh item set here join with uh the the start with three no no item set no sus item set so what we can we can do what we have to do uh okay we cannot find the three item set for this three uh three five okay so this is the join operation for uh generating the candidate set and after generating the candidate set again what we have to do we have to actually uh we have to prune we have to think about the pruning so pruning operation is this that is here is a two three five so uh how many two item sets we can generate from here and what are the possible two item sets we can generate like we can generate two three and then two five and then two three two five and three five three five okay two three two five and three five so we can see that whether these items so whether these these these items item sets are already in F2 or not so 23 23 is here it is in F2 25 25 is here okay it is in f2 and 35 is f2 so that means we cannot prune this one we cannot prune prune this one okay so this is called the joining and pruning for uh for the for generating the candidate set why we didn't apply in the first step actually in the in the first step we have we can we can see this just only single item set one two three the single item set so anyone can join with any other okay okay so that's why uh here is this the pruning uh and joining and pruning we we have already applied and find out this so this is uh the candidate items candidate uh item set and now what we have to do again we have to find out the the support for that and for that we have to scan the transaction again and then the support is uh here the support so how many times two three five these three items purchase together so two three five this is one and two three five here is another one also okay two three five so that means two three five is is uh the the support for that is two the count of the is two and the support uh for that support for this is two by four that means 0.5 so that is the the minimum support okay so if this one is the uh candidate set with the the the count is two then we have to we have to uh we have to generate the again from the c3 we can generate the f2 sorry f3 and frequent item set that is f3 that is uh all those item sets which are uh which are which are satisfied the minimum support so minimum support we can we have just only one item set here one item set and that one is also uh satisfy the minimum support threshold and thats why it will be in in this uh list list of the frequent item set of three items so next we we can continue we can continue this but uh we we can see that none of the elements are there to join okay so we have to stop here none of that that means if if there are some other elements uh in in c3 there is another one then we can again try to find out this the c4 and then find out the f4 but we can see that none of the items are there to join okay so we can stop here and maybe the return the frequent item set this so from this data set we can we can we can find the frequent item set two three and five so any equation here is it difficult okay thank you"
+    },
+    {
+        "id": 256,
+        "start": 2840.0,
+        "end": 3000.0,
+        "frames": [
+            "frame_00307.png"
+        ],
+        "transcript": "okay the next the um ordering of items in case of the the the word example or maybe you can say the document processing the ordering of items are also necessary and on that case we have to we have to uh sort the items in lexiographic order okay and so the order is used throughout the algorithm of each item set like here w1 w2 wk that means w1 it will consist of just only the uh the the frequent item set of one element then w2 it will consist frequent item set of two elements like this one okay"
+    },
+    {
+        "id": 257,
+        "start": 3000.0,
+        "end": 3225.0,
+        "frames": [
+            "frame_00308.png"
+        ],
+        "transcript": "here is the detailed uh algorithm we already applied this so at first we have to we have to this is the a priori algorithm okay the initial pass of the transaction the transaction data set and from that we have to generate the c1 we already generated that and then we have to compute that we have to compute the f1 uh here is the f1 and the for that we have to we have to uh see the the minimum support okay and we we can see that we have we have seen the minimum support for that minimum support and if this one is greater than or equal minimum support then that will be in our f1 and then we have to think about this that is the uh that is from k to and here's fk minus one uh equal null okay and then we have to uh increase the k and we if if we find that non-frequent item set uh here then we can stop and this is the candidate generation at first uh we have to generate the candidates candidate generation and candidate generation it is another function okay another function here like that where is the candidate generation for this f so that means uh for generating the candidate number four we have to we have to we have to uh pass the frequent item set three okay and initially it is just only null or empty and for all f1 f2 uh f1 f2 here is the the frequent item set k and with this one that is f1 f2 and here is the item sets those are item sets and i k item set k minus uh one is less than the uh k minus of one then we have to do this following things and c here and then the ck we have to join and after that for each k minus one subset of s and c what we have to do if s is is an element of this then we have to delete so this is for putting and this is for joining f1 and f2 joining f1 and f2 okay so in this case we can see that in f1 and f2 here f1 is i1 and here is i2 ik minus 1 and this part we can see that this part and this part they are the same okay they are the same that means for joining this f1 and f2 we have to we have to think about this this part and this part will be same if that one uh is same then only we can join okay only we can join and in c in c this is the all the things and then this one and that one okay so finally we can uh we can find the ck so this is the the joining after joining we have to test whether we can prune or not okay whether we can prune or not okay so go back there is this the candidate is an action we we we generated the candidate and after that for each transaction and for each candidate we have to count the how many times it it's appeared in our data set okay so this is the end of this for loop and after that after counting then again we have to check the minimum support okay if this one is greater than the minimum support then we we will call this we will listed that item in our frequent item set so that's the end of the for that means for k3 k4 k5 like this way and when this this uh when we can we exit from this loop then we will find the f and in this f we have to union all the frequent item sets okay union all the frequent item sets in f so this is the a priori algorithm we have applied already this one in our example okay"
+    },
+    {
+        "id": 258,
+        "start": 3225.0,
+        "end": 3341.0,
+        "frames": [
+            "frame_00309.png"
+        ],
+        "transcript": "but the candidate generation function uh as I have already discussed here it has majorly two steps one is join steps so another one is prune step the candidate generation function takes the f k minus one and returns them a superset called the candidate sets okay um of the set of all frequent k item sets and it has two steps join a step in join step generate all possible candidate items ck of length k okay and then prune a step remove those candidates in ck that cannot be frequent okay"
+    },
+    {
+        "id": 259,
+        "start": 3341.0,
+        "end": 4210.0,
+        "frames": [
+            "frame_00310.png",
+            "frame_00311.png",
+            "frame_00312.png",
+            "frame_00313.png",
+            "frame_00314.png",
+            "frame_00315.png",
+            "frame_00316.png",
+            "frame_00317.png",
+            "frame_00318.png",
+            "frame_00319.png",
+            "frame_00320.png",
+            "frame_00321.png",
+            "frame_00322.png",
+            "frame_00323.png"
+        ],
+        "transcript": "so another example is here like in f3 if we have this uh have this uh item sets in f3 f3 these are the item sets if we pass this in uh in our candidate generation then what will be the case if uh for the joining operation what we have to do here the three item set okay this is the three item set so we have to consider that these two one and two so is there any item set the the the the that consists of one and two we can we can say here is the one and two that means we can join these two item set okay the one two three and four so one two here is the one two three and four and then uh here is one three okay any item set with just start with the one three okay here is the one three so one three four and five so one three four and five and any item sets started with two three no okay so we cannot take this so that means after joining we will get these two item sets of of length four okay now uh this is joining joining okay just joining but we have to now we have to apply the pruning operation so first one okay this one from this one we have to uh generate like maybe the three items item set so it can be one sorry it can be it can be one two and three and then one two and four one two and four and then one two and four then one three four and four and then two three and four two three and four okay so these are the possible subset of three item sets okay so what we have to do we have to check whether this one is in F3 or not one two and three yeah this is in F3 1 2 and 4 this is in f3 and 1 3 and 4 this is in f3 and 2 3 and 4 this is also in F3 that means we cannot prune this one we have to keep this one in in c4 okay so we have to keep this one in c4 now think about this okay so in this case we can see that we can uh the possible three items three items subset one three and four one three four then um one three five and then uh one three four one three five and then one four five one four five and then one four five and then three four five three four five so now uh we have to find out each and every item in frequent item set every item set here that is one three and four one three four is here okay good and then one three five one three five is also there okay good and then one four and five we can see that one four and five is not in uh F3 so that means we can prune this one we can prune this one okay"
+    },
+    {
+        "id": 260,
+        "start": 4210.0,
+        "end": 4311.550839,
+        "frames": [
+            "frame_00324.png",
+            "frame_00325.png",
+            "frame_00326.png",
+            "frame_00327.png",
+            "frame_00328.png",
+            "frame_00329.png",
+            "frame_00330.png",
+            "frame_00331.png"
+        ],
+        "transcript": "okay thank you for attending this uh class actually uh uh we we we need another lecture to complete this one okay see we know next class thank you sir as salamu alaikum alaikum sir now thank you sir as a thank you"
+    }
+]

@@ -1,0 +1,752 @@
+[
+  {
+    "start": "00:00:00",
+    "end": "00:00:01",
+    "type": "Irrelevant",
+    "reasoning": "This segment contains only a vocal filler and the start of an introductory phrase."
+  },
+  {
+    "start": "00:00:01",
+    "end": "00:00:04",
+    "type": "Relevant",
+    "reasoning": "The instructor establishes the primary topic of the lecture: the study of Max Flow."
+  },
+  {
+    "start": "00:00:04",
+    "end": "00:00:10",
+    "type": "Relevant",
+    "reasoning": "Provides context by recapping the previous lecture's conclusion on the Edmonds-Karp algorithm."
+  },
+  {
+    "start": "00:00:10",
+    "end": "00:00:14",
+    "type": "Relevant",
+    "reasoning": "States the objective of the current session: explaining how the algorithm works."
+  },
+  {
+    "start": "00:00:14",
+    "end": "00:00:21",
+    "type": "Relevant",
+    "reasoning": "Outlines the agenda, including reviewing the Max Flow problem and the Ford-Fulkerson method."
+  },
+  {
+    "start": "00:00:21",
+    "end": "00:00:26",
+    "type": "Relevant",
+    "reasoning": "Draws an instructional parallel between Max Flow algorithms and Minimum Spanning Trees."
+  },
+  {
+    "start": "00:00:26",
+    "end": "00:00:37",
+    "type": "Relevant",
+    "reasoning": "Explains the foundational role of the Cut Theorem in algorithmic implementations."
+  },
+  {
+    "start": "00:00:37",
+    "end": "00:00:45",
+    "type": "Relevant",
+    "reasoning": "Connects the concept of the Cut Lemma specifically to Max Flow problem solving."
+  },
+  {
+    "start": "00:00:45",
+    "end": "00:00:51",
+    "type": "Relevant",
+    "reasoning": "Introduces the critical concept of Duality and the Max Flow/Min Cut Theorem."
+  },
+  {
+    "start": "00:00:51",
+    "end": "00:00:53",
+    "type": "Irrelevant",
+    "reasoning": "A brief non-instructional pause during the transition between concepts."
+  },
+  {
+    "start": "00:00:53",
+    "end": "00:00:58",
+    "type": "Relevant",
+    "reasoning": "Emphasizes that the Duality principle drives all the algorithms being studied."
+  },
+  {
+    "start": "00:00:58",
+    "end": "00:01:02",
+    "type": "Relevant",
+    "reasoning": "Discusses the efficiency limitations found in the Ford-Fulkerson algorithm."
+  },
+  {
+    "start": "00:01:02",
+    "end": "00:01:06",
+    "type": "Relevant",
+    "reasoning": "Introduces Edmonds-Karp as a solution for achieving tighter algorithmic analysis."
+  },
+  {
+    "start": "00:01:06",
+    "end": "00:01:14",
+    "type": "Irrelevant",
+    "reasoning": "Side discussion regarding content for the graduate version of the course."
+  },
+  {
+    "start": "00:01:14",
+    "end": "00:01:18",
+    "type": "Irrelevant",
+    "reasoning": "Anecdotal mention of specific researchers and data structures irrelevant to the core lesson."
+  },
+  {
+    "start": "00:01:18",
+    "end": "00:01:21",
+    "type": "Irrelevant",
+    "reasoning": "Discusses push-relabel algorithms which the instructor explicitly states will not be covered here."
+  },
+  {
+    "start": "00:01:21",
+    "end": "00:01:34",
+    "type": "Irrelevant",
+    "reasoning": "Administrative talk offering additional materials for students interested in outside topics."
+  },
+  {
+    "start": "00:01:34",
+    "end": "00:01:43",
+    "type": "Relevant",
+    "reasoning": "Summarizes the specific goals for the day: Edmonds-Karp mechanics and applications."
+  },
+  {
+    "start": "00:01:43",
+    "end": "00:01:50",
+    "type": "Relevant",
+    "reasoning": "Lists practical applications such as bipartite matching and scheduling problems."
+  },
+  {
+    "start": "00:01:50",
+    "end": "00:01:54",
+    "type": "Relevant",
+    "reasoning": "Introduces a real-world flight scheduling scenario to illustrate algorithmic constraints."
+  },
+  {
+    "start": "00:01:54",
+    "end": "00:02:04",
+    "type": "Relevant",
+    "reasoning": "Explains the logic behind distributing resources across different 'paths' for safety."
+  },
+  {
+    "start": "00:02:04",
+    "end": "00:02:10",
+    "type": "Relevant",
+    "reasoning": "Connects the business risk management scenario to the technical need for multiple paths."
+  },
+  {
+    "start": "00:02:10",
+    "end": "00:02:13",
+    "type": "Irrelevant",
+    "reasoning": "A rhetorical question about vacation delays that does not provide instructional value."
+  },
+  {
+    "start": "00:02:13",
+    "end": "00:02:21",
+    "type": "Irrelevant",
+    "reasoning": "Stalling/filler talk regarding mechanical flight trouble and ruined vacations."
+  },
+  {
+    "start": "00:02:21",
+    "end": "00:02:26",
+    "type": "Relevant",
+    "reasoning": "Defines the goal of the problem: finding different ways to route entities through a network."
+  },
+  {
+    "start": "00:02:26",
+    "end": "00:02:27",
+    "type": "Irrelevant",
+    "reasoning": "A brief non-instructional pause."
+  },
+  {
+    "start": "00:02:27",
+    "end": "00:02:30",
+    "type": "Irrelevant",
+    "reasoning": "Social noise/humor regarding executives in Hawaii that does not teach algorithm concepts."
+  },
+  {
+    "start": "00:02:30",
+    "end": "00:02:38",
+    "type": "Relevant",
+    "reasoning": "Introduces specific path concepts like Edge Disjoint and Node Disjoint paths."
+  },
+  {
+    "start": "00:02:38",
+    "end": "00:02:45",
+    "type": "Relevant",
+    "reasoning": "Mentions a unique application of Max Flow/Min Cut to the baseball elimination problem."
+  },
+  {
+    "start": "00:02:45",
+    "end": "00:02:49",
+    "type": "Relevant",
+    "reasoning": "Frames the playoff eligibility question as a computational problem."
+  },
+  {
+    "start": "00:02:49",
+    "end": "00:02:57",
+    "type": "Relevant",
+    "reasoning": "Confirms that sports elimination problems can be solved using Max Flow."
+  },
+  {
+    "start": "00:02:57",
+    "end": "00:03:02",
+    "type": "Irrelevant",
+    "reasoning": "Personal anecdote about the instructor's graduate school office mates."
+  },
+  {
+    "start": "00:03:02",
+    "end": "00:03:07",
+    "type": "Irrelevant",
+    "reasoning": "Social noise regarding an unpublished paper on basketball brackets."
+  },
+  {
+    "start": "00:03:07",
+    "end": "00:03:12",
+    "type": "Irrelevant",
+    "reasoning": "Filler talk regarding basketball pyramids and March Madness terminology."
+  },
+  {
+    "start": "00:03:12",
+    "end": "00:03:22",
+    "type": "Irrelevant",
+    "reasoning": "Explanation of social bracket competition and gambling among friends."
+  },
+  {
+    "start": "00:03:22",
+    "end": "00:03:29",
+    "type": "Irrelevant",
+    "reasoning": "Instructor's self-critique on his explanation of scoring systems; no teaching occurs."
+  },
+  {
+    "start": "00:03:29",
+    "end": "00:03:38",
+    "type": "Irrelevant",
+    "reasoning": "General chatter comparing sports brackets to the lecture's technical topic."
+  },
+  {
+    "start": "00:03:38",
+    "end": "00:03:45",
+    "type": "Relevant",
+    "reasoning": "Explains that baseball elimination can be solved in polynomial time via Max Flow."
+  },
+  {
+    "start": "00:03:45",
+    "end": "00:03:47",
+    "type": "Relevant",
+    "reasoning": "Reiterates the importance of the Max Flow/Min Cut relationship."
+  },
+  {
+    "start": "00:03:47",
+    "end": "00:03:49",
+    "type": "Relevant",
+    "reasoning": "Begins a comparison between the complexity of different sports elimination models."
+  },
+  {
+    "start": "00:03:49",
+    "end": "00:03:55",
+    "type": "Relevant",
+    "reasoning": "Poses the algorithmic question of determining if winning a tournament is still possible."
+  },
+  {
+    "start": "00:03:55",
+    "end": "00:04:00",
+    "type": "Relevant",
+    "reasoning": "Explains that the basketball tournament version of the problem is NP-complete."
+  },
+  {
+    "start": "00:04:00",
+    "end": "00:04:02",
+    "type": "Irrelevant",
+    "reasoning": "Social remark expressing personal interest in the topic."
+  },
+  {
+    "start": "00:04:02",
+    "end": "00:04:05",
+    "type": "Irrelevant",
+    "reasoning": "Transition phrase leading into the start of the formal lesson."
+  },
+  {
+    "start": "00:04:05",
+    "end": "00:04:10",
+    "type": "Irrelevant",
+    "reasoning": "Stalling/filler while transitioning into the first slide/topic."
+  },
+  {
+    "start": "00:04:10",
+    "end": "00:04:12",
+    "type": "Irrelevant",
+    "reasoning": "Pause before the formal definition of the Max Flow problem."
+  },
+  {
+    "start": "00:04:12",
+    "end": "00:04:15",
+    "type": "Relevant",
+    "reasoning": "Uses a historical rail network scenario to motivate the study of Max Flow."
+  },
+  {
+    "start": "00:04:15",
+    "end": "00:04:17",
+    "type": "Relevant",
+    "reasoning": "Provides context regarding the Soviet block and Western Europe rail connectivity."
+  },
+  {
+    "start": "00:04:17",
+    "end": "00:04:19",
+    "type": "Relevant",
+    "reasoning": "Explains the objective: determining the minimum rail connections to remove."
+  },
+  {
+    "start": "00:04:19",
+    "end": "00:04:25",
+    "type": "Relevant",
+    "reasoning": "Details the real-world goal of separating two geographical blocks in a military context."
+  },
+  {
+    "start": "00:04:25",
+    "end": "00:04:27",
+    "type": "Relevant",
+    "reasoning": "Transitions to how mathematicians formalize this practical combinatoric problem."
+  },
+  {
+    "start": "00:04:27",
+    "end": "00:04:32",
+    "type": "Relevant",
+    "reasoning": "Begins defining the graph structure, specifically vertices and edges."
+  },
+  {
+    "start": "00:04:32",
+    "end": "00:04:34",
+    "type": "Relevant",
+    "reasoning": "Identifies the source and sink as the two distinct nodes in the network."
+  },
+  {
+    "start": "00:04:34",
+    "end": "00:04:50",
+    "type": "Relevant",
+    "reasoning": "Defines the capacity function that maps edges to specific numerical values."
+  },
+  {
+    "start": "00:04:50",
+    "end": "00:04:54",
+    "type": "Relevant",
+    "reasoning": "Simplifies the math for the lecture by treating capacities as rational numbers."
+  },
+  {
+    "start": "00:04:54",
+    "end": "00:05:05",
+    "type": "Relevant",
+    "reasoning": "States the central problem: sending flow along the network defined by the graph."
+  },
+  {
+    "start": "00:05:05",
+    "end": "00:05:09",
+    "type": "Relevant",
+    "reasoning": "Uses the 'pipes' analogy to visualize the physical constraints of the graph edges."
+  },
+  {
+    "start": "00:05:09",
+    "end": "00:05:19",
+    "type": "Relevant",
+    "reasoning": "Explains that flow is an abstract notion representing various quantities."
+  },
+  {
+    "start": "00:05:19",
+    "end": "00:05:20",
+    "type": "Relevant",
+    "reasoning": "Provides examples of flow such as train counts, time, or money."
+  },
+  {
+    "start": "00:05:20",
+    "end": "00:05:27",
+    "type": "Relevant",
+    "reasoning": "Introduces the function 'f' which assigns numerical flow values to edges."
+  },
+  {
+    "start": "00:05:27",
+    "end": "00:05:28",
+    "type": "Irrelevant",
+    "reasoning": "A micro-pause during the explanation of flow assignment."
+  },
+  {
+    "start": "00:05:28",
+    "end": "00:05:36",
+    "type": "Relevant",
+    "reasoning": "Explains why constraints are needed to make the flow problem interesting."
+  },
+  {
+    "start": "00:05:36",
+    "end": "00:05:43",
+    "type": "Relevant",
+    "reasoning": "Defines the capacity constraint: the flow on an edge cannot exceed its capacity."
+  },
+  {
+    "start": "00:05:43",
+    "end": "00:05:45",
+    "type": "Relevant",
+    "reasoning": "Transitions to the next major constraint: flow conservation at nodes."
+  },
+  {
+    "start": "00:05:45",
+    "end": "00:05:55",
+    "type": "Relevant",
+    "reasoning": "Establishes that no excess flow should accumulate at any internal node."
+  },
+  {
+    "start": "00:05:55",
+    "end": "00:06:03",
+    "type": "Relevant",
+    "reasoning": "States the rule for non-source/sink nodes: inflow must equal outflow."
+  },
+  {
+    "start": "00:06:03",
+    "end": "00:06:12",
+    "type": "Relevant",
+    "reasoning": "Formalizes the inflow and outflow relationship for every node V."
+  },
+  {
+    "start": "00:06:12",
+    "end": "00:06:16",
+    "type": "Relevant",
+    "reasoning": "Provides a secondary way of expressing the flow equality principle."
+  },
+  {
+    "start": "00:06:16",
+    "end": "00:06:20",
+    "type": "Relevant",
+    "reasoning": "Sets up the measurement goal for the entire Max Flow problem."
+  },
+  {
+    "start": "00:06:20",
+    "end": "00:06:27",
+    "type": "Relevant",
+    "reasoning": "Reiterates the goal of pushing flow from the source to the sink."
+  },
+  {
+    "start": "00:06:27",
+    "end": "00:06:32",
+    "type": "Relevant",
+    "reasoning": "Summarizes the assignment of numbers to edges to satisfy the problem constraints."
+  },
+  {
+    "start": "00:06:32",
+    "end": "00:06:35",
+    "type": "Relevant",
+    "reasoning": "Briefly reviews the capacity and flow conservation rules."
+  },
+  {
+    "start": "00:06:35",
+    "end": "00:06:42",
+    "type": "Relevant",
+    "reasoning": "Introduces the net flow value as the key metric for the solution."
+  },
+  {
+    "start": "00:06:42",
+    "end": "00:07:02",
+    "type": "Relevant",
+    "reasoning": "Explains how to calculate the net flow value from the source."
+  },
+  {
+    "start": "00:07:02",
+    "end": "00:07:04",
+    "type": "Irrelevant",
+    "reasoning": "A brief pause while pointing to variables on the board."
+  },
+  {
+    "start": "00:07:04",
+    "end": "00:07:22",
+    "type": "Relevant",
+    "reasoning": "Confirms that the net flow out of S will equal the net flow into T."
+  },
+  {
+    "start": "00:07:22",
+    "end": "00:07:28",
+    "type": "Relevant",
+    "reasoning": "States the ultimate goal: finding the valid flow with the largest possible value."
+  },
+  {
+    "start": "00:07:28",
+    "end": "00:07:31",
+    "type": "Relevant",
+    "reasoning": "Transitions the lecture toward a concrete visual example."
+  },
+  {
+    "start": "00:07:31",
+    "end": "00:07:31",
+    "type": "Irrelevant",
+    "reasoning": "Zero-length segment/artifact."
+  },
+  {
+    "start": "00:07:31",
+    "end": "00:07:36",
+    "type": "Relevant",
+    "reasoning": "Visualizes a specific flow instance where red values represent flow."
+  },
+  {
+    "start": "00:07:36",
+    "end": "00:07:38",
+    "type": "Relevant",
+    "reasoning": "Identifies the relationship between the flow values and capacity limits."
+  },
+  {
+    "start": "00:07:38",
+    "end": "00:07:49",
+    "type": "Relevant",
+    "reasoning": "Summarizes the overall definition and the scope of the problem definition."
+  },
+  {
+    "start": "00:07:49",
+    "end": "00:07:53",
+    "type": "Relevant",
+    "reasoning": "Addresses the natural instinct to apply a greedy algorithm to this problem."
+  },
+  {
+    "start": "00:07:53",
+    "end": "00:07:56",
+    "type": "Relevant",
+    "reasoning": "Clarifies that while greedy is 'almost correct', it requires a specific modification."
+  },
+  {
+    "start": "00:07:56",
+    "end": "00:08:02",
+    "type": "Relevant",
+    "reasoning": "Signals that a 'twist' is necessary to handle cases where standard greedy fails."
+  },
+  {
+    "start": "00:08:02",
+    "end": "00:08:08",
+    "type": "Relevant",
+    "reasoning": "Sets up a specific counter-example where simple greedy logic fails."
+  },
+  {
+    "start": "00:08:08",
+    "end": "00:08:15",
+    "type": "Relevant",
+    "reasoning": "Defines the greedy strategy of finding the path with the most possible flow."
+  },
+  {
+    "start": "00:08:15",
+    "end": "00:08:17",
+    "type": "Relevant",
+    "reasoning": "Continues the greedy logic: pushing that maximum flow through the network."
+  },
+  {
+    "start": "00:08:17",
+    "end": "00:08:23",
+    "type": "Relevant",
+    "reasoning": "Walks through an example graph to show why this approach does not work."
+  },
+  {
+    "start": "00:08:23",
+    "end": "00:08:30",
+    "type": "Relevant",
+    "reasoning": "Identifies a specific path (SABT) that a greedy algorithm would choose."
+  },
+  {
+    "start": "00:08:30",
+    "end": "00:08:37",
+    "type": "Relevant",
+    "reasoning": "Shows how pushing 20 units along this path saturates the edges."
+  },
+  {
+    "start": "00:08:37",
+    "end": "00:08:48",
+    "type": "Relevant",
+    "reasoning": "Visualizes the resulting graph state where no further flow can be pushed."
+  },
+  {
+    "start": "00:08:48",
+    "end": "00:08:52",
+    "type": "Relevant",
+    "reasoning": "Concludes that pushing the initial 20 units was an incorrect greedy decision."
+  },
+  {
+    "start": "00:08:52",
+    "end": "00:08:58",
+    "type": "Relevant",
+    "reasoning": "Proposes the correct alternative: splitting the flow into two paths of 10."
+  },
+  {
+    "start": "00:08:58",
+    "end": "00:08:58",
+    "type": "Irrelevant",
+    "reasoning": "Zero-length segment/artifact."
+  },
+  {
+    "start": "00:08:58",
+    "end": "00:09:08",
+    "type": "Relevant",
+    "reasoning": "Demonstrates how the alternative strategy achieves a total flow of 30."
+  },
+  {
+    "start": "00:09:08",
+    "end": "00:09:15",
+    "type": "Relevant",
+    "reasoning": "Explains the 'local minimum' problem where greedy leads to a suboptimal stuck state."
+  },
+  {
+    "start": "00:09:15",
+    "end": "00:09:18",
+    "type": "Relevant",
+    "reasoning": "Describes being unable to push more flow after making a poor initial choice."
+  },
+  {
+    "start": "00:09:18",
+    "end": "00:09:28",
+    "type": "Relevant",
+    "reasoning": "Introduces the solution: augmenting the graph to allow 'undoing' a mistake."
+  },
+  {
+    "start": "00:09:28",
+    "end": "00:09:31",
+    "type": "Relevant",
+    "reasoning": "Previews the mechanism used to backtrack through the current flow assignment."
+  },
+  {
+    "start": "00:09:31",
+    "end": "00:09:56",
+    "type": "Relevant",
+    "reasoning": "Differentiates this flow-undoing from standard backtracking like in Tic-Tac-Toe."
+  },
+  {
+    "start": "00:09:56",
+    "end": "00:10:01",
+    "type": "Relevant",
+    "reasoning": "Calls out the formal name of the concept: the Residual Graph."
+  },
+  {
+    "start": "00:10:01",
+    "end": "00:10:16",
+    "type": "Relevant",
+    "reasoning": "States that the Residual Graph allows us to correct greedy decisions."
+  },
+  {
+    "start": "00:10:16",
+    "end": "00:10:18",
+    "type": "Irrelevant",
+    "reasoning": "A pause while the instructor writes on the blackboard."
+  },
+  {
+    "start": "00:10:18",
+    "end": "00:10:21",
+    "type": "Relevant",
+    "reasoning": "Begins defining the rule for creating residual edges based on flow pushed."
+  },
+  {
+    "start": "00:10:21",
+    "end": "00:10:31",
+    "type": "Relevant",
+    "reasoning": "Explains that pushing flow from U to V creates a reverse edge from V to U."
+  },
+  {
+    "start": "00:10:31",
+    "end": "00:10:37",
+    "type": "Relevant",
+    "reasoning": "Details the capacity assignment for these newly created residual edges."
+  },
+  {
+    "start": "00:10:37",
+    "end": "00:10:40",
+    "type": "Relevant",
+    "reasoning": "States that this allows partial undoing of flow to look for better paths."
+  },
+  {
+    "start": "00:10:40",
+    "end": "00:10:43",
+    "type": "Relevant",
+    "reasoning": "Summarizes the intuition behind residual edges in an informal way."
+  },
+  {
+    "start": "00:10:43",
+    "end": "00:10:45",
+    "type": "Irrelevant",
+    "reasoning": "Transition statement about not providing a formal definition yet."
+  },
+  {
+    "start": "00:10:45",
+    "end": "00:10:55",
+    "type": "Relevant",
+    "reasoning": "Explains the high-level strategy: take any choice but leave an 'out' for later."
+  },
+  {
+    "start": "00:10:55",
+    "end": "00:10:57",
+    "type": "Relevant",
+    "reasoning": "Transitions to the concept of an Augmenting Path."
+  },
+  {
+    "start": "00:10:57",
+    "end": "00:11:00",
+    "type": "Relevant",
+    "reasoning": "Defines an Augmenting Path as any S-T path in a residual graph."
+  },
+  {
+    "start": "00:11:00",
+    "end": "00:11:01",
+    "type": "Irrelevant",
+    "reasoning": "Zero-length segment/artifact."
+  },
+  {
+    "start": "00:11:01",
+    "end": "00:11:05",
+    "type": "Relevant",
+    "reasoning": "Begins a concrete example walkthrough on the blackboard."
+  },
+  {
+    "start": "00:11:05",
+    "end": "00:11:08",
+    "type": "Relevant",
+    "reasoning": "Distinguishes between red values (flow) and black numbers (capacity) in the example."
+  },
+  {
+    "start": "00:11:08",
+    "end": "00:11:10",
+    "type": "Relevant",
+    "reasoning": "Identifies blue edges as the residual edges within the diagram."
+  },
+  {
+    "start": "00:11:10",
+    "end": "00:11:25",
+    "type": "Relevant",
+    "reasoning": "Walks through the creation of a residual edge from node A to S after flow is pushed."
+  },
+  {
+    "start": "00:11:25",
+    "end": "00:11:35",
+    "type": "Relevant",
+    "reasoning": "Explains how residual edges interact with existing edges in the opposite direction."
+  },
+  {
+    "start": "00:11:35",
+    "end": "00:11:41",
+    "type": "Relevant",
+    "reasoning": "Analyzes a specific H-I edge case involving two pre-existing directed edges."
+  },
+  {
+    "start": "00:11:41",
+    "end": "00:11:42",
+    "type": "Irrelevant",
+    "reasoning": "A brief vocal filler and adjustment of the diagram."
+  },
+  {
+    "start": "00:11:42",
+    "end": "00:11:51",
+    "type": "Relevant",
+    "reasoning": "Shows how to combine residual capacity with original capacity for an edge."
+  },
+  {
+    "start": "00:11:51",
+    "end": "00:12:00",
+    "type": "Relevant",
+    "reasoning": "Summarizes how to merge residual and existing edges by increasing capacity."
+  },
+  {
+    "start": "00:12:00",
+    "end": "00:12:03",
+    "type": "Irrelevant",
+    "reasoning": "Housekeeping/transition toward starting a classroom exercise."
+  },
+  {
+    "start": "00:12:03",
+    "end": "00:12:30",
+    "type": "Irrelevant",
+    "reasoning": "Admin/Logistics talk regarding handouts and checking student comprehension levels."
+  }
+]

@@ -1,0 +1,1814 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 8.0,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png",
+            "frame_00003.png",
+            "frame_00004.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 1,
+        "start": 8.0,
+        "end": 14.0,
+        "frames": [
+            "frame_00005.png",
+            "frame_00006.png",
+            "frame_00007.png"
+        ],
+        "transcript": "[Silent] for 6.88 sec"
+    },
+    {
+        "id": 2,
+        "start": 14.0,
+        "end": 16.48,
+        "frames": [
+            "frame_00008.png",
+            "frame_00009.png",
+            "frame_00010.png"
+        ],
+        "transcript": "Thanks, Allie, for the great intro."
+    },
+    {
+        "id": 3,
+        "start": 16.48,
+        "end": 28.24,
+        "frames": [
+            "frame_00011.png",
+            "frame_00012.png",
+            "frame_00013.png",
+            "frame_00014.png",
+            "frame_00015.png"
+        ],
+        "transcript": "Indeed, we're working on what I believe to be the extant problem in AI, which is to say, how do you validate, verify, audit, steer something that is as subjective and unstructured as literal LLM slop."
+    },
+    {
+        "id": 4,
+        "start": 28.24,
+        "end": 30.24,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "So today we're going to be talking a lot about this."
+    },
+    {
+        "id": 5,
+        "start": 30.24,
+        "end": 40.88,
+        "frames": [
+            "frame_00017.png",
+            "frame_00018.png"
+        ],
+        "transcript": "I should point out that ostensibly we're part of the AI security track, although I would really consider us more of a QA company and eval company in some sense, although there's a lot of shared similarities in how we approach the problem technically."
+    },
+    {
+        "id": 6,
+        "start": 40.88,
+        "end": 48.0,
+        "frames": [
+            "frame_00019.png",
+            "frame_00020.png"
+        ],
+        "transcript": "We are essentially a property-based testing company or FUS testing company, or as I like to call it, a hazing company."
+    },
+    {
+        "id": 7,
+        "start": 48.0,
+        "end": 49.92,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "Cool."
+    },
+    {
+        "id": 8,
+        "start": 49.92,
+        "end": 53.12,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "So just to set the context a little bit, why do we start haze?"
+    },
+    {
+        "id": 9,
+        "start": 53.12,
+        "end": 53.92,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "What does haze mean?"
+    },
+    {
+        "id": 10,
+        "start": 53.92,
+        "end": 64.24,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "Haze to us is ultimately, all right, we know that AI systems are extremely unreliable, they're hard to trust in practice, and you sort of need to pressure test them before you put them out into the wild."
+    },
+    {
+        "id": 11,
+        "start": 64.24,
+        "end": 77.28,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "Our solution to doing this is basically, let's just run large-scale optimization and simulation and search before deployment and try and figure out through a battery of tests whether or not your system will behave as expected before it actually goes into production."
+    },
+    {
+        "id": 12,
+        "start": 77.28,
+        "end": 87.12,
+        "frames": [
+            "frame_00026.png"
+        ],
+        "transcript": "And I'm sure any of you guys who have tried to build LLM apps in the past have understood extremely viscerally what I mean when I say the last male problem in AI."
+    },
+    {
+        "id": 13,
+        "start": 87.12,
+        "end": 94.16,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "It's at this point in 2025 extremely easy to get something that is demo ready or POC ready."
+    },
+    {
+        "id": 14,
+        "start": 94.16,
+        "end": 105.36,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "Like you can whip together a cool product over the weekend and impress your PM and whatnot, but it's really hard to get that same product into production at a point where it's truly robust and enterprise grade and reliable."
+    },
+    {
+        "id": 15,
+        "start": 105.36,
+        "end": 109.6,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "And this has been the case for the past two plus years at this point, right?"
+    },
+    {
+        "id": 16,
+        "start": 109.6,
+        "end": 120.96,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "Like we've been promised the allure of autonomy and agency and full-gen AI and enterprise transformation for two plus years since ChatGPT launched, and we're still not quite there, right?"
+    },
+    {
+        "id": 17,
+        "start": 120.96,
+        "end": 127.84,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "And I think ultimately it's because we haven't solved this last mile problem around trust and reliability and risk."
+    },
+    {
+        "id": 18,
+        "start": 127.84,
+        "end": 139.52,
+        "frames": [
+            "frame_00032.png"
+        ],
+        "transcript": "So I think part of the big reasons we haven't solved this is because people still think about evals and measuring your AI system in a very straightforward and naive sense, which is easiest to explain as follows, right?"
+    },
+    {
+        "id": 19,
+        "start": 139.52,
+        "end": 159.12,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "I'm sure everybody has seen this idea of going out, being a human subject matter expert, collecting a finite static golden data set of inputs and then expected outputs, ground truth outputs from the human, and then basically running the inputs through your AI application, getting the actual output, and then comparing it somehow with the ground truth, golden answers."
+    },
+    {
+        "id": 20,
+        "start": 159.12,
+        "end": 177.84,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "This is how evals has been done forever since the birth of deep learning and prior, but it doesn't quite hold up in the Gen AI era, specifically because of this property of Gen AI systems, which is what I like to call brittleness, or more technically, Lipschitz discontinuity."
+    },
+    {
+        "id": 21,
+        "start": 177.84,
+        "end": 184.72,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "And what I mean by this is, you know, people say AI is sensitive, AI is brittle, AI is non-deterministic, which is true."
+    },
+    {
+        "id": 22,
+        "start": 184.72,
+        "end": 186.0,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "This is all true."
+    },
+    {
+        "id": 23,
+        "start": 186.0,
+        "end": 189.84,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "But that's really not the main problem that makes AI so hard to deal with, right?"
+    },
+    {
+        "id": 24,
+        "start": 189.84,
+        "end": 192.32,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "Non-determinism is really fine if you set the temperature to zero."
+    },
+    {
+        "id": 25,
+        "start": 192.32,
+        "end": 199.76,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "Yes, there's like caching and weird systems, quirks, and all the LM providers that make it somewhat non-deterministic, even at scale."
+    },
+    {
+        "id": 26,
+        "start": 199.76,
+        "end": 203.52,
+        "frames": [
+            "frame_00040.png"
+        ],
+        "transcript": "But for the most part, non-determinism really doesn't bite you too much when you're building AI apps."
+    },
+    {
+        "id": 27,
+        "start": 203.52,
+        "end": 206.48,
+        "frames": [
+            "frame_00041.png"
+        ],
+        "transcript": "For the most part, constrain your outputs to temperature zero."
+    },
+    {
+        "id": 28,
+        "start": 206.48,
+        "end": 207.84,
+        "frames": [
+            "frame_00042.png"
+        ],
+        "transcript": "You're running things through a workflow."
+    },
+    {
+        "id": 29,
+        "start": 207.84,
+        "end": 209.04,
+        "frames": [
+            "frame_00043.png"
+        ],
+        "transcript": "It's fairly deterministic."
+    },
+    {
+        "id": 30,
+        "start": 209.04,
+        "end": 225.2,
+        "frames": [
+            "frame_00044.png"
+        ],
+        "transcript": "What does bite you a lot when you're building AI apps though is when you send two ostensibly similar inputs to your AI application with maybe slight variance in the syntax or the semantics or the appearance of the text, but all of a sudden you get wildly different outputs on the other side, right?"
+    },
+    {
+        "id": 31,
+        "start": 225.2,
+        "end": 228.32,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "This is what I mean when I say Gen AI apps are incredibly brittle."
+    },
+    {
+        "id": 32,
+        "start": 228.32,
+        "end": 235.04,
+        "frames": [
+            "frame_00046.png"
+        ],
+        "transcript": "And I think this is the actual core property that makes billing with AI, with Gen AI so difficult."
+    },
+    {
+        "id": 33,
+        "start": 235.04,
+        "end": 240.32,
+        "frames": [
+            "frame_00047.png"
+        ],
+        "transcript": "And of course we see this brittleness manifest itself in all sorts of fun ways."
+    },
+    {
+        "id": 34,
+        "start": 240.32,
+        "end": 257.52,
+        "frames": [
+            "frame_00048.png"
+        ],
+        "transcript": "I'm sure we don't have to belabor this point too much, but you've got everything from Air Canada customer supports hallucinating to character AI telling teenagers to commit suicide to buying a pickup truck for $1 on the Chevy patient or customer portal."
+    },
+    {
+        "id": 35,
+        "start": 257.52,
+        "end": 259.92,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "I don't think we need to go through more examples of this."
+    },
+    {
+        "id": 36,
+        "start": 259.92,
+        "end": 261.68,
+        "frames": [
+            "frame_00050.png"
+        ],
+        "transcript": "This happens more or less every single week."
+    },
+    {
+        "id": 37,
+        "start": 261.68,
+        "end": 263.6,
+        "frames": [
+            "frame_00051.png"
+        ],
+        "transcript": "There's more and more examples popping out."
+    },
+    {
+        "id": 38,
+        "start": 263.6,
+        "end": 269.84,
+        "frames": [
+            "frame_00052.png"
+        ],
+        "transcript": "And again, this all comes back to Gen AI being extremely sensitive and brittle to perturbations in the input space."
+    },
+    {
+        "id": 39,
+        "start": 269.84,
+        "end": 271.04,
+        "frames": [
+            "frame_00053.png"
+        ],
+        "transcript": "Cool."
+    },
+    {
+        "id": 40,
+        "start": 271.04,
+        "end": 274.64,
+        "frames": [
+            "frame_00054.png"
+        ],
+        "transcript": "So standard evals, of course, doesn't cover this brittleness property."
+    },
+    {
+        "id": 41,
+        "start": 274.64,
+        "end": 277.76,
+        "frames": [
+            "frame_00055.png"
+        ],
+        "transcript": "And I would say it's insufficient in two senses, two primary senses."
+    },
+    {
+        "id": 42,
+        "start": 277.76,
+        "end": 279.6,
+        "frames": [
+            "frame_00056.png"
+        ],
+        "transcript": "One is coverage, right?"
+    },
+    {
+        "id": 43,
+        "start": 279.6,
+        "end": 286.0,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "With a static data set, you only know how good your AI system will be with respect to that data set, right?"
+    },
+    {
+        "id": 44,
+        "start": 286.0,
+        "end": 303.28,
+        "frames": [
+            "frame_00058.png"
+        ],
+        "transcript": "It might look like your AI system is 100% on all your unit tests, on all your golden data set points, but if you just push around the corner and look around the corner for more inputs that cover your space more densely, it is entirely possible that you get perturbations that tell a very, very different story about how your AI application actually does in the wild."
+    },
+    {
+        "id": 45,
+        "start": 303.28,
+        "end": 306.8,
+        "frames": [
+            "frame_00059.png"
+        ],
+        "transcript": "So point number one, standard evals don't have sufficient coverage."
+    },
+    {
+        "id": 46,
+        "start": 306.8,
+        "end": 319.68,
+        "frames": [
+            "frame_00060.png"
+        ],
+        "transcript": "Second point two is it's actually really difficult to come up with a good measure of quality or even similarity between the outputs of your AI application and your ground truth outputs."
+    },
+    {
+        "id": 47,
+        "start": 319.68,
+        "end": 333.28,
+        "frames": [
+            "frame_00061.png"
+        ],
+        "transcript": "Really what we would want almost is a human subject matter expert who is constantly overseeing your AI application and a subject matter expert who has all the right taste and sensitivity but is able to translate that sensitivity into some quantitative metric."
+    },
+    {
+        "id": 48,
+        "start": 333.28,
+        "end": 335.52,
+        "frames": [
+            "frame_00062.png"
+        ],
+        "transcript": "This by no means is a trivial task, right?"
+    },
+    {
+        "id": 49,
+        "start": 335.52,
+        "end": 342.56,
+        "frames": [
+            "frame_00063.png"
+        ],
+        "transcript": "I think this is the core challenge that we've been trying to face in the field of AI around reward modeling for the past five, six, seven plus years, right?"
+    },
+    {
+        "id": 50,
+        "start": 342.56,
+        "end": 352.56,
+        "frames": [
+            "frame_00064.png"
+        ],
+        "transcript": "And the key challenge is how do you get that sensitivity from the subject matter expert from a non-technical domain to be able to translate their criteria into quantitative measures?"
+    },
+    {
+        "id": 51,
+        "start": 352.56,
+        "end": 356.4,
+        "frames": [
+            "frame_00065.png"
+        ],
+        "transcript": "This is not even close to something that's being solved with standard evals today."
+    },
+    {
+        "id": 52,
+        "start": 356.4,
+        "end": 361.6,
+        "frames": [
+            "frame_00066.png"
+        ],
+        "transcript": "People are using things like exact match, classifiers, LM as a judge, semantic selenity."
+    },
+    {
+        "id": 53,
+        "start": 361.6,
+        "end": 366.48,
+        "frames": [
+            "frame_00067.png"
+        ],
+        "transcript": "All these things have their own sets of quirks and undisiderana."
+    },
+    {
+        "id": 54,
+        "start": 366.48,
+        "end": 369.12,
+        "frames": [
+            "frame_00068.png"
+        ],
+        "transcript": "And we'll see how this pans out in a second."
+    },
+    {
+        "id": 55,
+        "start": 369.12,
+        "end": 375.68,
+        "frames": [
+            "frame_00069.png"
+        ],
+        "transcript": "Long story short of how we think about tackling this eval problem is essentially through hazing, right?"
+    },
+    {
+        "id": 56,
+        "start": 375.68,
+        "end": 377.68,
+        "frames": [
+            "frame_00070.png"
+        ],
+        "transcript": "Fluss testing in the AI era."
+    },
+    {
+        "id": 57,
+        "start": 377.68,
+        "end": 380.8,
+        "frames": [
+            "frame_00071.png"
+        ],
+        "transcript": "Essentially, what hazing comprises is very simple in the abstract."
+    },
+    {
+        "id": 58,
+        "start": 380.8,
+        "end": 384.96,
+        "frames": [
+            "frame_00072.png"
+        ],
+        "transcript": "We just simulate large-scale stimuli to send to your AI application."
+    },
+    {
+        "id": 59,
+        "start": 384.96,
+        "end": 387.68,
+        "frames": [
+            "frame_00073.png"
+        ],
+        "transcript": "We get the responses as a result of the stimuli."
+    },
+    {
+        "id": 60,
+        "start": 387.68,
+        "end": 391.52,
+        "frames": [
+            "frame_00074.png"
+        ],
+        "transcript": "We judge and analyze and score the outputs of your AI application."
+    },
+    {
+        "id": 61,
+        "start": 391.52,
+        "end": 394.72,
+        "frames": [
+            "frame_00075.png"
+        ],
+        "transcript": "And we use that as a signal to help guide the next round of search."
+    },
+    {
+        "id": 62,
+        "start": 394.72,
+        "end": 400.24,
+        "frames": [
+            "frame_00076.png"
+        ],
+        "transcript": "And we essentially just do this iteratively until we discover some bugs and corner cases that break your AI application."
+    },
+    {
+        "id": 63,
+        "start": 400.24,
+        "end": 405.2,
+        "frames": [
+            "frame_00077.png"
+        ],
+        "transcript": "If we don't discover anything and we exhaust our search budget, that means you're essentially ready for production."
+    },
+    {
+        "id": 64,
+        "start": 405.2,
+        "end": 408.08,
+        "frames": [
+            "frame_00078.png"
+        ],
+        "transcript": "So this is hazing in a nutshell."
+    },
+    {
+        "id": 65,
+        "start": 408.08,
+        "end": 414.0,
+        "frames": [
+            "frame_00079.png"
+        ],
+        "transcript": "But easy to describe, actually really difficult to execute in practice."
+    },
+    {
+        "id": 66,
+        "start": 414.0,
+        "end": 420.24,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "Both sides of the equation, in terms of scoring the output and also generating the input stimuli, are quite difficult technically."
+    },
+    {
+        "id": 67,
+        "start": 420.24,
+        "end": 426.72,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "I'll first talk about how do we think about scoring the output, again, translating from subjective criteria into quantitative metrics."
+    },
+    {
+        "id": 68,
+        "start": 426.72,
+        "end": 429.28,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "We call this judging more broadly."
+    },
+    {
+        "id": 69,
+        "start": 429.28,
+        "end": 444.4,
+        "frames": [
+            "frame_00083.png"
+        ],
+        "transcript": "Probably you guys are familiar with something like using LM as a judge to essentially have an LM look at the output of your AI application and decide, you know, based on some prompts or rubric that you give to your judge, is this a good response or is it a bad response?"
+    },
+    {
+        "id": 70,
+        "start": 444.4,
+        "end": 446.8,
+        "frames": [
+            "frame_00084.png"
+        ],
+        "transcript": "Tell me on a scale from one to five or one to ten or what have you."
+    },
+    {
+        "id": 71,
+        "start": 446.8,
+        "end": 452.88,
+        "frames": [
+            "frame_00085.png"
+        ],
+        "transcript": "Very simple to do, but it has its whole large array of different failure modes."
+    },
+    {
+        "id": 72,
+        "start": 452.88,
+        "end": 456.64,
+        "frames": [
+            "frame_00086.png"
+        ],
+        "transcript": "In particular, LM as a judge itself is prone to hallucinations."
+    },
+    {
+        "id": 73,
+        "start": 456.64,
+        "end": 459.92,
+        "frames": [
+            "frame_00087.png"
+        ],
+        "transcript": "It is obviously an LLM, so it's prone to hallucinations."
+    },
+    {
+        "id": 74,
+        "start": 459.92,
+        "end": 461.76,
+        "frames": [
+            "frame_00088.png"
+        ],
+        "transcript": "It is unstable."
+    },
+    {
+        "id": 75,
+        "start": 461.76,
+        "end": 467.04,
+        "frames": [
+            "frame_00089.png"
+        ],
+        "transcript": "You could have actually a really good articulation of the criteria, but it doesn't actually operationalize well into a model."
+    },
+    {
+        "id": 76,
+        "start": 467.04,
+        "end": 470.72,
+        "frames": [
+            "frame_00090.png"
+        ],
+        "transcript": "So it's uncalibrated in the output."
+    },
+    {
+        "id": 77,
+        "start": 470.72,
+        "end": 473.04,
+        "frames": [
+            "frame_00091.png"
+        ],
+        "transcript": "What is a 1 to an LLM?"
+    },
+    {
+        "id": 78,
+        "start": 473.04,
+        "end": 475.76,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "That's very different to what is a 1 to a human."
+    },
+    {
+        "id": 79,
+        "start": 475.76,
+        "end": 479.76,
+        "frames": [
+            "frame_00093.png"
+        ],
+        "transcript": "What is a 5 to a human is very different to what is a 5 to an LLM."
+    },
+    {
+        "id": 80,
+        "start": 479.76,
+        "end": 480.96,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "So it's uncalibrated."
+    },
+    {
+        "id": 81,
+        "start": 480.96,
+        "end": 482.64,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "It has all sorts of biases."
+    },
+    {
+        "id": 82,
+        "start": 482.64,
+        "end": 490.96,
+        "frames": [
+            "frame_00096.png"
+        ],
+        "transcript": "If you change the inputs in any weird position, let's say you present one response first and the second response, if you flip the order, that changes the results oftentime."
+    },
+    {
+        "id": 83,
+        "start": 490.96,
+        "end": 496.32,
+        "frames": [
+            "frame_00097.png"
+        ],
+        "transcript": "If you provide context or you change some part of your rubric, that changes the result of the LM is a judge to."
+    },
+    {
+        "id": 84,
+        "start": 496.32,
+        "end": 498.64,
+        "frames": [
+            "frame_00098.png"
+        ],
+        "transcript": "So extremely biased, extremely fickle."
+    },
+    {
+        "id": 85,
+        "start": 498.64,
+        "end": 508.48,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "And TLDR, LM as a judge itself, as an off-the-shelf call to an LLM, is oftentimes not going to solve your reliability issues."
+    },
+    {
+        "id": 86,
+        "start": 508.48,
+        "end": 513.76,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "So the key question in my mind is, how do you actually QA the judge itself, right?"
+    },
+    {
+        "id": 87,
+        "start": 513.76,
+        "end": 522.08,
+        "frames": [
+            "frame_00101.png"
+        ],
+        "transcript": "How do you get to a point where you can judge the judge and say that this is the best gold standard metric that I can use to then actually iterate my underlying AI application against?"
+    },
+    {
+        "id": 88,
+        "start": 522.08,
+        "end": 524.24,
+        "frames": [
+            "frame_00102.png"
+        ],
+        "transcript": "So how do you judge this judge?"
+    },
+    {
+        "id": 89,
+        "start": 524.24,
+        "end": 535.76,
+        "frames": [
+            "frame_00103.png"
+        ],
+        "transcript": "The broad philosophy that we've been taking over the past few months is essentially pushing the idea of inference time scaling, or more broadly compute time scaling to the judging stage."
+    },
+    {
+        "id": 90,
+        "start": 535.76,
+        "end": 538.08,
+        "frames": [
+            "frame_00104.png"
+        ],
+        "transcript": "So we call this scaling judge time compute."
+    },
+    {
+        "id": 91,
+        "start": 538.08,
+        "end": 541.76,
+        "frames": [
+            "frame_00105.png"
+        ],
+        "transcript": "And there's two ends of the spectrum of this philosophy."
+    },
+    {
+        "id": 92,
+        "start": 541.76,
+        "end": 550.24,
+        "frames": [
+            "frame_00106.png"
+        ],
+        "transcript": "One end of the spectrum is basically just rip from scratch, no inductive biases, train reasoning models that get really, really good at this evaluation task."
+    },
+    {
+        "id": 93,
+        "start": 550.24,
+        "end": 560.88,
+        "frames": [
+            "frame_00107.png"
+        ],
+        "transcript": "And then the other end of the spectrum is be very structured, don't train any models, just use the off-the-shelf LMs, have really strong inductive priors, but basically build agents as judges, right?"
+    },
+    {
+        "id": 94,
+        "start": 560.88,
+        "end": 562.48,
+        "frames": [
+            "frame_00108.png"
+        ],
+        "transcript": "So this is one approach."
+    },
+    {
+        "id": 95,
+        "start": 562.48,
+        "end": 567.2,
+        "frames": [
+            "frame_00109.png"
+        ],
+        "transcript": "Basically, we'll build agent frameworks, pipelines, workflows to do the judging task."
+    },
+    {
+        "id": 96,
+        "start": 567.2,
+        "end": 572.96,
+        "frames": [
+            "frame_00110.png",
+            "frame_00111.png"
+        ],
+        "transcript": "And we have this nice little library called Verdict that does this, very on-the-nose name, I know."
+    },
+    {
+        "id": 97,
+        "start": 572.96,
+        "end": 580.88,
+        "frames": [
+            "frame_00112.png",
+            "frame_00113.png"
+        ],
+        "transcript": "But the idea of Verdict is essentially, there's a lot of great intuition from the scalable oversight community, which is subfield of AI safety."
+    },
+    {
+        "id": 98,
+        "start": 580.88,
+        "end": 588.08,
+        "frames": [
+            "frame_00114.png"
+        ],
+        "transcript": "The goal of scalable oversight is basically how do you take smaller language models and have them audit and correct and steer stronger models."
+    },
+    {
+        "id": 99,
+        "start": 588.08,
+        "end": 595.44,
+        "frames": [
+            "frame_00115.png"
+        ],
+        "transcript": "Originally, this is an AI safety concept because people were worried about, you know, in the age of superhuman AI, how do you have weaker models, i.e."
+    },
+    {
+        "id": 100,
+        "start": 595.44,
+        "end": 596.96,
+        "frames": [
+            "frame_00116.png"
+        ],
+        "transcript": "humans, control the stronger models, right?"
+    },
+    {
+        "id": 101,
+        "start": 596.96,
+        "end": 598.4,
+        "frames": [
+            "frame_00117.png"
+        ],
+        "transcript": "And that's how the field got started."
+    },
+    {
+        "id": 102,
+        "start": 598.4,
+        "end": 609.92,
+        "frames": [
+            "frame_00118.png"
+        ],
+        "transcript": "But as a result of scalable oversight, there's been a lot of great intuition around the architectures and primitives and units that you would use to probe and reason and critique what a stronger model is doing."
+    },
+    {
+        "id": 103,
+        "start": 609.92,
+        "end": 614.24,
+        "frames": [
+            "frame_00119.png"
+        ],
+        "transcript": "And so we baked a lot of those primitives and architectures into this verdict library."
+    },
+    {
+        "id": 104,
+        "start": 614.24,
+        "end": 621.52,
+        "frames": [
+            "frame_00120.png"
+        ],
+        "transcript": "One example is having LMs debate each other, having the weaker LLMs debate each other about what the stronger model is saying and seeing if that makes sense."
+    },
+    {
+        "id": 105,
+        "start": 621.52,
+        "end": 626.8,
+        "frames": [
+            "frame_00121.png"
+        ],
+        "transcript": "Another example is having the LLMs, weaker LMs self-verify the results of their own responses, right?"
+    },
+    {
+        "id": 106,
+        "start": 626.8,
+        "end": 631.04,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "So having an LM say, okay, this response of the stronger model is good or bad."
+    },
+    {
+        "id": 107,
+        "start": 631.04,
+        "end": 632.4,
+        "frames": [
+            "frame_00123.png"
+        ],
+        "transcript": "It is bad for this reason."
+    },
+    {
+        "id": 108,
+        "start": 632.4,
+        "end": 635.6,
+        "frames": [
+            "frame_00124.png"
+        ],
+        "transcript": "And then maybe having an LLM critique its own reasoning, right?"
+    },
+    {
+        "id": 109,
+        "start": 635.6,
+        "end": 637.84,
+        "frames": [
+            "frame_00125.png"
+        ],
+        "transcript": "So self-verification is another great primitive."
+    },
+    {
+        "id": 110,
+        "start": 637.84,
+        "end": 644.16,
+        "frames": [
+            "frame_00126.png"
+        ],
+        "transcript": "Ensembling, of course, another classic primitive in this case, and so on and so forth."
+    },
+    {
+        "id": 111,
+        "start": 644.16,
+        "end": 657.2,
+        "frames": [
+            "frame_00127.png"
+        ],
+        "transcript": "TLDR, scaling judge-time compute in this particular way, through building agents as judges, actually allows you to come up with extremely powerful judging systems that are also quite cheap and also low latency."
+    },
+    {
+        "id": 112,
+        "start": 657.2,
+        "end": 667.36,
+        "frames": [
+            "frame_00128.png"
+        ],
+        "transcript": "So here's a plot of price and latency and accuracy of Verdict systems vis-\u00e0-vis some of the Frontier Labs reasoning models."
+    },
+    {
+        "id": 113,
+        "start": 667.36,
+        "end": 675.76,
+        "frames": [
+            "frame_00129.png"
+        ],
+        "transcript": "So you can see that Verdict is beating 01 and 03 Mini and of course GPT40 and 3.5 sonnets on the task of expert QA verification."
+    },
+    {
+        "id": 114,
+        "start": 675.76,
+        "end": 679.92,
+        "frames": [
+            "frame_00130.png"
+        ],
+        "transcript": "So this is subjective criteria grading in expert domains."
+    },
+    {
+        "id": 115,
+        "start": 679.92,
+        "end": 683.12,
+        "frames": [
+            "frame_00131.png"
+        ],
+        "transcript": "Critically Verdict here is powered by a GPT40 Mini backbone."
+    },
+    {
+        "id": 116,
+        "start": 683.12,
+        "end": 692.32,
+        "frames": [
+            "frame_00132.png"
+        ],
+        "transcript": "So we basically have stacked GPT40 Mini aggressively in what is, in this case, like a self-verified debate ensemble architecture."
+    },
+    {
+        "id": 117,
+        "start": 692.32,
+        "end": 696.8,
+        "frames": [
+            "frame_00133.png"
+        ],
+        "transcript": "And we're able to beat 01 for a fraction of the cost, like less than a third of the costs, right?"
+    },
+    {
+        "id": 118,
+        "start": 696.8,
+        "end": 700.08,
+        "frames": [
+            "frame_00134.png"
+        ],
+        "transcript": "And also less than a third of the latency."
+    },
+    {
+        "id": 119,
+        "start": 700.08,
+        "end": 706.4,
+        "frames": [
+            "frame_00135.png"
+        ],
+        "transcript": "And this is all because of the fact that we've chosen the priors in a pretty careful and intelligent way."
+    },
+    {
+        "id": 120,
+        "start": 706.4,
+        "end": 712.56,
+        "frames": [
+            "frame_00136.png"
+        ],
+        "transcript": "So that's one way to scale just-time compute, is basically building agents to do the task."
+    },
+    {
+        "id": 121,
+        "start": 712.56,
+        "end": 719.44,
+        "frames": [
+            "frame_00137.png"
+        ],
+        "transcript": "Other way to do it, and this is a lot more fun in my opinion, is basically, yeah, just rip RL from scratch, train models to do the judging task."
+    },
+    {
+        "id": 122,
+        "start": 719.44,
+        "end": 722.72,
+        "frames": [
+            "frame_00138.png"
+        ],
+        "transcript": "And this is something that we've also been pretty excited about over the past few months."
+    },
+    {
+        "id": 123,
+        "start": 722.72,
+        "end": 735.52,
+        "frames": [
+            "frame_00139.png"
+        ],
+        "transcript": "Again, for standard LM judges, whole host of issues, but two particular issues that are solved by RL is one, there's a lack of coherent rationales that explain why an LM as a judge thinks something is a five out of five or thinks something is good or bad."
+    },
+    {
+        "id": 124,
+        "start": 735.52,
+        "end": 745.28,
+        "frames": [
+            "frame_00140.png"
+        ],
+        "transcript": "And also, standard LM as a judge doesn't provide real, fine-grained, tailored, unique criteria to whatever idiosyncratic task and data you're looking at."
+    },
+    {
+        "id": 125,
+        "start": 745.28,
+        "end": 749.92,
+        "frames": [
+            "frame_00141.png"
+        ],
+        "transcript": "But both of these can be solved by RL tuning or specifically gRPO tuning."
+    },
+    {
+        "id": 126,
+        "start": 749.92,
+        "end": 755.12,
+        "frames": [
+            "frame_00142.png"
+        ],
+        "transcript": "One paper recently that has come out in this general flavor is from DeepSeek."
+    },
+    {
+        "id": 127,
+        "start": 755.12,
+        "end": 757.92,
+        "frames": [
+            "frame_00143.png"
+        ],
+        "transcript": "This is SPCT, Self-Principled Critique Tuning."
+    },
+    {
+        "id": 128,
+        "start": 757.92,
+        "end": 768.8,
+        "frames": [
+            "frame_00144.png"
+        ],
+        "transcript": "The idea here is essentially, can you get an LLM to first propose some data set, or sorry, data point-specific criteria about what to test for?"
+    },
+    {
+        "id": 129,
+        "start": 768.8,
+        "end": 778.4,
+        "frames": [
+            "frame_00145.png"
+        ],
+        "transcript": "It's almost like coming up with unit tests for the specific data point you're looking at, and having the LLM essentially look at each of those criteria and critique the data points on against each of those criteria."
+    },
+    {
+        "id": 130,
+        "start": 778.4,
+        "end": 782.56,
+        "frames": [
+            "frame_00146.png"
+        ],
+        "transcript": "So it's like instance-specific rubric and then instance-specific rubric critiques."
+    },
+    {
+        "id": 131,
+        "start": 782.56,
+        "end": 785.36,
+        "frames": [
+            "frame_00147.png"
+        ],
+        "transcript": "This is one way to train RL models."
+    },
+    {
+        "id": 132,
+        "start": 785.36,
+        "end": 795.92,
+        "frames": [
+            "frame_00148.png"
+        ],
+        "transcript": "We ran a pretty simple experiment using this, using a variant of this technique to gRPO train 600 million parameter and 1.7 billion parameter models."
+    },
+    {
+        "id": 133,
+        "start": 795.92,
+        "end": 814.8,
+        "frames": [
+            "frame_00149.png"
+        ],
+        "transcript": "And TLDR, this gets us to competitive performance on the reward bench task with Cloud3 Opus, which is at 80%, GP4 Mini, which is at 80%, Lam370B at 77%, and J1 Micro, which is this 1.7 billion parameter reward model at 80.7% accuracy on the WordBench task, right?"
+    },
+    {
+        "id": 134,
+        "start": 814.8,
+        "end": 817.12,
+        "frames": [
+            "frame_00150.png"
+        ],
+        "transcript": "And this is all because of judge time scaling."
+    },
+    {
+        "id": 135,
+        "start": 817.12,
+        "end": 824.0,
+        "frames": [
+            "frame_00151.png"
+        ],
+        "transcript": "This is all because we did gRPO to come up with better rubric proposals and better critiques on the specific tasks that we're looking at."
+    },
+    {
+        "id": 136,
+        "start": 824.0,
+        "end": 831.04,
+        "frames": [
+            "frame_00152.png"
+        ],
+        "transcript": "So training off essentially a much smaller model, doing more computes, gets you this much better performance."
+    },
+    {
+        "id": 137,
+        "start": 831.04,
+        "end": 835.2,
+        "frames": [
+            "frame_00153.png",
+            "frame_00154.png"
+        ],
+        "transcript": "And similar numbers for the 600 million parameter model."
+    },
+    {
+        "id": 138,
+        "start": 835.2,
+        "end": 839.6,
+        "frames": [
+            "frame_00155.png"
+        ],
+        "transcript": "Cool, so that's all judging and scoring the outputs."
+    },
+    {
+        "id": 139,
+        "start": 839.6,
+        "end": 843.84,
+        "frames": [
+            "frame_00156.png"
+        ],
+        "transcript": "Equally important, though, is how do you come up with inputs to throw out the AI system, right?"
+    },
+    {
+        "id": 140,
+        "start": 843.84,
+        "end": 845.52,
+        "frames": [
+            "frame_00157.png"
+        ],
+        "transcript": "And how do you run the search over time?"
+    },
+    {
+        "id": 141,
+        "start": 845.52,
+        "end": 848.64,
+        "frames": [
+            "frame_00158.png"
+        ],
+        "transcript": "TLDR, there's two ways that we think about this."
+    },
+    {
+        "id": 142,
+        "start": 848.64,
+        "end": 861.44,
+        "frames": [
+            "frame_00159.png"
+        ],
+        "transcript": "There is fuzzing in the general sense, which is essentially, okay, I just want to come up with some variants of some customer happy path and test my system under some reasonable in-distribution user inputs."
+    },
+    {
+        "id": 143,
+        "start": 861.44,
+        "end": 865.84,
+        "frames": [
+            "frame_00160.png"
+        ],
+        "transcript": "Then there's the more fun part, which is how do you do adversarial testing?"
+    },
+    {
+        "id": 144,
+        "start": 865.84,
+        "end": 872.72,
+        "frames": [
+            "frame_00161.png"
+        ],
+        "transcript": "How do you basically emulate some person trying to sit down and prompt inject and gel break and mess with your AI systems at large?"
+    },
+    {
+        "id": 145,
+        "start": 872.72,
+        "end": 877.12,
+        "frames": [
+            "frame_00162.png"
+        ],
+        "transcript": "And this is much more aggressive in terms of how we pursue the optimization problem."
+    },
+    {
+        "id": 146,
+        "start": 877.12,
+        "end": 889.04,
+        "frames": [
+            "frame_00163.png"
+        ],
+        "transcript": "Long story short is, you know, fuzzing in the AI sense is much more structured and optimization driven than in classical security or software or hardware."
+    },
+    {
+        "id": 147,
+        "start": 889.04,
+        "end": 898.56,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "It is impossible to search over the input space of natural language and do a brute force search in any reasonably short amount of time."
+    },
+    {
+        "id": 148,
+        "start": 898.56,
+        "end": 902.4,
+        "frames": [
+            "frame_00165.png"
+        ],
+        "transcript": "We're dealing with, let's say you were doing a Lama 3 tokenizer."
+    },
+    {
+        "id": 149,
+        "start": 902.4,
+        "end": 906.16,
+        "frames": [
+            "frame_00166.png"
+        ],
+        "transcript": "There's 128,000 tokens per individual input."
+    },
+    {
+        "id": 150,
+        "start": 906.16,
+        "end": 911.28,
+        "frames": [
+            "frame_00167.png"
+        ],
+        "transcript": "You scale this up to 100 million tokens, and you're literally impossible to scan this entire input space."
+    },
+    {
+        "id": 151,
+        "start": 911.28,
+        "end": 916.48,
+        "frames": [
+            "frame_00168.png"
+        ],
+        "transcript": "So you have to be very clever and guided and prune the search space as you do hazing and fuzzing."
+    },
+    {
+        "id": 152,
+        "start": 916.48,
+        "end": 919.12,
+        "frames": [
+            "frame_00169.png"
+        ],
+        "transcript": "We treat this task essentially as an optimization problem."
+    },
+    {
+        "id": 153,
+        "start": 919.12,
+        "end": 922.48,
+        "frames": [
+            "frame_00170.png"
+        ],
+        "transcript": "This is, long story short, just discrete optimization."
+    },
+    {
+        "id": 154,
+        "start": 922.48,
+        "end": 929.28,
+        "frames": [
+            "frame_00171.png"
+        ],
+        "transcript": "There's plenty of rich literature over the past 60, 70 years of discrete math research to go and support how to do this sort of task."
+    },
+    {
+        "id": 155,
+        "start": 929.28,
+        "end": 932.0,
+        "frames": [
+            "frame_00172.png"
+        ],
+        "transcript": "We have to massage it, of course, to work for the LLM domain."
+    },
+    {
+        "id": 156,
+        "start": 932.0,
+        "end": 934.8,
+        "frames": [
+            "frame_00173.png"
+        ],
+        "transcript": "But TLDR, the search space, is just natural language."
+    },
+    {
+        "id": 157,
+        "start": 934.8,
+        "end": 941.76,
+        "frames": [
+            "frame_00174.png"
+        ],
+        "transcript": "The objective that we're trying to minimize, in this case, is essentially whatever judge that we're using to score the output."
+    },
+    {
+        "id": 158,
+        "start": 941.76,
+        "end": 949.36,
+        "frames": [
+            "frame_00175.png"
+        ],
+        "transcript": "We basically want to find inputs that break your A application vis-\u00e0-vis the judge, gets the output to score very low on some measure of the judge."
+    },
+    {
+        "id": 159,
+        "start": 949.36,
+        "end": 953.44,
+        "frames": [
+            "frame_00176.png"
+        ],
+        "transcript": "And yeah, we can rip and throw a bunch of fun optimization algorithms at this."
+    },
+    {
+        "id": 160,
+        "start": 953.44,
+        "end": 960.88,
+        "frames": [
+            "frame_00177.png"
+        ],
+        "transcript": "We can use gradient-based methods to back prop all the way from the judge loss through the model to the input space and use that to guide what tokens we want to flip."
+    },
+    {
+        "id": 161,
+        "start": 960.88,
+        "end": 963.6,
+        "frames": [
+            "frame_00178.png"
+        ],
+        "transcript": "We can use various forms of tree search and MCTS."
+    },
+    {
+        "id": 162,
+        "start": 963.6,
+        "end": 972.88,
+        "frames": [
+            "frame_00179.png"
+        ],
+        "transcript": "We can search over the latent space of embedding models and then map from the embedding models to text and throw that at the underlying AI application or the application under test."
+    },
+    {
+        "id": 163,
+        "start": 972.88,
+        "end": 974.4,
+        "frames": [
+            "frame_00180.png"
+        ],
+        "transcript": "We can use DSPy."
+    },
+    {
+        "id": 164,
+        "start": 974.4,
+        "end": 979.12,
+        "frames": [
+            "frame_00181.png"
+        ],
+        "transcript": "We can use all sorts of other great tools and tricks to solve this optimization problem."
+    },
+    {
+        "id": 165,
+        "start": 979.12,
+        "end": 982.8,
+        "frames": [
+            "frame_00182.png"
+        ],
+        "transcript": "Some fun case studies in the last few minutes."
+    },
+    {
+        "id": 166,
+        "start": 982.8,
+        "end": 988.48,
+        "frames": [
+            "frame_00183.png"
+        ],
+        "transcript": "TLDR, you could probably imagine that this hazing thing matters a lot for people in regulated industries."
+    },
+    {
+        "id": 167,
+        "start": 988.48,
+        "end": 993.12,
+        "frames": [
+            "frame_00184.png"
+        ],
+        "transcript": "And indeed, we work a lot with banks and financial services and healthcare and so on."
+    },
+    {
+        "id": 168,
+        "start": 993.12,
+        "end": 998.24,
+        "frames": [
+            "frame_00185.png"
+        ],
+        "transcript": "We did something recently where we hazed the largest bank in Hungary."
+    },
+    {
+        "id": 169,
+        "start": 998.24,
+        "end": 1002.4,
+        "frames": [
+            "frame_00186.png"
+        ],
+        "transcript": "They had this loan calculation AI application that they're showing to customers."
+    },
+    {
+        "id": 170,
+        "start": 1002.4,
+        "end": 1006.56,
+        "frames": [
+            "frame_00187.png"
+        ],
+        "transcript": "The customer application had to follow this 18-line code of conduct is what they called it."
+    },
+    {
+        "id": 171,
+        "start": 1006.56,
+        "end": 1012.88,
+        "frames": [
+            "frame_00188.png"
+        ],
+        "transcript": "And we basically threw everything under the sun from our platform in terms of optimization and scoring to emulate adversaries."
+    },
+    {
+        "id": 172,
+        "start": 1012.88,
+        "end": 1020.8,
+        "frames": [
+            "frame_00189.png"
+        ],
+        "transcript": "We were able to discover a ton of prompt injections and gel breaks, and honestly, just unexpected corner cases that they didn't account for in their code of conduct."
+    },
+    {
+        "id": 173,
+        "start": 1020.8,
+        "end": 1024.08,
+        "frames": [
+            "frame_00190.png"
+        ],
+        "transcript": "And they were able to patch this up and then finally unblock their production into prod."
+    },
+    {
+        "id": 174,
+        "start": 1024.08,
+        "end": 1032.72,
+        "frames": [
+            "frame_00191.png"
+        ],
+        "transcript": "We are doing this right now for a Fortune 500 bank that wants to do outbound debt collection with voice agents."
+    },
+    {
+        "id": 175,
+        "start": 1032.72,
+        "end": 1038.8,
+        "frames": [
+            "frame_00192.png"
+        ],
+        "transcript": "A little bit actually more complex problem because now we're not just testing in the text space."
+    },
+    {
+        "id": 176,
+        "start": 1038.8,
+        "end": 1042.8,
+        "frames": [
+            "frame_00193.png"
+        ],
+        "transcript": "We're actually introducing a lot of variants to just the audio signal as well."
+    },
+    {
+        "id": 177,
+        "start": 1042.8,
+        "end": 1053.04,
+        "frames": [
+            "frame_00194.png"
+        ],
+        "transcript": "So adding things like background noise, stacking weird static into the input domain, changing the frequencies of things, et cetera, but still an optimization problem at the end of the day."
+    },
+    {
+        "id": 178,
+        "start": 1053.04,
+        "end": 1062.72,
+        "frames": [
+            "frame_00195.png"
+        ],
+        "transcript": "TLDR, what took this team three months or so to do with their internal ops teams, took, in their own words, only five minutes for a platform to do."
+    },
+    {
+        "id": 179,
+        "start": 1062.72,
+        "end": 1066.56,
+        "frames": [
+            "frame_00196.png"
+        ],
+        "transcript": "So scaling up adversary emulation works for this task as well."
+    },
+    {
+        "id": 180,
+        "start": 1066.56,
+        "end": 1074.96,
+        "frames": [
+            "frame_00197.png"
+        ],
+        "transcript": "And a little bit more difference, for another voice agent company, we've been helping them with scaling up their eval suite, right?"
+    },
+    {
+        "id": 181,
+        "start": 1074.96,
+        "end": 1080.24,
+        "frames": [
+            "frame_00198.png"
+        ],
+        "transcript": "So not so much hazing, but basically scaling up their subjective human annotators through Verdict."
+    },
+    {
+        "id": 182,
+        "start": 1080.24,
+        "end": 1087.6,
+        "frames": [
+            "frame_00199.png"
+        ],
+        "transcript": "They've seen a 38% increase in ground truth human agreements using Verdict as opposed to using their internal ops teams."
+    },
+    {
+        "id": 183,
+        "start": 1087.6,
+        "end": 1094.8,
+        "frames": [
+            "frame_00200.png"
+        ],
+        "transcript": "And what we're using here is essentially a tried and true architecture from the Verdict library, which is what we call a rubric fan out."
+    },
+    {
+        "id": 184,
+        "start": 1094.8,
+        "end": 1104.16,
+        "frames": [
+            "frame_00201.png"
+        ],
+        "transcript": "So it is basically propose individual unit tests and criteria for any particular data points, critique it, self-verify your critique, and then aggregate results at the very end."
+    },
+    {
+        "id": 185,
+        "start": 1104.16,
+        "end": 1105.68,
+        "frames": [
+            "frame_00202.png"
+        ],
+        "transcript": "Cool."
+    },
+    {
+        "id": 186,
+        "start": 1105.68,
+        "end": 1111.44,
+        "frames": [
+            "frame_00203.png",
+            "frame_00204.png",
+            "frame_00205.png"
+        ],
+        "transcript": "So we got a few minutes left for questions, but yeah, hazing is a ton of fun."
+    },
+    {
+        "id": 187,
+        "start": 1111.44,
+        "end": 1114.64,
+        "frames": [
+            "frame_00206.png"
+        ],
+        "transcript": "I think it matters a lot for this new era of software that we're building."
+    },
+    {
+        "id": 188,
+        "start": 1114.64,
+        "end": 1116.32,
+        "frames": [
+            "frame_00207.png"
+        ],
+        "transcript": "We're very aggressively hiring."
+    },
+    {
+        "id": 189,
+        "start": 1116.32,
+        "end": 1122.24,
+        "frames": [
+            "frame_00208.png"
+        ],
+        "transcript": "We're facing what I would deem to be insurmountable enterprise demands, and we're only a team of four people."
+    },
+    {
+        "id": 190,
+        "start": 1122.24,
+        "end": 1124.16,
+        "frames": [
+            "frame_00209.png"
+        ],
+        "transcript": "So we really need to scale up our team."
+    },
+    {
+        "id": 191,
+        "start": 1124.16,
+        "end": 1127.68,
+        "frames": [
+            "frame_00210.png"
+        ],
+        "transcript": "And yeah, we're based in New York in case you guys want to move out to the city."
+    },
+    {
+        "id": 192,
+        "start": 1127.68,
+        "end": 1130.72,
+        "frames": [
+            "frame_00211.png"
+        ],
+        "transcript": "And yeah, any last questions for me?"
+    },
+    {
+        "id": 193,
+        "start": 1130.72,
+        "end": 1134.48,
+        "frames": [
+            "frame_00212.png"
+        ],
+        "transcript": "For the hazing input, is it multi-shot or single-shot?"
+    },
+    {
+        "id": 194,
+        "start": 1134.48,
+        "end": 1135.76,
+        "frames": [
+            "frame_00213.png"
+        ],
+        "transcript": "Yeah, great question."
+    },
+    {
+        "id": 195,
+        "start": 1135.76,
+        "end": 1136.96,
+        "frames": [
+            "frame_00214.png"
+        ],
+        "transcript": "So we do both."
+    },
+    {
+        "id": 196,
+        "start": 1136.96,
+        "end": 1139.04,
+        "frames": [
+            "frame_00215.png"
+        ],
+        "transcript": "We do single turn, multi-turn."
+    },
+    {
+        "id": 197,
+        "start": 1139.04,
+        "end": 1142.16,
+        "frames": [
+            "frame_00216.png"
+        ],
+        "transcript": "We do persisted conversations if you're doing voice."
+    },
+    {
+        "id": 198,
+        "start": 1142.16,
+        "end": 1151.570431,
+        "frames": [
+            "frame_00217.png",
+            "frame_00218.png",
+            "frame_00219.png"
+        ],
+        "transcript": "Yeah, all sorts of modalities, all sorts of inputs."
+    }
+]

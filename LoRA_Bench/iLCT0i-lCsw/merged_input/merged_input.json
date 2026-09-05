@@ -1,0 +1,500 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 7.68,
+        "frames": [
+            "frame_00000.png"
+        ],
+        "transcript": "Yeah, so the last couple of videos included a lot of mathematical details which may not be super exciting."
+    },
+    {
+        "id": 1,
+        "start": 7.68,
+        "end": 15.76,
+        "frames": [
+            "frame_00001.png"
+        ],
+        "transcript": "So let's now take a look at a more hands-on example and do something more hands-on training an adaptive linear neuron in Python."
+    },
+    {
+        "id": 2,
+        "start": 15.76,
+        "end": 22.0,
+        "frames": [
+            "frame_00002.png",
+            "frame_00003.png"
+        ],
+        "transcript": "So here I will just give you the overview of how things relate to the Aderline."
+    },
+    {
+        "id": 3,
+        "start": 22.0,
+        "end": 23.92,
+        "frames": [
+            "frame_00004.png"
+        ],
+        "transcript": "So recall the Aderline."
+    },
+    {
+        "id": 4,
+        "start": 23.92,
+        "end": 28.4,
+        "frames": [
+            "frame_00005.png"
+        ],
+        "transcript": "That is what we covered briefly in the history of deep learning lecture."
+    },
+    {
+        "id": 5,
+        "start": 28.4,
+        "end": 34.32,
+        "frames": [
+            "frame_00006.png"
+        ],
+        "transcript": "That is a model by Widrow and Hoff in uh developed in 1990 and around the 1960s."
+    },
+    {
+        "id": 6,
+        "start": 34.32,
+        "end": 39.92,
+        "frames": [
+            "frame_00007.png"
+        ],
+        "transcript": "So actually it was a physical device, but you can of course also nowadays implement it in software."
+    },
+    {
+        "id": 7,
+        "start": 39.92,
+        "end": 43.36,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": "And this is a nicely differentiable neural model."
+    },
+    {
+        "id": 8,
+        "start": 43.36,
+        "end": 50.0,
+        "frames": [
+            "frame_00009.png"
+        ],
+        "transcript": "So the perceptron model that we talked about before is not differentiable because of this threshold function."
+    },
+    {
+        "id": 9,
+        "start": 50.0,
+        "end": 58.96,
+        "frames": [
+            "frame_00010.png"
+        ],
+        "transcript": "So this edder line you can think of it as an advancement of this perceptron that is now also converging even if the data is not linearly separable."
+    },
+    {
+        "id": 10,
+        "start": 58.96,
+        "end": 64.08,
+        "frames": [
+            "frame_00011.png"
+        ],
+        "transcript": "So yeah, just for comparison, so uh how the perceptron looked like."
+    },
+    {
+        "id": 11,
+        "start": 64.08,
+        "end": 76.72,
+        "frames": [
+            "frame_00012.png"
+        ],
+        "transcript": "So recall in the perceptron you or we compute the net input first, and then we pass the net input uh through a threshold function, and then the threshold function produces our output."
+    },
+    {
+        "id": 12,
+        "start": 76.72,
+        "end": 83.52,
+        "frames": [
+            "frame_00013.png"
+        ],
+        "transcript": "So the output is the predicted class label, which can be either zero or one."
+    },
+    {
+        "id": 13,
+        "start": 83.52,
+        "end": 94.32,
+        "frames": [
+            "frame_00014.png"
+        ],
+        "transcript": "And if the prediction matches the actual label for that given training example, then we don't do anything."
+    },
+    {
+        "id": 14,
+        "start": 94.32,
+        "end": 107.84,
+        "frames": [
+            "frame_00015.png"
+        ],
+        "transcript": "But if it doesn't match, if it's different, then we have this error term that we computed, so um yeah, the difference between the two, and we use that to update the weights."
+    },
+    {
+        "id": 15,
+        "start": 107.84,
+        "end": 114.16,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "So we update the weights, which then will change the decision boundary to make the prediction correct."
+    },
+    {
+        "id": 16,
+        "start": 114.16,
+        "end": 116.48,
+        "frames": [
+            "frame_00017.png"
+        ],
+        "transcript": "So that is how the perceptron works."
+    },
+    {
+        "id": 17,
+        "start": 116.48,
+        "end": 121.44,
+        "frames": [
+            "frame_00018.png"
+        ],
+        "transcript": "But a threshold function is not differentiable, so here we couldn't use calculus."
+    },
+    {
+        "id": 18,
+        "start": 121.44,
+        "end": 129.92,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "There was just this uh rule that was developed by I would say thinking hard about this problem, so it was more like an empirical update rule."
+    },
+    {
+        "id": 19,
+        "start": 129.92,
+        "end": 133.68,
+        "frames": [
+            "frame_00020.png"
+        ],
+        "transcript": "Now we can actually improve that by using calculus."
+    },
+    {
+        "id": 20,
+        "start": 133.68,
+        "end": 136.56,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "So at the bottom is the addeline."
+    },
+    {
+        "id": 21,
+        "start": 136.56,
+        "end": 145.2,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "So here you can think of this part here as the uh maybe base model, and this is yeah, like linear regression works."
+    },
+    {
+        "id": 22,
+        "start": 145.2,
+        "end": 148.96,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "So again, we also compute the net input similar to the perceptron."
+    },
+    {
+        "id": 23,
+        "start": 148.96,
+        "end": 157.76,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "Now we have as an activation function, um, we have this um identity function, which is not doing anything."
+    },
+    {
+        "id": 24,
+        "start": 157.76,
+        "end": 164.56,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "So if it's not doing anything, if my activation function is just the identity function, why do I write it down in the first place?"
+    },
+    {
+        "id": 25,
+        "start": 164.56,
+        "end": 171.92,
+        "frames": [
+            "frame_00026.png"
+        ],
+        "transcript": "That's because um yeah, next week or the week after that, we will be talking about non-linear activation functions."
+    },
+    {
+        "id": 26,
+        "start": 171.92,
+        "end": 181.52,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "We will be talking about our functions that are for example a sigmoidal function like um this one for example."
+    },
+    {
+        "id": 27,
+        "start": 181.52,
+        "end": 212.08,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "So we will be covering other types of activation functions, and we will need them to develop multi-layer networks because this will help our multi-layer network to yeah uh produce nonlinear decision boundaries for solving complex problems because if we would be using linear activation functions in a multi-layer neural network, then the multi-layer network would be just a combination of linear functions, and the yeah, the sum of linear functions is also just a linear function, so we wouldn't gain anything."
+    },
+    {
+        "id": 28,
+        "start": 212.08,
+        "end": 219.6,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "So later on we will be talking about non-linear activation functions, and here you can think of it as as a placeholder, we will replace that later."
+    },
+    {
+        "id": 29,
+        "start": 219.6,
+        "end": 227.84,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "I'm just including it here in the notation because then it's a more general notation that would apply to also non-linear activation functions."
+    },
+    {
+        "id": 30,
+        "start": 227.84,
+        "end": 232.48,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "Okay, now uh consider this uh linear regression base."
+    },
+    {
+        "id": 31,
+        "start": 232.48,
+        "end": 244.72,
+        "frames": [
+            "frame_00032.png"
+        ],
+        "transcript": "In order to turn this linear regression model into an adaptive linear neuron and an add align model, all we have to do is now adding a threshold function because the addaline model is a classifier."
+    },
+    {
+        "id": 32,
+        "start": 244.72,
+        "end": 250.96,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "So this is a classifier for classifying data points similar to the perceptron."
+    },
+    {
+        "id": 33,
+        "start": 250.96,
+        "end": 258.72,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "However, note the difference here really between the perceptron and the edaline is where we compute the error."
+    },
+    {
+        "id": 34,
+        "start": 258.72,
+        "end": 269.36,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "So for the perceptron, we compute the error after the threshold function, and in the edderline we compute the error before the threshold function."
+    },
+    {
+        "id": 35,
+        "start": 269.36,
+        "end": 276.48,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "So here we um don't have the problem that things are not differentiable because we computed before the threshold function."
+    },
+    {
+        "id": 36,
+        "start": 276.48,
+        "end": 284.8,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "The threshold function still is not differentiable, but we don't worry about that because we compute the gradients before that."
+    },
+    {
+        "id": 37,
+        "start": 284.8,
+        "end": 287.12,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "So in that way it's not a hindrance."
+    },
+    {
+        "id": 38,
+        "start": 287.12,
+        "end": 290.4,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "And it will become more clear when I show you the code example."
+    },
+    {
+        "id": 39,
+        "start": 290.4,
+        "end": 295.36,
+        "frames": [
+            "frame_00040.png",
+            "frame_00041.png"
+        ],
+        "transcript": "So here's just conceptually how it looks like when we fit an edderline model."
+    },
+    {
+        "id": 40,
+        "start": 295.36,
+        "end": 300.32,
+        "frames": [
+            "frame_00042.png"
+        ],
+        "transcript": "So here what I'm just doing is I'm showing you the class label on the y-axis."
+    },
+    {
+        "id": 41,
+        "start": 300.32,
+        "end": 311.28,
+        "frames": [
+            "frame_00043.png"
+        ],
+        "transcript": "So for binary classification where we have two uh classification where we have two class labels, a one and a zero."
+    },
+    {
+        "id": 42,
+        "start": 311.28,
+        "end": 312.96,
+        "frames": [
+            "frame_00044.png"
+        ],
+        "transcript": "I have plotted them here."
+    },
+    {
+        "id": 43,
+        "start": 312.96,
+        "end": 320.72,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "So the class labels can be either one or zero, and then we have only one feature value for simplicity here."
+    },
+    {
+        "id": 44,
+        "start": 320.72,
+        "end": 325.68,
+        "frames": [
+            "frame_00046.png"
+        ],
+        "transcript": "And yeah, we want to predict that in the linear neuron is a linear model."
+    },
+    {
+        "id": 45,
+        "start": 325.68,
+        "end": 332.24,
+        "frames": [
+            "frame_00047.png"
+        ],
+        "transcript": "So essentially what it will learn is will it fit a linear line similar to linear regression."
+    },
+    {
+        "id": 46,
+        "start": 332.24,
+        "end": 334.96,
+        "frames": [
+            "frame_00048.png"
+        ],
+        "transcript": "So this would be very similar to linear regression, right?"
+    },
+    {
+        "id": 47,
+        "start": 334.96,
+        "end": 344.08,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "Except you know the difference is really that in linear regression we usually have continuous values, not only zeros and ones, and we don't have the threshold function."
+    },
+    {
+        "id": 48,
+        "start": 344.08,
+        "end": 366.32,
+        "frames": [
+            "frame_00050.png"
+        ],
+        "transcript": "So in the edder line, after fitting this model, we apply this threshold function, let's say at point five between zero and one, and we say then if something um if something is bigger than a certain value, so if the it's maybe a little bit unfortunate that I wrote class label here because this is a threshold."
+    },
+    {
+        "id": 49,
+        "start": 366.32,
+        "end": 382.0,
+        "frames": [
+            "frame_00051.png"
+        ],
+        "transcript": "If the prediction, let's say prediction, if the prediction is greater than 0.5, produce class label one, and otherwise produce class label zero."
+    },
+    {
+        "id": 50,
+        "start": 382.0,
+        "end": 386.64,
+        "frames": [
+            "frame_00052.png"
+        ],
+        "transcript": "So in that way we turn the continuous prediction into a class label."
+    },
+    {
+        "id": 51,
+        "start": 386.64,
+        "end": 390.08,
+        "frames": [
+            "frame_00053.png",
+            "frame_00054.png"
+        ],
+        "transcript": "Again, this will become clear when I show you the code example."
+    },
+    {
+        "id": 52,
+        "start": 390.08,
+        "end": 392.56,
+        "frames": [
+            "frame_00055.png"
+        ],
+        "transcript": "So I prepared some code examples."
+    },
+    {
+        "id": 53,
+        "start": 392.56,
+        "end": 396.24,
+        "frames": [
+            "frame_00056.png"
+        ],
+        "transcript": "Let me um pause this video and do this in a fresh video."
+    },
+    {
+        "id": 54,
+        "start": 396.24,
+        "end": 402.869133,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "So there will be another video where I will go over these code examples."
+    }
+]

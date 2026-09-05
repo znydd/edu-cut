@@ -1,0 +1,1139 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 1.52,
+        "frames": [
+            "frame_00000.png"
+        ],
+        "transcript": "Um what are we going to do today?"
+    },
+    {
+        "id": 1,
+        "start": 1.52,
+        "end": 4.56,
+        "frames": [
+            "frame_00001.png"
+        ],
+        "transcript": "So we are going to continue our study of max flow."
+    },
+    {
+        "id": 2,
+        "start": 4.56,
+        "end": 10.64,
+        "frames": [
+            "frame_00002.png"
+        ],
+        "transcript": "So I believe Nathan left you with the Edmonds-Carp algorithm and the sort of explanation."
+    },
+    {
+        "id": 3,
+        "start": 10.64,
+        "end": 14.4,
+        "frames": [
+            "frame_00003.png"
+        ],
+        "transcript": "We're left at the spot where we're trying to explain how that algorithm works."
+    },
+    {
+        "id": 4,
+        "start": 14.4,
+        "end": 21.68,
+        "frames": [
+            "frame_00004.png"
+        ],
+        "transcript": "So what I'm going to do today is since it's been a week, briefly go over the max flow problem, the formalization."
+    },
+    {
+        "id": 5,
+        "start": 21.68,
+        "end": 26.96,
+        "frames": [
+            "frame_00005.png"
+        ],
+        "transcript": "The algorithm, the algorithmic framework that we talk about is the Ford Fulkerson method."
+    },
+    {
+        "id": 6,
+        "start": 26.96,
+        "end": 37.6,
+        "frames": [
+            "frame_00006.png"
+        ],
+        "transcript": "So just like with just like with minimum spanning trees, remember we came up with this big idea, this cut theorem for the minimum spanning trees."
+    },
+    {
+        "id": 7,
+        "start": 37.6,
+        "end": 45.36,
+        "frames": [
+            "frame_00007.png"
+        ],
+        "transcript": "And then all of the algorithms that we came up with were essentially specific implementations, specific applications of that cut lemma."
+    },
+    {
+        "id": 8,
+        "start": 45.36,
+        "end": 51.76,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": "Well, similarly, with max flow problems, there's going to be this very strong principle."
+    },
+    {
+        "id": 9,
+        "start": 51.76,
+        "end": 53.84,
+        "frames": [
+            "frame_00009.png"
+        ],
+        "transcript": "It's it's the notion of duality."
+    },
+    {
+        "id": 10,
+        "start": 53.84,
+        "end": 58.0,
+        "frames": [
+            "frame_00010.png"
+        ],
+        "transcript": "And it's this max flow is equal to the min-cut theorem."
+    },
+    {
+        "id": 11,
+        "start": 58.0,
+        "end": 62.56,
+        "frames": [
+            "frame_00011.png"
+        ],
+        "transcript": "And that is going to drive all of the algorithms, at least all of the algorithms that we're going to study."
+    },
+    {
+        "id": 12,
+        "start": 62.56,
+        "end": 66.48,
+        "frames": [
+            "frame_00012.png"
+        ],
+        "transcript": "So we first studied this first algorithm, the Ford Fulkerson algorithm."
+    },
+    {
+        "id": 13,
+        "start": 66.48,
+        "end": 74.08,
+        "frames": [
+            "frame_00013.png"
+        ],
+        "transcript": "We discovered that there were some uh possible efficiency problems with that algorithm, so we studied this heuristic called the Edmonds-Carp algorithm."
+    },
+    {
+        "id": 14,
+        "start": 74.08,
+        "end": 78.16,
+        "frames": [
+            "frame_00014.png"
+        ],
+        "transcript": "It still uses the same idea as Ford Fulkerson, but we can have a tighter analysis."
+    },
+    {
+        "id": 15,
+        "start": 78.16,
+        "end": 81.52,
+        "frames": [
+            "frame_00015.png"
+        ],
+        "transcript": "Now in the graduate version of this class, we take this even further."
+    },
+    {
+        "id": 16,
+        "start": 81.52,
+        "end": 94.32,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "So our favorite data structures person, the guy who came up with the Fibonacci heaps and did all that stuff with the minimum spending tree stuff, Tarjan, he also has this notion of uh push-relabel style algorithms."
+    },
+    {
+        "id": 17,
+        "start": 94.32,
+        "end": 103.28,
+        "frames": [
+            "frame_00017.png"
+        ],
+        "transcript": "It's a different algorithmic framework for solving max flow, and you can use push-relabel to get beyond the run runtime complexities that we have."
+    },
+    {
+        "id": 18,
+        "start": 103.28,
+        "end": 110.0,
+        "frames": [
+            "frame_00018.png"
+        ],
+        "transcript": "We don't talk about it here, but if you're interested, and you know, this is all all of the implementations of these things are actually straightforward."
+    },
+    {
+        "id": 19,
+        "start": 110.0,
+        "end": 114.24,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "So if you're interested, uh I'm happy to make more materials available to you."
+    },
+    {
+        "id": 20,
+        "start": 114.24,
+        "end": 124.4,
+        "frames": [
+            "frame_00020.png"
+        ],
+        "transcript": "So what we'll do today, admins carp, so review of MaxFlow, admin's carp, why it works, and then some neat applications of Maxflow mincut."
+    },
+    {
+        "id": 21,
+        "start": 124.4,
+        "end": 130.96,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "So things like solving bipartite matchings, which is very critical to sort of scheduling problems."
+    },
+    {
+        "id": 22,
+        "start": 130.96,
+        "end": 133.36,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "We'll talk about flight scheduling."
+    },
+    {
+        "id": 23,
+        "start": 133.36,
+        "end": 141.6,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "So for example, if you want to if you're a company and you want to fly your executives to some retreat, perhaps you don't want to put them all on the same flight."
+    },
+    {
+        "id": 24,
+        "start": 141.6,
+        "end": 146.88,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "That would be perhaps risky if you're a Fortune 500 company and you put all your execs on one flight."
+    },
+    {
+        "id": 25,
+        "start": 146.88,
+        "end": 147.92,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "What if the flight's late?"
+    },
+    {
+        "id": 26,
+        "start": 147.92,
+        "end": 150.56,
+        "frames": [
+            "frame_00026.png"
+        ],
+        "transcript": "I mean, the whole vacation would be ruined, right?"
+    },
+    {
+        "id": 27,
+        "start": 150.56,
+        "end": 158.64,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "Or even worse, if it was a flight that uh you know had some mechanical trouble, then your leadership might uh might be imperiled."
+    },
+    {
+        "id": 28,
+        "start": 158.64,
+        "end": 165.92,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "So you of course want to find uh different ways to get all your executives to Hawaii because it's very important for them to be there."
+    },
+    {
+        "id": 29,
+        "start": 165.92,
+        "end": 169.04,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "Um that type of uh constraints."
+    },
+    {
+        "id": 30,
+        "start": 169.04,
+        "end": 177.76,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "We'll talk about edge disjoint pads, node disjoint pads, and then a very cool application of max flow min cut to baseball elimination."
+    },
+    {
+        "id": 31,
+        "start": 177.76,
+        "end": 182.48,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "So the question, will my team possibly make it to the playoffs?"
+    },
+    {
+        "id": 32,
+        "start": 182.48,
+        "end": 187.76,
+        "frames": [
+            "frame_00032.png"
+        ],
+        "transcript": "Turns out for baseball you can solve this problem using an application of max flow."
+    },
+    {
+        "id": 33,
+        "start": 187.76,
+        "end": 192.72,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "So one of the first, it's not a paper, but it's uh well it's a paper, but it wasn't published."
+    },
+    {
+        "id": 34,
+        "start": 192.72,
+        "end": 202.0,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "One of the first things that my um in grad school, my fellow uh office mates and I, we asked a similar question for basketball."
+    },
+    {
+        "id": 35,
+        "start": 202.0,
+        "end": 209.68,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "So if you think about the the you know those basketball pyramids brackets, brackets."
+    },
+    {
+        "id": 36,
+        "start": 209.68,
+        "end": 218.96,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "So the for the March Madness, you you basically fill out a bracket and then you do this competitively with your friends, and money is involved."
+    },
+    {
+        "id": 37,
+        "start": 218.96,
+        "end": 225.28,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "The person who has the closest, you know, closest guesstimate to the actual outcome, there's some scoring system."
+    },
+    {
+        "id": 38,
+        "start": 225.28,
+        "end": 227.12,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "Uh everybody know what I'm talking about?"
+    },
+    {
+        "id": 39,
+        "start": 227.12,
+        "end": 229.76,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "Because I'm certainly not doing a good job explaining this."
+    },
+    {
+        "id": 40,
+        "start": 229.76,
+        "end": 235.52,
+        "frames": [
+            "frame_00040.png"
+        ],
+        "transcript": "Um so those brackets, those those are you know fun, fun with sports, right?"
+    },
+    {
+        "id": 41,
+        "start": 235.52,
+        "end": 240.0,
+        "frames": [
+            "frame_00041.png"
+        ],
+        "transcript": "It turns out with baseball, you can solve this in polynomial time using maxwell and cut."
+    },
+    {
+        "id": 42,
+        "start": 240.0,
+        "end": 242.0,
+        "frames": [
+            "frame_00042.png"
+        ],
+        "transcript": "With the basketball, the fun with sports."
+    },
+    {
+        "id": 43,
+        "start": 242.0,
+        "end": 245.28,
+        "frames": [
+            "frame_00043.png"
+        ],
+        "transcript": "So answering the question, tournament has started."
+    },
+    {
+        "id": 44,
+        "start": 245.28,
+        "end": 250.08,
+        "frames": [
+            "frame_00044.png"
+        ],
+        "transcript": "We are in the middle of the tournament, and I have a schedule and you have a schedule."
+    },
+    {
+        "id": 45,
+        "start": 250.08,
+        "end": 252.64,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "Is it possible for me to win or not?"
+    },
+    {
+        "id": 46,
+        "start": 252.64,
+        "end": 255.84,
+        "frames": [
+            "frame_00046.png"
+        ],
+        "transcript": "Answering that question turns out to be NP complete."
+    },
+    {
+        "id": 47,
+        "start": 255.84,
+        "end": 257.76,
+        "frames": [
+            "frame_00047.png"
+        ],
+        "transcript": "So kind of very cool."
+    },
+    {
+        "id": 48,
+        "start": 257.76,
+        "end": 259.44,
+        "frames": [
+            "frame_00048.png"
+        ],
+        "transcript": "This is why I think it's fun."
+    },
+    {
+        "id": 49,
+        "start": 259.44,
+        "end": 265.92,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "So let's go ahead and get started."
+    },
+    {
+        "id": 50,
+        "start": 265.92,
+        "end": 267.92,
+        "frames": [
+            "frame_00050.png",
+            "frame_00051.png"
+        ],
+        "transcript": "Uh Max Flow."
+    },
+    {
+        "id": 51,
+        "start": 267.92,
+        "end": 272.0,
+        "frames": [
+            "frame_00052.png"
+        ],
+        "transcript": "Everybody remember the motivation that we had for this problem."
+    },
+    {
+        "id": 52,
+        "start": 272.0,
+        "end": 274.4,
+        "frames": [
+            "frame_00053.png",
+            "frame_00054.png"
+        ],
+        "transcript": "It was this rail network in Europe."
+    },
+    {
+        "id": 53,
+        "start": 274.4,
+        "end": 290.16,
+        "frames": [
+            "frame_00055.png",
+            "frame_00056.png"
+        ],
+        "transcript": "Uh we there was, you know, practically you would like to figure out the minimum number of rail connections you have to uh remove in order to separate uh the Soviet bloc from Western Europe in the case of an invasion."
+    },
+    {
+        "id": 54,
+        "start": 290.16,
+        "end": 294.56,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "And that was one of the motivations behind this particular problem."
+    },
+    {
+        "id": 55,
+        "start": 294.56,
+        "end": 305.52,
+        "frames": [
+            "frame_00058.png"
+        ],
+        "transcript": "So the way that mathematicians formalize this combinator problem, so we have a graph with vertices and edges, and we have two distinct nodes, a source and a sink."
+    },
+    {
+        "id": 56,
+        "start": 305.52,
+        "end": 309.12,
+        "frames": [
+            "frame_00059.png"
+        ],
+        "transcript": "And each of the edges have capacities."
+    },
+    {
+        "id": 57,
+        "start": 309.12,
+        "end": 319.12,
+        "frames": [
+            "frame_00060.png"
+        ],
+        "transcript": "So we have some capacity function which maps the edges to uh we can we can make this real numbers, but let's just make them rational numbers, right?"
+    },
+    {
+        "id": 58,
+        "start": 319.12,
+        "end": 320.0,
+        "frames": [
+            "frame_00061.png"
+        ],
+        "transcript": "So rational."
+    },
+    {
+        "id": 59,
+        "start": 320.0,
+        "end": 327.0,
+        "frames": [
+            "frame_00062.png"
+        ],
+        "transcript": "[Silent] for 7.92 sec"
+    },
+    {
+        "id": 60,
+        "start": 327.0,
+        "end": 328.48,
+        "frames": [
+            "frame_00063.png"
+        ],
+        "transcript": "Right?"
+    },
+    {
+        "id": 61,
+        "start": 328.48,
+        "end": 336.8,
+        "frames": [
+            "frame_00064.png",
+            "frame_00065.png"
+        ],
+        "transcript": "And the problem is we would like to we'd like to send flow along this network."
+    },
+    {
+        "id": 62,
+        "start": 336.8,
+        "end": 343.36,
+        "frames": [
+            "frame_00066.png"
+        ],
+        "transcript": "So the the edges are kind of like the edges of the graph are like pipes, and we'd like to send like an abstract notion of flow."
+    },
+    {
+        "id": 63,
+        "start": 343.36,
+        "end": 345.12,
+        "frames": [
+            "frame_00067.png"
+        ],
+        "transcript": "And this flow could represent all sorts of things."
+    },
+    {
+        "id": 64,
+        "start": 345.12,
+        "end": 355.2,
+        "frames": [
+            "frame_00068.png"
+        ],
+        "transcript": "In the case of this troop movement situation, it actually represents trains, but we can think of them as uh many things, and uh time and money and and so forth."
+    },
+    {
+        "id": 65,
+        "start": 355.2,
+        "end": 363.28,
+        "frames": [
+            "frame_00069.png"
+        ],
+        "transcript": "So what we'd like to do is find some function f which maps the edges to numbers as well."
+    },
+    {
+        "id": 66,
+        "start": 363.28,
+        "end": 372.88,
+        "frames": [
+            "frame_00070.png"
+        ],
+        "transcript": "Uh and of course, if that was the only thing, if we just had to put numbers on edges, then we could assign everything to zero, and that would, you know, that would that it wouldn't be very interesting."
+    },
+    {
+        "id": 67,
+        "start": 372.88,
+        "end": 376.24,
+        "frames": [
+            "frame_00071.png"
+        ],
+        "transcript": "So we have to add constraints to the type of flow that we want."
+    },
+    {
+        "id": 68,
+        "start": 376.24,
+        "end": 380.88,
+        "frames": [
+            "frame_00072.png"
+        ],
+        "transcript": "And the constraints are essentially uh they're they're very natural."
+    },
+    {
+        "id": 69,
+        "start": 380.88,
+        "end": 387.76,
+        "frames": [
+            "frame_00073.png"
+        ],
+        "transcript": "So the first constraint is that the flow on every edge has to be less than the capacity of that edge."
+    },
+    {
+        "id": 70,
+        "start": 387.76,
+        "end": 392.8,
+        "frames": [
+            "frame_00074.png"
+        ],
+        "transcript": "That was the point of the capacity, represents the maximum amount of flow you can put on that edge."
+    },
+    {
+        "id": 71,
+        "start": 392.8,
+        "end": 395.12,
+        "frames": [
+            "frame_00075.png"
+        ],
+        "transcript": "Uh so that's the capacity constraint."
+    },
+    {
+        "id": 72,
+        "start": 395.12,
+        "end": 402.64,
+        "frames": [
+            "frame_00076.png"
+        ],
+        "transcript": "And the next is the flow constraint, which means essentially input and there's no access flow at any node."
+    },
+    {
+        "id": 73,
+        "start": 402.64,
+        "end": 422.4,
+        "frames": [
+            "frame_00077.png"
+        ],
+        "transcript": "All right, so for every for every node that's not the source of the sync, we would like the inflow of node V to be the outflow of node V."
+    },
+    {
+        "id": 74,
+        "start": 422.4,
+        "end": 424.72,
+        "frames": [
+            "frame_00078.png"
+        ],
+        "transcript": "Okay?"
+    },
+    {
+        "id": 75,
+        "start": 424.72,
+        "end": 442.08,
+        "frames": [
+            "frame_00079.png"
+        ],
+        "transcript": "And another way of writing that is to say that the flow that is going in to V should equal the flow that is going out of V."
+    },
+    {
+        "id": 76,
+        "start": 442.08,
+        "end": 448.0,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "[Silent] for 6.24 sec"
+    },
+    {
+        "id": 77,
+        "start": 448.0,
+        "end": 451.319,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "V"
+    },
+    {
+        "id": 78,
+        "start": 451.319,
+        "end": 451.92,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "Okay?"
+    },
+    {
+        "id": 79,
+        "start": 451.92,
+        "end": 456.88,
+        "frames": [
+            "frame_00083.png"
+        ],
+        "transcript": "And then finally, we have the actual measure of this flow."
+    },
+    {
+        "id": 80,
+        "start": 456.88,
+        "end": 458.88,
+        "frames": [
+            "frame_00084.png"
+        ],
+        "transcript": "Do you remember what that was?"
+    },
+    {
+        "id": 81,
+        "start": 458.88,
+        "end": 469.12,
+        "frames": [
+            "frame_00085.png"
+        ],
+        "transcript": "Remember, the goal of this problem is we are trying to push flow from the source to the sink."
+    },
+    {
+        "id": 82,
+        "start": 469.12,
+        "end": 473.6,
+        "frames": [
+            "frame_00086.png"
+        ],
+        "transcript": "And by flow it means we want to assign a number to each edge."
+    },
+    {
+        "id": 83,
+        "start": 473.6,
+        "end": 476.96,
+        "frames": [
+            "frame_00087.png"
+        ],
+        "transcript": "That number should be less than the capacity of that edge."
+    },
+    {
+        "id": 84,
+        "start": 476.96,
+        "end": 482.32,
+        "frames": [
+            "frame_00088.png"
+        ],
+        "transcript": "At every node, we shouldn't have more stuff coming in than going out, or vice versa."
+    },
+    {
+        "id": 85,
+        "start": 482.32,
+        "end": 488.56,
+        "frames": [
+            "frame_00089.png"
+        ],
+        "transcript": "And overall, we're going to measure the value of this flow as what?"
+    },
+    {
+        "id": 86,
+        "start": 488.56,
+        "end": 495.0,
+        "frames": [
+            "frame_00090.png"
+        ],
+        "transcript": "[Silent] for 7.36 sec"
+    },
+    {
+        "id": 87,
+        "start": 495.0,
+        "end": 497.68,
+        "frames": [
+            "frame_00091.png"
+        ],
+        "transcript": "Yeah, so essentially."
+    },
+    {
+        "id": 88,
+        "start": 497.68,
+        "end": 503.879,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "essentially"
+    },
+    {
+        "id": 89,
+        "start": 503.879,
+        "end": 510.0,
+        "frames": [
+            "frame_00093.png"
+        ],
+        "transcript": "[Silent] for 6.84 sec"
+    },
+    {
+        "id": 90,
+        "start": 510.0,
+        "end": 517.44,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "For the source, and we're gonna find that this is gonna be the same as the sink because of this flow constraint."
+    },
+    {
+        "id": 91,
+        "start": 517.44,
+        "end": 528.8,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "But essentially we're gonna measure the flow by saying, let's take all the stuff that's coming out of the source and subtract all the stuff that's coming into the source, and that's going to be the value of our flow."
+    },
+    {
+        "id": 92,
+        "start": 528.8,
+        "end": 532.279,
+        "frames": [
+            "frame_00096.png"
+        ],
+        "transcript": "flow"
+    },
+    {
+        "id": 93,
+        "start": 532.279,
+        "end": 538.0,
+        "frames": [
+            "frame_00097.png",
+            "frame_00098.png"
+        ],
+        "transcript": "[Silent] for 5.80 sec"
+    },
+    {
+        "id": 94,
+        "start": 538.0,
+        "end": 538.4,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "Okay?"
+    },
+    {
+        "id": 95,
+        "start": 538.4,
+        "end": 548.08,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "So given a graph, we would like to compute this value."
+    },
+    {
+        "id": 96,
+        "start": 548.08,
+        "end": 555.2,
+        "frames": [
+            "frame_00101.png"
+        ],
+        "transcript": "Over every possible flow that's valid, we would like to find the flow that has the largest value."
+    },
+    {
+        "id": 97,
+        "start": 555.2,
+        "end": 558.8,
+        "frames": [
+            "frame_00102.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 98,
+        "start": 558.8,
+        "end": 568.0,
+        "frames": [
+            "frame_00103.png"
+        ],
+        "transcript": "[Silent] for 9.32 sec"
+    },
+    {
+        "id": 99,
+        "start": 568.0,
+        "end": 571.12,
+        "frames": [
+            "frame_00104.png"
+        ],
+        "transcript": "okay"
+    },
+    {
+        "id": 100,
+        "start": 571.12,
+        "end": 596.0,
+        "frames": [
+            "frame_00105.png"
+        ],
+        "transcript": "[Silent] for 25.48 sec"
+    },
+    {
+        "id": 101,
+        "start": 596.0,
+        "end": 601.12,
+        "frames": [
+            "frame_00106.png"
+        ],
+        "transcript": "shoot did I do that again"
+    },
+    {
+        "id": 102,
+        "start": 601.12,
+        "end": 616.0,
+        "frames": [
+            "frame_00107.png",
+            "frame_00108.png",
+            "frame_00109.png",
+            "frame_00110.png"
+        ],
+        "transcript": "[Silent] for 15.12 sec"
+    },
+    {
+        "id": 103,
+        "start": 616.0,
+        "end": 618.08,
+        "frames": [
+            "frame_00111.png"
+        ],
+        "transcript": "So I think we went over examples."
+    },
+    {
+        "id": 104,
+        "start": 618.08,
+        "end": 621.28,
+        "frames": [
+            "frame_00112.png"
+        ],
+        "transcript": "This was an example of a particular flow."
+    },
+    {
+        "id": 105,
+        "start": 621.28,
+        "end": 631.2,
+        "frames": [
+            "frame_00113.png"
+        ],
+        "transcript": "Um the red value is always going to be the flow, and this is always going to be the capacity."
+    },
+    {
+        "id": 106,
+        "start": 631.2,
+        "end": 637.2,
+        "frames": [
+            "frame_00114.png",
+            "frame_00115.png"
+        ],
+        "transcript": "What do I want to say here?"
+    },
+    {
+        "id": 107,
+        "start": 637.2,
+        "end": 640.4,
+        "frames": [
+            "frame_00116.png",
+            "frame_00117.png"
+        ],
+        "transcript": "Many applications, I'll certainly show you several."
+    },
+    {
+        "id": 108,
+        "start": 640.4,
+        "end": 643.92,
+        "frames": [
+            "frame_00118.png"
+        ],
+        "transcript": "Um that brings us to so that's the definition."
+    },
+    {
+        "id": 109,
+        "start": 643.92,
+        "end": 645.68,
+        "frames": [
+            "frame_00119.png"
+        ],
+        "transcript": "That's the problem definition."
+    },
+    {
+        "id": 110,
+        "start": 645.68,
+        "end": 655.04,
+        "frames": [
+            "frame_00120.png"
+        ],
+        "transcript": "Now your natural instinct, after having just studied greedy algorithms, is that we could probably find a greedy algorithm for this flow problem as well."
+    },
+    {
+        "id": 111,
+        "start": 655.04,
+        "end": 657.84,
+        "frames": [
+            "frame_00121.png"
+        ],
+        "transcript": "And we're almost correct."
+    },
+    {
+        "id": 112,
+        "start": 657.84,
+        "end": 660.32,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "The algorithm is almost greedy."
+    },
+    {
+        "id": 113,
+        "start": 660.32,
+        "end": 661.84,
+        "frames": [
+            "frame_00123.png"
+        ],
+        "transcript": "There's just one little twist in it."
+    },
+    {
+        "id": 114,
+        "start": 661.84,
+        "end": 665.12,
+        "frames": [
+            "frame_00124.png"
+        ],
+        "transcript": "And let's try to understand what that why we need that twist."
+    },
+    {
+        "id": 115,
+        "start": 665.12,
+        "end": 668.96,
+        "frames": [
+            "frame_00125.png",
+            "frame_00126.png"
+        ],
+        "transcript": "So I'm sure that Nathan went over this particular example."
+    },
+    {
+        "id": 116,
+        "start": 668.96,
+        "end": 670.32,
+        "frames": [
+            "frame_00127.png"
+        ],
+        "transcript": "All right."
+    },
+    {
+        "id": 117,
+        "start": 670.32,
+        "end": 685.36,
+        "frames": [
+            "frame_00128.png"
+        ],
+        "transcript": "If we are to say, let's solve this max flow problem by finding the path that has the most flow that we can push and going ahead and and go ahead and going ahead and pushing that flow through the network."
+    },
+    {
+        "id": 118,
+        "start": 685.36,
+        "end": 695.36,
+        "frames": [
+            "frame_00129.png"
+        ],
+        "transcript": "So the greedy algorithm that we might consider is find the biggest flow, push, and continue until you can no longer push."
+    },
+    {
+        "id": 119,
+        "start": 695.36,
+        "end": 701.84,
+        "frames": [
+            "frame_00130.png"
+        ],
+        "transcript": "And this example right here should illustrate why that approach doesn't exactly work."
+    },
+    {
+        "id": 120,
+        "start": 701.84,
+        "end": 702.64,
+        "frames": [
+            "frame_00131.png"
+        ],
+        "transcript": "All right?"
+    },
+    {
+        "id": 121,
+        "start": 702.64,
+        "end": 711.44,
+        "frames": [
+            "frame_00132.png"
+        ],
+        "transcript": "So for example, in this graph, what is the path that allows you to push the most flow?"
+    },
+    {
+        "id": 122,
+        "start": 711.44,
+        "end": 720.0,
+        "frames": [
+            "frame_00133.png"
+        ],
+        "transcript": "[Silent] for 8.64 sec"
+    },
+    {
+        "id": 123,
+        "start": 720.0,
+        "end": 723.2,
+        "frames": [
+            "frame_00134.png"
+        ],
+        "transcript": "Here, I'll make it easy for you to tell me the answer."
+    },
+    {
+        "id": 124,
+        "start": 723.2,
+        "end": 750.0,
+        "frames": [
+            "frame_00135.png",
+            "frame_00136.png"
+        ],
+        "transcript": "What's the S A B T and"
+    }
+]

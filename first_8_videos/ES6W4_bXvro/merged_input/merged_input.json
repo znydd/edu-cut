@@ -1,0 +1,3993 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 25.2,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png",
+            "frame_00003.png"
+        ],
+        "transcript": "Hello everyone, welcome you all to another lecture of CSC four three seven that is data science, and in this lecture we will discuss about the artificial neural networks."
+    },
+    {
+        "id": 1,
+        "start": 25.2,
+        "end": 43.36,
+        "frames": [
+            "frame_00004.png"
+        ],
+        "transcript": "Many of the data science applications, not only in computer science domain, but also some other domains, they are trying to apply the artificial neural networks and some of the advanced artificial neural networks methods."
+    },
+    {
+        "id": 2,
+        "start": 43.36,
+        "end": 65.92,
+        "frames": [
+            "frame_00005.png"
+        ],
+        "transcript": "That's why we have to know the ANN artificial neural networks, how it works, how can we design there, and the mathematical derivations of the forward and backward propagation, and also that is the results of the artificial neural networks."
+    },
+    {
+        "id": 3,
+        "start": 65.92,
+        "end": 75.2,
+        "frames": [
+            "frame_00006.png"
+        ],
+        "transcript": "So here in this lecture, I will discuss about the artificial neural networks, the theory, and also with example."
+    },
+    {
+        "id": 4,
+        "start": 75.2,
+        "end": 86.8,
+        "frames": [
+            "frame_00007.png"
+        ],
+        "transcript": "If we want to define the artificial neural network, then we have to say that it's a biological neural network-inspired computational and learning model."
+    },
+    {
+        "id": 5,
+        "start": 86.8,
+        "end": 102.24,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": "So that means the the uh the background of artificial neural networks is our human brain, and we inspired by the human human uh neurons."
+    },
+    {
+        "id": 6,
+        "start": 102.24,
+        "end": 122.88,
+        "frames": [
+            "frame_00009.png"
+        ],
+        "transcript": "Okay, how those neurons work, how those neurons connect, how those neurons make decisions, and try to simulate that the same process artificially, and that's why we we call it artificial neural networks that is inspired from the biological neural networks."
+    },
+    {
+        "id": 7,
+        "start": 122.88,
+        "end": 136.96,
+        "frames": [
+            "frame_00010.png"
+        ],
+        "transcript": "So, in artificial neural networks, um it consists of several processing elements like in biological neural networks and receive inputs and deliver outputs based on their activation function."
+    },
+    {
+        "id": 8,
+        "start": 136.96,
+        "end": 164.24,
+        "frames": [
+            "frame_00011.png"
+        ],
+        "transcript": "Um so in in this case, that that is the artificial neural networks also perceive the environment or maybe receive the inputs from the from the environment, and after that, after some kind calculation, processing, some activation functions, execution, and then it will decide that means final decision."
+    },
+    {
+        "id": 9,
+        "start": 164.24,
+        "end": 175.76,
+        "frames": [
+            "frame_00012.png"
+        ],
+        "transcript": "One of the examples we can see that okay, we want to predict the the CGP of any students based on the hours of study and hours of sleep."
+    },
+    {
+        "id": 10,
+        "start": 175.76,
+        "end": 196.0,
+        "frames": [
+            "frame_00013.png"
+        ],
+        "transcript": "So maybe we have the data set of maybe one million students, and we want to we want to train our neural networks in such a way so that if we just input the hours of sleep and hours of study, then it will predict the that is CGP."
+    },
+    {
+        "id": 11,
+        "start": 196.0,
+        "end": 201.12,
+        "frames": [
+            "frame_00014.png"
+        ],
+        "transcript": "So for that, uh we can design a neural network using like this."
+    },
+    {
+        "id": 12,
+        "start": 201.12,
+        "end": 207.68,
+        "frames": [
+            "frame_00015.png"
+        ],
+        "transcript": "That means we have two features, one is hours of sleep, and another one is our hours of study."
+    },
+    {
+        "id": 13,
+        "start": 207.68,
+        "end": 212.8,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "Then these are the input uh input features that means input features."
+    },
+    {
+        "id": 14,
+        "start": 212.8,
+        "end": 219.04,
+        "frames": [
+            "frame_00017.png"
+        ],
+        "transcript": "So in input layer of our neural network, we can have two neurons, so these are called the neurons."
+    },
+    {
+        "id": 15,
+        "start": 219.04,
+        "end": 229.28,
+        "frames": [
+            "frame_00018.png"
+        ],
+        "transcript": "Okay, neurons, the input neurons, and then here this one is called the hidden layer of artificial neural networks."
+    },
+    {
+        "id": 16,
+        "start": 229.28,
+        "end": 236.16,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "In hidden layer of artificial neural networks, we can we can introduce multiple layers."
+    },
+    {
+        "id": 17,
+        "start": 236.16,
+        "end": 247.76,
+        "frames": [
+            "frame_00020.png"
+        ],
+        "transcript": "We can add one, two, three, four, any that means any number, and each and every layer we can add the neurons also."
+    },
+    {
+        "id": 18,
+        "start": 247.76,
+        "end": 261.84,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "So that means we can now uh say that we want to create the hidden layer like the four layers where one, two, three, and four, four layers hidden units."
+    },
+    {
+        "id": 19,
+        "start": 261.84,
+        "end": 267.92,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "So here the four layers, and each and every layer we can see the neurons are there."
+    },
+    {
+        "id": 20,
+        "start": 267.92,
+        "end": 271.52,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "So this is these are the neurons for that."
+    },
+    {
+        "id": 21,
+        "start": 271.52,
+        "end": 284.24,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "Okay, these are the neurons for that, and in artificial neural networks, each of the neurons is connected to the next neurons, next layer neurons."
+    },
+    {
+        "id": 22,
+        "start": 284.24,
+        "end": 286.08,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "Okay, next layer neurons."
+    },
+    {
+        "id": 23,
+        "start": 286.08,
+        "end": 291.92,
+        "frames": [
+            "frame_00026.png"
+        ],
+        "transcript": "So that is called the fully connected or that is uh mesh connected."
+    },
+    {
+        "id": 24,
+        "start": 291.92,
+        "end": 302.96,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "Okay, so that means each and every every neuron of the previous layer, it should be connected to to then all the neurons of the next layer."
+    },
+    {
+        "id": 25,
+        "start": 302.96,
+        "end": 316.72,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "So this is uh the artificial neural networks hidden units or hidden layers, and finally, we can we can have another that is the output layer here in this case."
+    },
+    {
+        "id": 26,
+        "start": 316.72,
+        "end": 319.44,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "So in this case, we want to predict just CGPA."
+    },
+    {
+        "id": 27,
+        "start": 319.44,
+        "end": 322.56,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "Okay, so one output, just CGPA."
+    },
+    {
+        "id": 28,
+        "start": 322.56,
+        "end": 326.4,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "So in output unit, we can have just one neuron."
+    },
+    {
+        "id": 29,
+        "start": 326.4,
+        "end": 336.24,
+        "frames": [
+            "frame_00032.png"
+        ],
+        "transcript": "That means in artificial neural networks, we have the input layer, we have the hidden layers, and we have the output layer, okay."
+    },
+    {
+        "id": 30,
+        "start": 336.24,
+        "end": 347.52,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "Input, hidden, output, and based on the hidden layer units, actually we call it shallow neural networks or maybe the deep neural networks."
+    },
+    {
+        "id": 31,
+        "start": 347.52,
+        "end": 356.48,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "So if we have just only one hidden uh hidden unit, hidden layer, then usually we call it shallow neural networks or just the neural networks."
+    },
+    {
+        "id": 32,
+        "start": 356.48,
+        "end": 366.48,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "Theoretically, if we have multiple hidden layers, or maybe we can say more than one hidden layer, then usually we call it deep architecture or deep neural networks."
+    },
+    {
+        "id": 33,
+        "start": 366.48,
+        "end": 390.96,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "So that means deep neural networks specifically depends on the number of hidden layers, though theoretically, we can say that just only two hidden uh layers are the deep new deep deep architecture or deep neural networks, but practically in deep neural networks we have many many layers, like maybe 25 layers, 1000 layers, 100 layers."
+    },
+    {
+        "id": 34,
+        "start": 390.96,
+        "end": 398.56,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "Okay, so that means many uh many depth features will be extracted from this deep unit."
+    },
+    {
+        "id": 35,
+        "start": 398.56,
+        "end": 405.36,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "Okay, so that's that's the the the difference between the shallow neural networks and deep neural networks."
+    },
+    {
+        "id": 36,
+        "start": 405.36,
+        "end": 411.04,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "The deep neural networks have several architectures, and those are some advanced study."
+    },
+    {
+        "id": 37,
+        "start": 411.04,
+        "end": 425.36,
+        "frames": [
+            "frame_00040.png"
+        ],
+        "transcript": "Okay, the convolutional neural networks and the recurrent neural networks, the deep belief networks, and several versions of convolutional neural networks, like maybe VGC 16, VGG19, RustNet, Google Net, MobileNet."
+    },
+    {
+        "id": 38,
+        "start": 425.36,
+        "end": 431.36,
+        "frames": [
+            "frame_00041.png"
+        ],
+        "transcript": "So many network architectures are in just deep neural networks architecture."
+    },
+    {
+        "id": 39,
+        "start": 431.36,
+        "end": 438.32,
+        "frames": [
+            "frame_00042.png"
+        ],
+        "transcript": "Okay, so uh this is uh the artificial neural networks we can we can call."
+    },
+    {
+        "id": 40,
+        "start": 438.32,
+        "end": 447.44,
+        "frames": [
+            "frame_00043.png",
+            "frame_00044.png"
+        ],
+        "transcript": "So specifically, we have to we have to remember that it has three major layers that is an input layer, hidden layer, and output layer."
+    },
+    {
+        "id": 41,
+        "start": 447.44,
+        "end": 456.72,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "So in human brain, uh as I already mentioned that the artificial neural networks is inspired from the human brain."
+    },
+    {
+        "id": 42,
+        "start": 456.72,
+        "end": 472.96,
+        "frames": [
+            "frame_00046.png"
+        ],
+        "transcript": "So human brain consists of several neurons, and it has uh that is several parts also, like this motor area, sensory area, frontal lobe, uh, vocus area, temporal lobe, uh that is brain steam, cerebelium."
+    },
+    {
+        "id": 43,
+        "start": 472.96,
+        "end": 479.68,
+        "frames": [
+            "frame_00047.png"
+        ],
+        "transcript": "So the many parts of our brain, and one of the parts is responsible."
+    },
+    {
+        "id": 44,
+        "start": 479.68,
+        "end": 484.08,
+        "frames": [
+            "frame_00048.png"
+        ],
+        "transcript": "Maybe uh each and every part is responsible for some some task, okay?"
+    },
+    {
+        "id": 45,
+        "start": 484.08,
+        "end": 486.24,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "Like here, the frontal lobe."
+    },
+    {
+        "id": 46,
+        "start": 486.24,
+        "end": 496.16,
+        "frames": [
+            "frame_00050.png"
+        ],
+        "transcript": "Uh, this is the it controls like it controls the movement, problem solving, concentrate concentrating and thinking, behavior and personality mood."
+    },
+    {
+        "id": 47,
+        "start": 496.16,
+        "end": 501.68,
+        "frames": [
+            "frame_00051.png"
+        ],
+        "transcript": "So these are these are the uh functionalities of the frontal lobe."
+    },
+    {
+        "id": 48,
+        "start": 501.68,
+        "end": 508.88,
+        "frames": [
+            "frame_00052.png",
+            "frame_00053.png"
+        ],
+        "transcript": "The similar uh architecture we want to follow in uh artificial neural networks."
+    },
+    {
+        "id": 49,
+        "start": 508.88,
+        "end": 515.68,
+        "frames": [
+            "frame_00054.png"
+        ],
+        "transcript": "So, here in this case, the the the brain the human brain consists of several neurons."
+    },
+    {
+        "id": 50,
+        "start": 515.68,
+        "end": 525.2,
+        "frames": [
+            "frame_00055.png"
+        ],
+        "transcript": "Uh, we can see that the the human brain can consider to be one of the biggest processors and estimated to contain 10 to the power 11 neurons."
+    },
+    {
+        "id": 51,
+        "start": 525.2,
+        "end": 548.08,
+        "frames": [
+            "frame_00056.png"
+        ],
+        "transcript": "Okay, that means huge amount of neurons and gallial cells are there, and one neuron that means one neuron, the architecture of the neuron is this that is here is the cell, one neuron, and it has the nucleus and the cell body dendrites and uh synapse and axiom."
+    },
+    {
+        "id": 52,
+        "start": 548.08,
+        "end": 551.84,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "Okay, and one neuron is connected with another neuron, also."
+    },
+    {
+        "id": 53,
+        "start": 551.84,
+        "end": 558.48,
+        "frames": [
+            "frame_00058.png"
+        ],
+        "transcript": "Okay, so this this is one neuron, the first neuron is connected to another neuron here for making decisions."
+    },
+    {
+        "id": 54,
+        "start": 558.48,
+        "end": 562.08,
+        "frames": [
+            "frame_00059.png"
+        ],
+        "transcript": "Okay, for making decisions, and the connection here, this is the axiom."
+    },
+    {
+        "id": 55,
+        "start": 562.08,
+        "end": 563.92,
+        "frames": [
+            "frame_00060.png"
+        ],
+        "transcript": "Okay, axiom."
+    },
+    {
+        "id": 56,
+        "start": 563.92,
+        "end": 574.8,
+        "frames": [
+            "frame_00061.png"
+        ],
+        "transcript": "So neurons are communicated with one uh to another, and also uh they share share their well that that means thought thoughts."
+    },
+    {
+        "id": 57,
+        "start": 574.8,
+        "end": 581.12,
+        "frames": [
+            "frame_00062.png"
+        ],
+        "transcript": "Okay, so the same architecture uh we want to follow in our artificial neural networks."
+    },
+    {
+        "id": 58,
+        "start": 581.12,
+        "end": 589.76,
+        "frames": [
+            "frame_00063.png"
+        ],
+        "transcript": "That means in artificial neural networks, one neuron this is considered if we consider one neuron and this is another neuron, okay."
+    },
+    {
+        "id": 59,
+        "start": 589.76,
+        "end": 592.88,
+        "frames": [
+            "frame_00064.png"
+        ],
+        "transcript": "So uh it should be connected, okay."
+    },
+    {
+        "id": 60,
+        "start": 592.88,
+        "end": 600.32,
+        "frames": [
+            "frame_00065.png"
+        ],
+        "transcript": "They should be connected, and that the connection, each and every connection has some weight, that means has some value."
+    },
+    {
+        "id": 61,
+        "start": 600.32,
+        "end": 625.44,
+        "frames": [
+            "frame_00066.png"
+        ],
+        "transcript": "Okay, okay, and uh the neural networks it it can be used in many domains in SPS recognition, facial uh identification, emotion recognition, and uh any object recognition and image recognition, sentiment analysis, uh autonomous uh driving and uh different types of disease diagnosis."
+    },
+    {
+        "id": 62,
+        "start": 625.44,
+        "end": 630.56,
+        "frames": [
+            "frame_00067.png"
+        ],
+        "transcript": "Okay, that means huge applications we have uh the neural networks."
+    },
+    {
+        "id": 63,
+        "start": 630.56,
+        "end": 641.68,
+        "frames": [
+            "frame_00068.png"
+        ],
+        "transcript": "That means the neural networks it can be used in regression problem, it can be used in classification problem, and it can be used in clustering problem."
+    },
+    {
+        "id": 64,
+        "start": 641.68,
+        "end": 648.64,
+        "frames": [
+            "frame_00069.png"
+        ],
+        "transcript": "So that means all forms of machine learning uh can be applied using the neural networks."
+    },
+    {
+        "id": 65,
+        "start": 648.64,
+        "end": 653.2,
+        "frames": [
+            "frame_00070.png"
+        ],
+        "transcript": "So that's that's the that's the very uh good thing in neural networks."
+    },
+    {
+        "id": 66,
+        "start": 653.2,
+        "end": 663.36,
+        "frames": [
+            "frame_00071.png",
+            "frame_00072.png"
+        ],
+        "transcript": "Okay, so here uh we can see that if we can compare with the biological neural networks and our computer neural networks."
+    },
+    {
+        "id": 67,
+        "start": 663.36,
+        "end": 671.44,
+        "frames": [
+            "frame_00073.png"
+        ],
+        "transcript": "So we have here we if we just maybe you can you can see the picture, or maybe you can say just uh the the cat."
+    },
+    {
+        "id": 68,
+        "start": 671.44,
+        "end": 678.56,
+        "frames": [
+            "frame_00074.png"
+        ],
+        "transcript": "Okay, so our sensory organ is here is the eye, so this is uh our input layer."
+    },
+    {
+        "id": 69,
+        "start": 678.56,
+        "end": 684.88,
+        "frames": [
+            "frame_00075.png"
+        ],
+        "transcript": "We can say input the sensory organ in uh computer neural networks."
+    },
+    {
+        "id": 70,
+        "start": 684.88,
+        "end": 686.0,
+        "frames": [
+            "frame_00076.png"
+        ],
+        "transcript": "These are the input, okay."
+    },
+    {
+        "id": 71,
+        "start": 686.0,
+        "end": 694.8,
+        "frames": [
+            "frame_00077.png"
+        ],
+        "transcript": "These are the input layers, and then here is the human brain consists of several neurons, and they are communicated with each other."
+    },
+    {
+        "id": 72,
+        "start": 694.8,
+        "end": 699.04,
+        "frames": [
+            "frame_00078.png"
+        ],
+        "transcript": "And in this case, we can say we this is our hidden layer, okay."
+    },
+    {
+        "id": 73,
+        "start": 699.04,
+        "end": 706.24,
+        "frames": [
+            "frame_00079.png"
+        ],
+        "transcript": "So we can make the analogy, and the output here is the output is the car, okay."
+    },
+    {
+        "id": 74,
+        "start": 706.24,
+        "end": 708.64,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "That means this is output layer."
+    },
+    {
+        "id": 75,
+        "start": 708.64,
+        "end": 722.64,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "So in our case, this is output layer, and each and every neuron that means uh this is the this is the uh biological neuron, and in our neuron, that means in this each and every neuron, every neuron."
+    },
+    {
+        "id": 76,
+        "start": 722.64,
+        "end": 726.72,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "So in each neurons, it can it can take the input, several inputs."
+    },
+    {
+        "id": 77,
+        "start": 726.72,
+        "end": 741.28,
+        "frames": [
+            "frame_00083.png"
+        ],
+        "transcript": "Okay, it can take the several inputs and then apply some form of mathematics, like here the summation multiplication of summations and also uh the activation function, okay."
+    },
+    {
+        "id": 78,
+        "start": 741.28,
+        "end": 748.72,
+        "frames": [
+            "frame_00084.png"
+        ],
+        "transcript": "Activation function, and after that, it will produce some value, and that value it will pass to our to the next neurons."
+    },
+    {
+        "id": 79,
+        "start": 748.72,
+        "end": 765.6,
+        "frames": [
+            "frame_00085.png"
+        ],
+        "transcript": "Okay, so uh uh this this is the analogy between the biological neural network and our artificial uh neural networks, and biological neurons and artificial neurons."
+    },
+    {
+        "id": 80,
+        "start": 765.6,
+        "end": 777.12,
+        "frames": [
+            "frame_00086.png",
+            "frame_00087.png"
+        ],
+        "transcript": "So, like uh one of the problems uh we know this is this is very popular uh data set that is called the iris data set."
+    },
+    {
+        "id": 81,
+        "start": 777.12,
+        "end": 784.32,
+        "frames": [
+            "frame_00088.png"
+        ],
+        "transcript": "Okay, iris data set the for the iris flower to recognize the iris iris flower species."
+    },
+    {
+        "id": 82,
+        "start": 784.32,
+        "end": 790.16,
+        "frames": [
+            "frame_00089.png"
+        ],
+        "transcript": "Like we have three species, one is cetosa, another one is varicolar, and another one is varsini."
+    },
+    {
+        "id": 83,
+        "start": 790.16,
+        "end": 796.88,
+        "frames": [
+            "frame_00090.png",
+            "frame_00091.png"
+        ],
+        "transcript": "Uh so cetosa, varsicolar, and varginica."
+    },
+    {
+        "id": 84,
+        "start": 796.88,
+        "end": 813.12,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "We have uh three three spaces, but we want to automatically classify those species using their last sepal length, sepal width, petal length, and petal width."
+    },
+    {
+        "id": 85,
+        "start": 813.12,
+        "end": 822.08,
+        "frames": [
+            "frame_00093.png"
+        ],
+        "transcript": "So that means these are the four features using these four features, we want to automatically recognize the setusa farcicular and pharginical."
+    },
+    {
+        "id": 86,
+        "start": 822.08,
+        "end": 832.24,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "Okay, so in this dataset, if we want to build the the this model, that means the recognition of IDC spaces."
+    },
+    {
+        "id": 87,
+        "start": 832.24,
+        "end": 840.0,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "If we want to build the model, then how can we formulate or how can we design the neural network?"
+    },
+    {
+        "id": 88,
+        "start": 840.0,
+        "end": 846.88,
+        "frames": [
+            "frame_00096.png"
+        ],
+        "transcript": "So in this case we can we can see that the the four features we have four features, we have four features."
+    },
+    {
+        "id": 89,
+        "start": 846.88,
+        "end": 855.44,
+        "frames": [
+            "frame_00097.png"
+        ],
+        "transcript": "That means on that case we uh we have to know that in our input layer we have to take four neurons."
+    },
+    {
+        "id": 90,
+        "start": 855.44,
+        "end": 859.6,
+        "frames": [
+            "frame_00098.png"
+        ],
+        "transcript": "That means we have four features in our data set."
+    },
+    {
+        "id": 91,
+        "start": 859.6,
+        "end": 868.32,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "So in our input layer, we have to have four neurons, and then think about the output unit."
+    },
+    {
+        "id": 92,
+        "start": 868.32,
+        "end": 876.48,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "So here in this case, there are three classes that means setosa, particular, and parsinica, the three spaces."
+    },
+    {
+        "id": 93,
+        "start": 876.48,
+        "end": 884.4,
+        "frames": [
+            "frame_00101.png"
+        ],
+        "transcript": "So that means the in output layer we should say that this one is setosa, this one is vercicular, and this one is varsenica."
+    },
+    {
+        "id": 94,
+        "start": 884.4,
+        "end": 888.72,
+        "frames": [
+            "frame_00102.png"
+        ],
+        "transcript": "So that means it output layer, we have to have three neurons."
+    },
+    {
+        "id": 95,
+        "start": 888.72,
+        "end": 892.72,
+        "frames": [
+            "frame_00103.png"
+        ],
+        "transcript": "Okay, now the hidden units."
+    },
+    {
+        "id": 96,
+        "start": 892.72,
+        "end": 895.2,
+        "frames": [
+            "frame_00104.png"
+        ],
+        "transcript": "The hidden unit, this one is user-defined."
+    },
+    {
+        "id": 97,
+        "start": 895.2,
+        "end": 896.56,
+        "frames": [
+            "frame_00105.png"
+        ],
+        "transcript": "User defined."
+    },
+    {
+        "id": 98,
+        "start": 896.56,
+        "end": 910.4,
+        "frames": [
+            "frame_00106.png"
+        ],
+        "transcript": "That means uh we can design the shallow neural networks just including one hidden unit or hidden layer, and number of uh units in hidden layers also depend on the user."
+    },
+    {
+        "id": 99,
+        "start": 910.4,
+        "end": 915.12,
+        "frames": [
+            "frame_00107.png"
+        ],
+        "transcript": "Usually we define this one using some trial and error basis."
+    },
+    {
+        "id": 100,
+        "start": 915.12,
+        "end": 923.68,
+        "frames": [
+            "frame_00108.png"
+        ],
+        "transcript": "Uh, there is no state for order rule for that is uh the the number of neurons in uh hidden layers."
+    },
+    {
+        "id": 101,
+        "start": 923.68,
+        "end": 941.76,
+        "frames": [
+            "frame_00109.png"
+        ],
+        "transcript": "Um sometimes it is it is mentioned that the that is number of inputs uh uh the that is in hidden layer, it should be uh that is half of the inputs, but this is not this is not the state for order rule, this is just just for uh initialization."
+    },
+    {
+        "id": 102,
+        "start": 941.76,
+        "end": 946.88,
+        "frames": [
+            "frame_00110.png"
+        ],
+        "transcript": "Okay, so you can start with the half of the half of your input."
+    },
+    {
+        "id": 103,
+        "start": 946.88,
+        "end": 966.88,
+        "frames": [
+            "frame_00111.png"
+        ],
+        "transcript": "Um that here we can we can see that okay, just four uh hidden units because if we start just only with two, then maybe the the accuracy we will not get a get better accuracy, so we we can increase the number of hidden units, or even we can increase the number of hidden layers, okay."
+    },
+    {
+        "id": 104,
+        "start": 966.88,
+        "end": 971.68,
+        "frames": [
+            "frame_00112.png"
+        ],
+        "transcript": "That means this hidden architecture, this hidden architecture or hidden layers, these are user-defined."
+    },
+    {
+        "id": 105,
+        "start": 971.68,
+        "end": 982.96,
+        "frames": [
+            "frame_00113.png"
+        ],
+        "transcript": "Sometimes maybe we can start uh with one or two or three, like this, and then we can add or remove the hidden uh layers and also the number of hidden neurons."
+    },
+    {
+        "id": 106,
+        "start": 982.96,
+        "end": 995.12,
+        "frames": [
+            "frame_00114.png"
+        ],
+        "transcript": "So, this is how we can design uh the neural network for for this problem for solving this problem for solving this classification problem."
+    },
+    {
+        "id": 107,
+        "start": 995.12,
+        "end": 1001.92,
+        "frames": [
+            "frame_00115.png",
+            "frame_00116.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 108,
+        "start": 1001.92,
+        "end": 1004.96,
+        "frames": [
+            "frame_00117.png"
+        ],
+        "transcript": "Okay, now uh the training in neural networks."
+    },
+    {
+        "id": 109,
+        "start": 1004.96,
+        "end": 1009.2,
+        "frames": [
+            "frame_00118.png",
+            "frame_00119.png"
+        ],
+        "transcript": "So we have designed the neural networks now."
+    },
+    {
+        "id": 110,
+        "start": 1009.2,
+        "end": 1012.0,
+        "frames": [
+            "frame_00120.png"
+        ],
+        "transcript": "Next thing is uh how the neural network works."
+    },
+    {
+        "id": 111,
+        "start": 1012.0,
+        "end": 1018.8,
+        "frames": [
+            "frame_00121.png"
+        ],
+        "transcript": "We we have to understand that, and the neural network training actually it has two phases, two major phases."
+    },
+    {
+        "id": 112,
+        "start": 1018.8,
+        "end": 1023.12,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "One is forward propagation, other one is backward propagation."
+    },
+    {
+        "id": 113,
+        "start": 1023.12,
+        "end": 1034.0,
+        "frames": [
+            "frame_00123.png"
+        ],
+        "transcript": "So, forward propagation, this is responsible for determining or maybe you can say that predicting the value and backward propagation."
+    },
+    {
+        "id": 114,
+        "start": 1034.0,
+        "end": 1051.92,
+        "frames": [
+            "frame_00124.png"
+        ],
+        "transcript": "This is responsible for updating the parameters, updating the weights, okay, of the neural networks, and and for that, we can we can uh think about the neural networks with an example, okay."
+    },
+    {
+        "id": 115,
+        "start": 1051.92,
+        "end": 1061.84,
+        "frames": [
+            "frame_00125.png"
+        ],
+        "transcript": "So, for simplicity, we have just uh a small data set, uh and in this data set we have just only two features, okay."
+    },
+    {
+        "id": 116,
+        "start": 1061.84,
+        "end": 1066.08,
+        "frames": [
+            "frame_00126.png"
+        ],
+        "transcript": "Two features feature one and feature two, and this is the output."
+    },
+    {
+        "id": 117,
+        "start": 1066.08,
+        "end": 1078.08,
+        "frames": [
+            "frame_00127.png"
+        ],
+        "transcript": "So, like uh in feature one, if the field is zero and feature two is zero, then output is zero, and if feature one is zero and feature two is one, then output is one."
+    },
+    {
+        "id": 118,
+        "start": 1078.08,
+        "end": 1084.8,
+        "frames": [
+            "frame_00128.png"
+        ],
+        "transcript": "Feature one is one, out and feature two is zero, then output is one, one one, then output is zero."
+    },
+    {
+        "id": 119,
+        "start": 1084.8,
+        "end": 1095.52,
+        "frames": [
+            "frame_00129.png"
+        ],
+        "transcript": "So we want to build a neural network so that if we just pass the zero zero as the input, it will produce the zero as the output."
+    },
+    {
+        "id": 120,
+        "start": 1095.52,
+        "end": 1102.24,
+        "frames": [
+            "frame_00130.png"
+        ],
+        "transcript": "If we pass like one, one as the input, it should uh it should produce the zero as the output."
+    },
+    {
+        "id": 121,
+        "start": 1102.24,
+        "end": 1106.08,
+        "frames": [
+            "frame_00131.png"
+        ],
+        "transcript": "So we want to design the neural network like this, okay."
+    },
+    {
+        "id": 122,
+        "start": 1106.08,
+        "end": 1113.76,
+        "frames": [
+            "frame_00132.png"
+        ],
+        "transcript": "So that means we we we want to train the neural network in such a way so that if the input is zero zero, then output will be zero."
+    },
+    {
+        "id": 123,
+        "start": 1113.76,
+        "end": 1117.44,
+        "frames": [
+            "frame_00133.png"
+        ],
+        "transcript": "If the input is zero one, then output will be one, like this."
+    },
+    {
+        "id": 124,
+        "start": 1117.44,
+        "end": 1126.16,
+        "frames": [
+            "frame_00134.png"
+        ],
+        "transcript": "Okay, so uh at first the the the modeling okay or designing the neural networks, so we can design the neural networks like here."
+    },
+    {
+        "id": 125,
+        "start": 1126.16,
+        "end": 1138.24,
+        "frames": [
+            "frame_00135.png"
+        ],
+        "transcript": "We can see that two features, so we have to have two input layers, so sorry, two input neurons in input layer, and we have just output two output zero and one."
+    },
+    {
+        "id": 126,
+        "start": 1138.24,
+        "end": 1157.76,
+        "frames": [
+            "frame_00136.png"
+        ],
+        "transcript": "So we can add two uh two output uh units in the output layer, but here we can see that just only one uh is enough because the the one unit can be we can say that it can be uh zero or it can be one, so one bit is enough to represent the two things zero and one."
+    },
+    {
+        "id": 127,
+        "start": 1157.76,
+        "end": 1160.48,
+        "frames": [
+            "frame_00137.png"
+        ],
+        "transcript": "Okay, so so that's concept here."
+    },
+    {
+        "id": 128,
+        "start": 1160.48,
+        "end": 1162.48,
+        "frames": [
+            "frame_00138.png"
+        ],
+        "transcript": "Uh we can add also two."
+    },
+    {
+        "id": 129,
+        "start": 1162.48,
+        "end": 1166.4,
+        "frames": [
+            "frame_00139.png"
+        ],
+        "transcript": "That is, we can add also two neurons, one for zero and another for one."
+    },
+    {
+        "id": 130,
+        "start": 1166.4,
+        "end": 1181.28,
+        "frames": [
+            "frame_00140.png"
+        ],
+        "transcript": "Okay, so uh so here um the hidden hidden layers, the the number of hidden uh layers here, just only we considered one, and in this hidden layer we have just three neurons."
+    },
+    {
+        "id": 131,
+        "start": 1181.28,
+        "end": 1187.84,
+        "frames": [
+            "frame_00141.png"
+        ],
+        "transcript": "Okay, so we designed the neural network for this problem for this uh problem."
+    },
+    {
+        "id": 132,
+        "start": 1187.84,
+        "end": 1213.92,
+        "frames": [
+            "frame_00142.png"
+        ],
+        "transcript": "So this is also the classification problem because zero and one is this the binary classification problem, and now uh what we have to we have to have to think that is the each and every neuron, every neuron of input layer, it should be connected to the neurons of hidden layer, and each and every neuron of hidden layer it should be connected to the neuron of output layer."
+    },
+    {
+        "id": 133,
+        "start": 1213.92,
+        "end": 1215.04,
+        "frames": [
+            "frame_00143.png"
+        ],
+        "transcript": "So this is the connection."
+    },
+    {
+        "id": 134,
+        "start": 1215.04,
+        "end": 1218.48,
+        "frames": [
+            "frame_00144.png"
+        ],
+        "transcript": "Okay, these are the connections, connections."
+    },
+    {
+        "id": 135,
+        "start": 1218.48,
+        "end": 1222.96,
+        "frames": [
+            "frame_00145.png"
+        ],
+        "transcript": "So one is connected to and the that is this neuron."
+    },
+    {
+        "id": 136,
+        "start": 1222.96,
+        "end": 1235.68,
+        "frames": [
+            "frame_00146.png"
+        ],
+        "transcript": "This neuron is connected to the first neuron of hidden layer, then this neuron is connected to second neuron of hidden layer, and this neuron is connected to the third neuron of the hidden layer."
+    },
+    {
+        "id": 137,
+        "start": 1235.68,
+        "end": 1247.2,
+        "frames": [
+            "frame_00147.png"
+        ],
+        "transcript": "Again, the second neuron of the input layer, it should be connected to the the first neuron of hidden layer, and second neuron of hidden layer, and third neuron of the hidden layer."
+    },
+    {
+        "id": 138,
+        "start": 1247.2,
+        "end": 1260.08,
+        "frames": [
+            "frame_00148.png"
+        ],
+        "transcript": "That means all the neurons are connected to the all other neurons of next layer, and again here the this neuron, this neuron, it should be connected to the output neuron."
+    },
+    {
+        "id": 139,
+        "start": 1260.08,
+        "end": 1265.6,
+        "frames": [
+            "frame_00149.png"
+        ],
+        "transcript": "This one should be connected to the output neuron, and this one should be connected to the output neuron."
+    },
+    {
+        "id": 140,
+        "start": 1265.6,
+        "end": 1273.6,
+        "frames": [
+            "frame_00150.png"
+        ],
+        "transcript": "So this is called the fully connected, that means all the neurons of one layer is connected to the all the neurons of the next layer."
+    },
+    {
+        "id": 141,
+        "start": 1273.6,
+        "end": 1287.04,
+        "frames": [
+            "frame_00151.png"
+        ],
+        "transcript": "Okay, this is called the fully connected uh approach, but in deep neural networks, we have also like the sum of the connections we can lose, like the the we can we can uh input the dropout value."
+    },
+    {
+        "id": 142,
+        "start": 1287.04,
+        "end": 1298.48,
+        "frames": [
+            "frame_00152.png"
+        ],
+        "transcript": "Okay, some of the connections we can we maybe uh just uh we can disconnect, okay, or maybe we can we can say that drop the connections."
+    },
+    {
+        "id": 143,
+        "start": 1298.48,
+        "end": 1302.48,
+        "frames": [
+            "frame_00153.png"
+        ],
+        "transcript": "But this is this model is fully connected model, okay."
+    },
+    {
+        "id": 144,
+        "start": 1302.48,
+        "end": 1306.08,
+        "frames": [
+            "frame_00154.png"
+        ],
+        "transcript": "Fully connected model now."
+    },
+    {
+        "id": 145,
+        "start": 1306.08,
+        "end": 1330.0,
+        "frames": [
+            "frame_00155.png"
+        ],
+        "transcript": "Um here we can uh process this data using like maybe one by one, or maybe we can say we can send this uh data to this network for training purpose one by one, like maybe at first we can we can send the this instance or subject one and subject two, subject three, subject four, like this subject four."
+    },
+    {
+        "id": 146,
+        "start": 1330.0,
+        "end": 1340.72,
+        "frames": [
+            "frame_00156.png"
+        ],
+        "transcript": "Okay, so we can process one by one, or we can process it like the best processing, that means all the uh that is four values, or maybe two values at a time we can pass."
+    },
+    {
+        "id": 147,
+        "start": 1340.72,
+        "end": 1342.08,
+        "frames": [
+            "frame_00157.png"
+        ],
+        "transcript": "Okay, that is the best."
+    },
+    {
+        "id": 148,
+        "start": 1342.08,
+        "end": 1351.12,
+        "frames": [
+            "frame_00158.png"
+        ],
+        "transcript": "So, in in this first example, we consider that we will process just one by one, and then we have another example."
+    },
+    {
+        "id": 149,
+        "start": 1351.12,
+        "end": 1355.6,
+        "frames": [
+            "frame_00159.png"
+        ],
+        "transcript": "On that case, we will see that how can we process the data in best processing."
+    },
+    {
+        "id": 150,
+        "start": 1355.6,
+        "end": 1376.32,
+        "frames": [
+            "frame_00160.png",
+            "frame_00161.png",
+            "frame_00162.png"
+        ],
+        "transcript": "Okay, so if we if we if we consider that okay, uh we want to pass the that that's the S4 that is instance number four to this network, then how can the forward net forward propagation and backward propagation uh uh will work on that case?"
+    },
+    {
+        "id": 151,
+        "start": 1376.32,
+        "end": 1403.84,
+        "frames": [
+            "frame_00163.png"
+        ],
+        "transcript": "Okay, so here is this that means uh in in in in in case of the hidden unit, the hidden unit, the hidden units uh it will the input input layer neurons is connected to the hidden layer neurons, but what will be the the the that is the value it shared?"
+    },
+    {
+        "id": 152,
+        "start": 1403.84,
+        "end": 1405.44,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "What will be the value?"
+    },
+    {
+        "id": 153,
+        "start": 1405.44,
+        "end": 1412.96,
+        "frames": [
+            "frame_00165.png"
+        ],
+        "transcript": "So that means here the it will be in linear combination, linear combination of words and the inputs."
+    },
+    {
+        "id": 154,
+        "start": 1412.96,
+        "end": 1420.32,
+        "frames": [
+            "frame_00166.png"
+        ],
+        "transcript": "So linear combination of the words and inputs means we can say that the h1, h2 and h3."
+    },
+    {
+        "id": 155,
+        "start": 1420.32,
+        "end": 1431.44,
+        "frames": [
+            "frame_00167.png"
+        ],
+        "transcript": "So these are the value h1, h2, and h3 will these are the value uh it will receive from the these inputs from the input layers."
+    },
+    {
+        "id": 156,
+        "start": 1431.44,
+        "end": 1434.88,
+        "frames": [
+            "frame_00168.png"
+        ],
+        "transcript": "So how can we calculate the h1, h2, and h3?"
+    },
+    {
+        "id": 157,
+        "start": 1434.88,
+        "end": 1438.16,
+        "frames": [
+            "frame_00169.png"
+        ],
+        "transcript": "So as I already mentioned the linear combination."
+    },
+    {
+        "id": 158,
+        "start": 1438.16,
+        "end": 1444.16,
+        "frames": [
+            "frame_00170.png"
+        ],
+        "transcript": "So linear combination that means in h1 we can see that the these two connections, these two connections are there."
+    },
+    {
+        "id": 159,
+        "start": 1444.16,
+        "end": 1455.52,
+        "frames": [
+            "frame_00171.png"
+        ],
+        "transcript": "That means the hidden unit one hidden unit one receives value from this neuron and this neuron with their weights."
+    },
+    {
+        "id": 160,
+        "start": 1455.52,
+        "end": 1459.92,
+        "frames": [
+            "frame_00172.png"
+        ],
+        "transcript": "That means these are the words w1 and these are these are the words w4."
+    },
+    {
+        "id": 161,
+        "start": 1459.92,
+        "end": 1462.16,
+        "frames": [
+            "frame_00173.png"
+        ],
+        "transcript": "This is another word w4."
+    },
+    {
+        "id": 162,
+        "start": 1462.16,
+        "end": 1476.4,
+        "frames": [
+            "frame_00174.png"
+        ],
+        "transcript": "That means uh connection weight for uh each and every neuron is already assigned w1, w2, w3 w like this here w7, w8, w9 total uh here nine connections so nine words."
+    },
+    {
+        "id": 163,
+        "start": 1476.4,
+        "end": 1497.12,
+        "frames": [
+            "frame_00175.png"
+        ],
+        "transcript": "Okay, so uh in this case the h1 h1 receives the input from the input layer neuron one and input layer neuron two, and also with their connection weight, connection weight like w1, and here is the w4."
+    },
+    {
+        "id": 164,
+        "start": 1497.12,
+        "end": 1523.44,
+        "frames": [
+            "frame_00176.png"
+        ],
+        "transcript": "So linear combination of these two, it will be like we can say that this is x1, the input is x1, and this is x2, input is x2, so x1 and x2, so it will be like x1 w1, so x1 w1 plus of plus of x2 w4, x2 w4, and this is h1."
+    },
+    {
+        "id": 165,
+        "start": 1523.44,
+        "end": 1529.52,
+        "frames": [
+            "frame_00177.png"
+        ],
+        "transcript": "This is h1, so it is x1 w1 and x2 w4 is h1."
+    },
+    {
+        "id": 166,
+        "start": 1529.52,
+        "end": 1541.52,
+        "frames": [
+            "frame_00178.png"
+        ],
+        "transcript": "Similarly, the linear combination of uh weights and inputs for for the hidden unit 2, it will be like these two connections."
+    },
+    {
+        "id": 167,
+        "start": 1541.52,
+        "end": 1549.44,
+        "frames": [
+            "frame_00179.png"
+        ],
+        "transcript": "So that means uh it has just input and the weights."
+    },
+    {
+        "id": 168,
+        "start": 1549.44,
+        "end": 1564.88,
+        "frames": [
+            "frame_00180.png"
+        ],
+        "transcript": "This is the from input uh uh the input neuron one of the input layer, and this is the weight for input unit unit 2 of the uh input layer to the hidden layer."
+    },
+    {
+        "id": 169,
+        "start": 1564.88,
+        "end": 1585.52,
+        "frames": [
+            "frame_00181.png"
+        ],
+        "transcript": "Okay, so that means we can say that this is x1 times w2, so x1 times w2 this value times w2 plus of plus of this value that is x2 times w5 times w5, so h2 will be this."
+    },
+    {
+        "id": 170,
+        "start": 1585.52,
+        "end": 1606.48,
+        "frames": [
+            "frame_00182.png"
+        ],
+        "transcript": "Similarly, the h3 it will be like the x1 w three plus of x2 w6, x2 w6, so that means the value of h1, h2 and h3, we we have you have calculated those those values h1, h2 and h3."
+    },
+    {
+        "id": 171,
+        "start": 1606.48,
+        "end": 1611.68,
+        "frames": [
+            "frame_00183.png"
+        ],
+        "transcript": "That means the value of hidden layer 1, value of hidden layer 2, and value of hidden layer 3."
+    },
+    {
+        "id": 172,
+        "start": 1611.68,
+        "end": 1637.28,
+        "frames": [
+            "frame_00184.png"
+        ],
+        "transcript": "As uh I already mentioned that this this is the linear combination, so we can say those values will be the just linear values, but we uh we want we want to get the non-linearity here, but we want to introduce the non-linearity here because uh the linear combination is not always successful for classification, for clustering, or for regression."
+    },
+    {
+        "id": 173,
+        "start": 1637.28,
+        "end": 1658.4,
+        "frames": [
+            "frame_00185.png"
+        ],
+        "transcript": "Okay, that means you you you you cannot get the always the just a straight line for that, so that that's why what we have to do, we have uh uh we have to introduce the non-linearity, and we can introduce the non-linearity, that means non-linearity, just uh using using some activation functions."
+    },
+    {
+        "id": 174,
+        "start": 1658.4,
+        "end": 1665.36,
+        "frames": [
+            "frame_00186.png"
+        ],
+        "transcript": "That means this value it will uh we will use some activation function to change it to the non-linear values."
+    },
+    {
+        "id": 175,
+        "start": 1665.36,
+        "end": 1669.04,
+        "frames": [
+            "frame_00187.png"
+        ],
+        "transcript": "So that that's called the activation function."
+    },
+    {
+        "id": 176,
+        "start": 1669.04,
+        "end": 1674.88,
+        "frames": [
+            "frame_00188.png"
+        ],
+        "transcript": "There are several activation functions are there, like maybe the relue, the 10H, the sigmoid."
+    },
+    {
+        "id": 177,
+        "start": 1674.88,
+        "end": 1676.88,
+        "frames": [
+            "frame_00189.png"
+        ],
+        "transcript": "So these are the activation functions."
+    },
+    {
+        "id": 178,
+        "start": 1676.88,
+        "end": 1690.88,
+        "frames": [
+            "frame_00190.png"
+        ],
+        "transcript": "So any of the activation functions we can use here, but popularly in shallow neural network, the sigmoid neural the sigmoid uh activation function uh performs better than others, okay."
+    },
+    {
+        "id": 179,
+        "start": 1690.88,
+        "end": 1695.36,
+        "frames": [
+            "frame_00191.png"
+        ],
+        "transcript": "But this is not always true, it will also depend on your data set."
+    },
+    {
+        "id": 180,
+        "start": 1695.36,
+        "end": 1700.08,
+        "frames": [
+            "frame_00192.png"
+        ],
+        "transcript": "Okay, so uh we can we can apply the sigmoid, okay."
+    },
+    {
+        "id": 181,
+        "start": 1700.08,
+        "end": 1709.2,
+        "frames": [
+            "frame_00193.png"
+        ],
+        "transcript": "Sigmoid that means the sigmoid uh that is sigmoid, so the h1, the value of h1, we have to pass through the sigmoid function."
+    },
+    {
+        "id": 182,
+        "start": 1709.2,
+        "end": 1711.12,
+        "frames": [
+            "frame_00194.png"
+        ],
+        "transcript": "This is the sigmoid of h1."
+    },
+    {
+        "id": 183,
+        "start": 1711.12,
+        "end": 1720.32,
+        "frames": [
+            "frame_00195.png"
+        ],
+        "transcript": "We have to calculate the sigmoid of h1, and maybe we will get the some some some form of uh that is the non-linear values."
+    },
+    {
+        "id": 184,
+        "start": 1720.32,
+        "end": 1731.28,
+        "frames": [
+            "frame_00196.png"
+        ],
+        "transcript": "Similarly, we have to pass the h2 to this the the sigmoid function and h3 to the sigmoid function, and we will get the non-linear values."
+    },
+    {
+        "id": 185,
+        "start": 1731.28,
+        "end": 1758.0,
+        "frames": [
+            "frame_00197.png"
+        ],
+        "transcript": "Okay, so that means uh here we will get the sigmoid of h and we will get the sigmoid of h2, and then we will get the sigmoid of h3, then we want to compute the the output sum, okay."
+    },
+    {
+        "id": 186,
+        "start": 1758.0,
+        "end": 1758.88,
+        "frames": [
+            "frame_00198.png"
+        ],
+        "transcript": "The output sum."
+    },
+    {
+        "id": 187,
+        "start": 1758.88,
+        "end": 1760.8,
+        "frames": [
+            "frame_00199.png"
+        ],
+        "transcript": "So we want to compute the output sum."
+    },
+    {
+        "id": 188,
+        "start": 1760.8,
+        "end": 1765.36,
+        "frames": [
+            "frame_00200.png"
+        ],
+        "transcript": "So in in this case, again linear combination."
+    },
+    {
+        "id": 189,
+        "start": 1765.36,
+        "end": 1768.56,
+        "frames": [
+            "frame_00201.png",
+            "frame_00202.png",
+            "frame_00203.png"
+        ],
+        "transcript": "We can introduce the linear combination again."
+    },
+    {
+        "id": 190,
+        "start": 1768.56,
+        "end": 1784.88,
+        "frames": [
+            "frame_00204.png",
+            "frame_00205.png",
+            "frame_00206.png",
+            "frame_00207.png",
+            "frame_00208.png"
+        ],
+        "transcript": "So the linear combination of that that is here, it is connected to the hidden layer units to the output layer units, and in this case we can say this is the input for that."
+    },
+    {
+        "id": 191,
+        "start": 1784.88,
+        "end": 1800.24,
+        "frames": [
+            "frame_00209.png",
+            "frame_00210.png"
+        ],
+        "transcript": "So that means uh sigma of h1 times w seven plus of sigmoid of h2 times w8 plus of sigmoid of h3 times w9."
+    },
+    {
+        "id": 192,
+        "start": 1800.24,
+        "end": 1802.96,
+        "frames": [
+            "frame_00211.png"
+        ],
+        "transcript": "That will be the output sum."
+    },
+    {
+        "id": 193,
+        "start": 1802.96,
+        "end": 1805.52,
+        "frames": [
+            "frame_00212.png"
+        ],
+        "transcript": "Okay, so here is the sum or output sum."
+    },
+    {
+        "id": 194,
+        "start": 1805.52,
+        "end": 1810.08,
+        "frames": [
+            "frame_00213.png"
+        ],
+        "transcript": "Output sum, it will be sigmoid of a uh h1."
+    },
+    {
+        "id": 195,
+        "start": 1810.08,
+        "end": 1822.48,
+        "frames": [
+            "frame_00214.png"
+        ],
+        "transcript": "Here is this, this is the sigmoid of h1 times w seven w seven plus sigmoid of h2 sigmoid of s2 times w eight plus of sigmoid of h3 h3 times w seven."
+    },
+    {
+        "id": 196,
+        "start": 1822.48,
+        "end": 1824.72,
+        "frames": [
+            "frame_00215.png"
+        ],
+        "transcript": "Okay, so this is the output sum."
+    },
+    {
+        "id": 197,
+        "start": 1824.72,
+        "end": 1826.08,
+        "frames": [
+            "frame_00216.png"
+        ],
+        "transcript": "This is output sum."
+    },
+    {
+        "id": 198,
+        "start": 1826.08,
+        "end": 1827.84,
+        "frames": [
+            "frame_00217.png"
+        ],
+        "transcript": "Output sum."
+    },
+    {
+        "id": 199,
+        "start": 1827.84,
+        "end": 1830.08,
+        "frames": [
+            "frame_00218.png"
+        ],
+        "transcript": "Now again, this is linear."
+    },
+    {
+        "id": 200,
+        "start": 1830.08,
+        "end": 1831.28,
+        "frames": [
+            "frame_00219.png"
+        ],
+        "transcript": "Okay, this is linear."
+    },
+    {
+        "id": 201,
+        "start": 1831.28,
+        "end": 1833.28,
+        "frames": [
+            "frame_00220.png"
+        ],
+        "transcript": "So what can we we do again?"
+    },
+    {
+        "id": 202,
+        "start": 1833.28,
+        "end": 1838.24,
+        "frames": [
+            "frame_00221.png"
+        ],
+        "transcript": "We can we can we can uh apply the sigmoid, okay."
+    },
+    {
+        "id": 203,
+        "start": 1838.24,
+        "end": 1844.16,
+        "frames": [
+            "frame_00222.png"
+        ],
+        "transcript": "Sigmoid of the sum or output sum to make it long non-linear value."
+    },
+    {
+        "id": 204,
+        "start": 1844.16,
+        "end": 1855.76,
+        "frames": [
+            "frame_00223.png"
+        ],
+        "transcript": "So after that, what we have we will get, we will get the predicted uh predicted value, okay, or maybe calculated or the calculated value or predicted value."
+    },
+    {
+        "id": 205,
+        "start": 1855.76,
+        "end": 1870.4,
+        "frames": [
+            "frame_00224.png"
+        ],
+        "transcript": "So after applying the sigmoid of the sum, that means whatever we we got here, pass it through the sigmoid function, and then we will get the predicted result, predicted result, and that will be our prediction, okay."
+    },
+    {
+        "id": 206,
+        "start": 1870.4,
+        "end": 1872.96,
+        "frames": [
+            "frame_00225.png"
+        ],
+        "transcript": "And the end of the forward propagation."
+    },
+    {
+        "id": 207,
+        "start": 1872.96,
+        "end": 1881.2,
+        "frames": [
+            "frame_00226.png"
+        ],
+        "transcript": "Okay, so let's apply this formula to our that is example."
+    },
+    {
+        "id": 208,
+        "start": 1881.2,
+        "end": 1886.24,
+        "frames": [
+            "frame_00227.png"
+        ],
+        "transcript": "Say consider that the x1 and x2 is just x1 is one and x2 is one."
+    },
+    {
+        "id": 209,
+        "start": 1886.24,
+        "end": 1903.52,
+        "frames": [
+            "frame_00228.png",
+            "frame_00229.png"
+        ],
+        "transcript": "Okay, another uh another thing I just want to say here that um sometimes uh sometimes we can we the representation here w1, w2, w three, w4, w like this."
+    },
+    {
+        "id": 210,
+        "start": 1903.52,
+        "end": 1906.72,
+        "frames": [
+            "frame_00230.png"
+        ],
+        "transcript": "So sometimes we we can see that the representation will be like here."
+    },
+    {
+        "id": 211,
+        "start": 1906.72,
+        "end": 1915.92,
+        "frames": [
+            "frame_00231.png"
+        ],
+        "transcript": "This one is input uh the first first uh input of the first uh the neuron of the input layer."
+    },
+    {
+        "id": 212,
+        "start": 1915.92,
+        "end": 1918.56,
+        "frames": [
+            "frame_00232.png"
+        ],
+        "transcript": "This is the second neuron of the new input layer."
+    },
+    {
+        "id": 213,
+        "start": 1918.56,
+        "end": 1935.04,
+        "frames": [
+            "frame_00233.png"
+        ],
+        "transcript": "So the words we can we can say we the words we can we can introduce like this one w11, w11 means this is uh the first uh neuron of the input layer connected with the uh first neuron of the hidden layer."
+    },
+    {
+        "id": 214,
+        "start": 1935.04,
+        "end": 1953.68,
+        "frames": [
+            "frame_00234.png"
+        ],
+        "transcript": "Okay, so this is w11 here the w12 that means the far uh the this weight is the um the connection weight between the first neuron of the input layer to the second neuron of hidden layer."
+    },
+    {
+        "id": 215,
+        "start": 1953.68,
+        "end": 1959.76,
+        "frames": [
+            "frame_00235.png"
+        ],
+        "transcript": "Uh similarly, we can say this is the this is the connection weight between the W13."
+    },
+    {
+        "id": 216,
+        "start": 1959.76,
+        "end": 1967.2,
+        "frames": [
+            "frame_00236.png"
+        ],
+        "transcript": "That means it is the connection weight between the first neuron of the input layer to the third neuron of the hidden layer."
+    },
+    {
+        "id": 217,
+        "start": 1967.2,
+        "end": 1980.88,
+        "frames": [
+            "frame_00237.png"
+        ],
+        "transcript": "Okay, so we can represent like this way, and the next one here the two three that means the it is the connection weight between the second neuron of the input layer to the first neuron uh first neuron of the hidden layer 21."
+    },
+    {
+        "id": 218,
+        "start": 1980.88,
+        "end": 1986.24,
+        "frames": [
+            "frame_00238.png"
+        ],
+        "transcript": "Okay, so um and we can represent the the the words like this, okay."
+    },
+    {
+        "id": 219,
+        "start": 1986.24,
+        "end": 1997.6,
+        "frames": [
+            "frame_00239.png"
+        ],
+        "transcript": "W11, w21, w so w12 and w13 and w21 w22 w23 and then this is uh the i1 and i2."
+    },
+    {
+        "id": 220,
+        "start": 1997.6,
+        "end": 1999.84,
+        "frames": [
+            "frame_00240.png"
+        ],
+        "transcript": "So this is the input like x1 and x2."
+    },
+    {
+        "id": 221,
+        "start": 1999.84,
+        "end": 2005.36,
+        "frames": [
+            "frame_00241.png"
+        ],
+        "transcript": "Okay, this is i1 that means in our case the previous example this is x1 and this is x2."
+    },
+    {
+        "id": 222,
+        "start": 2005.36,
+        "end": 2028.16,
+        "frames": [
+            "frame_00242.png"
+        ],
+        "transcript": "So if we just if we just multiply these two vectors, multiply these two vectors like here the w11 and w21 multiplied with the x1 and x2 or i1 and i2, so we we will get like this one w11 times x1 plus of w21 times x2."
+    },
+    {
+        "id": 223,
+        "start": 2028.16,
+        "end": 2035.76,
+        "frames": [
+            "frame_00243.png"
+        ],
+        "transcript": "Okay, so it will be our the first uh hidden layer value that means this is the h1 okay, h1."
+    },
+    {
+        "id": 224,
+        "start": 2035.76,
+        "end": 2049.76,
+        "frames": [
+            "frame_00244.png",
+            "frame_00245.png",
+            "frame_00246.png"
+        ],
+        "transcript": "So though we can say that in in in this case uh in this case we can we can we can see this uh in this way, but it is better if we can represent those values in matrix form and then multiply the matrices, okay."
+    },
+    {
+        "id": 225,
+        "start": 2049.76,
+        "end": 2054.08,
+        "frames": [
+            "frame_00247.png"
+        ],
+        "transcript": "Matrices the matrix matrix multiplication will give us the result, okay."
+    },
+    {
+        "id": 226,
+        "start": 2054.08,
+        "end": 2058.72,
+        "frames": [
+            "frame_00248.png"
+        ],
+        "transcript": "So we will see in our next example the matrix multiplication format."
+    },
+    {
+        "id": 227,
+        "start": 2058.72,
+        "end": 2108.72,
+        "frames": [
+            "frame_00249.png"
+        ],
+        "transcript": "Okay, so uh so consider our previous uh example in our case the x1 is x1 is one and x2 is just one, so that means we want to pass this input to this network, and and the so w1 like here this is the w1, w1 is 0.8 uh and w2 is w2 is uh 0.4 okay and w three is uh w three is 0.3 so initially what we have to do we have to assign these values just randomly, the random value between 0 to 1, random values within 0 to 1."
+    },
+    {
+        "id": 228,
+        "start": 2108.72,
+        "end": 2123.92,
+        "frames": [
+            "frame_00250.png"
+        ],
+        "transcript": "Um so initially we have to assign the random words, random words, so random words that means uh these are the words we have assigned randomly, okay."
+    },
+    {
+        "id": 229,
+        "start": 2123.92,
+        "end": 2131.92,
+        "frames": [
+            "frame_00251.png"
+        ],
+        "transcript": "Assigned randomly a random assignment of the words."
+    },
+    {
+        "id": 230,
+        "start": 2131.92,
+        "end": 2140.16,
+        "frames": [
+            "frame_00252.png"
+        ],
+        "transcript": "This is w8 equal this value, and w9 equals this value."
+    },
+    {
+        "id": 231,
+        "start": 2140.16,
+        "end": 2154.32,
+        "frames": [
+            "frame_00253.png"
+        ],
+        "transcript": "So these are random assignments that means we have randomly assigned the values of uh the values of uh the words, uh, but the input this this input is fixed, okay."
+    },
+    {
+        "id": 232,
+        "start": 2154.32,
+        "end": 2166.0,
+        "frames": [
+            "frame_00254.png"
+        ],
+        "transcript": "We cannot change the uh input, but we can change the values, these values so that the linear combination and sigmoid uh function, and finally we will get the predicted value."
+    },
+    {
+        "id": 233,
+        "start": 2166.0,
+        "end": 2169.12,
+        "frames": [
+            "frame_00255.png"
+        ],
+        "transcript": "So our our target or goal is zero here."
+    },
+    {
+        "id": 234,
+        "start": 2169.12,
+        "end": 2171.92,
+        "frames": [
+            "frame_00256.png"
+        ],
+        "transcript": "This is the zero, but what's our prediction?"
+    },
+    {
+        "id": 235,
+        "start": 2171.92,
+        "end": 2173.84,
+        "frames": [
+            "frame_00257.png"
+        ],
+        "transcript": "We can we can calculate this."
+    },
+    {
+        "id": 236,
+        "start": 2173.84,
+        "end": 2176.0,
+        "frames": [
+            "frame_00258.png"
+        ],
+        "transcript": "is the the first random assignment."
+    },
+    {
+        "id": 237,
+        "start": 2176.0,
+        "end": 2179.44,
+        "frames": [
+            "frame_00259.png"
+        ],
+        "transcript": "We assign the those values randomly, okay?"
+    },
+    {
+        "id": 238,
+        "start": 2179.44,
+        "end": 2200.88,
+        "frames": [
+            "frame_00260.png"
+        ],
+        "transcript": "And then now uh we can we can see that if we calculate the x1 and w1 plus x2 and w4, so that means the x1 is one, so x1 is one, and w1 is 0.8, so 0.8 and x2 is also one, x2 is also one, and w4 is 0.2 0.2."
+    },
+    {
+        "id": 239,
+        "start": 2200.88,
+        "end": 2203.84,
+        "frames": [
+            "frame_00261.png"
+        ],
+        "transcript": "If we do the math, then we will get one."
+    },
+    {
+        "id": 240,
+        "start": 2203.84,
+        "end": 2207.28,
+        "frames": [
+            "frame_00262.png"
+        ],
+        "transcript": "That means the value of h1 is one, okay."
+    },
+    {
+        "id": 241,
+        "start": 2207.28,
+        "end": 2215.2,
+        "frames": [
+            "frame_00263.png"
+        ],
+        "transcript": "V of h1 is one, and then what we can do the next uh x1 w2 x2 w5."
+    },
+    {
+        "id": 242,
+        "start": 2215.2,
+        "end": 2235.2,
+        "frames": [
+            "frame_00264.png"
+        ],
+        "transcript": "That means we can see that the the x1 is again one, so x1 is one, and the uh w2 w2 is 0.4, and then the x2 that is one one and w5, and this is 0.9."
+    },
+    {
+        "id": 243,
+        "start": 2235.2,
+        "end": 2239.12,
+        "frames": [
+            "frame_00265.png"
+        ],
+        "transcript": "Do the math, then you will go get 1.3."
+    },
+    {
+        "id": 244,
+        "start": 2239.12,
+        "end": 2243.2,
+        "frames": [
+            "frame_00266.png"
+        ],
+        "transcript": "Similarly, for h3 we will get 0.8."
+    },
+    {
+        "id": 245,
+        "start": 2243.2,
+        "end": 2249.2,
+        "frames": [
+            "frame_00267.png"
+        ],
+        "transcript": "That means the hidden layer fields 1, 1.3 and 0.8."
+    },
+    {
+        "id": 246,
+        "start": 2249.2,
+        "end": 2252.56,
+        "frames": [
+            "frame_00268.png"
+        ],
+        "transcript": "So, what can we do next?"
+    },
+    {
+        "id": 247,
+        "start": 2252.56,
+        "end": 2254.56,
+        "frames": [
+            "frame_00269.png"
+        ],
+        "transcript": "The next thing is the sigmoid."
+    },
+    {
+        "id": 248,
+        "start": 2254.56,
+        "end": 2259.84,
+        "frames": [
+            "frame_00270.png"
+        ],
+        "transcript": "So, we have to we have to determine the sigmoid of h1, sigmoid of h2, and sigmoid of h3."
+    },
+    {
+        "id": 249,
+        "start": 2259.84,
+        "end": 2265.84,
+        "frames": [
+            "frame_00271.png"
+        ],
+        "transcript": "So, here is the sigmoid of h1, we will get this sigmoid of h2."
+    },
+    {
+        "id": 250,
+        "start": 2265.84,
+        "end": 2271.12,
+        "frames": [
+            "frame_00272.png"
+        ],
+        "transcript": "We will get this sigmoid of uh 0.8, that means h3, we will get this value."
+    },
+    {
+        "id": 251,
+        "start": 2271.12,
+        "end": 2273.84,
+        "frames": [
+            "frame_00273.png"
+        ],
+        "transcript": "Then what's the sigmoid?"
+    },
+    {
+        "id": 252,
+        "start": 2273.84,
+        "end": 2276.0,
+        "frames": [
+            "frame_00274.png"
+        ],
+        "transcript": "Okay, what is sigmoid here?"
+    },
+    {
+        "id": 253,
+        "start": 2276.0,
+        "end": 2285.12,
+        "frames": [
+            "frame_00275.png"
+        ],
+        "transcript": "The sigmoid function is this that is sigmoid of g any value, so it will be like the sigmoid of any value, any value like g."
+    },
+    {
+        "id": 254,
+        "start": 2285.12,
+        "end": 2295.36,
+        "frames": [
+            "frame_00276.png"
+        ],
+        "transcript": "Okay, so we can say that it will be one by one plus of e to the power minus of g."
+    },
+    {
+        "id": 255,
+        "start": 2295.36,
+        "end": 2304.64,
+        "frames": [
+            "frame_00277.png"
+        ],
+        "transcript": "So that means uh you can put any value here, like in case of the one in our previous case."
+    },
+    {
+        "id": 256,
+        "start": 2304.64,
+        "end": 2306.08,
+        "frames": [
+            "frame_00278.png"
+        ],
+        "transcript": "This is the one, okay."
+    },
+    {
+        "id": 257,
+        "start": 2306.08,
+        "end": 2307.68,
+        "frames": [
+            "frame_00279.png"
+        ],
+        "transcript": "The sigma of one."
+    },
+    {
+        "id": 258,
+        "start": 2307.68,
+        "end": 2318.16,
+        "frames": [
+            "frame_00280.png"
+        ],
+        "transcript": "So on that case, uh we will get like one by one plus e to the power minus one, so we will get some value here."
+    },
+    {
+        "id": 259,
+        "start": 2318.16,
+        "end": 2321.76,
+        "frames": [
+            "frame_00281.png"
+        ],
+        "transcript": "That is this value, okay."
+    },
+    {
+        "id": 260,
+        "start": 2321.76,
+        "end": 2325.12,
+        "frames": [
+            "frame_00282.png"
+        ],
+        "transcript": "The same same thing that means the same function, sigma function."
+    },
+    {
+        "id": 261,
+        "start": 2325.12,
+        "end": 2328.64,
+        "frames": [
+            "frame_00283.png"
+        ],
+        "transcript": "We can pass this value and we will get these results."
+    },
+    {
+        "id": 262,
+        "start": 2328.64,
+        "end": 2343.04,
+        "frames": [
+            "frame_00284.png",
+            "frame_00285.png"
+        ],
+        "transcript": "Okay, so um after after finding out the the sigmoid, so we can see here that we will get the these values."
+    },
+    {
+        "id": 263,
+        "start": 2343.04,
+        "end": 2355.36,
+        "frames": [
+            "frame_00286.png",
+            "frame_00287.png"
+        ],
+        "transcript": "Then why we need to uh uh introduce the sigmoid because of the non-linearity, one of the things, and another thing here the the sigmoid function the that is the representation of this number."
+    },
+    {
+        "id": 264,
+        "start": 2355.36,
+        "end": 2362.72,
+        "frames": [
+            "frame_00288.png"
+        ],
+        "transcript": "So any value if we put any values in x-axis, then this sigmoid function will return the value within 0 to 1."
+    },
+    {
+        "id": 265,
+        "start": 2362.72,
+        "end": 2367.84,
+        "frames": [
+            "frame_00289.png"
+        ],
+        "transcript": "So that means uh it's kind of the the probabilistic result, also."
+    },
+    {
+        "id": 266,
+        "start": 2367.84,
+        "end": 2378.08,
+        "frames": [
+            "frame_00290.png"
+        ],
+        "transcript": "Okay, that means so that that that's why sigmoid function is heavily used in shallow neural networks, but in deep neural network architecture, the relue is heavily used, okay."
+    },
+    {
+        "id": 267,
+        "start": 2378.08,
+        "end": 2399.92,
+        "frames": [
+            "frame_00291.png"
+        ],
+        "transcript": "Okay, so uh we determine the sigmoid values, and now what we have to do the next thing, this uh hidden layer that is sigmoid values, we have to multiply with this one and this one to that one and this one to that one to finally get the sum."
+    },
+    {
+        "id": 268,
+        "start": 2399.92,
+        "end": 2421.76,
+        "frames": [
+            "frame_00292.png"
+        ],
+        "transcript": "So that's what it is like the here in this case the sigma w1 times w seven, sigma w s2 times w and sigma w three times, and then we will get this sum is this one, this one, and this one, then it it will be one point two three five."
+    },
+    {
+        "id": 269,
+        "start": 2421.76,
+        "end": 2432.8,
+        "frames": [
+            "frame_00293.png"
+        ],
+        "transcript": "So that the sum this sum the output sum output sum or sum output sum is one point two three five."
+    },
+    {
+        "id": 270,
+        "start": 2432.8,
+        "end": 2442.0,
+        "frames": [
+            "frame_00294.png"
+        ],
+        "transcript": "Now, what we have to do, we have to pass this value again to the sigmoid function, and then we will get the calculated or predicted value."
+    },
+    {
+        "id": 271,
+        "start": 2442.0,
+        "end": 2450.72,
+        "frames": [
+            "frame_00295.png"
+        ],
+        "transcript": "So here we pass this value to the sigmoid function, and we will get this 0.774699."
+    },
+    {
+        "id": 272,
+        "start": 2450.72,
+        "end": 2457.76,
+        "frames": [
+            "frame_00296.png"
+        ],
+        "transcript": "This value, and this is the calculated or maybe predicted result, calculated or predicted result."
+    },
+    {
+        "id": 273,
+        "start": 2457.76,
+        "end": 2464.8,
+        "frames": [
+            "frame_00297.png",
+            "frame_00298.png"
+        ],
+        "transcript": "So we can see that that is uh 1.2, and then after uh sigmoid it is 0.77."
+    },
+    {
+        "id": 274,
+        "start": 2464.8,
+        "end": 2467.76,
+        "frames": [
+            "frame_00299.png"
+        ],
+        "transcript": "So this is the predicted value 0.77."
+    },
+    {
+        "id": 275,
+        "start": 2467.76,
+        "end": 2474.64,
+        "frames": [
+            "frame_00300.png"
+        ],
+        "transcript": "So calculated or predicted value is 0.77, but our target is zero because here is the zero."
+    },
+    {
+        "id": 276,
+        "start": 2474.64,
+        "end": 2496.72,
+        "frames": [
+            "frame_00301.png"
+        ],
+        "transcript": "Okay, so that means uh the random assignment of the weights, the random assignment of the words, so these words, random assignment of these words, uh will give us just one prediction, and that prediction is 0.77, but uh it should be uh we we should make it zero."
+    },
+    {
+        "id": 277,
+        "start": 2496.72,
+        "end": 2498.8,
+        "frames": [
+            "frame_00302.png"
+        ],
+        "transcript": "Then how can we do that?"
+    },
+    {
+        "id": 278,
+        "start": 2498.8,
+        "end": 2513.44,
+        "frames": [
+            "frame_00303.png"
+        ],
+        "transcript": "Okay, so for that we have to we have to change the words, um, other things that there will be no scope to change the other things like here."
+    },
+    {
+        "id": 279,
+        "start": 2513.44,
+        "end": 2516.0,
+        "frames": [
+            "frame_00304.png"
+        ],
+        "transcript": "The input we cannot change, it should be fixed."
+    },
+    {
+        "id": 280,
+        "start": 2516.0,
+        "end": 2517.2,
+        "frames": [
+            "frame_00305.png"
+        ],
+        "transcript": "Okay, it should be fixed."
+    },
+    {
+        "id": 281,
+        "start": 2517.2,
+        "end": 2519.92,
+        "frames": [
+            "frame_00306.png"
+        ],
+        "transcript": "Input this this this input it should be fixed."
+    },
+    {
+        "id": 282,
+        "start": 2519.92,
+        "end": 2521.76,
+        "frames": [
+            "frame_00307.png"
+        ],
+        "transcript": "So we cannot change the input."
+    },
+    {
+        "id": 283,
+        "start": 2521.76,
+        "end": 2524.16,
+        "frames": [
+            "frame_00308.png"
+        ],
+        "transcript": "So what other options we have?"
+    },
+    {
+        "id": 284,
+        "start": 2524.16,
+        "end": 2533.6,
+        "frames": [
+            "frame_00309.png"
+        ],
+        "transcript": "We have to change the words, so we have to change or update the words in such a way so that it will uh return us zero."
+    },
+    {
+        "id": 285,
+        "start": 2533.6,
+        "end": 2541.6,
+        "frames": [
+            "frame_00310.png"
+        ],
+        "transcript": "So that means uh so the problem is now the how can we how can we change the words?"
+    },
+    {
+        "id": 286,
+        "start": 2541.6,
+        "end": 2543.76,
+        "frames": [
+            "frame_00311.png"
+        ],
+        "transcript": "How can we update the words?"
+    },
+    {
+        "id": 287,
+        "start": 2543.76,
+        "end": 2546.72,
+        "frames": [
+            "frame_00312.png"
+        ],
+        "transcript": "Should we increase each and every value like here?"
+    },
+    {
+        "id": 288,
+        "start": 2546.72,
+        "end": 2552.08,
+        "frames": [
+            "frame_00313.png"
+        ],
+        "transcript": "Should you increase this value, this value, or that value, or this value, or that value, or that value."
+    },
+    {
+        "id": 289,
+        "start": 2552.08,
+        "end": 2554.56,
+        "frames": [
+            "frame_00314.png"
+        ],
+        "transcript": "Okay, so should we increase or decrease?"
+    },
+    {
+        "id": 290,
+        "start": 2554.56,
+        "end": 2561.28,
+        "frames": [
+            "frame_00315.png"
+        ],
+        "transcript": "What should be the appropriate and how much uh we will reduce or maybe increase in each and every iteration?"
+    },
+    {
+        "id": 291,
+        "start": 2561.28,
+        "end": 2563.92,
+        "frames": [
+            "frame_00316.png"
+        ],
+        "transcript": "So this is uh the challenge, okay."
+    },
+    {
+        "id": 292,
+        "start": 2563.92,
+        "end": 2566.72,
+        "frames": [
+            "frame_00317.png"
+        ],
+        "transcript": "Um to meet this challenge."
+    },
+    {
+        "id": 293,
+        "start": 2566.72,
+        "end": 2583.04,
+        "frames": [
+            "frame_00318.png"
+        ],
+        "transcript": "Actually, we we need to uh we need to again think about the uh that is the back propagation, that means and the updating the words in such a way so that uh the network will converse, okay."
+    },
+    {
+        "id": 294,
+        "start": 2583.04,
+        "end": 2591.2,
+        "frames": [
+            "frame_00319.png",
+            "frame_00320.png"
+        ],
+        "transcript": "The network will converse towards the right direction, and again the gradient will help us for that purpose."
+    },
+    {
+        "id": 295,
+        "start": 2591.2,
+        "end": 2599.52,
+        "frames": [
+            "frame_00321.png"
+        ],
+        "transcript": "So here uh the the that means the back propagation, we have to apply the back propagation."
+    },
+    {
+        "id": 296,
+        "start": 2599.52,
+        "end": 2607.92,
+        "frames": [
+            "frame_00322.png"
+        ],
+        "transcript": "So uh back propagation is uh kind of the we we call it backward propagation, okay."
+    },
+    {
+        "id": 297,
+        "start": 2607.92,
+        "end": 2610.88,
+        "frames": [
+            "frame_00323.png"
+        ],
+        "transcript": "That means what we have to do here."
+    },
+    {
+        "id": 298,
+        "start": 2610.88,
+        "end": 2616.08,
+        "frames": [
+            "frame_00324.png",
+            "frame_00325.png"
+        ],
+        "transcript": "Uh we can see that this is this is the the output predicted output."
+    },
+    {
+        "id": 299,
+        "start": 2616.08,
+        "end": 2619.04,
+        "frames": [
+            "frame_00326.png"
+        ],
+        "transcript": "Then what we have to do, we have to calculate the error."
+    },
+    {
+        "id": 300,
+        "start": 2619.04,
+        "end": 2624.64,
+        "frames": [
+            "frame_00327.png"
+        ],
+        "transcript": "That means target is zero calculated uh and calculated value or predicted value is 0.77."
+    },
+    {
+        "id": 301,
+        "start": 2624.64,
+        "end": 2626.24,
+        "frames": [
+            "frame_00328.png"
+        ],
+        "transcript": "Then what's the error here?"
+    },
+    {
+        "id": 302,
+        "start": 2626.24,
+        "end": 2628.0,
+        "frames": [
+            "frame_00329.png"
+        ],
+        "transcript": "How much error is this?"
+    },
+    {
+        "id": 303,
+        "start": 2628.0,
+        "end": 2635.44,
+        "frames": [
+            "frame_00330.png"
+        ],
+        "transcript": "Okay, so simply we can we can we can compute the error like 0 minus of 0.77."
+    },
+    {
+        "id": 304,
+        "start": 2635.44,
+        "end": 2637.44,
+        "frames": [
+            "frame_00331.png"
+        ],
+        "transcript": "This is very simple, okay."
+    },
+    {
+        "id": 305,
+        "start": 2637.44,
+        "end": 2650.32,
+        "frames": [
+            "frame_00332.png"
+        ],
+        "transcript": "Very simple, but uh we know that in in in machine learning domain uh the error there are there are several functions for error determination, usually we call it loss functions."
+    },
+    {
+        "id": 306,
+        "start": 2650.32,
+        "end": 2665.52,
+        "frames": [
+            "frame_00333.png"
+        ],
+        "transcript": "Okay, it can be the sum of square residuals, uh, it can be mean square error, it can be cross-entropy loss, okay, uh, it can be the hinge loss, um, so it can be mean bias error."
+    },
+    {
+        "id": 307,
+        "start": 2665.52,
+        "end": 2667.52,
+        "frames": [
+            "frame_00334.png"
+        ],
+        "transcript": "So many error functions are there, okay."
+    },
+    {
+        "id": 308,
+        "start": 2667.52,
+        "end": 2672.56,
+        "frames": [
+            "frame_00335.png"
+        ],
+        "transcript": "So the error can be computed in different way, different manner."
+    },
+    {
+        "id": 309,
+        "start": 2672.56,
+        "end": 2694.08,
+        "frames": [
+            "frame_00336.png",
+            "frame_00337.png"
+        ],
+        "transcript": "Okay, so uh so this error at first, what we have to do this is the cost function and error function, we have to measure the error, and based on this error, what we have to do, we have to determine the the the activation that means rate of change in activations."
+    },
+    {
+        "id": 310,
+        "start": 2694.08,
+        "end": 2699.76,
+        "frames": [
+            "frame_00338.png"
+        ],
+        "transcript": "See that means the derivative of the activations, okay."
+    },
+    {
+        "id": 311,
+        "start": 2699.76,
+        "end": 2709.28,
+        "frames": [
+            "frame_00339.png"
+        ],
+        "transcript": "And because we we have here at first we we introduced the activation, and based on this activation, we have uh uh predicted the value."
+    },
+    {
+        "id": 312,
+        "start": 2709.28,
+        "end": 2723.68,
+        "frames": [
+            "frame_00340.png"
+        ],
+        "transcript": "Okay, so at first the and then this activation uh this uh with this activation, what we have to do, we have to determine the the uh rate of change in in G."
+    },
+    {
+        "id": 313,
+        "start": 2723.68,
+        "end": 2735.76,
+        "frames": [
+            "frame_00341.png"
+        ],
+        "transcript": "Okay, that means this g is the failure value value from value we have calculated using the linear combination of sigmoid values of hidden layers and the weights."
+    },
+    {
+        "id": 314,
+        "start": 2735.76,
+        "end": 2749.04,
+        "frames": [
+            "frame_00342.png"
+        ],
+        "transcript": "Okay, so that means uh so we we need to find out this, and then what we have to do with this value that means with this d of g1 rate of change of g1."
+    },
+    {
+        "id": 315,
+        "start": 2749.04,
+        "end": 2757.68,
+        "frames": [
+            "frame_00343.png"
+        ],
+        "transcript": "We can determine the w1 uh that means that the weights are here, so this weights that means this weights and this words."
+    },
+    {
+        "id": 316,
+        "start": 2757.68,
+        "end": 2760.4,
+        "frames": [
+            "frame_00344.png"
+        ],
+        "transcript": "So here it is represented w1 and w2."
+    },
+    {
+        "id": 317,
+        "start": 2760.4,
+        "end": 2766.24,
+        "frames": [
+            "frame_00345.png"
+        ],
+        "transcript": "So that means the rate of change of w and the rate of change of w2."
+    },
+    {
+        "id": 318,
+        "start": 2766.24,
+        "end": 2804.64,
+        "frames": [
+            "frame_00346.png"
+        ],
+        "transcript": "Okay, so that means this this weights we can change according to uh the following this this value that means at first this one activation and then determining the dz1, and from the dz1 we can compute the rate of change of w and w2, and then uh so the these words uh will be changed, and what we have to do, we have to also change the w11 and here is the w21 and w all all these other words, and for that, how can we change that?"
+    },
+    {
+        "id": 319,
+        "start": 2804.64,
+        "end": 2807.52,
+        "frames": [
+            "frame_00347.png"
+        ],
+        "transcript": "Again, we can compute here is the activation."
+    },
+    {
+        "id": 320,
+        "start": 2807.52,
+        "end": 2813.12,
+        "frames": [
+            "frame_00348.png"
+        ],
+        "transcript": "Okay, so we can compute from here the d uh a1 and d a2."
+    },
+    {
+        "id": 321,
+        "start": 2813.12,
+        "end": 2828.0,
+        "frames": [
+            "frame_00349.png"
+        ],
+        "transcript": "That is this is activation one and this is activation two, and from this activation again we can compute the d g1 here, dg1 and t of g2, and using the d g1 and d g2 values."
+    },
+    {
+        "id": 322,
+        "start": 2828.0,
+        "end": 2829.12,
+        "frames": [
+            "frame_00350.png"
+        ],
+        "transcript": "What we can do?"
+    },
+    {
+        "id": 323,
+        "start": 2829.12,
+        "end": 2839.68,
+        "frames": [
+            "frame_00351.png"
+        ],
+        "transcript": "We can determine the the rate of change of w11 and rate of change of w1, w22, and similarly w21 and w12."
+    },
+    {
+        "id": 324,
+        "start": 2839.68,
+        "end": 2842.96,
+        "frames": [
+            "frame_00352.png"
+        ],
+        "transcript": "That means this is the procedure."
+    },
+    {
+        "id": 325,
+        "start": 2842.96,
+        "end": 2857.28,
+        "frames": [
+            "frame_00353.png"
+        ],
+        "transcript": "So, in this procedure, we can see that we started with this cost cost function and then uh the going back to to updates the weights of the input to hidden layers."
+    },
+    {
+        "id": 326,
+        "start": 2857.28,
+        "end": 2861.92,
+        "frames": [
+            "frame_00354.png"
+        ],
+        "transcript": "Okay, so this is the backput back backward propagation or back propagation."
+    },
+    {
+        "id": 327,
+        "start": 2861.92,
+        "end": 2866.96,
+        "frames": [
+            "frame_00355.png",
+            "frame_00356.png"
+        ],
+        "transcript": "Now uh we can apply the back propagation in our model."
+    },
+    {
+        "id": 328,
+        "start": 2866.96,
+        "end": 2875.2,
+        "frames": [
+            "frame_00357.png"
+        ],
+        "transcript": "So, like here, the output some margin error, it is target value minus of calculated or predicted value."
+    },
+    {
+        "id": 329,
+        "start": 2875.2,
+        "end": 2878.8,
+        "frames": [
+            "frame_00358.png"
+        ],
+        "transcript": "So, in our case, it is zero and calculated 0.77."
+    },
+    {
+        "id": 330,
+        "start": 2878.8,
+        "end": 2883.2,
+        "frames": [
+            "frame_00359.png"
+        ],
+        "transcript": "So, target minus calculated it will be minus of 0.77."
+    },
+    {
+        "id": 331,
+        "start": 2883.2,
+        "end": 2888.88,
+        "frames": [
+            "frame_00360.png"
+        ],
+        "transcript": "So now uh what we can do this is this is the error, okay."
+    },
+    {
+        "id": 332,
+        "start": 2888.88,
+        "end": 2889.68,
+        "frames": [
+            "frame_00361.png"
+        ],
+        "transcript": "This is the error."
+    },
+    {
+        "id": 333,
+        "start": 2889.68,
+        "end": 2897.04,
+        "frames": [
+            "frame_00362.png"
+        ],
+        "transcript": "Now we have to think about the that is the uh rate of chance, okay."
+    },
+    {
+        "id": 334,
+        "start": 2897.04,
+        "end": 2917.68,
+        "frames": [
+            "frame_00363.png"
+        ],
+        "transcript": "Rate of chance, and for that we can see that the in our case the equation final equation is this that means sigmoid of sum is the predicted value, and then this sum this sum is the linear combination of weights of sigmoid a sigmoid 2 and sigmoid a."
+    },
+    {
+        "id": 335,
+        "start": 2917.68,
+        "end": 2920.4,
+        "frames": [
+            "frame_00364.png"
+        ],
+        "transcript": "So this is the output sum, output sum."
+    },
+    {
+        "id": 336,
+        "start": 2920.4,
+        "end": 2935.6,
+        "frames": [
+            "frame_00365.png"
+        ],
+        "transcript": "Okay, so if we can if we can think about that, is the we want to find out the rate of change, rate of change in in in sum, then uh we have to we have to think about the derivative of the sigmoid."
+    },
+    {
+        "id": 337,
+        "start": 2935.6,
+        "end": 2942.0,
+        "frames": [
+            "frame_00366.png"
+        ],
+        "transcript": "So that means we have to uh we have to take the derivative uh of the sigmoid, like here."
+    },
+    {
+        "id": 338,
+        "start": 2942.0,
+        "end": 2945.52,
+        "frames": [
+            "frame_00367.png"
+        ],
+        "transcript": "This is the sigmoid function, that is sigmoid of sum."
+    },
+    {
+        "id": 339,
+        "start": 2945.52,
+        "end": 2962.0,
+        "frames": [
+            "frame_00368.png"
+        ],
+        "transcript": "And then if we take the derivative, the the derivative will uh it it will determine that is the the rate of change, or we can say the derivative will tell us the direction uh whether it should be increased or decreased, okay."
+    },
+    {
+        "id": 340,
+        "start": 2962.0,
+        "end": 2970.56,
+        "frames": [
+            "frame_00369.png"
+        ],
+        "transcript": "Whether it should be increased or decreased, and I I I think we already discussed these things in our gradient descent and gradient descent method."
+    },
+    {
+        "id": 341,
+        "start": 2970.56,
+        "end": 2977.12,
+        "frames": [
+            "frame_00370.png"
+        ],
+        "transcript": "Uh, that is what's uh what's the role of the the derivative in in increasing or decreasing the words."
+    },
+    {
+        "id": 342,
+        "start": 2977.12,
+        "end": 2984.48,
+        "frames": [
+            "frame_00371.png"
+        ],
+        "transcript": "Okay, the same thing here the take the derivative of the sigmoid function, sigmoid function, then we will get the d is sum and t result."
+    },
+    {
+        "id": 343,
+        "start": 2984.48,
+        "end": 2988.8,
+        "frames": [
+            "frame_00372.png"
+        ],
+        "transcript": "That means like here, this the sum equal result."
+    },
+    {
+        "id": 344,
+        "start": 2988.8,
+        "end": 2992.24,
+        "frames": [
+            "frame_00373.png"
+        ],
+        "transcript": "Sigmaid of the sum, the sigma of the sum is calculated on the result."
+    },
+    {
+        "id": 345,
+        "start": 2992.24,
+        "end": 2994.32,
+        "frames": [
+            "frame_00374.png"
+        ],
+        "transcript": "Okay, so sigma of the sum is result."
+    },
+    {
+        "id": 346,
+        "start": 2994.32,
+        "end": 3006.48,
+        "frames": [
+            "frame_00375.png"
+        ],
+        "transcript": "Now, if we take the derivative uh with respect to result, then we will get that this is this is the that is uh sigmoid of the sum equal d sum by d result."
+    },
+    {
+        "id": 347,
+        "start": 3006.48,
+        "end": 3010.48,
+        "frames": [
+            "frame_00376.png"
+        ],
+        "transcript": "Okay, so this uh this is the relation we got."
+    },
+    {
+        "id": 348,
+        "start": 3010.48,
+        "end": 3017.6,
+        "frames": [
+            "frame_00377.png"
+        ],
+        "transcript": "Now, what we uh we can do that is uh d sum by d result, d sum by d result."
+    },
+    {
+        "id": 349,
+        "start": 3017.6,
+        "end": 3022.08,
+        "frames": [
+            "frame_00378.png"
+        ],
+        "transcript": "This is this is the derivative of the sum with respect to result."
+    },
+    {
+        "id": 350,
+        "start": 3022.08,
+        "end": 3031.2,
+        "frames": [
+            "frame_00379.png"
+        ],
+        "transcript": "We we have to we have to uh that is uh take the derivative of our loss function."
+    },
+    {
+        "id": 351,
+        "start": 3031.2,
+        "end": 3040.8,
+        "frames": [
+            "frame_00380.png"
+        ],
+        "transcript": "So in case of our loss function, it is target is zero and calculated is like uh calculated result or predicted result is 0.77."
+    },
+    {
+        "id": 352,
+        "start": 3040.8,
+        "end": 3046.96,
+        "frames": [
+            "frame_00381.png"
+        ],
+        "transcript": "So like uh we have to take the derivative of that, and this is called the delta sum, okay?"
+    },
+    {
+        "id": 353,
+        "start": 3046.96,
+        "end": 3050.64,
+        "frames": [
+            "frame_00382.png"
+        ],
+        "transcript": "Delta sum that means uh d sum, delta sum."
+    },
+    {
+        "id": 354,
+        "start": 3050.64,
+        "end": 3052.48,
+        "frames": [
+            "frame_00383.png"
+        ],
+        "transcript": "We can say this is the delta sum."
+    },
+    {
+        "id": 355,
+        "start": 3052.48,
+        "end": 3089.28,
+        "frames": [
+            "frame_00384.png"
+        ],
+        "transcript": "And another thing here we uh I need to just uh tell you that the the derivative because we need to compute the the the derivative of the sigma function, the derivative of the sigma function is easy to calculate if we have the sigma function of this that is sigma of x equal one by one plus e to the power minus of x, and if we take the derivative of this, that is derivative of the sigma of x with respect to x, then we will uh it will just sigma dot x times one minus sigma dot x."
+    },
+    {
+        "id": 356,
+        "start": 3089.28,
+        "end": 3097.04,
+        "frames": [
+            "frame_00385.png"
+        ],
+        "transcript": "So if we if we just derive this one, take the derivative, then then we will finally we will conclude it here."
+    },
+    {
+        "id": 357,
+        "start": 3097.04,
+        "end": 3101.68,
+        "frames": [
+            "frame_00386.png"
+        ],
+        "transcript": "Finally we will conclude it that this is the sigma dot x times one minus sigma dot x."
+    },
+    {
+        "id": 358,
+        "start": 3101.68,
+        "end": 3105.2,
+        "frames": [
+            "frame_00387.png"
+        ],
+        "transcript": "That means to compute the derivative, it is very easy."
+    },
+    {
+        "id": 359,
+        "start": 3105.2,
+        "end": 3112.72,
+        "frames": [
+            "frame_00388.png"
+        ],
+        "transcript": "Just just sigma dot x if you come if you know the sigma dot s x, then derivative of the sigma dot x is also very easy."
+    },
+    {
+        "id": 360,
+        "start": 3112.72,
+        "end": 3116.72,
+        "frames": [
+            "frame_00389.png"
+        ],
+        "transcript": "The sigma dot x times one minus sigma dot x."
+    },
+    {
+        "id": 361,
+        "start": 3116.72,
+        "end": 3119.92,
+        "frames": [
+            "frame_00390.png"
+        ],
+        "transcript": "Okay, so we can easily compute this."
+    },
+    {
+        "id": 362,
+        "start": 3119.92,
+        "end": 3125.68,
+        "frames": [
+            "frame_00391.png"
+        ],
+        "transcript": "This derivation, I think no need to show because we all know how to how to take the derivative."
+    },
+    {
+        "id": 363,
+        "start": 3125.68,
+        "end": 3132.72,
+        "frames": [
+            "frame_00392.png",
+            "frame_00393.png"
+        ],
+        "transcript": "Okay, so now uh so this this this is the work of the back propagation."
+    },
+    {
+        "id": 364,
+        "start": 3132.72,
+        "end": 3134.24,
+        "frames": [
+            "frame_00394.png"
+        ],
+        "transcript": "Okay, back propagation."
+    },
+    {
+        "id": 365,
+        "start": 3134.24,
+        "end": 3141.28,
+        "frames": [
+            "frame_00395.png"
+        ],
+        "transcript": "Now, what we have to do, uh we have this so delta output sum, delta output sum."
+    },
+    {
+        "id": 366,
+        "start": 3141.28,
+        "end": 3149.6,
+        "frames": [
+            "frame_00396.png",
+            "frame_00397.png",
+            "frame_00398.png"
+        ],
+        "transcript": "We we we already seen the delta sum or delta output sum, it is d sum by d result and target result and calculate minus of calculated result."
+    },
+    {
+        "id": 367,
+        "start": 3149.6,
+        "end": 3159.12,
+        "frames": [
+            "frame_00399.png"
+        ],
+        "transcript": "So here is this so sigma uh that is derivative of the sigma times output some margin error, output some margin error."
+    },
+    {
+        "id": 368,
+        "start": 3159.12,
+        "end": 3164.72,
+        "frames": [
+            "frame_00400.png"
+        ],
+        "transcript": "So it is uh this value times 0 uh minus of 0.77."
+    },
+    {
+        "id": 369,
+        "start": 3164.72,
+        "end": 3171.44,
+        "frames": [
+            "frame_00401.png",
+            "frame_00402.png"
+        ],
+        "transcript": "We already computed the output sub margin error here calculated minus target."
+    },
+    {
+        "id": 370,
+        "start": 3171.44,
+        "end": 3173.44,
+        "frames": [
+            "frame_00403.png"
+        ],
+        "transcript": "This is output some margin error."
+    },
+    {
+        "id": 371,
+        "start": 3173.44,
+        "end": 3184.96,
+        "frames": [
+            "frame_00404.png"
+        ],
+        "transcript": "Okay, so that means uh take the derivative of this one, then we will get delta output sum, delta output sum."
+    },
+    {
+        "id": 372,
+        "start": 3184.96,
+        "end": 3188.16,
+        "frames": [
+            "frame_00405.png"
+        ],
+        "transcript": "So here is the delta output sum equal."
+    },
+    {
+        "id": 373,
+        "start": 3188.16,
+        "end": 3194.08,
+        "frames": [
+            "frame_00406.png"
+        ],
+        "transcript": "This is the derivative of the sigmoid times output summarin error."
+    },
+    {
+        "id": 374,
+        "start": 3194.08,
+        "end": 3203.76,
+        "frames": [
+            "frame_00407.png"
+        ],
+        "transcript": "So like here, the derivative of the sigmoid here, this this one and output summary of this, then come with the just multiply this, then we will get this."
+    },
+    {
+        "id": 375,
+        "start": 3203.76,
+        "end": 3205.92,
+        "frames": [
+            "frame_00408.png"
+        ],
+        "transcript": "So here uh how can we get this?"
+    },
+    {
+        "id": 376,
+        "start": 3205.92,
+        "end": 3209.12,
+        "frames": [
+            "frame_00409.png"
+        ],
+        "transcript": "That is sigmoid of 1.235."
+    },
+    {
+        "id": 377,
+        "start": 3209.12,
+        "end": 3219.44,
+        "frames": [
+            "frame_00410.png",
+            "frame_00411.png"
+        ],
+        "transcript": "So sigmoid of one point uh the derivative of the sigmoid of the one to so we we know that that is the the sigmoid value we have calculated already."
+    },
+    {
+        "id": 378,
+        "start": 3219.44,
+        "end": 3234.16,
+        "frames": [
+            "frame_00412.png",
+            "frame_00413.png",
+            "frame_00414.png",
+            "frame_00415.png",
+            "frame_00416.png"
+        ],
+        "transcript": "The sigmoid is already calculated, sigmoid of the sigma end of the sum we have calculated here."
+    },
+    {
+        "id": 379,
+        "start": 3234.16,
+        "end": 3236.24,
+        "frames": [
+            "frame_00417.png"
+        ],
+        "transcript": "The sigma of the sum, this is the sum."
+    },
+    {
+        "id": 380,
+        "start": 3236.24,
+        "end": 3240.8,
+        "frames": [
+            "frame_00418.png"
+        ],
+        "transcript": "Sigma of the sum 0.775 or something."
+    },
+    {
+        "id": 381,
+        "start": 3240.8,
+        "end": 3326.4,
+        "frames": [
+            "frame_00419.png",
+            "frame_00420.png",
+            "frame_00421.png",
+            "frame_00422.png"
+        ],
+        "transcript": "Okay so from here we can we can say how can we compute the sigma derivative of the sigma of one point two three five it will be the the sigma of one point two three five times one minus sigma one point two three five okay it will be like this so we already know the sigma of this this is the zero point seven seven four seven seven okay say just two digits after the point so two decimal point okay so one minus of zero point seven seven okay zero point seven seven and then we will get the value here okay so that means uh this is the derivative of the sigmoid of one point two thy, and then if we multiply with this, then we will get the delta output sum, so delta output sum, delta output sum."
+    },
+    {
+        "id": 382,
+        "start": 3326.4,
+        "end": 3330.32,
+        "frames": [
+            "frame_00423.png"
+        ],
+        "transcript": "We got the delta output sum 0.134."
+    },
+    {
+        "id": 383,
+        "start": 3330.32,
+        "end": 3359.44,
+        "frames": [
+            "frame_00424.png"
+        ],
+        "transcript": "But what we want to know, we want to know the that is the that is the rate of change of the W's of the output layer, and for that uh we have to do a little little more theory, like um the hidden results times the weight from hidden to output is the output sum."
+    },
+    {
+        "id": 384,
+        "start": 3359.44,
+        "end": 3362.4,
+        "frames": [
+            "frame_00425.png"
+        ],
+        "transcript": "So, how we have come computed this?"
+    },
+    {
+        "id": 385,
+        "start": 3362.4,
+        "end": 3365.68,
+        "frames": [
+            "frame_00426.png"
+        ],
+        "transcript": "It is the the the sum or output sum, okay."
+    },
+    {
+        "id": 386,
+        "start": 3365.68,
+        "end": 3370.88,
+        "frames": [
+            "frame_00427.png"
+        ],
+        "transcript": "Output sum, we have computed like this that is the the hidden results."
+    },
+    {
+        "id": 387,
+        "start": 3370.88,
+        "end": 3389.44,
+        "frames": [
+            "frame_00428.png"
+        ],
+        "transcript": "So, this is the hidden results, this is the hidden results, hidden results, and times the W okay W and and and then here is this that is the if we consider this one is one matrix and this is another matrix."
+    },
+    {
+        "id": 388,
+        "start": 3389.44,
+        "end": 3392.16,
+        "frames": [
+            "frame_00429.png"
+        ],
+        "transcript": "If we multiply that, then we will get the output sum."
+    },
+    {
+        "id": 389,
+        "start": 3392.16,
+        "end": 3394.56,
+        "frames": [
+            "frame_00430.png"
+        ],
+        "transcript": "Okay, that means this is the equation for that."
+    },
+    {
+        "id": 390,
+        "start": 3394.56,
+        "end": 3397.76,
+        "frames": [
+            "frame_00431.png"
+        ],
+        "transcript": "So already we compute like this way that is hidden results."
+    },
+    {
+        "id": 391,
+        "start": 3397.76,
+        "end": 3402.16,
+        "frames": [
+            "frame_00432.png"
+        ],
+        "transcript": "So hidden this is hidden value and the after sigma, this is hidden results."
+    },
+    {
+        "id": 392,
+        "start": 3402.16,
+        "end": 3406.16,
+        "frames": [
+            "frame_00433.png"
+        ],
+        "transcript": "So hidden value and after sigma, it is hidden results, okay."
+    },
+    {
+        "id": 393,
+        "start": 3406.16,
+        "end": 3411.84,
+        "frames": [
+            "frame_00434.png"
+        ],
+        "transcript": "Hidden results times the uh the weight of the hidden to output layer."
+    },
+    {
+        "id": 394,
+        "start": 3411.84,
+        "end": 3414.24,
+        "frames": [
+            "frame_00435.png"
+        ],
+        "transcript": "So these are the weights of hidden to output layer, okay."
+    },
+    {
+        "id": 395,
+        "start": 3414.24,
+        "end": 3417.44,
+        "frames": [
+            "frame_00436.png"
+        ],
+        "transcript": "Output layer, and then we got the output sum."
+    },
+    {
+        "id": 396,
+        "start": 3417.44,
+        "end": 3444.32,
+        "frames": [
+            "frame_00437.png"
+        ],
+        "transcript": "So this equation now uh if we take the derivative of this equation with respect to the w, then we will get this that is the uh with respect to w, that means we will get here in this case in in this case it will a result times one equal d of output sum divided by uh d of w h o okay."
+    },
+    {
+        "id": 397,
+        "start": 3444.32,
+        "end": 3460.56,
+        "frames": [
+            "frame_00438.png"
+        ],
+        "transcript": "So take the derivative of this just uh with respect to the w okay, then we will get this, and from here from this, what we can do uh we can just extend these values, okay?"
+    },
+    {
+        "id": 398,
+        "start": 3460.56,
+        "end": 3480.08,
+        "frames": [
+            "frame_00439.png"
+        ],
+        "transcript": "So extends this values, and this is valid, or we can set both sides we can multiply with dw uh h o and then we will get finally we will get this value w that is dw h o equal d output sum divided by d uh result."
+    },
+    {
+        "id": 399,
+        "start": 3480.08,
+        "end": 3482.96,
+        "frames": [
+            "frame_00440.png"
+        ],
+        "transcript": "What does it mean?"
+    },
+    {
+        "id": 400,
+        "start": 3482.96,
+        "end": 3496.4,
+        "frames": [
+            "frame_00441.png"
+        ],
+        "transcript": "It means that the rate of change of the output uh that is the the that is the hidden to output layer, hidden to output layer words, it will be the delta output sum divided by hidden results."
+    },
+    {
+        "id": 401,
+        "start": 3496.4,
+        "end": 3501.36,
+        "frames": [
+            "frame_00442.png"
+        ],
+        "transcript": "So delta output sum we have already called computed the delta output sum."
+    },
+    {
+        "id": 402,
+        "start": 3501.36,
+        "end": 3503.12,
+        "frames": [
+            "frame_00443.png"
+        ],
+        "transcript": "So this is the delta output sum."
+    },
+    {
+        "id": 403,
+        "start": 3503.12,
+        "end": 3513.36,
+        "frames": [
+            "frame_00444.png"
+        ],
+        "transcript": "We have to divide it with the hidden results, and we know the hidden results also because the hidden results this is one hidden results, another hidden results are the hidden layer results."
+    },
+    {
+        "id": 404,
+        "start": 3513.36,
+        "end": 3515.12,
+        "frames": [
+            "frame_00445.png"
+        ],
+        "transcript": "Okay, so here is this."
+    },
+    {
+        "id": 405,
+        "start": 3515.12,
+        "end": 3517.76,
+        "frames": [
+            "frame_00446.png"
+        ],
+        "transcript": "You can see that delta output sum."
+    },
+    {
+        "id": 406,
+        "start": 3517.76,
+        "end": 3522.08,
+        "frames": [
+            "frame_00447.png"
+        ],
+        "transcript": "We know this this value divided by the hidden layer results."
+    },
+    {
+        "id": 407,
+        "start": 3522.08,
+        "end": 3523.68,
+        "frames": [
+            "frame_00448.png"
+        ],
+        "transcript": "So hidden layer results are this."
+    },
+    {
+        "id": 408,
+        "start": 3523.68,
+        "end": 3526.4,
+        "frames": [
+            "frame_00449.png"
+        ],
+        "transcript": "We have already computed these things, okay."
+    },
+    {
+        "id": 409,
+        "start": 3526.4,
+        "end": 3529.2,
+        "frames": [
+            "frame_00450.png"
+        ],
+        "transcript": "So then we will get the delta words."
+    },
+    {
+        "id": 410,
+        "start": 3529.2,
+        "end": 3535.6,
+        "frames": [
+            "frame_00451.png"
+        ],
+        "transcript": "So this is the delta words, so delta words, this one, that one, and that one."
+    },
+    {
+        "id": 411,
+        "start": 3535.6,
+        "end": 3541.6,
+        "frames": [
+            "frame_00452.png"
+        ],
+        "transcript": "Okay, so we we have computed the delta words now."
+    },
+    {
+        "id": 412,
+        "start": 3541.6,
+        "end": 3549.68,
+        "frames": [
+            "frame_00453.png"
+        ],
+        "transcript": "Uh if we if we know the rate of change of the words, that is the rate of change of the words, then we can we can uh what we can do?"
+    },
+    {
+        "id": 413,
+        "start": 3549.68,
+        "end": 3551.68,
+        "frames": [
+            "frame_00454.png"
+        ],
+        "transcript": "We can update the words."
+    },
+    {
+        "id": 414,
+        "start": 3551.68,
+        "end": 3553.36,
+        "frames": [
+            "frame_00455.png"
+        ],
+        "transcript": "So update the words."
+    },
+    {
+        "id": 415,
+        "start": 3553.36,
+        "end": 3558.48,
+        "frames": [
+            "frame_00456.png"
+        ],
+        "transcript": "This is the these are the old words 0.5 and 0.9."
+    },
+    {
+        "id": 416,
+        "start": 3558.48,
+        "end": 3564.32,
+        "frames": [
+            "frame_00457.png"
+        ],
+        "transcript": "Okay, so the new words will be new words will be old words plus of delta verse."
+    },
+    {
+        "id": 417,
+        "start": 3564.32,
+        "end": 3581.44,
+        "frames": [
+            "frame_00458.png",
+            "frame_00459.png",
+            "frame_00460.png"
+        ],
+        "transcript": "So here is the the W7 is this one that is the the the delta verse we we already got delta verse, the sum of the sum this one plus the delta verse, this one plus delta verse, and this one plus delta verse."
+    },
+    {
+        "id": 418,
+        "start": 3581.44,
+        "end": 3588.0,
+        "frames": [
+            "frame_00461.png"
+        ],
+        "transcript": "So we will receive the new verse is 0.116, 0.3 and 0.7."
+    },
+    {
+        "id": 419,
+        "start": 3588.0,
+        "end": 3590.48,
+        "frames": [
+            "frame_00462.png"
+        ],
+        "transcript": "So these are the new words we will we will get."
+    },
+    {
+        "id": 420,
+        "start": 3590.48,
+        "end": 3597.04,
+        "frames": [
+            "frame_00463.png"
+        ],
+        "transcript": "That means this value will update as this in our next iteration."
+    },
+    {
+        "id": 421,
+        "start": 3597.04,
+        "end": 3605.44,
+        "frames": [
+            "frame_00464.png"
+        ],
+        "transcript": "Okay, so the the the rate of change we already got the rate of change, so it is easy to find out the new words."
+    },
+    {
+        "id": 422,
+        "start": 3605.44,
+        "end": 3613.2,
+        "frames": [
+            "frame_00465.png"
+        ],
+        "transcript": "Sometimes we know that from the gradient descent that the these words we have to multiply with the with the learning rate, okay."
+    },
+    {
+        "id": 423,
+        "start": 3613.2,
+        "end": 3618.96,
+        "frames": [
+            "frame_00466.png"
+        ],
+        "transcript": "With the learning rate, consider that here the learning rate is just one, okay."
+    },
+    {
+        "id": 424,
+        "start": 3618.96,
+        "end": 3621.6,
+        "frames": [
+            "frame_00467.png"
+        ],
+        "transcript": "So you will get just one like this."
+    },
+    {
+        "id": 425,
+        "start": 3621.6,
+        "end": 3628.0,
+        "frames": [
+            "frame_00468.png"
+        ],
+        "transcript": "[Silent] for 6.64 sec"
+    },
+    {
+        "id": 426,
+        "start": 3628.0,
+        "end": 3631.04,
+        "frames": [
+            "frame_00469.png"
+        ],
+        "transcript": "Okay, up to this slide is it clear or not."
+    },
+    {
+        "id": 427,
+        "start": 3631.04,
+        "end": 3651.0,
+        "frames": [
+            "frame_00470.png",
+            "frame_00471.png",
+            "frame_00472.png"
+        ],
+        "transcript": "[Silent] for 20.48 sec"
+    },
+    {
+        "id": 428,
+        "start": 3651.0,
+        "end": 3654.32,
+        "frames": [
+            "frame_00473.png",
+            "frame_00474.png",
+            "frame_00475.png"
+        ],
+        "transcript": "Uh is it clear, or you have some question?"
+    },
+    {
+        "id": 429,
+        "start": 3654.32,
+        "end": 3655.04,
+        "frames": [
+            "frame_00476.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 430,
+        "start": 3655.04,
+        "end": 3658.48,
+        "frames": [
+            "frame_00477.png",
+            "frame_00478.png"
+        ],
+        "transcript": "Okay, thank you."
+    },
+    {
+        "id": 431,
+        "start": 3658.48,
+        "end": 3663.44,
+        "frames": [
+            "frame_00479.png"
+        ],
+        "transcript": "Uh I I think the time is already over."
+    },
+    {
+        "id": 432,
+        "start": 3663.44,
+        "end": 3679.84,
+        "frames": [
+            "frame_00480.png",
+            "frame_00481.png"
+        ],
+        "transcript": "Okay, so I think uh we can stop here and continue this lecture in our uh in our that is next next class because we have already um many other things to do and many other things to know."
+    },
+    {
+        "id": 433,
+        "start": 3679.84,
+        "end": 3688.0,
+        "frames": [
+            "frame_00482.png",
+            "frame_00483.png",
+            "frame_00484.png",
+            "frame_00485.png"
+        ],
+        "transcript": "Okay, um, I didn't introduce the bias yet, so yeah, I I have to introduce the bias and also the best processing."
+    },
+    {
+        "id": 434,
+        "start": 3688.0,
+        "end": 3694.56,
+        "frames": [
+            "frame_00486.png",
+            "frame_00487.png"
+        ],
+        "transcript": "Okay, so next next class we will discuss from from this uh from this slide."
+    },
+    {
+        "id": 435,
+        "start": 3694.56,
+        "end": 3699.92,
+        "frames": [
+            "frame_00488.png",
+            "frame_00489.png"
+        ],
+        "transcript": "Okay, thank you, thank you for attending this session and see you in our next class."
+    },
+    {
+        "id": 436,
+        "start": 3699.92,
+        "end": 3709.248435,
+        "frames": [
+            "frame_00490.png",
+            "frame_00491.png",
+            "frame_00492.png",
+            "frame_00493.png",
+            "frame_00494.png"
+        ],
+        "transcript": "Sir, uh in the next class in Saturday, what will be the duration of work with"
+    }
+]

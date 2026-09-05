@@ -1,0 +1,2594 @@
+[
+  {
+    "start": "00:00:00",
+    "end": "00:00:07",
+    "type": "Irrelevant",
+    "reasoning": "Silent intro with title cards; no instructional narration."
+  },
+  {
+    "start": "00:00:07",
+    "end": "00:00:14",
+    "type": "Irrelevant",
+    "reasoning": "Silence and background music before the speaker begins."
+  },
+  {
+    "start": "00:00:14",
+    "end": "00:00:17",
+    "type": "Relevant",
+    "reasoning": "Introductory hook establishing the goal of the session."
+  },
+  {
+    "start": "00:00:17",
+    "end": "00:00:22",
+    "type": "Relevant",
+    "reasoning": "Establishing the first core instructional topic: timing for VC raising."
+  },
+  {
+    "start": "00:00:22",
+    "end": "00:00:25",
+    "type": "Relevant",
+    "reasoning": "Defining the context of starting a company and raising capital."
+  },
+  {
+    "start": "00:00:25",
+    "end": "00:00:28",
+    "type": "Relevant",
+    "reasoning": "Posing the fundamental question of when to seek investment."
+  },
+  {
+    "start": "00:00:28",
+    "end": "00:00:30",
+    "type": "Relevant",
+    "reasoning": "Immediate answer regarding investment timing."
+  },
+  {
+    "start": "00:00:30",
+    "end": "00:00:35",
+    "type": "Relevant",
+    "reasoning": "Elaboration on the 'as early as possible' strategy."
+  },
+  {
+    "start": "00:00:35",
+    "end": "00:00:37",
+    "type": "Relevant",
+    "reasoning": "Clarifying the relationship between raising and scaling."
+  },
+  {
+    "start": "00:00:37",
+    "end": "00:00:39",
+    "type": "Relevant",
+    "reasoning": "Transitioning to the revenue requirement discussion."
+  },
+  {
+    "start": "00:00:39",
+    "end": "00:00:41",
+    "type": "Relevant",
+    "reasoning": "Interactive poll engaging the audience on revenue myths."
+  },
+  {
+    "start": "00:00:41",
+    "end": "00:00:43",
+    "type": "Relevant",
+    "reasoning": "Audience participation segment for instructional engagement."
+  },
+  {
+    "start": "00:00:43",
+    "end": "00:00:45",
+    "type": "Relevant",
+    "reasoning": "Collecting poll results to address common misconceptions."
+  },
+  {
+    "start": "00:00:45",
+    "end": "00:00:47",
+    "type": "Relevant",
+    "reasoning": "Speaker reaction to the poll, maintaining flow."
+  },
+  {
+    "start": "00:00:47",
+    "end": "00:00:49",
+    "type": "Relevant",
+    "reasoning": "Panelist enthusiasm and session context."
+  },
+  {
+    "start": "00:00:49",
+    "end": "00:00:53",
+    "type": "Relevant",
+    "reasoning": "Instructional validation of the audience's understanding."
+  },
+  {
+    "start": "00:00:53",
+    "end": "00:01:00",
+    "type": "Relevant",
+    "reasoning": "Comparing this group's knowledge level to others."
+  },
+  {
+    "start": "00:01:00",
+    "end": "00:01:02",
+    "type": "Relevant",
+    "reasoning": "Explicitly stating that revenue is not required for VC."
+  },
+  {
+    "start": "00:01:02",
+    "end": "00:01:09",
+    "type": "Relevant",
+    "reasoning": "Defining different types of VC funds and their requirements."
+  },
+  {
+    "start": "00:01:09",
+    "end": "00:01:17",
+    "type": "Relevant",
+    "reasoning": "Distinguishing later-stage ARR growth from early-stage goals."
+  },
+  {
+    "start": "00:01:17",
+    "end": "00:01:28",
+    "type": "Relevant",
+    "reasoning": "Focusing on pre-seed and seed fund expectations."
+  },
+  {
+    "start": "00:01:28",
+    "end": "00:01:29",
+    "type": "Relevant",
+    "reasoning": "Concise summary of the revenue-need answer."
+  },
+  {
+    "start": "00:01:29",
+    "end": "00:01:34",
+    "type": "Relevant",
+    "reasoning": "Next question regarding the necessity of a product."
+  },
+  {
+    "start": "00:01:34",
+    "end": "00:01:35",
+    "type": "Relevant",
+    "reasoning": "Poll for audience: Is a product needed?"
+  },
+  {
+    "start": "00:01:35",
+    "end": "00:01:36",
+    "type": "Relevant",
+    "reasoning": "Capturing audience vote for engagement."
+  },
+  {
+    "start": "00:01:36",
+    "end": "00:01:39",
+    "type": "Relevant",
+    "reasoning": "Panelist observation of the group's responses."
+  },
+  {
+    "start": "00:01:39",
+    "end": "00:01:41",
+    "type": "Relevant",
+    "reasoning": "Confirming that a product is not mandatory to raise capital."
+  },
+  {
+    "start": "00:01:41",
+    "end": "00:01:43",
+    "type": "Relevant",
+    "reasoning": "Explaining the logic of banking on the founder."
+  },
+  {
+    "start": "00:01:43",
+    "end": "00:01:45",
+    "type": "Relevant",
+    "reasoning": "Emphasizing the importance of team quality."
+  },
+  {
+    "start": "00:01:45",
+    "end": "00:01:46",
+    "type": "Relevant",
+    "reasoning": "Emphasizing the importance of the founder's vision."
+  },
+  {
+    "start": "00:01:46",
+    "end": "00:01:53",
+    "type": "Relevant",
+    "reasoning": "Explaining how investors view long-term outcomes."
+  },
+  {
+    "start": "00:01:53",
+    "end": "00:02:09",
+    "type": "Relevant",
+    "reasoning": "Detailing why early investors prioritize teams over initial code."
+  },
+  {
+    "start": "00:02:09",
+    "end": "00:02:20",
+    "type": "Relevant",
+    "reasoning": "Describing how products evolve over a 7-10 year horizon."
+  },
+  {
+    "start": "00:02:20",
+    "end": "00:02:25",
+    "type": "Relevant",
+    "reasoning": "Warning against obsession with the 'perfect product' too early."
+  },
+  {
+    "start": "00:02:25",
+    "end": "00:02:31",
+    "type": "Relevant",
+    "reasoning": "Predicting the low likelihood of the first product version's permanence."
+  },
+  {
+    "start": "00:02:31",
+    "end": "00:02:44",
+    "type": "Relevant",
+    "reasoning": "Defining 'core abilities' and 'unique insights' as key founder metrics."
+  },
+  {
+    "start": "00:02:44",
+    "end": "00:02:45",
+    "type": "Relevant",
+    "reasoning": "Question regarding leaving full-time employment."
+  },
+  {
+    "start": "00:02:45",
+    "end": "00:02:49",
+    "type": "Relevant",
+    "reasoning": "Polling audience on full-time commitment requirement."
+  },
+  {
+    "start": "00:02:49",
+    "end": "00:02:50",
+    "type": "Relevant",
+    "reasoning": "Capturing no-votes on the full-time question."
+  },
+  {
+    "start": "00:02:50",
+    "end": "00:02:59",
+    "type": "Relevant",
+    "reasoning": "Observation on current market states and founder hesitancy."
+  },
+  {
+    "start": "00:02:59",
+    "end": "00:03:00",
+    "type": "Relevant",
+    "reasoning": "Commentary on raising millions while part-time."
+  },
+  {
+    "start": "00:03:00",
+    "end": "00:03:05",
+    "type": "Relevant",
+    "reasoning": "Explaining that the answer depends on the specific VC firm."
+  },
+  {
+    "start": "00:03:05",
+    "end": "00:03:08",
+    "type": "Relevant",
+    "reasoning": "Context on reputation and pedigree for side-project founders."
+  },
+  {
+    "start": "00:03:08",
+    "end": "00:03:18",
+    "type": "Relevant",
+    "reasoning": "Explaining the 'side project to funding' transition logic."
+  },
+  {
+    "start": "00:03:18",
+    "end": "00:03:22",
+    "type": "Relevant",
+    "reasoning": "Explaining VC psychology and return expectations."
+  },
+  {
+    "start": "00:03:22",
+    "end": "00:03:29",
+    "type": "Relevant",
+    "reasoning": "The instructional link between leaving a job and 'conviction'."
+  },
+  {
+    "start": "00:03:29",
+    "end": "00:03:30",
+    "type": "Relevant",
+    "reasoning": "Defining conviction as a key signal for investors."
+  },
+  {
+    "start": "00:03:30",
+    "end": "00:03:34",
+    "type": "Relevant",
+    "reasoning": "Reiterating that everything is partner-specific."
+  },
+  {
+    "start": "00:03:34",
+    "end": "00:03:38",
+    "type": "Relevant",
+    "reasoning": "Reiterating the signal of leaving a full-time job."
+  },
+  {
+    "start": "00:03:38",
+    "end": "00:03:42",
+    "type": "Relevant",
+    "reasoning": "Encouragement for fully committing to the business."
+  },
+  {
+    "start": "00:03:42",
+    "end": "00:03:46",
+    "type": "Relevant",
+    "reasoning": "Reinforcing that going 'fully in' is never a bad signal."
+  },
+  {
+    "start": "00:03:46",
+    "end": "00:03:57",
+    "type": "Relevant",
+    "reasoning": "Chelsea sharing a counter-example from her own journey."
+  },
+  {
+    "start": "00:03:57",
+    "end": "00:04:07",
+    "type": "Relevant",
+    "reasoning": "Raising on 'potential' vs. raising on execution."
+  },
+  {
+    "start": "00:04:07",
+    "end": "00:04:13",
+    "type": "Relevant",
+    "reasoning": "Explaining the difficulty of raising once a product exists but lacks 'wow'."
+  },
+  {
+    "start": "00:04:13",
+    "end": "00:04:15",
+    "type": "Relevant",
+    "reasoning": "Encouragement to raise as early as possible."
+  },
+  {
+    "start": "00:04:15",
+    "end": "00:04:27",
+    "type": "Relevant",
+    "reasoning": "Instruction on raising 'before you are raising'."
+  },
+  {
+    "start": "00:04:27",
+    "end": "00:04:32",
+    "type": "Relevant",
+    "reasoning": "The strategy of 'ask for advice, get money'."
+  },
+  {
+    "start": "00:04:32",
+    "end": "00:04:36",
+    "type": "Relevant",
+    "reasoning": "Validation of the advice/money paradox."
+  },
+  {
+    "start": "00:04:36",
+    "end": "00:04:41",
+    "type": "Relevant",
+    "reasoning": "Involving stakeholders early to foster a sense of belonging."
+  },
+  {
+    "start": "00:04:41",
+    "end": "00:04:45",
+    "type": "Relevant",
+    "reasoning": "Using specific 'about to do' statements for casual outreach."
+  },
+  {
+    "start": "00:04:45",
+    "end": "00:04:49",
+    "type": "Relevant",
+    "reasoning": "Explaining how casual chats lead to funding."
+  },
+  {
+    "start": "00:04:49",
+    "end": "00:04:56",
+    "type": "Relevant",
+    "reasoning": "Question regarding the necessity of co-founders."
+  },
+  {
+    "start": "00:04:56",
+    "end": "00:04:58",
+    "type": "Relevant",
+    "reasoning": "Confirming the audience consensus on co-founders."
+  },
+  {
+    "start": "00:04:58",
+    "end": "00:05:02",
+    "type": "Relevant",
+    "reasoning": "Stating that most backed businesses have co-founders."
+  },
+  {
+    "start": "00:05:02",
+    "end": "00:05:05",
+    "type": "Relevant",
+    "reasoning": "Acknowledging unique cases of solo founders."
+  },
+  {
+    "start": "00:05:05",
+    "end": "00:05:09",
+    "type": "Relevant",
+    "reasoning": "Setting the expectation that co-founding is standard."
+  },
+  {
+    "start": "00:05:09",
+    "end": "00:05:12",
+    "type": "Relevant",
+    "reasoning": "Transitioning to the 'first steps' of the process."
+  },
+  {
+    "start": "00:05:12",
+    "end": "00:05:16",
+    "type": "Relevant",
+    "reasoning": "Posing the question: What is the very first step?"
+  },
+  {
+    "start": "00:05:16",
+    "end": "00:05:20",
+    "type": "Relevant",
+    "reasoning": "Identifying 'pitching' as a milestone."
+  },
+  {
+    "start": "00:05:20",
+    "end": "00:05:21",
+    "type": "Relevant",
+    "reasoning": "Audience response: Solve the problem."
+  },
+  {
+    "start": "00:05:21",
+    "end": "00:05:22",
+    "type": "Relevant",
+    "reasoning": "Audience response: Have a company."
+  },
+  {
+    "start": "00:05:22",
+    "end": "00:05:29",
+    "type": "Relevant",
+    "reasoning": "Analyzing audience suggestions for the first step."
+  },
+  {
+    "start": "00:05:29",
+    "end": "00:05:33",
+    "type": "Relevant",
+    "reasoning": "Discussing the 'elevator' concept of networking."
+  },
+  {
+    "start": "00:05:33",
+    "end": "00:05:34",
+    "type": "Relevant",
+    "reasoning": "Briefly acknowledging the elevator joke."
+  },
+  {
+    "start": "00:05:34",
+    "end": "00:05:44",
+    "type": "Relevant",
+    "reasoning": "Humorous hypothetical about living in a one-story building."
+  },
+  {
+    "start": "00:05:44",
+    "end": "00:05:48",
+    "type": "Relevant",
+    "reasoning": "Refocusing the group on the practical first step."
+  },
+  {
+    "start": "00:05:48",
+    "end": "00:05:51",
+    "type": "Relevant",
+    "reasoning": "Identifying 'cold email' as a foundational action."
+  },
+  {
+    "start": "00:05:51",
+    "end": "00:05:58",
+    "type": "Irrelevant",
+    "reasoning": "Social stalling and brief apology; low instructional value."
+  },
+  {
+    "start": "00:05:58",
+    "end": "00:06:00",
+    "type": "Relevant",
+    "reasoning": "Comparing cold emails to the ideal 'warm intro'."
+  },
+  {
+    "start": "00:06:00",
+    "end": "00:06:03",
+    "type": "Relevant",
+    "reasoning": "Addressing the reality that many engineers lack VC networks."
+  },
+  {
+    "start": "00:06:03",
+    "end": "00:06:04",
+    "type": "Relevant",
+    "reasoning": "Posing the dilemma of having no initial network."
+  },
+  {
+    "start": "00:06:04",
+    "end": "00:06:07",
+    "type": "Relevant",
+    "reasoning": "Polling for belief in whether VCs read cold emails."
+  },
+  {
+    "start": "00:06:07",
+    "end": "00:06:09",
+    "type": "Relevant",
+    "reasoning": "Crowd engagement on the effectiveness of cold outreach."
+  },
+  {
+    "start": "00:06:09",
+    "end": "00:06:15",
+    "type": "Relevant",
+    "reasoning": "Direct confirmation that VCs do read cold emails."
+  },
+  {
+    "start": "00:06:15",
+    "end": "00:06:19",
+    "type": "Relevant",
+    "reasoning": "Acknowledging that VCs are inundated with emails."
+  },
+  {
+    "start": "00:06:19",
+    "end": "00:06:20",
+    "type": "Relevant",
+    "reasoning": "Comparing VCs to sellers of capital."
+  },
+  {
+    "start": "00:06:20",
+    "end": "00:06:25",
+    "type": "Relevant",
+    "reasoning": "Describing the VC role as active 'deal hunting'."
+  },
+  {
+    "start": "00:06:25",
+    "end": "00:06:32",
+    "type": "Relevant",
+    "reasoning": "The 'salesperson' mindset of an investor seeking founders."
+  },
+  {
+    "start": "00:06:32",
+    "end": "00:06:34",
+    "type": "Relevant",
+    "reasoning": "Confirming reading habits for finding entrepreneurs."
+  },
+  {
+    "start": "00:06:34",
+    "end": "00:06:42",
+    "type": "Relevant",
+    "reasoning": "Setting up real-world examples of answered cold emails."
+  },
+  {
+    "start": "00:06:42",
+    "end": "00:06:46",
+    "type": "Relevant",
+    "reasoning": "Explaining the concept of 'warm signals' in cold outreach."
+  },
+  {
+    "start": "00:06:46",
+    "end": "00:06:58",
+    "type": "Relevant",
+    "reasoning": "Instruction on the 'Go to Market' playbook for founders."
+  },
+  {
+    "start": "00:06:58",
+    "end": "00:07:04",
+    "type": "Relevant",
+    "reasoning": "Using LinkedIn content as a signaling mechanism."
+  },
+  {
+    "start": "00:07:04",
+    "end": "00:07:12",
+    "type": "Relevant",
+    "reasoning": "Creating an 'ideation signal' to attract expert founders."
+  },
+  {
+    "start": "00:07:12",
+    "end": "00:07:16",
+    "type": "Relevant",
+    "reasoning": "Targeting outreach moments based on VC activity."
+  },
+  {
+    "start": "00:07:16",
+    "end": "00:07:18",
+    "type": "Relevant",
+    "reasoning": "The power of the '15 minutes to chat' request."
+  },
+  {
+    "start": "00:07:18",
+    "end": "00:07:22",
+    "type": "Relevant",
+    "reasoning": "The high success rate of casual, early ideation calls."
+  },
+  {
+    "start": "00:07:22",
+    "end": "00:07:24",
+    "type": "Relevant",
+    "reasoning": "Comparing casual chats to formal investment 'processes'."
+  },
+  {
+    "start": "00:07:24",
+    "end": "00:07:26",
+    "type": "Relevant",
+    "reasoning": "Explaining why early informal contact is easier."
+  },
+  {
+    "start": "00:07:26",
+    "end": "00:07:28",
+    "type": "Relevant",
+    "reasoning": "Instruction on prioritizing relationship building."
+  },
+  {
+    "start": "00:07:28",
+    "end": "00:07:32",
+    "type": "Relevant",
+    "reasoning": "Connecting relationship building to desired outcomes."
+  },
+  {
+    "start": "00:07:32",
+    "end": "00:07:35",
+    "type": "Relevant",
+    "reasoning": "Contextual transition to shared materials."
+  },
+  {
+    "start": "00:07:35",
+    "end": "00:07:43",
+    "type": "Relevant",
+    "reasoning": "Intro to analyzing actual cold emails received."
+  },
+  {
+    "start": "00:07:43",
+    "end": "00:07:48",
+    "type": "Irrelevant",
+    "reasoning": "Social joke about country music; no instructional content."
+  },
+  {
+    "start": "00:07:48",
+    "end": "00:07:51",
+    "type": "Irrelevant",
+    "reasoning": "Interruption with background music; dead air for teaching."
+  },
+  {
+    "start": "00:07:51",
+    "end": "00:08:00",
+    "type": "Relevant",
+    "reasoning": "Setting up the 'who would answer' interactive case study."
+  },
+  {
+    "start": "00:08:00",
+    "end": "00:08:08",
+    "type": "Relevant",
+    "reasoning": "Reading Example 1: Establishing context and previous meeting."
+  },
+  {
+    "start": "00:08:08",
+    "end": "00:08:09",
+    "type": "Relevant",
+    "reasoning": "Reading Example 1: Describing the MVP status."
+  },
+  {
+    "start": "00:08:09",
+    "end": "00:08:14",
+    "type": "Relevant",
+    "reasoning": "Reading Example 1: The specific ask for pointers."
+  },
+  {
+    "start": "00:08:14",
+    "end": "00:08:16",
+    "type": "Relevant",
+    "reasoning": "Reading Example 1: The time request (15-20 mins)."
+  },
+  {
+    "start": "00:08:16",
+    "end": "00:08:21",
+    "type": "Relevant",
+    "reasoning": "Polling audience on whether they'd answer Example 1."
+  },
+  {
+    "start": "00:08:21",
+    "end": "00:08:24",
+    "type": "Relevant",
+    "reasoning": "Capturing audience vote for this specific email."
+  },
+  {
+    "start": "00:08:24",
+    "end": "00:08:26",
+    "type": "Relevant",
+    "reasoning": "Observation that everyone would answer Example 1."
+  },
+  {
+    "start": "00:08:26",
+    "end": "00:08:29",
+    "type": "Relevant",
+    "reasoning": "Opening the discussion on 'What makes this so good?'"
+  },
+  {
+    "start": "00:08:29",
+    "end": "00:08:31",
+    "type": "Relevant",
+    "reasoning": "Identifying the 'specific ask' as a key success factor."
+  },
+  {
+    "start": "00:08:31",
+    "end": "00:08:32",
+    "type": "Relevant",
+    "reasoning": "Instruction: Targeted feedback requests work."
+  },
+  {
+    "start": "00:08:32",
+    "end": "00:08:34",
+    "type": "Relevant",
+    "reasoning": "Specific GTM and investor pointers as tangibles."
+  },
+  {
+    "start": "00:08:34",
+    "end": "00:08:37",
+    "type": "Relevant",
+    "reasoning": "Value of knowing the investor's specific domain (consumer vs. not)."
+  },
+  {
+    "start": "00:08:37",
+    "end": "00:08:44",
+    "type": "Relevant",
+    "reasoning": "Making it easy for the VC to say yes through clear goals."
+  },
+  {
+    "start": "00:08:44",
+    "end": "00:08:50",
+    "type": "Relevant",
+    "reasoning": "Defining the challenge of 'vague' outreach."
+  },
+  {
+    "start": "00:08:50",
+    "end": "00:08:52",
+    "type": "Relevant",
+    "reasoning": "Analogy to Go-to-Market: Be hyper-specific."
+  },
+  {
+    "start": "00:08:52",
+    "end": "00:08:57",
+    "type": "Relevant",
+    "reasoning": "Instruction on expectation management in conversations."
+  },
+  {
+    "start": "00:08:57",
+    "end": "00:08:58",
+    "type": "Relevant",
+    "reasoning": "Advice: Don't think 'selling', think 'be compelling'."
+  },
+  {
+    "start": "00:08:58",
+    "end": "00:09:00",
+    "type": "Relevant",
+    "reasoning": "Defining the job of the email: Compel a response."
+  },
+  {
+    "start": "00:09:00",
+    "end": "00:09:05",
+    "type": "Relevant",
+    "reasoning": "The opportunity to 'make the sale' comes AFTER the response."
+  },
+  {
+    "start": "00:09:05",
+    "end": "00:09:07",
+    "type": "Relevant",
+    "reasoning": "Common mistake: Putting the whole pitch in the email."
+  },
+  {
+    "start": "00:09:07",
+    "end": "00:09:12",
+    "type": "Relevant",
+    "reasoning": "Why long emails are detrimental to interest."
+  },
+  {
+    "start": "00:09:12",
+    "end": "00:09:14",
+    "type": "Relevant",
+    "reasoning": "Recap: Give enough to compel a reason to answer."
+  },
+  {
+    "start": "00:09:14",
+    "end": "00:09:20",
+    "type": "Relevant",
+    "reasoning": "Reading Example 2: Referencing a VC's blog post."
+  },
+  {
+    "start": "00:09:20",
+    "end": "00:09:28",
+    "type": "Relevant",
+    "reasoning": "Reading Example 2: Including a GitHub link."
+  },
+  {
+    "start": "00:09:28",
+    "end": "00:09:34",
+    "type": "Relevant",
+    "reasoning": "Polling audience on Example 2."
+  },
+  {
+    "start": "00:09:34",
+    "end": "00:09:43",
+    "type": "Relevant",
+    "reasoning": "Revealing the outcome: This email led to a Series B round."
+  },
+  {
+    "start": "00:09:43",
+    "end": "00:09:46",
+    "type": "Relevant",
+    "reasoning": "Long-term tracking logic for seed-stage outreach."
+  },
+  {
+    "start": "00:09:46",
+    "end": "00:09:50",
+    "type": "Relevant",
+    "reasoning": "VC desire for feedback on their public ideation."
+  },
+  {
+    "start": "00:09:50",
+    "end": "00:09:52",
+    "type": "Relevant",
+    "reasoning": "Why 'tangible feedback' from founders is valuable to VCs."
+  },
+  {
+    "start": "00:09:52",
+    "end": "00:09:54",
+    "type": "Relevant",
+    "reasoning": "Recognizing ground truth from people 'on the ground'."
+  },
+  {
+    "start": "00:09:54",
+    "end": "00:09:58",
+    "type": "Relevant",
+    "reasoning": "Linking blog content to real-world quitting/building actions."
+  },
+  {
+    "start": "00:09:58",
+    "end": "00:09:59",
+    "type": "Relevant",
+    "reasoning": "The power of sending GitHub links to prove seriousness."
+  },
+  {
+    "start": "00:09:59",
+    "end": "00:10:00",
+    "type": "Relevant",
+    "reasoning": "Illustrating alignment in thinking between founder and VC."
+  },
+  {
+    "start": "00:10:00",
+    "end": "00:10:02",
+    "type": "Relevant",
+    "reasoning": "Example 3 intro: Direct engagement with a post."
+  },
+  {
+    "start": "00:10:02",
+    "end": "00:10:06",
+    "type": "Relevant",
+    "reasoning": "Example 3: 'Would love to hear what you think'."
+  },
+  {
+    "start": "00:10:06",
+    "end": "00:10:09",
+    "type": "Relevant",
+    "reasoning": "Outcome of Example 3: Led to a funding round."
+  },
+  {
+    "start": "00:10:09",
+    "end": "00:10:14",
+    "type": "Relevant",
+    "reasoning": "Highlighting how little 'stardom' was actually mentioned."
+  },
+  {
+    "start": "00:10:14",
+    "end": "00:10:21",
+    "type": "Relevant",
+    "reasoning": "Instruction: Early VC is about info gathering, not hard pitching."
+  },
+  {
+    "start": "00:10:21",
+    "end": "00:10:35",
+    "type": "Relevant",
+    "reasoning": "Last example: Shared thesis excitement."
+  },
+  {
+    "start": "00:10:35",
+    "end": "00:10:42",
+    "type": "Relevant",
+    "reasoning": "Reading Example 4: Critical thinking in the space."
+  },
+  {
+    "start": "00:10:42",
+    "end": "00:10:46",
+    "type": "Relevant",
+    "reasoning": "Polling for response to Example 4."
+  },
+  {
+    "start": "00:10:46",
+    "end": "00:10:57",
+    "type": "Relevant",
+    "reasoning": "Why research-backed outreach is so effective."
+  },
+  {
+    "start": "00:10:57",
+    "end": "00:11:08",
+    "type": "Relevant",
+    "reasoning": "Desired outcome: Starting from a baseline of understanding."
+  },
+  {
+    "start": "00:11:08",
+    "end": "00:11:10",
+    "type": "Relevant",
+    "reasoning": "Learning something new as a result of the email."
+  },
+  {
+    "start": "00:11:10",
+    "end": "00:11:12",
+    "type": "Relevant",
+    "reasoning": "Transitioning from email to the actual meeting."
+  },
+  {
+    "start": "00:11:12",
+    "end": "00:11:13",
+    "type": "Relevant",
+    "reasoning": "Establishing the 'meeting achieved' milestone."
+  },
+  {
+    "start": "00:11:13",
+    "end": "00:11:17",
+    "type": "Relevant",
+    "reasoning": "Posing the question: What happens inside the meeting?"
+  },
+  {
+    "start": "00:11:17",
+    "end": "00:11:19",
+    "type": "Relevant",
+    "reasoning": "Questioning audience imagination of a pitch meeting."
+  },
+  {
+    "start": "00:11:19",
+    "end": "00:11:21",
+    "type": "Relevant",
+    "reasoning": "Audience response context."
+  },
+  {
+    "start": "00:11:21",
+    "end": "00:11:23",
+    "type": "Relevant",
+    "reasoning": "Audience metaphor: Jenga tower."
+  },
+  {
+    "start": "00:11:23",
+    "end": "00:11:24",
+    "type": "Relevant",
+    "reasoning": "Evaluating the Jenga metaphor for pitches."
+  },
+  {
+    "start": "00:11:24",
+    "end": "00:11:26",
+    "type": "Relevant",
+    "reasoning": "Establishing the 'what do you hear' criteria."
+  },
+  {
+    "start": "00:11:26",
+    "end": "00:11:26",
+    "type": "Relevant",
+    "reasoning": "Posing the question: What excites an investor?"
+  },
+  {
+    "start": "00:11:26",
+    "end": "00:11:30",
+    "type": "Relevant",
+    "reasoning": "The thought experiment: You are the investor."
+  },
+  {
+    "start": "00:11:30",
+    "end": "00:11:42",
+    "type": "Relevant",
+    "reasoning": "Defining the 'Why You, Why Now' criteria."
+  },
+  {
+    "start": "00:11:42",
+    "end": "00:11:48",
+    "type": "Relevant",
+    "reasoning": "Identifying engineer overfocus on technology as a mistake."
+  },
+  {
+    "start": "00:11:48",
+    "end": "00:11:50",
+    "type": "Relevant",
+    "reasoning": "Stating that vision beats technology in the early days."
+  },
+  {
+    "start": "00:11:50",
+    "end": "00:11:57",
+    "type": "Relevant",
+    "reasoning": "Balancing technical ability with the need for unique insights."
+  },
+  {
+    "start": "00:11:57",
+    "end": "00:12:02",
+    "type": "Relevant",
+    "reasoning": "Betting on the person's unique insight about market/GTM."
+  },
+  {
+    "start": "00:12:02",
+    "end": "00:12:04",
+    "type": "Relevant",
+    "reasoning": "Comparing winners in saturated markets via unique ways."
+  },
+  {
+    "start": "00:12:04",
+    "end": "00:12:08",
+    "type": "Relevant",
+    "reasoning": "Instruction: Asymmetric outcomes require untraditional thinking."
+  },
+  {
+    "start": "00:12:08",
+    "end": "00:12:11",
+    "type": "Relevant",
+    "reasoning": "VC tactics for probing unique founder perspectives."
+  },
+  {
+    "start": "00:12:11",
+    "end": "00:12:14",
+    "type": "Relevant",
+    "reasoning": "Connecting unique perspective to lived experience."
+  },
+  {
+    "start": "00:12:14",
+    "end": "00:12:16",
+    "type": "Relevant",
+    "reasoning": "Next question: What does a good answer sound like?"
+  },
+  {
+    "start": "00:12:16",
+    "end": "00:12:34",
+    "type": "Relevant",
+    "reasoning": "Instruction on grounding the pitch in the core problem."
+  },
+  {
+    "start": "00:12:34",
+    "end": "00:12:39",
+    "type": "Relevant",
+    "reasoning": "Explaining unique approach within a well-known problem space."
+  },
+  {
+    "start": "00:12:39",
+    "end": "00:12:47",
+    "type": "Relevant",
+    "reasoning": "Vertical AI application example: Voice AI agents."
+  },
+  {
+    "start": "00:12:47",
+    "end": "00:12:48",
+    "type": "Relevant",
+    "reasoning": "Context of phone-call heavy industries."
+  },
+  {
+    "start": "00:12:48",
+    "end": "00:12:52",
+    "type": "Relevant",
+    "reasoning": "Explaining the 'Why Logistics vs Restaurants' question."
+  },
+  {
+    "start": "00:12:52",
+    "end": "00:12:57",
+    "type": "Relevant",
+    "reasoning": "Unpacking vertical-specific moats: Workflow and data."
+  },
+  {
+    "start": "00:12:57",
+    "end": "00:13:00",
+    "type": "Relevant",
+    "reasoning": "Layered decision-making as a signal of depth."
+  },
+  {
+    "start": "00:13:00",
+    "end": "00:13:02",
+    "type": "Relevant",
+    "reasoning": "Narrative cohesion as the goal of the meeting."
+  },
+  {
+    "start": "00:13:02",
+    "end": "00:13:07",
+    "type": "Relevant",
+    "reasoning": "Defining the 'Cohesive Vision' outcome."
+  },
+  {
+    "start": "00:13:07",
+    "end": "00:13:10",
+    "type": "Relevant",
+    "reasoning": "Focusing on the 'How you tackle it' over problem familiarity."
+  },
+  {
+    "start": "00:13:10",
+    "end": "00:13:13",
+    "type": "Relevant",
+    "reasoning": "Posing the 'What else do you want to hear' question."
+  },
+  {
+    "start": "00:13:13",
+    "end": "00:13:18",
+    "type": "Relevant",
+    "reasoning": "Audience response: Return on Investment (ROI)."
+  },
+  {
+    "start": "00:13:18",
+    "end": "00:13:20",
+    "type": "Relevant",
+    "reasoning": "Establishing the Billion Dollar Company benchmark."
+  },
+  {
+    "start": "00:13:20",
+    "end": "00:13:23",
+    "type": "Relevant",
+    "reasoning": "Reiterating why revenue/product depth is secondary to vision."
+  },
+  {
+    "start": "00:13:23",
+    "end": "00:13:26",
+    "type": "Relevant",
+    "reasoning": "Focusing on larger revenue milestones down the line."
+  },
+  {
+    "start": "00:13:26",
+    "end": "00:13:34",
+    "type": "Relevant",
+    "reasoning": "Signaling market interest via potential buyer conversations."
+  },
+  {
+    "start": "00:13:34",
+    "end": "00:13:41",
+    "type": "Relevant",
+    "reasoning": "The instructional value of 'Design Partners' as an anchor."
+  },
+  {
+    "start": "00:13:41",
+    "end": "00:13:50",
+    "type": "Relevant",
+    "reasoning": "Predicting ACV ranges and growth phases."
+  },
+  {
+    "start": "00:13:50",
+    "end": "00:13:53",
+    "type": "Relevant",
+    "reasoning": "Moving from hypothetical to evidence-based research."
+  },
+  {
+    "start": "00:13:53",
+    "end": "00:13:55",
+    "type": "Relevant",
+    "reasoning": "Using customer interviews as 'back pocket' evidence."
+  },
+  {
+    "start": "00:13:55",
+    "end": "00:13:59",
+    "type": "Relevant",
+    "reasoning": "Helping VCs craft the narrative of success."
+  },
+  {
+    "start": "00:13:59",
+    "end": "00:14:00",
+    "type": "Relevant",
+    "reasoning": "Billion dollar business scaling logic."
+  },
+  {
+    "start": "00:14:00",
+    "end": "00:14:05",
+    "type": "Relevant",
+    "reasoning": "Case study: Raising for Jam when it was small."
+  },
+  {
+    "start": "00:14:05",
+    "end": "00:14:06",
+    "type": "Relevant",
+    "reasoning": "Handling the 'Why is this not a feature' question."
+  },
+  {
+    "start": "00:14:06",
+    "end": "00:14:08",
+    "type": "Relevant",
+    "reasoning": "Defining the 'Product vs Feature' objection."
+  },
+  {
+    "start": "00:14:08",
+    "end": "00:14:14",
+    "type": "Relevant",
+    "reasoning": "Explaining the path to future products."
+  },
+  {
+    "start": "00:14:14",
+    "end": "00:14:19",
+    "type": "Relevant",
+    "reasoning": "Instruction: Future-proofing the 'now' with 'next'."
+  },
+  {
+    "start": "00:14:19",
+    "end": "00:14:20",
+    "type": "Relevant",
+    "reasoning": "Next question: Likability vs Intelligence."
+  },
+  {
+    "start": "00:14:20",
+    "end": "00:14:23",
+    "type": "Relevant",
+    "reasoning": "Polling: Would you invest in someone smart but unpleasant?"
+  },
+  {
+    "start": "00:14:23",
+    "end": "00:14:25",
+    "type": "Relevant",
+    "reasoning": "Capturing poll results on founder likability."
+  },
+  {
+    "start": "00:14:25",
+    "end": "00:14:26",
+    "type": "Relevant",
+    "reasoning": "The sales perspective: Raising is selling."
+  },
+  {
+    "start": "00:14:26",
+    "end": "00:14:30",
+    "type": "Relevant",
+    "reasoning": "The business of 'giving a good meeting'."
+  },
+  {
+    "start": "00:14:30",
+    "end": "00:14:35",
+    "type": "Relevant",
+    "reasoning": "Defining the components of a 'good meeting'."
+  },
+  {
+    "start": "00:14:35",
+    "end": "00:14:39",
+    "type": "Relevant",
+    "reasoning": "Interactive list: Laughter, steps, bidirectional flow."
+  },
+  {
+    "start": "00:14:39",
+    "end": "00:14:53",
+    "type": "Relevant",
+    "reasoning": "Advice on avoiding the '10 minute monologue'."
+  },
+  {
+    "start": "00:14:53",
+    "end": "00:15:02",
+    "type": "Relevant",
+    "reasoning": "Using the 'brief summary' tactic for GTM questions."
+  },
+  {
+    "start": "00:15:02",
+    "end": "00:15:08",
+    "type": "Relevant",
+    "reasoning": "Letting the pitch be a conversation, not a webinar."
+  },
+  {
+    "start": "00:15:08",
+    "end": "00:15:10",
+    "type": "Relevant",
+    "reasoning": "Probing for founder thinking processes."
+  },
+  {
+    "start": "00:15:10",
+    "end": "00:15:17",
+    "type": "Relevant",
+    "reasoning": "Case study: Founder honesty at an investment committee."
+  },
+  {
+    "start": "00:15:17",
+    "end": "00:15:25",
+    "type": "Relevant",
+    "reasoning": "The power of 'I don't want to fake an answer'."
+  },
+  {
+    "start": "00:15:25",
+    "end": "00:15:28",
+    "type": "Relevant",
+    "reasoning": "Instruction: Thoughtful honesty builds massive credibility."
+  },
+  {
+    "start": "00:15:28",
+    "end": "00:15:30",
+    "type": "Relevant",
+    "reasoning": "The value of faking vs. believing in the path."
+  },
+  {
+    "start": "00:15:30",
+    "end": "00:15:31",
+    "type": "Relevant",
+    "reasoning": "Instruction on bidirectional engagement."
+  },
+  {
+    "start": "00:15:31",
+    "end": "00:15:33",
+    "type": "Relevant",
+    "reasoning": "Asking VCs about their own thinking to create engagement."
+  },
+  {
+    "start": "00:15:33",
+    "end": "00:15:56",
+    "type": "Relevant",
+    "reasoning": "Humanizing the pitch process and reading the room."
+  },
+  {
+    "start": "00:15:56",
+    "end": "00:16:08",
+    "type": "Relevant",
+    "reasoning": "Acknowledge warped power dynamics and how to handle them."
+  },
+  {
+    "start": "00:16:08",
+    "end": "00:16:17",
+    "type": "Relevant",
+    "reasoning": "Strategy: Front-loading practice pitches with low-stakes funds."
+  },
+  {
+    "start": "00:16:17",
+    "end": "00:16:19",
+    "type": "Relevant",
+    "reasoning": "Getting reps in to sharpen the story."
+  },
+  {
+    "start": "00:16:19",
+    "end": "00:16:29",
+    "type": "Relevant",
+    "reasoning": "Identifying the 'ideal partner' characteristics."
+  },
+  {
+    "start": "00:16:29",
+    "end": "00:16:33",
+    "type": "Relevant",
+    "reasoning": "Readiness for AI-focused pre-seed investors."
+  },
+  {
+    "start": "00:16:33",
+    "end": "00:16:36",
+    "type": "Relevant",
+    "reasoning": "Recap: Confidence through preparation."
+  },
+  {
+    "start": "00:16:36",
+    "end": "00:16:37",
+    "type": "Relevant",
+    "reasoning": "Next question: Core AI engineer questions from VCs."
+  },
+  {
+    "start": "00:16:37",
+    "end": "00:16:39",
+    "type": "Relevant",
+    "reasoning": "Area 1: Problem and Solution narrative."
+  },
+  {
+    "start": "00:16:39",
+    "end": "00:16:41",
+    "type": "Relevant",
+    "reasoning": "Establishing Why You/Now/Me."
+  },
+  {
+    "start": "00:16:41",
+    "end": "00:16:42",
+    "type": "Relevant",
+    "reasoning": "Clarifying that mockups are not required."
+  },
+  {
+    "start": "00:16:42",
+    "end": "00:16:48",
+    "type": "Relevant",
+    "reasoning": "Defining 'Product Velocity' as a key pitch metric."
+  },
+  {
+    "start": "00:16:48",
+    "end": "00:16:54",
+    "type": "Relevant",
+    "reasoning": "Instruction: Selling the iteration path, not just the state."
+  },
+  {
+    "start": "00:16:54",
+    "end": "00:17:04",
+    "type": "Relevant",
+    "reasoning": "Identifying the Ideal Customer Profile (ICP)."
+  },
+  {
+    "start": "00:17:04",
+    "end": "00:17:09",
+    "type": "Relevant",
+    "reasoning": "Handling multiple ICP hypotheses simultaneously."
+  },
+  {
+    "start": "00:17:09",
+    "end": "00:17:15",
+    "type": "Relevant",
+    "reasoning": "Instruction on testing and learning customer segments."
+  },
+  {
+    "start": "00:17:15",
+    "end": "00:17:20",
+    "type": "Relevant",
+    "reasoning": "Questioning where revenue actually comes from."
+  },
+  {
+    "start": "00:17:20",
+    "end": "00:17:24",
+    "type": "Relevant",
+    "reasoning": "Monetization hypotheses for pre-revenue companies."
+  },
+  {
+    "start": "00:17:24",
+    "end": "00:17:28",
+    "type": "Relevant",
+    "reasoning": "Seat-based vs. Usage-based pricing signals."
+  },
+  {
+    "start": "00:17:28",
+    "end": "00:17:32",
+    "type": "Relevant",
+    "reasoning": "Using specific industry words to signal sophistication."
+  },
+  {
+    "start": "00:17:32",
+    "end": "00:17:33",
+    "type": "Relevant",
+    "reasoning": "Leveraging VC experience with similar company models."
+  },
+  {
+    "start": "00:17:33",
+    "end": "00:17:34",
+    "type": "Relevant",
+    "reasoning": "Building revenue trajectory momentum."
+  },
+  {
+    "start": "00:17:34",
+    "end": "00:17:35",
+    "type": "Relevant",
+    "reasoning": "The 'Team' as the final most important pillar."
+  },
+  {
+    "start": "00:17:35",
+    "end": "00:17:41",
+    "type": "Relevant",
+    "reasoning": "Detailing why team is the #1 early-stage metric."
+  },
+  {
+    "start": "00:17:41",
+    "end": "00:17:46",
+    "type": "Relevant",
+    "reasoning": "Unique persona and talent attraction abilities."
+  },
+  {
+    "start": "00:17:46",
+    "end": "00:18:00",
+    "type": "Relevant",
+    "reasoning": "Instruction: Proving you can attract other top AI engineers."
+  },
+  {
+    "start": "00:18:00",
+    "end": "00:18:01",
+    "type": "Relevant",
+    "reasoning": "Recap: The 5 core things VCs look for."
+  },
+  {
+    "start": "00:18:01",
+    "end": "00:18:14",
+    "type": "Relevant",
+    "reasoning": "Stackranking answers: Good vs. Okay."
+  },
+  {
+    "start": "00:18:14",
+    "end": "00:18:21",
+    "type": "Relevant",
+    "reasoning": "Addressing questions engineers don't typically encounter."
+  },
+  {
+    "start": "00:18:21",
+    "end": "00:18:26",
+    "type": "Relevant",
+    "reasoning": "Instruction: How to answer 'Who are your competitors?'"
+  },
+  {
+    "start": "00:18:26",
+    "end": "00:18:30",
+    "type": "Relevant",
+    "reasoning": "Acknowledging competitors to build trust."
+  },
+  {
+    "start": "00:18:30",
+    "end": "00:18:36",
+    "type": "Relevant",
+    "reasoning": "The danger of claiming 'no competitors'."
+  },
+  {
+    "start": "00:18:36",
+    "end": "00:18:41",
+    "type": "Relevant",
+    "reasoning": "Aggregating the competitive spectrum."
+  },
+  {
+    "start": "00:18:41",
+    "end": "00:18:47",
+    "type": "Relevant",
+    "reasoning": "Axes of competition and filling the 'white space'."
+  },
+  {
+    "start": "00:18:47",
+    "end": "00:18:49",
+    "type": "Relevant",
+    "reasoning": "Connecting competitor analysis back to 'Why Now'."
+  },
+  {
+    "start": "00:18:49",
+    "end": "00:18:53",
+    "type": "Relevant",
+    "reasoning": "Example: AI Go-to-Market tools (Clay example)."
+  },
+  {
+    "start": "00:18:53",
+    "end": "00:18:55",
+    "type": "Relevant",
+    "reasoning": "Distinguishing data aggregation as a differentiator."
+  },
+  {
+    "start": "00:18:55",
+    "end": "00:19:00",
+    "type": "Relevant",
+    "reasoning": "Winning through differentiation and momentum."
+  },
+  {
+    "start": "00:19:00",
+    "end": "00:19:10",
+    "type": "Relevant",
+    "reasoning": "Trustworthiness and competitor knowledge."
+  },
+  {
+    "start": "00:19:10",
+    "end": "00:19:11",
+    "type": "Relevant",
+    "reasoning": "VC background work: Meeting all players."
+  },
+  {
+    "start": "00:19:11",
+    "end": "00:19:14",
+    "type": "Relevant",
+    "reasoning": "Instruction: Getting info FROM the VC about competitors."
+  },
+  {
+    "start": "00:19:14",
+    "end": "00:19:24",
+    "type": "Relevant",
+    "reasoning": "Asking VCs why they passed on other companies."
+  },
+  {
+    "start": "00:19:24",
+    "end": "00:19:32",
+    "type": "Relevant",
+    "reasoning": "Instruction on first-round Go-to-Market answers."
+  },
+  {
+    "start": "00:19:32",
+    "end": "00:19:36",
+    "type": "Relevant",
+    "reasoning": "Defining the 'vision of GTM' for nascent startups."
+  },
+  {
+    "start": "00:19:36",
+    "end": "00:19:39",
+    "type": "Relevant",
+    "reasoning": "Using frameworks based on similar business models."
+  },
+  {
+    "start": "00:19:39",
+    "end": "00:19:45",
+    "type": "Relevant",
+    "reasoning": "PLG (Product-Led Growth) approach example."
+  },
+  {
+    "start": "00:19:45",
+    "end": "00:19:48",
+    "type": "Relevant",
+    "reasoning": "Pricing tiers and directional thinking."
+  },
+  {
+    "start": "00:19:48",
+    "end": "00:19:56",
+    "type": "Relevant",
+    "reasoning": "Anchoring on experimentation rather than certainty."
+  },
+  {
+    "start": "00:19:56",
+    "end": "00:20:01",
+    "type": "Relevant",
+    "reasoning": "Context of technical 'hijack' joke."
+  },
+  {
+    "start": "00:20:01",
+    "end": "00:20:05",
+    "type": "Relevant",
+    "reasoning": "Closing the GTM discussion."
+  },
+  {
+    "start": "00:20:05",
+    "end": "00:20:08",
+    "type": "Relevant",
+    "reasoning": "Final question: Common pitch mistakes."
+  },
+  {
+    "start": "00:20:08",
+    "end": "00:20:12",
+    "type": "Relevant",
+    "reasoning": "Instruction: Do not get 'in the weeds' on product tech."
+  },
+  {
+    "start": "00:20:12",
+    "end": "00:20:19",
+    "type": "Relevant",
+    "reasoning": "Researching investor technical levels beforehand."
+  },
+  {
+    "start": "00:20:19",
+    "end": "00:20:21",
+    "type": "Relevant",
+    "reasoning": "Betting criteria: Person, Vision, Product."
+  },
+  {
+    "start": "00:20:21",
+    "end": "00:20:23",
+    "type": "Relevant",
+    "reasoning": "Separate technical deep-dive sessions."
+  },
+  {
+    "start": "00:20:23",
+    "end": "00:20:28",
+    "type": "Relevant",
+    "reasoning": "Instruction: Don't waste the 'hook' meeting on tech deep-dives."
+  },
+  {
+    "start": "00:20:28",
+    "end": "00:20:30",
+    "type": "Relevant",
+    "reasoning": "Future state vs. current tech focus."
+  },
+  {
+    "start": "00:20:30",
+    "end": "00:20:32",
+    "type": "Relevant",
+    "reasoning": "Testing if you want to work with the investor."
+  },
+  {
+    "start": "00:20:32",
+    "end": "00:20:33",
+    "type": "Relevant",
+    "reasoning": "Founder autonomy and firm sense of need."
+  },
+  {
+    "start": "00:20:33",
+    "end": "00:20:38",
+    "type": "Relevant",
+    "reasoning": "Respecting founders who know what they need."
+  },
+  {
+    "start": "00:20:38",
+    "end": "00:20:41",
+    "type": "Relevant",
+    "reasoning": "Moving to the next phase requirements."
+  },
+  {
+    "start": "00:20:41",
+    "end": "00:20:43",
+    "type": "Relevant",
+    "reasoning": "Finalizing the first pitch meeting wrap-up."
+  },
+  {
+    "start": "00:20:43",
+    "end": "00:20:46",
+    "type": "Relevant",
+    "reasoning": "Instruction: How to end the meeting properly."
+  },
+  {
+    "start": "00:20:46",
+    "end": "00:20:54",
+    "type": "Relevant",
+    "reasoning": "Prompting for next steps and process expectations."
+  },
+  {
+    "start": "00:20:54",
+    "end": "00:20:59",
+    "type": "Relevant",
+    "reasoning": "Understanding bespoke firm processes."
+  },
+  {
+    "start": "00:20:59",
+    "end": "00:21:05",
+    "type": "Relevant",
+    "reasoning": "Instruction: Prepare materials BEFORE the meeting ends."
+  },
+  {
+    "start": "00:21:05",
+    "end": "00:21:11",
+    "type": "Relevant",
+    "reasoning": "Pre-seed data room vs. seed requirements."
+  },
+  {
+    "start": "00:21:11",
+    "end": "00:21:12",
+    "type": "Relevant",
+    "reasoning": "Pitch deck readiness."
+  },
+  {
+    "start": "00:21:12",
+    "end": "00:21:14",
+    "type": "Relevant",
+    "reasoning": "Inclusions: Amount raising and use of capital."
+  },
+  {
+    "start": "00:21:14",
+    "end": "00:21:17",
+    "type": "Relevant",
+    "reasoning": "Jam deck example and URL reference."
+  },
+  {
+    "start": "00:21:17",
+    "end": "00:21:22",
+    "type": "Relevant",
+    "reasoning": "DNS and Cloudflare reference for the deck."
+  },
+  {
+    "start": "00:21:22",
+    "end": "00:21:30",
+    "type": "Relevant",
+    "reasoning": "Instruction: Do not share the deck DURING the meeting."
+  },
+  {
+    "start": "00:21:30",
+    "end": "00:21:35",
+    "type": "Relevant",
+    "reasoning": "Avoiding 'webinar mode' and glazed eyes."
+  },
+  {
+    "start": "00:21:35",
+    "end": "00:21:36",
+    "type": "Relevant",
+    "reasoning": "Saving the brochure for after the conversation."
+  },
+  {
+    "start": "00:21:36",
+    "end": "00:21:39",
+    "type": "Relevant",
+    "reasoning": "Instruction: The deck is for the VC's teammates."
+  },
+  {
+    "start": "00:21:39",
+    "end": "00:21:47",
+    "type": "Relevant",
+    "reasoning": "Closing timing and wrap-up."
+  },
+  {
+    "start": "00:21:47",
+    "end": "00:21:49",
+    "type": "Relevant",
+    "reasoning": "Final closing summary."
+  },
+  {
+    "start": "00:21:49",
+    "end": "00:21:51",
+    "type": "Relevant",
+    "reasoning": "Equipping the VC to sell you to their team."
+  },
+  {
+    "start": "00:21:51",
+    "end": "00:21:52",
+    "type": "Relevant",
+    "reasoning": "GP vs. Associate dynamics."
+  },
+  {
+    "start": "00:21:52",
+    "end": "00:22:00",
+    "type": "Relevant",
+    "reasoning": "Instruction: Giving the VC tools to write your check."
+  },
+  {
+    "start": "00:22:00",
+    "end": "00:22:08",
+    "type": "Relevant",
+    "reasoning": "Compelling deck blurbs for easy forwarding."
+  },
+  {
+    "start": "00:22:08",
+    "end": "00:22:11",
+    "type": "Relevant",
+    "reasoning": "Forwarding to other excellent investors."
+  },
+  {
+    "start": "00:22:11",
+    "end": "00:22:17",
+    "type": "Relevant",
+    "reasoning": "Chelsea's contact info (Twitter/Email)."
+  },
+  {
+    "start": "00:22:17",
+    "end": "00:22:27",
+    "type": "Relevant",
+    "reasoning": "Encouragement for cold outreach."
+  },
+  {
+    "start": "00:22:27",
+    "end": "00:22:35",
+    "type": "Relevant",
+    "reasoning": "Final 'have a great day' and build invitation."
+  },
+  {
+    "start": "00:22:35",
+    "end": "00:22:47",
+    "type": "Relevant",
+    "reasoning": "Audience applause and closing visual."
+  },
+  {
+    "start": "00:22:47",
+    "end": "00:23:08",
+    "type": "Irrelevant",
+    "reasoning": "Crowd noise and social transition; no instructional content."
+  },
+  {
+    "start": "00:23:08",
+    "end": "00:23:12",
+    "type": "Irrelevant",
+    "reasoning": "Panelists changing positions; non-instructional visuals."
+  },
+  {
+    "start": "00:23:12",
+    "end": "00:23:19",
+    "type": "Irrelevant",
+    "reasoning": "Technical noise and camera adjustments."
+  },
+  {
+    "start": "00:23:19",
+    "end": "00:23:20",
+    "type": "Irrelevant",
+    "reasoning": "Silence as session winds down."
+  },
+  {
+    "start": "00:23:20",
+    "end": "00:23:27",
+    "type": "Irrelevant",
+    "reasoning": "Stage logistics; speaker handing off microphone."
+  },
+  {
+    "start": "00:23:27",
+    "end": "00:23:36",
+    "type": "Irrelevant",
+    "reasoning": "Background noise and crowd chatter."
+  },
+  {
+    "start": "00:23:36",
+    "end": "00:23:42",
+    "type": "Irrelevant",
+    "reasoning": "Silence and visuals of the room; no teaching."
+  },
+  {
+    "start": "00:23:42",
+    "end": "00:24:03",
+    "type": "Irrelevant",
+    "reasoning": "Housekeeping; preparing for the next speaker."
+  },
+  {
+    "start": "00:24:03",
+    "end": "00:24:07",
+    "type": "Irrelevant",
+    "reasoning": "Social chatter between audience members."
+  },
+  {
+    "start": "00:24:07",
+    "end": "00:24:08",
+    "type": "Irrelevant",
+    "reasoning": "Silence/Dead air."
+  },
+  {
+    "start": "00:24:08",
+    "end": "00:24:12",
+    "type": "Irrelevant",
+    "reasoning": "Stage crew activity; non-educational noise."
+  },
+  {
+    "start": "00:24:12",
+    "end": "00:24:13",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:24:13",
+    "end": "00:24:16",
+    "type": "Irrelevant",
+    "reasoning": "Closing music fade; end of core session."
+  },
+  {
+    "start": "00:24:16",
+    "end": "00:24:22",
+    "type": "Irrelevant",
+    "reasoning": "Logistics; speaker exiting the stage."
+  },
+  {
+    "start": "00:24:22",
+    "end": "00:24:26",
+    "type": "Irrelevant",
+    "reasoning": "Room atmosphere and applause."
+  },
+  {
+    "start": "00:24:26",
+    "end": "00:24:29",
+    "type": "Irrelevant",
+    "reasoning": "Dead air; waiting for screen change."
+  },
+  {
+    "start": "00:24:29",
+    "end": "00:24:37",
+    "type": "Irrelevant",
+    "reasoning": "Technical transition between session blocks."
+  },
+  {
+    "start": "00:24:37",
+    "end": "00:24:51",
+    "type": "Irrelevant",
+    "reasoning": "Crowd chatter during a break period."
+  },
+  {
+    "start": "00:24:51",
+    "end": "00:24:53",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:24:53",
+    "end": "00:25:01",
+    "type": "Irrelevant",
+    "reasoning": "General room noise; no instruction."
+  },
+  {
+    "start": "00:25:01",
+    "end": "00:25:05",
+    "type": "Irrelevant",
+    "reasoning": "Non-instructional visuals of the audience."
+  },
+  {
+    "start": "00:25:05",
+    "end": "00:25:07",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:25:07",
+    "end": "00:25:13",
+    "type": "Irrelevant",
+    "reasoning": "Technical friction; microphone adjustments heard."
+  },
+  {
+    "start": "00:25:13",
+    "end": "00:25:20",
+    "type": "Irrelevant",
+    "reasoning": "Background conversations; distracting audio."
+  },
+  {
+    "start": "00:25:20",
+    "end": "00:25:24",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:25:24",
+    "end": "00:25:30",
+    "type": "Irrelevant",
+    "reasoning": "Waiting for the next presenter; no teaching value."
+  },
+  {
+    "start": "00:25:30",
+    "end": "00:25:38",
+    "type": "Irrelevant",
+    "reasoning": "Crowd interaction without microphones."
+  },
+  {
+    "start": "00:25:38",
+    "end": "00:25:41",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:25:41",
+    "end": "00:25:43",
+    "type": "Irrelevant",
+    "reasoning": "Visual fallacies; slides visible but no narration."
+  },
+  {
+    "start": "00:25:43",
+    "end": "00:25:46",
+    "type": "Irrelevant",
+    "reasoning": "Room noise; distracting audio."
+  },
+  {
+    "start": "00:25:46",
+    "end": "00:25:52",
+    "type": "Irrelevant",
+    "reasoning": "Technical crew talking off-mic."
+  },
+  {
+    "start": "00:25:52",
+    "end": "00:25:56",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:25:56",
+    "end": "00:25:58",
+    "type": "Irrelevant",
+    "reasoning": "Social noise; audience laughing at an off-camera comment."
+  },
+  {
+    "start": "00:25:58",
+    "end": "00:26:04",
+    "type": "Irrelevant",
+    "reasoning": "Non-instructional pauses."
+  },
+  {
+    "start": "00:26:04",
+    "end": "00:26:09",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:26:09",
+    "end": "00:26:17",
+    "type": "Irrelevant",
+    "reasoning": "Waiting for screen sharing to initialize."
+  },
+  {
+    "start": "00:26:17",
+    "end": "00:26:19",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:26:19",
+    "end": "00:26:26",
+    "type": "Irrelevant",
+    "reasoning": "Social stalling; no value for educational cut."
+  },
+  {
+    "start": "00:26:26",
+    "end": "00:26:32",
+    "type": "Irrelevant",
+    "reasoning": "Room chatter."
+  },
+  {
+    "start": "00:26:32",
+    "end": "00:26:33",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:26:33",
+    "end": "00:26:39",
+    "type": "Irrelevant",
+    "reasoning": "Crowd interaction noise."
+  },
+  {
+    "start": "00:26:39",
+    "end": "00:26:44",
+    "type": "Irrelevant",
+    "reasoning": "Waiting on logistics."
+  },
+  {
+    "start": "00:26:44",
+    "end": "00:26:46",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:26:46",
+    "end": "00:26:54",
+    "type": "Irrelevant",
+    "reasoning": "Non-instructional visuals."
+  },
+  {
+    "start": "00:26:54",
+    "end": "00:27:00",
+    "type": "Irrelevant",
+    "reasoning": "General room ambiance."
+  },
+  {
+    "start": "00:27:00",
+    "end": "00:27:11",
+    "type": "Irrelevant",
+    "reasoning": "Long pause during transition."
+  },
+  {
+    "start": "00:27:11",
+    "end": "00:27:12",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:27:12",
+    "end": "00:27:23",
+    "type": "Irrelevant",
+    "reasoning": "Crowd chatter; distracting audio."
+  },
+  {
+    "start": "00:27:23",
+    "end": "00:27:26",
+    "type": "Irrelevant",
+    "reasoning": "Technical setup visuals."
+  },
+  {
+    "start": "00:27:26",
+    "end": "00:27:26",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:27:26",
+    "end": "00:27:27",
+    "type": "Irrelevant",
+    "reasoning": "Social noise."
+  },
+  {
+    "start": "00:27:27",
+    "end": "00:27:29",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:27:29",
+    "end": "00:27:39",
+    "type": "Irrelevant",
+    "reasoning": "Visuals present but no instructional narration."
+  },
+  {
+    "start": "00:27:39",
+    "end": "00:27:46",
+    "type": "Irrelevant",
+    "reasoning": "General atmosphere; no teaching."
+  },
+  {
+    "start": "00:27:46",
+    "end": "00:27:48",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:27:48",
+    "end": "00:27:50",
+    "type": "Irrelevant",
+    "reasoning": "Background music only."
+  },
+  {
+    "start": "00:27:50",
+    "end": "00:28:00",
+    "type": "Irrelevant",
+    "reasoning": "Speaker change; off-topic chatter."
+  },
+  {
+    "start": "00:28:00",
+    "end": "00:28:08",
+    "type": "Irrelevant",
+    "reasoning": "Stage logistics."
+  },
+  {
+    "start": "00:28:08",
+    "end": "00:28:11",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:28:11",
+    "end": "00:28:19",
+    "type": "Irrelevant",
+    "reasoning": "Room noise."
+  },
+  {
+    "start": "00:28:19",
+    "end": "00:28:20",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:28:20",
+    "end": "00:28:21",
+    "type": "Irrelevant",
+    "reasoning": "Microphone test noise."
+  },
+  {
+    "start": "00:28:21",
+    "end": "00:28:30",
+    "type": "Irrelevant",
+    "reasoning": "Distracting audio during setup."
+  },
+  {
+    "start": "00:28:30",
+    "end": "00:28:32",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:28:32",
+    "end": "00:28:38",
+    "type": "Irrelevant",
+    "reasoning": "Crowd interaction; off-mic."
+  },
+  {
+    "start": "00:28:38",
+    "end": "00:28:41",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:28:41",
+    "end": "00:28:42",
+    "type": "Irrelevant",
+    "reasoning": "Social joke before content resume."
+  },
+  {
+    "start": "00:28:42",
+    "end": "00:28:48",
+    "type": "Irrelevant",
+    "reasoning": "Stalling/Housekeeping noise."
+  },
+  {
+    "start": "00:28:48",
+    "end": "00:29:05",
+    "type": "Irrelevant",
+    "reasoning": "General room chatter."
+  },
+  {
+    "start": "00:29:05",
+    "end": "00:29:17",
+    "type": "Irrelevant",
+    "reasoning": "Technical adjustments phase."
+  },
+  {
+    "start": "00:29:17",
+    "end": "00:29:20",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:29:20",
+    "end": "00:29:22",
+    "type": "Irrelevant",
+    "reasoning": "Visuals of audience; no teaching."
+  },
+  {
+    "start": "00:29:22",
+    "end": "00:29:32",
+    "type": "Irrelevant",
+    "reasoning": "Non-instructional pauses."
+  },
+  {
+    "start": "00:29:32",
+    "end": "00:29:34",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:29:34",
+    "end": "00:29:49",
+    "type": "Irrelevant",
+    "reasoning": "Transition noise."
+  },
+  {
+    "start": "00:29:49",
+    "end": "00:29:52",
+    "type": "Irrelevant",
+    "reasoning": "Technical friction; speaker reporting being 'hijacked'."
+  },
+  {
+    "start": "00:29:52",
+    "end": "00:29:58",
+    "type": "Irrelevant",
+    "reasoning": "Logistics chatter regarding the screen issue."
+  },
+  {
+    "start": "00:29:58",
+    "end": "00:30:04",
+    "type": "Irrelevant",
+    "reasoning": "Dead air during technical fix."
+  },
+  {
+    "start": "00:30:04",
+    "end": "00:30:10",
+    "type": "Irrelevant",
+    "reasoning": "Crowd noise."
+  },
+  {
+    "start": "00:30:10",
+    "end": "00:30:19",
+    "type": "Irrelevant",
+    "reasoning": "Waiting for speaker to resume content."
+  },
+  {
+    "start": "00:30:19",
+    "end": "00:30:20",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:30:20",
+    "end": "00:30:29",
+    "type": "Irrelevant",
+    "reasoning": "Non-instructional visuals."
+  },
+  {
+    "start": "00:30:29",
+    "end": "00:30:38",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:30:38",
+    "end": "00:30:46",
+    "type": "Irrelevant",
+    "reasoning": "Atmospheric noise."
+  },
+  {
+    "start": "00:30:46",
+    "end": "00:30:55",
+    "type": "Irrelevant",
+    "reasoning": "Transitioning to a new presenter block."
+  },
+  {
+    "start": "00:30:55",
+    "end": "00:30:57",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:30:57",
+    "end": "00:31:03",
+    "type": "Irrelevant",
+    "reasoning": "Room noise; no teaching."
+  },
+  {
+    "start": "00:31:03",
+    "end": "00:31:11",
+    "type": "Irrelevant",
+    "reasoning": "Distracting audio during break."
+  },
+  {
+    "start": "00:31:11",
+    "end": "00:31:16",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:31:16",
+    "end": "00:31:22",
+    "type": "Irrelevant",
+    "reasoning": "Housekeeping chatter."
+  },
+  {
+    "start": "00:31:22",
+    "end": "00:31:30",
+    "type": "Irrelevant",
+    "reasoning": "Non-instructional pauses."
+  },
+  {
+    "start": "00:31:30",
+    "end": "00:31:31",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:31:31",
+    "end": "00:31:33",
+    "type": "Irrelevant",
+    "reasoning": "Microphone bump noise."
+  },
+  {
+    "start": "00:31:33",
+    "end": "00:31:34",
+    "type": "Irrelevant",
+    "reasoning": "Social stalling."
+  },
+  {
+    "start": "00:31:34",
+    "end": "00:31:39",
+    "type": "Irrelevant",
+    "reasoning": "Crowd interaction off-mic."
+  },
+  {
+    "start": "00:31:39",
+    "end": "00:31:42",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:31:42",
+    "end": "00:31:47",
+    "type": "Irrelevant",
+    "reasoning": "Logistics transition."
+  },
+  {
+    "start": "00:31:47",
+    "end": "00:31:56",
+    "type": "Irrelevant",
+    "reasoning": "Visuals of stage setup; no narration."
+  },
+  {
+    "start": "00:31:56",
+    "end": "00:31:59",
+    "type": "Irrelevant",
+    "reasoning": "General room ambiance."
+  },
+  {
+    "start": "00:31:59",
+    "end": "00:32:11",
+    "type": "Irrelevant",
+    "reasoning": "Distracting background noise."
+  },
+  {
+    "start": "00:32:11",
+    "end": "00:32:15",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:32:15",
+    "end": "00:32:23",
+    "type": "Irrelevant",
+    "reasoning": "Waiting for session to conclude."
+  },
+  {
+    "start": "00:32:23",
+    "end": "00:32:28",
+    "type": "Irrelevant",
+    "reasoning": "Non-educational visual pauses."
+  },
+  {
+    "start": "00:32:23",
+    "end": "00:32:28",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:32:28",
+    "end": "00:32:30",
+    "type": "Irrelevant",
+    "reasoning": "Social noise."
+  },
+  {
+    "start": "00:32:30",
+    "end": "00:32:34",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:32:34",
+    "end": "00:32:34",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:32:34",
+    "end": "00:32:38",
+    "type": "Irrelevant",
+    "reasoning": "Technical noise fade."
+  },
+  {
+    "start": "00:32:38",
+    "end": "00:32:41",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:32:41",
+    "end": "00:32:46",
+    "type": "Irrelevant",
+    "reasoning": "Off-topic chatter heard in room."
+  },
+  {
+    "start": "00:32:46",
+    "end": "00:32:49",
+    "type": "Irrelevant",
+    "reasoning": "Visual fallacy; empty stage visual."
+  },
+  {
+    "start": "00:32:49",
+    "end": "00:32:52",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:32:52",
+    "end": "00:32:57",
+    "type": "Irrelevant",
+    "reasoning": "Crowd background noise."
+  },
+  {
+    "start": "00:32:57",
+    "end": "00:33:01",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:33:01",
+    "end": "00:33:03",
+    "type": "Irrelevant",
+    "reasoning": "Non-instructional visuals."
+  },
+  {
+    "start": "00:33:03",
+    "end": "00:33:06",
+    "type": "Irrelevant",
+    "reasoning": "Atmospheric hum."
+  },
+  {
+    "start": "00:33:06",
+    "end": "00:33:07",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:33:07",
+    "end": "00:33:08",
+    "type": "Irrelevant",
+    "reasoning": "Social noise."
+  },
+  {
+    "start": "00:33:08",
+    "end": "00:33:10",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:33:10",
+    "end": "00:33:14",
+    "type": "Irrelevant",
+    "reasoning": "Technical friction during outro."
+  },
+  {
+    "start": "00:33:14",
+    "end": "00:33:22",
+    "type": "Irrelevant",
+    "reasoning": "Room chatter."
+  },
+  {
+    "start": "00:33:22",
+    "end": "00:33:25",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:33:25",
+    "end": "00:33:35",
+    "type": "Irrelevant",
+    "reasoning": "General atmosphere; end of talk."
+  },
+  {
+    "start": "00:33:35",
+    "end": "00:33:50",
+    "type": "Irrelevant",
+    "reasoning": "Distracting audio during wrap."
+  },
+  {
+    "start": "00:33:50",
+    "end": "00:33:53",
+    "type": "Irrelevant",
+    "reasoning": "Dead air."
+  },
+  {
+    "start": "00:33:53",
+    "end": "00:33:56",
+    "type": "Irrelevant",
+    "reasoning": "Visuals only; no teaching narration."
+  },
+  {
+    "start": "00:33:56",
+    "end": "00:34:02",
+    "type": "Irrelevant",
+    "reasoning": "Waiting for credits or end screens."
+  },
+  {
+    "start": "00:34:02",
+    "end": "00:34:06",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:34:06",
+    "end": "00:34:08",
+    "type": "Irrelevant",
+    "reasoning": "Final social chatter from stage."
+  },
+  {
+    "start": "00:34:08",
+    "end": "00:34:08",
+    "type": "Irrelevant",
+    "reasoning": "Silence."
+  },
+  {
+    "start": "00:34:08",
+    "end": "00:34:09",
+    "type": "Irrelevant",
+    "reasoning": "Social outro: 'Thanks everyone'."
+  },
+  {
+    "start": "00:34:09",
+    "end": "00:34:16",
+    "type": "Irrelevant",
+    "reasoning": "Outro graphics and final silence; no instructional content."
+  }
+]

@@ -1,0 +1,401 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 8.8,
+        "frames": [
+            "frame_00000.png"
+        ],
+        "transcript": "Yeah, let's talk about some other ways we can use for dealing with overfitting."
+    },
+    {
+        "id": 1,
+        "start": 8.8,
+        "end": 15.84,
+        "frames": [
+            "frame_00001.png"
+        ],
+        "transcript": "For instance, if collecting more data is not feasible and if data augmentation only gets you so far."
+    },
+    {
+        "id": 2,
+        "start": 15.84,
+        "end": 21.04,
+        "frames": [
+            "frame_00002.png"
+        ],
+        "transcript": "So one way would be reducing the network's capacity by other means."
+    },
+    {
+        "id": 3,
+        "start": 21.04,
+        "end": 31.84,
+        "frames": [
+            "frame_00003.png"
+        ],
+        "transcript": "I decided not to do an extensive slide on that because we discussed several techniques already in that overview video I made with the mind map."
+    },
+    {
+        "id": 4,
+        "start": 31.84,
+        "end": 36.08,
+        "frames": [
+            "frame_00004.png"
+        ],
+        "transcript": "And also, to be honest, the really most exciting topic here is dropouts."
+    },
+    {
+        "id": 5,
+        "start": 36.08,
+        "end": 40.64,
+        "frames": [
+            "frame_00005.png"
+        ],
+        "transcript": "So I don't want to spend too much time on other techniques at this point."
+    },
+    {
+        "id": 6,
+        "start": 40.64,
+        "end": 43.68,
+        "frames": [
+            "frame_00006.png"
+        ],
+        "transcript": "I will briefly talk about early stopping though."
+    },
+    {
+        "id": 7,
+        "start": 43.68,
+        "end": 51.6,
+        "frames": [
+            "frame_00007.png"
+        ],
+        "transcript": "And then in the next video, I will also talk about L2 regularization, which are two ways that allow us to reduce the capacity."
+    },
+    {
+        "id": 8,
+        "start": 51.6,
+        "end": 55.52,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": "So capacity is essentially an interesting term."
+    },
+    {
+        "id": 9,
+        "start": 55.52,
+        "end": 61.84,
+        "frames": [
+            "frame_00009.png"
+        ],
+        "transcript": "It refers really to the ability of the network to fit complex functions."
+    },
+    {
+        "id": 10,
+        "start": 61.84,
+        "end": 66.72,
+        "frames": [
+            "frame_00010.png"
+        ],
+        "transcript": "So like you can think of it as the complexity of the decision boundary."
+    },
+    {
+        "id": 11,
+        "start": 66.72,
+        "end": 71.92,
+        "frames": [
+            "frame_00011.png"
+        ],
+        "transcript": "So adding a penalty against complexity, that's essentially what L2 regularization is."
+    },
+    {
+        "id": 12,
+        "start": 71.92,
+        "end": 79.52,
+        "frames": [
+            "frame_00012.png"
+        ],
+        "transcript": "It helps reducing the capacity, but also let's say adding noise via dropout also reduces the capacity in a way."
+    },
+    {
+        "id": 13,
+        "start": 79.52,
+        "end": 82.08,
+        "frames": [
+            "frame_00013.png"
+        ],
+        "transcript": "So all these topics are kind of related."
+    },
+    {
+        "id": 14,
+        "start": 82.08,
+        "end": 88.56,
+        "frames": [
+            "frame_00014.png",
+            "frame_00015.png"
+        ],
+        "transcript": "So in this video we will mainly focus on early stopping and in the next video we'll explain regularization."
+    },
+    {
+        "id": 15,
+        "start": 88.56,
+        "end": 94.16,
+        "frames": [
+            "frame_00016.png"
+        ],
+        "transcript": "Yeah and as far as early stopping is concerned, so there's a general strategy here."
+    },
+    {
+        "id": 16,
+        "start": 94.16,
+        "end": 98.48,
+        "frames": [
+            "frame_00017.png"
+        ],
+        "transcript": "So this is usually something I always recommend when you work in deep learning."
+    },
+    {
+        "id": 17,
+        "start": 98.48,
+        "end": 101.44,
+        "frames": [
+            "frame_00018.png"
+        ],
+        "transcript": "You split your data set into three parts."
+    },
+    {
+        "id": 18,
+        "start": 101.44,
+        "end": 112.08,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "A large training set and the second largest chunk should be your data set for testing and then a smaller validation set that you use for model tuning."
+    },
+    {
+        "id": 19,
+        "start": 112.08,
+        "end": 116.08,
+        "frames": [
+            "frame_00020.png"
+        ],
+        "transcript": "And the test set should only ideally used once and the very end."
+    },
+    {
+        "id": 20,
+        "start": 116.08,
+        "end": 121.04,
+        "frames": [
+            "frame_00021.png"
+        ],
+        "transcript": "Once you found your model, you are happy with it by tuning it on the validation set."
+    },
+    {
+        "id": 21,
+        "start": 121.04,
+        "end": 125.44,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "Then you use your test set to evaluate the final performance of this model."
+    },
+    {
+        "id": 22,
+        "start": 125.44,
+        "end": 129.04,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "And yeah, the validation set is essentially for tuning the model."
+    },
+    {
+        "id": 23,
+        "start": 129.04,
+        "end": 132.4,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "But then you can also use it of course for early stopping."
+    },
+    {
+        "id": 24,
+        "start": 132.4,
+        "end": 134.4,
+        "frames": [
+            "frame_00025.png",
+            "frame_00026.png"
+        ],
+        "transcript": "That's part of the tuning essentially."
+    },
+    {
+        "id": 25,
+        "start": 134.4,
+        "end": 142.32,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "So last week I showed you some real data, like the training over the epochs and the accuracy."
+    },
+    {
+        "id": 26,
+        "start": 142.32,
+        "end": 144.48,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "We also did the same for the loss."
+    },
+    {
+        "id": 27,
+        "start": 144.48,
+        "end": 146.4,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "So you can also do that for the loss."
+    },
+    {
+        "id": 28,
+        "start": 146.4,
+        "end": 153.12,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "Here, just for the sake of keeping things simple, I'm just showing you an idealized drawing of that."
+    },
+    {
+        "id": 29,
+        "start": 153.12,
+        "end": 162.08,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "So early stopping is essentially a method for looking at the training and validation set performance."
+    },
+    {
+        "id": 30,
+        "start": 162.08,
+        "end": 166.64,
+        "frames": [
+            "frame_00032.png"
+        ],
+        "transcript": "And from there, you try to deduce a good point for stopping the training."
+    },
+    {
+        "id": 31,
+        "start": 166.64,
+        "end": 172.16,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "For instance, you may see that the validation accuracy goes up."
+    },
+    {
+        "id": 32,
+        "start": 172.16,
+        "end": 176.88,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "So the validation set serves as a way of estimating the generalization performance."
+    },
+    {
+        "id": 33,
+        "start": 176.88,
+        "end": 184.48,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "You can say the generalization performance improves up to a certain point where you find that the validation set performance goes down again."
+    },
+    {
+        "id": 34,
+        "start": 184.48,
+        "end": 189.12,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "So in that way, training longer may make your performance worse."
+    },
+    {
+        "id": 35,
+        "start": 189.12,
+        "end": 195.12,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "However, there might be some exceptions sometimes, like we've seen in the double descent paper last week."
+    },
+    {
+        "id": 36,
+        "start": 195.12,
+        "end": 203.12,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "But in general, there might be something like this, where you find that if you stop the training early, you actually get a better performance."
+    },
+    {
+        "id": 37,
+        "start": 203.12,
+        "end": 207.52,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "In practice, this method is not super common anymore."
+    },
+    {
+        "id": 38,
+        "start": 207.52,
+        "end": 219.76,
+        "frames": [
+            "frame_00040.png"
+        ],
+        "transcript": "I mean, it's not totally uncommon to do that, but I would say first try either L2 regularization or even better using dropout to improve generalization performance."
+    },
+    {
+        "id": 39,
+        "start": 219.76,
+        "end": 226.56,
+        "frames": [
+            "frame_00041.png"
+        ],
+        "transcript": "And once you use both techniques and you still find that early stopping helps, then I would probably consider early stopping."
+    },
+    {
+        "id": 40,
+        "start": 226.56,
+        "end": 232.32,
+        "frames": [
+            "frame_00042.png"
+        ],
+        "transcript": "But I would first consider the other two techniques I'm going to present in the next two videos."
+    },
+    {
+        "id": 41,
+        "start": 232.32,
+        "end": 236.4,
+        "frames": [
+            "frame_00043.png"
+        ],
+        "transcript": "But again, this is also a useful technique to know about."
+    },
+    {
+        "id": 42,
+        "start": 236.4,
+        "end": 243.84,
+        "frames": [
+            "frame_00044.png",
+            "frame_00045.png"
+        ],
+        "transcript": "So in the next video, I want to show you L2 regularization, which is essentially a penalty against complexity."
+    },
+    {
+        "id": 43,
+        "start": 243.84,
+        "end": 247.0468,
+        "frames": [
+            "frame_00046.png"
+        ],
+        "transcript": "And then we will get to the main topic, dropout."
+    }
+]

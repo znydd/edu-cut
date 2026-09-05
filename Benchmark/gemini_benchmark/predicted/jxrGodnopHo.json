@@ -1,0 +1,2936 @@
+[
+  {
+    "start": "00:00:00",
+    "end": "00:00:07",
+    "type": "Irrelevant",
+    "reasoning": "Introductory music and title card; no instructional content."
+  },
+  {
+    "start": "00:00:07",
+    "end": "00:00:15",
+    "type": "Irrelevant",
+    "reasoning": "Housekeeping: discussing timing and waiting for the audience."
+  },
+  {
+    "start": "00:00:15",
+    "end": "00:00:19",
+    "type": "Irrelevant",
+    "reasoning": "Housekeeping: speakers getting oriented."
+  },
+  {
+    "start": "00:00:19",
+    "end": "00:00:29",
+    "type": "Irrelevant",
+    "reasoning": "Social/Icebreaker: asking the audience why they are attending."
+  },
+  {
+    "start": "00:00:29",
+    "end": "00:00:31",
+    "type": "Irrelevant",
+    "reasoning": "Social/Icebreaker: continued audience polling."
+  },
+  {
+    "start": "00:00:31",
+    "end": "00:00:34",
+    "type": "Irrelevant",
+    "reasoning": "Social/Icebreaker: asking for a show of hands."
+  },
+  {
+    "start": "00:00:34",
+    "end": "00:00:42",
+    "type": "Irrelevant",
+    "reasoning": "Social/Icebreaker: asking if people have done evals before."
+  },
+  {
+    "start": "00:00:42",
+    "end": "00:00:48",
+    "type": "Irrelevant",
+    "reasoning": "Social/Icebreaker: asking about struggles with evals."
+  },
+  {
+    "start": "00:00:48",
+    "end": "00:00:49",
+    "type": "Irrelevant",
+    "reasoning": "Social/Icebreaker: continued polling."
+  },
+  {
+    "start": "00:00:49",
+    "end": "00:00:50",
+    "type": "Irrelevant",
+    "reasoning": "Social/Icebreaker: continued polling."
+  },
+  {
+    "start": "00:00:50",
+    "end": "00:00:58",
+    "type": "Irrelevant",
+    "reasoning": "Technical Friction: moving away from speaker/mic adjustments."
+  },
+  {
+    "start": "00:00:58",
+    "end": "00:01:02",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: asking for volunteers to speak."
+  },
+  {
+    "start": "00:01:02",
+    "end": "00:01:05",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: managing the microphone."
+  },
+  {
+    "start": "00:01:05",
+    "end": "00:01:06",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: managing the microphone."
+  },
+  {
+    "start": "00:01:06",
+    "end": "00:01:08",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: managing the microphone."
+  },
+  {
+    "start": "00:01:08",
+    "end": "00:01:09",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: managing the microphone."
+  },
+  {
+    "start": "00:01:09",
+    "end": "00:01:11",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: managing the microphone."
+  },
+  {
+    "start": "00:01:11",
+    "end": "00:01:12",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: managing the microphone."
+  },
+  {
+    "start": "00:01:12",
+    "end": "00:01:19",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: asking audience member to speak."
+  },
+  {
+    "start": "00:01:19",
+    "end": "00:01:26",
+    "type": "Relevant",
+    "reasoning": "Context: Audience member defines the core problem (how to approach evals)."
+  },
+  {
+    "start": "00:01:26",
+    "end": "00:01:30",
+    "type": "Relevant",
+    "reasoning": "Context: Speaker clarifies the pain points of previous attempts."
+  },
+  {
+    "start": "00:01:30",
+    "end": "00:01:33",
+    "type": "Relevant",
+    "reasoning": "Context: Audience member elaborates on struggles with text-to-SQL."
+  },
+  {
+    "start": "00:01:33",
+    "end": "00:01:37",
+    "type": "Relevant",
+    "reasoning": "Context: Defining the difficulty of defining correct answers."
+  },
+  {
+    "start": "00:01:37",
+    "end": "00:01:39",
+    "type": "Relevant",
+    "reasoning": "Context: Elaboration on multiple valid SQL queries."
+  },
+  {
+    "start": "00:01:39",
+    "end": "00:01:40",
+    "type": "Relevant",
+    "reasoning": "Context: Elaboration on SQL queries."
+  },
+  {
+    "start": "00:01:40",
+    "end": "00:01:43",
+    "type": "Relevant",
+    "reasoning": "Context: Discussing pragmatic improvement vs manual unit tests."
+  },
+  {
+    "start": "00:01:43",
+    "end": "00:01:45",
+    "type": "Relevant",
+    "reasoning": "Context: Continued discussion on manual testing limitations."
+  },
+  {
+    "start": "00:01:45",
+    "end": "00:01:47",
+    "type": "Relevant",
+    "reasoning": "Context: Continued discussion on manual testing limitations."
+  },
+  {
+    "start": "00:01:47",
+    "end": "00:01:51",
+    "type": "Relevant",
+    "reasoning": "Context: Conclusion of audience member's problem statement."
+  },
+  {
+    "start": "00:01:51",
+    "end": "00:01:54",
+    "type": "Relevant",
+    "reasoning": "Response: Speaker validates that evals are labor intensive."
+  },
+  {
+    "start": "00:01:54",
+    "end": "00:01:57",
+    "type": "Relevant",
+    "reasoning": "Response: Speaker discusses the difficulty of unit tests for this domain."
+  },
+  {
+    "start": "00:01:57",
+    "end": "00:02:00",
+    "type": "Relevant",
+    "reasoning": "Response: Continued discussion on labor intensity."
+  },
+  {
+    "start": "00:02:00",
+    "end": "00:02:03",
+    "type": "Relevant",
+    "reasoning": "Response: Acknowledgement of the manual burden."
+  },
+  {
+    "start": "00:02:03",
+    "end": "00:02:05",
+    "type": "Relevant",
+    "reasoning": "Response: Confirming evals are hard to set up."
+  },
+  {
+    "start": "00:02:05",
+    "end": "00:02:09",
+    "type": "Relevant",
+    "reasoning": "Response: Confirming the pain of getting started."
+  },
+  {
+    "start": "00:02:09",
+    "end": "00:02:15",
+    "type": "Relevant",
+    "reasoning": "Context: Checking for other audience thoughts."
+  },
+  {
+    "start": "00:02:15",
+    "end": "00:02:21",
+    "type": "Relevant",
+    "reasoning": "Insight: Comparison of Machine Learning data dependency vs Agent eval dependency."
+  },
+  {
+    "start": "00:02:21",
+    "end": "00:02:24",
+    "type": "Relevant",
+    "reasoning": "Insight: Agents depend on feedback from the world."
+  },
+  {
+    "start": "00:02:24",
+    "end": "00:02:27",
+    "type": "Relevant",
+    "reasoning": "Insight: Necessity of feedback to know if agents are right."
+  },
+  {
+    "start": "00:02:27",
+    "end": "00:02:29",
+    "type": "Relevant",
+    "reasoning": "Insight: Sophistication of the problem."
+  },
+  {
+    "start": "00:02:29",
+    "end": "00:02:30",
+    "type": "Relevant",
+    "reasoning": "Insight: Analogy to doing science/experiments."
+  },
+  {
+    "start": "00:02:30",
+    "end": "00:02:32",
+    "type": "Relevant",
+    "reasoning": "Insight: Need for experimental rigor."
+  },
+  {
+    "start": "00:02:32",
+    "end": "00:02:35",
+    "type": "Relevant",
+    "reasoning": "Insight: Importance of the topic."
+  },
+  {
+    "start": "00:02:35",
+    "end": "00:02:37",
+    "type": "Relevant",
+    "reasoning": "Insight: Everyone being pulled into data science."
+  },
+  {
+    "start": "00:02:37",
+    "end": "00:02:39",
+    "type": "Relevant",
+    "reasoning": "Insight: Inescapable nature of machine learning workflows."
+  },
+  {
+    "start": "00:02:39",
+    "end": "00:02:41",
+    "type": "Relevant",
+    "reasoning": "Context: Speaker passes mic."
+  },
+  {
+    "start": "00:02:41",
+    "end": "00:02:42",
+    "type": "Relevant",
+    "reasoning": "Context: Audience member introduction (QA background)."
+  },
+  {
+    "start": "00:02:42",
+    "end": "00:02:44",
+    "type": "Relevant",
+    "reasoning": "Context: QA background details."
+  },
+  {
+    "start": "00:02:44",
+    "end": "00:02:46",
+    "type": "Relevant",
+    "reasoning": "Context: Historical context of testing time allocation."
+  },
+  {
+    "start": "00:02:46",
+    "end": "00:02:50",
+    "type": "Relevant",
+    "reasoning": "Context: Testing traditionally being 30% of dev time."
+  },
+  {
+    "start": "00:02:50",
+    "end": "00:02:53",
+    "type": "Relevant",
+    "reasoning": "Insight: With AI, evaluation is 80% of dev time."
+  },
+  {
+    "start": "00:02:53",
+    "end": "00:02:56",
+    "type": "Relevant",
+    "reasoning": "Insight: Shift in development paradigm."
+  },
+  {
+    "start": "00:02:56",
+    "end": "00:02:58",
+    "type": "Relevant",
+    "reasoning": "Context: Developer unhappiness with testing burden."
+  },
+  {
+    "start": "00:02:58",
+    "end": "00:03:01",
+    "type": "Relevant",
+    "reasoning": "Context: Attempting to find shortcuts."
+  },
+  {
+    "start": "00:03:01",
+    "end": "00:03:05",
+    "type": "Relevant",
+    "reasoning": "Insight: Shortcuts often impossible due to unique cases."
+  },
+  {
+    "start": "00:03:05",
+    "end": "00:03:08",
+    "type": "Relevant",
+    "reasoning": "Insight: Difficulty of reusing previous work."
+  },
+  {
+    "start": "00:03:08",
+    "end": "00:03:11",
+    "type": "Relevant",
+    "reasoning": "Insight: Necessity of creating from scratch."
+  },
+  {
+    "start": "00:03:11",
+    "end": "00:03:13",
+    "type": "Relevant",
+    "reasoning": "Insight: Different levels of evaluation."
+  },
+  {
+    "start": "00:03:13",
+    "end": "00:03:17",
+    "type": "Relevant",
+    "reasoning": "Insight: Unclear/probabilistic nature of evaluation."
+  },
+  {
+    "start": "00:03:17",
+    "end": "00:03:19",
+    "type": "Relevant",
+    "reasoning": "Insight: Pain of optimization."
+  },
+  {
+    "start": "00:03:19",
+    "end": "00:03:21",
+    "type": "Relevant",
+    "reasoning": "Context: Need to find optimized ways to evaluate."
+  },
+  {
+    "start": "00:03:21",
+    "end": "00:03:24",
+    "type": "Relevant",
+    "reasoning": "Response: Speaker summarizes the pain point."
+  },
+  {
+    "start": "00:03:24",
+    "end": "00:03:27",
+    "type": "Relevant",
+    "reasoning": "Response: Audio check (speak up)."
+  },
+  {
+    "start": "00:03:27",
+    "end": "00:03:29",
+    "type": "Relevant",
+    "reasoning": "Response: Confirming understanding."
+  },
+  {
+    "start": "00:03:29",
+    "end": "00:03:33",
+    "type": "Relevant",
+    "reasoning": "Response: Discussing custom subjective evals."
+  },
+  {
+    "start": "00:03:33",
+    "end": "00:03:36",
+    "type": "Relevant",
+    "reasoning": "Response: Use cases being specific."
+  },
+  {
+    "start": "00:03:36",
+    "end": "00:03:40",
+    "type": "Relevant",
+    "reasoning": "Response: Inability to copy-paste existing evals."
+  },
+  {
+    "start": "00:03:40",
+    "end": "00:03:45",
+    "type": "Relevant",
+    "reasoning": "Insight: Comparison to software testing history (some did, some didn't)."
+  },
+  {
+    "start": "00:03:45",
+    "end": "00:03:49",
+    "type": "Relevant",
+    "reasoning": "Insight: In AI, everyone MUST do evals."
+  },
+  {
+    "start": "00:03:49",
+    "end": "00:03:51",
+    "type": "Relevant",
+    "reasoning": "Insight: Best practices don't exist yet."
+  },
+  {
+    "start": "00:03:51",
+    "end": "00:04:04",
+    "type": "Relevant",
+    "reasoning": "Context: Passing mic for next question."
+  },
+  {
+    "start": "00:04:04",
+    "end": "00:04:07",
+    "type": "Relevant",
+    "reasoning": "Context: Audience question about synthetic data."
+  },
+  {
+    "start": "00:04:07",
+    "end": "00:04:09",
+    "type": "Relevant",
+    "reasoning": "Context: Role of synthetic data in novelty problems."
+  },
+  {
+    "start": "00:04:09",
+    "end": "00:04:13",
+    "type": "Relevant",
+    "reasoning": "Context: Lack of access to real-world data as baseline."
+  },
+  {
+    "start": "00:04:13",
+    "end": "00:04:16",
+    "type": "Relevant",
+    "reasoning": "Context: Impact of synthetic data on eval systems."
+  },
+  {
+    "start": "00:04:16",
+    "end": "00:04:18",
+    "type": "Relevant",
+    "reasoning": "Response: Defining the two aspects of evals."
+  },
+  {
+    "start": "00:04:18",
+    "end": "00:04:19",
+    "type": "Relevant",
+    "reasoning": "Insight: Metrics vs Synthetic Data."
+  },
+  {
+    "start": "00:04:19",
+    "end": "00:04:36",
+    "type": "Relevant",
+    "reasoning": "Insight: Metrics check, Synthetic data tests."
+  },
+  {
+    "start": "00:04:36",
+    "end": "00:04:38",
+    "type": "Relevant",
+    "reasoning": "Insight: How to generate good synthetic data to evaluate."
+  },
+  {
+    "start": "00:04:38",
+    "end": "00:04:41",
+    "type": "Relevant",
+    "reasoning": "Context: Audience question about LLM as judge."
+  },
+  {
+    "start": "00:04:41",
+    "end": "00:04:43",
+    "type": "Relevant",
+    "reasoning": "Context: Trying LLM eval prompts."
+  },
+  {
+    "start": "00:04:43",
+    "end": "00:04:47",
+    "type": "Relevant",
+    "reasoning": "Context: LLM judge inaccuracy vs manual checking."
+  },
+  {
+    "start": "00:04:47",
+    "end": "00:04:49",
+    "type": "Relevant",
+    "reasoning": "Context: Manual checking necessity."
+  },
+  {
+    "start": "00:04:49",
+    "end": "00:04:52",
+    "type": "Relevant",
+    "reasoning": "Context: Seeking acceptable ways to automate."
+  },
+  {
+    "start": "00:04:52",
+    "end": "00:04:57",
+    "type": "Relevant",
+    "reasoning": "Response: Desire for automatic evals vs manual labor."
+  },
+  {
+    "start": "00:04:57",
+    "end": "00:05:02",
+    "type": "Relevant",
+    "reasoning": "Response: Limited options for automation."
+  },
+  {
+    "start": "00:05:02",
+    "end": "00:05:04",
+    "type": "Relevant",
+    "reasoning": "Insight: Leaning on AI for human tasks."
+  },
+  {
+    "start": "00:05:04",
+    "end": "00:05:06",
+    "type": "Relevant",
+    "reasoning": "Insight: Evals are uniquely hard for LLMs."
+  },
+  {
+    "start": "00:05:06",
+    "end": "00:05:10",
+    "type": "Relevant",
+    "reasoning": "Response: Acknowledging the difficulty."
+  },
+  {
+    "start": "00:05:10",
+    "end": "00:05:13",
+    "type": "Relevant",
+    "reasoning": "Statement: We won't solve all problems today."
+  },
+  {
+    "start": "00:05:13",
+    "end": "00:05:23",
+    "type": "Relevant",
+    "reasoning": "Statement: Evals are a hard research area."
+  },
+  {
+    "start": "00:05:23",
+    "end": "00:05:26",
+    "type": "Relevant",
+    "reasoning": "Context: Speaker background (Google)."
+  },
+  {
+    "start": "00:05:26",
+    "end": "00:05:31",
+    "type": "Relevant",
+    "reasoning": "Context: Experience with evals over a decade."
+  },
+  {
+    "start": "00:05:31",
+    "end": "00:05:35",
+    "type": "Relevant",
+    "reasoning": "Insight: Stochastic nature of search applications."
+  },
+  {
+    "start": "00:05:35",
+    "end": "00:05:39",
+    "type": "Relevant",
+    "reasoning": "Insight: Similarity between Search and AI stochasticity."
+  },
+  {
+    "start": "00:05:39",
+    "end": "00:05:42",
+    "type": "Relevant",
+    "reasoning": "Insight: Core effort at Google was evaluation and improvement."
+  },
+  {
+    "start": "00:05:42",
+    "end": "00:05:50",
+    "type": "Relevant",
+    "reasoning": "Statement: Bringing Google techniques to this workshop."
+  },
+  {
+    "start": "00:05:50",
+    "end": "00:05:59",
+    "type": "Relevant",
+    "reasoning": "Statement: Focus on methodology over specific technology/product."
+  },
+  {
+    "start": "00:05:59",
+    "end": "00:06:04",
+    "type": "Relevant",
+    "reasoning": "Statement: Goal for attendees to learn ideas."
+  },
+  {
+    "start": "00:06:04",
+    "end": "00:06:14",
+    "type": "Relevant",
+    "reasoning": "Context: David adds to the point about Google's quality process."
+  },
+  {
+    "start": "00:06:14",
+    "end": "00:06:18",
+    "type": "Relevant",
+    "reasoning": "Insight: Continuous benchmarking process."
+  },
+  {
+    "start": "00:06:18",
+    "end": "00:06:29",
+    "type": "Relevant",
+    "reasoning": "Insight: Exhausting benchmarks and moving to next ones."
+  },
+  {
+    "start": "00:06:29",
+    "end": "00:06:32",
+    "type": "Relevant",
+    "reasoning": "Insight: Similar approach with current clients."
+  },
+  {
+    "start": "00:06:32",
+    "end": "00:06:38",
+    "type": "Relevant",
+    "reasoning": "Insight: Evals are mostly good methodology."
+  },
+  {
+    "start": "00:06:38",
+    "end": "00:06:41",
+    "type": "Relevant",
+    "reasoning": "Insight: Setting up benchmarks and metrics."
+  },
+  {
+    "start": "00:06:41",
+    "end": "00:06:47",
+    "type": "Relevant",
+    "reasoning": "Insight: Calibrating metrics with humans and user data."
+  },
+  {
+    "start": "00:06:47",
+    "end": "00:06:52",
+    "type": "Relevant",
+    "reasoning": "Insight: Arbitrary complexity of evals."
+  },
+  {
+    "start": "00:06:52",
+    "end": "00:07:04",
+    "type": "Relevant",
+    "reasoning": "Insight: Not a 'one and done' task; part of development."
+  },
+  {
+    "start": "00:07:04",
+    "end": "00:07:08",
+    "type": "Relevant",
+    "reasoning": "Context: Struggling to learn development on this new stack."
+  },
+  {
+    "start": "00:07:08",
+    "end": "00:07:10",
+    "type": "Relevant",
+    "reasoning": "Goal: Teaching methodologies that make sense."
+  },
+  {
+    "start": "00:07:10",
+    "end": "00:07:11",
+    "type": "Relevant",
+    "reasoning": "Goal: Thinking about metrics."
+  },
+  {
+    "start": "00:07:11",
+    "end": "00:07:16",
+    "type": "Relevant",
+    "reasoning": "Insight: Expanding scope from 4 metrics to 300 (Google search example)."
+  },
+  {
+    "start": "00:07:16",
+    "end": "00:07:23",
+    "type": "Relevant",
+    "reasoning": "Insight: Expanding scope of eval work."
+  },
+  {
+    "start": "00:07:23",
+    "end": "00:07:25",
+    "type": "Relevant",
+    "reasoning": "Context: Mention of technology built to help."
+  },
+  {
+    "start": "00:07:25",
+    "end": "00:07:27",
+    "type": "Relevant",
+    "reasoning": "Context: Easing adoption of benchmarks."
+  },
+  {
+    "start": "00:07:27",
+    "end": "00:07:31",
+    "type": "Relevant",
+    "reasoning": "Context: Making benchmarks harder/interesting."
+  },
+  {
+    "start": "00:07:31",
+    "end": "00:07:35",
+    "type": "Relevant",
+    "reasoning": "Transition: Move to discussion."
+  },
+  {
+    "start": "00:07:35",
+    "end": "00:07:39",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Describing workshop format (hands-on)."
+  },
+  {
+    "start": "00:07:39",
+    "end": "00:07:42",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Slides followed by code."
+  },
+  {
+    "start": "00:07:42",
+    "end": "00:07:45",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Learning by doing."
+  },
+  {
+    "start": "00:07:45",
+    "end": "00:07:47",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Instructions to pass information around."
+  },
+  {
+    "start": "00:07:47",
+    "end": "00:07:58",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Different stages of attendee journey (no metrics vs existing metrics)."
+  },
+  {
+    "start": "00:07:58",
+    "end": "00:08:01",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Example of clients developing metrics."
+  },
+  {
+    "start": "00:08:01",
+    "end": "00:08:05",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Correlating metrics to user behavior."
+  },
+  {
+    "start": "00:08:05",
+    "end": "00:08:07",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Feedback loops."
+  },
+  {
+    "start": "00:08:07",
+    "end": "00:08:10",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Evals extending beyond testing."
+  },
+  {
+    "start": "00:08:10",
+    "end": "00:08:16",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Hope that mental models help."
+  },
+  {
+    "start": "00:08:16",
+    "end": "00:08:20",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Announcing Slack channel."
+  },
+  {
+    "start": "00:08:20",
+    "end": "00:08:25",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Slack channel name."
+  },
+  {
+    "start": "00:08:25",
+    "end": "00:08:25",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Joining slack."
+  },
+  {
+    "start": "00:08:25",
+    "end": "00:08:33",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Continuing conversations on Slack."
+  },
+  {
+    "start": "00:08:33",
+    "end": "00:08:43",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Mentioning the document with steps."
+  },
+  {
+    "start": "00:08:43",
+    "end": "00:08:45",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Code and sheet location."
+  },
+  {
+    "start": "00:08:45",
+    "end": "00:08:47",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: URL for workshop materials."
+  },
+  {
+    "start": "00:08:47",
+    "end": "00:08:48",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Google Doc landing page."
+  },
+  {
+    "start": "00:08:48",
+    "end": "00:08:52",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Links in the doc."
+  },
+  {
+    "start": "00:08:52",
+    "end": "00:08:55",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Link to slide deck."
+  },
+  {
+    "start": "00:08:55",
+    "end": "00:09:00",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Availability of materials after workshop."
+  },
+  {
+    "start": "00:09:00",
+    "end": "00:09:05",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Getting started to stay on time."
+  },
+  {
+    "start": "00:09:05",
+    "end": "00:09:10",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Mentioning assistants walking around."
+  },
+  {
+    "start": "00:09:10",
+    "end": "00:09:19",
+    "type": "Irrelevant",
+    "reasoning": "Transition: Brief intro to the upcoming demo section."
+  },
+  {
+    "start": "00:09:19",
+    "end": "00:09:31",
+    "type": "Relevant",
+    "reasoning": "Lecture Start: Introduction to 'Why Evals Matter' and Vibe Testing."
+  },
+  {
+    "start": "00:09:31",
+    "end": "00:09:34",
+    "type": "Relevant",
+    "reasoning": "Explanation: Vibe testing as 'try it out, see how it works'."
+  },
+  {
+    "start": "00:09:34",
+    "end": "00:09:37",
+    "type": "Relevant",
+    "reasoning": "Explanation: Changing prompts and iterating."
+  },
+  {
+    "start": "00:09:37",
+    "end": "00:09:41",
+    "type": "Relevant",
+    "reasoning": "Insight: Vibe testing can take you far."
+  },
+  {
+    "start": "00:09:41",
+    "end": "00:09:48",
+    "type": "Relevant",
+    "reasoning": "Insight: AI model quality improvements make vibe testing viable for many."
+  },
+  {
+    "start": "00:09:48",
+    "end": "00:09:50",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to Agent Systems."
+  },
+  {
+    "start": "00:09:50",
+    "end": "00:09:53",
+    "type": "Relevant",
+    "reasoning": "Insight: Agent systems are more complex/multi-step."
+  },
+  {
+    "start": "00:09:53",
+    "end": "00:09:57",
+    "type": "Relevant",
+    "reasoning": "Insight: Higher failure rate in complex agents."
+  },
+  {
+    "start": "00:09:57",
+    "end": "00:10:00",
+    "type": "Relevant",
+    "reasoning": "Insight: Vibe testing limits with complexity."
+  },
+  {
+    "start": "00:10:00",
+    "end": "00:10:04",
+    "type": "Relevant",
+    "reasoning": "Topic: Human Evals."
+  },
+  {
+    "start": "00:10:04",
+    "end": "00:10:08",
+    "type": "Relevant",
+    "reasoning": "Explanation: Human evals are expensive."
+  },
+  {
+    "start": "00:10:08",
+    "end": "00:10:17",
+    "type": "Relevant",
+    "reasoning": "Explanation: Most companies skip human evals due to cost/effort."
+  },
+  {
+    "start": "00:10:17",
+    "end": "00:10:22",
+    "type": "Relevant",
+    "reasoning": "Topic: Code-based Evals."
+  },
+  {
+    "start": "00:10:22",
+    "end": "00:10:32",
+    "type": "Relevant",
+    "reasoning": "Explanation: Majority of time spent here; verifying specific outputs with code."
+  },
+  {
+    "start": "00:10:32",
+    "end": "00:10:45",
+    "type": "Relevant",
+    "reasoning": "Topic: Natural Language Evals (LLM as a judge)."
+  },
+  {
+    "start": "00:10:45",
+    "end": "00:10:52",
+    "type": "Relevant",
+    "reasoning": "Critique: LLM as a judge is often not a good task for generative models."
+  },
+  {
+    "start": "00:10:52",
+    "end": "00:11:08",
+    "type": "Relevant",
+    "reasoning": "Explanation: Decoder models are designed for creativity, not judgment."
+  },
+  {
+    "start": "00:11:08",
+    "end": "00:11:12",
+    "type": "Relevant",
+    "reasoning": "Insight: Fighting against the model's creative nature."
+  },
+  {
+    "start": "00:11:12",
+    "end": "00:11:16",
+    "type": "Relevant",
+    "reasoning": "Topic: Scoring System."
+  },
+  {
+    "start": "00:11:16",
+    "end": "00:11:19",
+    "type": "Relevant",
+    "reasoning": "Definition: Not building comprehensive metrics from start."
+  },
+  {
+    "start": "00:11:19",
+    "end": "00:11:22",
+    "type": "Relevant",
+    "reasoning": "Procedure: Starting with correlated signals."
+  },
+  {
+    "start": "00:11:22",
+    "end": "00:11:24",
+    "type": "Relevant",
+    "reasoning": "Procedure: Start with 5-10 known signals."
+  },
+  {
+    "start": "00:11:24",
+    "end": "00:11:26",
+    "type": "Relevant",
+    "reasoning": "Procedure: Signals correlated with goodness."
+  },
+  {
+    "start": "00:11:26",
+    "end": "00:11:30",
+    "type": "Relevant",
+    "reasoning": "Procedure: Simple, easily derived signals."
+  },
+  {
+    "start": "00:11:30",
+    "end": "00:11:35",
+    "type": "Relevant",
+    "reasoning": "Procedure: Build upon signals as you debug."
+  },
+  {
+    "start": "00:11:35",
+    "end": "00:11:39",
+    "type": "Relevant",
+    "reasoning": "Procedure: Test application performance."
+  },
+  {
+    "start": "00:11:39",
+    "end": "00:11:43",
+    "type": "Relevant",
+    "reasoning": "Procedure: Learn, build, measure cycle."
+  },
+  {
+    "start": "00:11:43",
+    "end": "00:11:47",
+    "type": "Relevant",
+    "reasoning": "Insight: Evals creating a feedback loop."
+  },
+  {
+    "start": "00:11:47",
+    "end": "00:11:49",
+    "type": "Relevant",
+    "reasoning": "Statement: Introducing this methodology."
+  },
+  {
+    "start": "00:11:49",
+    "end": "00:11:54",
+    "type": "Relevant",
+    "reasoning": "Context: David adding to the methodology point."
+  },
+  {
+    "start": "00:11:54",
+    "end": "00:12:02",
+    "type": "Relevant",
+    "reasoning": "Insight: No right or wrong method (Vibe testing is valid)."
+  },
+  {
+    "start": "00:12:02",
+    "end": "00:12:05",
+    "type": "Relevant",
+    "reasoning": "Insight: Starting with vibe testing and tracing."
+  },
+  {
+    "start": "00:12:05",
+    "end": "00:12:08",
+    "type": "Relevant",
+    "reasoning": "Insight: Need for sophistication as system scales."
+  },
+  {
+    "start": "00:12:08",
+    "end": "00:12:19",
+    "type": "Relevant",
+    "reasoning": "Procedure: Layering techniques by complexity and ROI."
+  },
+  {
+    "start": "00:12:19",
+    "end": "00:12:23",
+    "type": "Relevant",
+    "reasoning": "Insight: Some things cheap, some impractical at scale."
+  },
+  {
+    "start": "00:12:23",
+    "end": "00:12:30",
+    "type": "Relevant",
+    "reasoning": "Insight: Evals are tools in a toolbox, need all of them."
+  },
+  {
+    "start": "00:12:30",
+    "end": "00:12:34",
+    "type": "Relevant",
+    "reasoning": "Conclusion: Goal is a scoring system."
+  },
+  {
+    "start": "00:12:34",
+    "end": "00:12:35",
+    "type": "Relevant",
+    "reasoning": "Context: Judging the manifestation of the system."
+  },
+  {
+    "start": "00:12:35",
+    "end": "00:12:48",
+    "type": "Relevant",
+    "reasoning": "Statement: Layering tools to reach sophistication."
+  },
+  {
+    "start": "00:12:48",
+    "end": "00:12:50",
+    "type": "Relevant",
+    "reasoning": "Context: Agreement on investment value."
+  },
+  {
+    "start": "00:12:50",
+    "end": "00:12:57",
+    "type": "Relevant",
+    "reasoning": "Question: Why spend so much time on evals?"
+  },
+  {
+    "start": "00:12:57",
+    "end": "00:13:04",
+    "type": "Relevant",
+    "reasoning": "Insight: Evals are where domain knowledge lives."
+  },
+  {
+    "start": "00:13:04",
+    "end": "00:13:12",
+    "type": "Relevant",
+    "reasoning": "Insight: Industry adoption of evals as primary work."
+  },
+  {
+    "start": "00:13:12",
+    "end": "00:13:14",
+    "type": "Relevant",
+    "reasoning": "Example: Good evals reduce need for prompt engineering."
+  },
+  {
+    "start": "00:13:14",
+    "end": "00:13:22",
+    "type": "Relevant",
+    "reasoning": "Example: Optimizers (DSPy) using evals to improve prompts."
+  },
+  {
+    "start": "00:13:22",
+    "end": "00:13:30",
+    "type": "Relevant",
+    "reasoning": "Example: Filtering synthetic data for fine-tuning."
+  },
+  {
+    "start": "00:13:30",
+    "end": "00:13:38",
+    "type": "Relevant",
+    "reasoning": "Technique: Online Reinforcement Learning."
+  },
+  {
+    "start": "00:13:38",
+    "end": "00:13:44",
+    "type": "Relevant",
+    "reasoning": "Technique: Increasing temperature to generate multiple responses."
+  },
+  {
+    "start": "00:13:44",
+    "end": "00:13:50",
+    "type": "Relevant",
+    "reasoning": "Technique: Google used this extensively (Best of N)."
+  },
+  {
+    "start": "00:13:50",
+    "end": "00:13:53",
+    "type": "Relevant",
+    "reasoning": "Technique: Thinking of it as online RL."
+  },
+  {
+    "start": "00:13:53",
+    "end": "00:13:58",
+    "type": "Relevant",
+    "reasoning": "Technique: Generate 4-5 responses and score them."
+  },
+  {
+    "start": "00:13:58",
+    "end": "00:14:02",
+    "type": "Relevant",
+    "reasoning": "Benefit: Decent lift without changing prompts/models."
+  },
+  {
+    "start": "00:14:02",
+    "end": "00:14:15",
+    "type": "Relevant",
+    "reasoning": "Summary: Leaning on a good scoring system enables advanced techniques."
+  },
+  {
+    "start": "00:14:15",
+    "end": "00:14:20",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to testing methodology in the workshop."
+  },
+  {
+    "start": "00:14:20",
+    "end": "00:14:23",
+    "type": "Relevant",
+    "reasoning": "Insight: Shift from testing to domain knowledge capture."
+  },
+  {
+    "start": "00:14:23",
+    "end": "00:14:27",
+    "type": "Relevant",
+    "reasoning": "Topic: Limitations of standard evals (Helpfulness, Harmlessness)."
+  },
+  {
+    "start": "00:14:27",
+    "end": "00:14:31",
+    "type": "Relevant",
+    "reasoning": "Critique: Standard evals are just guardrails."
+  },
+  {
+    "start": "00:14:31",
+    "end": "00:14:38",
+    "type": "Relevant",
+    "reasoning": "Critique: Guardrails don't ensure high quality."
+  },
+  {
+    "start": "00:14:38",
+    "end": "00:14:43",
+    "type": "Relevant",
+    "reasoning": "Example: Trip planning quality (excitement vs boring plan)."
+  },
+  {
+    "start": "00:14:43",
+    "end": "00:14:46",
+    "type": "Relevant",
+    "reasoning": "Example: Desire for excitement in trip plans."
+  },
+  {
+    "start": "00:14:46",
+    "end": "00:14:51",
+    "type": "Relevant",
+    "reasoning": "Critique: LLMs typically produce boring/generic plans."
+  },
+  {
+    "start": "00:14:51",
+    "end": "00:14:58",
+    "type": "Relevant",
+    "reasoning": "Goal: Building nuanced evals for specific applications."
+  },
+  {
+    "start": "00:14:58",
+    "end": "00:15:02",
+    "type": "Relevant",
+    "reasoning": "Insight: Where the industry is going."
+  },
+  {
+    "start": "00:15:02",
+    "end": "00:15:06",
+    "type": "Relevant",
+    "reasoning": "Conclusion: Traditional evals fail at nuance."
+  },
+  {
+    "start": "00:15:06",
+    "end": "00:15:13",
+    "type": "Relevant",
+    "reasoning": "Summary: Start simple, iterate, fix broken things."
+  },
+  {
+    "start": "00:15:13",
+    "end": "00:15:28",
+    "type": "Relevant",
+    "reasoning": "Procedure: Co-pilot setting (start with something, test, iterate)."
+  },
+  {
+    "start": "00:15:28",
+    "end": "00:15:34",
+    "type": "Relevant",
+    "reasoning": "Procedure: Generating synthetic examples (good vs bad)."
+  },
+  {
+    "start": "00:15:34",
+    "end": "00:15:40",
+    "type": "Relevant",
+    "reasoning": "Procedure: Seeing what works and iterating."
+  },
+  {
+    "start": "00:15:40",
+    "end": "00:15:46",
+    "type": "Relevant",
+    "reasoning": "Context: Using simple example for workshop, complex for real life."
+  },
+  {
+    "start": "00:15:46",
+    "end": "00:15:50",
+    "type": "Relevant",
+    "reasoning": "Best Practice: Differentiating power and representativeness."
+  },
+  {
+    "start": "00:15:50",
+    "end": "00:16:04",
+    "type": "Relevant",
+    "reasoning": "Agenda: Today's Workshop overview."
+  },
+  {
+    "start": "00:16:04",
+    "end": "00:16:16",
+    "type": "Relevant",
+    "reasoning": "Agenda: Part 1 (Setup scoring) and Part 2 (Use online/offline)."
+  },
+  {
+    "start": "00:16:16",
+    "end": "00:16:26",
+    "type": "Relevant",
+    "reasoning": "Concept: What is a scoring system? (Mental framing)."
+  },
+  {
+    "start": "00:16:26",
+    "end": "00:16:28",
+    "type": "Relevant",
+    "reasoning": "Concept: Ranking is scoring is evals."
+  },
+  {
+    "start": "00:16:28",
+    "end": "00:16:30",
+    "type": "Relevant",
+    "reasoning": "Example: Google Search scoring documents."
+  },
+  {
+    "start": "00:16:30",
+    "end": "00:16:37",
+    "type": "Relevant",
+    "reasoning": "Example: Google Search selecting best document."
+  },
+  {
+    "start": "00:16:37",
+    "end": "00:16:39",
+    "type": "Relevant",
+    "reasoning": "Analogy: Similar to scoring LLM content."
+  },
+  {
+    "start": "00:16:39",
+    "end": "00:16:47",
+    "type": "Relevant",
+    "reasoning": "Methodology: Breaking problem into tons of signals."
+  },
+  {
+    "start": "00:16:47",
+    "end": "00:16:53",
+    "type": "Relevant",
+    "reasoning": "Example: SEO, Popularity, Title scores."
+  },
+  {
+    "start": "00:16:53",
+    "end": "00:16:58",
+    "type": "Relevant",
+    "reasoning": "Example: Feasibility, Spam, Clickbait."
+  },
+  {
+    "start": "00:16:58",
+    "end": "00:16:58",
+    "type": "Relevant",
+    "reasoning": "Methodology: Combining signals into single score."
+  },
+  {
+    "start": "00:16:58",
+    "end": "00:17:12",
+    "type": "Relevant",
+    "reasoning": "Benefit: Individual signals are easy to understand/inspect."
+  },
+  {
+    "start": "00:17:12",
+    "end": "00:17:17",
+    "type": "Relevant",
+    "reasoning": "Comparison: Unlike complex random prompts."
+  },
+  {
+    "start": "00:17:17",
+    "end": "00:17:20",
+    "type": "Relevant",
+    "reasoning": "Definition: The Scoring System concept."
+  },
+  {
+    "start": "00:17:20",
+    "end": "00:17:22",
+    "type": "Relevant",
+    "reasoning": "Detail: Bottom level is objective/deterministic."
+  },
+  {
+    "start": "00:17:22",
+    "end": "00:17:27",
+    "type": "Relevant",
+    "reasoning": "Detail: Use of Python code."
+  },
+  {
+    "start": "00:17:27",
+    "end": "00:17:29",
+    "type": "Relevant",
+    "reasoning": "Detail: Higher levels become subjective."
+  },
+  {
+    "start": "00:17:29",
+    "end": "00:17:31",
+    "type": "Relevant",
+    "reasoning": "Detail: Aggregation."
+  },
+  {
+    "start": "00:17:31",
+    "end": "00:17:33",
+    "type": "Relevant",
+    "reasoning": "Context: David encourages thinking about 'why'."
+  },
+  {
+    "start": "00:17:33",
+    "end": "00:17:40",
+    "type": "Relevant",
+    "reasoning": "Insight: Struggle comes from not measuring what needs measuring."
+  },
+  {
+    "start": "00:17:40",
+    "end": "00:17:46",
+    "type": "Relevant",
+    "reasoning": "Insight: Comprehensive issue (how many metrics?)."
+  },
+  {
+    "start": "00:17:46",
+    "end": "00:17:54",
+    "type": "Relevant",
+    "reasoning": "Example: Google Search having 300 signals."
+  },
+  {
+    "start": "00:17:54",
+    "end": "00:18:00",
+    "type": "Relevant",
+    "reasoning": "Example: Google cares about site score, popularity, relevance, spam."
+  },
+  {
+    "start": "00:18:00",
+    "end": "00:18:02",
+    "type": "Relevant",
+    "reasoning": "Example: Classifiers understanding content."
+  },
+  {
+    "start": "00:18:02",
+    "end": "00:18:05",
+    "type": "Relevant",
+    "reasoning": "Benefit: Visibility over application."
+  },
+  {
+    "start": "00:18:05",
+    "end": "00:18:08",
+    "type": "Relevant",
+    "reasoning": "Benefit: Mirroring human judgment."
+  },
+  {
+    "start": "00:18:08",
+    "end": "00:18:12",
+    "type": "Relevant",
+    "reasoning": "Comparison: Delegating 'is this helpful' to LLM vs breaking it down."
+  },
+  {
+    "start": "00:18:12",
+    "end": "00:18:21",
+    "type": "Relevant",
+    "reasoning": "Benefit: Breaking down leads to lower variance."
+  },
+  {
+    "start": "00:18:21",
+    "end": "00:18:27",
+    "type": "Relevant",
+    "reasoning": "Benefit: Measuring objective things reduces flip-flopping."
+  },
+  {
+    "start": "00:18:27",
+    "end": "00:18:31",
+    "type": "Relevant",
+    "reasoning": "Benefit: High fidelity score from aggregation."
+  },
+  {
+    "start": "00:18:31",
+    "end": "00:18:35",
+    "type": "Relevant",
+    "reasoning": "Benefit: Analysis capability (slice and dice)."
+  },
+  {
+    "start": "00:18:35",
+    "end": "00:18:38",
+    "type": "Relevant",
+    "reasoning": "Benefit: System works better."
+  },
+  {
+    "start": "00:18:38",
+    "end": "00:18:46",
+    "type": "Relevant",
+    "reasoning": "Process: Adding signals iteratively vs binary 'have evals/don't'."
+  },
+  {
+    "start": "00:18:46",
+    "end": "00:18:48",
+    "type": "Relevant",
+    "reasoning": "Process: Discovering what matters over time."
+  },
+  {
+    "start": "00:18:48",
+    "end": "00:18:54",
+    "type": "Relevant",
+    "reasoning": "Demo Start: Transitioning to the tool."
+  },
+  {
+    "start": "00:18:54",
+    "end": "00:18:58",
+    "type": "Relevant",
+    "reasoning": "Demo: Explaining the system prompt/input format."
+  },
+  {
+    "start": "00:18:58",
+    "end": "00:19:01",
+    "type": "Relevant",
+    "reasoning": "Demo: Meeting summarizer example."
+  },
+  {
+    "start": "00:19:01",
+    "end": "00:19:04",
+    "type": "Relevant",
+    "reasoning": "Demo: Input is transcript."
+  },
+  {
+    "start": "00:19:04",
+    "end": "00:19:09",
+    "type": "Relevant",
+    "reasoning": "Demo: Output is structured JSON."
+  },
+  {
+    "start": "00:19:09",
+    "end": "00:19:15",
+    "type": "Relevant",
+    "reasoning": "Demo: Detailed breakdown of output (action items, insights)."
+  },
+  {
+    "start": "00:19:15",
+    "end": "00:19:19",
+    "type": "Relevant",
+    "reasoning": "Benefit: Simple to inspect."
+  },
+  {
+    "start": "00:19:19",
+    "end": "00:19:23",
+    "type": "Relevant",
+    "reasoning": "Instruction: Starting with criteria or examples."
+  },
+  {
+    "start": "00:19:23",
+    "end": "00:19:29",
+    "type": "Relevant",
+    "reasoning": "Demo: Copilot building the scoring system."
+  },
+  {
+    "start": "00:19:29",
+    "end": "00:19:30",
+    "type": "Relevant",
+    "reasoning": "Demo: Generating an example."
+  },
+  {
+    "start": "00:19:30",
+    "end": "00:19:37",
+    "type": "Relevant",
+    "reasoning": "Demo: Synthetic generation process."
+  },
+  {
+    "start": "00:19:37",
+    "end": "00:19:45",
+    "type": "Relevant",
+    "reasoning": "Demo: Scoring the generated example."
+  },
+  {
+    "start": "00:19:45",
+    "end": "00:19:50",
+    "type": "Relevant",
+    "reasoning": "Demo: Inspecting individual scores."
+  },
+  {
+    "start": "00:19:50",
+    "end": "00:19:51",
+    "type": "Relevant",
+    "reasoning": "Demo: Testing further."
+  },
+  {
+    "start": "00:19:51",
+    "end": "00:19:53",
+    "type": "Relevant",
+    "reasoning": "Demo: Generating a bad example."
+  },
+  {
+    "start": "00:19:53",
+    "end": "00:19:57",
+    "type": "Relevant",
+    "reasoning": "Demo: Generating a broken example."
+  },
+  {
+    "start": "00:19:57",
+    "end": "00:20:12",
+    "type": "Relevant",
+    "reasoning": "Demo: Copilot using context to guide generation."
+  },
+  {
+    "start": "00:20:12",
+    "end": "00:20:13",
+    "type": "Irrelevant",
+    "reasoning": "Technical Friction: 'How do I project this?'"
+  },
+  {
+    "start": "00:20:13",
+    "end": "00:20:18",
+    "type": "Irrelevant",
+    "reasoning": "Technical Friction: Screen sharing issues."
+  },
+  {
+    "start": "00:20:18",
+    "end": "00:20:22",
+    "type": "Irrelevant",
+    "reasoning": "Technical Friction: Screen sharing issues."
+  },
+  {
+    "start": "00:20:22",
+    "end": "00:20:28",
+    "type": "Relevant",
+    "reasoning": "Demo: Identifying missing information in the bad example."
+  },
+  {
+    "start": "00:20:28",
+    "end": "00:20:35",
+    "type": "Relevant",
+    "reasoning": "Demo: Instructing copilot to generate a specific bad case."
+  },
+  {
+    "start": "00:20:35",
+    "end": "00:20:48",
+    "type": "Relevant",
+    "reasoning": "Demo: Example generation."
+  },
+  {
+    "start": "00:20:48",
+    "end": "00:20:59",
+    "type": "Relevant",
+    "reasoning": "Demo: Making changes to the scoring system via Copilot."
+  },
+  {
+    "start": "00:20:59",
+    "end": "00:21:03",
+    "type": "Relevant",
+    "reasoning": "Demo: Updating Python code or dimensions."
+  },
+  {
+    "start": "00:21:03",
+    "end": "00:21:05",
+    "type": "Relevant",
+    "reasoning": "Demo: Removing/adding dimensions."
+  },
+  {
+    "start": "00:21:05",
+    "end": "00:21:10",
+    "type": "Relevant",
+    "reasoning": "Demo: Example command 'generate dimension that checks title length'."
+  },
+  {
+    "start": "00:21:10",
+    "end": "00:21:11",
+    "type": "Relevant",
+    "reasoning": "Demo: Copilot adding the dimension."
+  },
+  {
+    "start": "00:21:11",
+    "end": "00:21:11",
+    "type": "Relevant",
+    "reasoning": "Demo: Copilot action."
+  },
+  {
+    "start": "00:21:11",
+    "end": "00:21:13",
+    "type": "Relevant",
+    "reasoning": "Demo: Result of adding dimension."
+  },
+  {
+    "start": "00:21:13",
+    "end": "00:21:15",
+    "type": "Relevant",
+    "reasoning": "Context: Playing around with the tool."
+  },
+  {
+    "start": "00:21:15",
+    "end": "00:21:19",
+    "type": "Relevant",
+    "reasoning": "Instruction: Integrating into Google Sheets."
+  },
+  {
+    "start": "00:21:19",
+    "end": "00:21:28",
+    "type": "Relevant",
+    "reasoning": "Instruction: Pre-filled spreadsheet explanation."
+  },
+  {
+    "start": "00:21:28",
+    "end": "00:21:32",
+    "type": "Relevant",
+    "reasoning": "Instruction: Making a copy of the sheet."
+  },
+  {
+    "start": "00:21:32",
+    "end": "00:21:33",
+    "type": "Relevant",
+    "reasoning": "Instruction: Sheet integration."
+  },
+  {
+    "start": "00:21:33",
+    "end": "00:21:38",
+    "type": "Relevant",
+    "reasoning": "Instruction: Running scorer inside the sheet."
+  },
+  {
+    "start": "00:21:38",
+    "end": "00:21:48",
+    "type": "Relevant",
+    "reasoning": "Context: Mentioning other integrations (Unsloth, RL)."
+  },
+  {
+    "start": "00:21:48",
+    "end": "00:21:51",
+    "type": "Relevant",
+    "reasoning": "Instruction: Focusing on Sheets integration for this workshop."
+  },
+  {
+    "start": "00:21:51",
+    "end": "00:21:57",
+    "type": "Relevant",
+    "reasoning": "Instruction: Copying criteria from tool to sheet."
+  },
+  {
+    "start": "00:21:57",
+    "end": "00:21:59",
+    "type": "Relevant",
+    "reasoning": "Instruction: Copy icon usage."
+  },
+  {
+    "start": "00:21:59",
+    "end": "00:22:04",
+    "type": "Relevant",
+    "reasoning": "Instruction: Replacing criteria in the sheet."
+  },
+  {
+    "start": "00:22:04",
+    "end": "00:22:06",
+    "type": "Relevant",
+    "reasoning": "Instruction: Using extensions menu."
+  },
+  {
+    "start": "00:22:06",
+    "end": "00:22:12",
+    "type": "Relevant",
+    "reasoning": "Instruction: Running the scorer."
+  },
+  {
+    "start": "00:22:12",
+    "end": "00:22:23",
+    "type": "Relevant",
+    "reasoning": "Explanation: Confusion matrix visualization (alignment)."
+  },
+  {
+    "start": "00:22:23",
+    "end": "00:22:26",
+    "type": "Relevant",
+    "reasoning": "Instruction: Iterating on the sheet."
+  },
+  {
+    "start": "00:22:26",
+    "end": "00:22:29",
+    "type": "Relevant",
+    "reasoning": "Instruction: Making changes to dimensions/data."
+  },
+  {
+    "start": "00:22:29",
+    "end": "00:22:33",
+    "type": "Relevant",
+    "reasoning": "Instruction: Testing impact of changes."
+  },
+  {
+    "start": "00:22:33",
+    "end": "00:22:37",
+    "type": "Relevant",
+    "reasoning": "Transition: Phase 1 summary."
+  },
+  {
+    "start": "00:22:37",
+    "end": "00:22:42",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to Phase 2."
+  },
+  {
+    "start": "00:22:42",
+    "end": "00:22:45",
+    "type": "Relevant",
+    "reasoning": "Context: Question about production scale."
+  },
+  {
+    "start": "00:22:45",
+    "end": "00:22:48",
+    "type": "Relevant",
+    "reasoning": "Response: Addressing scale in Phase 2."
+  },
+  {
+    "start": "00:22:48",
+    "end": "00:22:56",
+    "type": "Relevant",
+    "reasoning": "Response: Moving to Python Colab."
+  },
+  {
+    "start": "00:22:56",
+    "end": "00:23:04",
+    "type": "Relevant",
+    "reasoning": "Instruction: SDK overview."
+  },
+  {
+    "start": "00:23:04",
+    "end": "00:23:15",
+    "type": "Relevant",
+    "reasoning": "Instruction: You will get to play with this."
+  },
+  {
+    "start": "00:23:15",
+    "end": "00:23:20",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Scorers designed for online workflows."
+  },
+  {
+    "start": "00:23:20",
+    "end": "00:23:22",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: 20 dimensions in sub-50ms."
+  },
+  {
+    "start": "00:23:22",
+    "end": "00:23:24",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Running at large scale."
+  },
+  {
+    "start": "00:23:24",
+    "end": "00:23:27",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Online and batch processes."
+  },
+  {
+    "start": "00:23:27",
+    "end": "00:23:30",
+    "type": "Relevant",
+    "reasoning": "Instruction: Creating eval sets."
+  },
+  {
+    "start": "00:23:30",
+    "end": "00:23:36",
+    "type": "Relevant",
+    "reasoning": "Instruction: Combining hard/medium/easy examples."
+  },
+  {
+    "start": "00:23:36",
+    "end": "00:23:39",
+    "type": "Relevant",
+    "reasoning": "Note: Skipping data generation details (refer to docs)."
+  },
+  {
+    "start": "00:23:39",
+    "end": "00:23:42",
+    "type": "Relevant",
+    "reasoning": "Instruction: Using Copilot for data generation."
+  },
+  {
+    "start": "00:23:42",
+    "end": "00:23:45",
+    "type": "Relevant",
+    "reasoning": "Reference: Documentation for creating sets."
+  },
+  {
+    "start": "00:23:45",
+    "end": "00:23:49",
+    "type": "Relevant",
+    "reasoning": "Best Practice: Sampling from logs."
+  },
+  {
+    "start": "00:23:49",
+    "end": "00:23:53",
+    "type": "Relevant",
+    "reasoning": "Best Practice: Evaluating samples."
+  },
+  {
+    "start": "00:23:53",
+    "end": "00:24:00",
+    "type": "Relevant",
+    "reasoning": "Best Practice: Running online quality checks (Google example)."
+  },
+  {
+    "start": "00:24:00",
+    "end": "00:24:07",
+    "type": "Relevant",
+    "reasoning": "Example: Spam detection decisions."
+  },
+  {
+    "start": "00:24:07",
+    "end": "00:24:09",
+    "type": "Relevant",
+    "reasoning": "Goal: Ideal state of implementation."
+  },
+  {
+    "start": "00:24:09",
+    "end": "00:24:12",
+    "type": "Relevant",
+    "reasoning": "Challenge: Difficulty of implementation."
+  },
+  {
+    "start": "00:24:12",
+    "end": "00:24:14",
+    "type": "Relevant",
+    "reasoning": "Challenge: LLM as judge is expensive/slow."
+  },
+  {
+    "start": "00:24:14",
+    "end": "00:24:23",
+    "type": "Relevant",
+    "reasoning": "Benefit: Scoring system solves the cost/speed issue."
+  },
+  {
+    "start": "00:24:23",
+    "end": "00:24:26",
+    "type": "Relevant",
+    "reasoning": "Question: Difference from LLM as a judge?"
+  },
+  {
+    "start": "00:24:26",
+    "end": "00:24:27",
+    "type": "Relevant",
+    "reasoning": "Question: Using traditional AI models?"
+  },
+  {
+    "start": "00:24:27",
+    "end": "00:24:30",
+    "type": "Relevant",
+    "reasoning": "Response: Discussion on model differences."
+  },
+  {
+    "start": "00:24:30",
+    "end": "00:24:36",
+    "type": "Relevant",
+    "reasoning": "Response: Skipping slides to answer."
+  },
+  {
+    "start": "00:24:36",
+    "end": "00:24:41",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Designed for high precision."
+  },
+  {
+    "start": "00:24:41",
+    "end": "00:24:49",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Deterministic scores (same score twice)."
+  },
+  {
+    "start": "00:24:49",
+    "end": "00:24:52",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Architecture difference (Bidirectional attention)."
+  },
+  {
+    "start": "00:24:52",
+    "end": "00:24:58",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Regression head vs token generation."
+  },
+  {
+    "start": "00:24:58",
+    "end": "00:25:03",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Avoiding auto-regressive weirdness."
+  },
+  {
+    "start": "00:25:03",
+    "end": "00:25:11",
+    "type": "Relevant",
+    "reasoning": "Critique: Post-hoc explanation of LLM scores."
+  },
+  {
+    "start": "00:25:11",
+    "end": "00:25:17",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Training on billions of tokens specifically for scoring."
+  },
+  {
+    "start": "00:25:17",
+    "end": "00:25:26",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Generalization across content types."
+  },
+  {
+    "start": "00:25:26",
+    "end": "00:25:29",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Stabilization."
+  },
+  {
+    "start": "00:25:29",
+    "end": "00:25:31",
+    "type": "Relevant",
+    "reasoning": "Feature: Simple interface (Q&A)."
+  },
+  {
+    "start": "00:25:31",
+    "end": "00:25:38",
+    "type": "Relevant",
+    "reasoning": "Feature: No prompt tuning required."
+  },
+  {
+    "start": "00:25:38",
+    "end": "00:25:46",
+    "type": "Relevant",
+    "reasoning": "Explanation: Models understand internal scoring logic."
+  },
+  {
+    "start": "00:25:46",
+    "end": "00:25:54",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Generalized additive model aggregation."
+  },
+  {
+    "start": "00:25:54",
+    "end": "00:25:57",
+    "type": "Relevant",
+    "reasoning": "Technical Detail: Weighting signals based on feedback."
+  },
+  {
+    "start": "00:25:57",
+    "end": "00:26:11",
+    "type": "Relevant",
+    "reasoning": "Process: Calibration (learning what matters)."
+  },
+  {
+    "start": "00:26:11",
+    "end": "00:26:14",
+    "type": "Relevant",
+    "reasoning": "Example: Failing everything vs not contributing."
+  },
+  {
+    "start": "00:26:14",
+    "end": "00:26:15",
+    "type": "Relevant",
+    "reasoning": "Benefit: Automated decision making."
+  },
+  {
+    "start": "00:26:15",
+    "end": "00:26:22",
+    "type": "Relevant",
+    "reasoning": "Summary: Advanced ground-up build for evals."
+  },
+  {
+    "start": "00:26:22",
+    "end": "00:26:24",
+    "type": "Relevant",
+    "reasoning": "Benefit: Stability."
+  },
+  {
+    "start": "00:26:24",
+    "end": "00:26:25",
+    "type": "Relevant",
+    "reasoning": "Benefit: Speed."
+  },
+  {
+    "start": "00:26:25",
+    "end": "00:26:29",
+    "type": "Relevant",
+    "reasoning": "Reason for Speed: Bidirectional attention density."
+  },
+  {
+    "start": "00:26:29",
+    "end": "00:26:35",
+    "type": "Relevant",
+    "reasoning": "Reason for Speed: Fewer parameters."
+  },
+  {
+    "start": "00:26:35",
+    "end": "00:26:38",
+    "type": "Relevant",
+    "reasoning": "Question: Does it work with other languages?"
+  },
+  {
+    "start": "00:26:38",
+    "end": "00:26:44",
+    "type": "Relevant",
+    "reasoning": "Response: Trained on handful of languages."
+  },
+  {
+    "start": "00:26:44",
+    "end": "00:26:45",
+    "type": "Relevant",
+    "reasoning": "Response: Upcoming multilingual release."
+  },
+  {
+    "start": "00:26:45",
+    "end": "00:26:52",
+    "type": "Relevant",
+    "reasoning": "Response: Multimodal not yet supported."
+  },
+  {
+    "start": "00:26:52",
+    "end": "00:27:04",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Kicking off the workshop."
+  },
+  {
+    "start": "00:27:04",
+    "end": "00:27:16",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Sharing the doc link."
+  },
+  {
+    "start": "00:27:16",
+    "end": "00:27:18",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Sharing the doc link."
+  },
+  {
+    "start": "00:27:18",
+    "end": "00:27:25",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Sharing the doc link."
+  },
+  {
+    "start": "00:27:25",
+    "end": "00:27:34",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Instructions to get started."
+  },
+  {
+    "start": "00:27:34",
+    "end": "00:27:41",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking on attendees."
+  },
+  {
+    "start": "00:27:41",
+    "end": "00:27:41",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking on attendees."
+  },
+  {
+    "start": "00:27:41",
+    "end": "00:27:52",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Showing phase 2 for those ahead."
+  },
+  {
+    "start": "00:27:52",
+    "end": "00:28:00",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Mentioning independent work."
+  },
+  {
+    "start": "00:28:00",
+    "end": "00:28:03",
+    "type": "Irrelevant",
+    "reasoning": "Technical Friction: 'How do I project this?'"
+  },
+  {
+    "start": "00:28:03",
+    "end": "00:28:08",
+    "type": "Irrelevant",
+    "reasoning": "Technical Friction: Apologies and screen setup."
+  },
+  {
+    "start": "00:28:08",
+    "end": "00:28:12",
+    "type": "Irrelevant",
+    "reasoning": "Technical Friction: Screen setup."
+  },
+  {
+    "start": "00:28:12",
+    "end": "00:28:14",
+    "type": "Relevant",
+    "reasoning": "Instruction: Introduction to pre-prepared Colab."
+  },
+  {
+    "start": "00:28:14",
+    "end": "00:28:25",
+    "type": "Relevant",
+    "reasoning": "Instruction: Overview of Colab steps."
+  },
+  {
+    "start": "00:28:25",
+    "end": "00:28:27",
+    "type": "Relevant",
+    "reasoning": "Instruction: Addressing questions."
+  },
+  {
+    "start": "00:28:27",
+    "end": "00:28:29",
+    "type": "Relevant",
+    "reasoning": "Instruction: Quick overview."
+  },
+  {
+    "start": "00:28:29",
+    "end": "00:28:48",
+    "type": "Relevant",
+    "reasoning": "Instruction: Basic installation."
+  },
+  {
+    "start": "00:28:48",
+    "end": "00:28:50",
+    "type": "Relevant",
+    "reasoning": "Instruction: Scoring spec explanation."
+  },
+  {
+    "start": "00:28:50",
+    "end": "00:29:03",
+    "type": "Relevant",
+    "reasoning": "Instruction: Intelligence lives in the spec."
+  },
+  {
+    "start": "00:29:03",
+    "end": "00:29:08",
+    "type": "Relevant",
+    "reasoning": "Instruction: Simple example."
+  },
+  {
+    "start": "00:29:08",
+    "end": "00:29:13",
+    "type": "Relevant",
+    "reasoning": "Instruction: Getting the spec from code tab."
+  },
+  {
+    "start": "00:29:13",
+    "end": "00:29:21",
+    "type": "Relevant",
+    "reasoning": "Instruction: Copying to Colab."
+  },
+  {
+    "start": "00:29:21",
+    "end": "00:29:23",
+    "type": "Relevant",
+    "reasoning": "Instruction: Spec details."
+  },
+  {
+    "start": "00:29:23",
+    "end": "00:29:27",
+    "type": "Relevant",
+    "reasoning": "Instruction: Natural language spec + Python code."
+  },
+  {
+    "start": "00:29:27",
+    "end": "00:29:27",
+    "type": "Relevant",
+    "reasoning": "Instruction: This is what you change."
+  },
+  {
+    "start": "00:29:27",
+    "end": "00:29:32",
+    "type": "Relevant",
+    "reasoning": "Instruction: Where everything happens."
+  },
+  {
+    "start": "00:29:32",
+    "end": "00:29:34",
+    "type": "Relevant",
+    "reasoning": "Instruction: Clicking through the Colab."
+  },
+  {
+    "start": "00:29:34",
+    "end": "00:29:36",
+    "type": "Relevant",
+    "reasoning": "Instruction: Playing around."
+  },
+  {
+    "start": "00:29:36",
+    "end": "00:29:40",
+    "type": "Relevant",
+    "reasoning": "Instruction: Datasets on Hugging Face."
+  },
+  {
+    "start": "00:29:40",
+    "end": "00:29:41",
+    "type": "Relevant",
+    "reasoning": "Instruction: Public datasets."
+  },
+  {
+    "start": "00:29:41",
+    "end": "00:29:46",
+    "type": "Relevant",
+    "reasoning": "Instruction: Thumbs up/down data matching the sheet."
+  },
+  {
+    "start": "00:29:46",
+    "end": "00:29:51",
+    "type": "Relevant",
+    "reasoning": "Instruction: Loading data."
+  },
+  {
+    "start": "00:29:51",
+    "end": "00:29:54",
+    "type": "Relevant",
+    "reasoning": "Instruction: Running scorer."
+  },
+  {
+    "start": "00:29:54",
+    "end": "00:30:05",
+    "type": "Relevant",
+    "reasoning": "Instruction: Building confusion matrix."
+  },
+  {
+    "start": "00:30:05",
+    "end": "00:30:18",
+    "type": "Relevant",
+    "reasoning": "Instruction: Measuring alignment."
+  },
+  {
+    "start": "00:30:18",
+    "end": "00:30:23",
+    "type": "Relevant",
+    "reasoning": "Instruction: Comparing models."
+  },
+  {
+    "start": "00:30:23",
+    "end": "00:30:26",
+    "type": "Relevant",
+    "reasoning": "Instruction: Interesting stuff happens here."
+  },
+  {
+    "start": "00:30:26",
+    "end": "00:30:27",
+    "type": "Relevant",
+    "reasoning": "Instruction: Comparing 1.5 vs 2.5."
+  },
+  {
+    "start": "00:30:27",
+    "end": "00:30:40",
+    "type": "Relevant",
+    "reasoning": "Analysis: 2.5 higher score."
+  },
+  {
+    "start": "00:30:40",
+    "end": "00:30:41",
+    "type": "Relevant",
+    "reasoning": "Analysis: Small delta for reasoning models."
+  },
+  {
+    "start": "00:30:41",
+    "end": "00:30:45",
+    "type": "Relevant",
+    "reasoning": "Analysis: Bigger delta for smaller models (Haiku)."
+  },
+  {
+    "start": "00:30:45",
+    "end": "00:30:48",
+    "type": "Relevant",
+    "reasoning": "Benefit: Using scoring system for model eval."
+  },
+  {
+    "start": "00:30:48",
+    "end": "00:30:52",
+    "type": "Relevant",
+    "reasoning": "Procedure: Taking 10 examples."
+  },
+  {
+    "start": "00:30:52",
+    "end": "00:30:59",
+    "type": "Relevant",
+    "reasoning": "Procedure: Calling 5 models."
+  },
+  {
+    "start": "00:30:59",
+    "end": "00:31:06",
+    "type": "Relevant",
+    "reasoning": "Procedure: Scoring responses."
+  },
+  {
+    "start": "00:31:06",
+    "end": "00:31:12",
+    "type": "Relevant",
+    "reasoning": "Instruction: Trying different prompts."
+  },
+  {
+    "start": "00:31:12",
+    "end": "00:31:21",
+    "type": "Relevant",
+    "reasoning": "Context: People worry about regression when changing prompts."
+  },
+  {
+    "start": "00:31:21",
+    "end": "00:31:24",
+    "type": "Relevant",
+    "reasoning": "Solution: Right way to ensure no regression."
+  },
+  {
+    "start": "00:31:24",
+    "end": "00:31:31",
+    "type": "Relevant",
+    "reasoning": "Procedure: Check if scores go down on test set."
+  },
+  {
+    "start": "00:31:31",
+    "end": "00:31:38",
+    "type": "Relevant",
+    "reasoning": "Example: Comparing good vs bad prompts."
+  },
+  {
+    "start": "00:31:38",
+    "end": "00:31:48",
+    "type": "Relevant",
+    "reasoning": "Analysis: Bad prompt gets lower score."
+  },
+  {
+    "start": "00:31:48",
+    "end": "00:31:57",
+    "type": "Relevant",
+    "reasoning": "Topic: Online world."
+  },
+  {
+    "start": "00:31:57",
+    "end": "00:32:05",
+    "type": "Relevant",
+    "reasoning": "Instruction: How to do this online."
+  },
+  {
+    "start": "00:32:05",
+    "end": "00:32:07",
+    "type": "Relevant",
+    "reasoning": "Example: Taking one transcript."
+  },
+  {
+    "start": "00:32:07",
+    "end": "00:32:10",
+    "type": "Relevant",
+    "reasoning": "Technique: Testing with different sample counts."
+  },
+  {
+    "start": "00:32:10",
+    "end": "00:32:15",
+    "type": "Relevant",
+    "reasoning": "Technique: One sample = one score."
+  },
+  {
+    "start": "00:32:15",
+    "end": "00:32:17",
+    "type": "Relevant",
+    "reasoning": "Technique: Upping sample count."
+  },
+  {
+    "start": "00:32:17",
+    "end": "00:32:21",
+    "type": "Relevant",
+    "reasoning": "Technique: Behind scenes creating 3-4 responses."
+  },
+  {
+    "start": "00:32:21",
+    "end": "00:32:26",
+    "type": "Relevant",
+    "reasoning": "Technique: Ranking with scoring system."
+  },
+  {
+    "start": "00:32:26",
+    "end": "00:32:29",
+    "type": "Relevant",
+    "reasoning": "Technique: Picking the best."
+  },
+  {
+    "start": "00:32:29",
+    "end": "00:32:32",
+    "type": "Relevant",
+    "reasoning": "Result: Increasing samples increases score."
+  },
+  {
+    "start": "00:32:32",
+    "end": "00:32:39",
+    "type": "Relevant",
+    "reasoning": "Conclusion: Response quality goes up."
+  },
+  {
+    "start": "00:32:39",
+    "end": "00:32:44",
+    "type": "Relevant",
+    "reasoning": "Instruction: Encouraging independent exploration of Colab."
+  },
+  {
+    "start": "00:32:44",
+    "end": "00:32:46",
+    "type": "Relevant",
+    "reasoning": "Instruction: Playing around later."
+  },
+  {
+    "start": "00:32:46",
+    "end": "00:32:47",
+    "type": "Relevant",
+    "reasoning": "Instruction: Check before we leave."
+  },
+  {
+    "start": "00:32:47",
+    "end": "00:32:49",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:32:49",
+    "end": "00:32:57",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:32:57",
+    "end": "00:33:04",
+    "type": "Relevant",
+    "reasoning": "Instruction: Showing the second phase of exercise."
+  },
+  {
+    "start": "00:33:04",
+    "end": "00:33:13",
+    "type": "Relevant",
+    "reasoning": "Instruction: Continuing forward."
+  },
+  {
+    "start": "00:33:13",
+    "end": "00:33:18",
+    "type": "Relevant",
+    "reasoning": "Technical Friction: 'How do I project this?'"
+  },
+  {
+    "start": "00:33:18",
+    "end": "00:33:19",
+    "type": "Relevant",
+    "reasoning": "Technical Friction: Projecting."
+  },
+  {
+    "start": "00:33:19",
+    "end": "00:33:31",
+    "type": "Relevant",
+    "reasoning": "Instruction: Second part of exercise (independent)."
+  },
+  {
+    "start": "00:33:31",
+    "end": "00:33:36",
+    "type": "Relevant",
+    "reasoning": "Instruction: Time constraint notice."
+  },
+  {
+    "start": "00:33:36",
+    "end": "00:33:42",
+    "type": "Relevant",
+    "reasoning": "Instruction: Feel free to do on own."
+  },
+  {
+    "start": "00:33:42",
+    "end": "00:33:52",
+    "type": "Relevant",
+    "reasoning": "Instruction: Colab availability."
+  },
+  {
+    "start": "00:33:52",
+    "end": "00:33:56",
+    "type": "Relevant",
+    "reasoning": "Instruction: Pre-prepared Colab."
+  },
+  {
+    "start": "00:33:56",
+    "end": "00:34:04",
+    "type": "Relevant",
+    "reasoning": "Technical Friction: Screen sharing."
+  },
+  {
+    "start": "00:34:04",
+    "end": "00:34:10",
+    "type": "Relevant",
+    "reasoning": "Technical Friction: Screen sharing."
+  },
+  {
+    "start": "00:34:10",
+    "end": "00:34:24",
+    "type": "Relevant",
+    "reasoning": "Instruction: Colab guiding through steps."
+  },
+  {
+    "start": "00:34:24",
+    "end": "00:34:30",
+    "type": "Relevant",
+    "reasoning": "Instruction: Addressing questions about code usage."
+  },
+  {
+    "start": "00:34:30",
+    "end": "00:34:38",
+    "type": "Relevant",
+    "reasoning": "Instruction: Basic installation."
+  },
+  {
+    "start": "00:34:38",
+    "end": "00:34:41",
+    "type": "Relevant",
+    "reasoning": "Instruction: Scoring spec is where intelligence lives."
+  },
+  {
+    "start": "00:34:41",
+    "end": "00:34:49",
+    "type": "Relevant",
+    "reasoning": "Instruction: Simple example/simple spec."
+  },
+  {
+    "start": "00:34:49",
+    "end": "00:34:52",
+    "type": "Relevant",
+    "reasoning": "Instruction: Getting spec from code tab."
+  },
+  {
+    "start": "00:34:52",
+    "end": "00:34:58",
+    "type": "Relevant",
+    "reasoning": "Instruction: Copying to Colab."
+  },
+  {
+    "start": "00:34:58",
+    "end": "00:35:02",
+    "type": "Relevant",
+    "reasoning": "Instruction: Spec details."
+  },
+  {
+    "start": "00:35:02",
+    "end": "00:35:02",
+    "type": "Relevant",
+    "reasoning": "Instruction: Natural language spec + Python code."
+  },
+  {
+    "start": "00:35:02",
+    "end": "00:35:05",
+    "type": "Relevant",
+    "reasoning": "Instruction: This is what you change."
+  },
+  {
+    "start": "00:35:05",
+    "end": "00:35:10",
+    "type": "Relevant",
+    "reasoning": "Instruction: Where everything happens."
+  },
+  {
+    "start": "00:35:10",
+    "end": "00:35:18",
+    "type": "Relevant",
+    "reasoning": "Instruction: Clicking through the Colab."
+  },
+  {
+    "start": "00:35:18",
+    "end": "00:35:22",
+    "type": "Relevant",
+    "reasoning": "Instruction: Playing around."
+  },
+  {
+    "start": "00:35:22",
+    "end": "00:35:25",
+    "type": "Relevant",
+    "reasoning": "Instruction: Datasets on Hugging Face."
+  },
+  {
+    "start": "00:35:25",
+    "end": "00:35:32",
+    "type": "Relevant",
+    "reasoning": "Instruction: Public datasets."
+  },
+  {
+    "start": "00:35:32",
+    "end": "00:35:34",
+    "type": "Relevant",
+    "reasoning": "Instruction: Thumbs up/down data matching the sheet."
+  },
+  {
+    "start": "00:35:34",
+    "end": "00:35:39",
+    "type": "Relevant",
+    "reasoning": "Instruction: Loading data."
+  },
+  {
+    "start": "00:35:39",
+    "end": "00:35:42",
+    "type": "Relevant",
+    "reasoning": "Instruction: Running scorer."
+  },
+  {
+    "start": "00:35:42",
+    "end": "00:35:45",
+    "type": "Relevant",
+    "reasoning": "Instruction: Building confusion matrix."
+  },
+  {
+    "start": "00:35:45",
+    "end": "00:35:51",
+    "type": "Relevant",
+    "reasoning": "Instruction: Measuring alignment."
+  },
+  {
+    "start": "00:35:51",
+    "end": "00:35:56",
+    "type": "Relevant",
+    "reasoning": "Instruction: Comparing models."
+  },
+  {
+    "start": "00:35:56",
+    "end": "00:36:01",
+    "type": "Relevant",
+    "reasoning": "Instruction: Interesting stuff happens here."
+  },
+  {
+    "start": "00:36:01",
+    "end": "00:36:11",
+    "type": "Relevant",
+    "reasoning": "Instruction: Comparing 1.5 vs 2.5."
+  },
+  {
+    "start": "00:36:11",
+    "end": "00:36:14",
+    "type": "Relevant",
+    "reasoning": "Analysis: 2.5 higher score."
+  },
+  {
+    "start": "00:36:14",
+    "end": "00:36:16",
+    "type": "Relevant",
+    "reasoning": "Analysis: Small delta for reasoning models."
+  },
+  {
+    "start": "00:36:16",
+    "end": "00:36:29",
+    "type": "Relevant",
+    "reasoning": "Analysis: Bigger delta for smaller models (Haiku)."
+  },
+  {
+    "start": "00:36:29",
+    "end": "00:36:32",
+    "type": "Relevant",
+    "reasoning": "Benefit: Using scoring system for model eval."
+  },
+  {
+    "start": "00:36:32",
+    "end": "00:36:38",
+    "type": "Relevant",
+    "reasoning": "Procedure: Taking 10 examples."
+  },
+  {
+    "start": "00:36:38",
+    "end": "00:36:55",
+    "type": "Relevant",
+    "reasoning": "Procedure: Calling 5 models."
+  },
+  {
+    "start": "00:36:55",
+    "end": "00:36:57",
+    "type": "Relevant",
+    "reasoning": "Procedure: Scoring responses."
+  },
+  {
+    "start": "00:36:57",
+    "end": "00:36:58",
+    "type": "Relevant",
+    "reasoning": "Instruction: Trying different prompts."
+  },
+  {
+    "start": "00:36:58",
+    "end": "00:37:01",
+    "type": "Relevant",
+    "reasoning": "Context: People worry about regression when changing prompts."
+  },
+  {
+    "start": "00:37:01",
+    "end": "00:37:05",
+    "type": "Relevant",
+    "reasoning": "Solution: Right way to ensure no regression."
+  },
+  {
+    "start": "00:37:05",
+    "end": "00:37:12",
+    "type": "Relevant",
+    "reasoning": "Procedure: Check if scores go down on test set."
+  },
+  {
+    "start": "00:37:12",
+    "end": "00:37:15",
+    "type": "Relevant",
+    "reasoning": "Example: Comparing good vs bad prompts."
+  },
+  {
+    "start": "00:37:15",
+    "end": "00:37:20",
+    "type": "Relevant",
+    "reasoning": "Analysis: Bad prompt gets lower score."
+  },
+  {
+    "start": "00:37:20",
+    "end": "00:37:25",
+    "type": "Relevant",
+    "reasoning": "Topic: Online world."
+  },
+  {
+    "start": "00:37:25",
+    "end": "00:37:41",
+    "type": "Relevant",
+    "reasoning": "Instruction: How to do this online."
+  },
+  {
+    "start": "00:37:41",
+    "end": "00:37:45",
+    "type": "Relevant",
+    "reasoning": "Example: Taking one transcript."
+  },
+  {
+    "start": "00:37:45",
+    "end": "00:37:59",
+    "type": "Relevant",
+    "reasoning": "Technique: Testing with different sample counts."
+  },
+  {
+    "start": "00:37:59",
+    "end": "00:38:01",
+    "type": "Relevant",
+    "reasoning": "Technique: One sample = one score."
+  },
+  {
+    "start": "00:38:01",
+    "end": "00:38:04",
+    "type": "Relevant",
+    "reasoning": "Technique: Upping sample count."
+  },
+  {
+    "start": "00:38:04",
+    "end": "00:38:06",
+    "type": "Relevant",
+    "reasoning": "Technique: Behind scenes creating 3-4 responses."
+  },
+  {
+    "start": "00:38:06",
+    "end": "00:38:11",
+    "type": "Relevant",
+    "reasoning": "Technique: Ranking with scoring system."
+  },
+  {
+    "start": "00:38:11",
+    "end": "00:38:16",
+    "type": "Relevant",
+    "reasoning": "Technique: Picking the best."
+  },
+  {
+    "start": "00:38:16",
+    "end": "00:38:21",
+    "type": "Relevant",
+    "reasoning": "Result: Increasing samples increases score."
+  },
+  {
+    "start": "00:38:21",
+    "end": "00:38:31",
+    "type": "Relevant",
+    "reasoning": "Conclusion: Response quality goes up."
+  },
+  {
+    "start": "00:38:31",
+    "end": "00:38:35",
+    "type": "Relevant",
+    "reasoning": "Instruction: Encouraging independent exploration of Colab."
+  },
+  {
+    "start": "00:38:35",
+    "end": "00:38:46",
+    "type": "Relevant",
+    "reasoning": "Instruction: Playing around later."
+  },
+  {
+    "start": "00:38:46",
+    "end": "00:38:47",
+    "type": "Relevant",
+    "reasoning": "Instruction: Check before we leave."
+  },
+  {
+    "start": "00:38:47",
+    "end": "00:38:50",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:38:50",
+    "end": "00:38:57",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:38:57",
+    "end": "00:39:01",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:01",
+    "end": "00:39:07",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:07",
+    "end": "00:39:11",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:11",
+    "end": "00:39:16",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:16",
+    "end": "00:39:20",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:20",
+    "end": "00:39:33",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:33",
+    "end": "00:39:43",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:43",
+    "end": "00:39:51",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:51",
+    "end": "00:39:59",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:39:59",
+    "end": "00:40:05",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:40:05",
+    "end": "00:40:13",
+    "type": "Irrelevant",
+    "reasoning": "Logistics: Checking if people started."
+  },
+  {
+    "start": "00:40:13",
+    "end": "00:40:17",
+    "type": "Relevant",
+    "reasoning": "Closing: Final instructional tip (explore options later)."
+  },
+  {
+    "start": "00:40:17",
+    "end": "00:40:27",
+    "type": "Irrelevant",
+    "reasoning": "Outro: Dismissal and logistics."
+  }
+]

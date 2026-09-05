@@ -23,3 +23,10 @@ Here’s an analysis of the educational video based on the provided summaries:
 
 
 **In essence, the video is an instructional segment that uses a live lecture to teach the fundamentals of control theory and its application to the field of robotics.** It’s a layered approach, starting with the setup (screen recording), moving into a live lecture, and then delving into the theoretical underpinnings of the subject matter.
+
+{
+  "start": "00:00:00",
+  "end": "00:00:24",
+  "type": "Relevant" or "Irrelevant",
+  "reasoning": "A concise, professional editorial justification for why this stays or is trimmed."
+}

@@ -14,12 +14,13 @@ from test.viz.visualizer import Visualizer
 # https://www.youtube.com/watch?v=HwiaWygjups (till 10:00 mins)
 
 # https://www.youtube.com/watch?v=3PL2DxXv5u0 (10:35)
+# https://www.youtube.com/watch?v=yD1Y1chp5R4 (12:00)
+# https://www.youtube.com/watch?v=SKZn2DBQuHs (12:30)
+
 # ids = ["iLCT0i-lCsw", "ZujpN1B9bz0", "9t2odwJiHOw", "HwiaWygjups", "3PL2DxXv5u0"] #Indian Live Lectures
 
 
-# https://www.youtube.com/watch?v=yD1Y1chp5R4 (12:00)
-# https://www.youtube.com/watch?v=SKZn2DBQuHs (12:30)
-ids = ["yD1Y1chp5R4", "SKZn2DBQuHs"]  # CS50 Lectures
+# ids = ["yD1Y1chp5R4", "SKZn2DBQuHs"]  # CS50 Lectures
 # =======Preprocess========
 # for yt_ID in ids:
 #     p = PreProcessor(yt_ID)
@@ -39,8 +40,8 @@ ids = ["yD1Y1chp5R4", "SKZn2DBQuHs"]  # CS50 Lectures
 #         "frame transcript merged ======================================================"
 #     )
 
-VIZ = False
-CLASS = True
+VIZ = True
+CLASS = False
 
 model = {
     "0": "gemma-3-4b-it-BF16.gguf",
@@ -56,7 +57,8 @@ model = {
 }
 # =======Core Video analysis========
 if CLASS:
-    o = Orchestrator(ids[1], model["7"])
+    ids = []
+    o = Orchestrator("r_O-UjZZ744", model["7"])
     # o.get_video_topic(
     #     "1"
     # )  # For classification use the v2 prompt to get more detailed video topic
@@ -78,23 +80,56 @@ id_table = {
     "7": "OMGPvW8TBHc",
 }
 
+
 if VIZ:
     # benchmark_dir = "/home/znyd/hacking/edu-cut/Benchmark/vanila_qwen3_4B_instruct_2507"
     # benchmark_dir = (
     #     "/home/znyd/hacking/edu-cut/Benchmark/vanila_qwen3_4B_instruct_2507_indian_live"
     # )
-    benchmark_dir = (
-        "/home/znyd/hacking/edu-cut/Benchmark/vanila_qwen3_4B_instruct_2507_new_vid"
-    )
+    # benchmark_dir = (
+    #     "/home/znyd/hacking/edu-cut/Benchmark/vanila_qwen3_4B_instruct_2507_new_vid"
+    # )
+    # benchmark_dir = (
+    #     "/home/znyd/hacking/edu-cut/Benchmark/vanila_qwen3_4B_instruct_2507_last_2"
+    # )
     # benchmark_dir = "/home/znyd/hacking/edu-cut/Benchmark/strict_prompt"
-    # file_path = os.path.join(benchmark_dir, f"{ids[4]}.csv")
     # file_path = "/home/znyd/hacking/edu-cut/store/ugzN7W7q2Gk/responses/ugzN7W7q2Gk.csv"
     # file_path = "/home/znyd/hacking/edu-cut/store/M_rIWVO14tA/responses/M_rIWVO14tA.csv"
-    file_path = "/home/znyd/hacking/edu-cut/store/LdPAkUXKBGI/responses/LdPAkUXKBGI.csv"
+    # file_path = "/home/znyd/hacking/edu-cut/Benchmark/strict_prompt/OMGPvW8TBHc.csv"
+
+    ids = [
+        "i31yX84EgPE",
+        "M_rIWVO14tA",
+        "ZujpN1B9bz0",
+        "OMGPvW8TBHc",
+        "YYNXFsUutbM",
+        "ES6W4_bXvro",
+        "ugzN7W7q2Gk",
+        "HwiaWygjups",
+        "YA1OdkiHJBY",
+        "ig0QZxtj3j8",
+        "3PL2DxXv5u0",
+        "jxrGodnopHo",
+        "wxBG5Ei7a_w",
+        "r_O-UjZZ744",
+        "yD1Y1chp5R4",
+        "DlWTTrHa8bI",
+        "SKZn2DBQuHs",
+        "9t2odwJiHOw",
+        "iLCT0i-lCsw",
+        "LdPAkUXKBGI",
+    ]
+    # id_fx = ["wxBG5Ei7a_w","i31yX84EgPE","YA1OdkiHJBY","YYNXFsUutbM"]
+    benchmark_dir = "/home/znyd/hacking/edu-cut/Benchmark/total_20_vid_pred/predicted"
+    file_path = os.path.join(benchmark_dir, f"{ids[5]}.csv")
+
+    # Group numbers (# column) to exclude from the final 2D list output
+    # exclude_groups = [2, 7, 9, 17, 23, 25, 32, 40, 41, 44, 53]  # e.g., [1, 3, 5] to exclude groups #1, #3, #5
+    exclude_groups = []
 
     if os.path.exists(file_path):
         test = Visualizer(direct_path=file_path)
-        test.clean_classified_response(reasoning=True)
+        test.clean_classified_response(reasoning=True, exclude_groups=exclude_groups)
     else:
         print(f"Benchmark file not found: {file_path}")
         # Fallback to default behavior if needed:

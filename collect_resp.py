@@ -2,9 +2,7 @@ import shutil
 from pathlib import Path
 
 # --- CONFIGURATION ---
-DESTINATION_DIR = (
-    "/home/znyd/hacking/edu-cut/Benchmark/vanila_qwen3_4B_instruct_2507_indian_live"
-)
+DESTINATION_DIR = "/home/znyd/hacking/edu-cut/Benchmark/lora_20"
 # ---------------------
 
 

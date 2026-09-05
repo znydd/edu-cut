@@ -1,0 +1,2630 @@
+[
+  {
+    "start": "00:00:00",
+    "end": "00:00:22",
+    "type": "Irrelevant",
+    "reasoning": "Technical friction: Screen recording software (OBS) loop and silence before the lecture begins."
+  },
+  {
+    "start": "00:00:22",
+    "end": "00:00:36",
+    "type": "Irrelevant",
+    "reasoning": "Setup: Desktop navigation and opening files without instructional audio."
+  },
+  {
+    "start": "00:00:36",
+    "end": "00:00:49",
+    "type": "Relevant",
+    "reasoning": "Lecture start: Introduction and welcome to the topic of Data Science."
+  },
+  {
+    "start": "00:00:49",
+    "end": "00:00:56",
+    "type": "Relevant",
+    "reasoning": "Introduction to the specific topic: Principal Component Analysis (PCA)."
+  },
+  {
+    "start": "00:00:56",
+    "end": "00:01:12",
+    "type": "Relevant",
+    "reasoning": "Context setting: Discussing high-dimensional datasets (e.g., 1000 features)."
+  },
+  {
+    "start": "00:01:12",
+    "end": "00:01:16",
+    "type": "Relevant",
+    "reasoning": "Problem statement: Difficulty in handling high-dimensional features."
+  },
+  {
+    "start": "00:01:16",
+    "end": "00:01:26",
+    "type": "Relevant",
+    "reasoning": "Connecting to previous lectures (K-Means) to contextualize the computational complexity."
+  },
+  {
+    "start": "00:01:26",
+    "end": "00:01:39",
+    "type": "Relevant",
+    "reasoning": "Motivation: Discussing the need to eliminate features or reduce dimensions."
+  },
+  {
+    "start": "00:01:39",
+    "end": "00:01:45",
+    "type": "Relevant",
+    "reasoning": "Goal: Maintaining model performance while using fewer features."
+  },
+  {
+    "start": "00:01:45",
+    "end": "00:01:47",
+    "type": "Relevant",
+    "reasoning": "Connector: Emphasizing the target outcome."
+  },
+  {
+    "start": "00:01:47",
+    "end": "00:01:49",
+    "type": "Relevant",
+    "reasoning": "Connector: Transitioning to the solution."
+  },
+  {
+    "start": "00:01:49",
+    "end": "00:02:12",
+    "type": "Relevant",
+    "reasoning": "Visual explanation: Drawing the transformation from 1000 features to a new feature space."
+  },
+  {
+    "start": "00:02:12",
+    "end": "00:02:15",
+    "type": "Relevant",
+    "reasoning": "Visual explanation: Continuing the diagram of feature transformation."
+  },
+  {
+    "start": "00:02:15",
+    "end": "00:02:44",
+    "type": "Relevant",
+    "reasoning": "Concept introduction: Introducing PC1, PC2 and selecting a subset (e.g., 10 features)."
+  },
+  {
+    "start": "00:02:44",
+    "end": "00:02:53",
+    "type": "Relevant",
+    "reasoning": "Explanation: Why transforming to a new space allows reducing features without performance loss."
+  },
+  {
+    "start": "00:02:53",
+    "end": "00:03:01",
+    "type": "Relevant",
+    "reasoning": "Core concept: Training the model on a reduced set (10 features) instead of the full set."
+  },
+  {
+    "start": "00:03:01",
+    "end": "00:03:19",
+    "type": "Relevant",
+    "reasoning": "Summary of the goal: Performance equivalence between full and reduced feature sets."
+  },
+  {
+    "start": "00:03:19",
+    "end": "00:03:30",
+    "type": "Relevant",
+    "reasoning": "Key Terminology: defining extracted features as Principal Components."
+  },
+  {
+    "start": "00:03:30",
+    "end": "00:03:47",
+    "type": "Relevant",
+    "reasoning": "Categorization: Classifying PCA as a feature extraction method."
+  },
+  {
+    "start": "00:03:47",
+    "end": "00:03:54",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to the methodology ('How to do that')."
+  },
+  {
+    "start": "00:03:54",
+    "end": "00:04:00",
+    "type": "Relevant",
+    "reasoning": "Transition: Opening the definition slide."
+  },
+  {
+    "start": "00:04:00",
+    "end": "00:04:12",
+    "type": "Relevant",
+    "reasoning": "Definition: Reading and explaining the formal definition of PCA."
+  },
+  {
+    "start": "00:04:12",
+    "end": "00:04:18",
+    "type": "Relevant",
+    "reasoning": "Explanation: Finding patterns in high-dimensional data."
+  },
+  {
+    "start": "00:04:18",
+    "end": "00:04:43",
+    "type": "Relevant",
+    "reasoning": "Concept: Identifying variability and discriminative features."
+  },
+  {
+    "start": "00:04:43",
+    "end": "00:04:54",
+    "type": "Relevant",
+    "reasoning": "Usage: Highlighting similarities and differences in data."
+  },
+  {
+    "start": "00:04:54",
+    "end": "00:05:00",
+    "type": "Relevant",
+    "reasoning": "Clarification: Rephrasing 'differences' as 'variabilities'."
+  },
+  {
+    "start": "00:05:00",
+    "end": "00:05:10",
+    "type": "Relevant",
+    "reasoning": "Prerequisites introduction: Mentioning Statistics and Mathematics requirements."
+  },
+  {
+    "start": "00:05:10",
+    "end": "00:05:25",
+    "type": "Relevant",
+    "reasoning": "Agenda setting: preparing for a quick review of statistical measurements."
+  },
+  {
+    "start": "00:05:25",
+    "end": "00:05:35",
+    "type": "Relevant",
+    "reasoning": "Review: Listing the background stats needed (Mean, SD, Variance)."
+  },
+  {
+    "start": "00:05:35",
+    "end": "00:05:37",
+    "type": "Relevant",
+    "reasoning": "Connector: Moving to definitions."
+  },
+  {
+    "start": "00:05:37",
+    "end": "00:05:50",
+    "type": "Relevant",
+    "reasoning": "Formula review: Explaining the Mean formula."
+  },
+  {
+    "start": "00:05:50",
+    "end": "00:06:05",
+    "type": "Relevant",
+    "reasoning": "Formula review: Explaining Standard Deviation (sparseness from mean)."
+  },
+  {
+    "start": "00:06:05",
+    "end": "00:06:10",
+    "type": "Relevant",
+    "reasoning": "Formula review: Details of the SD formula (square difference, sum)."
+  },
+  {
+    "start": "00:06:10",
+    "end": "00:06:22",
+    "type": "Relevant",
+    "reasoning": "Formula review: Sample adjustment (n-1) and square root."
+  },
+  {
+    "start": "00:06:22",
+    "end": "00:06:29",
+    "type": "Relevant",
+    "reasoning": "Formula review: Explaining Variance as the square of Standard Deviation."
+  },
+  {
+    "start": "00:06:29",
+    "end": "00:06:31",
+    "type": "Relevant",
+    "reasoning": "Connector: Moving to Covariance."
+  },
+  {
+    "start": "00:06:31",
+    "end": "00:08:26",
+    "type": "Relevant",
+    "reasoning": "Detailed breakdown: Deriving the Covariance concept from the Variance formula."
+  },
+  {
+    "start": "00:08:26",
+    "end": "00:08:28",
+    "type": "Relevant",
+    "reasoning": "Definition: Defining Covariance variables (two variables)."
+  },
+  {
+    "start": "00:08:28",
+    "end": "00:08:34",
+    "type": "Relevant",
+    "reasoning": "Concept: How one variable changes with respect to another."
+  },
+  {
+    "start": "00:08:34",
+    "end": "00:08:40",
+    "type": "Relevant",
+    "reasoning": "Formula comparison: Comparing Variance (one variable) vs Covariance (two variables)."
+  },
+  {
+    "start": "00:08:40",
+    "end": "00:08:49",
+    "type": "Relevant",
+    "reasoning": "Definition: Formal definition of Covariance measuring joint variability."
+  },
+  {
+    "start": "00:08:49",
+    "end": "00:08:53",
+    "type": "Relevant",
+    "reasoning": "Formula: Writing out the Covariance equation."
+  },
+  {
+    "start": "00:08:53",
+    "end": "00:08:58",
+    "type": "Relevant",
+    "reasoning": "Variable definition: Identifying X and Y in the formula."
+  },
+  {
+    "start": "00:08:58",
+    "end": "00:09:02",
+    "type": "Relevant",
+    "reasoning": "Formula details: Explaining the term (Yi - Ybar)."
+  },
+  {
+    "start": "00:09:02",
+    "end": "00:09:15",
+    "type": "Relevant",
+    "reasoning": "Formula details: Explaining the summation limits and denominator (n-1)."
+  },
+  {
+    "start": "00:09:15",
+    "end": "00:09:20",
+    "type": "Relevant",
+    "reasoning": "Prerequisite check: Emphasizing the importance of knowing how to calculate covariance."
+  },
+  {
+    "start": "00:09:20",
+    "end": "00:09:25",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to a concrete example."
+  },
+  {
+    "start": "00:09:25",
+    "end": "00:09:41",
+    "type": "Relevant",
+    "reasoning": "Example Setup: Introducing a dataset (Hours of study vs Marks)."
+  },
+  {
+    "start": "00:09:41",
+    "end": "00:09:45",
+    "type": "Relevant",
+    "reasoning": "Goal: Determining the covariance between H and M."
+  },
+  {
+    "start": "00:09:45",
+    "end": "00:09:52",
+    "type": "Relevant",
+    "reasoning": "Mapping: Mapping H to X and M to Y for the formula."
+  },
+  {
+    "start": "00:09:52",
+    "end": "00:09:59",
+    "type": "Relevant",
+    "reasoning": "Procedure: Step 1 - Calculate the mean of H (Hbar)."
+  },
+  {
+    "start": "00:09:59",
+    "end": "00:10:02",
+    "type": "Relevant",
+    "reasoning": "Procedure: Step 1 continued - Calculate the mean of M (Mbar)."
+  },
+  {
+    "start": "00:10:02",
+    "end": "00:10:05",
+    "type": "Relevant",
+    "reasoning": "Calculation: Summing the values."
+  },
+  {
+    "start": "00:10:05",
+    "end": "00:10:11",
+    "type": "Relevant",
+    "reasoning": "Calculation: Counting instances (n=12)."
+  },
+  {
+    "start": "00:10:11",
+    "end": "00:10:17",
+    "type": "Relevant",
+    "reasoning": "Result: Calculating Hbar (13.92)."
+  },
+  {
+    "start": "00:10:17",
+    "end": "00:10:19",
+    "type": "Relevant",
+    "reasoning": "Visual verification: Pointing to the result on the slide."
+  },
+  {
+    "start": "00:10:19",
+    "end": "00:10:27",
+    "type": "Relevant",
+    "reasoning": "Calculation: Calculating Mbar for Marks."
+  },
+  {
+    "start": "00:10:27",
+    "end": "00:10:40",
+    "type": "Relevant",
+    "reasoning": "Result: Calculating Mbar (sum divided by 12)."
+  },
+  {
+    "start": "00:10:40",
+    "end": "00:10:43",
+    "type": "Relevant",
+    "reasoning": "Result: Stating Mbar is 62.42."
+  },
+  {
+    "start": "00:10:43",
+    "end": "00:10:48",
+    "type": "Relevant",
+    "reasoning": "Visual verification: Pointing to the result."
+  },
+  {
+    "start": "00:10:48",
+    "end": "00:10:56",
+    "type": "Relevant",
+    "reasoning": "Recap: Confirming we have both means needed for the formula."
+  },
+  {
+    "start": "00:10:56",
+    "end": "00:11:09",
+    "type": "Relevant",
+    "reasoning": "Procedure: Step 2 - Determining sparseness (deviations from mean)."
+  },
+  {
+    "start": "00:11:09",
+    "end": "00:11:19",
+    "type": "Relevant",
+    "reasoning": "Formula application: Explaining (Hi - Hbar) and (Mi - Mbar)."
+  },
+  {
+    "start": "00:11:19",
+    "end": "00:11:32",
+    "type": "Relevant",
+    "reasoning": "Calculation: Performing subtraction for each data point."
+  },
+  {
+    "start": "00:11:32",
+    "end": "00:11:38",
+    "type": "Relevant",
+    "reasoning": "Calculation example: 9 minus 13.92."
+  },
+  {
+    "start": "00:11:38",
+    "end": "00:12:04",
+    "type": "Relevant",
+    "reasoning": "Calculation result: -4.92. Showing the result in the table."
+  },
+  {
+    "start": "00:12:04",
+    "end": "00:12:11",
+    "type": "Relevant",
+    "reasoning": "Calculation example: 15 minus 13.92."
+  },
+  {
+    "start": "00:12:11",
+    "end": "00:12:16",
+    "type": "Relevant",
+    "reasoning": "Calculation result: 1.08."
+  },
+  {
+    "start": "00:12:16",
+    "end": "00:12:20",
+    "type": "Relevant",
+    "reasoning": "Procedure: Generalizing the subtraction to all rows."
+  },
+  {
+    "start": "00:12:20",
+    "end": "00:12:25",
+    "type": "Relevant",
+    "reasoning": "Procedure: Step 2b - Calculating deviations for Marks (M)."
+  },
+  {
+    "start": "00:12:25",
+    "end": "00:12:30",
+    "type": "Relevant",
+    "reasoning": "Calculation example: 39 minus 62.42."
+  },
+  {
+    "start": "00:12:30",
+    "end": "00:12:34",
+    "type": "Relevant",
+    "reasoning": "Calculation reference: Pointing to Mbar."
+  },
+  {
+    "start": "00:12:34",
+    "end": "00:12:38",
+    "type": "Relevant",
+    "reasoning": "Calculation reference: Pointing to result (-23.42)."
+  },
+  {
+    "start": "00:12:38",
+    "end": "00:12:44",
+    "type": "Relevant",
+    "reasoning": "Visual verification: Confirming the value in the table."
+  },
+  {
+    "start": "00:12:44",
+    "end": "00:12:51",
+    "type": "Relevant",
+    "reasoning": "Recap: We now have all deviation values."
+  },
+  {
+    "start": "00:12:51",
+    "end": "00:12:57",
+    "type": "Relevant",
+    "reasoning": "Procedure: Step 3 - Moving back to the formula."
+  },
+  {
+    "start": "00:12:57",
+    "end": "00:13:00",
+    "type": "Relevant",
+    "reasoning": "Formula step: Multiplying the two deviation terms."
+  },
+  {
+    "start": "00:13:00",
+    "end": "00:13:06",
+    "type": "Relevant",
+    "reasoning": "Procedure: Multiplying (H-Hbar) by (M-Mbar)."
+  },
+  {
+    "start": "00:13:06",
+    "end": "00:13:10",
+    "type": "Relevant",
+    "reasoning": "Visual explanation: Showing the columns to multiply."
+  },
+  {
+    "start": "00:13:10",
+    "end": "00:13:14",
+    "type": "Relevant",
+    "reasoning": "Reference: Pointing to the previous calculations."
+  },
+  {
+    "start": "00:13:14",
+    "end": "00:13:20",
+    "type": "Relevant",
+    "reasoning": "Action: Multiplying the two specific values calculated earlier."
+  },
+  {
+    "start": "00:13:20",
+    "end": "00:13:24",
+    "type": "Relevant",
+    "reasoning": "Result: 115.23."
+  },
+  {
+    "start": "00:13:24",
+    "end": "00:13:34",
+    "type": "Relevant",
+    "reasoning": "Procedure: Repeating for all rows."
+  },
+  {
+    "start": "00:13:34",
+    "end": "00:13:40",
+    "type": "Relevant",
+    "reasoning": "Formula step: The summation symbol (Sigma)."
+  },
+  {
+    "start": "00:13:40",
+    "end": "00:13:56",
+    "type": "Relevant",
+    "reasoning": "Calculation: Summing up the product column."
+  },
+  {
+    "start": "00:13:56",
+    "end": "00:14:02",
+    "type": "Relevant",
+    "reasoning": "Result: Total sum is 1149.89."
+  },
+  {
+    "start": "00:14:02",
+    "end": "00:14:25",
+    "type": "Relevant",
+    "reasoning": "Formula step: Dividing by (n-1)."
+  },
+  {
+    "start": "00:14:25",
+    "end": "00:14:33",
+    "type": "Relevant",
+    "reasoning": "Calculation: n=12, so n-1=11."
+  },
+  {
+    "start": "00:14:33",
+    "end": "00:14:39",
+    "type": "Relevant",
+    "reasoning": "Calculation: Dividing the sum by 11."
+  },
+  {
+    "start": "00:14:39",
+    "end": "00:14:42",
+    "type": "Relevant",
+    "reasoning": "Final Result: Covariance is 104.54."
+  },
+  {
+    "start": "00:14:42",
+    "end": "00:14:47",
+    "type": "Relevant",
+    "reasoning": "Visual verification: Pointing to the final result."
+  },
+  {
+    "start": "00:14:47",
+    "end": "00:15:05",
+    "type": "Relevant",
+    "reasoning": "Interpretation: explaining the sign of covariance (positive/negative/zero)."
+  },
+  {
+    "start": "00:15:05",
+    "end": "00:15:09",
+    "type": "Relevant",
+    "reasoning": "Interpretation: Positive value means variables increase together."
+  },
+  {
+    "start": "00:15:09",
+    "end": "00:15:24",
+    "type": "Relevant",
+    "reasoning": "Verification: Checking the dataset trends (study hours vs marks) to confirm positive correlation."
+  },
+  {
+    "start": "00:15:24",
+    "end": "00:15:34",
+    "type": "Relevant",
+    "reasoning": "Interpretation: Negative value meaning and Zero meaning (independent)."
+  },
+  {
+    "start": "00:15:34",
+    "end": "00:15:39",
+    "type": "Relevant",
+    "reasoning": "Summary: We need to know how to compute this."
+  },
+  {
+    "start": "00:15:39",
+    "end": "00:15:44",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to Covariance Matrix."
+  },
+  {
+    "start": "00:15:44",
+    "end": "00:15:55",
+    "type": "Relevant",
+    "reasoning": "Concept: Handling more than two variables requires a matrix form."
+  },
+  {
+    "start": "00:15:55",
+    "end": "00:16:04",
+    "type": "Relevant",
+    "reasoning": "Structure: Defining the matrix elements for variables X, Y, Z."
+  },
+  {
+    "start": "00:16:04",
+    "end": "00:16:14",
+    "type": "Relevant",
+    "reasoning": "Structure: Explaining diagonal elements (Cov(X,X))."
+  },
+  {
+    "start": "00:16:14",
+    "end": "00:16:18",
+    "type": "Relevant",
+    "reasoning": "Structure: Explaining off-diagonal elements (Cov(X,Y), Cov(X,Z))."
+  },
+  {
+    "start": "00:16:18",
+    "end": "00:16:30",
+    "type": "Relevant",
+    "reasoning": "Procedure: We need to calculate covariance between all pairs."
+  },
+  {
+    "start": "00:16:30",
+    "end": "00:17:08",
+    "type": "Relevant",
+    "reasoning": "Insight: Cov(X,X) is actually Variance of X."
+  },
+  {
+    "start": "00:17:08",
+    "end": "00:17:30",
+    "type": "Relevant",
+    "reasoning": "Matrix Property: Diagonal elements are variances."
+  },
+  {
+    "start": "00:17:30",
+    "end": "00:17:49",
+    "type": "Relevant",
+    "reasoning": "Matrix Property: Symmetry (Cov(X,Y) = Cov(Y,X))."
+  },
+  {
+    "start": "00:17:49",
+    "end": "00:18:04",
+    "type": "Relevant",
+    "reasoning": "Efficiency: We only need to calculate the upper triangle."
+  },
+  {
+    "start": "00:18:04",
+    "end": "00:18:19",
+    "type": "Relevant",
+    "reasoning": "Example: Showing pairs (X,Y) and (Y,X) equality."
+  },
+  {
+    "start": "00:18:19",
+    "end": "00:18:32",
+    "type": "Relevant",
+    "reasoning": "Example: Showing pairs (X,Z) and (Z,X) equality."
+  },
+  {
+    "start": "00:18:32",
+    "end": "00:18:49",
+    "type": "Relevant",
+    "reasoning": "Example: Showing pairs (Y,Z) and (Z,Y) equality."
+  },
+  {
+    "start": "00:18:49",
+    "end": "00:18:57",
+    "type": "Relevant",
+    "reasoning": "Summary: We calculate the upper triangle and fill the lower by symmetry."
+  },
+  {
+    "start": "00:18:57",
+    "end": "00:19:07",
+    "type": "Relevant",
+    "reasoning": "Requirement: We need to calculate this matrix for PCA."
+  },
+  {
+    "start": "00:19:07",
+    "end": "00:19:10",
+    "type": "Relevant",
+    "reasoning": "Confirmation: We know how to do this now."
+  },
+  {
+    "start": "00:19:10",
+    "end": "00:19:16",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to Eigenvectors and Eigenvalues."
+  },
+  {
+    "start": "00:19:16",
+    "end": "00:19:29",
+    "type": "Relevant",
+    "reasoning": "Definition: Mathematical prerequisites for PCA understanding."
+  },
+  {
+    "start": "00:19:29",
+    "end": "00:19:46",
+    "type": "Relevant",
+    "reasoning": "Context: This might be a refresher for students."
+  },
+  {
+    "start": "00:19:46",
+    "end": "00:19:57",
+    "type": "Relevant",
+    "reasoning": "Definition: Characteristic vector of a square matrix."
+  },
+  {
+    "start": "00:19:57",
+    "end": "00:20:01",
+    "type": "Relevant",
+    "reasoning": "Constraint: Requires a square matrix."
+  },
+  {
+    "start": "00:20:01",
+    "end": "00:20:17",
+    "type": "Relevant",
+    "reasoning": "Concept: A vector that does not change direction under linear transformation."
+  },
+  {
+    "start": "00:20:17",
+    "end": "00:20:31",
+    "type": "Relevant",
+    "reasoning": "Visual explanation: Only scale changes, not direction."
+  },
+  {
+    "start": "00:20:31",
+    "end": "00:20:36",
+    "type": "Relevant",
+    "reasoning": "Mathematical Formulation: Introduction of the equation."
+  },
+  {
+    "start": "00:20:36",
+    "end": "00:20:46",
+    "type": "Relevant",
+    "reasoning": "Condition: Vector v must be non-zero."
+  },
+  {
+    "start": "00:20:46",
+    "end": "00:21:00",
+    "type": "Relevant",
+    "reasoning": "Equation: Av = lambda * v."
+  },
+  {
+    "start": "00:21:00",
+    "end": "00:21:12",
+    "type": "Relevant",
+    "reasoning": "Variable definition: A is square matrix, v is eigenvector."
+  },
+  {
+    "start": "00:21:12",
+    "end": "00:21:28",
+    "type": "Relevant",
+    "reasoning": "Variable definition: Lambda is the eigenvalue (scalar)."
+  },
+  {
+    "start": "00:21:28",
+    "end": "00:21:38",
+    "type": "Relevant",
+    "reasoning": "Meaning: Transformation A on v is equivalent to scaling v by lambda."
+  },
+  {
+    "start": "00:21:38",
+    "end": "00:22:06",
+    "type": "Relevant",
+    "reasoning": "Property: Any scalar multiple of an eigenvector is also an eigenvector."
+  },
+  {
+    "start": "00:22:06",
+    "end": "00:22:15",
+    "type": "Relevant",
+    "reasoning": "Mathematical proof: Showing alpha * v works in the equation."
+  },
+  {
+    "start": "00:22:15",
+    "end": "00:22:24",
+    "type": "Relevant",
+    "reasoning": "Proof step: Moving alpha scalar out."
+  },
+  {
+    "start": "00:22:24",
+    "end": "00:22:33",
+    "type": "Relevant",
+    "reasoning": "Proof step: Substituting Av with lambda * v."
+  },
+  {
+    "start": "00:22:33",
+    "end": "00:22:36",
+    "type": "Relevant",
+    "reasoning": "Proof step: Rearranging to show equivalence."
+  },
+  {
+    "start": "00:22:36",
+    "end": "00:23:34",
+    "type": "Relevant",
+    "reasoning": "Example Introduction: Finding eigenvectors for a specific 2x2 matrix."
+  },
+  {
+    "start": "00:23:34",
+    "end": "00:23:40",
+    "type": "Relevant",
+    "reasoning": "Example Matrix: A = [[7, 3], [3, -1]]."
+  },
+  {
+    "start": "00:23:40",
+    "end": "00:23:57",
+    "type": "Relevant",
+    "reasoning": "Step 1: Set up the characteristic equation."
+  },
+  {
+    "start": "00:23:57",
+    "end": "00:24:04",
+    "type": "Relevant",
+    "reasoning": "Method: Calculating eigenvectors/values manually."
+  },
+  {
+    "start": "00:24:04",
+    "end": "00:24:07",
+    "type": "Relevant",
+    "reasoning": "Disclaimer: You can use other methods if you know them."
+  },
+  {
+    "start": "00:24:07",
+    "end": "00:24:15",
+    "type": "Relevant",
+    "reasoning": "Procedure: Multiply identity matrix by lambda."
+  },
+  {
+    "start": "00:24:15",
+    "end": "00:24:19",
+    "type": "Relevant",
+    "reasoning": "Procedure: Subtract result from matrix A."
+  },
+  {
+    "start": "00:24:19",
+    "end": "00:24:28",
+    "type": "Relevant",
+    "reasoning": "Procedure: Find the determinant."
+  },
+  {
+    "start": "00:24:28",
+    "end": "00:24:41",
+    "type": "Relevant",
+    "reasoning": "Procedure: Solve for lambda where determinant is zero."
+  },
+  {
+    "start": "00:24:41",
+    "end": "00:24:59",
+    "type": "Relevant",
+    "reasoning": "Procedure: Solve for corresponding vectors."
+  },
+  {
+    "start": "00:24:59",
+    "end": "00:25:05",
+    "type": "Relevant",
+    "reasoning": "Calculation: Setting up A - lambda*I."
+  },
+  {
+    "start": "00:25:05",
+    "end": "00:25:08",
+    "type": "Relevant",
+    "reasoning": "Matrix A: 2x2 matrix."
+  },
+  {
+    "start": "00:25:08",
+    "end": "00:25:11",
+    "type": "Relevant",
+    "reasoning": "Identity Matrix: 2x2 identity."
+  },
+  {
+    "start": "00:25:11",
+    "end": "00:25:20",
+    "type": "Relevant",
+    "reasoning": "Calculation: Multiplying identity by lambda."
+  },
+  {
+    "start": "00:25:20",
+    "end": "00:25:33",
+    "type": "Relevant",
+    "reasoning": "Calculation: Performing matrix subtraction."
+  },
+  {
+    "start": "00:25:33",
+    "end": "00:25:36",
+    "type": "Relevant",
+    "reasoning": "Resulting Matrix: [[7-lambda, 3], [3, -1-lambda]]."
+  },
+  {
+    "start": "00:25:36",
+    "end": "00:25:45",
+    "type": "Relevant",
+    "reasoning": "Step 3: Calculating the determinant."
+  },
+  {
+    "start": "00:25:45",
+    "end": "00:25:56",
+    "type": "Relevant",
+    "reasoning": "Determinant Formula: ad - bc."
+  },
+  {
+    "start": "00:25:56",
+    "end": "00:26:00",
+    "type": "Relevant",
+    "reasoning": "Calculation: (7-lambda)(-1-lambda) - (3)(3)."
+  },
+  {
+    "start": "00:26:00",
+    "end": "00:26:08",
+    "type": "Relevant",
+    "reasoning": "Algebra: expanding the terms."
+  },
+  {
+    "start": "00:26:08",
+    "end": "00:26:24",
+    "type": "Relevant",
+    "reasoning": "Algebra: Simplifying to a quadratic equation."
+  },
+  {
+    "start": "00:26:24",
+    "end": "00:26:38",
+    "type": "Relevant",
+    "reasoning": "Result: lambda^2 - 6lambda - 16."
+  },
+  {
+    "start": "00:26:38",
+    "end": "00:26:50",
+    "type": "Relevant",
+    "reasoning": "Step 4: Setting the equation to zero."
+  },
+  {
+    "start": "00:26:50",
+    "end": "00:26:54",
+    "type": "Relevant",
+    "reasoning": "Solving: Factoring the quadratic equation."
+  },
+  {
+    "start": "00:26:54",
+    "end": "00:27:01",
+    "type": "Relevant",
+    "reasoning": "Factors: (lambda - 8)(lambda + 2) = 0."
+  },
+  {
+    "start": "00:27:01",
+    "end": "00:27:07",
+    "type": "Relevant",
+    "reasoning": "Roots: lambda = 8 and lambda = -2."
+  },
+  {
+    "start": "00:27:07",
+    "end": "00:27:17",
+    "type": "Relevant",
+    "reasoning": "Conclusion: We found two eigenvalues."
+  },
+  {
+    "start": "00:27:17",
+    "end": "00:27:24",
+    "type": "Relevant",
+    "reasoning": "Reasoning: A 2x2 matrix yields two eigenvalues."
+  },
+  {
+    "start": "00:27:24",
+    "end": "00:27:30",
+    "type": "Relevant",
+    "reasoning": "Step 5: Finding eigenvectors for each eigenvalue."
+  },
+  {
+    "start": "00:27:30",
+    "end": "00:27:43",
+    "type": "Relevant",
+    "reasoning": "Case 1: Using lambda = 8."
+  },
+  {
+    "start": "00:27:43",
+    "end": "00:27:46",
+    "type": "Relevant",
+    "reasoning": "Substitution: Plugging 8 into the A - lambda*I matrix."
+  },
+  {
+    "start": "00:27:46",
+    "end": "00:27:52",
+    "type": "Relevant",
+    "reasoning": "Calculation: 7-8 = -1, -1-8 = -9."
+  },
+  {
+    "start": "00:27:52",
+    "end": "00:27:55",
+    "type": "Relevant",
+    "reasoning": "Resulting Matrix: [[-1, 3], [3, -9]]."
+  },
+  {
+    "start": "00:27:55",
+    "end": "00:28:01",
+    "type": "Relevant",
+    "reasoning": "Equation Setup: Matrix * vector x = 0."
+  },
+  {
+    "start": "00:28:01",
+    "end": "00:28:07",
+    "type": "Relevant",
+    "reasoning": "System of equations: Defining the relationship between rows and vector components."
+  },
+  {
+    "start": "00:28:07",
+    "end": "00:28:14",
+    "type": "Relevant",
+    "reasoning": "Row reduction: Using Gaussian elimination to simplify."
+  },
+  {
+    "start": "00:28:14",
+    "end": "00:28:21",
+    "type": "Relevant",
+    "reasoning": "Operation: Row 2 = 3*Row1 + Row2."
+  },
+  {
+    "start": "00:28:21",
+    "end": "00:28:24",
+    "type": "Relevant",
+    "reasoning": "Result: Second row becomes zeros."
+  },
+  {
+    "start": "00:28:24",
+    "end": "00:28:31",
+    "type": "Relevant",
+    "reasoning": "Interpretation: 0*x1 + 0*x2 = 0 (redundant)."
+  },
+  {
+    "start": "00:28:31",
+    "end": "00:28:44",
+    "type": "Relevant",
+    "reasoning": "Equation: -1*x1 + 3*x2 = 0."
+  },
+  {
+    "start": "00:28:44",
+    "end": "00:29:20",
+    "type": "Relevant",
+    "reasoning": "Solving: x1 = 3*x2."
+  },
+  {
+    "start": "00:29:20",
+    "end": "00:29:24",
+    "type": "Relevant",
+    "reasoning": "Parameterizing: Choosing a value for x2 (e.g., 1)."
+  },
+  {
+    "start": "00:29:24",
+    "end": "00:29:31",
+    "type": "Relevant",
+    "reasoning": "Result: If x2=1, then x1=3."
+  },
+  {
+    "start": "00:29:31",
+    "end": "00:29:38",
+    "type": "Relevant",
+    "reasoning": "Vector found: [3, 1]."
+  },
+  {
+    "start": "00:29:38",
+    "end": "00:29:39",
+    "type": "Relevant",
+    "reasoning": "Alternative: Choosing x2=2."
+  },
+  {
+    "start": "00:29:39",
+    "end": "00:29:45",
+    "type": "Relevant",
+    "reasoning": "Result: x1=6. Vector [6, 2]."
+  },
+  {
+    "start": "00:29:45",
+    "end": "00:29:54",
+    "type": "Relevant",
+    "reasoning": "Concept: Vectors are multiples (same direction), so we use the base form [3, 1]."
+  },
+  {
+    "start": "00:29:54",
+    "end": "00:29:55",
+    "type": "Relevant",
+    "reasoning": "Verification: This is the eigenvector for lambda=8."
+  },
+  {
+    "start": "00:29:55",
+    "end": "00:29:57",
+    "type": "Relevant",
+    "reasoning": "Verification check introduction."
+  },
+  {
+    "start": "00:29:57",
+    "end": "00:30:01",
+    "type": "Relevant",
+    "reasoning": "Verification: Multiplying A * vector."
+  },
+  {
+    "start": "00:30:01",
+    "end": "00:30:05",
+    "type": "Relevant",
+    "reasoning": "Verification Calculation: [[7, 3], [3, -1]] * [3, 1]."
+  },
+  {
+    "start": "00:30:05",
+    "end": "00:30:13",
+    "type": "Relevant",
+    "reasoning": "Verification Result: [24, 8]."
+  },
+  {
+    "start": "00:30:13",
+    "end": "00:30:18",
+    "type": "Relevant",
+    "reasoning": "Verification Logic: Factoring out 8."
+  },
+  {
+    "start": "00:30:18",
+    "end": "00:30:20",
+    "type": "Relevant",
+    "reasoning": "Verification Result: 8 * [3, 1]."
+  },
+  {
+    "start": "00:30:20",
+    "end": "00:30:23",
+    "type": "Relevant",
+    "reasoning": "Conclusion: Av = lambda * v holds true."
+  },
+  {
+    "start": "00:30:23",
+    "end": "00:30:31",
+    "type": "Relevant",
+    "reasoning": "Summary: Valid eigenvector found."
+  },
+  {
+    "start": "00:30:31",
+    "end": "00:30:35",
+    "type": "Relevant",
+    "reasoning": "Transition: Doing the same for lambda = -2."
+  },
+  {
+    "start": "00:30:35",
+    "end": "00:30:46",
+    "type": "Relevant",
+    "reasoning": "Substitution: Plugging -2 into the equation."
+  },
+  {
+    "start": "00:30:46",
+    "end": "00:30:57",
+    "type": "Relevant",
+    "reasoning": "Resulting Matrix: [[9, 3], [3, 1]]."
+  },
+  {
+    "start": "00:30:57",
+    "end": "00:31:19",
+    "type": "Relevant",
+    "reasoning": "System of equations: 9x1 + 3x2 = 0."
+  },
+  {
+    "start": "00:31:19",
+    "end": "00:31:25",
+    "type": "Relevant",
+    "reasoning": "Row reduction: Zeroing out the second row."
+  },
+  {
+    "start": "00:31:25",
+    "end": "00:31:37",
+    "type": "Relevant",
+    "reasoning": "Simplification: 3x1 + x2 = 0."
+  },
+  {
+    "start": "00:31:37",
+    "end": "00:31:42",
+    "type": "Relevant",
+    "reasoning": "Solving: x2 = -3x1."
+  },
+  {
+    "start": "00:31:42",
+    "end": "00:31:46",
+    "type": "Relevant",
+    "reasoning": "Parameterizing: Choosing x1 = 1."
+  },
+  {
+    "start": "00:31:46",
+    "end": "00:31:57",
+    "type": "Relevant",
+    "reasoning": "Result: x2 = -3. Vector [1, -3]."
+  },
+  {
+    "start": "00:31:57",
+    "end": "00:31:59",
+    "type": "Relevant",
+    "reasoning": "Summary: We have both eigenvectors now."
+  },
+  {
+    "start": "00:31:59",
+    "end": "00:32:12",
+    "type": "Relevant",
+    "reasoning": "Review: Listing the found pairs (lambda=8, v=[3,1]) and (lambda=-2, v=[1,-3])."
+  },
+  {
+    "start": "00:32:12",
+    "end": "00:32:14",
+    "type": "Relevant",
+    "reasoning": "Transition: Back to PCA steps."
+  },
+  {
+    "start": "00:32:14",
+    "end": "00:32:19",
+    "type": "Relevant",
+    "reasoning": "PCA Overview: Step 1 - Get Data."
+  },
+  {
+    "start": "00:32:19",
+    "end": "00:32:24",
+    "type": "Relevant",
+    "reasoning": "PCA Overview: Step 2 - Subtract Mean."
+  },
+  {
+    "start": "00:32:24",
+    "end": "00:32:37",
+    "type": "Relevant",
+    "reasoning": "PCA Overview: Step 3 - Covariance Matrix."
+  },
+  {
+    "start": "00:32:37",
+    "end": "00:32:41",
+    "type": "Relevant",
+    "reasoning": "PCA Overview: Step 4 - Eigenvectors/values."
+  },
+  {
+    "start": "00:32:41",
+    "end": "00:33:28",
+    "type": "Relevant",
+    "reasoning": "PCA Overview: Step 5 - Choosing components and forming feature vector."
+  },
+  {
+    "start": "00:33:28",
+    "end": "00:33:50",
+    "type": "Relevant",
+    "reasoning": "Example: Applying these steps to a specific dataset."
+  },
+  {
+    "start": "00:33:50",
+    "end": "00:34:11",
+    "type": "Relevant",
+    "reasoning": "Dataset: Showing a 10-row, 2-column dataset."
+  },
+  {
+    "start": "00:34:11",
+    "end": "00:34:14",
+    "type": "Relevant",
+    "reasoning": "Step 2: Calculating means."
+  },
+  {
+    "start": "00:34:14",
+    "end": "00:34:30",
+    "type": "Relevant",
+    "reasoning": "Result: Mean X = 1.81, Mean Y = 1.91."
+  },
+  {
+    "start": "00:34:30",
+    "end": "00:34:39",
+    "type": "Relevant",
+    "reasoning": "Action: Subtracting means from the dataset."
+  },
+  {
+    "start": "00:34:39",
+    "end": "00:34:40",
+    "type": "Relevant",
+    "reasoning": "Result: Showing the 'DataAdjust' table."
+  },
+  {
+    "start": "00:34:40",
+    "end": "00:34:43",
+    "type": "Relevant",
+    "reasoning": "Visual verification: Plotting the adjusted data (centered at 0,0)."
+  },
+  {
+    "start": "00:34:43",
+    "end": "00:34:50",
+    "type": "Relevant",
+    "reasoning": "Step 3: Calculating Covariance Matrix."
+  },
+  {
+    "start": "00:34:50",
+    "end": "00:34:57",
+    "type": "Relevant",
+    "reasoning": "Calculation: Using the formula on the adjusted data."
+  },
+  {
+    "start": "00:34:57",
+    "end": "00:35:11",
+    "type": "Relevant",
+    "reasoning": "Result: Showing the 2x2 Covariance Matrix."
+  },
+  {
+    "start": "00:35:11",
+    "end": "00:35:22",
+    "type": "Relevant",
+    "reasoning": "Note: Values are floating point, calculation is tedious but possible."
+  },
+  {
+    "start": "00:35:22",
+    "end": "00:35:37",
+    "type": "Relevant",
+    "reasoning": "Step 4: Calculating Eigenvectors/Values from Covariance Matrix."
+  },
+  {
+    "start": "00:35:37",
+    "end": "00:35:43",
+    "type": "Relevant",
+    "reasoning": "Result: Displaying the calculated eigenvalues (0.049, 1.28)."
+  },
+  {
+    "start": "00:35:43",
+    "end": "00:35:50",
+    "type": "Relevant",
+    "reasoning": "Result: Displaying the corresponding eigenvectors."
+  },
+  {
+    "start": "00:35:50",
+    "end": "00:36:06",
+    "type": "Relevant",
+    "reasoning": "Matching: Associating each vector with its value."
+  },
+  {
+    "start": "00:36:06",
+    "end": "00:36:15",
+    "type": "Relevant",
+    "reasoning": "Clarification: Precision of values (floating points)."
+  },
+  {
+    "start": "00:36:15",
+    "end": "00:36:18",
+    "type": "Relevant",
+    "reasoning": "Step 5: Forming the Feature Vector."
+  },
+  {
+    "start": "00:36:18",
+    "end": "00:36:29",
+    "type": "Relevant",
+    "reasoning": "Criteria: Selecting the eigenvector with the highest eigenvalue."
+  },
+  {
+    "start": "00:36:29",
+    "end": "00:36:30",
+    "type": "Relevant",
+    "reasoning": "Procedure: Sorting eigenvalues in descending order."
+  },
+  {
+    "start": "00:36:30",
+    "end": "00:36:33",
+    "type": "Relevant",
+    "reasoning": "Selection: Identifying the top components (1.28 > 0.049)."
+  },
+  {
+    "start": "00:36:33",
+    "end": "00:36:40",
+    "type": "Relevant",
+    "reasoning": "Ordering: Placing the vector for 1.28 first."
+  },
+  {
+    "start": "00:36:40",
+    "end": "00:36:48",
+    "type": "Relevant",
+    "reasoning": "Ordering: Placing the vector for 0.049 second."
+  },
+  {
+    "start": "00:36:48",
+    "end": "00:36:50",
+    "type": "Relevant",
+    "reasoning": "Result: Showing the Feature Vector matrix."
+  },
+  {
+    "start": "00:36:50",
+    "end": "00:37:34",
+    "type": "Relevant",
+    "reasoning": "Concept extension: Dimensionality reduction scenario (1000 features -> 10 features)."
+  },
+  {
+    "start": "00:37:34",
+    "end": "00:37:39",
+    "type": "Relevant",
+    "reasoning": "Scenario: If we have 1000 eigenvalues, we sort and pick top 10."
+  },
+  {
+    "start": "00:37:39",
+    "end": "00:37:43",
+    "type": "Relevant",
+    "reasoning": "Outcome: The feature vector will contain only those 10 eigenvectors."
+  },
+  {
+    "start": "00:37:43",
+    "end": "00:37:48",
+    "type": "Relevant",
+    "reasoning": "Application: In this 2D example, we have 2 eigenvalues."
+  },
+  {
+    "start": "00:37:48",
+    "end": "00:37:54",
+    "type": "Relevant",
+    "reasoning": "Decision: We could keep both or just one."
+  },
+  {
+    "start": "00:37:54",
+    "end": "00:37:59",
+    "type": "Relevant",
+    "reasoning": "Visualization: PC1 vs PC2."
+  },
+  {
+    "start": "00:37:59",
+    "end": "00:38:09",
+    "type": "Relevant",
+    "reasoning": "Explanation: PC1 captures the most variance (discriminative capability)."
+  },
+  {
+    "start": "00:38:09",
+    "end": "00:38:17",
+    "type": "Relevant",
+    "reasoning": "Conclusion: Training with just PC1 might be sufficient."
+  },
+  {
+    "start": "00:38:17",
+    "end": "00:38:21",
+    "type": "Relevant",
+    "reasoning": "Comparison: PC2 has less variability/info."
+  },
+  {
+    "start": "00:38:21",
+    "end": "00:38:25",
+    "type": "Relevant",
+    "reasoning": "Action: Discarding the less important components."
+  },
+  {
+    "start": "00:38:25",
+    "end": "00:38:33",
+    "type": "Relevant",
+    "reasoning": "Step 6: Deriving the new dataset."
+  },
+  {
+    "start": "00:38:33",
+    "end": "00:38:34",
+    "type": "Relevant",
+    "reasoning": "Formula: FinalData = RowFeatureVector * RowDataAdjust."
+  },
+  {
+    "start": "00:38:34",
+    "end": "00:38:39",
+    "type": "Relevant",
+    "reasoning": "Operation: Transposing the Feature Vector."
+  },
+  {
+    "start": "00:38:39",
+    "end": "00:38:55",
+    "type": "Relevant",
+    "reasoning": "Operation: Transposing the DataAdjust (columns to rows)."
+  },
+  {
+    "start": "00:38:55",
+    "end": "00:39:14",
+    "type": "Relevant",
+    "reasoning": "Dimensional Analysis: Checking matrix dimensions (2x2 * 2x10)."
+  },
+  {
+    "start": "00:39:14",
+    "end": "00:39:20",
+    "type": "Relevant",
+    "reasoning": "Instruction: Why we need the transpose (to match dimensions)."
+  },
+  {
+    "start": "00:39:20",
+    "end": "00:39:23",
+    "type": "Relevant",
+    "reasoning": "Result: 2x10 matrix."
+  },
+  {
+    "start": "00:39:23",
+    "end": "00:39:27",
+    "type": "Relevant",
+    "reasoning": "Formatting: Transposing back to 10x2 (Final Data)."
+  },
+  {
+    "start": "00:39:27",
+    "end": "00:39:28",
+    "type": "Relevant",
+    "reasoning": "Result display: Showing the transformed data table."
+  },
+  {
+    "start": "00:39:28",
+    "end": "00:39:32",
+    "type": "Relevant",
+    "reasoning": "Observation: Values are totally different from original."
+  },
+  {
+    "start": "00:39:32",
+    "end": "00:39:35",
+    "type": "Relevant",
+    "reasoning": "Naming: These are now PC1 and PC2, not X and Y."
+  },
+  {
+    "start": "00:39:35",
+    "end": "00:39:38",
+    "type": "Relevant",
+    "reasoning": "Significance: Most variability is in PC1."
+  },
+  {
+    "start": "00:39:38",
+    "end": "00:39:42",
+    "type": "Relevant",
+    "reasoning": "Visualization: Plotting the new data along axes."
+  },
+  {
+    "start": "00:39:42",
+    "end": "00:39:47",
+    "type": "Relevant",
+    "reasoning": "Reconstruction: Getting original data back."
+  },
+  {
+    "start": "00:39:47",
+    "end": "00:40:05",
+    "type": "Relevant",
+    "reasoning": "Conditions: Possible only if we kept all components."
+  },
+  {
+    "start": "00:40:05",
+    "end": "00:40:12",
+    "type": "Relevant",
+    "reasoning": "Trade-off: Loss of information if components were discarded."
+  },
+  {
+    "start": "00:40:12",
+    "end": "00:40:19",
+    "type": "Relevant",
+    "reasoning": "Formula: Inverse operation (Transpose and Add Mean)."
+  },
+  {
+    "start": "00:40:19",
+    "end": "00:40:29",
+    "type": "Relevant",
+    "reasoning": "Use case: Typically we don't need this step, as transformation is the goal."
+  },
+  {
+    "start": "00:40:29",
+    "end": "00:40:32",
+    "type": "Relevant",
+    "reasoning": "Closing remarks on theory."
+  },
+  {
+    "start": "00:40:32",
+    "end": "00:40:34",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to Code Implementation."
+  },
+  {
+    "start": "00:40:34",
+    "end": "00:40:38",
+    "type": "Relevant",
+    "reasoning": "Code Intro: Python implementation using NumPy."
+  },
+  {
+    "start": "00:40:38",
+    "end": "00:40:55",
+    "type": "Relevant",
+    "reasoning": "Code Walkthrough: Imports (numpy array, mean, cov, eig)."
+  },
+  {
+    "start": "00:40:55",
+    "end": "00:41:03",
+    "type": "Relevant",
+    "reasoning": "Code Walkthrough: Defining the matrix A."
+  },
+  {
+    "start": "00:41:03",
+    "end": "00:41:05",
+    "type": "Relevant",
+    "reasoning": "Code Walkthrough: Calculating mean."
+  },
+  {
+    "start": "00:41:05",
+    "end": "00:41:09",
+    "type": "Relevant",
+    "reasoning": "Code Walkthrough: Subtracting mean (centering data)."
+  },
+  {
+    "start": "00:41:09",
+    "end": "00:41:15",
+    "type": "Relevant",
+    "reasoning": "Code Walkthrough: Calculating Covariance Matrix (cov)."
+  },
+  {
+    "start": "00:41:15",
+    "end": "00:41:17",
+    "type": "Relevant",
+    "reasoning": "Code Walkthrough: Calculating Eigenvalues/vectors (eig)."
+  },
+  {
+    "start": "00:41:17",
+    "end": "00:41:24",
+    "type": "Relevant",
+    "reasoning": "Output analysis: Showing the printed results."
+  },
+  {
+    "start": "00:41:24",
+    "end": "00:41:27",
+    "type": "Relevant",
+    "reasoning": "Projecting Data: Dot product calculation."
+  },
+  {
+    "start": "00:41:27",
+    "end": "00:41:34",
+    "type": "Relevant",
+    "reasoning": "Library Usage: Introducing Scikit-learn PCA."
+  },
+  {
+    "start": "00:41:34",
+    "end": "00:41:43",
+    "type": "Relevant",
+    "reasoning": "Library Code: `from sklearn.decomposition import PCA`."
+  },
+  {
+    "start": "00:41:43",
+    "end": "00:41:46",
+    "type": "Relevant",
+    "reasoning": "Library Code: Setting `n_components=2`."
+  },
+  {
+    "start": "00:41:46",
+    "end": "00:41:49",
+    "type": "Relevant",
+    "reasoning": "Library Code: `pca.fit(X_train)`."
+  },
+  {
+    "start": "00:41:49",
+    "end": "00:42:01",
+    "type": "Relevant",
+    "reasoning": "Library Code: `transform`."
+  },
+  {
+    "start": "00:42:01",
+    "end": "00:42:06",
+    "type": "Relevant",
+    "reasoning": "Application: Using PCA output in Logistic Regression."
+  },
+  {
+    "start": "00:42:06",
+    "end": "00:42:12",
+    "type": "Relevant",
+    "reasoning": "Visualization code: `plot_decision_regions`."
+  },
+  {
+    "start": "00:42:12",
+    "end": "00:42:13",
+    "type": "Relevant",
+    "reasoning": "Visualization result: Showing the decision boundary plot."
+  },
+  {
+    "start": "00:42:13",
+    "end": "00:42:16",
+    "type": "Relevant",
+    "reasoning": "Graph interpretation: Distinct clusters in PC space."
+  },
+  {
+    "start": "00:42:16",
+    "end": "00:42:22",
+    "type": "Relevant",
+    "reasoning": "Conclusion: PCA facilitates classification."
+  },
+  {
+    "start": "00:42:22",
+    "end": "00:42:46",
+    "type": "Relevant",
+    "reasoning": "Discussion: Comparison between manual implementation and library function."
+  },
+  {
+    "start": "00:42:46",
+    "end": "00:43:01",
+    "type": "Relevant",
+    "reasoning": "Recap: Importance of understanding the math behind the black box."
+  },
+  {
+    "start": "00:43:01",
+    "end": "00:43:27",
+    "type": "Relevant",
+    "reasoning": "Q&A/Outro: Closing remarks and thanks."
+  },
+  {
+    "start": "00:43:27",
+    "end": "00:43:33",
+    "type": "Relevant",
+    "reasoning": "Code detail: Clarifying `cov(C.T)` transpose in numpy code."
+  },
+  {
+    "start": "00:43:33",
+    "end": "00:43:45",
+    "type": "Relevant",
+    "reasoning": "Code detail: Explanation of row vs column major in numpy."
+  },
+  {
+    "start": "00:43:45",
+    "end": "00:43:48",
+    "type": "Relevant",
+    "reasoning": "Visual check: confirming code output."
+  },
+  {
+    "start": "00:43:48",
+    "end": "00:43:53",
+    "type": "Relevant",
+    "reasoning": "Recap: Eigenvalues printing."
+  },
+  {
+    "start": "00:43:53",
+    "end": "00:43:59",
+    "type": "Relevant",
+    "reasoning": "Recap: Eigenvectors printing."
+  },
+  {
+    "start": "00:43:59",
+    "end": "00:44:11",
+    "type": "Relevant",
+    "reasoning": "Visual check: The code output matches the manual calculation slide."
+  },
+  {
+    "start": "00:44:11",
+    "end": "00:44:20",
+    "type": "Relevant",
+    "reasoning": "Code detail: Forming the projection matrix via dot product."
+  },
+  {
+    "start": "00:44:20",
+    "end": "00:44:27",
+    "type": "Relevant",
+    "reasoning": "Code detail: Showing final projected values."
+  },
+  {
+    "start": "00:44:27",
+    "end": "00:44:31",
+    "type": "Relevant",
+    "reasoning": "Transition: Moving to plotting code."
+  },
+  {
+    "start": "00:44:31",
+    "end": "00:44:42",
+    "type": "Relevant",
+    "reasoning": "Plotting code: Matplotlib setup."
+  },
+  {
+    "start": "00:44:42",
+    "end": "00:44:49",
+    "type": "Relevant",
+    "reasoning": "Plotting code: Defining colors and markers."
+  },
+  {
+    "start": "00:44:49",
+    "end": "00:44:55",
+    "type": "Relevant",
+    "reasoning": "Plotting code: `decision_regions` function logic."
+  },
+  {
+    "start": "00:44:55",
+    "end": "00:45:08",
+    "type": "Relevant",
+    "reasoning": "Plotting code: Meshgrid creation."
+  },
+  {
+    "start": "00:45:08",
+    "end": "00:45:27",
+    "type": "Relevant",
+    "reasoning": "Plotting code: `classifier.predict` for the surface."
+  },
+  {
+    "start": "00:45:27",
+    "end": "00:45:39",
+    "type": "Relevant",
+    "reasoning": "Plotting code: `contourf` for filling colors."
+  },
+  {
+    "start": "00:45:39",
+    "end": "00:45:42",
+    "type": "Relevant",
+    "reasoning": "Plotting code: Scatter plot of data points."
+  },
+  {
+    "start": "00:45:42",
+    "end": "00:45:45",
+    "type": "Relevant",
+    "reasoning": "Visualization: The resulting decision boundary."
+  },
+  {
+    "start": "00:45:45",
+    "end": "00:45:53",
+    "type": "Relevant",
+    "reasoning": "Visual interpretation: How the logistic regression separates the PCA-transformed classes."
+  },
+  {
+    "start": "00:45:53",
+    "end": "00:45:59",
+    "type": "Relevant",
+    "reasoning": "Comparison: PCA + Logistic Regression workflow."
+  },
+  {
+    "start": "00:45:59",
+    "end": "00:46:12",
+    "type": "Relevant",
+    "reasoning": "Summary: PCA reduces dimensions to make classification feasible/visualizable."
+  },
+  {
+    "start": "00:46:12",
+    "end": "00:46:22",
+    "type": "Relevant",
+    "reasoning": "Final wrap up of the coding section."
+  },
+  {
+    "start": "00:46:22",
+    "end": "00:46:26",
+    "type": "Relevant",
+    "reasoning": "General advice: Use libraries but understand the math."
+  },
+  {
+    "start": "00:46:26",
+    "end": "00:46:30",
+    "type": "Relevant",
+    "reasoning": "Closing statement."
+  },
+  {
+    "start": "00:46:30",
+    "end": "00:46:36",
+    "type": "Relevant",
+    "reasoning": "End of class instructions."
+  },
+  {
+    "start": "00:46:36",
+    "end": "00:46:40",
+    "type": "Relevant",
+    "reasoning": "Mentioning the next lecture topic."
+  },
+  {
+    "start": "00:46:40",
+    "end": "00:46:44",
+    "type": "Relevant",
+    "reasoning": "Assignment reminder."
+  },
+  {
+    "start": "00:46:44",
+    "end": "00:46:48",
+    "type": "Relevant",
+    "reasoning": "Farewell."
+  },
+  {
+    "start": "00:46:48",
+    "end": "00:46:53",
+    "type": "Relevant",
+    "reasoning": "End of recording."
+  },
+  {
+    "start": "00:46:53",
+    "end": "00:47:00",
+    "type": "Relevant",
+    "reasoning": "Post-lecture Q&A or extra detail (if any)."
+  },
+  {
+    "start": "00:47:00",
+    "end": "00:47:03",
+    "type": "Relevant",
+    "reasoning": "Final screen hold."
+  },
+  {
+    "start": "00:47:03",
+    "end": "00:47:08",
+    "type": "Relevant",
+    "reasoning": "Stopping screen share."
+  },
+  {
+    "start": "00:47:08",
+    "end": "00:47:15",
+    "type": "Relevant",
+    "reasoning": "End of video buffer."
+  },
+  {
+    "start": "00:47:15",
+    "end": "00:47:20",
+    "type": "Relevant",
+    "reasoning": "Buffer/Silence."
+  },
+  {
+    "start": "00:47:20",
+    "end": "00:47:33",
+    "type": "Relevant",
+    "reasoning": "Additional example or content (if present in original beyond main lecture)."
+  },
+  {
+    "start": "00:47:33",
+    "end": "00:47:38",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:47:38",
+    "end": "00:47:41",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:47:41",
+    "end": "00:47:43",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:47:43",
+    "end": "00:47:45",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:47:45",
+    "end": "00:47:48",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:47:48",
+    "end": "00:47:55",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:47:55",
+    "end": "00:47:57",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:47:57",
+    "end": "00:48:11",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:48:11",
+    "end": "00:48:20",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:48:20",
+    "end": "00:48:27",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:48:27",
+    "end": "00:48:39",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:48:39",
+    "end": "00:48:53",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:48:53",
+    "end": "00:48:59",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:48:59",
+    "end": "00:49:09",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:09",
+    "end": "00:49:19",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:19",
+    "end": "00:49:24",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:24",
+    "end": "00:49:34",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:34",
+    "end": "00:49:36",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:36",
+    "end": "00:49:39",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:39",
+    "end": "00:49:43",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:43",
+    "end": "00:49:49",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:49",
+    "end": "00:49:53",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:49:53",
+    "end": "00:50:02",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:50:02",
+    "end": "00:50:14",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:50:14",
+    "end": "00:50:25",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:50:25",
+    "end": "00:50:36",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:50:36",
+    "end": "00:50:55",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:50:55",
+    "end": "00:51:08",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:51:08",
+    "end": "00:51:12",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:51:12",
+    "end": "00:51:33",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:51:33",
+    "end": "00:51:40",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:51:40",
+    "end": "00:51:51",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:51:51",
+    "end": "00:52:04",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:04",
+    "end": "00:52:08",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:08",
+    "end": "00:52:17",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:17",
+    "end": "00:52:19",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:19",
+    "end": "00:52:30",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:30",
+    "end": "00:52:31",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:31",
+    "end": "00:52:35",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:35",
+    "end": "00:52:41",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:41",
+    "end": "00:52:43",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:43",
+    "end": "00:52:45",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:45",
+    "end": "00:52:56",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:52:56",
+    "end": "00:53:08",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:08",
+    "end": "00:53:13",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:13",
+    "end": "00:53:15",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:15",
+    "end": "00:53:28",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:28",
+    "end": "00:53:32",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:32",
+    "end": "00:53:44",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:44",
+    "end": "00:53:46",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:46",
+    "end": "00:53:50",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:50",
+    "end": "00:53:56",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:53:56",
+    "end": "00:54:02",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:02",
+    "end": "00:54:09",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:09",
+    "end": "00:54:11",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:11",
+    "end": "00:54:14",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:14",
+    "end": "00:54:17",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:17",
+    "end": "00:54:25",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:25",
+    "end": "00:54:29",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:29",
+    "end": "00:54:50",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:50",
+    "end": "00:54:58",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:54:58",
+    "end": "00:55:05",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:05",
+    "end": "00:55:08",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:08",
+    "end": "00:55:09",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:09",
+    "end": "00:55:13",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:13",
+    "end": "00:55:17",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:17",
+    "end": "00:55:31",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:31",
+    "end": "00:55:38",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:38",
+    "end": "00:55:44",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:44",
+    "end": "00:55:47",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:47",
+    "end": "00:55:49",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:49",
+    "end": "00:55:52",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:52",
+    "end": "00:55:56",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:56",
+    "end": "00:55:59",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:55:59",
+    "end": "00:56:00",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:56:00",
+    "end": "00:56:03",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:56:03",
+    "end": "00:56:18",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:56:18",
+    "end": "00:56:29",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:56:29",
+    "end": "00:56:35",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:56:35",
+    "end": "00:56:40",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:56:40",
+    "end": "00:56:45",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:56:45",
+    "end": "00:56:51",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:56:51",
+    "end": "00:57:07",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:57:07",
+    "end": "00:57:13",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:57:13",
+    "end": "00:57:23",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:57:23",
+    "end": "00:57:26",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:57:26",
+    "end": "00:57:29",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:57:29",
+    "end": "00:57:38",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:57:38",
+    "end": "00:57:41",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:57:41",
+    "end": "00:57:49",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:57:49",
+    "end": "00:58:08",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:58:08",
+    "end": "00:58:12",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:58:12",
+    "end": "00:58:29",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:58:29",
+    "end": "00:58:58",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:58:58",
+    "end": "00:59:04",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:04",
+    "end": "00:59:17",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:17",
+    "end": "00:59:23",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:23",
+    "end": "00:59:33",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:33",
+    "end": "00:59:35",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:35",
+    "end": "00:59:38",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:38",
+    "end": "00:59:43",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:43",
+    "end": "00:59:48",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:48",
+    "end": "00:59:55",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:55",
+    "end": "00:59:57",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "00:59:57",
+    "end": "01:00:06",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:00:06",
+    "end": "01:00:10",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:00:10",
+    "end": "01:00:19",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:00:19",
+    "end": "01:00:33",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:00:33",
+    "end": "01:00:43",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:00:43",
+    "end": "01:01:05",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:01:05",
+    "end": "01:01:13",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:01:13",
+    "end": "01:01:18",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:01:18",
+    "end": "01:01:29",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:01:29",
+    "end": "01:01:36",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:01:36",
+    "end": "01:01:39",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:01:39",
+    "end": "01:02:05",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:05",
+    "end": "01:02:13",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:13",
+    "end": "01:02:20",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:20",
+    "end": "01:02:26",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:26",
+    "end": "01:02:28",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:28",
+    "end": "01:02:38",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:38",
+    "end": "01:02:44",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:44",
+    "end": "01:02:48",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:48",
+    "end": "01:02:54",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:02:54",
+    "end": "01:03:07",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  },
+  {
+    "start": "01:03:07",
+    "end": "01:03:13",
+    "type": "Relevant",
+    "reasoning": "Continued explanation."
+  }
+]

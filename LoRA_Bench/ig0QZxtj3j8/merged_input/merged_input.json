@@ -1,0 +1,5480 @@
+[
+    {
+        "id": 0,
+        "start": 0,
+        "end": 15.04,
+        "frames": [
+            "frame_00000.png",
+            "frame_00001.png",
+            "frame_00002.png",
+            "frame_00003.png",
+            "frame_00004.png",
+            "frame_00005.png"
+        ],
+        "transcript": "Hello, everyone."
+    },
+    {
+        "id": 1,
+        "start": 15.04,
+        "end": 17.28,
+        "frames": [
+            "frame_00006.png",
+            "frame_00007.png"
+        ],
+        "transcript": "So, can you hear me clearly?"
+    },
+    {
+        "id": 2,
+        "start": 17.28,
+        "end": 18.8,
+        "frames": [
+            "frame_00008.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 3,
+        "start": 18.8,
+        "end": 19.28,
+        "frames": [
+            "frame_00009.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 4,
+        "start": 19.28,
+        "end": 21.12,
+        "frames": [
+            "frame_00010.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 5,
+        "start": 21.12,
+        "end": 26.48,
+        "frames": [
+            "frame_00011.png",
+            "frame_00012.png"
+        ],
+        "transcript": "And can you see my computer screen?"
+    },
+    {
+        "id": 6,
+        "start": 26.48,
+        "end": 27.44,
+        "frames": [
+            "frame_00013.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 7,
+        "start": 27.44,
+        "end": 28.0,
+        "frames": [
+            "frame_00014.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 8,
+        "start": 28.0,
+        "end": 30.16,
+        "frames": [
+            "frame_00015.png",
+            "frame_00016.png"
+        ],
+        "transcript": "Okay, thank you."
+    },
+    {
+        "id": 9,
+        "start": 30.16,
+        "end": 31.36,
+        "frames": [
+            "frame_00017.png",
+            "frame_00018.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 10,
+        "start": 31.36,
+        "end": 38.16,
+        "frames": [
+            "frame_00019.png"
+        ],
+        "transcript": "So, welcome you to another lecture of data science."
+    },
+    {
+        "id": 11,
+        "start": 38.16,
+        "end": 43.2,
+        "frames": [
+            "frame_00020.png",
+            "frame_00021.png"
+        ],
+        "transcript": "And in this lecture, we will discuss about the hypothesis testing."
+    },
+    {
+        "id": 12,
+        "start": 43.2,
+        "end": 53.44,
+        "frames": [
+            "frame_00022.png"
+        ],
+        "transcript": "So, specifically, hypothesis testing is one of the data science method to test the educated gauges."
+    },
+    {
+        "id": 13,
+        "start": 53.44,
+        "end": 69.44,
+        "frames": [
+            "frame_00023.png"
+        ],
+        "transcript": "So, not only in data science application, in research domain, specifically in social science research and business research."
+    },
+    {
+        "id": 14,
+        "start": 69.44,
+        "end": 73.36,
+        "frames": [
+            "frame_00024.png"
+        ],
+        "transcript": "So, hypothesis testing is one of the bigger part."
+    },
+    {
+        "id": 15,
+        "start": 73.36,
+        "end": 82.48,
+        "frames": [
+            "frame_00025.png"
+        ],
+        "transcript": "So, that's why we need to know the hypothesis testing both for our data science application and for research."
+    },
+    {
+        "id": 16,
+        "start": 82.48,
+        "end": 87.52,
+        "frames": [
+            "frame_00026.png"
+        ],
+        "transcript": "So, firstly, the definition."
+    },
+    {
+        "id": 17,
+        "start": 87.52,
+        "end": 90.64,
+        "frames": [
+            "frame_00027.png"
+        ],
+        "transcript": "So, what is hypothesis?"
+    },
+    {
+        "id": 18,
+        "start": 90.64,
+        "end": 98.16,
+        "frames": [
+            "frame_00028.png"
+        ],
+        "transcript": "Hypothesis is an educated guess about something in the world around you."
+    },
+    {
+        "id": 19,
+        "start": 98.16,
+        "end": 104.96,
+        "frames": [
+            "frame_00029.png"
+        ],
+        "transcript": "That is, we can say it's just your claim around the world."
+    },
+    {
+        "id": 20,
+        "start": 104.96,
+        "end": 110.88,
+        "frames": [
+            "frame_00030.png"
+        ],
+        "transcript": "That means whatever you can say, you can predict, you can guess."
+    },
+    {
+        "id": 21,
+        "start": 110.88,
+        "end": 114.56,
+        "frames": [
+            "frame_00031.png"
+        ],
+        "transcript": "That can be defined as the hypothesis."
+    },
+    {
+        "id": 22,
+        "start": 114.56,
+        "end": 120.56,
+        "frames": [
+            "frame_00032.png"
+        ],
+        "transcript": "And one thing we should know that it should be testable."
+    },
+    {
+        "id": 23,
+        "start": 120.56,
+        "end": 123.12,
+        "frames": [
+            "frame_00033.png"
+        ],
+        "transcript": "So, how can we test that?"
+    },
+    {
+        "id": 24,
+        "start": 123.12,
+        "end": 127.36,
+        "frames": [
+            "frame_00034.png"
+        ],
+        "transcript": "Either by experiment or maybe by observation."
+    },
+    {
+        "id": 25,
+        "start": 127.36,
+        "end": 135.76,
+        "frames": [
+            "frame_00035.png"
+        ],
+        "transcript": "So, in machine learning domain, in data science domain, we also test the hypothesis."
+    },
+    {
+        "id": 26,
+        "start": 135.76,
+        "end": 140.16,
+        "frames": [
+            "frame_00036.png"
+        ],
+        "transcript": "And those methods are not like a statistical method."
+    },
+    {
+        "id": 27,
+        "start": 140.16,
+        "end": 145.04,
+        "frames": [
+            "frame_00037.png"
+        ],
+        "transcript": "And those methods, usually we use some experiment or maybe data."
+    },
+    {
+        "id": 28,
+        "start": 145.04,
+        "end": 148.48,
+        "frames": [
+            "frame_00038.png"
+        ],
+        "transcript": "Those data, we have performed several experiments."
+    },
+    {
+        "id": 29,
+        "start": 148.48,
+        "end": 152.24,
+        "frames": [
+            "frame_00039.png"
+        ],
+        "transcript": "And after that, we prove our hypothesis."
+    },
+    {
+        "id": 30,
+        "start": 152.24,
+        "end": 156.96,
+        "frames": [
+            "frame_00040.png"
+        ],
+        "transcript": "And another thing is the observations."
+    },
+    {
+        "id": 31,
+        "start": 156.96,
+        "end": 160.4,
+        "frames": [
+            "frame_00041.png"
+        ],
+        "transcript": "Okay, that means some survey observations."
+    },
+    {
+        "id": 32,
+        "start": 160.4,
+        "end": 166.64,
+        "frames": [
+            "frame_00042.png"
+        ],
+        "transcript": "We can collect the data, and based on that, we can prove our hypothesis."
+    },
+    {
+        "id": 33,
+        "start": 166.64,
+        "end": 175.84,
+        "frames": [
+            "frame_00043.png"
+        ],
+        "transcript": "Here, some example of hypothesis, like a new medicine you think might work."
+    },
+    {
+        "id": 34,
+        "start": 175.84,
+        "end": 181.68,
+        "frames": [
+            "frame_00044.png"
+        ],
+        "transcript": "So, just it's your thought, it's your gaze."
+    },
+    {
+        "id": 35,
+        "start": 181.68,
+        "end": 192.16,
+        "frames": [
+            "frame_00045.png"
+        ],
+        "transcript": "Maybe someone just produced some medicine for the COVID-19."
+    },
+    {
+        "id": 36,
+        "start": 192.16,
+        "end": 202.48,
+        "frames": [
+            "frame_00046.png"
+        ],
+        "transcript": "So, he or she just gaze that is that this medicine may be but on the COVID patients."
+    },
+    {
+        "id": 37,
+        "start": 202.48,
+        "end": 207.84,
+        "frames": [
+            "frame_00047.png"
+        ],
+        "transcript": "So, this is one kind of hypothesis, but we have to test it."
+    },
+    {
+        "id": 38,
+        "start": 207.84,
+        "end": 209.84,
+        "frames": [
+            "frame_00048.png"
+        ],
+        "transcript": "We have to test it."
+    },
+    {
+        "id": 39,
+        "start": 209.84,
+        "end": 214.88,
+        "frames": [
+            "frame_00049.png"
+        ],
+        "transcript": "And another, you can say that the way of teaching you think might be better."
+    },
+    {
+        "id": 40,
+        "start": 214.88,
+        "end": 233.36,
+        "frames": [
+            "frame_00050.png"
+        ],
+        "transcript": "Some teacher can hypothesize that, okay, maybe providing the lecture sheet before the class or maybe just in advance of class, maybe it will work better."
+    },
+    {
+        "id": 41,
+        "start": 233.36,
+        "end": 237.76,
+        "frames": [
+            "frame_00051.png"
+        ],
+        "transcript": "So, this is one of the hypothesis, okay?"
+    },
+    {
+        "id": 42,
+        "start": 237.76,
+        "end": 241.12,
+        "frames": [
+            "frame_00052.png"
+        ],
+        "transcript": "And possible location of new species."
+    },
+    {
+        "id": 43,
+        "start": 241.12,
+        "end": 246.72,
+        "frames": [
+            "frame_00053.png"
+        ],
+        "transcript": "Maybe someone search the new species in different locations, like maybe in Mars."
+    },
+    {
+        "id": 44,
+        "start": 246.72,
+        "end": 251.2,
+        "frames": [
+            "frame_00054.png"
+        ],
+        "transcript": "So, the possible looks is just the gaze."
+    },
+    {
+        "id": 45,
+        "start": 251.2,
+        "end": 255.12,
+        "frames": [
+            "frame_00055.png"
+        ],
+        "transcript": "Maybe he can find new species in Mars."
+    },
+    {
+        "id": 46,
+        "start": 255.12,
+        "end": 260.4,
+        "frames": [
+            "frame_00056.png"
+        ],
+        "transcript": "Okay, a fairer way to administer a standardized test."
+    },
+    {
+        "id": 47,
+        "start": 260.4,
+        "end": 263.12,
+        "frames": [
+            "frame_00057.png"
+        ],
+        "transcript": "There are various standards tests."
+    },
+    {
+        "id": 48,
+        "start": 263.12,
+        "end": 269.2,
+        "frames": [
+            "frame_00058.png"
+        ],
+        "transcript": "So, someone can say that this one is more fair, that is the fairer than other one."
+    },
+    {
+        "id": 49,
+        "start": 269.2,
+        "end": 275.6,
+        "frames": [
+            "frame_00059.png"
+        ],
+        "transcript": "So, all these things, all these things are we call the hypothesis."
+    },
+    {
+        "id": 50,
+        "start": 275.6,
+        "end": 277.84,
+        "frames": [
+            "frame_00060.png"
+        ],
+        "transcript": "But this is the gauge."
+    },
+    {
+        "id": 51,
+        "start": 277.84,
+        "end": 283.76,
+        "frames": [
+            "frame_00061.png"
+        ],
+        "transcript": "So, what we have to do, we have to test it whether our gaze is wrong or right."
+    },
+    {
+        "id": 52,
+        "start": 283.76,
+        "end": 294.96,
+        "frames": [
+            "frame_00062.png"
+        ],
+        "transcript": "So, we can say that it can really be anything at all as long as you can put it to the test."
+    },
+    {
+        "id": 53,
+        "start": 294.96,
+        "end": 303.04,
+        "frames": [
+            "frame_00063.png"
+        ],
+        "transcript": "So, that means we can say this is an hypothesis if that hypothesis is testable."
+    },
+    {
+        "id": 54,
+        "start": 303.04,
+        "end": 309.2,
+        "frames": [
+            "frame_00064.png",
+            "frame_00065.png"
+        ],
+        "transcript": "So, some of the hypothesis statements, you can see this."
+    },
+    {
+        "id": 55,
+        "start": 309.2,
+        "end": 319.28,
+        "frames": [
+            "frame_00066.png"
+        ],
+        "transcript": "If I do these two and independent variables, then this will happen to the dependent variables."
+    },
+    {
+        "id": 56,
+        "start": 319.28,
+        "end": 331.44,
+        "frames": [
+            "frame_00067.png"
+        ],
+        "transcript": "So, here we can say based on the value of x, based on the value of x, we want to determine the y."
+    },
+    {
+        "id": 57,
+        "start": 331.44,
+        "end": 334.88,
+        "frames": [
+            "frame_00068.png"
+        ],
+        "transcript": "Okay, maybe we can say the x square equal y."
+    },
+    {
+        "id": 58,
+        "start": 334.88,
+        "end": 339.68,
+        "frames": [
+            "frame_00069.png"
+        ],
+        "transcript": "So, that means based on the value of x, we want to determine y."
+    },
+    {
+        "id": 59,
+        "start": 339.68,
+        "end": 345.6,
+        "frames": [
+            "frame_00070.png"
+        ],
+        "transcript": "So, this y, it should be depend on x, the value of x."
+    },
+    {
+        "id": 60,
+        "start": 345.6,
+        "end": 348.72,
+        "frames": [
+            "frame_00071.png"
+        ],
+        "transcript": "So, y is our dependent variable."
+    },
+    {
+        "id": 61,
+        "start": 348.72,
+        "end": 351.52,
+        "frames": [
+            "frame_00072.png"
+        ],
+        "transcript": "Y is our dependent variable."
+    },
+    {
+        "id": 62,
+        "start": 351.52,
+        "end": 358.24,
+        "frames": [
+            "frame_00073.png"
+        ],
+        "transcript": "And x is independent variable because these values are not depend to other variables."
+    },
+    {
+        "id": 63,
+        "start": 358.24,
+        "end": 361.44,
+        "frames": [
+            "frame_00074.png"
+        ],
+        "transcript": "So, x is here, dependent variable."
+    },
+    {
+        "id": 64,
+        "start": 361.44,
+        "end": 365.6,
+        "frames": [
+            "frame_00075.png"
+        ],
+        "transcript": "So, that's why do this to an independent variable."
+    },
+    {
+        "id": 65,
+        "start": 365.6,
+        "end": 367.68,
+        "frames": [
+            "frame_00076.png"
+        ],
+        "transcript": "So, that means this variable."
+    },
+    {
+        "id": 66,
+        "start": 367.68,
+        "end": 371.04,
+        "frames": [
+            "frame_00077.png"
+        ],
+        "transcript": "Then this will happen to the depend variable."
+    },
+    {
+        "id": 67,
+        "start": 371.04,
+        "end": 373.68,
+        "frames": [
+            "frame_00078.png"
+        ],
+        "transcript": "So, this will happen to y."
+    },
+    {
+        "id": 68,
+        "start": 373.68,
+        "end": 380.64,
+        "frames": [
+            "frame_00079.png"
+        ],
+        "transcript": "So, this is the format of hypothesis statement."
+    },
+    {
+        "id": 69,
+        "start": 380.64,
+        "end": 392.0,
+        "frames": [
+            "frame_00080.png"
+        ],
+        "transcript": "That means at first we have to write the dependent variables and then at first we have to write independent variable, then we have to write the dependent variable."
+    },
+    {
+        "id": 70,
+        "start": 392.0,
+        "end": 395.68,
+        "frames": [
+            "frame_00081.png"
+        ],
+        "transcript": "Okay, here are some examples of hypothesis statement."
+    },
+    {
+        "id": 71,
+        "start": 395.68,
+        "end": 408.56,
+        "frames": [
+            "frame_00082.png"
+        ],
+        "transcript": "Okay, if I give patients counseling in addition to medication, that means the counseling plus medication, then their overall depression scale will decrease."
+    },
+    {
+        "id": 72,
+        "start": 408.56,
+        "end": 413.28,
+        "frames": [
+            "frame_00083.png"
+        ],
+        "transcript": "So, this is one of the hypothesis from psychology."
+    },
+    {
+        "id": 73,
+        "start": 413.28,
+        "end": 420.88,
+        "frames": [
+            "frame_00084.png"
+        ],
+        "transcript": "That is, counseling plus medication, then overall depression scale will decrease."
+    },
+    {
+        "id": 74,
+        "start": 420.88,
+        "end": 423.6,
+        "frames": [
+            "frame_00085.png"
+        ],
+        "transcript": "Okay, so this is one of the hypothesis."
+    },
+    {
+        "id": 75,
+        "start": 423.6,
+        "end": 441.6,
+        "frames": [
+            "frame_00086.png"
+        ],
+        "transcript": "Okay, then another hypothesis can be like if I give exams at noon instead of seven, maybe we can say that give exams at noon instead of seven, then student test scores will improve."
+    },
+    {
+        "id": 76,
+        "start": 441.6,
+        "end": 446.08,
+        "frames": [
+            "frame_00087.png"
+        ],
+        "transcript": "So, this is one of the hypothesis."
+    },
+    {
+        "id": 77,
+        "start": 446.08,
+        "end": 463.2,
+        "frames": [
+            "frame_00088.png"
+        ],
+        "transcript": "Maybe you can say that someone can think about that at noon, maybe the student will get time, or maybe you can say the brain functions of the students will work better than maybe the evening."
+    },
+    {
+        "id": 78,
+        "start": 463.2,
+        "end": 468.72,
+        "frames": [
+            "frame_00089.png"
+        ],
+        "transcript": "So, it's a gaze."
+    },
+    {
+        "id": 79,
+        "start": 468.72,
+        "end": 478.8,
+        "frames": [
+            "frame_00090.png"
+        ],
+        "transcript": "And another example it can be like, if I look in this certain location, then I am more likely to find new species."
+    },
+    {
+        "id": 80,
+        "start": 478.8,
+        "end": 485.84,
+        "frames": [
+            "frame_00091.png"
+        ],
+        "transcript": "So, this is the location and maybe the possibility of finding new spaces."
+    },
+    {
+        "id": 81,
+        "start": 485.84,
+        "end": 490.16,
+        "frames": [
+            "frame_00092.png"
+        ],
+        "transcript": "Okay, so this is also an educated case, okay."
+    },
+    {
+        "id": 82,
+        "start": 490.16,
+        "end": 495.44,
+        "frames": [
+            "frame_00093.png"
+        ],
+        "transcript": "And like, we can also build the hypothesis like this."
+    },
+    {
+        "id": 83,
+        "start": 495.44,
+        "end": 506.72,
+        "frames": [
+            "frame_00094.png"
+        ],
+        "transcript": "Okay, if I give A plus to 98% of my students, okay, then I will get two sections of CSC 47 in next semester."
+    },
+    {
+        "id": 84,
+        "start": 506.72,
+        "end": 509.04,
+        "frames": [
+            "frame_00095.png"
+        ],
+        "transcript": "Okay, this is this is just case."
+    },
+    {
+        "id": 85,
+        "start": 509.04,
+        "end": 514.72,
+        "frames": [
+            "frame_00096.png"
+        ],
+        "transcript": "We don't have the proof for it, we need to test that, okay."
+    },
+    {
+        "id": 86,
+        "start": 514.72,
+        "end": 524.08,
+        "frames": [
+            "frame_00097.png"
+        ],
+        "transcript": "And if I give A plus to 99% of my students, then there will be no excellent students in near future."
+    },
+    {
+        "id": 87,
+        "start": 524.08,
+        "end": 528.48,
+        "frames": [
+            "frame_00098.png"
+        ],
+        "transcript": "This is also just case, okay."
+    },
+    {
+        "id": 88,
+        "start": 528.48,
+        "end": 538.8,
+        "frames": [
+            "frame_00099.png"
+        ],
+        "transcript": "So, I don't know whether this one is true or false, but we can we can just have the hypothesis, hypothesis statement like this."
+    },
+    {
+        "id": 89,
+        "start": 538.8,
+        "end": 548.48,
+        "frames": [
+            "frame_00100.png"
+        ],
+        "transcript": "Okay, then another question, okay, like if I make question hard, okay, then I am more likely to become famous."
+    },
+    {
+        "id": 90,
+        "start": 548.48,
+        "end": 556.24,
+        "frames": [
+            "frame_00101.png"
+        ],
+        "transcript": "Okay, so this is another hypothesis, okay, but we didn't actually test those kind of hypothesis, okay?"
+    },
+    {
+        "id": 91,
+        "start": 556.24,
+        "end": 568.32,
+        "frames": [
+            "frame_00102.png"
+        ],
+        "transcript": "But we can test, we can test those hypothesis, okay, so that means the hypothesis and hypothesis statement, we can we can build the hypothesis statement like this."
+    },
+    {
+        "id": 92,
+        "start": 568.32,
+        "end": 585.2,
+        "frames": [
+            "frame_00103.png",
+            "frame_00104.png"
+        ],
+        "transcript": "So, in today's lecture, we will discuss about two testing method that is hypothesis testing method, and also we need to compare those two, that is when we should apply which hypothesis testing method."
+    },
+    {
+        "id": 93,
+        "start": 585.2,
+        "end": 594.32,
+        "frames": [
+            "frame_00105.png"
+        ],
+        "transcript": "So, there are some other hypothesis testing method, and those are we will discuss in our next lecture and also more."
+    },
+    {
+        "id": 94,
+        "start": 594.32,
+        "end": 601.44,
+        "frames": [
+            "frame_00106.png"
+        ],
+        "transcript": "Then, why the hypothesis testing is important."
+    },
+    {
+        "id": 95,
+        "start": 601.44,
+        "end": 621.36,
+        "frames": [
+            "frame_00107.png"
+        ],
+        "transcript": "So, specifically, in many, many case, in many domain, the result of your intuition, the result of your case, result of your claim, it should be tested."
+    },
+    {
+        "id": 96,
+        "start": 621.36,
+        "end": 626.64,
+        "frames": [
+            "frame_00108.png"
+        ],
+        "transcript": "And that's why hypothesis testing is necessary."
+    },
+    {
+        "id": 97,
+        "start": 626.64,
+        "end": 634.32,
+        "frames": [
+            "frame_00109.png"
+        ],
+        "transcript": "Hypothesis testing in statistics is a way for you to test the results of a survey."
+    },
+    {
+        "id": 98,
+        "start": 634.32,
+        "end": 640.0,
+        "frames": [
+            "frame_00110.png"
+        ],
+        "transcript": "That means maybe we can find the survey data."
+    },
+    {
+        "id": 99,
+        "start": 640.0,
+        "end": 648.08,
+        "frames": [
+            "frame_00111.png"
+        ],
+        "transcript": "But what we have to find whether this data is meaningful or not."
+    },
+    {
+        "id": 100,
+        "start": 648.08,
+        "end": 652.4,
+        "frames": [
+            "frame_00112.png"
+        ],
+        "transcript": "That means whether this data will produce the meaningful result or not."
+    },
+    {
+        "id": 101,
+        "start": 652.4,
+        "end": 661.2,
+        "frames": [
+            "frame_00113.png"
+        ],
+        "transcript": "So, many beliefs actually nullified by the hypothesis testing methods."
+    },
+    {
+        "id": 102,
+        "start": 661.2,
+        "end": 671.12,
+        "frames": [
+            "frame_00114.png"
+        ],
+        "transcript": "So, you are basically testing whether your results are valid by figuring out the odds."
+    },
+    {
+        "id": 103,
+        "start": 671.12,
+        "end": 676.4,
+        "frames": [
+            "frame_00115.png"
+        ],
+        "transcript": "That means whether you get this result by chance or not."
+    },
+    {
+        "id": 104,
+        "start": 676.4,
+        "end": 678.88,
+        "frames": [
+            "frame_00116.png"
+        ],
+        "transcript": "Or it is a regular phenomenon."
+    },
+    {
+        "id": 105,
+        "start": 678.88,
+        "end": 680.8,
+        "frames": [
+            "frame_00117.png"
+        ],
+        "transcript": "Or it is in the data."
+    },
+    {
+        "id": 106,
+        "start": 680.8,
+        "end": 681.52,
+        "frames": [
+            "frame_00118.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 107,
+        "start": 681.52,
+        "end": 688.48,
+        "frames": [
+            "frame_00119.png"
+        ],
+        "transcript": "So, that means whether your result you get by chance or maybe it is a regular phenomenon."
+    },
+    {
+        "id": 108,
+        "start": 688.48,
+        "end": 694.4,
+        "frames": [
+            "frame_00120.png"
+        ],
+        "transcript": "So, that should be tested."
+    },
+    {
+        "id": 109,
+        "start": 694.4,
+        "end": 697.12,
+        "frames": [
+            "frame_00121.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 110,
+        "start": 697.12,
+        "end": 707.6,
+        "frames": [
+            "frame_00122.png"
+        ],
+        "transcript": "If your result you just get by chance, then we will not repeat those experiments and we will not get that results again and again."
+    },
+    {
+        "id": 111,
+        "start": 707.6,
+        "end": 712.96,
+        "frames": [
+            "frame_00123.png"
+        ],
+        "transcript": "So, that's why we call it the experiment will not be repeatable."
+    },
+    {
+        "id": 112,
+        "start": 712.96,
+        "end": 716.64,
+        "frames": [
+            "frame_00124.png"
+        ],
+        "transcript": "So, that means it has no use, or maybe you can say little use."
+    },
+    {
+        "id": 113,
+        "start": 716.64,
+        "end": 722.88,
+        "frames": [
+            "frame_00125.png"
+        ],
+        "transcript": "Okay, that's why hypothesis testing is necessary."
+    },
+    {
+        "id": 114,
+        "start": 722.88,
+        "end": 745.52,
+        "frames": [
+            "frame_00126.png"
+        ],
+        "transcript": "Sometimes we claim that maybe you can say that COVID-19 just maybe in this COVID-19, the number of students drops, like maybe 50% of students dropped, or maybe 30% student drops."
+    },
+    {
+        "id": 115,
+        "start": 745.52,
+        "end": 753.28,
+        "frames": [
+            "frame_00127.png"
+        ],
+        "transcript": "So, it's just one saying, okay, but we have to test that whether this is true or not."
+    },
+    {
+        "id": 116,
+        "start": 753.28,
+        "end": 765.36,
+        "frames": [
+            "frame_00128.png"
+        ],
+        "transcript": "Or maybe someone just picks the sample and they find that, okay, maybe I don't know 30% is dropped, but is it true for the whole population?"
+    },
+    {
+        "id": 117,
+        "start": 765.36,
+        "end": 768.0,
+        "frames": [
+            "frame_00129.png"
+        ],
+        "transcript": "That should be tested, okay?"
+    },
+    {
+        "id": 118,
+        "start": 768.0,
+        "end": 773.68,
+        "frames": [
+            "frame_00130.png"
+        ],
+        "transcript": "So, that's why someone can find the data maybe for some reason."
+    },
+    {
+        "id": 119,
+        "start": 773.68,
+        "end": 776.4,
+        "frames": [
+            "frame_00131.png"
+        ],
+        "transcript": "But that can be by chance."
+    },
+    {
+        "id": 120,
+        "start": 776.4,
+        "end": 781.36,
+        "frames": [
+            "frame_00132.png",
+            "frame_00133.png"
+        ],
+        "transcript": "So, that's why we have to test the hypothesis."
+    },
+    {
+        "id": 121,
+        "start": 781.36,
+        "end": 786.32,
+        "frames": [
+            "frame_00134.png",
+            "frame_00135.png"
+        ],
+        "transcript": "So, is there any question up to this slide?"
+    },
+    {
+        "id": 122,
+        "start": 786.32,
+        "end": 803.0,
+        "frames": [
+            "frame_00136.png",
+            "frame_00137.png",
+            "frame_00138.png"
+        ],
+        "transcript": "[Silent] for 16.96 sec"
+    },
+    {
+        "id": 123,
+        "start": 803.0,
+        "end": 804.4,
+        "frames": [
+            "frame_00139.png",
+            "frame_00140.png"
+        ],
+        "transcript": "Maybe no question?"
+    },
+    {
+        "id": 124,
+        "start": 804.4,
+        "end": 806.96,
+        "frames": [
+            "frame_00141.png",
+            "frame_00142.png"
+        ],
+        "transcript": "No, sir, no questions."
+    },
+    {
+        "id": 125,
+        "start": 806.96,
+        "end": 807.84,
+        "frames": [
+            "frame_00143.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 126,
+        "start": 807.84,
+        "end": 814.08,
+        "frames": [
+            "frame_00144.png",
+            "frame_00145.png"
+        ],
+        "transcript": "So, now, how to formulate the hypothesis?"
+    },
+    {
+        "id": 127,
+        "start": 814.08,
+        "end": 819.92,
+        "frames": [
+            "frame_00146.png"
+        ],
+        "transcript": "Specifically, we divide the hypothesis in major two groups."
+    },
+    {
+        "id": 128,
+        "start": 819.92,
+        "end": 825.76,
+        "frames": [
+            "frame_00147.png"
+        ],
+        "transcript": "One is called null hypothesis, another one is called alternate hypothesis."
+    },
+    {
+        "id": 129,
+        "start": 825.76,
+        "end": 835.2,
+        "frames": [
+            "frame_00148.png"
+        ],
+        "transcript": "So, how to formulate the null hypothesis or how to find the alternate hypothesis?"
+    },
+    {
+        "id": 130,
+        "start": 835.2,
+        "end": 836.8,
+        "frames": [
+            "frame_00149.png"
+        ],
+        "transcript": "We have to know that."
+    },
+    {
+        "id": 131,
+        "start": 836.8,
+        "end": 839.84,
+        "frames": [
+            "frame_00150.png"
+        ],
+        "transcript": "So, what is null hypothesis?"
+    },
+    {
+        "id": 132,
+        "start": 839.84,
+        "end": 842.96,
+        "frames": [
+            "frame_00151.png"
+        ],
+        "transcript": "The null hypothesis is always the accepted fact."
+    },
+    {
+        "id": 133,
+        "start": 842.96,
+        "end": 845.68,
+        "frames": [
+            "frame_00152.png"
+        ],
+        "transcript": "Always the accepted fact."
+    },
+    {
+        "id": 134,
+        "start": 845.68,
+        "end": 848.64,
+        "frames": [
+            "frame_00153.png"
+        ],
+        "transcript": "That is, it's just general people's belief."
+    },
+    {
+        "id": 135,
+        "start": 848.64,
+        "end": 853.36,
+        "frames": [
+            "frame_00154.png"
+        ],
+        "transcript": "Or maybe just normal statistics."
+    },
+    {
+        "id": 136,
+        "start": 853.36,
+        "end": 861.6,
+        "frames": [
+            "frame_00155.png"
+        ],
+        "transcript": "So, those kind of normal statistics, or maybe we can say the accepted fact, usually we call it the null hypothesis."
+    },
+    {
+        "id": 137,
+        "start": 861.6,
+        "end": 875.2,
+        "frames": [
+            "frame_00156.png"
+        ],
+        "transcript": "So, usually the researchers, they propose the hypothesis beyond the null hypothesis."
+    },
+    {
+        "id": 138,
+        "start": 875.2,
+        "end": 882.32,
+        "frames": [
+            "frame_00157.png"
+        ],
+        "transcript": "That means that what's the existing fact, what's the acceptable fact, what's the people believe at this moment?"
+    },
+    {
+        "id": 139,
+        "start": 882.32,
+        "end": 884.48,
+        "frames": [
+            "frame_00158.png"
+        ],
+        "transcript": "The researchers say different things."
+    },
+    {
+        "id": 140,
+        "start": 884.48,
+        "end": 889.04,
+        "frames": [
+            "frame_00159.png"
+        ],
+        "transcript": "So, that the different things means the alternate hypothesis."
+    },
+    {
+        "id": 141,
+        "start": 889.04,
+        "end": 896.16,
+        "frames": [
+            "frame_00160.png"
+        ],
+        "transcript": "So, what people believe nowadays, or what's the accepted fact, that's called the null hypothesis."
+    },
+    {
+        "id": 142,
+        "start": 896.16,
+        "end": 899.76,
+        "frames": [
+            "frame_00161.png"
+        ],
+        "transcript": "So, DNA is shaped like a double helix."
+    },
+    {
+        "id": 143,
+        "start": 899.76,
+        "end": 901.76,
+        "frames": [
+            "frame_00162.png"
+        ],
+        "transcript": "This is one of the null hypothesis."
+    },
+    {
+        "id": 144,
+        "start": 901.76,
+        "end": 917.12,
+        "frames": [
+            "frame_00163.png"
+        ],
+        "transcript": "That means all the genetical scientists or neuroscientists, they already accepted this fact, that is DNA is shaped like a double helix."
+    },
+    {
+        "id": 145,
+        "start": 917.12,
+        "end": 922.0,
+        "frames": [
+            "frame_00164.png"
+        ],
+        "transcript": "[Silent] for 5.28 sec"
+    },
+    {
+        "id": 146,
+        "start": 922.0,
+        "end": 926.56,
+        "frames": [
+            "frame_00165.png"
+        ],
+        "transcript": "Like maybe the shape of the world is like oval shape."
+    },
+    {
+        "id": 147,
+        "start": 926.56,
+        "end": 930.16,
+        "frames": [
+            "frame_00166.png"
+        ],
+        "transcript": "So, this is accepted fact."
+    },
+    {
+        "id": 148,
+        "start": 930.16,
+        "end": 933.28,
+        "frames": [
+            "frame_00167.png"
+        ],
+        "transcript": "We all accept the belief."
+    },
+    {
+        "id": 149,
+        "start": 933.28,
+        "end": 943.68,
+        "frames": [
+            "frame_00168.png"
+        ],
+        "transcript": "But if someone said that no, the DNA shape is not the double helix, it is triple helix."
+    },
+    {
+        "id": 150,
+        "start": 943.68,
+        "end": 948.32,
+        "frames": [
+            "frame_00169.png"
+        ],
+        "transcript": "Then that should be the alternate hypothesis."
+    },
+    {
+        "id": 151,
+        "start": 948.32,
+        "end": 955.12,
+        "frames": [
+            "frame_00170.png"
+        ],
+        "transcript": "That is the different fact, then the accepted fact."
+    },
+    {
+        "id": 152,
+        "start": 955.12,
+        "end": 962.72,
+        "frames": [
+            "frame_00171.png"
+        ],
+        "transcript": "So, each and every null hypothesis either support or reject."
+    },
+    {
+        "id": 153,
+        "start": 962.72,
+        "end": 979.76,
+        "frames": [
+            "frame_00172.png"
+        ],
+        "transcript": "That means when we find some research, then either we have to support the null hypothesis, that means whatever the existing fact, we have to accept that, that is the support, or maybe the reject."
+    },
+    {
+        "id": 154,
+        "start": 979.76,
+        "end": 983.12,
+        "frames": [
+            "frame_00173.png"
+        ],
+        "transcript": "That means the existing fact we should deny."
+    },
+    {
+        "id": 155,
+        "start": 983.12,
+        "end": 985.36,
+        "frames": [
+            "frame_00174.png"
+        ],
+        "transcript": "We should reject."
+    },
+    {
+        "id": 156,
+        "start": 985.36,
+        "end": 990.32,
+        "frames": [
+            "frame_00175.png"
+        ],
+        "transcript": "So, that means that's why we call the null hypothesis is nullifiable."
+    },
+    {
+        "id": 157,
+        "start": 990.32,
+        "end": 993.2,
+        "frames": [
+            "frame_00176.png"
+        ],
+        "transcript": "Something you can reject."
+    },
+    {
+        "id": 158,
+        "start": 993.2,
+        "end": 1003.2,
+        "frames": [
+            "frame_00177.png"
+        ],
+        "transcript": "So, either the research outcome, it will support the null hypothesis or maybe it will reject the null hypothesis."
+    },
+    {
+        "id": 159,
+        "start": 1003.2,
+        "end": 1014.8,
+        "frames": [
+            "frame_00178.png",
+            "frame_00179.png"
+        ],
+        "transcript": "Finding the null hypothesis in any problem, like here, one of the example is this."
+    },
+    {
+        "id": 160,
+        "start": 1014.8,
+        "end": 1036.08,
+        "frames": [
+            "frame_00180.png"
+        ],
+        "transcript": "So, a researcher thinks that thinks that if knee surgery patients go to physical therapy twice a week, go to physical therapy twice a week instead of three times, their recovery period will be longer."
+    },
+    {
+        "id": 161,
+        "start": 1036.08,
+        "end": 1049.84,
+        "frames": [
+            "frame_00181.png"
+        ],
+        "transcript": "So, that means currently the patient visited just visit the physical therapy section three times."
+    },
+    {
+        "id": 162,
+        "start": 1049.84,
+        "end": 1064.24,
+        "frames": [
+            "frame_00182.png"
+        ],
+        "transcript": "So, it is just one researcher think that if the surgery patient, that is knee surgery patient, go to physical therapy twice a week, then their recovery period will be longer."
+    },
+    {
+        "id": 163,
+        "start": 1064.24,
+        "end": 1073.68,
+        "frames": [
+            "frame_00183.png"
+        ],
+        "transcript": "Okay, so here it is also mentioned the average recovery time for knee surgery patient is 8.2 weeks."
+    },
+    {
+        "id": 164,
+        "start": 1073.68,
+        "end": 1075.12,
+        "frames": [
+            "frame_00184.png"
+        ],
+        "transcript": "8.2."
+    },
+    {
+        "id": 165,
+        "start": 1075.12,
+        "end": 1077.84,
+        "frames": [
+            "frame_00185.png"
+        ],
+        "transcript": "This is average recovery time."
+    },
+    {
+        "id": 166,
+        "start": 1077.84,
+        "end": 1080.88,
+        "frames": [
+            "frame_00186.png"
+        ],
+        "transcript": "So, that means this is the current fact."
+    },
+    {
+        "id": 167,
+        "start": 1080.88,
+        "end": 1083.28,
+        "frames": [
+            "frame_00187.png"
+        ],
+        "transcript": "This is the current fact."
+    },
+    {
+        "id": 168,
+        "start": 1083.28,
+        "end": 1088.08,
+        "frames": [
+            "frame_00188.png"
+        ],
+        "transcript": "Okay, average recovery time for knee surgery patient is 8.2 weeks."
+    },
+    {
+        "id": 169,
+        "start": 1088.08,
+        "end": 1101.6,
+        "frames": [
+            "frame_00189.png"
+        ],
+        "transcript": "Okay, but the researcher think that the knee surgery patients go physical surgery twice a week, then their recovery period will be longer, will be longer."
+    },
+    {
+        "id": 170,
+        "start": 1101.6,
+        "end": 1105.6,
+        "frames": [
+            "frame_00190.png"
+        ],
+        "transcript": "That means greater than 8.2 weeks."
+    },
+    {
+        "id": 171,
+        "start": 1105.6,
+        "end": 1109.36,
+        "frames": [
+            "frame_00191.png"
+        ],
+        "transcript": "Will be longer means greater than 8.2 weeks."
+    },
+    {
+        "id": 172,
+        "start": 1109.36,
+        "end": 1112.24,
+        "frames": [
+            "frame_00192.png"
+        ],
+        "transcript": "So, here find out the null hypothesis."
+    },
+    {
+        "id": 173,
+        "start": 1112.24,
+        "end": 1116.72,
+        "frames": [
+            "frame_00193.png",
+            "frame_00194.png"
+        ],
+        "transcript": "So, we can say that here, this is the case."
+    },
+    {
+        "id": 174,
+        "start": 1116.72,
+        "end": 1121.28,
+        "frames": [
+            "frame_00195.png"
+        ],
+        "transcript": "So, this is null hypothesis, H0."
+    },
+    {
+        "id": 175,
+        "start": 1121.28,
+        "end": 1127.04,
+        "frames": [
+            "frame_00196.png"
+        ],
+        "transcript": "So, mean, mean recovery time, 8.2 weeks, nearly 8.2 weeks."
+    },
+    {
+        "id": 176,
+        "start": 1127.04,
+        "end": 1127.44,
+        "frames": [
+            "frame_00197.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 177,
+        "start": 1127.44,
+        "end": 1132.96,
+        "frames": [
+            "frame_00198.png"
+        ],
+        "transcript": "So, it is 8.2 weeks or maybe we can say the less than the 8.2 weeks."
+    },
+    {
+        "id": 178,
+        "start": 1132.96,
+        "end": 1135.92,
+        "frames": [
+            "frame_00199.png",
+            "frame_00200.png"
+        ],
+        "transcript": "But, how about the alternate hypothesis?"
+    },
+    {
+        "id": 179,
+        "start": 1135.92,
+        "end": 1140.4,
+        "frames": [
+            "frame_00201.png"
+        ],
+        "transcript": "The alternate hypothesis is this, that is, it will be, the period will be longer."
+    },
+    {
+        "id": 180,
+        "start": 1140.4,
+        "end": 1146.08,
+        "frames": [
+            "frame_00202.png",
+            "frame_00203.png"
+        ],
+        "transcript": "That means it will be, the average case will be greater than 8.2."
+    },
+    {
+        "id": 181,
+        "start": 1146.08,
+        "end": 1148.48,
+        "frames": [
+            "frame_00204.png"
+        ],
+        "transcript": "So, this is the alternate hypothesis."
+    },
+    {
+        "id": 182,
+        "start": 1148.48,
+        "end": 1153.36,
+        "frames": [
+            "frame_00205.png"
+        ],
+        "transcript": "So, currently we can say this is the null hypothesis, an alternate hypothesis is this one."
+    },
+    {
+        "id": 183,
+        "start": 1153.36,
+        "end": 1154.96,
+        "frames": [
+            "frame_00206.png"
+        ],
+        "transcript": "It will be longer."
+    },
+    {
+        "id": 184,
+        "start": 1154.96,
+        "end": 1160.64,
+        "frames": [
+            "frame_00207.png"
+        ],
+        "transcript": "So, other than whatever the fact, this fact is the null hypothesis."
+    },
+    {
+        "id": 185,
+        "start": 1160.64,
+        "end": 1171.28,
+        "frames": [
+            "frame_00208.png"
+        ],
+        "transcript": "Okay, so in this way, we have to find out the null hypothesis and also alternate hypothesis."
+    },
+    {
+        "id": 186,
+        "start": 1171.28,
+        "end": 1175.92,
+        "frames": [
+            "frame_00209.png",
+            "frame_00210.png"
+        ],
+        "transcript": "Okay, another example."
+    },
+    {
+        "id": 187,
+        "start": 1175.92,
+        "end": 1182.96,
+        "frames": [
+            "frame_00211.png",
+            "frame_00212.png"
+        ],
+        "transcript": "Sir, are both of these for when the patient goes for therapy two times a week?"
+    },
+    {
+        "id": 188,
+        "start": 1182.96,
+        "end": 1192.24,
+        "frames": [
+            "frame_00213.png",
+            "frame_00214.png"
+        ],
+        "transcript": "Yeah, here it is mentioned that a patient goes to physical therapy twice a week."
+    },
+    {
+        "id": 189,
+        "start": 1192.24,
+        "end": 1194.16,
+        "frames": [
+            "frame_00215.png"
+        ],
+        "transcript": "This is the researcher comments."
+    },
+    {
+        "id": 190,
+        "start": 1194.16,
+        "end": 1198.24,
+        "frames": [
+            "frame_00216.png"
+        ],
+        "transcript": "Then their recovery time will be longer."
+    },
+    {
+        "id": 191,
+        "start": 1198.24,
+        "end": 1211.44,
+        "frames": [
+            "frame_00217.png"
+        ],
+        "transcript": "So, longer that means currently the recovery time is 8.2 when they visit the therapy station like three times."
+    },
+    {
+        "id": 192,
+        "start": 1211.44,
+        "end": 1216.56,
+        "frames": [
+            "frame_00218.png"
+        ],
+        "transcript": "So, if they visit two times a week, then it will be longer."
+    },
+    {
+        "id": 193,
+        "start": 1216.56,
+        "end": 1221.84,
+        "frames": [
+            "frame_00219.png"
+        ],
+        "transcript": "That is the mean recovery time will be increased."
+    },
+    {
+        "id": 194,
+        "start": 1221.84,
+        "end": 1228.4,
+        "frames": [
+            "frame_00220.png"
+        ],
+        "transcript": "So, that's why we can say that it is greater than, that is the mean will be, this is the mean, mean will be greater than 8.2."
+    },
+    {
+        "id": 195,
+        "start": 1228.4,
+        "end": 1229.6,
+        "frames": [
+            "frame_00221.png"
+        ],
+        "transcript": "So, this is alternate."
+    },
+    {
+        "id": 196,
+        "start": 1229.6,
+        "end": 1237.04,
+        "frames": [
+            "frame_00222.png"
+        ],
+        "transcript": "That means whatever the researcher want to say, that should be in alternate hypothesis."
+    },
+    {
+        "id": 197,
+        "start": 1237.04,
+        "end": 1252.96,
+        "frames": [
+            "frame_00223.png"
+        ],
+        "transcript": "And whatever the existing fact, so that will be in our in our in our null hypothesis."
+    },
+    {
+        "id": 198,
+        "start": 1252.96,
+        "end": 1255.6,
+        "frames": [
+            "frame_00224.png"
+        ],
+        "transcript": "Okay, so this is a 0."
+    },
+    {
+        "id": 199,
+        "start": 1255.6,
+        "end": 1264.0,
+        "frames": [
+            "frame_00225.png"
+        ],
+        "transcript": "[Silent] for 9.36 sec"
+    },
+    {
+        "id": 200,
+        "start": 1264.0,
+        "end": 1266.08,
+        "frames": [
+            "frame_00226.png"
+        ],
+        "transcript": "Okay, I get it."
+    },
+    {
+        "id": 201,
+        "start": 1266.08,
+        "end": 1270.76,
+        "frames": [
+            "frame_00227.png"
+        ],
+        "transcript": ">> Yes sir."
+    },
+    {
+        "id": 202,
+        "start": 1270.76,
+        "end": 1272.96,
+        "frames": [
+            "frame_00228.png",
+            "frame_00229.png",
+            "frame_00230.png"
+        ],
+        "transcript": "So, it is greater than 8.2."
+    },
+    {
+        "id": 203,
+        "start": 1272.96,
+        "end": 1281.92,
+        "frames": [
+            "frame_00231.png",
+            "frame_00232.png"
+        ],
+        "transcript": "This one here it is mentioned that the recovery period will be longer."
+    },
+    {
+        "id": 204,
+        "start": 1281.92,
+        "end": 1285.52,
+        "frames": [
+            "frame_00233.png"
+        ],
+        "transcript": "So, existing recovery period is 8.2."
+    },
+    {
+        "id": 205,
+        "start": 1285.52,
+        "end": 1292.24,
+        "frames": [
+            "frame_00234.png"
+        ],
+        "transcript": "So, when we say that longer, longer, that means it should be greater than 8.2."
+    },
+    {
+        "id": 206,
+        "start": 1292.24,
+        "end": 1297.44,
+        "frames": [
+            "frame_00235.png"
+        ],
+        "transcript": "Am I right?"
+    },
+    {
+        "id": 207,
+        "start": 1297.44,
+        "end": 1303.0,
+        "frames": [
+            "frame_00236.png"
+        ],
+        "transcript": "[Silent] for 5.92 sec"
+    },
+    {
+        "id": 208,
+        "start": 1303.0,
+        "end": 1303.68,
+        "frames": [
+            "frame_00237.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 209,
+        "start": 1303.68,
+        "end": 1307.44,
+        "frames": [
+            "frame_00238.png"
+        ],
+        "transcript": "Okay, that's why it is mentioned the recovery period will be longer."
+    },
+    {
+        "id": 210,
+        "start": 1307.44,
+        "end": 1309.92,
+        "frames": [
+            "frame_00239.png"
+        ],
+        "transcript": "Longer means it will be greater than 8.2."
+    },
+    {
+        "id": 211,
+        "start": 1309.92,
+        "end": 1313.92,
+        "frames": [
+            "frame_00240.png"
+        ],
+        "transcript": "That's why this is an alternate hypothesis."
+    },
+    {
+        "id": 212,
+        "start": 1313.92,
+        "end": 1318.0,
+        "frames": [
+            "frame_00241.png"
+        ],
+        "transcript": "[Silent] for 5.04 sec"
+    },
+    {
+        "id": 213,
+        "start": 1318.0,
+        "end": 1321.2,
+        "frames": [
+            "frame_00242.png"
+        ],
+        "transcript": "Okay, so any more questions, Ivan?"
+    },
+    {
+        "id": 214,
+        "start": 1321.2,
+        "end": 1327.0,
+        "frames": [
+            "frame_00243.png"
+        ],
+        "transcript": "[Silent] for 5.92 sec"
+    },
+    {
+        "id": 215,
+        "start": 1327.0,
+        "end": 1328.96,
+        "frames": [
+            "frame_00244.png"
+        ],
+        "transcript": "Sir, yes, please."
+    },
+    {
+        "id": 216,
+        "start": 1328.96,
+        "end": 1332.08,
+        "frames": [
+            "frame_00245.png"
+        ],
+        "transcript": "Sir, null hypothesis less than 8.2 can hold."
+    },
+    {
+        "id": 217,
+        "start": 1332.08,
+        "end": 1336.4,
+        "frames": [
+            "frame_00246.png"
+        ],
+        "transcript": "So, here, here, the case is this one."
+    },
+    {
+        "id": 218,
+        "start": 1336.4,
+        "end": 1341.84,
+        "frames": [
+            "frame_00247.png"
+        ],
+        "transcript": "Okay, if this one is longer, then it is greater than 8.2."
+    },
+    {
+        "id": 219,
+        "start": 1341.84,
+        "end": 1352.56,
+        "frames": [
+            "frame_00248.png"
+        ],
+        "transcript": "And other than that, otherwise, the alternate hypothesis, it should be like mu equal 8.2."
+    },
+    {
+        "id": 220,
+        "start": 1352.56,
+        "end": 1356.64,
+        "frames": [
+            "frame_00249.png"
+        ],
+        "transcript": "We can say that mu equal 8.2."
+    },
+    {
+        "id": 221,
+        "start": 1356.64,
+        "end": 1364.16,
+        "frames": [
+            "frame_00250.png"
+        ],
+        "transcript": "But other than this fact, it can be less than 8.2."
+    },
+    {
+        "id": 222,
+        "start": 1364.16,
+        "end": 1376.4,
+        "frames": [
+            "frame_00251.png"
+        ],
+        "transcript": "So, if this is the case, this is the case for the alternate hypothesis, then we can say that we can get mu equal 8.2."
+    },
+    {
+        "id": 223,
+        "start": 1376.4,
+        "end": 1378.0,
+        "frames": [
+            "frame_00252.png"
+        ],
+        "transcript": "This can be one fact."
+    },
+    {
+        "id": 224,
+        "start": 1378.0,
+        "end": 1389.68,
+        "frames": [
+            "frame_00253.png"
+        ],
+        "transcript": "But this other fact could be like mu equal mu less than 8.2 8.2."
+    },
+    {
+        "id": 225,
+        "start": 1389.68,
+        "end": 1391.68,
+        "frames": [
+            "frame_00254.png"
+        ],
+        "transcript": "So, here, this is the fact."
+    },
+    {
+        "id": 226,
+        "start": 1391.68,
+        "end": 1394.08,
+        "frames": [
+            "frame_00255.png"
+        ],
+        "transcript": "In our case, this is the fact of alternate hypothesis."
+    },
+    {
+        "id": 227,
+        "start": 1394.08,
+        "end": 1396.64,
+        "frames": [
+            "frame_00256.png"
+        ],
+        "transcript": "So, other facts are in null hypothesis."
+    },
+    {
+        "id": 228,
+        "start": 1396.64,
+        "end": 1399.6,
+        "frames": [
+            "frame_00257.png"
+        ],
+        "transcript": "Okay, that's why we have to say like this."
+    },
+    {
+        "id": 229,
+        "start": 1399.6,
+        "end": 1409.0,
+        "frames": [
+            "frame_00258.png"
+        ],
+        "transcript": "[Silent] for 10.16 sec"
+    },
+    {
+        "id": 230,
+        "start": 1409.0,
+        "end": 1410.4,
+        "frames": [
+            "frame_00259.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 231,
+        "start": 1410.4,
+        "end": 1410.96,
+        "frames": [
+            "frame_00260.png"
+        ],
+        "transcript": "Thank you."
+    },
+    {
+        "id": 232,
+        "start": 1410.96,
+        "end": 1414.6,
+        "frames": [
+            "frame_00261.png"
+        ],
+        "transcript": ">> Okay."
+    },
+    {
+        "id": 233,
+        "start": 1414.6,
+        "end": 1419.88,
+        "frames": [
+            "frame_00262.png"
+        ],
+        "transcript": "alternate hypothesis."
+    },
+    {
+        "id": 234,
+        "start": 1419.88,
+        "end": 1425.0,
+        "frames": [
+            "frame_00263.png"
+        ],
+        "transcript": "[Silent] for 5.56 sec"
+    },
+    {
+        "id": 235,
+        "start": 1425.0,
+        "end": 1427.679,
+        "frames": [
+            "frame_00264.png"
+        ],
+        "transcript": "Yeah. Whatever we define in alternate"
+    },
+    {
+        "id": 236,
+        "start": 1427.679,
+        "end": 1429.2,
+        "frames": [
+            "frame_00265.png"
+        ],
+        "transcript": "hypothesis,"
+    },
+    {
+        "id": 237,
+        "start": 1429.2,
+        "end": 1431.52,
+        "frames": [
+            "frame_00266.png"
+        ],
+        "transcript": "the other other region should be in null"
+    },
+    {
+        "id": 238,
+        "start": 1431.52,
+        "end": 1433.2,
+        "frames": [
+            "frame_00267.png"
+        ],
+        "transcript": "hypothesis."
+    },
+    {
+        "id": 239,
+        "start": 1433.2,
+        "end": 1439.36,
+        "frames": [
+            "frame_00268.png"
+        ],
+        "transcript": "Whatever we should define in null hypothesis, the other region should be in alternate hypothesis."
+    },
+    {
+        "id": 240,
+        "start": 1439.36,
+        "end": 1448.0,
+        "frames": [
+            "frame_00269.png"
+        ],
+        "transcript": "[Silent] for 9.36 sec"
+    },
+    {
+        "id": 241,
+        "start": 1448.0,
+        "end": 1449.28,
+        "frames": [
+            "frame_00270.png"
+        ],
+        "transcript": "Get it?"
+    },
+    {
+        "id": 242,
+        "start": 1449.28,
+        "end": 1455.36,
+        "frames": [
+            "frame_00271.png",
+            "frame_00272.png",
+            "frame_00273.png"
+        ],
+        "transcript": ">> Yes sir."
+    },
+    {
+        "id": 243,
+        "start": 1455.36,
+        "end": 1458.0,
+        "frames": [
+            "frame_00274.png"
+        ],
+        "transcript": "Okay, so another example."
+    },
+    {
+        "id": 244,
+        "start": 1458.0,
+        "end": 1460.96,
+        "frames": [
+            "frame_00275.png"
+        ],
+        "transcript": "The hypothesis testing example, another example."
+    },
+    {
+        "id": 245,
+        "start": 1460.96,
+        "end": 1465.36,
+        "frames": [
+            "frame_00276.png"
+        ],
+        "transcript": "So, here, this is a two-tailed test."
+    },
+    {
+        "id": 246,
+        "start": 1465.36,
+        "end": 1469.76,
+        "frames": [
+            "frame_00277.png"
+        ],
+        "transcript": "I will explain this one a little bit later."
+    },
+    {
+        "id": 247,
+        "start": 1469.76,
+        "end": 1482.0,
+        "frames": [
+            "frame_00278.png"
+        ],
+        "transcript": "So, like here, it is mentioned that blood glucose levels of obese patients have a mean of 100 with a standard deviation of 15."
+    },
+    {
+        "id": 248,
+        "start": 1482.0,
+        "end": 1489.76,
+        "frames": [
+            "frame_00279.png"
+        ],
+        "transcript": "So, here the blood glucose levels, blood glucose levels of obese patients have a mean of 100."
+    },
+    {
+        "id": 249,
+        "start": 1489.76,
+        "end": 1495.44,
+        "frames": [
+            "frame_00280.png"
+        ],
+        "transcript": "Okay, this is the this is the mean and standard deviation of 15."
+    },
+    {
+        "id": 250,
+        "start": 1495.44,
+        "end": 1506.16,
+        "frames": [
+            "frame_00281.png"
+        ],
+        "transcript": "So, now the researcher, researcher means that it will tell about the alternate hypothesis."
+    },
+    {
+        "id": 251,
+        "start": 1506.16,
+        "end": 1522.16,
+        "frames": [
+            "frame_00282.png"
+        ],
+        "transcript": "A researcher think that a diet high in raw cornesters will have a positive, here is a positive or negative effect on blood glucose levels."
+    },
+    {
+        "id": 252,
+        "start": 1522.16,
+        "end": 1538.88,
+        "frames": [
+            "frame_00283.png"
+        ],
+        "transcript": "So, that is this researcher, he just claimed that a diet high in raw coresters will have a positive, here is the positive or negative effect on blood glucose levels."
+    },
+    {
+        "id": 253,
+        "start": 1538.88,
+        "end": 1552.72,
+        "frames": [
+            "frame_00284.png"
+        ],
+        "transcript": "So, a sample of for proving this hypothesis, a sample of 30 patients who have tried the raw conesters diet have a mean glucose level of 140."
+    },
+    {
+        "id": 254,
+        "start": 1552.72,
+        "end": 1567.2,
+        "frames": [
+            "frame_00285.png"
+        ],
+        "transcript": "So, that means he just conducts one experiment and find that the average glucose level of those patients is 140."
+    },
+    {
+        "id": 255,
+        "start": 1567.2,
+        "end": 1572.64,
+        "frames": [
+            "frame_00286.png"
+        ],
+        "transcript": "So, test the hypothesis that the raw cornerstus had an effect."
+    },
+    {
+        "id": 256,
+        "start": 1572.64,
+        "end": 1575.12,
+        "frames": [
+            "frame_00287.png"
+        ],
+        "transcript": "So, it has an effect."
+    },
+    {
+        "id": 257,
+        "start": 1575.12,
+        "end": 1581.84,
+        "frames": [
+            "frame_00288.png"
+        ],
+        "transcript": "We have to test that using the hypothesis testing method."
+    },
+    {
+        "id": 258,
+        "start": 1581.84,
+        "end": 1592.08,
+        "frames": [
+            "frame_00289.png"
+        ],
+        "transcript": "So, at first what we have to do, we have to find out the null hypothesis and also the alternate hypothesis."
+    },
+    {
+        "id": 259,
+        "start": 1592.08,
+        "end": 1599.36,
+        "frames": [
+            "frame_00290.png"
+        ],
+        "transcript": "So, for that, here we can say that the H0, this is the null hypothesis."
+    },
+    {
+        "id": 260,
+        "start": 1599.36,
+        "end": 1602.72,
+        "frames": [
+            "frame_00291.png"
+        ],
+        "transcript": "So, hypothesis is already accepted fact."
+    },
+    {
+        "id": 261,
+        "start": 1602.72,
+        "end": 1605.6,
+        "frames": [
+            "frame_00292.png"
+        ],
+        "transcript": "That means existing fact."
+    },
+    {
+        "id": 262,
+        "start": 1605.6,
+        "end": 1610.96,
+        "frames": [
+            "frame_00293.png"
+        ],
+        "transcript": "So, here it is said that blood glucose levels for obese patients have a mean of 100."
+    },
+    {
+        "id": 263,
+        "start": 1610.96,
+        "end": 1614.32,
+        "frames": [
+            "frame_00294.png"
+        ],
+        "transcript": "So, that means the mean equal 100."
+    },
+    {
+        "id": 264,
+        "start": 1614.32,
+        "end": 1616.56,
+        "frames": [
+            "frame_00295.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 265,
+        "start": 1616.56,
+        "end": 1621.92,
+        "frames": [
+            "frame_00296.png"
+        ],
+        "transcript": "And then we have to see the alternate hypothesis."
+    },
+    {
+        "id": 266,
+        "start": 1621.92,
+        "end": 1626.96,
+        "frames": [
+            "frame_00297.png"
+        ],
+        "transcript": "So, here in alternate hypothesis, we can say that the positive or negative impact."
+    },
+    {
+        "id": 267,
+        "start": 1626.96,
+        "end": 1633.68,
+        "frames": [
+            "frame_00298.png"
+        ],
+        "transcript": "That means it said that maybe it can be greater than 100 or it can be less than 100."
+    },
+    {
+        "id": 268,
+        "start": 1633.68,
+        "end": 1636.24,
+        "frames": [
+            "frame_00299.png"
+        ],
+        "transcript": "So, it can be greater than 100."
+    },
+    {
+        "id": 269,
+        "start": 1636.24,
+        "end": 1641.2,
+        "frames": [
+            "frame_00300.png"
+        ],
+        "transcript": "That is the positive and the negative, maybe it can be less than 100."
+    },
+    {
+        "id": 270,
+        "start": 1641.2,
+        "end": 1650.8,
+        "frames": [
+            "frame_00301.png"
+        ],
+        "transcript": "So, that's why we can say that is the each one alternate hypothesis, the mu, it should not be 100."
+    },
+    {
+        "id": 271,
+        "start": 1650.8,
+        "end": 1652.0,
+        "frames": [
+            "frame_00302.png"
+        ],
+        "transcript": "It should not be 100."
+    },
+    {
+        "id": 272,
+        "start": 1652.0,
+        "end": 1653.28,
+        "frames": [
+            "frame_00303.png"
+        ],
+        "transcript": "So, it can be positive."
+    },
+    {
+        "id": 273,
+        "start": 1653.28,
+        "end": 1657.28,
+        "frames": [
+            "frame_00304.png"
+        ],
+        "transcript": "That means it can be greater or it can be not exactly the 100."
+    },
+    {
+        "id": 274,
+        "start": 1657.28,
+        "end": 1662.88,
+        "frames": [
+            "frame_00305.png"
+        ],
+        "transcript": "So, that's why the hypothesis here, the defined hypothesis is this."
+    },
+    {
+        "id": 275,
+        "start": 1662.88,
+        "end": 1664.08,
+        "frames": [
+            "frame_00306.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 276,
+        "start": 1664.08,
+        "end": 1678.64,
+        "frames": [
+            "frame_00307.png"
+        ],
+        "transcript": "Or we can also define this one like this one, other than that, we can write like mu less than greater than 100."
+    },
+    {
+        "id": 277,
+        "start": 1678.64,
+        "end": 1684.48,
+        "frames": [
+            "frame_00308.png"
+        ],
+        "transcript": "Okay, so that means it can be less than, it can be greater than 100."
+    },
+    {
+        "id": 278,
+        "start": 1684.48,
+        "end": 1686.96,
+        "frames": [
+            "frame_00309.png"
+        ],
+        "transcript": "So, it's the same thing, okay?"
+    },
+    {
+        "id": 279,
+        "start": 1686.96,
+        "end": 1690.0,
+        "frames": [
+            "frame_00310.png"
+        ],
+        "transcript": "It's not equal, non-equal, not equal 100."
+    },
+    {
+        "id": 280,
+        "start": 1690.0,
+        "end": 1697.36,
+        "frames": [
+            "frame_00311.png"
+        ],
+        "transcript": "So, this is the alternate hypothesis and this is the null hypothesis."
+    },
+    {
+        "id": 281,
+        "start": 1697.36,
+        "end": 1699.6,
+        "frames": [
+            "frame_00312.png"
+        ],
+        "transcript": "Okay, so we define the hypothesis."
+    },
+    {
+        "id": 282,
+        "start": 1699.6,
+        "end": 1702.72,
+        "frames": [
+            "frame_00313.png"
+        ],
+        "transcript": "So, here is the steps of hypothesis testing."
+    },
+    {
+        "id": 283,
+        "start": 1702.72,
+        "end": 1704.64,
+        "frames": [
+            "frame_00314.png"
+        ],
+        "transcript": "We have to follow these steps."
+    },
+    {
+        "id": 284,
+        "start": 1704.64,
+        "end": 1707.84,
+        "frames": [
+            "frame_00315.png"
+        ],
+        "transcript": "So, estate the null hypothesis first."
+    },
+    {
+        "id": 285,
+        "start": 1707.84,
+        "end": 1712.4,
+        "frames": [
+            "frame_00316.png"
+        ],
+        "transcript": "The first step is we have to estate the null hypothesis first."
+    },
+    {
+        "id": 286,
+        "start": 1712.4,
+        "end": 1715.76,
+        "frames": [
+            "frame_00317.png"
+        ],
+        "transcript": "Then, state the alternate hypothesis."
+    },
+    {
+        "id": 287,
+        "start": 1715.76,
+        "end": 1719.28,
+        "frames": [
+            "frame_00318.png"
+        ],
+        "transcript": "Okay, so we have to define the alternate hypothesis."
+    },
+    {
+        "id": 288,
+        "start": 1719.28,
+        "end": 1722.64,
+        "frames": [
+            "frame_00319.png"
+        ],
+        "transcript": "We already define the alternate hypothesis."
+    },
+    {
+        "id": 289,
+        "start": 1722.64,
+        "end": 1725.2,
+        "frames": [
+            "frame_00320.png"
+        ],
+        "transcript": "And then, estate the alpha level."
+    },
+    {
+        "id": 290,
+        "start": 1725.2,
+        "end": 1729.2,
+        "frames": [
+            "frame_00321.png"
+        ],
+        "transcript": "So, this is the significance level, significance level."
+    },
+    {
+        "id": 291,
+        "start": 1729.2,
+        "end": 1731.44,
+        "frames": [
+            "frame_00322.png"
+        ],
+        "transcript": "So, we will discuss the significance level."
+    },
+    {
+        "id": 292,
+        "start": 1731.44,
+        "end": 1733.84,
+        "frames": [
+            "frame_00323.png"
+        ],
+        "transcript": "What is alpha and p values?"
+    },
+    {
+        "id": 293,
+        "start": 1733.84,
+        "end": 1737.6,
+        "frames": [
+            "frame_00324.png"
+        ],
+        "transcript": "So, those things we will discuss in next lecture."
+    },
+    {
+        "id": 294,
+        "start": 1737.6,
+        "end": 1742.96,
+        "frames": [
+            "frame_00325.png"
+        ],
+        "transcript": "So, in this case, we can just say that this is significance level."
+    },
+    {
+        "id": 295,
+        "start": 1742.96,
+        "end": 1748.4,
+        "frames": [
+            "frame_00326.png"
+        ],
+        "transcript": "So, we just assume some value like 0.05."
+    },
+    {
+        "id": 296,
+        "start": 1748.4,
+        "end": 1751.04,
+        "frames": [
+            "frame_00327.png"
+        ],
+        "transcript": "So, it can be like 0.05."
+    },
+    {
+        "id": 297,
+        "start": 1751.04,
+        "end": 1763.76,
+        "frames": [
+            "frame_00328.png"
+        ],
+        "transcript": "The value of alpha, alpha can be, alpha can be 0.05, or we can say 0.01, or we can say 0.10."
+    },
+    {
+        "id": 298,
+        "start": 1763.76,
+        "end": 1768.0,
+        "frames": [
+            "frame_00329.png"
+        ],
+        "transcript": "So, usually, these are the accepted alpha values."
+    },
+    {
+        "id": 299,
+        "start": 1768.0,
+        "end": 1778.64,
+        "frames": [
+            "frame_00330.png"
+        ],
+        "transcript": "So, the significance level here is 0.05 means the 95% significant, okay, and this 5% error or rejection."
+    },
+    {
+        "id": 300,
+        "start": 1778.64,
+        "end": 1783.36,
+        "frames": [
+            "frame_00331.png"
+        ],
+        "transcript": "And here, this is in this case, this is the 99% significant, okay?"
+    },
+    {
+        "id": 301,
+        "start": 1783.36,
+        "end": 1786.96,
+        "frames": [
+            "frame_00332.png"
+        ],
+        "transcript": "And this is the 90% significant."
+    },
+    {
+        "id": 302,
+        "start": 1786.96,
+        "end": 1788.88,
+        "frames": [
+            "frame_00333.png"
+        ],
+        "transcript": "90% significance."
+    },
+    {
+        "id": 303,
+        "start": 1788.88,
+        "end": 1792.0,
+        "frames": [
+            "frame_00334.png"
+        ],
+        "transcript": "So, the test significance at this mass."
+    },
+    {
+        "id": 304,
+        "start": 1792.0,
+        "end": 1796.96,
+        "frames": [
+            "frame_00335.png"
+        ],
+        "transcript": "So, 95% significant, 99% significant, and 90% significant."
+    },
+    {
+        "id": 305,
+        "start": 1796.96,
+        "end": 1799.28,
+        "frames": [
+            "frame_00336.png"
+        ],
+        "transcript": "So, that means here it is mentioned."
+    },
+    {
+        "id": 306,
+        "start": 1799.28,
+        "end": 1802.64,
+        "frames": [
+            "frame_00337.png"
+        ],
+        "transcript": "Like, in this case, the error, the accepted error is 10%."
+    },
+    {
+        "id": 307,
+        "start": 1802.64,
+        "end": 1807.28,
+        "frames": [
+            "frame_00338.png"
+        ],
+        "transcript": "In this case, the accepted error is just 1% because 99% significant."
+    },
+    {
+        "id": 308,
+        "start": 1807.28,
+        "end": 1810.4,
+        "frames": [
+            "frame_00339.png"
+        ],
+        "transcript": "And in this case, the accepted error is 5%."
+    },
+    {
+        "id": 309,
+        "start": 1810.4,
+        "end": 1819.6,
+        "frames": [
+            "frame_00340.png"
+        ],
+        "transcript": "So, that's why this value is more significant than other two."
+    },
+    {
+        "id": 310,
+        "start": 1819.6,
+        "end": 1823.6,
+        "frames": [
+            "frame_00341.png"
+        ],
+        "transcript": "So, we will discuss these things in the next lecture."
+    },
+    {
+        "id": 311,
+        "start": 1823.6,
+        "end": 1827.04,
+        "frames": [
+            "frame_00342.png"
+        ],
+        "transcript": "So, currently, just say that here is the alpha."
+    },
+    {
+        "id": 312,
+        "start": 1827.04,
+        "end": 1830.08,
+        "frames": [
+            "frame_00343.png"
+        ],
+        "transcript": "Okay, we have to set the alpha value."
+    },
+    {
+        "id": 313,
+        "start": 1830.08,
+        "end": 1831.2,
+        "frames": [
+            "frame_00344.png"
+        ],
+        "transcript": "So, this is 5%."
+    },
+    {
+        "id": 314,
+        "start": 1831.2,
+        "end": 1833.92,
+        "frames": [
+            "frame_00345.png"
+        ],
+        "transcript": "5% means 0.05."
+    },
+    {
+        "id": 315,
+        "start": 1833.92,
+        "end": 1844.88,
+        "frames": [
+            "frame_00346.png"
+        ],
+        "transcript": "Okay, and the G, that means the next thing is find the rejection, find the rejection region from the table, from the G table."
+    },
+    {
+        "id": 316,
+        "start": 1844.88,
+        "end": 1850.0,
+        "frames": [
+            "frame_00347.png"
+        ],
+        "transcript": "Okay, we will find the rejection region and then find the test statistics."
+    },
+    {
+        "id": 317,
+        "start": 1850.0,
+        "end": 1855.92,
+        "frames": [
+            "frame_00348.png"
+        ],
+        "transcript": "Test statistics, that means whatever the researcher get from his test."
+    },
+    {
+        "id": 318,
+        "start": 1855.92,
+        "end": 1873.84,
+        "frames": [
+            "frame_00349.png"
+        ],
+        "transcript": "So, from this test, we can see that here, researcher in this case, the G it is X bar minus of mu 0 divided by sigma divided by, here is the square root of n."
+    },
+    {
+        "id": 319,
+        "start": 1873.84,
+        "end": 1884.16,
+        "frames": [
+            "frame_00350.png"
+        ],
+        "transcript": "So, here, in this case, x bar, this is the mean from the research output."
+    },
+    {
+        "id": 320,
+        "start": 1884.16,
+        "end": 1886.8,
+        "frames": [
+            "frame_00351.png"
+        ],
+        "transcript": "The mean from the research output."
+    },
+    {
+        "id": 321,
+        "start": 1886.8,
+        "end": 1893.2,
+        "frames": [
+            "frame_00352.png"
+        ],
+        "transcript": "And mu 0, this is the mean of the accepted facts, okay."
+    },
+    {
+        "id": 322,
+        "start": 1893.2,
+        "end": 1901.92,
+        "frames": [
+            "frame_00353.png"
+        ],
+        "transcript": "Mean of the accepted facts, and sigma, this is the population, population variance, population standard deviation."
+    },
+    {
+        "id": 323,
+        "start": 1901.92,
+        "end": 1907.12,
+        "frames": [
+            "frame_00354.png"
+        ],
+        "transcript": "So, standard deviation of population, that means standard deviation of existing facts."
+    },
+    {
+        "id": 324,
+        "start": 1907.12,
+        "end": 1913.36,
+        "frames": [
+            "frame_00355.png"
+        ],
+        "transcript": "And here is the n, n is the number of samples, n is the number of samples."
+    },
+    {
+        "id": 325,
+        "start": 1913.36,
+        "end": 1921.6,
+        "frames": [
+            "frame_00356.png"
+        ],
+        "transcript": "So, here we can see that the x bar, in our case, x bar, that is the mean from the research outcome."
+    },
+    {
+        "id": 326,
+        "start": 1921.6,
+        "end": 1923.36,
+        "frames": [
+            "frame_00357.png"
+        ],
+        "transcript": "So, it is 140."
+    },
+    {
+        "id": 327,
+        "start": 1923.36,
+        "end": 1925.76,
+        "frames": [
+            "frame_00358.png"
+        ],
+        "transcript": "So, we just put the 140 here."
+    },
+    {
+        "id": 328,
+        "start": 1925.76,
+        "end": 1930.88,
+        "frames": [
+            "frame_00359.png"
+        ],
+        "transcript": "Minus of mu 0, that is mean of the existing fact, our population mean."
+    },
+    {
+        "id": 329,
+        "start": 1930.88,
+        "end": 1933.44,
+        "frames": [
+            "frame_00360.png"
+        ],
+        "transcript": "Here is the population mean is 100."
+    },
+    {
+        "id": 330,
+        "start": 1933.44,
+        "end": 1957.68,
+        "frames": [
+            "frame_00361.png"
+        ],
+        "transcript": "Population mean is 100, okay, and then the population standard deviation, sigma, here is the standard deviation is given, it is 15, so 15 is given, and square root of we can see the 30 patients, that means the sample of 30 patients, the sample size is 30, 30."
+    },
+    {
+        "id": 331,
+        "start": 1957.68,
+        "end": 1958.96,
+        "frames": [
+            "frame_00362.png"
+        ],
+        "transcript": "Here is 30."
+    },
+    {
+        "id": 332,
+        "start": 1958.96,
+        "end": 1968.88,
+        "frames": [
+            "frame_00363.png"
+        ],
+        "transcript": "If we do the math, then we will get 14.6 14.6, you will get the 14.6 here."
+    },
+    {
+        "id": 333,
+        "start": 1968.88,
+        "end": 1975.12,
+        "frames": [
+            "frame_00364.png"
+        ],
+        "transcript": "Okay, any question up to this point?"
+    },
+    {
+        "id": 334,
+        "start": 1975.12,
+        "end": 1977.44,
+        "frames": [
+            "frame_00365.png"
+        ],
+        "transcript": "Sir."
+    },
+    {
+        "id": 335,
+        "start": 1977.44,
+        "end": 1978.96,
+        "frames": [
+            "frame_00366.png"
+        ],
+        "transcript": "Yes, please."
+    },
+    {
+        "id": 336,
+        "start": 1978.96,
+        "end": 1994.0,
+        "frames": [
+            "frame_00367.png"
+        ],
+        "transcript": "Sir, if the absolute difference between the alternate hypothesis and the null hypothesis is greater or less than the standard deviation, can we infer something from that?"
+    },
+    {
+        "id": 337,
+        "start": 1994.0,
+        "end": 2001.76,
+        "frames": [
+            "frame_00368.png"
+        ],
+        "transcript": "So, the absolute difference, that means, here, you mean this one?"
+    },
+    {
+        "id": 338,
+        "start": 2001.76,
+        "end": 2005.84,
+        "frames": [
+            "frame_00369.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 339,
+        "start": 2005.84,
+        "end": 2012.72,
+        "frames": [
+            "frame_00370.png"
+        ],
+        "transcript": "The difference between the hypothesis and the null hypothesis and the alternate hypothesis, sir."
+    },
+    {
+        "id": 340,
+        "start": 2012.72,
+        "end": 2026.72,
+        "frames": [
+            "frame_00371.png"
+        ],
+        "transcript": "Okay, so that if the absolute difference, just only absolute difference will tell nothing, okay, other than if we can say we have to we have to think about the variance and number of samples also."
+    },
+    {
+        "id": 341,
+        "start": 2026.72,
+        "end": 2038.88,
+        "frames": [
+            "frame_00372.png"
+        ],
+        "transcript": "Okay, so that means if the absolute difference is just some values, okay, like maybe you can say 140 minus of 100, so it will be like 40."
+    },
+    {
+        "id": 342,
+        "start": 2038.88,
+        "end": 2048.96,
+        "frames": [
+            "frame_00373.png"
+        ],
+        "transcript": "So, in statistic, in statistics, it will it will not say anything about whether this one is valid or maybe invalid."
+    },
+    {
+        "id": 343,
+        "start": 2048.96,
+        "end": 2051.6,
+        "frames": [
+            "frame_00374.png"
+        ],
+        "transcript": "Got it, sir."
+    },
+    {
+        "id": 344,
+        "start": 2051.6,
+        "end": 2052.24,
+        "frames": [
+            "frame_00375.png"
+        ],
+        "transcript": "Thank you, sir."
+    },
+    {
+        "id": 345,
+        "start": 2052.24,
+        "end": 2061.12,
+        "frames": [
+            "frame_00376.png"
+        ],
+        "transcript": "And sir, the Z table or the Z value that we calculate, what does it actually denote?"
+    },
+    {
+        "id": 346,
+        "start": 2061.12,
+        "end": 2066.64,
+        "frames": [
+            "frame_00377.png"
+        ],
+        "transcript": "This value, yes, sir."
+    },
+    {
+        "id": 347,
+        "start": 2066.64,
+        "end": 2069.76,
+        "frames": [
+            "frame_00378.png"
+        ],
+        "transcript": "Okay, so this value actually is important."
+    },
+    {
+        "id": 348,
+        "start": 2069.76,
+        "end": 2078.24,
+        "frames": [
+            "frame_00379.png"
+        ],
+        "transcript": "This value is important because this is the statistics we found from our experiment."
+    },
+    {
+        "id": 349,
+        "start": 2078.24,
+        "end": 2086.32,
+        "frames": [
+            "frame_00380.png"
+        ],
+        "transcript": "Now, we have to test this value that is whether this value is in rejection region or in accepted region."
+    },
+    {
+        "id": 350,
+        "start": 2086.32,
+        "end": 2092.0,
+        "frames": [
+            "frame_00381.png"
+        ],
+        "transcript": "Okay, so that will that will we have to find find now because this is the case, okay."
+    },
+    {
+        "id": 351,
+        "start": 2092.0,
+        "end": 2104.08,
+        "frames": [
+            "frame_00382.png"
+        ],
+        "transcript": "Find the rejection area from g table, and we have to we have to see that whether this value within the rejection region or within the accepted region."
+    },
+    {
+        "id": 352,
+        "start": 2104.08,
+        "end": 2108.48,
+        "frames": [
+            "frame_00383.png"
+        ],
+        "transcript": "If this one is this value is accepted region, then we have to accept the null hypothesis."
+    },
+    {
+        "id": 353,
+        "start": 2108.48,
+        "end": 2113.68,
+        "frames": [
+            "frame_00384.png"
+        ],
+        "transcript": "If this value is in rejection region, then we have to reject the null hypothesis."
+    },
+    {
+        "id": 354,
+        "start": 2113.68,
+        "end": 2122.56,
+        "frames": [
+            "frame_00385.png"
+        ],
+        "transcript": "So, now we have to determine the x, the acceptance, accepted region and the rejection region."
+    },
+    {
+        "id": 355,
+        "start": 2122.56,
+        "end": 2128.0,
+        "frames": [
+            "frame_00386.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 356,
+        "start": 2128.0,
+        "end": 2128.96,
+        "frames": [
+            "frame_00387.png"
+        ],
+        "transcript": "Thank you, sir."
+    },
+    {
+        "id": 357,
+        "start": 2128.96,
+        "end": 2131.2,
+        "frames": [
+            "frame_00388.png"
+        ],
+        "transcript": "So, now we have to work on this."
+    },
+    {
+        "id": 358,
+        "start": 2131.2,
+        "end": 2132.08,
+        "frames": [
+            "frame_00389.png"
+        ],
+        "transcript": "Hello?"
+    },
+    {
+        "id": 359,
+        "start": 2132.08,
+        "end": 2132.96,
+        "frames": [
+            "frame_00390.png"
+        ],
+        "transcript": "Yes, sir."
+    },
+    {
+        "id": 360,
+        "start": 2132.96,
+        "end": 2133.92,
+        "frames": [
+            "frame_00391.png"
+        ],
+        "transcript": "Sorry, sir."
+    },
+    {
+        "id": 361,
+        "start": 2133.92,
+        "end": 2139.2,
+        "frames": [
+            "frame_00392.png"
+        ],
+        "transcript": "Sir, about the alpha alpha level, I actually couldn't get what it was."
+    },
+    {
+        "id": 362,
+        "start": 2139.2,
+        "end": 2145.36,
+        "frames": [
+            "frame_00393.png"
+        ],
+        "transcript": "Yeah, the alpha, this alpha level will necessary to find out the rejection area."
+    },
+    {
+        "id": 363,
+        "start": 2145.36,
+        "end": 2149.2,
+        "frames": [
+            "frame_00394.png"
+        ],
+        "transcript": "Okay, sir."
+    },
+    {
+        "id": 364,
+        "start": 2149.2,
+        "end": 2156.56,
+        "frames": [
+            "frame_00395.png"
+        ],
+        "transcript": "Okay, so now I want to focus on this part that is the find the rejection area from G table."
+    },
+    {
+        "id": 365,
+        "start": 2156.56,
+        "end": 2162.4,
+        "frames": [
+            "frame_00396.png"
+        ],
+        "transcript": "G table is one of the standard table and this is experimental."
+    },
+    {
+        "id": 366,
+        "start": 2162.4,
+        "end": 2169.04,
+        "frames": [
+            "frame_00397.png"
+        ],
+        "transcript": "So, that's why the statistician already have developed their various types of statistics table."
+    },
+    {
+        "id": 367,
+        "start": 2169.04,
+        "end": 2173.28,
+        "frames": [
+            "frame_00398.png"
+        ],
+        "transcript": "So, those are the standard tables, G table, T tables."
+    },
+    {
+        "id": 368,
+        "start": 2173.28,
+        "end": 2176.88,
+        "frames": [
+            "frame_00399.png"
+        ],
+        "transcript": "Okay, so we will go for it."
+    },
+    {
+        "id": 369,
+        "start": 2176.88,
+        "end": 2187.28,
+        "frames": [
+            "frame_00400.png"
+        ],
+        "transcript": "Now, the first thing is we have to look here again whether this one is one tail test or two tail test."
+    },
+    {
+        "id": 370,
+        "start": 2187.28,
+        "end": 2204.4,
+        "frames": [
+            "frame_00401.png"
+        ],
+        "transcript": "So, one tail test means that the alternate hypothesis, we have to look at the alternate hypothesis, like whether it is just say like this less than 100 or maybe it just tells us that it's 100."
+    },
+    {
+        "id": 371,
+        "start": 2204.4,
+        "end": 2210.48,
+        "frames": [
+            "frame_00402.png"
+        ],
+        "transcript": "So, if this one just only one condition, this is one condition that is less than."
+    },
+    {
+        "id": 372,
+        "start": 2210.48,
+        "end": 2213.28,
+        "frames": [
+            "frame_00403.png"
+        ],
+        "transcript": "So, it will be one tail test."
+    },
+    {
+        "id": 373,
+        "start": 2213.28,
+        "end": 2216.08,
+        "frames": [
+            "frame_00404.png"
+        ],
+        "transcript": "It is mentioned that this is greater than."
+    },
+    {
+        "id": 374,
+        "start": 2216.08,
+        "end": 2218.32,
+        "frames": [
+            "frame_00405.png"
+        ],
+        "transcript": "So, it will be also one tail test."
+    },
+    {
+        "id": 375,
+        "start": 2218.32,
+        "end": 2223.92,
+        "frames": [
+            "frame_00406.png"
+        ],
+        "transcript": "But the problem here is in our case, it can be positive or negative."
+    },
+    {
+        "id": 376,
+        "start": 2223.92,
+        "end": 2227.2,
+        "frames": [
+            "frame_00407.png"
+        ],
+        "transcript": "That means here, they are not equal or less than greater than."
+    },
+    {
+        "id": 377,
+        "start": 2227.2,
+        "end": 2233.04,
+        "frames": [
+            "frame_00408.png"
+        ],
+        "transcript": "That means two conditions in a same hypothesis."
+    },
+    {
+        "id": 378,
+        "start": 2233.04,
+        "end": 2237.76,
+        "frames": [
+            "frame_00409.png"
+        ],
+        "transcript": "That's why we have to study the two-tailed test."
+    },
+    {
+        "id": 379,
+        "start": 2237.76,
+        "end": 2245.36,
+        "frames": [
+            "frame_00410.png"
+        ],
+        "transcript": "So, that means if we have just one condition, less than 100, then we have to go for the one-tailed test."
+    },
+    {
+        "id": 380,
+        "start": 2245.36,
+        "end": 2251.36,
+        "frames": [
+            "frame_00411.png"
+        ],
+        "transcript": "If just we have like greater than 100, then we have to go for one-tailed test."
+    },
+    {
+        "id": 381,
+        "start": 2251.36,
+        "end": 2254.88,
+        "frames": [
+            "frame_00412.png"
+        ],
+        "transcript": "But here, two conditions, that is less than and greater than."
+    },
+    {
+        "id": 382,
+        "start": 2254.88,
+        "end": 2256.48,
+        "frames": [
+            "frame_00413.png"
+        ],
+        "transcript": "We have the boundary for that."
+    },
+    {
+        "id": 383,
+        "start": 2256.48,
+        "end": 2260.4,
+        "frames": [
+            "frame_00414.png"
+        ],
+        "transcript": "Okay, that means we have to think about the two-tailed test."
+    },
+    {
+        "id": 384,
+        "start": 2260.4,
+        "end": 2263.6,
+        "frames": [
+            "frame_00415.png"
+        ],
+        "transcript": "So, this is the difference between one-tail and two-tail test."
+    },
+    {
+        "id": 385,
+        "start": 2263.6,
+        "end": 2272.0,
+        "frames": [
+            "frame_00416.png"
+        ],
+        "transcript": "Okay, look at your hypothesis, alternate hypothesis, and see whether this one we have to follow the one-tailed test or two-tailed test."
+    },
+    {
+        "id": 386,
+        "start": 2272.0,
+        "end": 2279.92,
+        "frames": [
+            "frame_00417.png"
+        ],
+        "transcript": "And now, if this is the two-tailed test, like here in our case, two-tail test, the significant value that is 5%."
+    },
+    {
+        "id": 387,
+        "start": 2279.92,
+        "end": 2286.72,
+        "frames": [
+            "frame_00418.png"
+        ],
+        "transcript": "So, 5%, the significant value, we have to divide by 2."
+    },
+    {
+        "id": 388,
+        "start": 2286.72,
+        "end": 2295.76,
+        "frames": [
+            "frame_00419.png"
+        ],
+        "transcript": "That means we can say one side, 2.5%, in another side, another side, 2.5%."
+    },
+    {
+        "id": 389,
+        "start": 2295.76,
+        "end": 2303.84,
+        "frames": [
+            "frame_00420.png"
+        ],
+        "transcript": "So, the alpha here, the significance level, here we can say 0.05."
+    },
+    {
+        "id": 390,
+        "start": 2303.84,
+        "end": 2311.44,
+        "frames": [
+            "frame_00421.png"
+        ],
+        "transcript": "That means the error or rejection region is 2.5% in left and 2.5% in right."
+    },
+    {
+        "id": 391,
+        "start": 2311.44,
+        "end": 2316.08,
+        "frames": [
+            "frame_00422.png"
+        ],
+        "transcript": "So, now we can see that the normal distribution."
+    },
+    {
+        "id": 392,
+        "start": 2316.08,
+        "end": 2317.6,
+        "frames": [
+            "frame_00423.png"
+        ],
+        "transcript": "So, here is this."
+    },
+    {
+        "id": 393,
+        "start": 2317.6,
+        "end": 2320.88,
+        "frames": [
+            "frame_00424.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 394,
+        "start": 2320.88,
+        "end": 2322.24,
+        "frames": [
+            "frame_00425.png"
+        ],
+        "transcript": "This is the distribution."
+    },
+    {
+        "id": 395,
+        "start": 2322.24,
+        "end": 2325.68,
+        "frames": [
+            "frame_00426.png"
+        ],
+        "transcript": "We can draw it here."
+    },
+    {
+        "id": 396,
+        "start": 2325.68,
+        "end": 2331.0,
+        "frames": [
+            "frame_00427.png"
+        ],
+        "transcript": "[Silent] for 6.08 sec"
+    },
+    {
+        "id": 397,
+        "start": 2331.0,
+        "end": 2332.16,
+        "frames": [
+            "frame_00428.png"
+        ],
+        "transcript": "Sir."
+    },
+    {
+        "id": 398,
+        "start": 2332.16,
+        "end": 2335.2,
+        "frames": [
+            "frame_00429.png"
+        ],
+        "transcript": "Hello?"
+    },
+    {
+        "id": 399,
+        "start": 2335.2,
+        "end": 2335.92,
+        "frames": [
+            "frame_00430.png"
+        ],
+        "transcript": "Sir?"
+    },
+    {
+        "id": 400,
+        "start": 2335.92,
+        "end": 2336.56,
+        "frames": [
+            "frame_00431.png"
+        ],
+        "transcript": ">> Yes."
+    },
+    {
+        "id": 401,
+        "start": 2336.56,
+        "end": 2339.92,
+        "frames": [
+            "frame_00432.png"
+        ],
+        "transcript": ">> Sir, is 1.96 the zcore of the null"
+    },
+    {
+        "id": 402,
+        "start": 2339.92,
+        "end": 2341.599,
+        "frames": [
+            "frame_00433.png"
+        ],
+        "transcript": "hypothesis?"
+    },
+    {
+        "id": 403,
+        "start": 2341.599,
+        "end": 2343.92,
+        "frames": [
+            "frame_00434.png"
+        ],
+        "transcript": "1.96?"
+    },
+    {
+        "id": 404,
+        "start": 2343.92,
+        "end": 2346.72,
+        "frames": [
+            "frame_00435.png"
+        ],
+        "transcript": "Yeah, I want to discuss that, okay?"
+    },
+    {
+        "id": 405,
+        "start": 2346.72,
+        "end": 2348.48,
+        "frames": [
+            "frame_00436.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 406,
+        "start": 2348.48,
+        "end": 2352.8,
+        "frames": [
+            "frame_00437.png"
+        ],
+        "transcript": "Okay, I want to discuss that."
+    },
+    {
+        "id": 407,
+        "start": 2352.8,
+        "end": 2354.56,
+        "frames": [
+            "frame_00438.png"
+        ],
+        "transcript": "That is how we can get that."
+    },
+    {
+        "id": 408,
+        "start": 2354.56,
+        "end": 2362.0,
+        "frames": [
+            "frame_00439.png"
+        ],
+        "transcript": "[Silent] for 8.32 sec"
+    },
+    {
+        "id": 409,
+        "start": 2362.0,
+        "end": 2368.4,
+        "frames": [
+            "frame_00440.png"
+        ],
+        "transcript": "Okay, so we can say that maybe not like this, also."
+    },
+    {
+        "id": 410,
+        "start": 2368.4,
+        "end": 2376.359,
+        "frames": [
+            "frame_00441.png"
+        ],
+        "transcript": "if I have"
+    },
+    {
+        "id": 411,
+        "start": 2376.359,
+        "end": 2382.0,
+        "frames": [
+            "frame_00442.png"
+        ],
+        "transcript": "[Silent] for 6.20 sec"
+    },
+    {
+        "id": 412,
+        "start": 2382.0,
+        "end": 2389.2,
+        "frames": [
+            "frame_00443.png"
+        ],
+        "transcript": "Okay, so we can say that this is our the Gaussian distribution, our normal distribution curve."
+    },
+    {
+        "id": 413,
+        "start": 2389.2,
+        "end": 2395.44,
+        "frames": [
+            "frame_00444.png"
+        ],
+        "transcript": "So here the mean is in the middle."
+    },
+    {
+        "id": 414,
+        "start": 2395.44,
+        "end": 2404.96,
+        "frames": [
+            "frame_00445.png"
+        ],
+        "transcript": "The 50% will be in this left side, and 50% data will be in the right side."
+    },
+    {
+        "id": 415,
+        "start": 2404.96,
+        "end": 2407.44,
+        "frames": [
+            "frame_00446.png"
+        ],
+        "transcript": "So that means 50-50, okay?"
+    },
+    {
+        "id": 416,
+        "start": 2407.44,
+        "end": 2408.0,
+        "frames": [
+            "frame_00447.png"
+        ],
+        "transcript": "50%."
+    },
+    {
+        "id": 417,
+        "start": 2408.0,
+        "end": 2411.2,
+        "frames": [
+            "frame_00448.png"
+        ],
+        "transcript": "From the mean, we will get 50%."
+    },
+    {
+        "id": 418,
+        "start": 2411.2,
+        "end": 2414.16,
+        "frames": [
+            "frame_00449.png"
+        ],
+        "transcript": "In our last lecture, we discussed these things."
+    },
+    {
+        "id": 419,
+        "start": 2414.16,
+        "end": 2422.4,
+        "frames": [
+            "frame_00450.png"
+        ],
+        "transcript": "Now, here it is mentioned that the 5% and this is 2-tail test."
+    },
+    {
+        "id": 420,
+        "start": 2422.4,
+        "end": 2427.92,
+        "frames": [
+            "frame_00451.png"
+        ],
+        "transcript": "So we have to divide it by 2 and 2.5% in left side and 2.5% in right side."
+    },
+    {
+        "id": 421,
+        "start": 2427.92,
+        "end": 2429.12,
+        "frames": [
+            "frame_00452.png"
+        ],
+        "transcript": "So what does it mean?"
+    },
+    {
+        "id": 422,
+        "start": 2429.12,
+        "end": 2439.68,
+        "frames": [
+            "frame_00453.png"
+        ],
+        "transcript": "It means that the 5%, 2.5%, this side, 2.5%."
+    },
+    {
+        "id": 423,
+        "start": 2439.68,
+        "end": 2447.0,
+        "frames": [
+            "frame_00454.png"
+        ],
+        "transcript": "[Silent] for 7.60 sec"
+    },
+    {
+        "id": 424,
+        "start": 2447.0,
+        "end": 2448.96,
+        "frames": [
+            "frame_00455.png"
+        ],
+        "transcript": "Here is also the same thing."
+    },
+    {
+        "id": 425,
+        "start": 2448.96,
+        "end": 2457.84,
+        "frames": [
+            "frame_00456.png"
+        ],
+        "transcript": "This side is also 2.5%."
+    },
+    {
+        "id": 426,
+        "start": 2457.84,
+        "end": 2462.0,
+        "frames": [
+            "frame_00457.png"
+        ],
+        "transcript": "So why I have to do that?"
+    },
+    {
+        "id": 427,
+        "start": 2462.0,
+        "end": 2463.6,
+        "frames": [
+            "frame_00458.png"
+        ],
+        "transcript": "Because this is the two tails."
+    },
+    {
+        "id": 428,
+        "start": 2463.6,
+        "end": 2470.32,
+        "frames": [
+            "frame_00459.png"
+        ],
+        "transcript": "That means in left side tail and right side tail, we have to discard this portion as the rejection region."
+    },
+    {
+        "id": 429,
+        "start": 2470.32,
+        "end": 2477.6,
+        "frames": [
+            "frame_00460.png"
+        ],
+        "transcript": "Because the 95% significance, that means that the white part here is 95%."
+    },
+    {
+        "id": 430,
+        "start": 2477.6,
+        "end": 2485.2,
+        "frames": [
+            "frame_00461.png"
+        ],
+        "transcript": "And the left side 2.5% and right side 2.5% is the 5% error or rejection."
+    },
+    {
+        "id": 431,
+        "start": 2485.2,
+        "end": 2494.0,
+        "frames": [
+            "frame_00462.png"
+        ],
+        "transcript": "Okay, now if we can see that here is the 2.5%."
+    },
+    {
+        "id": 432,
+        "start": 2494.0,
+        "end": 2504.56,
+        "frames": [
+            "frame_00463.png"
+        ],
+        "transcript": "Okay, then what we have to do from 50%, from 50%, from 50 minus of 2.5."
+    },
+    {
+        "id": 433,
+        "start": 2504.56,
+        "end": 2515.36,
+        "frames": [
+            "frame_00464.png"
+        ],
+        "transcript": "So it will give us 47.5."
+    },
+    {
+        "id": 434,
+        "start": 2515.36,
+        "end": 2521.52,
+        "frames": [
+            "frame_00465.png"
+        ],
+        "transcript": "Okay, so 50 minus 2.5, it will give us 47.5."
+    },
+    {
+        "id": 435,
+        "start": 2521.52,
+        "end": 2527.28,
+        "frames": [
+            "frame_00466.png"
+        ],
+        "transcript": "That means from here to this, this is 47."
+    },
+    {
+        "id": 436,
+        "start": 2527.28,
+        "end": 2530.96,
+        "frames": [
+            "frame_00467.png"
+        ],
+        "transcript": "It is 47.5."
+    },
+    {
+        "id": 437,
+        "start": 2530.96,
+        "end": 2537.0,
+        "frames": [
+            "frame_00468.png"
+        ],
+        "transcript": "[Silent] for 6.08 sec"
+    },
+    {
+        "id": 438,
+        "start": 2537.0,
+        "end": 2539.28,
+        "frames": [
+            "frame_00469.png"
+        ],
+        "transcript": "Okay, this is 47.5."
+    },
+    {
+        "id": 439,
+        "start": 2539.28,
+        "end": 2542.72,
+        "frames": [
+            "frame_00470.png"
+        ],
+        "transcript": "So here 47.5, it is in percentage."
+    },
+    {
+        "id": 440,
+        "start": 2542.72,
+        "end": 2546.4,
+        "frames": [
+            "frame_00471.png"
+        ],
+        "transcript": "That means if we think about the 100, that is 100%."
+    },
+    {
+        "id": 441,
+        "start": 2546.4,
+        "end": 2551.76,
+        "frames": [
+            "frame_00472.png"
+        ],
+        "transcript": "Then 47 points, this region is 47.5%."
+    },
+    {
+        "id": 442,
+        "start": 2551.76,
+        "end": 2559.36,
+        "frames": [
+            "frame_00473.png"
+        ],
+        "transcript": "So now what we have to do, this 100% we can consider just only 1."
+    },
+    {
+        "id": 443,
+        "start": 2559.36,
+        "end": 2561.6,
+        "frames": [
+            "frame_00474.png"
+        ],
+        "transcript": "So 47."
+    },
+    {
+        "id": 444,
+        "start": 2561.6,
+        "end": 2564.72,
+        "frames": [
+            "frame_00475.png"
+        ],
+        "transcript": "So 100% considered to 1."
+    },
+    {
+        "id": 445,
+        "start": 2564.72,
+        "end": 2578.4,
+        "frames": [
+            "frame_00476.png"
+        ],
+        "transcript": "So that means 47.5 it will consider to just 0.475."
+    },
+    {
+        "id": 446,
+        "start": 2578.4,
+        "end": 2580.72,
+        "frames": [
+            "frame_00477.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 447,
+        "start": 2580.72,
+        "end": 2584.24,
+        "frames": [
+            "frame_00478.png"
+        ],
+        "transcript": "So this value we need this value."
+    },
+    {
+        "id": 448,
+        "start": 2584.24,
+        "end": 2594.48,
+        "frames": [
+            "frame_00479.png"
+        ],
+        "transcript": "Okay, now here we can see that at this up to this point of right side, it will be accepted region."
+    },
+    {
+        "id": 449,
+        "start": 2594.48,
+        "end": 2606.16,
+        "frames": [
+            "frame_00480.png"
+        ],
+        "transcript": "And other than that, other than that, that is the beyond that part, that will be the rejection zone of the null hypothesis."
+    },
+    {
+        "id": 450,
+        "start": 2606.16,
+        "end": 2618.24,
+        "frames": [
+            "frame_00481.png"
+        ],
+        "transcript": "Okay, now we have to find out the statistics value, statistical G value for 0.475."
+    },
+    {
+        "id": 451,
+        "start": 2618.24,
+        "end": 2626.0,
+        "frames": [
+            "frame_00482.png"
+        ],
+        "transcript": "Okay, and for that we need to see the table that is the G table."
+    },
+    {
+        "id": 452,
+        "start": 2626.0,
+        "end": 2629.52,
+        "frames": [
+            "frame_00483.png",
+            "frame_00484.png",
+            "frame_00485.png"
+        ],
+        "transcript": "Here is this game."
+    },
+    {
+        "id": 453,
+        "start": 2629.52,
+        "end": 2635.44,
+        "frames": [
+            "frame_00486.png"
+        ],
+        "transcript": "So this table is about the G table two tailed test."
+    },
+    {
+        "id": 454,
+        "start": 2635.44,
+        "end": 2636.88,
+        "frames": [
+            "frame_00487.png"
+        ],
+        "transcript": "Okay, two tailed test."
+    },
+    {
+        "id": 455,
+        "start": 2636.88,
+        "end": 2640.8,
+        "frames": [
+            "frame_00488.png"
+        ],
+        "transcript": "So for that, what we have to find."
+    },
+    {
+        "id": 456,
+        "start": 2640.8,
+        "end": 2649.28,
+        "frames": [
+            "frame_00489.png"
+        ],
+        "transcript": "So in this case, we can say that we have to find the value 4.750."
+    },
+    {
+        "id": 457,
+        "start": 2649.28,
+        "end": 2652.72,
+        "frames": [
+            "frame_00490.png",
+            "frame_00491.png"
+        ],
+        "transcript": "This value we have to find the value."
+    },
+    {
+        "id": 458,
+        "start": 2652.72,
+        "end": 2654.96,
+        "frames": [
+            "frame_00492.png",
+            "frame_00493.png"
+        ],
+        "transcript": "What is the value?"
+    },
+    {
+        "id": 459,
+        "start": 2654.96,
+        "end": 2657.12,
+        "frames": [
+            "frame_00494.png"
+        ],
+        "transcript": "0.475."
+    },
+    {
+        "id": 460,
+        "start": 2657.12,
+        "end": 2660.56,
+        "frames": [
+            "frame_00495.png",
+            "frame_00496.png",
+            "frame_00497.png"
+        ],
+        "transcript": "In this table, we have to find that value."
+    },
+    {
+        "id": 461,
+        "start": 2660.56,
+        "end": 2662.8,
+        "frames": [
+            "frame_00498.png"
+        ],
+        "transcript": "0.475."
+    },
+    {
+        "id": 462,
+        "start": 2662.8,
+        "end": 2663.92,
+        "frames": [
+            "frame_00499.png"
+        ],
+        "transcript": "We can say 0.4."
+    },
+    {
+        "id": 463,
+        "start": 2663.92,
+        "end": 2665.76,
+        "frames": [
+            "frame_00500.png"
+        ],
+        "transcript": "0.4 is here."
+    },
+    {
+        "id": 464,
+        "start": 2665.76,
+        "end": 2668.64,
+        "frames": [
+            "frame_00501.png"
+        ],
+        "transcript": "0.45."
+    },
+    {
+        "id": 465,
+        "start": 2668.64,
+        "end": 2670.32,
+        "frames": [
+            "frame_00502.png"
+        ],
+        "transcript": "0.7."
+    },
+    {
+        "id": 466,
+        "start": 2670.32,
+        "end": 2674.16,
+        "frames": [
+            "frame_00503.png"
+        ],
+        "transcript": "0.47."
+    },
+    {
+        "id": 467,
+        "start": 2674.16,
+        "end": 2675.36,
+        "frames": [
+            "frame_00504.png"
+        ],
+        "transcript": "474."
+    },
+    {
+        "id": 468,
+        "start": 2675.36,
+        "end": 2676.08,
+        "frames": [
+            "frame_00505.png"
+        ],
+        "transcript": "475."
+    },
+    {
+        "id": 469,
+        "start": 2676.08,
+        "end": 2676.8,
+        "frames": [
+            "frame_00506.png"
+        ],
+        "transcript": "Here is."
+    },
+    {
+        "id": 470,
+        "start": 2676.8,
+        "end": 2681.0,
+        "frames": [
+            "frame_00507.png"
+        ],
+        "transcript": "[Silent] for 5.04 sec"
+    },
+    {
+        "id": 471,
+        "start": 2681.0,
+        "end": 2684.32,
+        "frames": [
+            "frame_00508.png"
+        ],
+        "transcript": "So, 0.475."
+    },
+    {
+        "id": 472,
+        "start": 2684.32,
+        "end": 2688.32,
+        "frames": [
+            "frame_00509.png"
+        ],
+        "transcript": "So this is the value we are looking for."
+    },
+    {
+        "id": 473,
+        "start": 2688.32,
+        "end": 2708.08,
+        "frames": [
+            "frame_00510.png",
+            "frame_00511.png",
+            "frame_00512.png",
+            "frame_00513.png"
+        ],
+        "transcript": "So in this case, we can see that the in this case, here is this."
+    },
+    {
+        "id": 474,
+        "start": 2708.08,
+        "end": 2712.32,
+        "frames": [
+            "frame_00514.png"
+        ],
+        "transcript": "So 0.475."
+    },
+    {
+        "id": 475,
+        "start": 2712.32,
+        "end": 2715.92,
+        "frames": [
+            "frame_00515.png"
+        ],
+        "transcript": "And I'm just looking for this value."
+    },
+    {
+        "id": 476,
+        "start": 2715.92,
+        "end": 2717.36,
+        "frames": [
+            "frame_00516.png"
+        ],
+        "transcript": "So 0.475."
+    },
+    {
+        "id": 477,
+        "start": 2717.36,
+        "end": 2721.44,
+        "frames": [
+            "frame_00517.png"
+        ],
+        "transcript": "So that I can find out the g score from the table."
+    },
+    {
+        "id": 478,
+        "start": 2721.44,
+        "end": 2723.28,
+        "frames": [
+            "frame_00518.png"
+        ],
+        "transcript": "So g score from the table now."
+    },
+    {
+        "id": 479,
+        "start": 2723.28,
+        "end": 2728.96,
+        "frames": [
+            "frame_00519.png"
+        ],
+        "transcript": "We can look at the row and the column."
+    },
+    {
+        "id": 480,
+        "start": 2728.96,
+        "end": 2735.2,
+        "frames": [
+            "frame_00520.png"
+        ],
+        "transcript": "So row and the column."
+    },
+    {
+        "id": 481,
+        "start": 2735.2,
+        "end": 2736.72,
+        "frames": [
+            "frame_00521.png"
+        ],
+        "transcript": "Now what we have to do?"
+    },
+    {
+        "id": 482,
+        "start": 2736.72,
+        "end": 2738.64,
+        "frames": [
+            "frame_00522.png"
+        ],
+        "transcript": "I have to sum up these two."
+    },
+    {
+        "id": 483,
+        "start": 2738.64,
+        "end": 2742.8,
+        "frames": [
+            "frame_00523.png"
+        ],
+        "transcript": "Row is 1.9 plus column is 0.06."
+    },
+    {
+        "id": 484,
+        "start": 2742.8,
+        "end": 2746.08,
+        "frames": [
+            "frame_00524.png"
+        ],
+        "transcript": "0.06."
+    },
+    {
+        "id": 485,
+        "start": 2746.08,
+        "end": 2752.56,
+        "frames": [
+            "frame_00525.png"
+        ],
+        "transcript": "So it will be 1.96."
+    },
+    {
+        "id": 486,
+        "start": 2752.56,
+        "end": 2756.16,
+        "frames": [
+            "frame_00526.png"
+        ],
+        "transcript": "Okay, 1.96."
+    },
+    {
+        "id": 487,
+        "start": 2756.16,
+        "end": 2764.16,
+        "frames": [
+            "frame_00527.png"
+        ],
+        "transcript": "This is the statistical G score significant value."
+    },
+    {
+        "id": 488,
+        "start": 2764.16,
+        "end": 2770.24,
+        "frames": [
+            "frame_00528.png",
+            "frame_00529.png"
+        ],
+        "transcript": "And that means we already get the G score from the table."
+    },
+    {
+        "id": 489,
+        "start": 2770.24,
+        "end": 2774.24,
+        "frames": [
+            "frame_00530.png"
+        ],
+        "transcript": "G score from the table is 1.96, 1.96."
+    },
+    {
+        "id": 490,
+        "start": 2774.24,
+        "end": 2787.92,
+        "frames": [
+            "frame_00531.png",
+            "frame_00532.png"
+        ],
+        "transcript": "Here we can say that for 47.5% or maybe for 0.475, the value will be 1.96."
+    },
+    {
+        "id": 491,
+        "start": 2787.92,
+        "end": 2792.64,
+        "frames": [
+            "frame_00533.png"
+        ],
+        "transcript": "1.96."
+    },
+    {
+        "id": 492,
+        "start": 2792.64,
+        "end": 2797.6,
+        "frames": [
+            "frame_00534.png"
+        ],
+        "transcript": "So now we should compare."
+    },
+    {
+        "id": 493,
+        "start": 2797.6,
+        "end": 2803.84,
+        "frames": [
+            "frame_00535.png"
+        ],
+        "transcript": "At this point, the statistical significant value, the score, is 1.96."
+    },
+    {
+        "id": 494,
+        "start": 2803.84,
+        "end": 2811.12,
+        "frames": [
+            "frame_00536.png"
+        ],
+        "transcript": "That means if we can get any value greater than 1.96, greater than 1.96."
+    },
+    {
+        "id": 495,
+        "start": 2811.12,
+        "end": 2813.2,
+        "frames": [
+            "frame_00537.png"
+        ],
+        "transcript": "And here is the similar thing here."
+    },
+    {
+        "id": 496,
+        "start": 2813.2,
+        "end": 2815.6,
+        "frames": [
+            "frame_00538.png"
+        ],
+        "transcript": "We can say minus of 1.96."
+    },
+    {
+        "id": 497,
+        "start": 2815.6,
+        "end": 2818.56,
+        "frames": [
+            "frame_00539.png"
+        ],
+        "transcript": "Okay, negative 1.96."
+    },
+    {
+        "id": 498,
+        "start": 2818.56,
+        "end": 2823.92,
+        "frames": [
+            "frame_00540.png"
+        ],
+        "transcript": "So here, if we can get the greater than 1.96, any value."
+    },
+    {
+        "id": 499,
+        "start": 2823.92,
+        "end": 2826.64,
+        "frames": [
+            "frame_00541.png"
+        ],
+        "transcript": "So we can see this value."
+    },
+    {
+        "id": 500,
+        "start": 2826.64,
+        "end": 2836.4,
+        "frames": [
+            "frame_00542.png"
+        ],
+        "transcript": "From our test statistics, from our test statistics, the G score we found this is 14.6."
+    },
+    {
+        "id": 501,
+        "start": 2836.4,
+        "end": 2839.52,
+        "frames": [
+            "frame_00543.png"
+        ],
+        "transcript": "So 14.6 is greater than 1.96."
+    },
+    {
+        "id": 502,
+        "start": 2839.52,
+        "end": 2843.44,
+        "frames": [
+            "frame_00544.png"
+        ],
+        "transcript": "So at this point, it is 1.96."
+    },
+    {
+        "id": 503,
+        "start": 2843.44,
+        "end": 2851.44,
+        "frames": [
+            "frame_00545.png"
+        ],
+        "transcript": "So 14.6 will be, will be, we can say that this will be in far away from this."
+    },
+    {
+        "id": 504,
+        "start": 2851.44,
+        "end": 2858.56,
+        "frames": [
+            "frame_00546.png"
+        ],
+        "transcript": "So like here in this case, we can see that this is far away from this point."
+    },
+    {
+        "id": 505,
+        "start": 2858.56,
+        "end": 2860.0,
+        "frames": [
+            "frame_00547.png"
+        ],
+        "transcript": "So what does it mean?"
+    },
+    {
+        "id": 506,
+        "start": 2860.0,
+        "end": 2863.12,
+        "frames": [
+            "frame_00548.png"
+        ],
+        "transcript": "It means that it is in rejection region."
+    },
+    {
+        "id": 507,
+        "start": 2863.12,
+        "end": 2865.36,
+        "frames": [
+            "frame_00549.png"
+        ],
+        "transcript": "It is in rejection region."
+    },
+    {
+        "id": 508,
+        "start": 2865.36,
+        "end": 2867.12,
+        "frames": [
+            "frame_00550.png"
+        ],
+        "transcript": "It is in rejection region."
+    },
+    {
+        "id": 509,
+        "start": 2867.12,
+        "end": 2869.68,
+        "frames": [
+            "frame_00551.png"
+        ],
+        "transcript": "It is in rejection region."
+    },
+    {
+        "id": 510,
+        "start": 2869.68,
+        "end": 2879.68,
+        "frames": [
+            "frame_00552.png"
+        ],
+        "transcript": "So it means that we have to reject the null hypothesis."
+    },
+    {
+        "id": 511,
+        "start": 2879.68,
+        "end": 2882.16,
+        "frames": [
+            "frame_00553.png"
+        ],
+        "transcript": "We have to reject the null hypothesis."
+    },
+    {
+        "id": 512,
+        "start": 2882.16,
+        "end": 2884.16,
+        "frames": [
+            "frame_00554.png"
+        ],
+        "transcript": "So we have to reject the null hypothesis."
+    },
+    {
+        "id": 513,
+        "start": 2884.16,
+        "end": 2891.76,
+        "frames": [
+            "frame_00555.png"
+        ],
+        "transcript": "If the null hypothesis is rejected, then we can accept the alternate hypothesis."
+    },
+    {
+        "id": 514,
+        "start": 2891.76,
+        "end": 2895.2,
+        "frames": [
+            "frame_00556.png"
+        ],
+        "transcript": "That means the researcher is right in this case."
+    },
+    {
+        "id": 515,
+        "start": 2895.2,
+        "end": 2898.0,
+        "frames": [
+            "frame_00557.png"
+        ],
+        "transcript": "The researcher is right in this case."
+    },
+    {
+        "id": 516,
+        "start": 2898.0,
+        "end": 2900.16,
+        "frames": [
+            "frame_00558.png"
+        ],
+        "transcript": "So find the test statistic value."
+    },
+    {
+        "id": 517,
+        "start": 2900.16,
+        "end": 2901.68,
+        "frames": [
+            "frame_00559.png"
+        ],
+        "transcript": "We have already found that."
+    },
+    {
+        "id": 518,
+        "start": 2901.68,
+        "end": 2905.6,
+        "frames": [
+            "frame_00560.png"
+        ],
+        "transcript": "And finally, support or reject the null hypothesis."
+    },
+    {
+        "id": 519,
+        "start": 2905.6,
+        "end": 2910.96,
+        "frames": [
+            "frame_00561.png"
+        ],
+        "transcript": "So whether we have to support that or maybe we have to reject that."
+    },
+    {
+        "id": 520,
+        "start": 2910.96,
+        "end": 2913.44,
+        "frames": [
+            "frame_00562.png"
+        ],
+        "transcript": "That should be determined."
+    },
+    {
+        "id": 521,
+        "start": 2913.44,
+        "end": 2917.04,
+        "frames": [
+            "frame_00563.png"
+        ],
+        "transcript": "So finally, we can see that this value is in the rejection region."
+    },
+    {
+        "id": 522,
+        "start": 2917.04,
+        "end": 2920.0,
+        "frames": [
+            "frame_00564.png"
+        ],
+        "transcript": "So we have to reject the null hypothesis."
+    },
+    {
+        "id": 523,
+        "start": 2920.0,
+        "end": 2922.16,
+        "frames": [
+            "frame_00565.png"
+        ],
+        "transcript": "Is it clear?"
+    },
+    {
+        "id": 524,
+        "start": 2922.16,
+        "end": 2927.0,
+        "frames": [
+            "frame_00566.png"
+        ],
+        "transcript": "[Silent] for 5.79 sec"
+    },
+    {
+        "id": 525,
+        "start": 2927.0,
+        "end": 2930.96,
+        "frames": [
+            "frame_00567.png"
+        ],
+        "transcript": "[Music]"
+    },
+    {
+        "id": 526,
+        "start": 2930.96,
+        "end": 2933.119,
+        "frames": [
+            "frame_00568.png"
+        ],
+        "transcript": "Sir question."
+    },
+    {
+        "id": 527,
+        "start": 2933.119,
+        "end": 2937.16,
+        "frames": [
+            "frame_00569.png"
+        ],
+        "transcript": "Yeah, if you have any questions"
+    },
+    {
+        "id": 528,
+        "start": 2937.16,
+        "end": 2942.0,
+        "frames": [
+            "frame_00570.png"
+        ],
+        "transcript": "[Silent] for 5.08 sec"
+    },
+    {
+        "id": 529,
+        "start": 2942.0,
+        "end": 2945.24,
+        "frames": [
+            "frame_00571.png"
+        ],
+        "transcript": "accepted."
+    },
+    {
+        "id": 530,
+        "start": 2945.24,
+        "end": 2947.76,
+        "frames": [
+            "frame_00572.png"
+        ],
+        "transcript": "Generally accepted."
+    },
+    {
+        "id": 531,
+        "start": 2947.76,
+        "end": 2956.08,
+        "frames": [
+            "frame_00573.png"
+        ],
+        "transcript": "See, generally accepted generally accepted filter."
+    },
+    {
+        "id": 532,
+        "start": 2956.08,
+        "end": 2962.0,
+        "frames": [
+            "frame_00574.png"
+        ],
+        "transcript": "Always statistical test test correct."
+    },
+    {
+        "id": 533,
+        "start": 2962.0,
+        "end": 2963.12,
+        "frames": [
+            "frame_00575.png"
+        ],
+        "transcript": "Null hypothesis."
+    },
+    {
+        "id": 534,
+        "start": 2963.12,
+        "end": 2973.0,
+        "frames": [
+            "frame_00576.png"
+        ],
+        "transcript": "[Silent] for 10.24 sec"
+    },
+    {
+        "id": 535,
+        "start": 2973.0,
+        "end": 2976.359,
+        "frames": [
+            "frame_00577.png"
+        ],
+        "transcript": "accepted"
+    },
+    {
+        "id": 536,
+        "start": 2976.359,
+        "end": 2978.96,
+        "frames": [
+            "frame_00578.png"
+        ],
+        "transcript": "Always test a statistics."
+    },
+    {
+        "id": 537,
+        "start": 2978.96,
+        "end": 2980.8,
+        "frames": [
+            "frame_00579.png"
+        ],
+        "transcript": "Always test correct as a null hypothesis."
+    },
+    {
+        "id": 538,
+        "start": 2980.8,
+        "end": 2987.36,
+        "frames": [
+            "frame_00580.png"
+        ],
+        "transcript": "That's why in theory we already mentioned that the null hypothesis is nullifiable."
+    },
+    {
+        "id": 539,
+        "start": 2987.36,
+        "end": 2990.24,
+        "frames": [
+            "frame_00581.png"
+        ],
+        "transcript": "Okay, so you can support or reject."
+    },
+    {
+        "id": 540,
+        "start": 2990.24,
+        "end": 3001.0,
+        "frames": [
+            "frame_00582.png"
+        ],
+        "transcript": "[Silent] for 11.04 sec"
+    },
+    {
+        "id": 541,
+        "start": 3001.0,
+        "end": 3006.24,
+        "frames": [
+            "frame_00583.png"
+        ],
+        "transcript": "Globally, we thought that if you can reject this, then we can accept the alternate."
+    },
+    {
+        "id": 542,
+        "start": 3006.24,
+        "end": 3013.0,
+        "frames": [
+            "frame_00584.png"
+        ],
+        "transcript": "[Silent] for 6.96 sec"
+    },
+    {
+        "id": 543,
+        "start": 3013.0,
+        "end": 3016.0,
+        "frames": [
+            "frame_00585.png"
+        ],
+        "transcript": "Sir, it's a combination of both the partisans, right?"
+    },
+    {
+        "id": 544,
+        "start": 3016.0,
+        "end": 3018.48,
+        "frames": [
+            "frame_00586.png"
+        ],
+        "transcript": "That the raw corn starch did have an effect."
+    },
+    {
+        "id": 545,
+        "start": 3018.48,
+        "end": 3019.36,
+        "frames": [
+            "frame_00587.png"
+        ],
+        "transcript": "Yeah."
+    },
+    {
+        "id": 546,
+        "start": 3019.36,
+        "end": 3026.32,
+        "frames": [
+            "frame_00588.png"
+        ],
+        "transcript": "Yeah, I can take a both of the positive na negative effect."
+    },
+    {
+        "id": 547,
+        "start": 3026.32,
+        "end": 3033.44,
+        "frames": [
+            "frame_00589.png"
+        ],
+        "transcript": "For that, actually, we have to do some other tests."
+    },
+    {
+        "id": 548,
+        "start": 3033.44,
+        "end": 3035.2,
+        "frames": [
+            "frame_00590.png"
+        ],
+        "transcript": "We will discuss those tests."
+    },
+    {
+        "id": 549,
+        "start": 3035.2,
+        "end": 3038.08,
+        "frames": [
+            "frame_00591.png"
+        ],
+        "transcript": "We have to perform some ANOVA."
+    },
+    {
+        "id": 550,
+        "start": 3038.08,
+        "end": 3045.0,
+        "frames": [
+            "frame_00592.png"
+        ],
+        "transcript": "[Silent] for 7.60 sec"
+    },
+    {
+        "id": 551,
+        "start": 3045.0,
+        "end": 3048.72,
+        "frames": [
+            "frame_00593.png"
+        ],
+        "transcript": "Okay, so I think this is one example."
+    },
+    {
+        "id": 552,
+        "start": 3048.72,
+        "end": 3052.48,
+        "frames": [
+            "frame_00594.png",
+            "frame_00595.png"
+        ],
+        "transcript": "We can go just another example here."
+    },
+    {
+        "id": 553,
+        "start": 3052.48,
+        "end": 3062.0,
+        "frames": [
+            "frame_00596.png"
+        ],
+        "transcript": "So another example, this example is also I have to discuss because some new concept is there."
+    },
+    {
+        "id": 554,
+        "start": 3062.0,
+        "end": 3062.32,
+        "frames": [
+            "frame_00597.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 555,
+        "start": 3062.32,
+        "end": 3067.04,
+        "frames": [
+            "frame_00598.png"
+        ],
+        "transcript": "So hypothesis testing example, another example, like the problem."
+    },
+    {
+        "id": 556,
+        "start": 3067.04,
+        "end": 3075.84,
+        "frames": [
+            "frame_00599.png"
+        ],
+        "transcript": "A principal at a certain school claimed that the students in his school are above average intelligence."
+    },
+    {
+        "id": 557,
+        "start": 3075.84,
+        "end": 3079.36,
+        "frames": [
+            "frame_00600.png"
+        ],
+        "transcript": "So his claim is above average intelligence."
+    },
+    {
+        "id": 558,
+        "start": 3079.36,
+        "end": 3083.36,
+        "frames": [
+            "frame_00601.png"
+        ],
+        "transcript": "That means his students, they are above average intelligence."
+    },
+    {
+        "id": 559,
+        "start": 3083.36,
+        "end": 3086.72,
+        "frames": [
+            "frame_00602.png"
+        ],
+        "transcript": "That means greater than average."
+    },
+    {
+        "id": 560,
+        "start": 3086.72,
+        "end": 3087.04,
+        "frames": [
+            "frame_00603.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 561,
+        "start": 3087.04,
+        "end": 3089.12,
+        "frames": [
+            "frame_00604.png"
+        ],
+        "transcript": "So this is the claim of the principal."
+    },
+    {
+        "id": 562,
+        "start": 3089.12,
+        "end": 3091.92,
+        "frames": [
+            "frame_00605.png"
+        ],
+        "transcript": "So here we can say the researcher is the principal."
+    },
+    {
+        "id": 563,
+        "start": 3091.92,
+        "end": 3100.08,
+        "frames": [
+            "frame_00606.png"
+        ],
+        "transcript": "And a random sample of 30 students IQ scores have a mean score of 112."
+    },
+    {
+        "id": 564,
+        "start": 3100.08,
+        "end": 3113.36,
+        "frames": [
+            "frame_00607.png"
+        ],
+        "transcript": "So that means for this school, for this school's case, the principal just took random sample of 30 students and measured their IQ score."
+    },
+    {
+        "id": 565,
+        "start": 3113.36,
+        "end": 3117.6,
+        "frames": [
+            "frame_00608.png"
+        ],
+        "transcript": "And the mean IQ score he got 112."
+    },
+    {
+        "id": 566,
+        "start": 3117.6,
+        "end": 3118.24,
+        "frames": [
+            "frame_00609.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 567,
+        "start": 3118.24,
+        "end": 3121.92,
+        "frames": [
+            "frame_00610.png"
+        ],
+        "transcript": "So for this certain school."
+    },
+    {
+        "id": 568,
+        "start": 3121.92,
+        "end": 3127.28,
+        "frames": [
+            "frame_00611.png"
+        ],
+        "transcript": "So is there sufficient evidence to support the principal's claim?"
+    },
+    {
+        "id": 569,
+        "start": 3127.28,
+        "end": 3131.28,
+        "frames": [
+            "frame_00612.png"
+        ],
+        "transcript": "It is sufficient to support the claim."
+    },
+    {
+        "id": 570,
+        "start": 3131.28,
+        "end": 3133.52,
+        "frames": [
+            "frame_00613.png"
+        ],
+        "transcript": "Principal's claim."
+    },
+    {
+        "id": 571,
+        "start": 3133.52,
+        "end": 3136.88,
+        "frames": [
+            "frame_00614.png"
+        ],
+        "transcript": "Okay, so we have to test this."
+    },
+    {
+        "id": 572,
+        "start": 3136.88,
+        "end": 3142.88,
+        "frames": [
+            "frame_00615.png"
+        ],
+        "transcript": "And now what is the accepted fact?"
+    },
+    {
+        "id": 573,
+        "start": 3142.88,
+        "end": 3148.72,
+        "frames": [
+            "frame_00616.png"
+        ],
+        "transcript": "The accepted fact, or maybe we can say the statistical fact already accepted."
+    },
+    {
+        "id": 574,
+        "start": 3148.72,
+        "end": 3155.76,
+        "frames": [
+            "frame_00617.png"
+        ],
+        "transcript": "So the mean population IQ is 100 with a standard deviation of 15."
+    },
+    {
+        "id": 575,
+        "start": 3155.76,
+        "end": 3160.48,
+        "frames": [
+            "frame_00618.png"
+        ],
+        "transcript": "So that means this is the accepted fact or maybe already exists."
+    },
+    {
+        "id": 576,
+        "start": 3160.48,
+        "end": 3165.44,
+        "frames": [
+            "frame_00619.png"
+        ],
+        "transcript": "The mean population IQ is 100 with a standard deviation of 15."
+    },
+    {
+        "id": 577,
+        "start": 3165.44,
+        "end": 3166.0,
+        "frames": [
+            "frame_00620.png"
+        ],
+        "transcript": "Okay."
+    },
+    {
+        "id": 578,
+        "start": 3166.0,
+        "end": 3171.2,
+        "frames": [
+            "frame_00621.png"
+        ],
+        "transcript": "Now we have to test the hypothesis."
+    },
+    {
+        "id": 579,
+        "start": 3171.2,
+        "end": 3175.92,
+        "frames": [
+            "frame_00622.png"
+        ],
+        "transcript": "So formula to find out the test statistics is this one."
+    },
+    {
+        "id": 580,
+        "start": 3175.92,
+        "end": 3178.56,
+        "frames": [
+            "frame_00623.png"
+        ],
+        "transcript": "We already know this."
+    },
+    {
+        "id": 581,
+        "start": 3178.56,
+        "end": 3191.92,
+        "frames": [
+            "frame_00624.png",
+            "frame_00625.png",
+            "frame_00626.png"
+        ],
+        "transcript": "So again the same procedure we have to follow state the null hypothesis and then state the alternate hypothesis, state the upper level, find the rejection area, find the test statistics and finally support or reject the null hypothesis."
+    },
+    {
+        "id": 582,
+        "start": 3191.92,
+        "end": 3217.52,
+        "frames": [
+            "frame_00627.png",
+            "frame_00628.png"
+        ],
+        "transcript": "So here in this case if g score from the test statistic is that is the g score from the test statistics test statistics means g score from the principles research that is the test statistics is greater than the rejection area from the g table greater than the rejection area from g table that reject the null hypothesis."
+    },
+    {
+        "id": 583,
+        "start": 3217.52,
+        "end": 3219.52,
+        "frames": [
+            "frame_00629.png"
+        ],
+        "transcript": "Otherwise we have to accept."
+    },
+    {
+        "id": 584,
+        "start": 3219.52,
+        "end": 3239.2,
+        "frames": [
+            "frame_00630.png",
+            "frame_00631.png",
+            "frame_00632.png",
+            "frame_00633.png"
+        ],
+        "transcript": "Okay now this is the formula and from here we can see easily easily see that 112 the mean is 112 that means this one is but the claim is claim above average intelligence that means greater than the average."
+    },
+    {
+        "id": 585,
+        "start": 3239.2,
+        "end": 3414.0,
+        "frames": [
+            "frame_00634.png",
+            "frame_00635.png",
+            "frame_00636.png",
+            "frame_00637.png",
+            "frame_00638.png",
+            "frame_00639.png",
+            "frame_00640.png",
+            "frame_00641.png",
+            "frame_00642.png",
+            "frame_00643.png",
+            "frame_00644.png",
+            "frame_00645.png",
+            "frame_00646.png",
+            "frame_00647.png",
+            "frame_00648.png"
+        ],
+        "transcript": "So alternate hypothesis is greater than the average and and here is the our hypothesis this is this is the hypothesis for alternate hypothesis that is the the mean population IQ is 100 okay so mean population IQ is 100 so here is the mu is 100 mean population IQ is 100 with a standard deviation of 15 so that is the sigma sigma is 15 sigma is 15 so here then we have now we have to test the hypothesis we have to test hypothesis and we can we can write this one also the same like maybe the mu less than equal 100 we can write this also but as it is just defined the mean is 100 so you can you can directly also write this either this one or this one so here we can we can see that the alpha is this the significance level of alpha alpha is 0.05 and again we define the alpha 0.05 and then we have to we have to determine the test statistics g score so find the test statistics so g g value and here is the the the the statistics mean that means the here the test statistics mean is 112 we also call it sample mean so here the sample mean is 112 sample mean is 112 here the 5 is maybe and then this is the mu 0 this is the population mean we call it population mean so population mean is 100 so population mean is 100 and then then here is the sigma okay sigma that is the population a standard deviation so this is 15 so here is the 15 and then the number of subjects or maybe the sample size sample size is 30 students okay 30 students so that means value of n is 30 so if we if we just do the math then maybe you will get 4.56 sir yes please sir how will we determine the alpha okay this alpha actually this is user define okay user define so you your your significance level it will it will determine the significance level so whether you want 99 95 percent significant or maybe you want just 99 percent significant or maybe you want just 90 percent significant so these are called the significance level of significance so based on that you you can you can define that so when we when we say about the test result that is the hypothesis testing result we have to say also that is the the the what is the significance value in your test okay so that means 95 percent significant significant means 95 percent time it will give you the same result and five percent time maybe it will give you another result okay so that's that's why it is called 95 percent significant and this is more significant that means 99 percent time you will get that result and maybe one percent time you will get the error so that that's the case okay so when we test something in hypothesis testing you have to mention the significance levels also even sometimes we we build this alpha value like point more significant like 0 0 1 okay this alpha value that is 99.9 percent okay that's why that the hypothesis testing when we test the hypothesis we have to mention the the level of significance alpha"
+    },
+    {
+        "id": 586,
+        "start": 3414.0,
+        "end": 3555.0,
+        "frames": [
+            "frame_00649.png"
+        ],
+        "transcript": "Can we get from the confusion matrix can we get it from the confusion matrix from the confusion matrix yes sir no we cannot we cannot get because I thought I thought that confusion matrix give us that how much it is accurate and how much time it was wrong or how much the error we can define it from confusion matrix so I thought that so here the confusion matrix will tell you the true positive true negative false positive and false negative so in that case that is the the confusion matrix it will just it will just build maybe the the result from one time one time record that means first time you run in and you get the confusion matrix but the second time run maybe you will not get the same confusion matrix third time run maybe you will not get the same confusion matrix yeah this will vary because of the maybe you vary the the test sample so here the the significance levels means okay from confusion matrix we can be we can find out the accuracy okay the first time you run the run and you got the accuracy like maybe 99% second time run you will you maybe you will not get the same accuracy because of the randomness of your sample and you will get maybe 97% third time run maybe you will not get the 95% fourth time you will get the 100% okay so this will vary actually"
+    },
+    {
+        "id": 587,
+        "start": 3555.0,
+        "end": 3900.0,
+        "frames": [
+            "frame_00650.png",
+            "frame_00651.png",
+            "frame_00652.png",
+            "frame_00653.png",
+            "frame_00654.png",
+            "frame_00655.png",
+            "frame_00656.png",
+            "frame_00657.png",
+            "frame_00658.png",
+            "frame_00659.png",
+            "frame_00660.png",
+            "frame_00661.png",
+            "frame_00662.png",
+            "frame_00663.png",
+            "frame_00664.png",
+            "frame_00665.png",
+            "frame_00666.png",
+            "frame_00667.png",
+            "frame_00668.png"
+        ],
+        "transcript": "So from that we have to determine the p-value and the alpha value okay so I will discuss these things in next class okay so this is alpha alpha value so alpha okay so for hypothesis testing you you have to you have to say that this is the hypothesis this is the significance value for for us that is we we we assume assume we assume that the alpha is this and after that we can say okay this is significant or not so any question sir after doing the math I got that the answer is 0.73 instead of 4.56 okay maybe here is one mistake okay so it is it is seven point 0.73 0.73 yes sir okay maybe one on two minus hundred yes fifteen no sir the answer is correct sir four point five six sir if we consider 112 then it becomes 4.38 112 then it is yeah 4.3.38 yes sir 4.38 4.38 okay that means it should be 4.38 okay okay so 4.38 okay this one is 4.38 instead of 4.56"
+    },
+    {
+        "id": 588,
+        "start": 3900.0,
+        "end": 4110.0,
+        "frames": [
+            "frame_00669.png",
+            "frame_00670.png",
+            "frame_00671.png",
+            "frame_00672.png",
+            "frame_00673.png",
+            "frame_00674.png"
+        ],
+        "transcript": "okay now uh so we have already determined the z score so for our test statistics okay test statistics is 4.38 okay now what we have to do the the the next thing is find the resection area from the table and for that what we have to do at first we have to we have to look here our alternate hypothesis and this is this is the case that is we can see that mu is greater than 100 mu is greater than 100 that means this is one tail test one tail test the greater than one so here this is the case okay so we can see that this is the one tail test one tail that means only greater than so greater than this part is greater okay and this is the less okay so the greater than from the greater than part we have to we have to we have to define the five percent error or rejection so the five 0.5 0.05 means the 95 5 percent significant and 5 percent error or rejection so here is the 5 percent rejection okay we have to consider 5 percent and this time we we didn't divide the alpha to the divide by 2 because this is one-sided test or maybe you can say one tail test so all the five percent will be from the right hand side that is the greater than part so this five percent will be the rejection region and now so if this one is the five percent then we have the 95 percent here for the acceptance zone and we can say that acceptance zone is 95 percent so it will be just 0.95 so we have to find out the g score from the table for this value 0.95 and for that okay this is the two tail test but we have to go for the one tail test for the one tailed we have another table for one tail so this is this is for the less than and here is the greater than okay greater than okay so now what we have to we have to find the we have to find the value that is the our we are we are looking for 0.95 okay so let me explain it again so if we can if we want to find this one 0.95 our target is to find this value 0.95 okay so we can see that the here is this 0.95 we cannot find the exact value 0.95 from this table from this table we cannot we cannot find the 0.95 but we can find the interval here this is this is the interval okay this is the interval 0.9495 here is the 0.9505 so this is the this is the interval for is this is the interval okay so this is the interval so that means the 95 will be within this region the 95 will be within this and 0.95 will be within this brains will within this band now we have to determine the value the exact value for 0.95 so it is given this one 0.9495 is for 0.4 and 0.9505 is for is for 0.5 okay now what we have to do we have to find out the difference between these two values so here this value and this value the difference difference between 0.9495 and 0.9505 it will be 0.001 so this way this this this will be the difference and difference between the g values so here is 0.04 and here is 0.0505 so the difference and difference here is 0.01 0.01 so now difference between these two value and difference between these two value we already determine okay we already determined that and now what we want to find out we want to find out the value for 0.95 0.95 and and think about that this is the 0.0.9505 9505 and here is the 9505 and and we are looking for the value 0.95 so that means here is the 0.5 this is the 0.95 so if we subtract the value if we subtract the value from 0.95 to just 95 then we will get 0.0005 0.0005 so that means 95 is just just 0.0005 less than the 0.9505 so so we find that okay we find we find that that is 0.0005 now for this much difference for this much difference that is 0.001 so 0.001 for this much difference the difference in in the g score is this the difference in g score is this so for this much difference the difference in g score is 0.01 so here is the 0.01 then for for this much difference for this much difference what will be the difference in the g-score so for this much difference for this much difference that is 0.0005 difference the difference in in g score will be like here 0.01 times 0.0005 divided by 0.001 okay so you will get what you will get 0.005 so for just only difference the the the 95 the difference between 95 and 9505 is 0.0005 so for 0.0005 the difference will be in difference in g score will be 0.005 so we have to we have to note it 0.05 now so here this is 0.4 0.9505 this one the g score is this one so if the if it is less than less than this one then we have to we have to subtract this value this value that is 0.05 from this value so that is here so 0.05 minus of 0.005 0.005 this one so that means we will get what we will get here 0.045 so if we just so here is this that means for 0.95 the value will be this 0.045 for 0.95 the value will be 0.045 now uh now what we have to do we can see that this is 1.6 the row row value of g is 1.6 and column value for for for the column value is 0.045 here is the 0.045 this one okay so if we sum up these two then we will get 1.645 so this is the actual value for 0.95 1.645"
+    },
+    {
+        "id": 589,
+        "start": 4110.0,
+        "end": 4225.0,
+        "frames": [
+            "frame_00675.png"
+        ],
+        "transcript": "is it clear to all of you yes sir yes sir okay so here 1.645 now go back to our previous slide here is this 1.645 okay so this score from the table is 1.645 now we can we can see that this is our g statistics or test statistics from the test and this is the the the value for z score and again we can see this is greater so greater means it will be somewhere else in this location maybe this is 1.645 then then 4.38 will be will be here in this somewhere in this location okay and again we can see that this is in rejection region rejection region rejection region so what we can we can say that we we can reject the null hypothesis again so if we reject the null hypothesis that means this is the null hypothesis 100 we can reject this and we can accept the fact for this 30 students for these 30 students we can say that the test statistics is significant and and we can reject the null hypothesis so we can accept this fact okay so this is another hypothesis testing example"
+    },
+    {
+        "id": 590,
+        "start": 4225.0,
+        "end": 4395.0,
+        "frames": [
+            "frame_00676.png",
+            "frame_00677.png",
+            "frame_00678.png",
+            "frame_00679.png",
+            "frame_00680.png",
+            "frame_00681.png",
+            "frame_00682.png"
+        ],
+        "transcript": "if you have any question if you don't have any question then I have to speed up hello can you hear me yes sir okay yes sir so I have to speed up a little I think these are very easy now so now we have another test the T and G test okay those two tests are basically for the same purpose but the T test and G test they have some significance okay like when we have to use the t test for hypothesis testing and when we have to use for use the g test for hypothesis testing we have to just know that so we can you can see the t test is used when the sample size is small so here small means small usually statistical significance is small means less than 30 okay if your sample size is less than 30 then we can say that the the sample size is small so sample size is small and the population variance is not known so population variance population variance is sigma sigma if the sigma is not known so if the sigma is not known population variance is not known then we have to perform the t-test and otherwise we have to perform the g test okay so we can say that sample size is large population variance is known sample size is large variance is not known and sample size is small but variance is known so all these all other cases we have to use the g test"
+    },
+    {
+        "id": 591,
+        "start": 4395.0,
+        "end": 4490.0,
+        "frames": [
+            "frame_00683.png",
+            "frame_00684.png",
+            "frame_00685.png",
+            "frame_00686.png",
+            "frame_00687.png",
+            "frame_00688.png",
+            "frame_00689.png",
+            "frame_00690.png",
+            "frame_00691.png",
+            "frame_00692.png",
+            "frame_00693.png",
+            "frame_00694.png",
+            "frame_00695.png",
+            "frame_00696.png",
+            "frame_00697.png"
+        ],
+        "transcript": "okay then we already discussed about just only one sample t-test or one sample sorry one sample g test that means here the in the case of the principal he just taken the 30 students just one time okay and in in your previous case like here here is also the researcher for blood glucose level testing he also just have taken the sample of 30 patients one time so that means this is the one sample test one sample test okay here is the this is the one sample test two sample test means if the experiment they they have done two times okay that on that case we can we we will say that the two sample test okay so a t test can be or a g test can be one sample t test or two sample t test"
+    },
+    {
+        "id": 592,
+        "start": 4490.0,
+        "end": 4640.0,
+        "frames": [
+            "frame_00698.png",
+            "frame_00699.png",
+            "frame_00700.png",
+            "frame_00701.png",
+            "frame_00702.png",
+            "frame_00703.png",
+            "frame_00704.png",
+            "frame_00705.png",
+            "frame_00706.png"
+        ],
+        "transcript": "so this is the equation for the t test you can see the difference here this is the s other other parameters will be the same so s means s means the this is s so this is the sample sample standard deviation standard deviation of sample so that means s is the sample standard deviation in sigma this is the population standard deviation and here the sample standard deviation okay so in t test we we we used the sample standard deviation and all the equations are same and also the significance level we have to calculate this using the same form using the t-test or students t-test usually we call and two sample t-test is the formula is just difference okay here is we can see the t so we have two sample so x x1 bar and x2 bar that means the mean of mean from first sample and mean from the second sample and then square root of s1 square that means the the the the standard deviation of first sample square and standard deviation of second sample square and number of number of samples in first test and number of samples in second test and this is this is the case okay and sample two sample t test and and all the the things that if the value of t statistics is greater than the double value then we have to reject the null hypothesis okay otherwise we have to accept the null hypothesis the same thing okay but this time we have to we have to we have to look for the t table and the g test also the one sample g test we already performed the one sample g test the variables are already known to us but in two sample g test we have just the same thing here the from the first sample mean this is the second sample mean and this is the first sample standard deviation and this is population population okay population and here is the number of first sample here the second sample and here is the second sample okay okay and okay so this is the g-test okay so last slide in today's class is the sample size determination sometimes we need to we need to know the that is the whether the the the sample size is enough or not okay so for that we have to use this equation to determine whether the sample size is statistically enough for me or not okay so for this what we have to do we have to we have to know the p-value so here the p is 0.5 okay we we will discuss what is the p-value in our next class and then the g g is already we we we can we know the g score okay like here in our case the 1.96 we determine the for here here is the 1.96 okay we already got that for 95 percent significance level and and that is the if we if we think about the 95 percent then your g value will be 1.96 so here is this value and the e is the the the error okay that means the rejection so our error is 95 percent that means 0.05 is error the error region is 95 percent so let's put the value put the value then you will find the n so we can say from this equation if we put the the assume the p p p value is 0.5 then other values are we have to calculate and finally we can see that the n this is the n it will be 385 participants so we need 385 participants for a statistical significant okay and here is the paper for that go through the paper you will find the details of it"
+    },
+    {
+        "id": 593,
+        "start": 4640.0,
+        "end": 4935.958639,
+        "frames": [
+            "frame_00707.png",
+            "frame_00708.png",
+            "frame_00709.png",
+            "frame_00710.png",
+            "frame_00711.png",
+            "frame_00712.png",
+            "frame_00713.png",
+            "frame_00714.png",
+            "frame_00715.png",
+            "frame_00716.png",
+            "frame_00717.png",
+            "frame_00718.png",
+            "frame_00719.png",
+            "frame_00720.png",
+            "frame_00721.png",
+            "frame_00722.png",
+            "frame_00723.png",
+            "frame_00724.png",
+            "frame_00725.png"
+        ],
+        "transcript": "okay that's all uh in in today's lecture any question from your side okay I think these things are very easy but those are useful specifically in data science and data science research so we have to understand those those those statistical testing method and next class we will we will discuss about another testing testing method and after finishing the next class maybe the testing methods I will I will assign some papers for you to study and and please complete the data cam assignment I already assigned the data cam assignment this is just very basic Python programming but the next course will be on on statistical testing and statistical measurement okay so I will assign the next next assignment also maybe within within within within Saturday okay thank you thank you very much for attending this session see you in our next class thank you sir thank you sir"
+    }
+]
